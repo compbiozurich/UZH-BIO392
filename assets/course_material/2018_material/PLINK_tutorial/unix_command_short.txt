@@ -1,0 +1,77 @@
+********************************************************************************
+                    Basic UNIX Command Line (shell) navigation  
+********************************************************************************
+
+Directories:
+
+
+File and directory paths in UNIX use the forward slash "/" 
+to separate directory names in a path.
+
+examples:
+
+/              "root" directory
+/usr           directory usr (sub-directory of / "root" directory)
+/usr/foo       foo is a subdirectory of /usr
+
+Moving around the file system:
+
+
+pwd               Show the "present working directory", or current directory.
+cd                Change current directory to your HOME directory.
+cd /usr/foo       Change current directory to /usr/foo.
+
+
+Listing directory contents:
+
+
+ls    list a directory
+ls -l    list a directory in long ( detailed ) format
+
+   for example:
+$ ls -l 
+drwxr-xr-x    4 cliff    user        1024 Jun 18 09:40 WAITRON_EARNINGS
+-rw-r--r--    1 cliff    user      767392 Jun  6 14:28 scanlib.tar.gz
+^ ^  ^  ^     ^   ^       ^           ^      ^    ^      ^
+| |  |  |     |   |       |           |      |    |      |  
+| |  |  |     | owner   group       size   date  time    name 
+| |  |  |     number of links to file or directory contents
+| |  |  permissions for world
+| |  permissions for members of group
+| permissions for owner of file: r = read, w = write, x = execute -=no permission
+type of file: - = normal file, d=directory, l = symbolic link, and others...
+
+ls -a        List the current directory including hidden files. Hidden files start 
+             with "." 
+ls -ld *     List all the file and directory names in the current directory using 
+             long format. Without the "d" option, ls would list the contents 
+             of any sub-directory of the current. With the "d" option, ls 
+             just lists them like regular files. 
+             
+
+
+Moving, renaming, and copying files:
+
+
+cp file1 file2          copy a file
+mv file1 newname        move or rename a file
+mv file1 ~/AAA/         move file1 into sub-directory AAA in your home directory.
+rm file1 [file2 ...]    remove or delete a file
+rm -r dir1 [dir2...]    recursivly remove a directory and its contents BE CAREFUL!
+mkdir dir1 [dir2...]    create directories
+mkdir -p dirpath        create the directory dirpath, including all implied directories in the path.
+rmdir dir1 [dir2...]    remove an empty directory
+
+
+Viewing and editing files:
+
+
+cat filename      Dump a file to the screen in ascii. 
+more filename     Progressively dump a file to the screen: ENTER = one line down 
+                  SPACEBAR = page down  q=quit
+less filename     Like more, but you can use Page-Up too. Not on all systems. 
+vi filename       Edit a file using the vi editor. All UNIX systems will have vi in some form. 
+head filename     Show the first few lines of a file.
+head -n  filename Show the first n lines of a file.
+tail filename     Show the last few lines of a file.
+tail -n filename  Show the last n lines of a file.

@@ -1,0 +1,30 @@
+﻿#hg19.knownCanonical.chrom	hg19.knownCanonical.chromStart	hg19.knownCanonical.chromEnd	hg19.kgXref.geneSymbol	hg19.kgXref.description
+chr1	15817895	15850940	CASP9	Homo sapiens caspase 9, apoptosis-related cysteine peptidase (CASP9), transcript variant alpha, mRNA.
+chr2	201717731	201729467	CLK1	Homo sapiens CDC-like kinase 1 (CLK1), transcript variant 1, mRNA.
+chr4	55944425	55991762	KDR	Homo sapiens kinase insert domain receptor (a type III receptor tyrosine kinase) (KDR), mRNA.
+chr5	37812778	37835929	GDNF	Homo sapiens glial cell derived neurotrophic factor (GDNF), transcript variant 3, mRNA.
+chr6	43737945	43754223	VEGFA	Homo sapiens vascular endothelial growth factor A (VEGFA), transcript variant 1, mRNA.
+chr7	134916730	134943244	STRA8	Homo sapiens stimulated by retinoic acid 8 (STRA8), mRNA.
+chr8	25276773	25282556	GNRH1	Homo sapiens gonadotropin-releasing hormone 1 (luteinizing-releasing hormone) (GNRH1), transcript variant 2, mRNA.
+chr9	841689	969090	DMRT1	Homo sapiens doublesex and mab-3 related transcription factor 1 (DMRT1), mRNA.
+chr9	127243514	127269699	NR5A1	Homo sapiens nuclear receptor subfamily 5, group A, member 1 (NR5A1), mRNA.
+chrX	30322538	30327495	NR0B1	Homo sapiens nuclear receptor subfamily 0, group B, member 1 (NR0B1), mRNA.
+chrY	2654895	2655792	SRY	Homo sapiens sex determining region Y (SRY), mRNA.
+chr10	33466418	33623833	NRP1	Homo sapiens neuropilin 1 (NRP1), transcript variant 1, mRNA.
+chr10	43572516	43625797	RET	Homo sapiens ret proto-oncogene (RET), transcript variant 2, mRNA.
+chr10	71331790	71333210	NEUROG3	Homo sapiens neurogenin 3 (NEUROG3), mRNA.
+chr10	117816441	118033126	GFRA1	Homo sapiens GDNF family receptor alpha 1 (GFRA1), transcript variant 1, mRNA.
+chr11	20691116	21597229	NELL1	Homo sapiens NEL-like 1 (chicken) (NELL1), transcript variant 1, mRNA.
+chr11	32409321	32457081	WT1	Homo sapiens Wilms tumor 1 (WT1), transcript variant D, mRNA.
+chr11	64532075	64545938	SF1	Homo sapiens splicing factor 1 (SF1), transcript variant 6, mRNA.
+chr11	113931287	114121397	ZBTB16	Homo sapiens zinc finger and BTB domain containing 16 (ZBTB16), transcript variant 2, mRNA.
+chr12	6643584	6647537	GAPDH	Homo sapiens glyceraldehyde-3-phosphate dehydrogenase (GAPDH), transcript variant 1, mRNA.
+chr13	41129800	41240734	FOXO1	Homo sapiens forkhead box O1 (FOXO1), mRNA.
+chr15	75661719	75743926	SIN3A	Homo sapiens SIN3 transcription regulator homolog A (yeast) (SIN3A), transcript variant 2, mRNA.
+chr17	70117160	70122560	SOX9	Homo sapiens SRY (sex determining region Y)-box 9 (SOX9), mRNA.
+chr17	6926368	6932961	BCL6B	Homo sapiens B-cell CLL/lymphoma 6, member B (BCL6B), mRNA.
+chr19	2249112	2252072	AMH	Homo sapiens anti-Mullerian hormone (AMH), mRNA.
+chr19	41836811	41859831	TGFB1	Homo sapiens transforming growth factor, beta 1 (TGFB1), mRNA.
+chr19	46416472	46418036	NANOS2	Homo sapiens nanos homolog 2 (Drosophila) (NANOS2), mRNA.
+chr19	49458116	49464519	BAX	Homo sapiens BCL2-associated X protein (BAX), transcript variant beta, mRNA.
+chr19	49519236	49520347	LHB	Homo sapiens luteinizing hormone beta polypeptide (LHB), mRNA.
