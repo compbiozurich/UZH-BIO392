@@ -11,26 +11,26 @@ tags:
   - FAQ
 ---
 
-{{page.title}}
+## {{ page.title }}
 
 This is a repository for materials related to the BIO392 _Bioinformatics of Genome Variation_ introductory course at the University of Zürich.
 
 The home page of this repository can be found at [compbiozurich.org/](https://compbiozurich.org/UZH-BIO392/).
 
-## Abstract
+#### Abstract
 
 One of the fastest growing areas of bioinformatics is in the analysis, warehousing and representation of genomic and protein sequence variants, particularly with view on the use of molecular data in personalised health and biomedical applications in general. This course will engage participants to explore common data formats, online resources and analysis techniques, with a focus on human genome variation data.
 
-## Learning Goals
+### Learning Goals
 
-* Core [__Learning Goals__](/learning-goals.html), relevant for passing the test...
+* Core [__Learning Goals__]({%- /learning-goals.html" | relative_url -%}), relevant for passing the test...
 
-#### Links
+##### Links
 
 * BIO392 in the [UZH OLAT](https://lms.uzh.ch/auth/RepositoryEntry/16434233613) system
 * BIO392 in the [UZH directory](https://studentservices.uzh.ch/uzh/anonym/vvz/index.html#/details/2018/003/SM/50920456)
 
-#### Literature and Resources
+##### Literature and Resources
 
 * [Articles and other reading](https://github.com/baudisgroup/BIO392-Github/tree/master/literature/) (files)
 * [Article links](https://baudisgroup.github.io/BIO392-Github/literature-links.html)
@@ -41,4 +41,4 @@ One of the fastest growing areas of bioinformatics is in the analysis, warehousi
  
 ## [Course feedback page](feedback.md)
 
-<img src="/assets/Y01-F-50-location.png" style="float: left;" />
+<img src="{% assets/Y01-F-50-location.png %}" style="float: left;" />
