@@ -1,22 +1,25 @@
 :root {
-  --site-color: rgb(72,72,72);
+  --site-color: rgb(96,96,172);
+}
+
+#headband {
+  background-color: var(--site-color);
 }
 
 #logo_topleft {
+  float: left;
   margin-top: 10px;
-  margin-left: 12px;
+  margin-left: 10px;
 }
 
 #logo_topright {
+  float: right;
   margin-top: 10px;
-  margin-right: 12px;
-  width: 36px;
+  margin-right: 10px;
+  width: 48px;
 }
 
-#sitelogo {}
-
-#outlinks {}
-
-#catlinks {}
-
-#tagcloud {}
+a {
+  color: var(--site-color);
+  text-decoration: none;
+}
