@@ -1,0 +1,22 @@
+:root {
+  --site-color: rgb(72,72,72);
+}
+
+#logo_topleft {
+  margin-top: 10px;
+  margin-left: 12px;
+}
+
+#logo_topright {
+  margin-top: 10px;
+  margin-right: 12px;
+  width: 36px;
+}
+
+#sitelogo {}
+
+#outlinks {}
+
+#catlinks {}
+
+#tagcloud {}
