@@ -1,14 +1,14 @@
-label: 'UZH BIO392 2019'
+label: 'UZH BIO392'
 tagline: 'Bioinformatics of Sequence Variation'
 description: |
   This is the repository for the University of Zurich's undergraduate course in life sciences BIO392 block course.
 keywords: UZH, life sciences, baudisgroup
-site_domain_name: progenetix.github.io/progenetix-site-template
-url: 'https://progenetix.github.io/progenetix-site-template'
+site_domain_name: http://compbiozurich.org/UZH-BIO392
+url: 'https://compbiozurich.org/UZH-BIO392'
 
 # The baseurl parameter is an empty string if the site is represented at the root
 # of a domain. For project domains on Github it corresponds to the project name.
-baseurl: "/UZH-BIO392-2019"
+baseurl: "/UZH-BIO392"
 
 # the site_parent_link parameter is used e.g. for icon links.
 site_parent_link: 'https://uzh.ch'
