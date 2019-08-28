@@ -3,8 +3,8 @@ tagline: 'Bioinformatics of Sequence Variation'
 description: |
   This is the repository for the University of Zurich's undergraduate course in life sciences BIO392 block course.
 keywords: UZH, life sciences, baudisgroup
-site_domain_name: http://compbiozurich.org/UZH-BIO392
-url: 'https://compbiozurich.org/UZH-BIO392'
+site_domain_name: http://compbiozurich.org2
+url: 'https://compbiozurich.org'
 
 # The baseurl parameter is an empty string if the site is represented at the root
 # of a domain. For project domains on Github it corresponds to the project name.
