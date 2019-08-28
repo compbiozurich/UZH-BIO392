@@ -23,7 +23,7 @@ One of the fastest growing areas of bioinformatics is in the analysis, warehousi
 
 ### Learning Goals
 
-* Core [__Learning Goals__]({%- /learning-goals.html" | relative_url -%}), relevant for passing the test...
+* Core [__Learning Goals__]({% "/learning-goals.html" | relative_url %}), relevant for passing the test...
 
 ##### Links
 
@@ -41,4 +41,4 @@ One of the fastest growing areas of bioinformatics is in the analysis, warehousi
  
 ## [Course feedback page](feedback.md)
 
-<img src="{% assets/Y01-F-50-location.png %}" style="float: left;" />
+<img src="{% "/assets/Y01-F-50-location.png" | relative_url %}" style="float: left;" />
