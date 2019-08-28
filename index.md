@@ -15,8 +15,6 @@ tags:
 
 This is a repository for materials related to the BIO392 _Bioinformatics of Genome Variation_ introductory course at the University of Zürich.
 
-The home page of this repository can be found at [compbiozurich.org/](https://compbiozurich.org/UZH-BIO392/).
-
 #### Abstract
 
 One of the fastest growing areas of bioinformatics is in the analysis, warehousing and representation of genomic and protein sequence variants, particularly with view on the use of molecular data in personalised health and biomedical applications in general. This course will engage participants to explore common data formats, online resources and analysis techniques, with a focus on human genome variation data.
