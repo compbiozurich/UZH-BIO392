@@ -1,32 +1,44 @@
 ---
-title: "Progenetix Jekyll Website Template"
+title: "UZH BIO392 - Bioinformatics of Sequence Variation"
 layout: default
-date: 2018-12-20
+date: 2019-08-27
 permalink: /index.html
 author: "@mbaudis"
 category:
-  - about
+  - doc
 tags:
-  - code
-  - Jekyll
+  - documentation
+  - FAQ
 ---
 
-## {{page.title}}
+{{page.title}}
 
-Welcome to the Progenetix Jekyll Template.
+This is a repository for materials related to the BIO392 _Bioinformatics of Genome Variation_ introductory course at the University of Zürich.
 
-This is a minimal repository which can be used to build static but "update on modification" websites using the Ruby based "Jekyll" framework.
+The home page of this repository can be found at [compbiozurich.org/](https://compbiozurich.org/UZH-BIO392/).
 
-A typical application here would be to have the root directory as a Github project, in which case Github will process the pages, create the corresponding website and handle updates upon changes. Examples here are e.g. several websites related to the Global Alliance for Genomics and Health ([GA4H](http://ga4gh.org)):
+## Abstract
 
-* [schemablocks.org](http://schemablocks.org)
-* [ELIXIR Beacon](http://beacon-project.io)
-* [GA4GH Metadata](http://ga4gh-metadata.github.io)
-* [GA4GH Discovery](http://ga4gh-discovery.github.io)
-* [ELIXIR Cloud and AAI](https://elixir-europe.github.io/cloud/)
+One of the fastest growing areas of bioinformatics is in the analysis, warehousing and representation of genomic and protein sequence variants, particularly with view on the use of molecular data in personalised health and biomedical applications in general. This course will engage participants to explore common data formats, online resources and analysis techniques, with a focus on human genome variation data.
 
-Alternatively, the site can be build locally (requiring some Ruby gems etc.), for either testing purposes or to serve the compiled site from your own hosting space. Examples here are our sites:
+## Learning Goals
 
-* [info.baudisgroup.org](http://info.baudisgroup.org)
-* [internal.baudisgroup.org](http://internal.baudisgroup.org) (internal access only)
-* [info.progenetix.org](http://info.progenetix.org) - Progenetix info page
+* Core [__Learning Goals__](/learning-goals.html), relevant for passing the test...
+
+#### Links
+
+* BIO392 in the [UZH OLAT](https://lms.uzh.ch/auth/RepositoryEntry/16434233613) system
+* BIO392 in the [UZH directory](https://studentservices.uzh.ch/uzh/anonym/vvz/index.html#/details/2018/003/SM/50920456)
+
+#### Literature and Resources
+
+* [Articles and other reading](https://github.com/baudisgroup/BIO392-Github/tree/master/literature/) (files)
+* [Article links](https://baudisgroup.github.io/BIO392-Github/literature-links.html)
+* [Resource links](https://baudisgroup.github.io/BIO392-Github/resource-links.html) (browsers and online repositories)
+* [Course tasks](https://baudisgroup.github.io/BIO392-Github/tasks.html) (to do's and challenges)
+
+## [Schedule](schedule.md)
+ 
+## [Course feedback page](feedback.md)
+
+<img src="/assets/Y01-F-50-location.png" style="float: left;" />
