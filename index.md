@@ -39,6 +39,6 @@ One of the fastest growing areas of bioinformatics is in the analysis, warehousi
 
 ## [Schedule](schedule.md)
  
-## [Course feedback pages]({{ "/feedback.html" | relative_url }})
+## [Course feedback pages]({{ "/tags/feedback.html" | relative_url }})
 
 <img src="{{ "/assets/img/Y01-F-50-location.png" | relative_url }}" style="float: left;" />
