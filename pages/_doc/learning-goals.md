@@ -2,7 +2,7 @@
 title: "UZH BIO392 - Learning Goals"
 layout: default
 date: 2019-08-27
-permalink: /learning-goals.html
+permalink: /doc/learning-goals.html
 author: "@mbaudis"
 category:
   - doc
