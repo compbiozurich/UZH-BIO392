@@ -37,7 +37,7 @@ One of the fastest growing areas of bioinformatics is in the analysis, warehousi
 * [Resource links]({ "/doc/resource-links.html" | relative_url }) (browsers and online repositories)
 * [Course tasks](https://baudisgroup.github.io/BIO392-Github/tasks.html) (to do's and challenges)
 
-## [Schedule](schedule.md)
+## [Schedule]({{ "/categories/days.html" | relative_url }})
  
 ## [Course feedback pages]({{ "/tags/feedback.html" | relative_url }})
 
