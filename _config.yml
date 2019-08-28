@@ -33,9 +33,9 @@ collections:
   howto:
     output: true
     permalink: /howto/:path/
-  material:
+  days:
     output: true
-    permalink: /material/:path/
+    permalink: /days/:path/
 collections_dir: pages  # optional; here, all collections are inside "/pages"
 
 # navigation blocks can be used to separate different categories and add e.g.
@@ -47,7 +47,8 @@ nav_cat_blocks:     # comma-separated "label,type,label_visibility"
 
 # content of the different navigation blocks
 general:
-  news: News
+  doc: 'Course Info'
+  days: 'Course Days'
   people: Teachers
   howto: 'Examples, Guides & FAQ'
   material: 'Course Material'
@@ -73,6 +74,7 @@ cloud_tags:
   - contacts
   - contributors
   - documentation
+  - exam
   - FAQ
   - Jekyll
   - Markdown
