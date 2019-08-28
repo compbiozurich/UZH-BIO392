@@ -1,5 +1,5 @@
 ---
-title: 'BIO392 - Day 1'
+title: 'BIO392 - Day 01'
 layout: default
 author:
   - "@mbaudis"
