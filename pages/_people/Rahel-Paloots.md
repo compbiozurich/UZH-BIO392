@@ -1,7 +1,9 @@
 ---
 title:  "Rahel Paloots"
 permalink: '/group/Rahel_Paloots/'
+excerpt_link: https://info.baudisgroup.org/group/Rahel_Paloots/
 layout: default
+excerpt_separator: <!--more-->
 date:   2018-01-15
 category:
   - people
@@ -11,7 +13,10 @@ tags:
 ---
 
 ## Rahel Paloots
+
 #### PhD candidate, Institute of Molecular Life Sciences, University of Zurich & Swiss Institute of Bioinformatics **SIB**
+
+<!--more-->
 
 |      |     |
 | ---: | --- |

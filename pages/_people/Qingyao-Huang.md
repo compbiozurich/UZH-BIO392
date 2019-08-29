@@ -1,6 +1,8 @@
 ---
 title:  "Qingyao Huang"
 permalink: /group/Qingyao_Huang/
+excerpt_link: https://info.baudisgroup.org/group/Qingyao_Huang/
+excerpt_separator: <!--more-->
 layout: default
 date:   2017-04-01
 category:
@@ -10,7 +12,10 @@ tags:
 ---
 
 ## Qingyao Huang
+
 #### PhD candidate in Molecular Life Sciences, Institute of Molecular Life Sciences, University of Zurich & Swiss Institute of Bioinformatics **SIB**
+
+<!--more-->
 
 |      |     |
 | ---: | --- |

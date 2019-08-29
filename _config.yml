@@ -72,7 +72,6 @@ tags-date-sorted:
 cloud_tags:
   - code
   - contacts
-  - contributors
   - documentation
   - exam
   - feedback
@@ -83,6 +82,7 @@ cloud_tags:
   - slides
   - data
   - exercises
+  - teachers
 
 # additional Jekyll instructions
 plugins:
