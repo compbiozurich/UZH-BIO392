@@ -339,7 +339,7 @@
 
 {%- unless page.path contains 'categories/' or page.path contains 'tags/' or page.path contains 'generated' -%}  
 	{%- if site.github.repository_url contains '/' -%}
-    {%- assign github_link = site.github.repository_url | append: '/blob/master/' -%}
+    {%- assign github_link = site.github.repository_url | append: '/edit/master/' -%}
     {%- if page.path contains '/' -%}
       {%- assign github_link = github_link | append: site.collections_dir  | append: '/' -%}
     {%- endif -%}
