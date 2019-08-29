@@ -39,4 +39,6 @@ One of the fastest growing areas of bioinformatics is in the analysis, warehousi
 
 #### Location
 
+* [Room info](https://www.uniability.uzh.ch/static/control/info_display.php?structure=1308)
+
 <img src="{{ "/assets/img/Y01-F-50-location.png" | relative_url }}" style="float: left;" />
