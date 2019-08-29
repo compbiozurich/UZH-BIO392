@@ -11,7 +11,7 @@ tags:
 
 ## {{page.title}}
 
-* Postdoctoral research scientist, Department of Molecular Mechanisms of Disease, University of Zürich [->](https://www.dmmd.uzh.ch/en/research/baubec/groupmembers/imallona.html)
+* Postdoctoral research scientist, Department of Molecular Mechanisms of Disease, University of Zürich [➚](https://www.dmmd.uzh.ch/en/research/baubec/groupmembers/imallona.html)
 
 <!--more-->
 

@@ -11,7 +11,7 @@ tags:
 
 ## {{page.title}}
 
-* Associate Professor of Chemical Engineering, Bogazici University, Istanbul, Turkey [->](http://ozkirimli.che.boun.edu.tr)
+* Associate Professor of Chemical Engineering, Bogazici University, Istanbul, Turkey [➚](http://ozkirimli.che.boun.edu.tr)
 * Visiting Scientist in Department of Biochemistry, Computational Structural Biology, University of Zürich
 
 <!--more-->
