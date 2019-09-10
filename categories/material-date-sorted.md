@@ -8,7 +8,9 @@ layout: default
 
 <div id="listpage_headline_wrapper">
 	<div id="listpage_sortmarker">
-		<a href="{{this_category}}-alpha-sorted.html">[A &rarr; Z]</a>
+ 		<a href="{{this_category}}-date-sorted-reverse.html">[date&nbsp;&uarr;]</a>
+		<a href="{{this_category}}-alpha-sorted.html">[A&nbsp;&rarr;&nbsp;Z]</a>
+		<a href="{{this_category}}-alpha-sorted-reverse.html">[Z&nbsp;&rarr;&nbsp;A]</a>
 	</div>
 	<div id="listpage_headline">
 		<h2 class="page_title">{{ this_pagetitle }}</h2>

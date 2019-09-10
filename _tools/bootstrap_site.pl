@@ -75,14 +75,11 @@ END
 }}}
 
 =podmd
-For `categories` and `tags` annotated in the `_config.yml` file, 3 listing pages
-will be generated:
+#### Listing pages for `categories` and `tags`
 
-* (tag/category).md
-    - the standard landing page, which will be either date or alphabetically
-    sorted, depending on the label in the config (default alphabetic)
-* (tag/category)-date-sorted.md, (tag/category)-alpha-sorted.md
-    - separate date or alpha sorted landing pages, to switch to
+For `categories` and `tags` annotated in the `_config.yml` file, a default 
+landing page (i.e. this_category.md, this_tag.md) is being generated and linked 
+to.
 
 =cut
 
@@ -109,26 +106,42 @@ foreach my $scope (keys %$scopes) {
 	
 	foreach my $item (@{ $scopes->{$scope} }) {
 
-		foreach my $sort ("-date-sorted", "-alpha-sorted") {
+=podmd
+##### List page sort order
+
+The listing pages for categories and tags are provided in alphabetic and date 
+sorted versions. Default (i.e. the page shown when clicking the category or tag 
+page) is "alpha-sorted". The default can be changed in the `_config.yaml` file 
+by listing the respective category or tag in the corresponding sorting 
+attribute, e.g.
+
+```
+tags-date-sorted:
+	- news
+	- lectures
+```
+
+=cut
+
+		copy(
+			$templates.$scope.'-alpha-sorted'.'.md',
+			$type_path.'/'.$item.'.md'
+		);
+			
+		foreach my $sort ("-date-sorted", "-alpha-sorted", "-date-sorted-reverse", "-alpha-sorted-reverse") {
 			copy(
 				$templates.$scope.$sort.'.md',
 				$type_path.'/'.$item.$sort.'.md'
 			);
-		}
-		
-		if (grep{ $item =~ /^$_$/i } @{ $config->{$scope.'-date-sorted'} } ) {
-			copy(
-				$templates.$scope.'-date-sorted'.'.md',
-				$type_path.'/'.$item.'.md'
-			);
-		} else {
-			copy(
-				$templates.$scope.'-alpha-sorted'.'.md',
-				$type_path.'/'.$item.'.md'
-			);
-		}
-	}
-}
+
+			if (grep{ $item =~ /^$_$/i } @{ $config->{$scope.$sort} } ) {
+				copy(
+					$templates.$scope.$sort.'.md',
+					$type_path.'/'.$item.'.md'
+				);
+			}
+
+}}}
 
 =podmd
 

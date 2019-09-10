@@ -86,7 +86,7 @@ header h5  {
 }
 
 #listpage_sortmarker {
-	width: 10%;
+	min-width: 180px;
 	padding-top: 10px;
 	float: right;
 	font-size: 0.8em;
@@ -94,7 +94,7 @@ header h5  {
 }
 
 #listpage_headline {
-	width: 85%;
+/*	width: 78%; */
 	float: left;
 	clear: none;
 }
@@ -117,9 +117,8 @@ div {
   font-weight: 400;
 }
 
-code, pre { font-family: Monaco, Lucida Console, Terminal, Consolas, Courier New, monospace; color: #33c; font-size: 12px; }
-
-pre { display: block; padding: 8px 15px; white-space: pre-wrap; tab-size: 2; background: #f8f8f8; border-radius: 5px; border: 1px solid #e5e5e5; overflow-x: auto; }
+code, pre { font-family: Monaco, Lucida Console, Terminal, Consolas, Courier New, monospace; color: #33c; }
+pre { display: block; padding: 8px 15px; white-space: pre-wrap; tab-size: 2; background: #f8f8f8; border-radius: 5px; border: 1px solid #e5e5e5; overflow-x: auto; font-size: 0.8em; }
 
 table { width: 100%; border-collapse: collapse; }
 
