@@ -54,6 +54,7 @@ general:
   material: 'Course Material'
 
 related_sites:
+  CompbioZurich: "http://www.compbiozurich.org"
   'UZH390 lectures': '/UZH-BIO390/'
   'Baudisgroup at UZH': 'http://info.baudisgroup.org'
 
