@@ -13,7 +13,7 @@ tags:
 
 ## {{ page.title }}
 
-This is a repository for materials related to the BIO392 _Bioinformatics of Genome Variation_ introductory course at the University of Zürich.
+This is a repository for materials related to the BIO392 _Bioinformatics of Sequence Variation_ introductory course at the University of Zürich.
 
 #### Summary
 
@@ -34,7 +34,7 @@ One of the fastest growing areas of bioinformatics is in the analysis, warehousi
 * [Resource links]({{ "/doc/resource-links.html" | relative_url }}) (browsers and online repositories)
 
 #### [Schedule]({{ "/categories/days.html" | relative_url }})
- 
+
 #### [Course feedback pages]({{ "/tags/feedback.html" | relative_url }})
 
 #### Location
