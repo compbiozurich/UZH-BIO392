@@ -26,6 +26,10 @@ procedures.
     - Github accounts
     - resources & know-how
     
+#### Getting to know Github
+
+* [Github Hello World](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners) and links from there
+    
 #### Some initial reading material
 
 * [Evans, Berg _et al._: Finding the Rare Pathogenic Variants in a Human Genome](https://internal.baudisgroup.org/assets/articles_and_presentations/2017-05-09___Evans__Clinical_genome_sequencing__JAMA_comment.pdf)
