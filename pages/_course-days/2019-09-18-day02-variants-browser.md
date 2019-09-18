@@ -18,7 +18,7 @@ emphasis on human genetic variation and reasoning for "large scale data".
 
 <!--more-->
 
-* 9:00 - 11:00: Lecture "Human Genome Variants" [[slides]]({{"/course-material/2019/2019-09-18-BIO392-intro.pdf" | relative_link }})
+* 9:00 - 11:00: Lecture "Human Genome Variants" [[slides]]({{"/UZH-BIO392/course-material/2019/2019-09-18-BIO392-intro.pdf" }})
     - Introduction to some problems and resources
     - genome variation resources
     - genome editions ...
