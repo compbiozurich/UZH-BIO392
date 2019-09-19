@@ -40,3 +40,5 @@ The simplicity of FASTA format makes it easy to manipulate and parse sequences u
 
 BED (Browser Extensible Data) format provides a flexible way to define the data lines that are displayed in an annotation track.
 BED lines have three required fields and nine additional optional fields
+
+Cost per GB storage: 0.5 Fr
