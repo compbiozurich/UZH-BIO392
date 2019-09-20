@@ -1,5 +1,5 @@
-TASK 1
-Estimated storage requirements for the 1000 Genome Project
+# TASK 1
+## Estimated storage requirements for the 1000 Genome Project
 WGS & WES
 
 WGS length 1x: 6, 000, 000, 000 b -> /4*10^6 = space in MB -> 750 MB
@@ -11,6 +11,7 @@ WES for 2504 1x: 1878 MB
 WGS for 2504 7.4x: 13897200 MB = 13.9 TB
 WES for 2504 65.7x: 123384.6 MB = 123.4 GB
 
+## Fileformate
 
 FASTQ: text-based format for storing both a DNA sequence and its corresponding quality scores
 (File sizes raw text ~300GB per 30x sample)
@@ -41,4 +42,4 @@ The simplicity of FASTA format makes it easy to manipulate and parse sequences u
 BED (Browser Extensible Data) format provides a flexible way to define the data lines that are displayed in an annotation track.
 BED lines have three required fields and nine additional optional fields
 
-Cost per GB storage: 0.5 Fr
+*Cost per GB storage: 0.5 Fr*
