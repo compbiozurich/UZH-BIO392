@@ -1,0 +1,53 @@
+2504 Genomes
+6469.66 Mbase per Genome
+2 bits are needed to encode a base
+
+If no overlap: 2 * 2504 * 6469.66 Mb = 32'400'057.28? Mbits 4000000mb
+Overlap of x7.8: 7,8 * 2 * 2504 * 6469,66 Mbase = 31,5 Tb (WGS) (mean coverage about 7.8x)
+Only 1 % exons: 0,1 * 64 * 2 * 2504 * 6469,66 Mbase = 26 Tb (WES) 64x overlap 
+1 letter = 1 byte = 8 bits
+Therefore Mbase/8 = Mb
+
+SAM
+-Template 715 Mb (No overlap, insignificant)
+ca. 200 characters per line = 200 bytes
+Sequence length: about 40 bases
+6469.66 Mbases / 40 bases = 161,74M
+7.8 coverage: 161,74M * 7,8 = 1261572000 Lines
+200 bytes * 1261572000 Lines = 252.314.400.000? = 252 Gb per Genome
+252 Gb/Genome * 2504 Genomes = 631 Tb
+
+BAM
+Binary compression of SAM, filesize normally about 1/4
+--> 631/4 = 158 Tb
+Usefull to safe file size, not readable for normal humans as in binary, yet all information from sam still remains.
+
+CRAM
+From BAM to CRAM
+Lossless: 0,74 * 158 Tb = 117 Tb
+8 bins: 0,42 * 158 Tb = 67 Tb
+no qualtiy scores: 21 Tb --> not very usefull, uncontrolled information loss
+(File size reduction from google)
+
+Compresses BAM files eather with information loss or without, yet the information loss can be controlled and therefore this is a valubal option no lower file size.
+
+VCF
+88.3M Different Variations found (PPP 2. day)
+around 80 characters per line (without sample colums) --> 80 bytes per line is a normal value1 Line per Variation (insignificant besides the 15024 bytes)
++ column per probe (2504) at around 6 bytes = 15024 bites --> total of 15104 bytes per variation
+88300000 * 15094b = 1.332.800.200.000 b = 1.3 Tb
+Small file size without information loss (but the overhead), every sample could be recreated form reference and all variations the specific sample consists of. This will use up a lot of calucation power as it needs to go through the 1.3 Tb of data to find each variation to add.
+
+FASTA
+With no overlap, yet every base needs now 1 byte = 8 bits
+8 * 2504 * 6469.66 Mb = 129.600.229,12 Mb => 129.6 Tb / 2504 genomes
+Readable but inefficant for storage and no annotations, information loss because of no overhead
+
+BED
+Around 60 characters per line = 60b
+For every annotation 1 line
+For every Probe
+(Annotations guess: gene transcripts 226950 gene transcirpts, If short variants and sturctural variants are not annotated...)
+2504 * 60b * 226950 = 34 Gb 
+Pretty small file size, probably faaaaar more annotations than assumed.
+Not very usefull file type to store the data, usefull for transfer into internet browser p.ex., yet in a bit project like the HGP there should really be a need for such a trasfer as most will be processed locally.
