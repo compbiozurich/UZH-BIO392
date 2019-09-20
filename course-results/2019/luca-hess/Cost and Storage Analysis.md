@@ -50,9 +50,9 @@ Raw: 10.64 CHF
 
 ## WES VCF
 
-1% if WGS => 31.3 GB and 15.65 CHF (Raw: 0.11 CHF)
+1% if WGS => 31.3 GB and 15.65 CHF (Raw: 0.11 CHF) 
 
 
-Sources:
+Source:
 1. [Warwick University](https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/nichols/presentations/ohbm2014/imggen/Nho-ImgGen-WGSeqPractical.pdf)
 2. [Medium Corporation](https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0)
