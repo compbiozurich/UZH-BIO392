@@ -2,8 +2,8 @@
 ## Estimated storage requirements for the 1000 Genome Project
 WGS & WES
 
-WGS length 1x: 6, 000, 000, 000 b -> /4*10^6 = space in MB -> 750 MB
-WES length about 1% of WGS: 60, 000, 000 -> /4*10^6 = 7.5 MB
+WGS length 1x: 6, 000, 000, 000 b -> /4\*10^6 = space in MB -> 750 MB
+WES length about 1% of WGS: 60, 000, 000 -> /4\*10^6 = 7.5 MB
 
 WGS for 2504 1x: 187800 MB
 WES for 2504 1x: 1878 MB
