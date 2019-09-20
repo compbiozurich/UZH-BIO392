@@ -1,5 +1,5 @@
-#Cost and File Size Analysis
-###With Estimates provided in the Lecture
+# Cost and File Size Analysis
+### With Estimates provided in the Lecture
 
 In this short essay we make some calculations and estimations regarding the cost and
 size of different data formats. The initial calculations for cost are always made
@@ -7,7 +7,7 @@ with the estimations (0.5 CHF/GB) provided to us by Prof. Baudis. They already c
 additional costs involved in storing such data. Among those would
 be costs for facilities, staff and electricity.
 
-##WGS BAM
+## WGS BAM
 
 100 GB/Genome 30x BAM
 30/7=4.054 => 100/4.054=24.7
@@ -17,11 +17,11 @@ be costs for facilities, staff and electricity.
 0.5 CHF/GB   => 30883.08 CHF
 Raw Storage: 33.65 CHF/TB => 0.034 CHF/GB => 2100 CHF
 
-##WES BAM
+## WES BAM
 
 1% of WGS => 617.67 GB and 308.83 CHF (Raw: 20.80 CHF)
 
-##WGS SAM
+## WGS SAM
 
 500 GB/Genome (1). As 30x coverage seems to be the standard in most publications,
 we assume that the same is true here.
@@ -35,11 +35,11 @@ Hence:
 0.5 CHF/GB   => 154409.16 CHF
 Raw: 10499.82 CHF
 
-##WES SAM
+## WES SAM
 
 1% of WGS => 3088.18 GB and 1544.09 CHF (Raw: 105 CHF)
 
-##WGS VCF
+## WGS VCF
 
 According to the medium.com website, a normal genome in VCF format (so only variations),
 is about 125 MB (2).
@@ -48,7 +48,7 @@ is about 125 MB (2).
 0.5CHF/GB    => 156.5 CHF
 Raw: 10.64 CHF
 
-##WES VCF
+## WES VCF
 
 1% if WGS => 31.3 GB and 15.65 CHF (Raw: 0.11 CHF)
 
