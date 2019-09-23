@@ -45,8 +45,13 @@ curl http://gattaca.imppc.org/groups/maplab/imallona/teaching/example.bed \
 curl http://gattaca.imppc.org/groups/maplab/imallona/teaching/hg19.genome \
    > hg19.genome
 
+## this will check which kind of file it is
 file example.bed
+
+# this its size
 ls -lah example.bed
+
+# this will print the first lines
 head example.bed
 
 file hg19.genome
@@ -86,7 +91,9 @@ file ~/course/output/out.bb
 
 ## Software compiling (bedtools)
 
-Retrieving source code and using a Makefile.
+To install bedtools, a commonly used compbio software, we will download the source code and compile it using a Makefile. We will use commands to specify the software version and will generate binaries that are optimized for our computers.
+
+Makefiles are written as sets of rules and are not only used to install software; workflows for data analysis can be coded as Makefiles. Read more about [makefiles at Wikipedia](https://en.wikipedia.org/wiki/Makefile), and about bioinformatics workflows [https://academic.oup.com/bioinformatics/article/33/21/3502/3806980](Holmes and Mungall, 2017) and reproducibility.
 
 
 ```bash
@@ -124,6 +131,8 @@ wc -l ~/course/data/example.bed
 ## Exercise 2
 
 Get the manual page of `head`, what is this command for?
+
+Tip: to exit the `man` page press `q`.
 
 <details><summary>Answer</summary>
 <p>
@@ -478,6 +487,8 @@ awk 'NR % 2 == 1' example.fa | wc -l
 
 
 # SAM format
+
+* [https://samtools.github.io/hts-specs/SAMv1.pdf](SAM v1 format specification).
 
 ## Exercise 15
 
