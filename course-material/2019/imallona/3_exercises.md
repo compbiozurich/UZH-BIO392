@@ -901,7 +901,7 @@ Answer
 
 Git repository at [https://github.com/vcftools/vcftools](https://github.com/vcftools/vcftools)
 
-There is a tag named v0.1.16 (as for the 26th Sept 2018) [https://github.com/vcftools/vcftools/releases](https://github.com/vcftools/vcftools/releases)
+Latest tag on Sept the 23rd 2019 is tag named `v0.1.16` (released Aug 2nd 2018) [https://github.com/vcftools/vcftools/releases](https://github.com/vcftools/vcftools/releases)
 
 </p>
 </details>
@@ -988,7 +988,7 @@ vcftools --vcf ~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf
 
 # Real data integration
 
-Please note these exercises are real examples of analysis carried out by computational biologists working on human genetic variation. Even though they might be solved in relatively few lines of standard UNIX tools (`curl`, `head`, `wc`, `awk`) and bioinformatics software (`vcftools`), they are extremely complex, and will process somewhat big amounts of data.
+Please note these exercises are meant to provide a real use case of computational biology applied to human genetic variation. Even though some of them might be solved in relatively few lines of standard UNIX tools (`curl`, `head`, `wc`, `awk`) and bioinformatics software (`vcftools`), they are complex, and will process somewhat big amounts of data.
 
 ## Exercise 33
 
@@ -1025,9 +1025,17 @@ vcftools --vcf CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 
 ## Exercise 34
 
-As a first exercise, how many of these intersions overlap human exons? Do you expect it to be a low or high proportion?
+As a first exercise, how many of these overlap human exons? Do you expect it to be a low or high proportion? (tip: deletereous mutations in exons, e.g. coding sequences, are selected against).
 
-To do so download an exons bedfile from `https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed` and then use bedtools intersect. Tip: it won't work because of the chromosome numbering (tip: check how chromosome numbers are encoded in both exons.bed and the vcf file, i.e. whether starting with a `chr` or not, and harmonize them using `awk`).
+To do so download an exons bedfile from `https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed` and then use `bedtools intersect` with the VCF file.
+
+Tip: it won't work on the first attempt because of the chromosome numbering, e.g. `chr10` vs plainly `10`.
+
+Tip: check how chromosome numbers are encoded in both exons.bed and the vcf file, i.e. whether starting with a `chr` or not, and harmonize them using `sed` as needed.
+
+Tip: `sed`-based string replacement examples can be found [here](https://linuxize.com/post/how-to-use-sed-to-find-and-replace-string-in-files/). Please remember to append a `g`, e.g. `s/example/example2/g` for global replacement (all occurrences).
+
+Tip: when inspecting large files with long headers, `tail` (showing last lines) might be handier than `head` (showing first lines).
 
 <details><summary>
 Answer
@@ -1064,7 +1072,7 @@ bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 
 ```
 
-Are these few or lots? What would you expect?
+Are these numbers few or lots? What would you expect? Tip: count the overlaps piping `wc -l` to the intersect command.
 
 
 ```bash
