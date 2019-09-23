@@ -70,6 +70,7 @@ curl http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bedToBigBed \
 file bedToBigBed
 
 ## adding exec permissions to the binary
+
 chmod a+x bedToBigBed
 
 # testing usage
@@ -136,7 +137,7 @@ man head
 
 ## Exercise 3
 
-Get the first 5 lines of the file `~/course/data/example.bed`
+Get the first 5 lines of the file `~/course/data/example.bed`. Tip: use `head`.
 
 <details><summary>Answer</summary>
 <p>
@@ -151,8 +152,6 @@ head -5 ~/course/data/example.bed
 ## Exercise 4
 
 Using pipes (`|`): chain the `head -5` command before with  `wc -l` to make sure the number of lines was as expected (5).
-
-
 
 <details><summary>Answer</summary>
 <p>
@@ -174,6 +173,8 @@ DISCLAIMER: data is based upon the beautiful Genome Analysis Workshop (MOLB 7621
 Retrieve the data for these exercises (mind the path you're working at, should be `~/course/data`).
 
 The path for URL for the data is https://molb7621.github.io/workshop/_downloads/SP1.fq
+
+Tip: use `curl`.
 
 
 <details><summary>
@@ -198,6 +199,7 @@ curl -L https://molb7621.github.io/workshop/_downloads/SP1.fq  \
 
 Inspect the file from the previous exercise (file size, number of lines, and visualize its head)
 
+Tips: `ls -l`, `wc`, `head`.
 
 <details><summary>
 Answer
@@ -290,7 +292,7 @@ Answer
 Next, extract out the read *sequences* from the fastq. This is a bit
 complicated as we need to only pull out the second line from each record. 
 
-
+How could we extract every second line? Tip: think of integer division.
 
 <details><summary>
 Answer
@@ -327,7 +329,7 @@ awk 'NR%4==2'   ~/course/data/SP1.fq
 
 ## Exercise 10
 
-Print the line numbers of the file `SP1.fq`
+Print the line numbers of the file `SP1.fq` using awk.
 
 <details><summary>
 Answer
@@ -355,8 +357,8 @@ awk '{print NR, $0 }' SP1.fq | head # note output in first column
 
 (Source: [MOLB7621](https://molb7621.github.io/workshop/Syllabus.html))
 
-We can use the modulo operator with ``NR`` to only capture specific
-records from the fastq
+Retrieve specific records from a fastq file (e.g. header, comments etc).
+ Tip: use the modulo operator with ``NR`` to only capture specific records from the fastq.
 
 
 ```bash
@@ -394,7 +396,7 @@ awk 'NR % 4 == 0' SP1.fq | head  # get quality line
 
 (Source: [MOLB7621](https://molb7621.github.io/workshop/Syllabus.html))
 
-FASTA format is a more compact sequence format than FASTQ
+FASTA format is a more compact sequence format than FASTQ.
 
 ```bash
 >sequence_identifier_1
@@ -403,7 +405,9 @@ ATCGTCGATGCTAGTCGA
 AGCTAGCTAGCTAGC
 ```
 
-Convert fastq to fasta (tip: use lines 1 and 2)
+Convert fastq to fasta
+
+Tip: use every first and second line using awk and modulo operators.
 
 
 <details><summary>
@@ -454,7 +458,9 @@ awk 'NR % 4 == 1 {print ">"$0};
 
 ## Exercise 14
 
-Make sure the number of sequences is the same in both fastq and fasta files
+Make sure the number of sequences is the same in both fastq and fasta files.
+
+Tip: use `wc -l` to count lines, and use the modulo operator to focus on individual records.
 
 <details><summary>
 Answer
@@ -475,7 +481,7 @@ awk 'NR % 2 == 1' example.fa | wc -l
 
 ## Exercise 15
 
-Download the compressed SAM data from ` https://github.com/samtools/samtools/raw/develop/examples/ex1.sam.gz`,  uncompress (`.gz` files need to be uncompressed with `gunzip`) and inspect it.
+Download the compressed SAM data from ` https://github.com/samtools/samtools/raw/develop/examples/ex1.sam.gz`,  uncompress (tip: `.gz` files can be uncompressed with `gunzip`) and inspect it.
 
 <details><summary>
 Answer
@@ -514,6 +520,7 @@ Answer
 ```bash
 
 ## to go to the a.bed file directory
+
 cd ~/course/soft/bedtools2/test/intersect/
 
 awk -v OFS='\t' '{print $1,$2,$3}' a.bed
@@ -527,9 +534,11 @@ cd - ## to go back to the previous directory
 
 ## Exercise 17
 
-Transform the BED3 file ` ~/course/soft/bedtools2/test/intersect/recordsOutOfOrder.bed` to BED6 (unspecified strand, 0 score)
+Transform the BED3 file ` ~/course/soft/bedtools2/test/intersect/recordsOutOfOrder.bed` to BED6 (unspecified strand, 0 score).
 
-Tip: check the [BED6 file specification](https://genome.ucsc.edu/FAQ/FAQformat.html#format1)
+Tip: check the [BED6 file specification](https://genome.ucsc.edu/FAQ/FAQformat.html#format1).
+
+Tip: `awk` will print text as is if flanked by quotes (if `'` are already in use, `"` might be useful).
 
 <details><summary>
 Answer
@@ -556,7 +565,7 @@ cd - ## to go back to the previous directory
 
 Add a nucleotide to the start and subtract a nucleotide to the end to all records, regardless of the strand, to the file `~/course/soft/bedtools2/test/intersect/a.bed`.
 
-Tip: use `awk`.
+Tip: use `awk` and use the standard operators `+` or `-` to add/subtract values to each record.
 
 <details><summary>
 Answer
@@ -589,7 +598,7 @@ Use [bedtools intersect](http://bedtools.readthedocs.io/en/latest/content/tools/
 
 For this and the next exercises we use some example datasets from the bedtools sourcecode we compiled in one of the first activities. For instance, you could check them i.e. at `~/course/soft/bedtools2/test/intersect/`.
 
-Check the `~/course/soft/bedtools2/test/intersect/a.bed` and `~/course/soft/bedtools2/test/intersect/b.bed` files content. Are they BED3, BED6 or BED12 files?
+Check the `~/course/soft/bedtools2/test/intersect/a.bed` and `~/course/soft/bedtools2/test/intersect/b.bed` files content. Are they BED3, BED6 or BED12 files? (tip: count the number of columns).
 
 <details><summary>
 Answer
@@ -599,8 +608,8 @@ Answer
 
 ```bash
 
-cat ~/course/soft/bedtools2/test/intersect/a.bed
-cat ~/course/soft/bedtools2/test/intersect/b.bed
+head ~/course/soft/bedtools2/test/intersect/a.bed
+head ~/course/soft/bedtools2/test/intersect/b.bed
 ```
 </p>
 </details>
@@ -669,7 +678,8 @@ bedtools intersect \
   -a  ~/course/soft/bedtools2/test/intersect/b.bed
 ```
 
-Tip: check the strands
+Tip: check the strands.
+
 </p>
 </details>
 
@@ -783,7 +793,7 @@ wc -l chr22_with_ERCC92.gtf
 ## Exercise 26
 
 Retrieve the details of transcript `ENST00000342247` (tip: use grep) from the
-`chr22_with_ERCC92.gtf` file. Then, retrieve the details of the `exon`s of transcript  `ENST00000342247` (tip: use grep after the grep). How many exons are they?
+`chr22_with_ERCC92.gtf` file. Then, retrieve the details of the `exon`s of transcript  `ENST00000342247` (tip: use grep after the grep). How many exons are there?
 
 
 <details><summary>
@@ -809,7 +819,7 @@ grep ENST00000342247 chr22_with_ERCC92.gtf | grep "exon\s" | wc -l
 
 ## Exercise 27
 
-How many start codons and stop codons does the chr22 have? Tip: use the gtf and grep for `start_codon` and `stop_codon`.
+How many start codons and stop codons does the chr22 have? Tip: use the gtf and `grep` for `start_codon` and `stop_codon`.
 
 
 <details><summary>
@@ -826,7 +836,6 @@ grep start_codon chr22_with_ERCC92.gtf | wc -l
 
 grep stop_codon chr22_with_ERCC92.gtf | wc -l
 
-
 ```
 
 </p>
@@ -840,7 +849,9 @@ grep stop_codon chr22_with_ERCC92.gtf | wc -l
 
 ## Exercise 28
 
-Install an old version of VCFtools (disclaimer, this is old! this version is ok for teaching purposes, but please consider installing an up-to-date verson for handling your data in the future) you can download from `https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download` using `make`. The path you can choose, but you can use for instance `~/course/soft/`.
+Install an old version of VCFtools (disclaimer, this is old! this version is convenient for teaching purposes, but please consider installing an up-to-date verson for handling your data in the future).
+
+To download the old version, please use the URL `https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download` and compile using `make`. The path you can choose, but you can use for instance `~/course/soft/`.
 
 <details><summary>
 Answer
@@ -887,7 +898,7 @@ There is a tag named v0.1.16 (as for the 26th Sept 2018) [https://github.com/vcf
 
 ## Exercise 30
 
-VCFtools has some data for testing purposes; find all the VCF files (filenames similar to `*vcf*`) that you downloaded during installation and inspect them using `head`.
+VCFtools has some data for testing purposes; `find` all the VCF files (filenames similar to `*vcf*`) that you downloaded during installation and inspect them using `head`.
 
 <details><summary>
 Answer
@@ -966,6 +977,8 @@ vcftools --vcf ~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf
 
 # Real data integration
 
+Please note these exercises are real examples of analysis carried out by computational biologists working on human genetic variation. Even though they might be solved in relatively few lines of standard UNIX tools (`curl`, `head`, `wc`, `awk`) and bioinformatics software (`vcftools`), they are extremely complex, and will process somewhat big amounts of data.
+
 ## Exercise 33
 
 Explore human variation data for mobile elements insertion using the [1000genomes data](http://www.internationalgenome.org/data). More precisely, download the pilot [pilot data](ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/) named `CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz` (the full path to the remote FTP server is `ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz`).
@@ -1001,7 +1014,7 @@ vcftools --vcf CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 
 ## Exercise 34
 
-As a first exercise, how many of these intertions overlap human exons? Do you expect it to be a low or high proportion?
+As a first exercise, how many of these intersions overlap human exons? Do you expect it to be a low or high proportion?
 
 To do so download an exons bedfile from `https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed` and then use bedtools intersect. Tip: it won't work because of the chromosome numbering (tip: check how chromosome numbers are encoded in both exons.bed and the vcf file, i.e. whether starting with a `chr` or not, and harmonize them using `awk`).
 
@@ -1073,7 +1086,7 @@ cd ~/course/data
 
 curl -O https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed
 
-# first removing the chrstrings again
+# first removing the chr prepended strings again
 
 sed 's/^chr//g' hesc.chromHmm.bed > hesc.chromHmm_nochr.bed
 
