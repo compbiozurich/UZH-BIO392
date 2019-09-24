@@ -93,7 +93,7 @@ file ~/course/output/out.bb
 
 To install bedtools, a commonly used compbio software, we will download the source code and compile it using a Makefile. We will use commands to specify the software version and will generate binaries that are optimized for our computers.
 
-Makefiles are written as sets of rules and are not only used to install software; workflows for data analysis can be coded as Makefiles. Read more about [makefiles at Wikipedia](https://en.wikipedia.org/wiki/Makefile), and about bioinformatics workflows [https://academic.oup.com/bioinformatics/article/33/21/3502/3806980](Holmes and Mungall, 2017) and reproducibility.
+Makefiles are written as sets of rules and are not only used to install software; workflows for data analysis can be coded as Makefiles. Read more about [Makefiles at Wikipedia](https://en.wikipedia.org/wiki/Makefile), and about bioinformatics workflows [Holmes and Mungall, 2017](https://academic.oup.com/bioinformatics/article/33/21/3502/3806980) and reproducibility.
 
 
 ```bash
