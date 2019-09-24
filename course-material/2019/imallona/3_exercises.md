@@ -2,7 +2,7 @@
 
 Please run the tutorial at [SIB Course on UNIX](https://edu.sib.swiss/pluginfile.php/2878/mod_resource/content/4/couselab-html/content.html) first.
 
-(Mind that we are running MacOS and not GNU/Linux)
+(Mind that we are running MacOS and not GNU/Linux, so some paths might change)
 
 Cheatsheets:
 
@@ -14,12 +14,30 @@ For extra/advanced reading, please check the following tutorials on bash and awk
 * [Shell](http://www.grymoire.com/Unix/Sh.html)
 * [awk](http://www.grymoire.com/Unix/Awk.html)
 
+Quick math reminder (modulo operator, to be used with, mostly, fastqs)
+
+* [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation)
+
+Papers on bedtools, vcftools, samtools and workflows:
+
+* [Reproducibility](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)
+* [make/biomake](https://academic.oup.com/bioinformatics/article/33/21/3502/3806980)
+* [BEDTools](https://academic.oup.com/bioinformatics/article/26/6/841/244688)
+* [VCFtools](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3137218/)
+* [SAMtools](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2723002/)
+
+Papers on the biology behind of the datasets used
+
+* [Mobile elements, Stewart et al 2011](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002236)
+* [chromHMM, Ernst et al](https://www.nature.com/articles/nmeth.1906).
+* [Disease-associated variation](https://www.ncbi.nlm.nih.gov/pubmed/22955828)
+
+
 # Set up
 
 ## Folders
 
 Setting up a working directory with folders
-
 
 ```bash
 cd ~ # goes to the home directory
@@ -60,34 +78,34 @@ head hg19.genome
 
 ```
 
-## Executable software download
+<!-- ## Executable software download -->
 
-```bash
+<!-- ```bash -->
 
-mkdir ~/course/soft/kent
-cd ~/course/soft/kent
+<!-- mkdir ~/course/soft/kent -->
+<!-- cd ~/course/soft/kent -->
 
-pwd  # printing current directory
+<!-- pwd  # printing current directory -->
 
-curl http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bedToBigBed \
-   > bedToBigBed
+<!-- curl http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bedToBigBed \ -->
+<!--    > bedToBigBed -->
 
-file bedToBigBed
+<!-- file bedToBigBed -->
 
-## adding exec permissions to the binary
+<!-- ## adding exec permissions to the binary -->
 
-chmod a+x bedToBigBed
+<!-- chmod a+x bedToBigBed -->
 
-# testing usage
+<!-- # testing usage -->
 
-## running the actual command
-./bedToBigBed ../../data/example.bed ../../data/hg19.genome ~/course/output/out.bb
+<!-- ## running the actual command -->
+<!-- ./bedToBigBed ../../data/example.bed ../../data/hg19.genome ~/course/output/out.bb -->
 
-ls -lah ~/course/data/example.bed
-ls -lah ~/course/output/out.bb
-file ~/course/output/out.bb
+<!-- ls -lah ~/course/data/example.bed -->
+<!-- ls -lah ~/course/output/out.bb -->
+<!-- file ~/course/output/out.bb -->
 
-```
+<!-- ``` -->
 
 ## Software compiling (bedtools)
 
@@ -690,13 +708,13 @@ bedtools intersect \
 ```
 
 Tip: check the strands.
-
+Tip: read the documentation https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
 </p>
 </details>
 
 ## Exercise 22
 
-Run bedtools intersect with the `a.bed` file as `-a`,  the `b.bed` file as `-b` but forcing strandness, i.e. reporting hits in B that overlap A on the same strand
+Run bedtools intersect with the `a.bed` file as `-a`,  the `b.bed` file as `-b` but forcing strandness, i.e. reporting hits in B that overlap A on the same strand. [Bedtools intersect documentation](https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html).
 
 <details><summary>
 Answer
@@ -717,7 +735,7 @@ bedtools intersect \
 
 ## Exercise 23
 
-Use the `-v` to report those intervals in `a.bed` that do not overlap any of the intervals in `b.bed`.
+Use the `-v` to report those intervals in `a.bed` that do not overlap any of the intervals in `b.bed`.  [Bedtools intersect documentation](https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html).
 
 
 <details><summary>
@@ -854,15 +872,16 @@ grep stop_codon chr22_with_ERCC92.gtf | wc -l
 
 </details>
 
-
-
 # VCF
 
 ## Exercise 28
 
-Install an old version of VCFtools (disclaimer, this is old! this version is convenient for teaching purposes, but please consider installing an up-to-date verson for handling your data in the future).
+Install an old version of VCFtools (disclaimer, this version is convenient for teaching purposes, but please consider installing an up-to-date verson for handling your data in the future).
 
 To download the old version, please use the URL `https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download` and compile using `make`. The path you can choose, but you can use for instance `~/course/soft/`.
+
+Tip: to uncompress a `tar.gz` file use `tar xzvf`.
+Tip: we compiled `bedtools` as exercise number 0.
 
 <details><summary>
 Answer
@@ -998,7 +1017,9 @@ Then, explore the number of variants (tip: use `vcftools`), the file contents et
 
 Tip: remember where the `bedtools` and `vcftools` binaries are and/or use an alias to them.
 
-For further details on mobile elements insertion as a source of human variation please check the paper [Stewart et al 2011](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002236).
+Tip: to uncompress `.gz` files (not `tar.gz` but plain `gz`) use `gunzip`.
+
+For further details on mobile elements insertion as a source of human variation please read the paper [Stewart et al 2011](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002236).
 
 <details><summary>
 Answer
@@ -1010,7 +1031,6 @@ Answer
 
 cd ~/course/data
 curl -L ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz > CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz
-
 
 gunzip CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz 
 
@@ -1033,7 +1053,7 @@ Tip: it won't work on the first attempt because of the chromosome numbering, e.g
 
 Tip: check how chromosome numbers are encoded in both exons.bed and the vcf file, i.e. whether starting with a `chr` or not, and harmonize them using `sed` as needed.
 
-Tip: `sed`-based string replacement examples can be found [here](https://linuxize.com/post/how-to-use-sed-to-find-and-replace-string-in-files/). Please remember to append a `g`, e.g. `s/example/example2/g` for global replacement (all occurrences).
+Tip: use `sed` to harmonize files. You could get rid of the `chr` strings from a file, or add them to the file without them. `sed`-based string replacement examples can be found [here](https://linuxize.com/post/how-to-use-sed-to-find-and-replace-string-in-files/). Please remember to append a `g`, e.g. `s/example/example2/g` for global replacement (all occurrences).
 
 Tip: when inspecting large files with long headers, `tail` (showing last lines) might be handier than `head` (showing first lines).
 
@@ -1079,7 +1099,6 @@ Are these numbers few or lots? What would you expect? Tip: count the overlaps pi
 
 bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf   -b exons_nochr.bed | wc -l
 
-
 ```
 
 </p>
@@ -1122,6 +1141,7 @@ awk '{print $4}' hesc.chromHmm_nochr.bed | sort | uniq -c
 
 ```
 
+Still, we could evaluate this statistically. Can you figure out how? is this a contingency-table problem? Please check `bedtools fisher`.
 
 </p>
 </details>
@@ -1134,8 +1154,6 @@ Play with other real genomic data using the [BEDtools tutorial](http://quinlanla
 Mind that the tutorial recommends creating a folder with `mkdir -p ~/workspace/monday/bedtools`: if you do so and move (`mv`) there, your path (the one you can get using `pwd`) won't be at the standard `~/course` we used till now.
 
 Remember that the bedtools binary can be aliased using ``alias bedtools='~/course/soft/bedtools2/bin/bedtools'``.
-
-Some of the puzzles include:
 
 * Count the number of exons and CpG islands
 
@@ -1156,7 +1174,6 @@ Count the number of lines using `wc -l exons.bed` etc.
 
 * How many CpG islands overlap exons in the genome?
 
-
 <details><summary>
 Tip
 </summary>
@@ -1164,7 +1181,7 @@ Tip
 <p>
 
 
-Intersect and count
+Bedtools intersect and count
 
 ```bash
 
@@ -1184,7 +1201,7 @@ Tip
 
 <p>
 
-Use intersect with the `-v` flag
+Use bedtools intersect with the `-v` flag
 
 </p>
 </details>
@@ -1197,16 +1214,14 @@ Tip
 
 <p>
 
-(Hint - have a look at the closest tool.)
+(Hint - bedtools closest tool)
 </p>
 </details>
-
-* What fraction of the GWAS SNPs are exonic?
 
 
 ## Exercises block 37
 
-Explore (not necessarily run) more usage examples with biological meaning using UNIX and BEDTools [http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/](http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/).
+Explore (not necessarily run) more usage examples with biological meaning using UNIX and BEDTools [http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/](http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/) and [bedtools advanced](https://bedtools.readthedocs.io/en/latest/content/advanced-usage.html).
 
 
 ## Exercise 38 Sum up
