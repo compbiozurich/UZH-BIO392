@@ -1,0 +1,46 @@
+#Split in new
+chr1	71679114	180533364	0	0.0324	1
+#Split in new
+chr2	82603782	110970825	0	0.088	2
+#Partially deleted in new
+chr4	48508980	66516742	0	-0.074	2
+#Split in new
+chr6	137020	64351536	0	0.0761	1
+#Partially deleted in new
+chr8	34224399	47993222	0	-0.0542	1
+#Split in new
+chr9	33834616	140079190	0	-0.0284	1
+#Split in new
+chr10	930160	44765961	0	0.0519	4
+#Split in new
+chr10	46364531	80351461	0	-0.0555	3
+#Split in new
+chr11	42987419	65222278	0	-0.0392	3
+#Partially deleted in new
+chr11	69018764	69442407	1	0.3114	5
+#Split in new
+chr12	74309	609769	0	0.1358	1
+#Partially deleted in new
+chr12	32397058	61925114	0	-0.021	3
+#Split in new
+chr15	18911987	69129117	0	-0.0693	6
+#Split in new
+chr16	2112377	87520703	0	0.0244	1
+#Partially deleted in new
+chr16	87854017	88616697	0	-0.1167	1
+#Partially deleted in new
+chr17	64044	453421	0	0.0292	4
+#Split in new
+chr17	21836075	35330119	0	0.0272	2
+#Split in new
+chr19	4228864	57260695	0	-0.0073	8
+#Partially deleted in new
+chr19	58967505	63683267	1	0.1783	1
+#Partially deleted in new
+chr20	12568863	34282681	0	0.0501	3
+#Deleted in new
+chr22	14487197	15896353	-1	-0.331	4
+#Split in new
+chr22	16649830	24065295	0	-0.0559	3
+#Deleted in new
+Y	1708116	57644328	0	0.0753	2
