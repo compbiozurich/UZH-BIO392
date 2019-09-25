@@ -1,0 +1,31 @@
+Last login: Fri Sep 28 20:01:03 on console
+Gaos-MacBook-Pro:~ gaobo$ cd /Users/gaobo/DataFiles/course/bio392/t2/blast/files/
+Gaos-MacBook-Pro:files gaobo$ ls
+a_script.sh     blast_me.txt    blast_parser.py blastp
+Gaos-MacBook-Pro:files gaobo$ ls
+a_script.sh     blast_me.txt    blast_parser.py blastp
+Gaos-MacBook-Pro:files gaobo$ blastp
+-bash: blastp: command not found
+Gaos-MacBook-Pro:files gaobo$ ./blastp
+BLAST query/options error: Either a BLAST database or subject sequence(s) must be specified
+Please refer to the BLAST+ user manual.
+Gaos-MacBook-Pro:files gaobo$ ./blastp -db swissprot -query blast_me.txt -out results.out -remote
+Gaos-MacBook-Pro:files gaobo$ ls
+a_script.sh     blast_me.txt    blast_parser.py blastp          results.out
+Gaos-MacBook-Pro:files gaobo$
+Gaos-MacBook-Pro:files gaobo$
+Gaos-MacBook-Pro:files gaobo$ ./blastp -db swissprot -query blast_me.txt -out results.html -remote -html
+Gaos-MacBook-Pro:files gaobo$ python3 blast_parser.py
+Gaos-MacBook-Pro:files gaobo$ ls
+a_script.sh     blast_parser.py results.csv     results.out
+blast_me.txt    blastp          results.html
+Gaos-MacBook-Pro:files gaobo$ sh a_script.sh
+Need 1 arguments
+Gaos-MacBook-Pro:files gaobo$ sh a_script.sh results.out
+Warning: [blastp] Query is Empty!
+^CTraceback (most recent call last):
+  File "blast_parser.py", line 11, in <module>
+    tokens = line.rstrip().split()
+KeyboardInterrupt
+Gaos-MacBook-Pro:files gaobo$ sh a_script.sh blast_me.txt
+Gaos-MacBook-Pro:files gaobo$

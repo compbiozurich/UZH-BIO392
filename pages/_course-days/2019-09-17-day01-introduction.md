@@ -32,8 +32,8 @@ procedures.
     
 #### Some initial reading material
 
-* [Evans, Berg _et al._: Finding the Rare Pathogenic Variants in a Human Genome](https://internal.baudisgroup.org/assets/articles_and_presentations/2017-05-09___Evans__Clinical_genome_sequencing__JAMA_comment.pdf)
-* [Heather and Chain (2016): The sequence of sequencers](https://internal.baudisgroup.org/assets/articles_and_presentations/2016-01-15___Heather_and_Chain__The-sequence-of-sequencers__Genomics.pdf)
-* [1000 Genomes Paper (2015)](https://internal.baudisgroup.org/assets/articles_and_presentations/2015-10-01___1000-Genomes-Consortium__A-global-reference-for-human-genetic-variation__Nature.pdf)
-* [Eichler _et al._: Genome structural variation discovery and genotyping (2011)](https://internal.baudisgroup.org/assets/articles_and_presentations/2011-05-12___Eichler_et_al__Review_structural_variations_arrays__NatRevGen.pdf)
+* [Evans, Berg _et al._: Finding the Rare Pathogenic Variants in a Human Genome](https://internal.baudisgroup.org/pdf/2017-05-09___Evans__Clinical_genome_sequencing__JAMA_comment.pdf)
+* [Heather and Chain (2016): The sequence of sequencers](https://internal.baudisgroup.org/pdf/2016-01-15___Heather_and_Chain__The-sequence-of-sequencers__Genomics.pdf)
+* [1000 Genomes Paper (2015)](https://internal.baudisgroup.org/pdf/2015-10-01___1000-Genomes-Consortium__A-global-reference-for-human-genetic-variation__Nature.pdf)
+* [Eichler _et al._: Genome structural variation discovery and genotyping (2011)](https://internal.baudisgroup.org/pdf/2011-05-12___Eichler_et_al__Review_structural_variations_arrays__NatRevGen.pdf)
 
