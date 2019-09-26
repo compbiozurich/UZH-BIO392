@@ -18,11 +18,12 @@ emphasis on human genetic variation and reasoning for "large scale data".
 
 <!--more-->
 
-* 9:00 - 11:00: Lecture "Human Genome Variants" [[slides]]({{"/course-material/2019/2019-09-18-BIO392-intro.pdf" | relative_link }})
+* 9:00 - 11:00: Lecture "Human Genome Variants" [[slides]]({{"/UZH-BIO392/course-material/2019/2019-09-18-BIO392-intro.pdf" }})
     - Introduction to some problems and resources
     - genome variation resources
     - genome editions ...
 * 11:00 - 12:00: Recap Github setup
-* 13:00 - 16:00: Genome browser & lift-over
-    - discussion & exercises
+* 13:00 - 14:30: Converting genomoe coordinates using UCSC Genome Browser and local tools
+* 14:30 - 16:00: Exploring sequence similiarity using BLAST and processing data using scripts
+
 
