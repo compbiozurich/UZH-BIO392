@@ -24,9 +24,9 @@ __Are these natural variants close to the active site in sequence?__ \
 
 __Find out more about your protein. What is its biological function? What does it do?__ \
 *It delivers Fe<sup>2+</sup> to promote the biosythesis of heme proteins or to assemble/repair iron-sulfur clusters. \
-Because it can oxidize Fe<sup>2+</sup> to Fe<sup>3+</sup> it is __believed__ to protect the cell against iron-catalyzed oxidative stress. \*
+Because it can oxidize Fe<sup>2+</sup> to Fe<sup>3+</sup> it is __believed__ to protect the cell against iron-catalyzed oxidative stress.* \
 
-__Report the GO terms for your protein__ \
+__Report the GO terms for your protein__ 
 - ferrous iron binding	(4)	+	-
 - mitochondrial matrix	(4)	+	-
 - protein binding	(4)	+	-
