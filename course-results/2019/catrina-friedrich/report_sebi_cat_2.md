@@ -20,4 +20,4 @@ __Note natural variants (Feature viewer)__
 - VAR_049100
 
 __Are these natural variants close to the active site in sequence?__ \
-Even though the protein has catalytic activity (4 Fe^2+^ + 4 H^+^ + O~2~ = 4 Fe^3+^ + 2 H~2~O) and interacts with several other proteins, there is no information about the sites.
+Even though the protein has catalytic activity (4 Fe<sup>2+</sup> + 4 H<sup>+</sup> + O<sub>2</sub> = 4 Fe<sup>3+</sup> + 2 H<sub>2</sub>O) and interacts with several other proteins, there is no information about the sites.
