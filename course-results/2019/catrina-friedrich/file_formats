@@ -1,0 +1,67 @@
+# 1000 Genome Project:
+
+> "_All individuals weresequenced using both whole-genome sequencing (mean depth 7.4X)
+> and targeted exome sequencing (mean depth 65.7X)_",
+(1000 Genomes (2015): A global reference for human genetic variation)
+
+
+## SAM
+
+Sequence alignment map file with a size of 500 GB for a sample with
+30X coverage.
+But for 1000 genome Project the depth 7.4X. (times 4.05 less)
+(WGS)
+storage: 500GB/4.05 \* 2504 = ~300 TB
+(WES) Exome is 1% of the whole genome and coverage depth twice as high
+storage: 500GB \* 2 \* 0.01 \* 2504 = ~25 TB
+
+
+
+## BAM
+
+BAM is the comprised binary version of SAM (binary alignment map)
+100 GB for sample file with 30X.
+(WGS)
+storage: 100GB/4.05 \* 2504 = ~60 TB
+(WES)
+storage: 100GB \* 2 \* 0.01 \* 2504 = ~5 TB
+
+
+
+## VCF
+
+Variant call Format has a row for each variant.
+Gerstein Lab: 88.3 million different variants in humans.
+2504 samples means there will be so many columns
+Each sample column requires 6 characters
+-> 6 bytes \* 2504 = 15 MB per line just for the samples
+Since the number of the other columns is so small (maybe additional 70 characters per line), I will not consider them.
+8.83 \* 10^7 \* 15MB = 132.45 \* 10^7 MB = 1'327 TB
+(WGS)
+storage: 1'327 TB
+(WES) (Assuming that only 1% of all variants occur in the exome)
+storage: 13.27 TB
+Compressing VCF files with BGZip and indexing it with Tabix
+is the standard way VCF files are stored (reduce storage needed)
+
+
+## FASTA
+
+Very similar to BAM/SAM files, but in ASCII characters, so text-based.
+So 8 bits instead of 2 bits per base --> 4 times as much as:
+(WGS)
+storage: 60 TB \* 4 = ~240 TB
+(WES)
+storage: 5 TB \* 4 = ~20 TB
+
+
+## CRAM
+
+Reference-based alternative to SAM.
+They are a compressed version of the alignment.
+CRAM files store data in columns that are aligned to the reference sequence,
+allowing users to extract information efficiently from particular subsets
+of the file on particular chromosomes
+
+
+The cost directly correlates with the amount of storage needed. (0.5CHF/GB)
