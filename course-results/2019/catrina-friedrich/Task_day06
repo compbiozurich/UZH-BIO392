@@ -1,0 +1,50 @@
+Impact of genetic variation on three dimensional structure and function of proteins
+
+What is the biological question? 
+Systematic and qualitative analysis of proteins for which 3D structures of genetic variant proteins have been determined. 
+To understand the relationship between point mutations and observed variants in 3D.
+
+What is the method? 
+Find protein structures with non-synonymous SNVs where the amino acid sequence observed experimentally 
+(obtained from PDB) is not identical to the sequence provided by UniProt.
+
+What significant scientific contribution does the paper make? 
+Detailed analysis of protein variations that cause disease by affecting either Activity, Aggregation, 
+Stability, Binding, Aggregation or Rearrangement of the protein.
+Mutational landscape of metastatic cancer revealed from prospective clinical sequencing of 10,000 patients
+
+What is the biological question? 
+What are clinically relevant somatic mutations in common and rare metastatic cancer types? 
+Which alterations in genes can be therapeutically targeted?
+
+What is the method? 
+Collect tissue samples from tumors of 11369 individuals and look for somatic mutations by comparing the 
+sequencing sample with a sample from the blood (normal DNA). 
+Perform MSK-IMPACT (a hybridization capture–based NGS panel that is capable of detecting all protein-coding mutations, 
+copy number alterations (CNAs), and selected promoter mutations and structural rearrangements in 410 
+ancer-associated genes)
+
+What significant scientific contribution does the paper make? 
+Reveal clinical actionability of somatic alterations in different types of tumors (BRAF-targeted therapy). 
+Allows sequencing of tumors in patients (that were heavily treated beforehand) and interpretation/utilisation 
+of the results for treatment based on genotype.
+
+The breadth and depth of MSK-IMPACT and the analysis of matched normal DNA allowed us to detect important genomic 
+alterations that would have been missed by other approaches
+We found that many genes that were originally identified as significant in TCGA studies were even more frequently 
+mutated in the MSK-IMPACT cohort. 
+The MSK-IMPACT results thus provide, to our knowledge, the largest analysis of somatic mutations in the TERT 
+promoter across all tumor types reported to date. 
+novel recurrent fusion gene, CDK5RAP2-BRAF, which was detected in two independent melanomas lacking other 
+clear driver mutations 
+
+
+	1.	How many entries are there for this protein? 13
+	2.	Which method(s) were used in characterization of the structure? For the most recent entry with a publication record:  3.2 Å resolution cryo-electron microscopy structure of the Frataxin-bound active human complex
+	3.	What is the structure determination method? 
+	4.	What is the Uniprot ID? Q16595
+	5.	How many chains does it have? 1 chain 
+	6.	What is the sequence length? 129 
+	7.	Which ligands (if any) are present? Mg2+
+	8.	Examine the 3D structure using 3D view. Color by chain. 
+	9.	Play with all of the options and prepare a structure figure. 
