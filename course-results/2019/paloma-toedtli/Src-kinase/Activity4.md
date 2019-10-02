@@ -1,5 +1,9 @@
 # Activity 4 - Uniprot
 
+##### Paloma Toedtli and Bastien Canonica
+
+
+
 ## Activity on kinases
 
 ### General properties - PDB
