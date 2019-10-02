@@ -72,4 +72,4 @@ For this exercise, HCK kinase has been chosen. The PDB ID with the maximum cover
 
 The red dots shown in the paper corresponds to the ligand, the ATP. In the figure, the same ligand can be identified within the protein kinase domain.
 
-<img src="HCK.png" width="300" height="300"> <img src="HCK_domains.png" width="300" height="300">
+<img src="HCK.png" width="400" height="400"> <img src="HCK_domains.png" width="400" height="400">
