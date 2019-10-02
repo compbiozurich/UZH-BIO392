@@ -1,8 +1,8 @@
-### Activity 4 - Uniprot
+# Activity 4 - Uniprot
 
 ## Activity on kinases
 
-# General properties - PDB
+### General properties - PDB
 
 **What is the function of Src tyrosine kinases?**
 
@@ -28,7 +28,7 @@ The primary citation present in the literature section on the PDB page of AbI ty
 
 
 
-# More about Src Kinase family - UniProt
+### More about Src Kinase family - UniProt
 
 Since SRC can describe Steroid Receptor Coactivator, the data must be filtered out to show only Src kinase proteins. In search terms, filter "src" as protein family and filter "kinase" as protein family
 
@@ -48,29 +48,28 @@ UniRef90 is built by clustering UniRef100 sequences such that each cluster is co
 There are also 10 clusters.
 
 
-# Alignment of all human Src kinases
+### Alignment of all human Src kinases
 
-*Can you identify any residues/regions that are highly conserved?*
+**Can you identify any residues/regions that are highly conserved?**
 
 As shown in the figure, the similarities can be highlighted. The symbols under the alignment show the conservation of the sequences, where (.) is semi-conservative, (:) is conservative and (*) is conserved. According to the UniProt page of the sequences, the different protein domains can be defined. The alignment shows that the three domains are quite conserved but the protein kinase domain is highly conserved in the sequences.
 
 ![](Align_Src_domains.png)
 
 
-*How conserved is the active site residue (how can you find it)? What is it?*
+**How conserved is the active site residue (how can you find it)? What is it?**
 
 The active site can be highlighted (here in red) on the alignment, but it can also be found using UniProt, in the Function section. The active site is a D (aspartic acid) and is highly conserved.
 
-![](Align_Src.png)
 
-*Are there any variants around the active site residue? Use Feature Viewer to examine the sequence.*
+**Are there any variants around the active site residue? Use Feature Viewer to examine the sequence.**
 
 According to the feature view of the sequences on UniProt, there are only a few natural variants around the active site of the proteins. More, all the variants around the active site are predicted deleterious/benign.
 
-# UniProt visualisation of a Src kinase
+### UniProt visualisation of a Src kinase
 
 For this exercise, HCK kinase has been chosen. The PDB ID with the maximum coverage (79-526) corresponds to 1AD5. The structure shown in UniProt is a homodimer of two kinases. In order to have a view similar to that in the Abl kinase paper, only should be shown.
 
 The red dots shown in the paper corresponds to the ligand, the ATP. In the figure, the same ligand can be identified within the protein kinase domain.
 
-![](HCK.png) ![](HCK_domains.png)
+<img src="HCK.png" width="300" height="300"> <img src="HCK_domains.png" width="300" height="300">
