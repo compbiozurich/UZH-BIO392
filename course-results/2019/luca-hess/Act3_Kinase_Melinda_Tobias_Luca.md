@@ -38,4 +38,4 @@ Structural basis for the autoinhibition of c-Abl tyrosine kinase
 - We chose the protein Hck (tyrosine kinase Hck P08631). We chose the structure 1AD5, as it seems to have the highest coverage (79-526).
   PDB tells us that it's coverage is 83%. No red dots visible.  
 
-!(Image of HCK structure)[HCK.png]
+![Image of HCK structure](HCK.png)
