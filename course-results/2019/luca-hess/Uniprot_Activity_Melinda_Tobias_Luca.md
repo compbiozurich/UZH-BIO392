@@ -1,39 +1,39 @@
-### What does reviewed mean?  
+### What does reviewed mean?
 
-In this case, "reviewed" means that a "Biocurator" has manually checked and verified the quality of this data uploaded to UniProt.  
+In this case, "reviewed" means that a "Biocurator" has manually checked and verified the quality of this data uploaded to UniProt.
 
-### Searching for HSOD gives two entries:  
+### Searching for HSOD gives two entries:
 
 P00441 SODC_HUMAN Superoxide Dismutase [Cu-Zn]  
-O14618 CCS_HUMAN Copper chaperone for superoxide dismutase  
+O14618 CCS_HUMAN Copper chaperone for superoxide dismutase
 
-Our protein of interest is SODC_HUMAN.  
+Our protein of interest is SODC_HUMAN.
 
-### UniProt ID:  
+### UniProt ID:
 
-P00441  
+P00441
 
-### Important Sites:  
+### Important Sites:
 
-We find eight different metal binding-sites.  
-Four of them are catalytic copper binding at positions: 47, 49, 64 and 121. The other four are Zinc binding, one structural and the other three via pros nitrogen (nitrogen closest to alpha-carbon). The structural Zinc is at position 84, the other three at positions 64, 72 and 81.  
+We find eight different metal binding-sites.
+Four of them are catalytic copper binding at positions: 47, 49, 64 and 121. The other four are Zinc binding, one structural and the other three via pros nitrogen (nitrogen closest to alpha-carbon). The structural Zinc is at position 84, the other three at positions 64, 72 and 81.
 
-### Natural Variants  
+### Natural Variants
 
-There are many natural variants of this protein, mostly evenly spread with an increased density of variants around sequence positions 80-100 aswell as a smaller "peak" at positions 20-40. Variants affecting metal binding sites don't seem to be in these "variant-rich" regions.  
+There are many natural variants of this protein, mostly evenly spread with an increased density of variants around sequence positions 80-100 aswell as a smaller "peak" at positions 20-40. Variants affecting metal binding sites don't seem to be in these "variant-rich" regions.
 
-The variant 1N19 relevant in ALS we where previously interested in is located at position 5 (A > V) and has the identifier: dbSNP:rs121912442  
+The variant 1N19 we were previously interested in is located at position 5 (A > V) and has the identifier: dbSNP:rs121912442. This variant has been found to be related to a severe form of ALS. It reduces structural stability and enzyme activity of the protein. It also increases the tendency to form fibrillar aggregates.
 
-### Biological Function  
+### Biological Function
 
-It belongs to the family Superoxide Dismutases.  
-According to UniProt, it destroys radicals which are normally produced within the cells and which are toxic to biological systems.  
+It belongs to the family Superoxide Dismutases.
+According to UniProt, it destroys radicals which are normally produced within the cells and which are toxic to biological systems.
 
-### Gene Ontology - Molecular Function & Biological Process  
+### Gene Ontology - Molecular Function & Biological Process
 
 Molecular Function:  
 
-chaperone binding Source  
+chaperone binding Source   
 copper ion binding Source  
 identical protein binding  
 protein homodimerization activity  
@@ -42,7 +42,7 @@ Rac GTPase binding
 superoxide dismutase activity  
 zinc ion binding  
 
-Biological Process (selection):  
+Biological Process (selection):
 
 activation of MAPK activity  
 anterograde axonal transport  
