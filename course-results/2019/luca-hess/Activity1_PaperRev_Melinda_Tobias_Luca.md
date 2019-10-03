@@ -51,5 +51,4 @@ The UniProt ID of HSOD is P00441
 
 1N19 has one unique protein chain and as it\'92s a homo dimer, it has two chains. Its sequence counts 308 residues. It has 3 unique Ligands: Zinc Ion, Sulfate Ion, Copper (1) Ion.
 
-![Figure: Structure of hSod1](course-results/2019/luca-hess/HSOD.png)
-
+![Structure of hSod1](HSOD.png)
