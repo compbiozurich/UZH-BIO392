@@ -164,6 +164,16 @@ Organisms:
 ![Logo Plot of multiple sequence alignment](logo_foxp2.png)
 
 
+## 11. A recent evolutionary change affects a regulatory element in the human FOXP2 gene   
+The assumption was that there are two amino acid substitutions which occured after the divergence of humans from the neanderthals.
+However with examining DNA from neanderthals it showed that they have the two substitution as well and therefore couldn't be the cause for the positive selection for language and speech.
+This finding led to the search of a new variant which could be the cause of the selective sweep between neanderthals and homo sapiens.
+This paper concentrated on finding such nucleotide changes and found a possible new cause for the positive selective sweep.
+They compared DNA from Neanderthals with the present-day human genome and found that the transcription factor POU3F2 could have been that nucleotide change in question.
+POU3F2 is a transcription factor which activates the FOXP2 and is exclusively present in the central nervous system. 
+The present derived allele of POU3F2 shows a loss of function and the paper is making the assumption that this could have been the reason for the loss of one functional copy of FOXP2 and further even the cause for the development of our language of speech.  
+
+
 ## 12. Humanized Foxp2 accelerates learning by enhancing transitions from declarative to procedural performance  
 
 For their paper Christiane Schreiweis et al. created mouse lines with human foxp2 alles. 
