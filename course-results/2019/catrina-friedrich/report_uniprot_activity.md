@@ -36,4 +36,4 @@ It is conserved in all proteins, it is a D.
 - Are	there	any	variants	around	the	active	site	residue?\
 Yes there are variants in many of the family members.
 
-The red dots on the 3D structure are oxygen atoms. The file containing the 3D structure is called:\ [UniProtKB_P08631_(HCK_HUMAN).png](
+The red dots on the 3D structure are oxygen atoms. The file containing the 3D structure is called:\ [UniProtKB_P08631_(HCK_HUMAN).png](https://github.com/CatrinaFriedrich/UZH-BIO392/blob/master/course-results/2019/catrina-friedrich/UniProtKB_P08631_(HCK_HUMAN).png)
