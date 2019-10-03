@@ -73,7 +73,7 @@ e-value: 0.0
 
 ## 5. Dot Matrix  
 
-Sadly impossible to do, due to changes in the NCBI BLAST interface.
+![Dot Matric](dp_human_chimp.png)
 
 ## 6. Cell location  
 
