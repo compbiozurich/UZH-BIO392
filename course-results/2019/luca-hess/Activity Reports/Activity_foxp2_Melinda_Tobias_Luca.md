@@ -164,7 +164,8 @@ Organisms:
 ![Logo Plot of multiple sequence alignment](logo_foxp2.png)
 
 
-## 11. A recent evolutionary change affects a regulatory element in the human FOXP2 gene   
+## 11. A recent evolutionary change affects a regulatory element in the human FOXP2 gene  
+
 The assumption was that there are two amino acid substitutions which occured after the divergence of humans from the neanderthals.
 However with examining DNA from neanderthals it showed that they have the two substitution as well and therefore couldn't be the cause for the positive selection for language and speech.
 This finding led to the search of a new variant which could be the cause of the selective sweep between neanderthals and homo sapiens.
@@ -177,7 +178,7 @@ The present derived allele of POU3F2 shows a loss of function and the paper is m
 ## 12. Humanized Foxp2 accelerates learning by enhancing transitions from declarative to procedural performance  
 
 For their paper Christiane Schreiweis et al. created mouse lines with human foxp2 alles. 
-Those differ by wt alleles by to amino acid substitudes which are highly conserved in humans. 
+Those differ by wt alleles by two amino acid substitudes which are highly conserved in humans. 
 FOXP2 is the sole gene to date firmly linked to speech and language development.
 They find that humanized Foxp2 mice has an effect on behavioral learning dynamics as well as on striatal dopamine levels, gene expression levels, and synaptic plasticity.
 Humanized Foxp2 differentially influences the functional contributions of the associative and sensorimotor striatum to learning dynamics compared with the wt. 
