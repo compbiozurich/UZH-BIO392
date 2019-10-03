@@ -13,7 +13,6 @@
 Src tyrosine kinase is a signalling protein involved in cellular growth control, localised in the cell membrane. As a tyrosine kinase, it controls the activation of a wide variety of proteins by adding a phosphate group to a specific tyrosine in an amino acids chain of proteins that control cellular structure, cell communication, and cellular growth. This addition turns the proteins "on", leading them to perform their task.
 
 
-
 **Is there only one Src tyrosine kinase? What are some others?**
 
 Researches highlighted hundreds of tyrosine kinases, several of which are nearly identical to Src. Among the proteins similar to Src, one can find the Hck protein and the Abl protein.
@@ -72,7 +71,7 @@ According to the feature view of the sequences on UniProt, there are only a few 
 
 ### UniProt visualisation of a Src kinase
 
-For this exercise, HCK kinase has been chosen. The PDB ID with the maximum coverage (79-526) corresponds to 1AD5. The structure shown in UniProt is a homodimer of two kinases. In order to have a view similar to that in the Abl kinase paper, only should be shown.
+For this exercise, HCK kinase has been chosen. The PDB ID with the maximum coverage (79-526) corresponds to 1AD5. The structure shown in UniProt is a homodimer of two kinases. In order to have a view similar to that in the Abl kinase paper, only one should be shown.
 
 The red dots shown in the paper corresponds to the ligand, the ATP. In the figure, the same ligand can be identified within the protein kinase domain.
 
