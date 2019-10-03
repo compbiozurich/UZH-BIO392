@@ -162,3 +162,15 @@ Organisms:
 ![Phylogenetic Tree](Phylogentic_Tree_foxP2.png)
 
 ![Logo Plot of multiple sequence alignment](logo_foxp2.png)
+
+
+## 12. Humanized Foxp2 accelerates learning by enhancing transitions from declarative to procedural performance  
+
+For their paper Christiane Schreiweis et al. created mouse lines with human foxp2 alles. 
+Those differ by wt alleles by to amino acid substitudes which are highly conserved in humans. 
+FOXP2 is the sole gene to date firmly linked to speech and language development.
+They find that humanized Foxp2 mice has an effect on behavioral learning dynamics as well as on striatal dopamine levels, gene expression levels, and synaptic plasticity.
+Humanized Foxp2 differentially influences the functional contributions of the associative and sensorimotor striatum to learning dynamics compared with the wt. 
+Foxp2hum/hum mice exhibited an altered interaction between the declarative and procedural learning strategies, favoring the procedural system when both learning systems were engaged as indicated by their more rapid transition toward procedural behavior in contrast to the wt. 
+The relation between declarative and procedural learning strategies and language learning is itself unclear. A Hypothesis raised by the authors is that efficient proceduralization might accelerate probabilistic learning of language features by chunking single speech and language related actions into sequences, a feature potentially contributing to adapting the human brain for speech and language acquisition.
+
