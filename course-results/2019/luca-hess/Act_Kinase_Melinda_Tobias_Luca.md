@@ -33,7 +33,7 @@ Structural basis for the autoinhibition of c-Abl tyrosine kinase
   the binding site seem especially highly conserved (marked mostly with asterisk).  
 - As mentioned above, the active site residue is highly conserved. On all ten sequences,
   it is a "D", so an asparagine. There isn't much variation right next to the binding site, but a couple AAs in each direction there are differences.  
-- Using the feature viewer to analyse the variants, it seems that while large scale studies find some,
+- Using the feature viewer to analyse the variants of all ten kinases, it seems that while large scale studies find some,
   UniProt and ClinVar reviewed variants aren't in the active site. Those found are missense variants with very small MAF values.  
 - We chose the protein Hck (tyrosine kinase Hck P08631). We chose the structure 1AD5, as it seems to have the highest coverage (79-526).
   PDB tells us that it's coverage is 83%. No red dots visible.  
