@@ -58,7 +58,7 @@ Also the region around the active site (aspartic acid) is really conserved; we o
 
 Yes, there are natural variants in five of the ten proteins; three of them are in the DFG motif. 
 
-![Image Active site Natural variation](Activity4_Image1_active_site.png)
+![Image Active site Natural variation](course-results/2019/jonas-kretz/Images/Activity4_Image1_active_site.png)
 * _Image 1: red= active site, blue= the natural variants, *= indicates highly conserved (uniprot.org)_
 
 
@@ -69,7 +69,7 @@ We picked the Scr kinas HCK (P08631). Because there are different PDB entries fo
 
 *2HCK, position 79-526
 
-![Image Structure HCK](Activity4_Image2_HCK.png)
+![Image Structure HCK](course-results/2019/jonas-kretz/Images/Activity4_Image2_HCK.png)
 * _Image 2: 2HCK, red dots= water atoms (uniprot.org)_
 
 
