@@ -52,9 +52,9 @@ Percent gap 0%
 
 E-value 0.0
 
-The dot matrix is linear because they are >99% identical.
+The dot matrix is linear because they are >99% identical. Abcissa = human, ordinate = pan troglodyte
 
-<img src="pan_vs_human.png" width="400" height="400">
+<img src="pan_vs_human.png" height="400">
 
 **Where is Foxp2 located in the cell?**
 
@@ -85,9 +85,9 @@ Percent gap : 1%
 
 E-value : 0.0
 
+The dot matrix is almost linear because they are 97% identical. Abcissa = human, ordinate = cat
 
-
-
+<img src="felix_vs_human_a.png" height="400">
 
 
 ### Gap penalties : 8, 2
@@ -97,11 +97,6 @@ Max Score : 1379
 ### Gap penalties : 7, 2
 
 Max Score : 948
-
-
-
-<img src="felix_vs_human_a.png" width="400" height="400">
-
 
 
 ## Foxp2 in 10 different organisms
@@ -120,9 +115,9 @@ The accession numbers of each organism is listed below
 - Taeniopygia guttata : NP_001041728.1
 
 **Phylogenic tree**
-<img src="tree.png" width="400" height="400">
+<img src="tree.png" height="400">
 
 
 **Logo plot of DNA-Binding site and Zinc finger**
 
-<img src="DNAbinding.png" width="400" height="400"><img src="ZincFinger.png" width="400" height="400">
+<img src="DNAbinding.png"><img src="ZincFinger.png">
