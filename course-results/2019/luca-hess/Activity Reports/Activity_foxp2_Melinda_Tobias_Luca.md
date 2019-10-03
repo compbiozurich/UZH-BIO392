@@ -185,3 +185,6 @@ Humanized Foxp2 differentially influences the functional contributions of the as
 Foxp2hum/hum mice exhibited an altered interaction between the declarative and procedural learning strategies, favoring the procedural system when both learning systems were engaged as indicated by their more rapid transition toward procedural behavior in contrast to the wt. 
 The relation between declarative and procedural learning strategies and language learning is itself unclear. A Hypothesis raised by the authors is that efficient proceduralization might accelerate probabilistic learning of language features by chunking single speech and language related actions into sequences, a feature potentially contributing to adapting the human brain for speech and language acquisition.
 
+# Summary
+
+FoxP2 is a very highly conserved protein that retains close similarity and even identity between comparatively unrelated organisms. 
