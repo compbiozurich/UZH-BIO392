@@ -1,4 +1,6 @@
-# Impact of genetic variation on three dimensional structure and function of proteins
+# Activity 1
+
+## Impact of genetic variation on three dimensional structure and function of proteins
 
 ## What is the biological question?
 
