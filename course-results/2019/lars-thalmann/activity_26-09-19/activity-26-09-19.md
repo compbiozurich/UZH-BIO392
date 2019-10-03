@@ -72,7 +72,7 @@ _Mainly octamer; reduced activity_
 ### Find out more about your protein. What is its biological function? What does it do?
 
 Delta-aminolevulinic acid dehydratase catalyzes an early step in the biosynthesis of tetrapyrroles. It binds two molecules of 5-aminolevulinate per subunit, each at a distinct site, and catalyzes their condensation to form porphobilinogen. It binds 8 zinc ions per octamer as cofactors. It is most active at pH values around 7.
-It is only active as a multimer, and can an alternate between a fully active homooctamer and a low-activity homohexamer. Most disease-related mutations result in an increase in hexamer population and a decrease in octomer population.
+It is only active as a multimer, and can an alternate between a fully active homooctamer and a low-activity homohexamer. Most disease-related mutations result in an increase in hexamer population and a decrease in octamer population.
 
 Catalyzed reaction: __2 5-aminolevulinate → H+ + 2 H2O + porphobilinogen__
 
