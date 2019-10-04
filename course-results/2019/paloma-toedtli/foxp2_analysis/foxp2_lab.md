@@ -134,6 +134,7 @@ Since the discovery of a 49,000-year-old Neanderthal DNA, experiment have been c
 
 ## Humanized Foxp2 accelerates learning by enhancing transitions from declarative to procedural performance.
 
+The aim of the experiment was to determine the effect of the humanization of foxp2 (substitution of two amino acids that could have been selected positively during the evolution) on mice, and to establish a relationship between foxp2 and the ability of speech and language aquisition in human. To do so, they observed the mode of learning of mice with humanized foxp2, compared to the mice WT. They constated that the humanization of Foxp2 has an effect on behavioral learning dynamics as well as on striatal dopamine levels, gene expression levels, and synaptic plasticity. With these experiments, they are more confident about the hypothesis that humanization of this gene induces a facilitated ability to use procedural forms of learning and thus to shift more rapidly from declarative to procedural forms of learning. This shift can have been important for the appearance of language and speech in human evolution.
 
 
 ## One sentence to summarize Foxp2
