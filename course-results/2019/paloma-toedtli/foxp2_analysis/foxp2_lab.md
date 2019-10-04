@@ -62,9 +62,11 @@ As Foxp2 is a transcription factor, this protein is found in the nucleus.
 
 It is involved in the Speech-language disorder 1 (SPCH1), an autosomal dominant speech and language disorder with orofacial dyspraxia, caused by a SNV mutation (R553H).
 
-The accession number of the cat foxp2 protein is NP_001106648.1, and the accession number of its transcript is NM_001113177.1. The protein sequence is downloaded in FASTA format.
+The accession number of the **Felis Catus** (cat) foxp2 protein is NP_001106648.1, and the accession number of its transcript is NM_001113177.1. The protein sequence is downloaded in FASTA format.
 
-## Alignment of human Foxp2 vs cat (felis catus) Foxp2 using different gap penalties 
+## Alignment of human Foxp2 vs cat (Felis Catus) Foxp2 using different gap penalties 
+
+Gap penalties describe the severity of gaps in a sequence alignment. By default, the gap opening penalty is setted at 11, because it is highly expensive to open a gap. The gap extension penalty is setted at 1, because once the gap is open, it costs less to expend the gap.
 
 ### Gap penalties : 11, 1
 
@@ -82,7 +84,7 @@ Percent gap : 1%
 
 E-value : 0.0
 
-The dot matrix shown below is almost linear, but shows some breaks because they are 97% identical. Abcissa = Human, ordinate = cat
+The dot matrix shown below is almost linear, but shows some breaks because they are 97% identical. Abcissa = Human, ordinate = Felis Catus
 
 <img src="felix_vs_human_a.png" height="350">
 
@@ -94,8 +96,6 @@ Max Score : 1379
 ### Gap penalties : 7, 2
 
 Max Score : 948
-
-
 
 
 ## Foxp2 in 11 different organisms
@@ -122,10 +122,21 @@ The phylogenetic tree of a protein is used to detect evolutionary relationships 
 
 **Logo plot of DNA-Binding site and Zinc finger**
 
+UniProt provided the informations about the different sites locations in the proteins. Once the sites were located in each sequences, a logo plot designer tool could be used, in order to create the logo plot, describing the consensus sequence of the sites.
 
-<img src="DNAbinding.png" height="130">
+<img src="DNAbinding.png" height="130"> <img src="ZincFinger.png" height="130">
+
+According to these plots, we can see that both sites are highly conserved among all the species.
+
+## Arecent evolutionary change affects a regulatory element in the human FOXP2 gene
+
+Since the discovery of a 49,000-year-old Neanderthal DNA, experiment have been conducted to compare specific genes. Substitutions between the Neanderthal and present-day human genoms have been discovered. One of this substitution affects the binding site for the POU3F2 transcription factor. Therefor, POU3F2's efficiency to bind the mutated allele has decreased. This mutation also bind less POU3F2 dimer form than the Neanderthal binding site. All those modification due to a substitution of POU3F2 binding site might be responsible for regulation changes of FOXP2 expression.
+
+## Humanized Foxp2 accelerates learning by enhancing transitions from declarative to procedural performance.
 
 
 
+## One sentence to summarize Foxp2
+Foxp2 is a Transcription factor, involved in brain (and other tissues) development, and highly conserved among species.
 
-<img src="ZincFinger.png" height="130">
+
