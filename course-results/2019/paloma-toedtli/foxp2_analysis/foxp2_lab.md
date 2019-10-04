@@ -9,65 +9,62 @@
 
 Forehead box protein P2 is a transcriptional repressor that may play a role in the specification and differentiation of lung epithelium, as well as in development of many tissues. It is involved in the following processes :
 
-- camera-type eye development
-- caudate nucleus development
-- cerebellum development
-- cerebral cortex development
-- innate vocalization behavior
-- lung alveolus development
-- negative regulation of transcription, DNA-templated
-- positive regulation of epithelial cell proliferation involved in lung morphogenesis
-- positive regulation of mesenchymal cell proliferation
-- post-embryonic development
-- putamen development
-- response to testosterone
-- righting reflex
-- skeletal muscle tissue development
-- smooth muscle tissue development
-- vocal learning
-
+- Camera-type eye development
+- Caudate nucleus development
+- Cerebellum development
+- Cerebral cortex development
+- Innate vocalization behavior
+- Lung alveolus development
+- Negative regulation of transcription, DNA-templated
+- Positive regulation of epithelial cell proliferation involved in lung morphogenesis
+- Positive regulation of mesenchymal cell proliferation
+- Post-embryonic development
+- Putamen development
+- Response to testosterone
+- Righting reflex
+- Skeletal muscle tissue development
+- Smooth muscle tissue development
+- Vocal learning
 
 
 RefSeq is a comprehensive, integrated, non-redundant, well-annotated set of reference sequences including genomic, transcript, and protein.
 
-The accession number of the transcript of human foxp2 is NM_014491.4, and the protein accession number is NP_055306.1. The sequence of the protein is downloaded in FASTA format to be used in Blastp.
+The accession number of the transcript of **Human** foxp2 is NM_014491.4, and its protein accession number is NP_055306.1. The sequence of the protein is downloaded in FASTA format to be used in Blastp.
 
-The Pan troglodytes foxp2 accession number is NM_001009020.3, and the protein accession number is NP_001009020.1. The sequence of the protein is downloaded in FASTA format to be used in Blastp.
+The accession number of the transcript of **Pan Troglodyte** foxp2 is NM_001009020.3, and its protein accession number is NP_001009020.1. The sequence of the protein is downloaded in FASTA format to be used in Blastp.
 
 
+## Alignment of human foxp2 vs chimpanzee (Pan Troglodyte) foxp2 : 
 
-## Alignment of human foxp2 vs chimpanzee (Pan troglodyte) foxp2 : 
+Max Score : 1431
 
-Max Score  1431
+Length : 716
 
-Length 716
+Query cover : 100%
 
-Query cover 100%
+Per. Ident : 99.58%
 
-Per. Ident 99.58%
+Percent positive : 99%
 
-Percent positive 99%
+Percent gap : 0%
 
-Percent gap 0%
+E-value : 0.0
 
-E-value 0.0
+The dot matrix showed below is almost perfectly linear because they are >99% identical. Abcissa = Human Foxp2, ordinate = Pan Troglodyte Foxp2
 
-The dot matrix is linear because they are >99% identical. Abcissa = human, ordinate = pan troglodyte
-
-<img src="pan_vs_human.png" height="400">
+<img src="pan_vs_human.png" height="350">
 
 **Where is Foxp2 located in the cell?**
 
-As it is a transcription factor it seems legit to find this protein in the nucleus.
+As Foxp2 is a transcription factor, this protein is found in the nucleus.
 
 **Which diseases is it involved in?**
 
-It is involved in the Speech-language disorder 1 (SPCH1) caused by a SNV (R553H)
+It is involved in the Speech-language disorder 1 (SPCH1), an autosomal dominant speech and language disorder with orofacial dyspraxia, caused by a SNV mutation (R553H).
 
+The accession number of the cat foxp2 protein is NP_001106648.1, and the accession number of its transcript is NM_001113177.1. The protein sequence is downloaded in FASTA format.
 
-The accession number of the cat foxp2 protein is NP_001106648.1, and the accession number of the cat foxp2 transcript is NM_001113177.1
-
-## Alignment of human foxp2 vs cat (felis catus) foxp2 
+## Alignment of human Foxp2 vs cat (felis catus) Foxp2 using different gap penalties 
 
 ### Gap penalties : 11, 1
 
@@ -85,9 +82,9 @@ Percent gap : 1%
 
 E-value : 0.0
 
-The dot matrix is almost linear because they are 97% identical. Abcissa = human, ordinate = cat
+The dot matrix shown below is almost linear, but shows some breaks because they are 97% identical. Abcissa = Human, ordinate = cat
 
-<img src="felix_vs_human_a.png" height="400">
+<img src="felix_vs_human_a.png" height="350">
 
 
 ### Gap penalties : 8, 2
@@ -99,25 +96,36 @@ Max Score : 1379
 Max Score : 948
 
 
-## Foxp2 in 10 different organisms
+
+
+## Foxp2 in 11 different organisms
 
 The accession numbers of each organism is listed below 
-- homo sapiens : NP_055306.1
-- pan troglodytes : NP_001009020.1
-- felis catus : NP_001106648.1
-- podarcis muralis : XP_028602202.1
-- gallus gallus : AER14044.1
-- canis lupus familiaris : XP_022283307.1
-- Mus musculus : NP_444472.2 
-- Danio rerio : NP_001025253.1
-- Rattus norvegicus : NP_001258033.1
-- Xenopus leavis : NP_001089138.1
-- Taeniopygia guttata : NP_001041728.1
+- Homo sapiens : NP_055306.1
+- Pan Troglodytes : NP_001009020.1
+- Felis Catus : NP_001106648.1
+- Podarcis Muralis : XP_028602202.1
+- Gallus Gallus : AER14044.1
+- Canis Lupus Familiaris : XP_022283307.1
+- Mus Musculus : NP_444472.2 
+- Danio Rerio : NP_001025253.1
+- Rattus Norvegicus : NP_001258033.1
+- Xenopus Leavis : NP_001089138.1
+- Taeniopygia Guttata : NP_001041728.1
 
-**Phylogenic tree**
-<img src="tree.png" height="400">
+**Phylogenetic tree**
+
+The phylogenetic tree of a protein is used to detect evolutionary relationships between homologous proteins. The phylogenic tree of the Foxp2 protein of the 11 different organisms is shown below. The sequences were first aligned using NCBI Constraint-based Multiple Alignment Tool, which constructed the tree automaticaly. 
+
+<img src="tree.png" height="350">
 
 
 **Logo plot of DNA-Binding site and Zinc finger**
 
-<img src="DNAbinding.png"><img src="ZincFinger.png">
+
+<img src="DNAbinding.png" height="130">
+
+
+
+
+<img src="ZincFinger.png" height="130">
