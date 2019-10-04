@@ -57,4 +57,4 @@ Using iCn3D, the structure figure of the mutated protein Hras K117R was made, an
 
 The 3D Vizualisation in PolyPhen-2 can also highlight the mutation in our protein of interest. In this case, the wild type 6Q21 is used as the 3D structure, which is a tetramer. The figures below shows 3 different orientations of the mutated protein
 
-<img src="k117r1.png" width="350" height="350"><img src="k117r2.png" width="350" height="350"><img src="k117r3.png" width="350" height="350">
+<img src="k117r1.png" width="250"><img src="k117r2.png" width="250"><img src="k117r3.png" width="250">
