@@ -117,7 +117,7 @@ The accession numbers of each organism is listed below
 
 The phylogenetic tree of a protein is used to detect evolutionary relationships between homologous proteins. The phylogenic tree of the Foxp2 protein of the 11 different organisms is shown below. The sequences were first aligned using NCBI Constraint-based Multiple Alignment Tool, which constructed the tree automaticaly. 
 
-<img src="tree.png" height="350">
+<img src="phyltree.png" height="350">
 
 
 **Logo plot of DNA-Binding site and Zinc finger**
