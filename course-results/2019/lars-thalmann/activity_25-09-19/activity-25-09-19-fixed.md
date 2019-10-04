@@ -62,3 +62,8 @@ Homooctomer - A8 (1 unique chain, 8 total chains)
 ZN (Zinc Ion) – 3 per chain, 24 total\
 GOL (glycerol) – 3 per chain, 24 total\
 PBG (3-[5-(aminomethyl)-4-(carboxymethyl)-1h-pyrrol-3-yl]propanoic acid) – 1 per chain, 8 total
+
+### Examine the 3D structure using 3D view and prepare a structure figure.
+See supplementary images:
+* _5mhb_screenshot full.png_ (Full view of the 5MHB variant homooctamer)
+* _5mhb_screenshot single_chain.png_ (View of a 5MHB variant single-chain monomer)
