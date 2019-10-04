@@ -138,6 +138,6 @@ The aim of the experiment was to determine the effect of the humanization of fox
 
 
 ## One sentence to summarize Foxp2
-Foxp2 is a Transcription factor, involved in brain (and other tissues) development, and highly conserved among species.
+Foxp2 is a Transcription factor, involved in brain (and other tissues) development, speech and language learning, and highly conserved among species.
 
 
