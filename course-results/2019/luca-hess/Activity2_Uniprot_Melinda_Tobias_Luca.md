@@ -1,3 +1,5 @@
+# Activity 2
+
 ### What does reviewed mean?
 
 In this case, "reviewed" means that a "Biocurator" has manually checked and verified the quality of this data uploaded to UniProt.
