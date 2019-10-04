@@ -33,7 +33,7 @@ In the "Prediction impact" (D.) means damaging.
 | Variant ID       |   Mutation                       | Mutation type           |   PDB ID       |              Location in protein         | Polyphen 2 score         | Prediction impact | 
 | :---             |    :----:                        |     :---:               |    :---:       |                     :---:                |      :---:               |              ---: |
 | rs104894231      | Ala146Pro  Ala146Thr             | H > H<br>H > P          | - |    In a Turn<br>Close to GTP-binding site          |      1.000<br>0.935      | Probably D.<br>Possibly D. |
-| rs104894227      | Lys117Arg  Ser11Gly              | B > B<br>P > H          | 2QUZ<br>-    |    In a loop<br>In the GTP-binding site            |      0.998<br>Error      | Probably D.<br> Error |
+| rs104894227      | Lys117Arg              | B > B          | 2QUZ<br>  |    In a loop<br>In the GTP-binding site            |      0.998      | Probably D.<br> |
 | rs121917756      | Glu63Lys                         | A > B                   | -    |    In a Beta Strand                                |      0.983.              | Probably D. |
 | rs121913233      | Gln61Leu<br>Gln61Arg<br>Gln61Pro | P > H<br>P > B<br>P > H | 4G3X<br>-<br>-    |    In a Beta Strand                                | 0.552<br>0.008<br>0.021  | Possibly D.<br>Benign<br>Benign   |
 | rs28933406       | Gln61Glu<br>Gln61Lys             | P > A<br>P > B          | -    |    In a Beta Strand                                |      0.268<br>0.012      | Benign<br>Benign     |
@@ -53,4 +53,8 @@ In UniProt, the PDB ID of some structure is given. The structure 121P has been t
 
 Using iCn3D, the structure figure of the mutated protein Hras K117R was made, and the mutation was highlighted in yellow
 
-<img src="2QUZ.png" width="400" height="400">
+<img src="2QUZ.png" width="350" height="350">
+
+The 3D Vizualisation in PolyPhen-2 can also highlight the mutation in our protein of interest. In this case, the wild type 6Q21 is used as the 3D structure, which is a tetramer. The figures below shows 3 different orientations of the mutated protein
+
+<img src="k117r1.png" width="350" height="350"><img src="k117r2.png" width="350" height="350"><img src="k117r3.png" width="350" height="350">
