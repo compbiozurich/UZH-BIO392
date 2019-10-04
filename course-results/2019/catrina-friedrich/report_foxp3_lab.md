@@ -76,7 +76,7 @@ __e-value__: 0.0
 
 5. What does the dot matrix view look like for the alignment with gap open =11
 and gap extension = 1 values? Copy the figure.\
-[Link to Dot matrix]()\
+[Link to Dot matrix](https://github.com/CatrinaFriedrich/UZH-BIO392/blob/master/course-results/2019/catrina-friedrich/dot_matrix.png)\
 The matrix shows the two ranges from the alignment.
 
 6. Where is Foxp2 located in the cell? Which diseases is it involved in? How?
@@ -146,8 +146,10 @@ THe dot matrix follows nearly perfectly a linear regression of y = x.
 10. Find 10 Foxp2 sequences from different organisms (Refseqs). Build a
 phylogenetic tree for the multiple sequence alignment. Build a logo plot for
 the active site (where is the active site?).\
-[Link to the phylogenetic tree]()
-[Link to the Logo plot]()\
+[Link to the phylogenetic tree](https://github.com/CatrinaFriedrich/UZH-BIO392/blob/master/course-results/2019/catrina-friedrich/Phylogenetic_tree.png
+)\
+[Link to the Logo plot](https://github.com/CatrinaFriedrich/UZH-BIO392/blob/master/course-results/2019/catrina-friedrich/Logo_plot_foxp2.png
+)\
 The active site is the DNA binding site at 504-594 (Found on Uniprot)
 
 
