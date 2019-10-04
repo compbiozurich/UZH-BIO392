@@ -40,7 +40,9 @@ Molecular	consequence	– missense	variant_\
 
   - Using	iCn3D,	make	a	structure	figure	for	your	protein	of	interest.	If	possible show	the	mutation	site	with	iCn3D
   We use the structure of the variant rs146818694 (with PDB ID 3T3J).\
-  [Link to iCn3D image]()
+  [Link to iCn3D image](https://github.com/CatrinaFriedrich/UZH-BIO392/blob/master/course-results/2019/catrina-friedrich/iCn3D_3T3J_N146K.png
+)
 
   - You	can	also	visualize	the	effect	of	the	mutation	using	the	structure	viewer	in	PolyPhen	2.\
-  [Link to Polyphen 2 image]()
+  [Link to Polyphen 2 image](https://github.com/CatrinaFriedrich/UZH-BIO392/blob/master/course-results/2019/catrina-friedrich/PolyPhen-2_image_3T3J.png
+)
