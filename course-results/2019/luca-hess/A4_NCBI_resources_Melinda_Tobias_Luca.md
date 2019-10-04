@@ -31,4 +31,4 @@ Using this filter we find 34 variants in SOD1
  | rs121912443 | His47Arg | basic to acidic | 1OZT, 1OEZ | Metal Binding Site / Beta Strand |  1.000 (sensitivity: 0.00; specificity: 1.00) | probably damaging |
  | rs80265967 | Asp91Ala | acidic to hydrophobic | - | Before Helix / proximate to Metal Binding Site | 0.000 (sensitivity: 1.00; specificity: 0.00) | benign |
  | rs121912440 | Leu107Val | hydrophobic to hydrophobic | - | Beta Strand / next to disulfide bond |  0.997 (sensitivity: 0.41; specificity: 0.98) | probably damaging |
- | rs74315452 | Ile113Thr | hydrophobic to polar | 1UXL | Beta Strand |  0.000 (sensitivity: 0.00; specificity: 1.00) | probably damaging |
+ | rs74315452 | Ile113Thr | hydrophobic to polar | 1UXL | Beta Strand |  1.000 (sensitivity: 0.00; specificity: 1.00) | probably damaging |
