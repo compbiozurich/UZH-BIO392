@@ -10,7 +10,7 @@ Jonas Kretz
 ### info cost:
 cost per GB Lecture: 0.5 CHF/GB     Amazone EU (LONDON): ca 0.024$/GB = 0.02384CHF/GB
 ## SAM: Sequence Alignment/Map format
-* info: TAB-delimited text based format for storage  of sequence aligned to reference. BAM = binary version 
+* info: TAB-delimited text based format for storage  of sequence aligned to reference (Standard torage where reads map to reference. BAM = binary version,
 
 (1 Genome ca 500GB/30XBAM) **Cost and size bigger than BAM**
 
@@ -40,7 +40,7 @@ Amazone(0.02384CHF/GB) WGS= 1472.68CHF WES= **130.73CHF**
 aprox cost (Amazone WGS=750CHF and WES=65CHF
 
 ## VCF:Variant Call Format 
-* info: is a text file format used for storing gene sequence variations.(lecture slide 23)
+* info: is a text file format used for storing gene sequence variations. multiple interpretations of sequence compered to reference.(lecture slide 23)
 
 Storage:
 
@@ -65,7 +65,7 @@ Amazone(0.02384CHF/GB) WGS= 1840.41CHF WES= **163.57CHF**
 Cost and storag would be high. not ideal for a project like 1000 genes.
 ## BED: Browser Extensible Data
 
-* info: ﬂexible way to deﬁne the data lines in an genome browser annotation tracks (lecture slide 22) more for chromosom position
+* info: ﬂexible way to deﬁne the data lines in an genome browser annotation tracks (lecture slide 22) more for chromosom position (mapping with genomic coverage)
 
 not ideal for the task 
 ## Conclusion:
