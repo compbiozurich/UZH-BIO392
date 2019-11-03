@@ -207,6 +207,8 @@ In general, they distinguished between the declarative or place-based learning a
 * In the study, the presence of a region-specific effect of humanized Foxp2 in mice was indicated several times. 
 
 
+**With the activity about Foxp2 we learnd that even a Gene is well conserved, single mutation can have a big influence in regarde of the evolution.**
+
 ## References:
 
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome

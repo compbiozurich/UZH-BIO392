@@ -87,8 +87,8 @@ _We (Jonas and Daria) selected the protein DJ-1, which has a variation (PDB ID: 
 * _There are two ligands, the 4-(2-HYDROXYETHYL)-1-PIPERAZINE ETHANESULFONIC ACID and the CHLORIDE ION_
 
 #### 
-![Image colored by side-chain](/home/jokre/Desktop/pic1.png)
+![Image colored by side-chain](Images/Activity1_Image1.png)
 
-![Image colored by hydrophobicity](/home/jokre/Desktop/pic2.png)
+![Image colored by hydrophobicity](Images/Activity1_image2.png)
 
-### We could not upload the Images. they were sent by email via the first report (DJ-1 protein.docx). 
+
