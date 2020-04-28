@@ -13,7 +13,7 @@ tags:
 
 ## {{ page.title }}
 
-This is a repository for materials related to the BIO392 _Bioinformatics of Sequence Variation_ introductory course at the University of Zürich.
+This is a repository for materials related to the BIO392 _Bioinformatics of Sequence Variation_ introductory course at the University of Zürich. The course takes place in each Autumn semester (September/October).
 
 #### Summary
 
