@@ -1,11 +1,12 @@
 ---
 title: "UZH BIO392 - Bioinformatics of Sequence Variation"
 layout: default
-date: 2019-08-27
+date: 2020-09-11
 permalink: /index.html
 author: "@mbaudis"
 category:
   - doc
+  - index
 tags:
   - documentation
   - FAQ
