@@ -24,3 +24,6 @@ emphasis on human genetic variation and reasoning for "large scale data".
     - genome variation resources
     - genome editions ...
 * 11:00 - 12:00: Recap Github setup
+* Markdown primer
+    - [cheat sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+    - John Gruber's [Markdown primer](https://daringfireball.net/projects/markdown/syntax)
