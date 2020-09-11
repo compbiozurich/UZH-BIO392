@@ -7,7 +7,7 @@ layout: default
 date: 2016-04-01
 category:
   - people
-tags
+tags:
   - group
   - teachers
 ---

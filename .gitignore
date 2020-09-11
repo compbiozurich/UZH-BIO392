@@ -4,3 +4,4 @@ assets/preload/.DS_Store
 assets/.DS_Store
 assets/css/.DS_Store
 .DS_Store
+*.lock
