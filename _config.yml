@@ -63,9 +63,11 @@ github_projects:
 # time sorted, year labeled listing template for those categories.
 categories-date-sorted:
   - news
+  - days
 # As above, for tags:
 tags-date-sorted:
-  - days
+  - "2020"
+  - "2019"
 
 # Only tags listed here are represented in the tag cloud.
 cloud_tags:
@@ -82,6 +84,8 @@ cloud_tags:
   - data
   - exercises
   - teachers
+  - "2019"
+  - "2020"
 
 # additional Jekyll instructions
 plugins:

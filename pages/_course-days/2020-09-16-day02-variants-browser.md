@@ -1,5 +1,5 @@
 ---
-title: 'BIO392 - Day 02: Variants Lecture and Genome Browser'
+title: 'BIO392 - Day 02: Variants Lecture, Resources and Setup'
 layout: default
 author:
   - "@mbaudis"
@@ -9,6 +9,7 @@ categories:
   - days
 tags:
   - material
+  - 2020
 ---
 
 ## {{ page.title }}
