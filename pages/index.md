@@ -18,7 +18,14 @@ This is a repository for materials related to the BIO392 _Bioinformatics of Sequ
 
 ### 2020 COVID19 Notes
 
-The course is
+As per current rules for labs/block courses, BIO392 is held with "in person" attendance. Please follow the UZH [Coronavirus Guidelines](https://www.uzh.ch/en/about/coronavirus/students.html).
+
+Some specific issues for this course:
+
+* masks are required if not enough distancing is possible
+* we will limit the "on site" course time, with much of the afternoon part assigned to tasks which can be performed remotely (thereby also enabling lower/mixed occuppancy)
+* unfortunately group work has to be limited and "hands on help" has to be reduced - "one person, one "keyboard"
+* we have established a chat system through a MS Teams channel - please see OLAT fopr the sign up link
 
 #### Summary
 
