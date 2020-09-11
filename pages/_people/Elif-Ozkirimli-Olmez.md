@@ -7,7 +7,7 @@ image_file: 'Elif-Ozkirimli-Olmez.png'
 category:
   - people
 tags:
-  - teachers
+  - previous
 ---
 
 {% for static_file in site.static_files %}
@@ -22,4 +22,3 @@ tags:
 * Visiting Scientist in Department of Biochemistry, Computational Structural Biology, University of Zürich
 
 <!--more-->
-

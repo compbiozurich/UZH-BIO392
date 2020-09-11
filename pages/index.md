@@ -16,6 +16,10 @@ tags:
 
 This is a repository for materials related to the BIO392 _Bioinformatics of Sequence Variation_ introductory course at the University of Zürich. The course takes place in each Autumn semester (September/October).
 
+### 2020 COVID19 Notes
+
+The course is
+
 #### Summary
 
 One of the fastest growing areas of bioinformatics is in the analysis, warehousing and representation of genomic and protein sequence variants, particularly with view on the use of molecular data in personalised health and biomedical applications in general. This course will engage participants to explore common data formats, online resources and analysis techniques, with a focus on human genome variation data.
