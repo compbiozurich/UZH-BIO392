@@ -2,9 +2,9 @@
 
 Please notice the comprehensive [SIB Course on UNIX](https://edu.sib.swiss/pluginfile.php/2878/mod_resource/content/4/couselab-html/content.html) (to be run using a Web browser).
 
-You can launch a terminal in MacOS and GNU/Linux. If running another OS, please make use a [a Web-browser based emulator](https://cocalc.com/app?anonymous=terminal).
+You can launch a terminal in MacOS and GNU/Linux. If running another OS, please make use a [a Web-browser based emulator](https://cocalc.com/app?anonymous=terminal), or use a Linux virtual machine.
 
-Exercises are meant to be run in Y01-F50 in the morning; afternoons are for resources/browsing reading.
+Exercises are meant to be run in Y01-F50 in the morning; afternoons are meant for resources/browsing and reading. In any case, the outputs from all snippets are available within this document, in case it was needed to check them without access to an Unix machine.
 
 ## Extra information
 
@@ -22,19 +22,18 @@ Quick math reminder (modulo operator, to be used with, mostly, fastqs)
 
 * [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation)
 
-Papers on bedtools, vcftools, samtools and workflows:
+Additional information regarding bedtools, vcftools and samtools.
 
 * [Reproducibility](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)
-* [make/biomake](https://academic.oup.com/bioinformatics/article/33/21/3502/3806980)
 * [BEDTools](https://academic.oup.com/bioinformatics/article/26/6/841/244688)
 * [VCFtools](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3137218/)
 * [SAMtools](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2723002/)
 
-Papers on the biology behind of the datasets used
+<!-- Papers on the biology behind of the datasets used -->
 
-* [Mobile elements, Stewart et al 2011](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002236)
-* [chromHMM, Ernst et al](https://www.nature.com/articles/nmeth.1906).
-* [Disease-associated variation](https://www.ncbi.nlm.nih.gov/pubmed/22955828)
+<!-- * [Mobile elements, Stewart et al 2011](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002236) -->
+<!-- * [chromHMM, Ernst et al](https://www.nature.com/articles/nmeth.1906). -->
+<!-- * [Disease-associated variation](https://www.ncbi.nlm.nih.gov/pubmed/22955828) -->
 
 # Set up
 
@@ -43,14 +42,13 @@ Papers on the biology behind of the datasets used
 Setting up a working directory with folders
 
 ```bash
-cd ~ # goes to the home directory
+cd  # goes to the home directory
 mkdir -p course
 ls -l course
 
 mkdir -p course/soft course/data course/output
 
 ls -l course
-
 ```
 
 <details><summary>
@@ -59,19 +57,20 @@ Output
 
 <p>
 
-```bash
-[imallona@neutral imallona]$ cd ~ # goes to the home directory
-[imallona@neutral ~]$ mkdir -p course
-[imallona@neutral ~]$ ls -l course
+```
+[user@machine ~]$ cd  # goes to the home directory
+[user@machine ~]$ mkdir -p course
+[user@machine ~]$ ls -l course
 total 0
-[imallona@neutral ~]$ 
-[imallona@neutral ~]$ mkdir -p course/soft course/data course/output
-[imallona@neutral ~]$ 
-[imallona@neutral ~]$ ls -l course
+[user@machine ~]$ 
+[user@machine ~]$ mkdir -p course/soft course/data course/output
+[user@machine ~]$ 
+[user@machine ~]$ ls -l course
 total 12
-drwxr-xr-x 2 imallona imallona 4096 Sep 14 08:51 data
-drwxr-xr-x 2 imallona imallona 4096 Sep 14 08:51 output
-drwxr-xr-x 2 imallona imallona 4096 Sep 14 08:51 soft
+drwxr-xr-x 2 imallona imallona 4096 Sep 14 18:15 data
+drwxr-xr-x 2 imallona imallona 4096 Sep 14 18:15 output
+drwxr-xr-x 2 imallona imallona 4096 Sep 14 18:15 soft
+
 ```
 </p>
 </details>
@@ -105,6 +104,70 @@ ls -lah hg19.genome
 head hg19.genome
 
 ```
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine ~]$ cd  ~/course/data
+[user@machine data]$ 
+[user@machine data]$ curl https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/example.bed \
+>    > example.bed
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  3471  100  3471    0     0  12094      0 --:--:-- --:--:-- --:--:-- 12094
+[user@machine data]$ 
+[user@machine data]$ curl https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/hg19.genome \
+>    > hg19.genome
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  1971  100  1971    0     0   6217      0 --:--:-- --:--:-- --:--:--  6217
+[user@machine data]$ 
+[user@machine data]$ ## this will check which kind of file it is
+[user@machine data]$ file example.bed
+example.bed: ASCII text
+[user@machine data]$ 
+[user@machine data]$ # this its size
+[user@machine data]$ ls -lah example.bed
+-rw-r--r-- 1 imallona imallona 3.4K Sep 14 18:16 example.bed
+[user@machine data]$ 
+[user@machine data]$ # this will print the first lines
+[user@machine data]$ head example.bed
+chr1	558358	822262	0	0.1164	4
+chr1	1598122	70541062	0	-0.1346	103
+chr1	71679114	180533364	0	0.0324	116
+chr1	181351615	196333968	1	0.24	16
+chr1	197555049	246405976	0	0.147	55
+chr1	246499124	247086071	1	0.314	8
+chr2	60038	81349722	0	-0.0134	107
+chr2	82603782	110970825	0	0.088	27
+chr2	112466561	127666737	1	0.2419	17
+chr2	127716603	218862592	0	0.0679	91
+[user@machine data]$ 
+[user@machine data]$ # similarly for the second
+[user@machine data]$ file hg19.genome
+hg19.genome: ASCII text
+[user@machine data]$ ls -lah hg19.genome
+-rw-r--r-- 1 imallona imallona 2.0K Sep 14 18:16 hg19.genome
+[user@machine data]$ head hg19.genome
+chr1	249250621
+chr2	243199373
+chr3	198022430
+chr4	191154276
+chr5	180915260
+chr6	171115067
+chr7	159138663
+chrX	155270560
+chr8	146364022
+chr9	141213431
+```
+</p>
+</details>
+
 
 ## Software compiling (bedtools)
 
@@ -141,6 +204,114 @@ alias bedtools='~/course/soft/bedtools2/bin/bedtools'
 bedtools --help
 
 ```
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ cd ~/course/soft
+[user@machine soft]$ 
+[user@machine soft]$ ## download the source code
+[user@machine soft]$ curl -L https://github.com/arq5x/bedtools2/releases/download/v2.25.0/bedtools-2.25.0.tar.gz \
+>   > bedtools-2.25.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   646  100   646    0     0   1809      0 --:--:-- --:--:-- --:--:--  1809\
+100 18.6M  100 18.6M    0     0  5985k      0  0:00:03  0:00:03 --:--:-- 7729k
+[user@machine soft]$ 
+[user@machine soft]$ ## uncompress
+[user@machine soft]$ tar zxvf bedtools-2.25.0.tar.gz
+
+<- very long chunk here, as compilation might take minutes ->
+
+  * compiling windowMakerMain.cpp
+  * compiling windowMaker.cpp
+- Building main bedtools binary.
+done.
+- Creating executables for old CLI.
+done.
+[user@machine bedtools2]$ 
+[user@machine bedtools2]$ ## to run the final installed package we could use
+[user@machine bedtools2]$ ##    `~/course/soft/bedtools2/bin/bedtools`
+[user@machine bedtools2]$ ##  but this is too long; rather, we will create an alias
+[user@machine bedtools2]$ ##  so typing `bedtools` will do
+[user@machine bedtools2]$ alias bedtools='~/course/soft/bedtools2/bin/bedtools'
+[user@machine bedtools2]$ 
+[user@machine bedtools2]$ bedtools --help
+bedtools: flexible tools for genome arithmetic and DNA sequence analysis.
+usage:    bedtools <subcommand> [options]
+
+The bedtools sub-commands include:
+
+[ Genome arithmetic ]
+    intersect     Find overlapping intervals in various ways.
+    window        Find overlapping intervals within a window around an interval.
+    closest       Find the closest, potentially non-overlapping interval.
+    coverage      Compute the coverage over defined intervals.
+    map           Apply a function to a column for each overlapping interval.
+    genomecov     Compute the coverage over an entire genome.
+    merge         Combine overlapping/nearby intervals into a single interval.
+    cluster       Cluster (but don't merge) overlapping/nearby intervals.
+    complement    Extract intervals _not_ represented by an interval file.
+    subtract      Remove intervals based on overlaps b/w two files.
+    slop          Adjust the size of intervals.
+    flank         Create new intervals from the flanks of existing intervals.
+    sort          Order the intervals in a file.
+    random        Generate random intervals in a genome.
+    shuffle       Randomly redistrubute intervals in a genome.
+    sample        Sample random records from file using reservoir sampling.
+    spacing       Report the gap lengths between intervals in a file.
+    annotate      Annotate coverage of features from multiple files.
+
+[ Multi-way file comparisons ]
+    multiinter    Identifies common intervals among multiple interval files.
+    unionbedg     Combines coverage intervals from multiple BEDGRAPH files.
+
+[ Paired-end manipulation ]
+    pairtobed     Find pairs that overlap intervals in various ways.
+    pairtopair    Find pairs that overlap other pairs in various ways.
+
+[ Format conversion ]
+    bamtobed      Convert BAM alignments to BED (& other) formats.
+    bedtobam      Convert intervals to BAM records.
+    bamtofastq    Convert BAM records to FASTQ records.
+    bedpetobam    Convert BEDPE intervals to BAM records.
+    bed12tobed6   Breaks BED12 intervals into discrete BED6 intervals.
+
+[ Fasta manipulation ]
+    getfasta      Use intervals to extract sequences from a FASTA file.
+    maskfasta     Use intervals to mask sequences from a FASTA file.
+    nuc           Profile the nucleotide content of intervals in a FASTA file.
+
+[ BAM focused tools ]
+    multicov      Counts coverage from multiple BAMs at specific intervals.
+    tag           Tag BAM alignments based on overlaps with interval files.
+
+[ Statistical relationships ]
+    jaccard       Calculate the Jaccard statistic b/w two sets of intervals.
+    reldist       Calculate the distribution of relative distances b/w two files.
+    fisher        Calculate Fisher statistic b/w two feature files.
+
+[ Miscellaneous tools ]
+    overlap       Computes the amount of overlap from two intervals.
+    igv           Create an IGV snapshot batch script.
+    links         Create a HTML page of links to UCSC locations.
+    makewindows   Make interval "windows" across a genome.
+    groupby       Group by common cols. & summarize oth. cols. (~ SQL "groupBy")
+    expand        Replicate lines based on lists of values in columns.
+    split         Split a file into multiple files with equal records or base pairs.
+
+[ General help ]
+    --help        Print this help menu.
+    --version     What version of bedtools are you using?.
+    --contact     Feature requests, bugs, mailing lists, etc.
+
+```
+</p>
+</details>
+
 
 ## Exercise 0
 
@@ -166,6 +337,21 @@ wc -l ~/course/data/example.bed
 </p>
 </details>
 
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine bedtools2]$ wc -l ~/course/data/example.bed
+98 /home/imallona/course/data/example.bed
+
+```
+</p>
+</details>
+
+
 
 ## Exercise 2
 
@@ -183,6 +369,62 @@ man head
 </p>
 </details>
 
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+HEAD(1)                                                                User Commands                                                               HEAD(1)
+
+NAME
+       head - output the first part of files
+
+SYNOPSIS
+       head [OPTION]... [FILE]...
+
+DESCRIPTION
+       Print the first 10 lines of each FILE to standard output.  With more than one FILE, precede each with a header giving the file name.
+
+       With no FILE, or when FILE is -, read standard input.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -c, --bytes=[-]NUM
+              print the first NUM bytes of each file; with the leading '-', print all but the last NUM bytes of each file
+
+       -n, --lines=[-]NUM
+              print the first NUM lines instead of the first 10; with the leading '-', print all but the last NUM lines of each file
+
+       -q, --quiet, --silent
+              never print headers giving file names
+
+       -v, --verbose
+              always print headers giving file names
+
+       -z, --zero-terminated
+              line delimiter is NUL, not newline
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       NUM may have a multiplier suffix: b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024, GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z,
+       Y.
+
+AUTHOR
+       Written by David MacKenzie and Jim Meyering.
+
+REPORTING BUGS
+
+```
+</p>
+</details>
+
+
+
 ## Exercise 3
 
 Get the first 5 lines of the file `~/course/data/example.bed`. Tip: use `head`.
@@ -197,6 +439,25 @@ head -5 ~/course/data/example.bed
 </p>
 </details>
 
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine bedtools2]$ head -5 ~/course/data/example.bed
+chr1	558358	822262	0	0.1164	4
+chr1	1598122	70541062	0	-0.1346	103
+chr1	71679114	180533364	0	0.0324	116
+chr1	181351615	196333968	1	0.24	16
+chr1	197555049	246405976	0	0.147	55
+
+```
+</p>
+</details>
+
+
 ## Exercise 4
 
 Using pipes (`|`): chain the `head -5` command before with  `wc -l` to make sure the number of lines was as expected (5).
@@ -210,6 +471,19 @@ Wikipedia page for [Unix pipelines](https://en.wikipedia.org/wiki/Pipeline_(Unix
 head -5 ~/course/data/example.bed | wc -l
 ```
 
+</p>
+</details>
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine bedtools2]$ head -5 ~/course/data/example.bed | wc -l
+5
+```
 </p>
 </details>
 
@@ -236,8 +510,32 @@ Answer
 ```bash
 cd ~/course/data
 curl -L https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/SP1.fq  > SP1.fq
+
+file SP1.fq
 ```
 
+</p>
+</details>
+
+
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ curl -L https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/SP1.fq  > SP1.fq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 22471  100 22471    0     0   119k      0 --:--:-- --:--:-- --:--:--  119k
+[user@machine data]$ 
+[user@machine data]$ file SP1.fq
+SP1.fq: ASCII text
+
+```
 </p>
 </details>
 
@@ -264,6 +562,37 @@ head SP1.fq
 
 </p>
 </details>
+
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ cd  ~/course/data
+[user@machine data]$ ls -lh SP1.fq
+-rw-r--r-- 1 imallona imallona 22K Sep 14 18:21 SP1.fq
+[user@machine data]$ wc -l SP1.fq
+1000 SP1.fq
+[user@machine data]$ 
+[user@machine data]$ head SP1.fq
+@cluster_2:UMI_ATTCCG
+TTTCCGGGGCACATAATCTTCAGCCGGGCGC
++
+9C;=;=<9@4868>9:67AA<9>65<=>591
+@cluster_8:UMI_CTTTGA
+TATCCTTGCAATACTCTCCGAACGGGAGAGC
++
+1/04.72,(003,-2-22+00-12./.-.4-
+@cluster_12:UMI_GGTCAA
+GCAGTTTAAGATCATTTTATTGAAGAGCAAG
+
+```
+</p>
+</details>
+
 
 ## Exercise 7
 
@@ -305,6 +634,25 @@ wc -l SP1.fq | awk '{print $1 / 4}' # total number of fastq records
 </p>
 </details>
 
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ wc -l SP1.fq  # total number of lines
+1000 SP1.fq
+[user@machine data]$ wc -l SP1.fq | awk '{print $1 / 4}' # total number of fastq records
+250
+
+```
+</p>
+</details>
+
+
+
 ## Exercise 8
 
 A common mistake is to use ``grep`` to pattern match the ``@`` in the sequence identifier. Why doesn't this work?
@@ -317,7 +665,8 @@ renders `250`
 ```bash
 grep -c "@" SP1.fq
 ```
-renders `459`.
+renders `459`. How can this be? Tip: does ``@`` have multiple meanings?
+
 <details><summary>
 Answer
 </summary>
@@ -367,6 +716,33 @@ awk 'NR%4==2'   ~/course/data/SP1.fq
 </p>
 </details>
 
+
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ awk 'NR%4==2'   ~/course/data/SP1.fq
+TTTCCGGGGCACATAATCTTCAGCCGGGCGC
+TATCCTTGCAATACTCTCCGAACGGGAGAGC
+GCAGTTTAAGATCATTTTATTGAAGAGCAAG
+GGCATTGCAAAATTTATTACACCCCCAGATC
+CCCCCTTAAATAGCTGTTTATTTGGCCCCAG
+TCTTGCAAAAACTCCTAGATCGGAAGAGCAC
+TCCCCCCCCCAAATCGGAAAAACACACCCCC
+GTCTTTGTACAAAATTTTATTAAAGGTCTTT
+CCTTCCATCACCAGATCGGAAAAACACACGC
+
+<- trimmed for the sake of brevity ->
+
+```
+</p>
+</details>
+
+
 ## Exercise 10
 
 Print the line numbers of the file `SP1.fq` using awk.
@@ -384,6 +760,37 @@ awk '{print NR}' ~/course/data/SP1.fq
 </details>
 
 
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ awk '{print NR}' ~/course/data/SP1.fq
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+<- trimmed for the sake of brevity ->
+
+
+```
+</p>
+</details>
+
+
 We can also prepend the line number to the FASTQ file (please note we asume `SP1.fq` is on the working directory)
 
 Tip: `awk '{print $0 }'` filename prints the whole line, to which you can add the ``NR``.
@@ -392,6 +799,32 @@ Tip: `awk '{print $0 }'` filename prints the whole line, to which you can add th
 awk '{print NR, $0 }' SP1.fq | head # note output in first column
 
 ```
+
+
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ awk '{print NR, $0 }' SP1.fq | head # note output in first column
+1 @cluster_2:UMI_ATTCCG
+2 TTTCCGGGGCACATAATCTTCAGCCGGGCGC
+3 +
+4 9C;=;=<9@4868>9:67AA<9>65<=>591
+5 @cluster_8:UMI_CTTTGA
+6 TATCCTTGCAATACTCTCCGAACGGGAGAGC
+7 +
+8 1/04.72,(003,-2-22+00-12./.-.4-
+9 @cluster_12:UMI_GGTCAA
+10 GCAGTTTAAGATCATTTTATTGAAGAGCAAG
+
+```
+</p>
+</details>
+
 
 ## Exercise 11
 
@@ -405,6 +838,66 @@ awk 'NR % 4 == 2' SP1.fq | head  # get sequence line
 awk 'NR % 4 == 3' SP1.fq | head  # get comment line
 awk 'NR % 4 == 0' SP1.fq | head  # get quality line
 ```
+
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ awk 'NR % 4 == 1' SP1.fq | head  # get header line
+@cluster_2:UMI_ATTCCG
+@cluster_8:UMI_CTTTGA
+@cluster_12:UMI_GGTCAA
+@cluster_21:UMI_AGAACA
+@cluster_29:UMI_GCAGGA
+@cluster_34:UMI_AGCTCA
+@cluster_36:UMI_AACAGA
+@cluster_37:UMI_GAGGAG
+@cluster_39:UMI_GAACCG
+@cluster_43:UMI_GGATTG
+[user@machine data]$ awk 'NR % 4 == 2' SP1.fq | head  # get sequence line
+TTTCCGGGGCACATAATCTTCAGCCGGGCGC
+TATCCTTGCAATACTCTCCGAACGGGAGAGC
+GCAGTTTAAGATCATTTTATTGAAGAGCAAG
+GGCATTGCAAAATTTATTACACCCCCAGATC
+CCCCCTTAAATAGCTGTTTATTTGGCCCCAG
+TCTTGCAAAAACTCCTAGATCGGAAGAGCAC
+TCCCCCCCCCAAATCGGAAAAACACACCCCC
+GTCTTTGTACAAAATTTTATTAAAGGTCTTT
+CCTTCCATCACCAGATCGGAAAAACACACGC
+GAGTTATAATCCAATCTTTATTTAAAAATCT
+[user@machine data]$ awk 'NR % 4 == 3' SP1.fq | head  # get comment line
++
++
++
++
++
++
++
++
++
++
+[user@machine data]$ awk 'NR % 4 == 0' SP1.fq | head  # get quality line
+9C;=;=<9@4868>9:67AA<9>65<=>591
+1/04.72,(003,-2-22+00-12./.-.4-
+?7?AEEC@>=1?A?EEEB9ECB?==:B.A?A
+>=2.660/?:36AD;0<14703640334-//
+8;;;>DC@DAC=B?C@9?B?CDCB@><<??A
+-/CA:+<599803./2065?6=<>90;?150
+5?:5;<02:@977=:<0=9>@5>7>;>*3,-
+?B?DEC@A=?ADDAEEEC?EC@D6A@@>DE4
+00>7;8@5<192?/8;0;;>=3=/3239713
+>=AEC?C@;??0A>?0DEB9EEB@DDC1?=6
+
+```
+</p>
+</details>
+
+
+
 
 <!-- ## Exercise 12 -->
 
@@ -433,16 +926,14 @@ awk 'NR % 4 == 0' SP1.fq | head  # get quality line
 
 FASTA format is a more compact sequence format than FASTQ.
 
-```bash
+```
 >sequence_identifier_1
 ATCGTCGATGCTAGTCGA
 >sequence_identifier_2
 AGCTAGCTAGCTAGC
 ```
 
-Convert fastq to fasta
-
-Tip: use every first and second line using awk and modulo operators.
+Convert fastq to fasta. Not an easy exercise. Tip: extract every first and second line using awk and modulo operators; and add the `>` to the sequence identifier (prepend it to the fastq identifier).
 
 
 <details><summary>
@@ -456,6 +947,33 @@ Answer
 awk 'NR % 4 == 1 {print ">"$1}; 
      NR % 4 == 2 {print}' SP1.fq \
      | head 
+```
+</p>
+</details>
+
+
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ awk 'NR % 4 == 1 {print ">"$1}; 
+>      NR % 4 == 2 {print}' SP1.fq \
+>      | head 
+>@cluster_2:UMI_ATTCCG
+TTTCCGGGGCACATAATCTTCAGCCGGGCGC
+>@cluster_8:UMI_CTTTGA
+TATCCTTGCAATACTCTCCGAACGGGAGAGC
+>@cluster_12:UMI_GGTCAA
+GCAGTTTAAGATCATTTTATTGAAGAGCAAG
+>@cluster_21:UMI_AGAACA
+GGCATTGCAAAATTTATTACACCCCCAGATC
+>@cluster_29:UMI_GCAGGA
+CCCCCTTAAATAGCTGTTTATTTGGCCCCAG
+
 ```
 </p>
 </details>
@@ -492,12 +1010,24 @@ awk 'NR % 4 == 1 {print ">"$0};
 </p>
 </details>
 
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+(empty, redirects it to a file so the standard output / screen shows nothing)
+
+```
+</p>
+</details>
 
 ## Exercise 14
 
 Make sure the number of sequences is the same in both fastq and fasta files.
 
-Tip: use `wc -l` to count lines, and use the modulo operator to focus on individual records.
+Tip: use `wc -l` to count lines, and use the modulo operator to focus on individual records for the both fastq and fasta. Remember that one sequence is encoded in two lines in fasta, and in four in fastq.
 
 <details><summary>
 Answer
@@ -508,6 +1038,23 @@ Answer
 ```bash
 awk 'NR % 4 == 1' SP1.fq | wc -l
 awk 'NR % 2 == 1' example.fa | wc -l
+
+```
+</p>
+</details>
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ awk 'NR % 4 == 1' SP1.fq | wc -l
+250
+[user@machine data]$ awk 'NR % 2 == 1' example.fa | wc -l
+250
+
 
 ```
 </p>
@@ -546,18 +1093,18 @@ Output
 
 <p>
 
-```bash
-[imallona@neutral bedtools2]$ cd ~/course/data
-[imallona@neutral data]$ 
-[imallona@neutral data]$ curl -L https://github.com/samtools/samtools/raw/develop/examples/ex1.sam.gz \
+```
+[user@machine bedtools2]$ cd ~/course/data
+[user@machine data]$ 
+[user@machine data]$ curl -L https://github.com/samtools/samtools/raw/develop/examples/ex1.sam.gz \
 >   > ex1.sam.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   145  100   145    0     0    596      0 --:--:-- --:--:-- --:--:--   596
 100  111k  100  111k    0     0   178k      0 --:--:-- --:--:-- --:--:--  736k
-[imallona@neutral data]$ 
-[imallona@neutral data]$ gunzip ex1.sam.gz
-[imallona@neutral data]$ head ex1.sam
+[user@machine data]$ 
+[user@machine data]$ gunzip ex1.sam.gz
+[user@machine data]$ head ex1.sam
 B7_591:4:96:693:509	73	seq1	1	99	36M	*	0	0	CACTAGTGGCTCATTGTAAATGTGTGGTTTAACTCG	<<<<<<<<<<<<<<<;<<<<<<<<<5<<<<<;:<;7	MF:i:18	Aq:i:73	NM:i:0	UQ:i:0	H0:i:1	H1:i:0
 EAS54_65:7:152:368:113	73	seq1	3	99	35M	*	0	0	CTAGTGGCTCATTGTAAATGTGTGGTTTAACTCGT	<<<<<<<<<<0<<<<655<<7<<<:9<<3/:<6):	MF:i:18	Aq:i:66	NM:i:0	UQ:i:0	H0:i:1	H1:i:0
 EAS51_64:8:5:734:57	137	seq1	5	99	35M	*	0	0	AGTGGCTCATTGTAAATGTGTGGTTTAACTCGTCC	<<<<<<<<<<<7;71<<;<;;<7;<<3;);3*8/5	MF:i:18	Aq:i:66	NM:i:0	UQ:i:0	H0:i:1	H1:i:0
@@ -572,7 +1119,6 @@ EAS51_66:7:68:402:50	137	seq1	22	99	35M	*	0	0	GTGTGGTTTAACTCGTCCATGGCCCAGCATTTGG
 ```
 </p>
 </details>
-
 
 
 # BED format
@@ -596,6 +1142,24 @@ Answer
 cd ~/course/soft/bedtools2/test/intersect/
 
 awk -v OFS='\t' '{print $1,$2,$3}' a.bed
+
+```
+</p>
+</details>
+
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ cd ~/course/soft/bedtools2/test/intersect/
+[user@machine intersect]$ 
+[user@machine intersect]$ awk -v OFS='\t' '{print $1,$2,$3}' a.bed
+chr1	10	20
+chr1	100	200
 
 ```
 </p>
@@ -631,6 +1195,29 @@ cd - ## to go back to the previous directory
 </details>
 
 
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine intersect]$ cd ~/course/soft/bedtools2/test/intersect/
+[user@machine intersect]$ 
+[user@machine intersect]$ awk -v OFS='\t' '{print $1,$2,$3,".",0,"."}' \
+>   recordsOutOfOrder.bed
+chr1	20	30	.	0	.
+chr1	40	50	.	0	.
+chr1	15	60	.	0	.
+chr1	70	80	.	0	.
+[user@machine intersect]$ 
+[user@machine intersect]$ cd - ## to go back to the previous directory
+/home/imallona/course/soft/bedtools2/test/intersect
+
+```
+</p>
+</details>
+
 ## Exercise 18
 
 Add a nucleotide to the start and subtract a nucleotide to the end to all records, regardless of the strand, to the file `~/course/soft/bedtools2/test/intersect/a.bed`.
@@ -656,6 +1243,28 @@ cd - ## to go back to the previous directory
 </p>
 </details>
 
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine intersect]$ cd ~/course/soft/bedtools2/test/intersect/
+[user@machine intersect]$ 
+[user@machine intersect]$ awk -v OFS='\t' '{print $1,$2-1,$3+1,$4,$5,$6}' a.bed
+chr1	9	21	a1	1	+
+chr1	99	201	a2	2	-
+[user@machine intersect]$ 
+[user@machine intersect]$ cd - ## to go back to the previous directory
+/home/imallona/course/soft/bedtools2/test/intersect
+
+```
+</p>
+</details>
+
+
 ## Exercise 19
 
 Use [bedtools intersect](http://bedtools.readthedocs.io/en/latest/content/tools/intersect.html#intersect) to find overlapping genomic features. The [BEDtools paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2832824/) is also very helpful to understand the genomic arithmetics analysis (without sequences, using coordinates).
@@ -678,11 +1287,36 @@ head ~/course/soft/bedtools2/test/intersect/b.bed
 </p>
 </details>
 
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine intersect]$ head ~/course/soft/bedtools2/test/intersect/a.bed
+chr1	10	20	a1	1	+
+chr1	100	200	a2	2	-
+[user@machine intersect]$ head ~/course/soft/bedtools2/test/intersect/b.bed
+chr1	20	30	b1	1	+
+chr1	90	101	b2	2	-
+chr1	100	110	b3	3	+
+chr1	200	210	b4	4	+
+
+```
+</p>
+</details>
+
+
+
+
 ## Exercise 20
 
 What will happen if you intersect those files? For example, the `a.bed` region chr1:100-200 overlaps with `b.bed`
 
 ```bash
+
 alias bedtools='~/course/soft/bedtools2/bin/bedtools'
 
 bedtools intersect \
@@ -701,7 +1335,7 @@ Answer
 
 The output is a direct intersect:
 
-```bash
+```
 
 chr1	100	101	a2	2	-
 chr1	100	110	a2	2	-
@@ -709,14 +1343,14 @@ chr1	100	110	a2	2	-
 
 Starting from the original interval from a.bed:
 
-```bash
+```
 chr1        100     200     a2      2       -
 
 ```
 
 And the overlapping intervals from b.bed:
 
-```bash
+```
 chr1        90      101     b2      2       -
 chr1        100     110     b3      3       +
 ```
@@ -747,6 +1381,26 @@ Tip: read the documentation https://bedtools.readthedocs.io/en/latest/content/to
 </p>
 </details>
 
+
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine intersect]$ bedtools intersect \
+>   -b  ~/course/soft/bedtools2/test/intersect/a.bed \
+>   -a  ~/course/soft/bedtools2/test/intersect/b.bed
+chr1	100	101	b2	2	-
+chr1	100	110	b3	3	+
+
+
+```
+</p>
+</details>
+
 ## Exercise 22
 
 Run bedtools intersect with the `a.bed` file as `-a`,  the `b.bed` file as `-b` but forcing strandness, i.e. reporting hits in B that overlap A on the same strand. [Bedtools intersect documentation](https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html).
@@ -767,6 +1421,26 @@ bedtools intersect \
   
 </p>
 </details>
+
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine intersect]$ bedtools intersect \
+>   -s \
+>   -a  ~/course/soft/bedtools2/test/intersect/a.bed \
+>   -b  ~/course/soft/bedtools2/test/intersect/b.bed
+chr1	100	101	a2	2	-
+
+```
+</p>
+</details>
+
+
 
 ## Exercise 23
 
@@ -801,6 +1475,32 @@ bedtools intersect \
 </p>
 </details>
 
+<details><summary>
+Outputs
+</summary>
+
+<p>
+
+```
+[user@machine intersect]$ bedtools intersect \
+>   -v \
+>   -a  ~/course/soft/bedtools2/test/intersect/a.bed \
+>   -b  ~/course/soft/bedtools2/test/intersect/b.bed
+chr1	10	20	a1	1	+
+[user@machine intersect]$ 
+[user@machine intersect]$ bedtools intersect \
+>   -v \
+>   -wa -wb \
+>   -b  ~/course/soft/bedtools2/test/intersect/a.bed \
+>   -a  ~/course/soft/bedtools2/test/intersect/b.bed
+chr1	20	30	b1	1	+
+chr1	200	210	b4	4	+
+
+```
+</p>
+</details>
+
+
 ## Exercise 24
 
 Use the `-wao` flag to report the amounts of overlap for all features when comparing `a.bed` and `b.bed`, including those that do not overlap. How are non overlaps encoded? Which strand are they on?
@@ -817,10 +1517,34 @@ bedtools intersect \
   -wao \
   -a  ~/course/soft/bedtools2/test/intersect/a.bed \
   -b  ~/course/soft/bedtools2/test/intersect/b.bed
+
+## so the overlaps are encoded as -1
 ```
 
 </p>
 </details>
+
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine intersect]$ bedtools intersect \
+>   -wao \
+>   -a  ~/course/soft/bedtools2/test/intersect/a.bed \
+>   -b  ~/course/soft/bedtools2/test/intersect/b.bed
+chr1	10	20	a1	1	+	.	-1	-1	.	-1	.	0
+chr1	100	200	a2	2	-	chr1	90	101	b2	2	-	1
+chr1	100	200	a2	2	-	chr1	100	110	b3	3	+	10
+
+
+```
+</p>
+</details>
+
 
 # GTF
 
@@ -850,6 +1574,41 @@ wc -l chr22_with_ERCC92.gtf
 </details>
 
 
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ curl -L http://genomedata.org/rnaseq-tutorial/annotations/GRCh38/chr22_with_ERCC92.gtf > chr22_with_ERCC92.gtf
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 29.2M  100 29.2M    0     0  4637k      0  0:00:06  0:00:06 --:--:-- 5563k
+[user@machine data]$ 
+[user@machine data]$ head chr22_with_ERCC92.gtf
+22	ensembl	gene	10736171	10736283	.	-	.	gene_id "ENSG00000277248"; gene_version "1"; gene_name "U2"; gene_source "ensembl"; gene_biotype "snRNA";
+22	ensembl	transcript	10736171	10736283	.	-	.	gene_id "ENSG00000277248"; gene_version "1"; transcript_id "ENST00000615943"; transcript_version "1"; gene_name "U2"; gene_source "ensembl"; gene_biotype "snRNA"; transcript_name "U2.14-201"; transcript_source "ensembl"; transcript_biotype "snRNA"; tag "basic"; transcript_support_level "NA";
+22	ensembl	exon	10736171	10736283	.	-	.	gene_id "ENSG00000277248"; gene_version "1"; transcript_id "ENST00000615943"; transcript_version "1"; exon_number "1"; gene_name "U2"; gene_source "ensembl"; gene_biotype "snRNA"; transcript_name "U2.14-201"; transcript_source "ensembl"; transcript_biotype "snRNA"; exon_id "ENSE00003736336"; exon_version "1"; tag "basic"; transcript_support_level "NA";
+22	havana	gene	10939388	10961338	.	-	.	gene_id "ENSG00000283047"; gene_version "1"; gene_name "FRG1FP"; gene_source "havana"; gene_biotype "unprocessed_pseudogene"; havana_gene "OTTHUMG00000191577"; havana_gene_version "1";
+22	havana	transcript	10939388	10961338	.	-	.	gene_id "ENSG00000283047"; gene_version "1"; transcript_id "ENST00000635667"; transcript_version "1"; gene_name "FRG1FP"; gene_source "havana"; gene_biotype "unprocessed_pseudogene"; havana_gene "OTTHUMG00000191577"; havana_gene_version "1"; transcript_name "FRG1FP-001"; transcript_source "havana"; transcript_biotype "unprocessed_pseudogene"; havana_transcript "OTTHUMT00000488611"; havana_transcript_version "1"; tag "basic"; transcript_support_level "NA";
+22	havana	exon	10961283	10961338	.	-	.	gene_id "ENSG00000283047"; gene_version "1"; transcript_id "ENST00000635667"; transcript_version "1"; exon_number "1"; gene_name "FRG1FP"; gene_source "havana"; gene_biotype "unprocessed_pseudogene"; havana_gene "OTTHUMG00000191577"; havana_gene_version "1"; transcript_name "FRG1FP-001"; transcript_source "havana"; transcript_biotype "unprocessed_pseudogene"; havana_transcript "OTTHUMT00000488611"; havana_transcript_version "1"; exon_id "ENSE00003786612"; exon_version "1"; tag "basic"; transcript_support_level "NA";
+22	havana	exon	10959067	10959136	.	-	.	gene_id "ENSG00000283047"; gene_version "1"; transcript_id "ENST00000635667"; transcript_version "1"; exon_number "2"; gene_name "FRG1FP"; gene_source "havana"; gene_biotype "unprocessed_pseudogene"; havana_gene "OTTHUMG00000191577"; havana_gene_version "1"; transcript_name "FRG1FP-001"; transcript_source "havana"; transcript_biotype "unprocessed_pseudogene"; havana_transcript "OTTHUMT00000488611"; havana_transcript_version "1"; exon_id "ENSE00003789146"; exon_version "1"; tag "basic"; transcript_support_level "NA";
+22	havana	exon	10950049	10950174	.	-	.	gene_id "ENSG00000283047"; gene_version "1"; transcript_id "ENST00000635667"; transcript_version "1"; exon_number "3"; gene_name "FRG1FP"; gene_source "havana"; gene_biotype "unprocessed_pseudogene"; havana_gene "OTTHUMG00000191577"; havana_gene_version "1"; transcript_name "FRG1FP-001"; transcript_source "havana"; transcript_biotype "unprocessed_pseudogene"; havana_transcript "OTTHUMT00000488611"; havana_transcript_version "1"; exon_id "ENSE00003786193"; exon_version "1"; tag "basic"; transcript_support_level "NA";
+22	havana	exon	10949212	10949269	.	-	.	gene_id "ENSG00000283047"; gene_version "1"; transcript_id "ENST00000635667"; transcript_version "1"; exon_number "4"; gene_name "FRG1FP"; gene_source "havana"; gene_biotype "unprocessed_pseudogene"; havana_gene "OTTHUMG00000191577"; havana_gene_version "1"; transcript_name "FRG1FP-001"; transcript_source "havana"; transcript_biotype "unprocessed_pseudogene"; havana_transcript "OTTHUMT00000488611"; havana_transcript_version "1"; exon_id "ENSE00003784997"; exon_version "1"; tag "basic"; transcript_support_level "NA";
+22	havana	exon	10947304	10947418	.	-	.	gene_id "ENSG00000283047"; gene_version "1"; transcript_id "ENST00000635667"; transcript_version "1"; exon_number "5"; gene_name "FRG1FP"; gene_source "havana"; gene_biotype "unprocessed_pseudogene"; havana_gene "OTTHUMG00000191577"; havana_gene_version "1"; transcript_name "FRG1FP-001"; transcript_source "havana"; transcript_biotype "unprocessed_pseudogene"; havana_transcript "OTTHUMT00000488611"; havana_transcript_version "1"; exon_id "ENSE00003787541"; exon_version "1"; tag "basic"; transcript_support_level "NA";
+[user@machine data]$ 
+[user@machine data]$ wc -l chr22_with_ERCC92.gtf
+56295 chr22_with_ERCC92.gtf
+
+```
+</p>
+</details>
+
+
+
+
 ## Exercise 26
 
 Retrieve the details of transcript `ENST00000342247` (tip: use grep) from the
@@ -877,6 +1636,47 @@ grep ENST00000342247 chr22_with_ERCC92.gtf | grep "exon\s" | wc -l
 
 </details>
 
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ grep ENST00000342247 chr22_with_ERCC92.gtf | grep "exon\s"
+22	ensembl	exon	17369366	17369909	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "1"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00003719738"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17477588	17477682	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "2"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00003674122"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17497403	17497586	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "3"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00003616125"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17499410	17499549	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "4"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00003505471"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17500631	17500735	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "5"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001775438"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17503082	17503131	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "6"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001756874"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17504847	17505016	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "7"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001684496"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17511813	17511896	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "8"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001598036"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17524118	17524327	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "9"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00003723500"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17534744	17534747	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "10"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00003711940"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17537103	17537232	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "11"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001704267"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17538520	17538557	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "12"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001677027"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17538640	17538731	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "13"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001720235"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17538993	17539119	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "14"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001592054"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17540412	17540800	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "15"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001805660"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17541839	17541967	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "16"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001653782"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17542157	17543003	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "17"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001713996"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17548148	17549564	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "18"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001606307"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17552031	17552142	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "19"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00003678912"; exon_version "1"; tag "basic"; transcript_support_level "5";
+22	ensembl	exon	17552835	17554145	.	+	.	gene_id "ENSG00000099954"; gene_version "18"; transcript_id "ENST00000342247"; transcript_version "9"; exon_number "20"; gene_name "CECR2"; gene_source "ensembl_havana"; gene_biotype "protein_coding"; havana_gene "OTTHUMG00000150072"; havana_gene_version "9"; transcript_name "CECR2-202"; transcript_source "ensembl"; transcript_biotype "protein_coding"; exon_id "ENSE00001426606"; exon_version "3"; tag "basic"; transcript_support_level "5";
+[user@machine data]$ 
+[user@machine data]$ grep ENST00000342247 chr22_with_ERCC92.gtf | grep "exon\s" | wc -l
+20
+
+```
+
+So there are 20 exons.
+
+</p>
+</details>
+
+
 ## Exercise 27
 
 How many start codons and stop codons does the chr22 have? Tip: use the gtf and `grep` for `start_codon` and `stop_codon`.
@@ -902,6 +1702,30 @@ grep stop_codon chr22_with_ERCC92.gtf | wc -l
 
 
 </details>
+
+
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ cd ~/course/data
+[user@machine data]$ 
+[user@machine data]$ grep start_codon chr22_with_ERCC92.gtf | wc -l
+1856
+[user@machine data]$ 
+[user@machine data]$ grep stop_codon chr22_with_ERCC92.gtf | wc -l
+1613
+
+```
+
+So there are 1856 and 1613, respectively.
+</p>
+</details>
+
+
 
 # VCF
 
@@ -952,24 +1776,48 @@ Download an example VCF from  https://raw.githubusercontent.com/compbiozurich/UZ
 cd ~/course/data
 
 curl -L  https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/example.vcf > example.vcf
+
+file example.vcf
 ```
 
 </p>
 </details>
 
 
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ cd ~/course/data
+[user@machine data]$ 
+[user@machine data]$ curl -L  https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/example.vcf > example.vcf
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 42605  100 42605    0     0   133k      0 --:--:-- --:--:-- --:--:--  133k
+[user@machine data]$ file example.vcf
+example.vcf: Variant Call Format (VCF) version 4.1, ASCII text
+
+```
+</p>
+</details>
+
+
+
 ## Exercise 29
 
-Inspect the first 10 lines of the VCF file `example.vcf`. Which VCF version is it?
+Inspect the first line of the VCF file `example.vcf`. Which VCF version is it? can we trust the `file` command result above?
 
 
 <details><summary>Answer</summary>
 <p>
 
-VCFv4.1.
+VCFv4.1 indeed
 
 ```bash
-head -10 ~/course/data/example.vcf
+head -1 ~/course/data/example.vcf
 
 ## and notice the first line reads
 ##fileformat=VCFv4.1
@@ -978,6 +1826,24 @@ head -10 ~/course/data/example.vcf
 
 </p>
 </details>
+<details><summary>
+Output
+</summary>
+
+<p>
+
+```
+[user@machine data]$ head -1 ~/course/data/example.vcf 
+##fileformat=VCFv4.1
+
+```
+
+So VCF v4.1.
+
+</p>
+</details>
+
+
 
 
 
@@ -1297,7 +2163,7 @@ head -10 ~/course/data/example.vcf
 <!-- Explore (not necessarily run) more usage examples with biological meaning using UNIX and BEDTools [http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/](http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/) and [bedtools advanced](https://bedtools.readthedocs.io/en/latest/content/advanced-usage.html). -->
 
 
-## Exercise Sum up
+## Sum up
 
 Read an overview of all the file formats available at UCSC. You can upload some of the files you used during the course to the UCSC genome browser to see how do they look like. Anyway you can download, read, edit them using UNIX (i.e. `awk`, `grep` etc). And ask biological questions using bedtools/vcftools.
 
