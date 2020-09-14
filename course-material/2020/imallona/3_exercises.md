@@ -1,6 +1,6 @@
 # Introduction
 
-Please notice the comprehensive [SIB Course on UNIX](https://edu.sib.swiss/pluginfile.php/2878/mod_resource/content/4/couselab-html/content.html).
+Please notice the comprehensive [SIB Course on UNIX](https://edu.sib.swiss/pluginfile.php/2878/mod_resource/content/4/couselab-html/content.html) (to be run using a Web browser).
 
 You can launch a terminal in MacOS and GNU/Linux. If running another OS, please make use a [a Web-browser based emulator](https://cocalc.com/app?anonymous=terminal).
 
@@ -53,8 +53,6 @@ ls -l course
 
 ```
 
-
-
 <details><summary>
 Output
 </summary>
@@ -86,10 +84,10 @@ Downloading text files and checking their details.
 ```bash
 cd  ~/course/data
 
-curl https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2020/imallona/examples/example.bed \
+curl https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/example.bed \
    > example.bed
 
-curl https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2020/imallona/examples/hg19.genome \
+curl https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/hg19.genome \
    > hg19.genome
 
 ## this will check which kind of file it is
@@ -112,7 +110,7 @@ head hg19.genome
 
 On top of knowing the basics on file inspecting/handling using the terminal, we need to be able to install software.
 
-Here we will install [bedtools v2-25.0](https://bedtools.readthedocs.io/en/latest/)m a commonly used compbio software. For that, we will download the source code and make use of its Makefile. 
+Here we will install [bedtools v2-25.0](https://bedtools.readthedocs.io/en/latest/), a commonly used compbio software. For that, we will download the source code and make use of its Makefile. 
 
 This way, we will control the software version we are installing, and we will generate binaries that are optimized for our computers.
 
@@ -218,13 +216,13 @@ head -5 ~/course/data/example.bed | wc -l
 
 # FASTQ/A Exercises
 
-DISCLAIMER: data is based upon the beautiful Genome Analysis Workshop (MOLB 7621) Course on genome analysis at the University of Colorado SOM at [https://github.com/MOLB7621](https://github.com/MOLB7621)
+DISCLAIMER: data was based upon the beautiful Genome Analysis Workshop (MOLB 7621) Course on genome analysis at the University of Colorado SOM at [https://github.com/MOLB7621](https://github.com/MOLB7621) (unavailable in 2020).
 
 ## Exercise 5
 
 Retrieve the data for these exercises (mind the path you're working at, should be `~/course/data`).
 
-The path for URL for the data is https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2020/imallona/examples/SP1.fq
+The path for URL for the data is https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/SP1.fq
 
 Tip: use `curl`.
 
@@ -237,7 +235,7 @@ Answer
 
 ```bash
 cd ~/course/data
-curl -L https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2020/imallona/examples.SP1.fq  > SP1.fq
+curl -L https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/SP1.fq  > SP1.fq
 ```
 
 </p>
@@ -245,8 +243,6 @@ curl -L https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/
 
 
 ##  Exercise 6
-
-(Source: [MOLB7621](https://molb7621.github.io/workshop/Syllabus.html))
 
 Inspect the file from the previous exercise (file size, number of lines, and visualize its head)
 
@@ -270,8 +266,6 @@ head SP1.fq
 </details>
 
 ## Exercise 7
-
-(Source: [MOLB7621](https://molb7621.github.io/workshop/Syllabus.html))
 
 The FASTQ file stored at `~/course/data/SP1.fq` is in [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) format, meaning it contains 4 lines per read sequence. 
 
@@ -313,10 +307,7 @@ wc -l SP1.fq | awk '{print $1 / 4}' # total number of fastq records
 
 ## Exercise 8
 
-(Source: [MOLB7621](https://molb7621.github.io/workshop/Syllabus.html))
-
-A common mistake is to use ``grep`` to pattern match the ``@`` in the
-sequence identifier. Why doesn't this work?
+A common mistake is to use ``grep`` to pattern match the ``@`` in the sequence identifier. Why doesn't this work?
 
 ```bash
 wc -l SP1.fq | awk '{print $1 / 4}'
@@ -332,13 +323,11 @@ Answer
 </summary>
 
 <p>
-`@` is a valid quality score, so lines of phred scores will be counted as well when using grep
+Since `@` is a valid quality score, it's a bad idea to count lines matching `@` with grep (if doing so, we'll have some quality lines as well).
 </p>
 </details>
 
 ## Exercise 9
-
-(Source: [MOLB7621](https://molb7621.github.io/workshop/Syllabus.html))
 
 Next, extract out the read *sequences* from the fastq. This is a bit
 complicated as we need to only pull out the second line from each record. 
@@ -406,10 +395,7 @@ awk '{print NR, $0 }' SP1.fq | head # note output in first column
 
 ## Exercise 11
 
-(Source: [MOLB7621](https://molb7621.github.io/workshop/Syllabus.html))
-
-Retrieve specific records from a fastq file (e.g. header, comments etc).
- Tip: use the modulo operator with ``NR`` to only capture specific records from the fastq.
+Retrieve specific records from a fastq file (e.g. header, comments etc). Tip: use the modulo operator with ``NR`` to only capture specific records from the fastq.
 
 
 ```bash
@@ -444,8 +430,6 @@ awk 'NR % 4 == 0' SP1.fq | head  # get quality line
 
 
 ## Exercise 12
-
-(Source: [MOLB7621](https://molb7621.github.io/workshop/Syllabus.html))
 
 FASTA format is a more compact sequence format than FASTQ.
 
