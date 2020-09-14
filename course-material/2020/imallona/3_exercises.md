@@ -575,12 +575,9 @@ EAS51_66:7:68:402:50	137	seq1	22	99	35M	*	0	0	GTGTGGTTTAACTCGTCCATGGCCCAGCATTTGG
 
 
 
-
 # BED format
 
 ## Exercise 16
-
-<!-- bed6 to bed3 -->
 
 Transform the file `~/course/soft/bedtools2/test/intersect/a.bed` (BED6) to BED3 (tip: use awk to extract the first three columns).
 
@@ -599,8 +596,6 @@ Answer
 cd ~/course/soft/bedtools2/test/intersect/
 
 awk -v OFS='\t' '{print $1,$2,$3}' a.bed
-
-cd - ## to go back to the previous directory
 
 ```
 </p>
@@ -661,13 +656,7 @@ cd - ## to go back to the previous directory
 </p>
 </details>
 
-
-
-<!-- awk half open etc -->
-
-
 ## Exercise 19
-
 
 Use [bedtools intersect](http://bedtools.readthedocs.io/en/latest/content/tools/intersect.html#intersect) to find overlapping genomic features. The [BEDtools paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2832824/) is also very helpful to understand the genomic arithmetics analysis (without sequences, using coordinates).
 
@@ -812,9 +801,7 @@ bedtools intersect \
 </p>
 </details>
 
-
 ## Exercise 24
-
 
 Use the `-wao` flag to report the amounts of overlap for all features when comparing `a.bed` and `b.bed`, including those that do not overlap. How are non overlaps encoded? Which strand are they on?
 
@@ -834,8 +821,6 @@ bedtools intersect \
 
 </p>
 </details>
-
-
 
 # GTF
 
@@ -920,34 +905,53 @@ grep stop_codon chr22_with_ERCC92.gtf | wc -l
 
 # VCF
 
+<!-- ## Exercise 28 -->
+
+<!-- Install an old version of VCFtools (disclaimer, this version is convenient for teaching purposes, but please consider installing an up-to-date verson for handling your data in the future). -->
+
+<!-- To download the old version, please use the URL `https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download` and compile using `make`. The path you can choose, but you can use for instance `~/course/soft/`. -->
+
+<!-- Tip: to uncompress a `tar.gz` file use `tar xzvf`. -->
+<!-- Tip: we compiled `bedtools` as exercise number 0. -->
+
+<!-- <details><summary> -->
+<!-- Answer -->
+<!-- </summary> -->
+
+<!-- <p> -->
+
+<!-- ```bash -->
+
+<!-- cd ~/course/soft/ -->
+
+<!-- curl -L https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download > \ -->
+<!--    vcftools.tar.gz -->
+
+<!-- tar xzvf vcftools.tar.gz -->
+
+<!-- cd vcftools_0.1.13/ -->
+
+<!-- make -->
+
+<!-- ``` -->
+
+<!-- </p> -->
+<!-- </details> -->
+
 ## Exercise 28
 
-Install an old version of VCFtools (disclaimer, this version is convenient for teaching purposes, but please consider installing an up-to-date verson for handling your data in the future).
 
-To download the old version, please use the URL `https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download` and compile using `make`. The path you can choose, but you can use for instance `~/course/soft/`.
+Download an example VCF from  https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/example.vcf and save it with the same name in `~/course/data`.
 
-Tip: to uncompress a `tar.gz` file use `tar xzvf`.
-Tip: we compiled `bedtools` as exercise number 0.
 
-<details><summary>
-Answer
-</summary>
-
+<details><summary>Answer</summary>
 <p>
 
+
 ```bash
+cd ~/course/data
 
-cd ~/course/soft/
-
-curl -L https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download > \
-   vcftools.tar.gz
-
-tar xzvf vcftools.tar.gz
-
-cd vcftools_0.1.13/
-
-make
-
+curl -L  https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/example.vcf > example.vcf
 ```
 
 </p>
@@ -956,74 +960,19 @@ make
 
 ## Exercise 29
 
-Check which is the current version of VCFtools? How should installation be carried out? (tip: Git repositories release tagged versions).
+Inspect the first 10 lines of the VCF file `example.vcf`. Which VCF version is it?
 
-<details><summary>
-Answer
-</summary>
 
+<details><summary>Answer</summary>
 <p>
 
-Git repository at [https://github.com/vcftools/vcftools](https://github.com/vcftools/vcftools)
-
-Latest tag on Sept the 23rd 2019 is tag named `v0.1.16` (released Aug 2nd 2018) [https://github.com/vcftools/vcftools/releases](https://github.com/vcftools/vcftools/releases)
-
-</p>
-</details>
-
-
-## Exercise 30
-
-VCFtools has some data for testing purposes; `find` all the VCF files (filenames similar to `*vcf*`) that you downloaded during installation and inspect them using `head`.
-
-<details><summary>
-Answer
-</summary>
-
-<p>
+VCFv4.1.
 
 ```bash
+head -10 ~/course/data/example.vcf
 
-find ~/course/soft/vcftools_0.1.13 -name "*vcf" -type f
-
-```
-
-</p>
-</details>
-
-## Exercise 31
-
-Alias the vcftool binary (full path) to `vcftools` and then run it with no parameters
-
-
-<details><summary>
-Answer
-</summary>
-
-<p>
-
-```bash
-
-alias vcftools='~/course/soft/vcftools_0.1.13/bin/vcftools'
-vcftools
-
-```
-
-Should render
-
-```
-
-
-VCFtools (v0.1.13)
-© Adam Auton and Anthony Marcketta 2009
-
-Process Variant Call Format files
-
-For a list of options, please go to:
-	https://vcftools.github.io/examples.html
-
-Questions, comments, and suggestions should be emailed to:
-	vcftools-help@lists.sourceforge.net
+## and notice the first line reads
+##fileformat=VCFv4.1
 
 ```
 
@@ -1031,246 +980,324 @@ Questions, comments, and suggestions should be emailed to:
 </details>
 
 
-## Exercise 32
 
-How many variants are kept after filtering at `~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf`? Tip: use the `--vcf` flag to `vcftools`. What does this result mean?
+<!-- ## Exercise 29 -->
 
+<!-- Check which is the current version of VCFtools? How should installation be carried out? (tip: Git repositories release tagged versions). -->
 
+<!-- <details><summary> -->
+<!-- Answer -->
+<!-- </summary> -->
 
-<details><summary>
-Answer
-</summary>
+<!-- <p> -->
 
-<p>
+<!-- Git repository at [https://github.com/vcftools/vcftools](https://github.com/vcftools/vcftools) -->
 
-```bash
-vcftools --vcf ~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf
+<!-- Latest tag on Sept the 23rd 2019 is tag named `v0.1.16` (released Aug 2nd 2018) [https://github.com/vcftools/vcftools/releases](https://github.com/vcftools/vcftools/releases) -->
 
-```
+<!-- </p> -->
+<!-- </details> -->
 
-</p>
-</details>
 
-# Real data integration
+<!-- ## Exercise 30 -->
 
-Please note these exercises are meant to provide a real use case of computational biology applied to human genetic variation. Even though some of them might be solved in relatively few lines of standard UNIX tools (`curl`, `head`, `wc`, `awk`) and bioinformatics software (`vcftools`), they are complex, and will process somewhat big amounts of data.
+<!-- VCFtools has some data for testing purposes; `find` all the VCF files (filenames similar to `*vcf*`) that you downloaded during installation and inspect them using `head`. -->
 
-## Exercise 33
+<!-- <details><summary> -->
+<!-- Answer -->
+<!-- </summary> -->
 
-Explore human variation data for mobile elements insertion using the [1000genomes data](http://www.internationalgenome.org/data). More precisely, download the pilot [pilot data](ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/) named `CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz` (the full path to the remote FTP server is `ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz`).
+<!-- <p> -->
 
-Then, explore the number of variants (tip: use `vcftools`), the file contents etc.
+<!-- ```bash -->
 
-Tip: remember where the `bedtools` and `vcftools` binaries are and/or use an alias to them.
+<!-- find ~/course/soft/vcftools_0.1.13 -name "*vcf" -type f -->
 
-Tip: to uncompress `.gz` files (not `tar.gz` but plain `gz`) use `gunzip`.
+<!-- ``` -->
 
-For further details on mobile elements insertion as a source of human variation please read the paper [Stewart et al 2011](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002236).
+<!-- </p> -->
+<!-- </details> -->
 
-<details><summary>
-Answer
-</summary>
+<!-- ## Exercise 31 -->
 
-<p>
+<!-- Alias the vcftool binary (full path) to `vcftools` and then run it with no parameters -->
 
-```bash
 
-cd ~/course/data
-curl -L ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz > CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz
+<!-- <details><summary> -->
+<!-- Answer -->
+<!-- </summary> -->
 
-gunzip CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz 
+<!-- <p> -->
 
-wc -l CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf 
+<!-- ```bash -->
 
-vcftools --vcf CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+<!-- alias vcftools='~/course/soft/vcftools_0.1.13/bin/vcftools' -->
+<!-- vcftools -->
 
-```
+<!-- ``` -->
 
-</p>
-</details>
+<!-- Should render -->
 
-## Exercise 34
+<!-- ``` -->
 
-As a first exercise, how many of these overlap human exons? Do you expect it to be a low or high proportion? (tip: deletereous mutations in exons, e.g. coding sequences, are selected against).
 
-To do so download an exons bedfile from `https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed` and then use `bedtools intersect` with the VCF file.
+<!-- VCFtools (v0.1.13) -->
+<!-- © Adam Auton and Anthony Marcketta 2009 -->
 
-Tip: it won't work on the first attempt because of the chromosome numbering, e.g. `chr10` vs plainly `10`.
+<!-- Process Variant Call Format files -->
 
-Tip: check how chromosome numbers are encoded in both exons.bed and the vcf file, i.e. whether starting with a `chr` or not, and harmonize them using `sed` as needed.
+<!-- For a list of options, please go to: -->
+<!-- 	https://vcftools.github.io/examples.html -->
 
-Tip: use `sed` to harmonize files. You could get rid of the `chr` strings from a file, or add them to the file without them. `sed`-based string replacement examples can be found [here](https://linuxize.com/post/how-to-use-sed-to-find-and-replace-string-in-files/). Please remember to append a `g`, e.g. `s/example/example2/g` for global replacement (all occurrences).
+<!-- Questions, comments, and suggestions should be emailed to: -->
+<!-- 	vcftools-help@lists.sourceforge.net -->
 
-Tip: when inspecting large files with long headers, `tail` (showing last lines) might be handier than `head` (showing first lines).
+<!-- ``` -->
 
-<details><summary>
-Answer
-</summary>
+<!-- </p> -->
+<!-- </details> -->
 
-<p>
 
+<!-- ## Exercise 32 -->
 
-```bash
+<!-- How many variants are kept after filtering at `~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf`? Tip: use the `--vcf` flag to `vcftools`. What does this result mean? -->
 
-cd ~/course/data
 
-curl -O https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed
 
-bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \
-  -b exons.bed
+<!-- <details><summary> -->
+<!-- Answer -->
+<!-- </summary> -->
 
-## this does not work as intended! or, rather, gives some warnings.
-## Why? The chr strings at the coordinates are present in one bedfile but not in the other
+<!-- <p> -->
 
-tail CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+<!-- ```bash -->
+<!-- vcftools --vcf ~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf -->
 
-tail exons.bed
+<!-- ``` -->
 
-## removing the chr string from the exons bedfile
+<!-- </p> -->
+<!-- </details> -->
 
-sed 's/^chr//g' exons.bed > exons_nochr.bed
+<!-- # Real data integration -->
 
-head exons_nochr.bed
+<!-- Please note these exercises are meant to provide a real use case of computational biology applied to human genetic variation. Even though some of them might be solved in relatively few lines of standard UNIX tools (`curl`, `head`, `wc`, `awk`) and bioinformatics software (`vcftools`), they are complex, and will process somewhat big amounts of data. -->
 
-## this should work (chr naming conventions are equivalent)
-bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \
-  -b exons_nochr.bed
+<!-- ## Exercise 33 -->
 
-```
+<!-- Explore human variation data for mobile elements insertion using the [1000genomes data](http://www.internationalgenome.org/data). More precisely, download the pilot [pilot data](ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/) named `CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz` (the full path to the remote FTP server is `ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz`). -->
 
-Are these numbers few or lots? What would you expect? Tip: count the overlaps piping `wc -l` to the intersect command.
+<!-- Then, explore the number of variants (tip: use `vcftools`), the file contents etc. -->
 
+<!-- Tip: remember where the `bedtools` and `vcftools` binaries are and/or use an alias to them. -->
 
-```bash
+<!-- Tip: to uncompress `.gz` files (not `tar.gz` but plain `gz`) use `gunzip`. -->
 
-bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf   -b exons_nochr.bed | wc -l
+<!-- For further details on mobile elements insertion as a source of human variation please read the paper [Stewart et al 2011](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002236). -->
 
-```
+<!-- <details><summary> -->
+<!-- Answer -->
+<!-- </summary> -->
 
-</p>
-</details>
+<!-- <p> -->
 
+<!-- ```bash -->
 
-## Exercise 35
+<!-- cd ~/course/data -->
+<!-- curl -L ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz > CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz -->
 
-Continuing with the mobile elements insertions, where do they insert preferentially? In active or inactive regions? To briefly explore this get the chromatin states with the highest number of insertions using the `CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf` and the Ernst's genome segmentation ([more info here](http://compbio.mit.edu/ChromHMM/)) as downloaded from `https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed`. Tip: then select the fourth column of the ChromHMM bedfile, sort it and count with `uniq -c`.
+<!-- gunzip CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz  -->
 
-For further details on what is a ChromHMM segmentation (i.e. assigning functions to genomic ranges) please read [Nature Methods volume 9, pages 215–216 (2012)](https://www.nature.com/articles/nmeth.1906).
+<!-- wc -l CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf  -->
 
-<details><summary>
-Answer
-</summary>
+<!-- vcftools --vcf CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf -->
 
-<p>
+<!-- ``` -->
 
+<!-- </p> -->
+<!-- </details> -->
 
-```bash
+<!-- ## Exercise 34 -->
 
-cd ~/course/data
+<!-- As a first exercise, how many of these overlap human exons? Do you expect it to be a low or high proportion? (tip: deletereous mutations in exons, e.g. coding sequences, are selected against). -->
 
-curl -O https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed
+<!-- To do so download an exons bedfile from `https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed` and then use `bedtools intersect` with the VCF file. -->
 
-# first removing the chr prepended strings again
+<!-- Tip: it won't work on the first attempt because of the chromosome numbering, e.g. `chr10` vs plainly `10`. -->
 
-sed 's/^chr//g' hesc.chromHmm.bed > hesc.chromHmm_nochr.bed
+<!-- Tip: check how chromosome numbers are encoded in both exons.bed and the vcf file, i.e. whether starting with a `chr` or not, and harmonize them using `sed` as needed. -->
 
-bedtools intersect\
-  -b CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \
-  -a  hesc.chromHmm_nochr.bed | awk '{print $4}' | sort | uniq -c
-```
+<!-- Tip: use `sed` to harmonize files. You could get rid of the `chr` strings from a file, or add them to the file without them. `sed`-based string replacement examples can be found [here](https://linuxize.com/post/how-to-use-sed-to-find-and-replace-string-in-files/). Please remember to append a `g`, e.g. `s/example/example2/g` for global replacement (all occurrences). -->
 
-So apparently there is plenty of  heterochromatin/low CNV regions, but is there an overrepresentation? How many  heterochromatin/low CNV regions are there in the whole genome?
+<!-- Tip: when inspecting large files with long headers, `tail` (showing last lines) might be handier than `head` (showing first lines). -->
 
-```bash
+<!-- <details><summary> -->
+<!-- Answer -->
+<!-- </summary> -->
 
-awk '{print $4}' hesc.chromHmm_nochr.bed | sort | uniq -c
+<!-- <p> -->
 
-```
 
-Still, we could evaluate this statistically. Can you figure out how? is this a contingency-table problem? Please check `bedtools fisher`.
+<!-- ```bash -->
 
-</p>
-</details>
+<!-- cd ~/course/data -->
 
+<!-- curl -O https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed -->
 
-## Exercises block 36
+<!-- bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \ -->
+<!--   -b exons.bed -->
 
-Play with other real genomic data using the [BEDtools tutorial](http://quinlanlab.org/tutorials/bedtools/bedtools.html) which explores the Maurano et al paper [Systematic Localization of Common Disease-Associated Variation in Regulatory DNA published in Science, 2012](https://www.ncbi.nlm.nih.gov/pubmed/22955828).
+<!-- ## this does not work as intended! or, rather, gives some warnings. -->
+<!-- ## Why? The chr strings at the coordinates are present in one bedfile but not in the other -->
 
-Mind that the tutorial recommends creating a folder with `mkdir -p ~/workspace/monday/bedtools`: if you do so and move (`mv`) there, your path (the one you can get using `pwd`) won't be at the standard `~/course` we used till now.
+<!-- tail CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf -->
 
-Remember that the bedtools binary can be aliased using ``alias bedtools='~/course/soft/bedtools2/bin/bedtools'``.
+<!-- tail exons.bed -->
 
-* Count the number of exons and CpG islands
+<!-- ## removing the chr string from the exons bedfile -->
 
-<details><summary>
-Tip
-</summary>
+<!-- sed 's/^chr//g' exons.bed > exons_nochr.bed -->
 
-<p>
+<!-- head exons_nochr.bed -->
 
-```bash
+<!-- ## this should work (chr naming conventions are equivalent) -->
+<!-- bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \ -->
+<!--   -b exons_nochr.bed -->
 
-Count the number of lines using `wc -l exons.bed` etc.
+<!-- ``` -->
 
-```
+<!-- Are these numbers few or lots? What would you expect? Tip: count the overlaps piping `wc -l` to the intersect command. -->
 
-</p>
-</details>
 
-* How many CpG islands overlap exons in the genome?
+<!-- ```bash -->
 
-<details><summary>
-Tip
-</summary>
+<!-- bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf   -b exons_nochr.bed | wc -l -->
 
-<p>
+<!-- ``` -->
 
+<!-- </p> -->
+<!-- </details> -->
 
-Bedtools intersect and count
 
-```bash
+<!-- ## Exercise 35 -->
 
-bedtools intersect -a cpg.bed -b exons.bed   | wc -l
+<!-- Continuing with the mobile elements insertions, where do they insert preferentially? In active or inactive regions? To briefly explore this get the chromatin states with the highest number of insertions using the `CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf` and the Ernst's genome segmentation ([more info here](http://compbio.mit.edu/ChromHMM/)) as downloaded from `https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed`. Tip: then select the fourth column of the ChromHMM bedfile, sort it and count with `uniq -c`. -->
 
+<!-- For further details on what is a ChromHMM segmentation (i.e. assigning functions to genomic ranges) please read [Nature Methods volume 9, pages 215–216 (2012)](https://www.nature.com/articles/nmeth.1906). -->
 
-```
+<!-- <details><summary> -->
+<!-- Answer -->
+<!-- </summary> -->
 
-</p>
-</details>
+<!-- <p> -->
 
-* Create a BED file representing all of the intervals in the genome that are NOT exonic.
 
-<details><summary>
-Tip
-</summary>
+<!-- ```bash -->
 
-<p>
+<!-- cd ~/course/data -->
 
-Use bedtools intersect with the `-v` flag
+<!-- curl -O https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed -->
 
-</p>
-</details>
+<!-- # first removing the chr prepended strings again -->
 
-* What is the average distance from GWAS SNPs to the closest exon? 
+<!-- sed 's/^chr//g' hesc.chromHmm.bed > hesc.chromHmm_nochr.bed -->
 
-<details><summary>
-Tip
-</summary>
+<!-- bedtools intersect\ -->
+<!--   -b CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \ -->
+<!--   -a  hesc.chromHmm_nochr.bed | awk '{print $4}' | sort | uniq -c -->
+<!-- ``` -->
 
-<p>
+<!-- So apparently there is plenty of  heterochromatin/low CNV regions, but is there an overrepresentation? How many  heterochromatin/low CNV regions are there in the whole genome? -->
 
-(Hint - bedtools closest tool)
-</p>
-</details>
+<!-- ```bash -->
 
+<!-- awk '{print $4}' hesc.chromHmm_nochr.bed | sort | uniq -c -->
 
-## Exercises block 37
+<!-- ``` -->
 
-Explore (not necessarily run) more usage examples with biological meaning using UNIX and BEDTools [http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/](http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/) and [bedtools advanced](https://bedtools.readthedocs.io/en/latest/content/advanced-usage.html).
+<!-- Still, we could evaluate this statistically. Can you figure out how? is this a contingency-table problem? Please check `bedtools fisher`. -->
 
+<!-- </p> -->
+<!-- </details> -->
 
-## Exercise 38 Sum up
+
+<!-- ## Exercises block 36 -->
+
+<!-- Play with other real genomic data using the [BEDtools tutorial](http://quinlanlab.org/tutorials/bedtools/bedtools.html) which explores the Maurano et al paper [Systematic Localization of Common Disease-Associated Variation in Regulatory DNA published in Science, 2012](https://www.ncbi.nlm.nih.gov/pubmed/22955828). -->
+
+<!-- Mind that the tutorial recommends creating a folder with `mkdir -p ~/workspace/monday/bedtools`: if you do so and move (`mv`) there, your path (the one you can get using `pwd`) won't be at the standard `~/course` we used till now. -->
+
+<!-- Remember that the bedtools binary can be aliased using ``alias bedtools='~/course/soft/bedtools2/bin/bedtools'``. -->
+
+<!-- * Count the number of exons and CpG islands -->
+
+<!-- <details><summary> -->
+<!-- Tip -->
+<!-- </summary> -->
+
+<!-- <p> -->
+
+<!-- ```bash -->
+
+<!-- Count the number of lines using `wc -l exons.bed` etc. -->
+
+<!-- ``` -->
+
+<!-- </p> -->
+<!-- </details> -->
+
+<!-- * How many CpG islands overlap exons in the genome? -->
+
+<!-- <details><summary> -->
+<!-- Tip -->
+<!-- </summary> -->
+
+<!-- <p> -->
+
+
+<!-- Bedtools intersect and count -->
+
+<!-- ```bash -->
+
+<!-- bedtools intersect -a cpg.bed -b exons.bed   | wc -l -->
+
+
+<!-- ``` -->
+
+<!-- </p> -->
+<!-- </details> -->
+
+<!-- * Create a BED file representing all of the intervals in the genome that are NOT exonic. -->
+
+<!-- <details><summary> -->
+<!-- Tip -->
+<!-- </summary> -->
+
+<!-- <p> -->
+
+<!-- Use bedtools intersect with the `-v` flag -->
+
+<!-- </p> -->
+<!-- </details> -->
+
+<!-- * What is the average distance from GWAS SNPs to the closest exon?  -->
+
+<!-- <details><summary> -->
+<!-- Tip -->
+<!-- </summary> -->
+
+<!-- <p> -->
+
+<!-- (Hint - bedtools closest tool) -->
+<!-- </p> -->
+<!-- </details> -->
+
+
+<!-- ## Exercises block 37 -->
+
+<!-- Explore (not necessarily run) more usage examples with biological meaning using UNIX and BEDTools [http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/](http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/) and [bedtools advanced](https://bedtools.readthedocs.io/en/latest/content/advanced-usage.html). -->
+
+
+## Exercise Sum up
 
 Read an overview of all the file formats available at UCSC. You can upload some of the files you used during the course to the UCSC genome browser to see how do they look like. Anyway you can download, read, edit them using UNIX (i.e. `awk`, `grep` etc). And ask biological questions using bedtools/vcftools.
 
