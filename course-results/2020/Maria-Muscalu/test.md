@@ -11,5 +11,7 @@ This is a table.
     </tr>
         <td>2</td> <td>4</td>
     </tr>
+        <td>2</td> <td>4</td>
+    </tr>
 </table>
 
