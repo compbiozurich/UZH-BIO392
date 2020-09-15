@@ -28,7 +28,7 @@ bla 'var' bla
 *italic*
 ** bold **
 
---anothernonsense--
+-- anothernonsense --
 
 
 ```javascript```
