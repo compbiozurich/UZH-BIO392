@@ -16,3 +16,17 @@ this.
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
  id sem consectetuer libero luctus adipiscing.  
 
+
+Listing can be done with asterisks, pluses or hyphens
+
+* eg
++ like
+- this
+
+or with numbers
+
+1. though
+1. the
+22. number
+5. doesn't
+1. matter
