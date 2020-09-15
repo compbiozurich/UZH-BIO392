@@ -1,16 +1,38 @@
+#learning github
+##sub github
+blabla
+
+more text
+ -1
+ -2
+ -3
+  -01
+   -011
+   -012
+  -02
+   -021
+   -022
+  -03
+   -031
+   -032
   
-# This is an H1
+ ![alt text] (http://picsum.photos/300/400)
+ blabla
+ >whatever
+ 
+| bla | | blabla| | blablabla|
+| --- | | --- | | --- | 
+ 
+[this is github] (http://github.com)
+bla 'var' bla
+*italic*
+** bold **
 
-## This is an H2
+--anothernonsense--
 
-> This is a blockquote
 
-> second paragraph of the block
->> nested
+```javascript```
+let num = Math.random();
+```
 
->>blablba
-
-<http://google.com/>
-
-<nico.giger@uzh.ch>
-###### This is an H6
+  
