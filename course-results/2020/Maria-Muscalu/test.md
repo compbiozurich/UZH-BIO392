@@ -16,5 +16,5 @@ This is a table.
 </table>
 
 
- <a>https://daringfireball.net/projects/markdown/syntax#philosophy<a>
+ https://daringfireball.net/projects/markdown/syntax#philosophy
 
