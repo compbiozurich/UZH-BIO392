@@ -20,8 +20,8 @@ more text
  blabla
  >whatever
  
-| bla | | blabla | | blablabla |
-| --- | | --- | | --- | 
+| bla | blabla | blablabla |
+| --- | --- | --- | 
  
 [this is github] (http://github.com)
 bla 'var' bla
