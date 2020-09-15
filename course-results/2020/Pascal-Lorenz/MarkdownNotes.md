@@ -1,3 +1,6 @@
+To understand this cheatsheet, look at the RAW as well.
+
+
 # Headers  
 ## smaller headers  
 ### even smaller  
