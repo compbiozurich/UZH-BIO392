@@ -25,8 +25,19 @@ Listing can be done with asterisks, pluses or hyphens
 
 or with numbers
 
-1. though
-1. the
-22. number
-5. doesn't
-1. matter
+19. though
+1. only the
+22. first
+5. number
+1. matters
+1. also: you can write over multiple lines
+without indenting each and even do multiple paragraphs,
+
+    though the first line of each paragraph
+must have 4 spaces in the beginning
+1. still the same list
+    >blockquotes
+    >must be indented on each line
+
+to avoid accidental listing, when writing numbers like  
+1\.  put a backslash in there.
