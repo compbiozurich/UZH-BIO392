@@ -7,7 +7,9 @@ This is a regular paragraph.
 
 <table>
     <tr>
-        <td>Foo</td>
+        <td>Test</td>
+    </tr>
+        <td>Test</td>
     </tr>
 </table>
 
