@@ -19,7 +19,7 @@ emphasis on human genetic variation and reasoning for "large scale data".
 
 <!--more-->
 
-* 9:00 - 11:00: Lecture "Human Genome Variants" [[slides]]({{"/UZH-BIO392/course-material/2019/2019-09-18-BIO392-intro.pdf" }})
+* 9:00 - 11:00: Lecture "Human Genome Variants" [slides](/UZH-BIO392/course-material/2020/2020-09-16-BIO392-variants.pdf)
     - Introduction to some problems and resources
     - genome variation resources
     - genome editions ...
@@ -27,3 +27,9 @@ emphasis on human genetic variation and reasoning for "large scale data".
 * Markdown primer
     - [cheat sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
     - John Gruber's [Markdown primer](https://daringfireball.net/projects/markdown/syntax)
+
+### Material
+
+* today's [slides](/UZH-BIO392/course-material/2020/2020-09-16-BIO392-variants.pdf)
+* [IGSR: The International Genome Sample Resource](https://www.internationalgenome.org)
+* [NIH Genome sequencing costs page](https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost)
