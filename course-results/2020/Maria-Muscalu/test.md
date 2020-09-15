@@ -17,3 +17,9 @@ This is a table.
 
 
 &copy;
+
+This is a header
+================
+
+This is a header
+----------------
