@@ -16,6 +16,4 @@ This is a table.
 </table>
 
 
- https://daringfireball.net/projects/markdown/syntax#philosophy
-
-http://images.google.com/images?num=30&amp;q=larry+bird
+&copy;
