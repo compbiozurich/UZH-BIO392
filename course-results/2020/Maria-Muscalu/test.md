@@ -15,3 +15,6 @@ This is a table.
     </tr>
 </table>
 
+
+ <a>https://daringfireball.net/projects/markdown/syntax#philosophy<a>
+
