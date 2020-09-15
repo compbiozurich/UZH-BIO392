@@ -1,10 +1,8 @@
 # First Day in the BIO392 
 ## Test 1
 
-### how to write in *italic*:
- - write your word between * *
+### *italic* and **bold**
+ - write your word between * * for *italic*
+ - write your word between **  ** for **bold**
  
-### how to write in **bold**
- - write your word between **  **
- 
- for more information [click here!](https://guides.github.com/features/mastering-markdown/)
+for more information [click here!](https://guides.github.com/features/mastering-markdown/)
