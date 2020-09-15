@@ -3,14 +3,13 @@
 ### asterisks around a word actually look like *emphasis*
 
 
-This is a regular paragraph.
+This is a table.
 
 <table>
     <tr>
-        <td>Test</td> <td>Test</td>
+        <td>1</td> <td>3</td>
     </tr>
-        <td>Test</td> <td>Test</td>
+        <td>2</td> <td>4</td>
     </tr>
 </table>
 
-This is another regular paragraph.
