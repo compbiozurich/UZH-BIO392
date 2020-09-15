@@ -16,7 +16,7 @@ more text
    -031
    -032
   
- ![alt text] (http://picsum.photos/300/400)
+ ![alt text] (http://picsum.photos/200/200)
  blabla
  >whatever
  
