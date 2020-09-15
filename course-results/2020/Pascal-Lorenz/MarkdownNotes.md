@@ -33,11 +33,46 @@ or with numbers
 1. also: you can write over multiple lines
 without indenting each and even do multiple paragraphs,
 
-    though the first line of each paragraph
-must have 4 spaces in the beginning
+   though the first line of each paragraph
+must have 4 spaces or 3 tabs in the beginning
 1. still the same list
     >blockquotes
     >must be indented on each line
 
 to avoid accidental listing, when writing numbers like  
 1\.  put a backslash in there.
+
+code blocks are always displayed as written. That means markdown will not do formatting of its own stuff in there,
+while translating & and < so that html will display instead of interpret them. Here's an example (just indent it all by 4 spaces):
+
+    <div class="footer">
+        &copy; 2004 Foo Corporation
+    </div>
+   
+Code in the middle of a paragraph can be entered with `` `. double them up if you want to include some literal backticks in the code`` like I just did.
+    
+    
+span rules are made with three or more asterisks or hyphens on a line with nothing else, like this:
+***
+or this:
+- - - - -
+
+Links can be defined straight in that line (inline)  
+This is [an example](http://example.com/ "Title") inline link.  
+[This link](http://example.net/) has no title attribute.  
+Or you can supposedly use reference links like [this][EXAMPLE] and put the link itself anywhere in the document. here i will do it right after.
+
+[example]: http://example.net/ "optional title here"
+
+Don't forget that the reference can't be in a paragraph though. And note the reference is not case sensitive.
+The reference bracket can also be left empty, in which case the displayed text doubles as the reference name like in this [example][]
+
+
+Emphasis can be done with * or _ like in this god*friggin*damn example or even like **this**. To avoid doing this where it would normally be done, just \*backslash\*.
+
+
+Markdown can also include images. They work very similar to links, so ![inline](/path/to.img "optional title") or ![reference][id] both work.
+
+[id]: /path/to.img "optional title"
+
+The only reason those words are actually visible is, of course, that the images don't exist.
