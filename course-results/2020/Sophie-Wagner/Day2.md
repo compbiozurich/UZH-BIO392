@@ -4,13 +4,10 @@
 <li>BUCSC Genome Browser</li>
   <p> (http://genome.ucsc.edu/) </p>
   
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
-
+> Easy to find genes if you know their name. However on first glance it's a lot of information and quite detailed,
+so it takes some time to find information on e.g. the genes location. 
+Additionally I couldn't find a way to download the gene sequence (Fasta oe.) Nevermind I found it.
+Conclusion: Looks complicated at first but ok to navigate after some time.
   
 <li>Human Genome Resources at NCBI</li>
   <p>(https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/)<p>
