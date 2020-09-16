@@ -10,12 +10,13 @@ Variants are typically discovered with short reads by mapping them to a referenc
 | Genome Browser        | Established       | Place  | Cool  |
 | ------------- |:-------------:| -----| ---- |
 | **UCSC (University of California Santa Cruz)**| 2000 | Santa Cruz  |- Forever ensuring free public access to the human genome <br> - also incuding other organisms <br> - most widely used |
-| **Human Genome Resources at NCBI (National Center for Biotechnology Information)**      | 1992   | Bethesda  |   Provides for example dbSNP (1998) and should help for  basic research such as physical mapping, population genetics, investigations into evolutionary relationships, as well as being able to quickly and easily quantify the amount of variation at a given site of interest.|
+| **Human Genome Resources at NCBI (National Center for Biotechnology Information)**      | 1992   | Bethesda  |   Provides for example dbSNP (1998), dbVAR, ClinVar, and Entrez and should help for  basic research such as physical mapping, population genetics, investigations into evolutionary relationships, as well as being able to quickly and easily quantify the amount of variation at a given site of interest.|
 | **Ensembl** | 1999    |  Europe  |   Aims to provide a centralized resource for geneticists, molecular biologists and other researchers studying the genomes of our own species and other vertebrates and model organisms |
 | **Cosmic** | ????    |  ???  |    $1 |
 | **ClinGen** | ????    |  ???  |    $1 |
 
-## Somatic Copy Number Variations - How is it done?
+## What can I do with this data banks?
 
+![alt text]("C:\Schule_HS2020\Blockkurs\BIO392\Day2\wikipedia_ALDH2.png")
 
 If a human genome consisting of 3 billions bp and laying there in ca. 5 milion variations, who dares to be the reference genome? 
