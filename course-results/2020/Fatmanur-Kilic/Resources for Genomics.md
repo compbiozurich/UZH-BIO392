@@ -7,7 +7,7 @@ There are several websites which represent whether germline or somatic genomics.
 ### What information do you get when you search for e.g. *KRAS* gene?
 
 #### Gene view and Overview
-In the gene view section, you'll see a histogram which is a **graphical view of mutations across KRAS**. The **overview** section gives an overview of KRAS, along with links to any related data and resources.
+In the gene view section, you'll see a histogram which is a **graphical view of mutations across KRAS**. The overview section gives an **overview of KRAS**, along with links to any related data and resources.
 
 #### Tissue distribution
 In this section, you'll see a table which shows **the distribution of mutations across the primary tissue types.**
