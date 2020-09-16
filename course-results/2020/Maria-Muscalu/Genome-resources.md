@@ -14,3 +14,7 @@ variants. For each variant, there are more categories where the data is grouped.
 ### [My Cancer Genome](https://www.mycancergenome.org/)
 
 This website can be used to insert the name of the gene of interest (e.g. IL7) and the page returns everything from the data base connected to this gene. The information is grouped in biomarkers, diseases, drugs, clinical trials and pathways. However, the search term has to be as exact as possible, otherwise the website will output all the data that has something to do with the searched gene. I think the website is also interesting because in some cases, it has a pathway section, which explains the interaction with other genes.
+
+### [Catalogue of somatic mutations in cancer](https://cancer.sanger.ac.uk/cosmic)
+
+The website can be used to search for genes. By clicking on the gene name, the map of the gene is displayed with all the mutations. For each gene, there is also a list of every mutation and cancer type where the gene is involved. The origin of the samples, as well as the number of analysed genes, is mentioned. The website also has a cancer browser, where the exact tissue section can be picked and the pages returns all the mutations connected to the tissue and their frequency.
