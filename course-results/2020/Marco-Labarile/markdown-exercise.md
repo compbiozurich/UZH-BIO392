@@ -45,3 +45,13 @@ Tables using inline-HTML:
     <td> Val 2,2 </td>
   </tr>
 </table>
+
+## 1.3 Images
+
+![toucan](toucan.jpg)
+
+
+## 1.4 Links
+
+https://github.com  
+[GitHub](https://github.com)
