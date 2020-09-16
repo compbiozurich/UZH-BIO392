@@ -18,7 +18,7 @@ This section displays a series of charts that show **the distribution of differe
 #### Some facts about KRAS
 - It's is an *oncogene.*
 - 99% of detected mutations in 45430 samples are *missense substitutions*. 
-- KRAS is a census gene, which means it's a known *cancer gene*.
+- KRAS is a *census gene*, which means it's a known cancer gene.
 - It's also a *hallmark gene* [click here](https://cancer.sanger.ac.uk/cosmic/census-page/KRAS) for further information about its effects on hallmarks.
 
 
