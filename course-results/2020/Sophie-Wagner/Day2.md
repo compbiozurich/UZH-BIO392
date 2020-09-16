@@ -5,7 +5,12 @@
 <p> http://genome.ucsc.edu/ </p>
 <li>Human Genome Resources at NCBI</li>
 <p>(https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/ "NCBI")<p>
-  
+  [NCBI][]
+
+
+
+[NCBI]: https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/
+
 
   
   
