@@ -2,16 +2,13 @@
 
 <ol>
 <li>BUCSC GENOME BROWSER</li>
+<p>[id]: http://genome.ucsc.edu/ </p>
 <li>HUMAN GENOME RESOURCES AT NCBI</li>
 <li>ENSEMBL</li>
-</ol>
-
-
-<ol>
 <li>COSMIC</li>
 <li>ClinGen Knowledge Base</li>
 <li>ClinVar<\li>
-<li>JAX Clinical Knowledgebase (CKB)</li>
+<li>OncoKB</li>
 </ol>
 
 
