@@ -12,3 +12,6 @@ Pharmacogenomics Knowledgebase | everything about pharmacology (drugs, pathways.
 PMKB | source portal about genes, variants, tumor types... | [PMKB](https://pmkb.weill.cornell.edu/)
 Human Genome Resources at NCBI | all about the human genome with reference data, alignments and human variant collection | [NCBI_HG](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/)
 
+
+The databases differ in their specialization. Some of them cover up genomics in general and others are about cancer or for example pharmacogenomics. 
+I have never used such a database before and thus were all of them new to me. I really enjoyed the database NIH, because it is very appealing and very informative.
