@@ -1,9 +1,9 @@
 # Exploring the genome resources
 
 
-database | informations, thoughts... | URL
+database | information, thoughts... | URL
 --- | --- | ---
-The International Genome Sample Resource | informative, the overview is not very appealing | [IGSR](https://www.internationalgenome.org/)
+The International Genome Sample Resource | informative about genome sample, the overview is not very appealing | [IGSR](https://www.internationalgenome.org/)
 National Human Genome Research Institute | looks very informative (paragraphs about genomics, genetic disorders...) | [NIH](https://www.genome.gov/)
 Cancer Genome Interpreter | portal that interprets sequences according to validated oncogenic alterations and makes prediction | [CGI](https://www.cancergenomeinterpreter.org/home)
 Clinical Interpretation of Variants in Cancer | database of clinical variants and its interpretation in cancer | [CIViC](https://civicdb.org/home)
