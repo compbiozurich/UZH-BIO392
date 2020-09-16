@@ -3,10 +3,10 @@
 <ol>
 <li>BUCSC Genome Browser</li>
   <p> (http://genome.ucsc.edu/) </p>
-  <ul>
-<li>Bird</li>
-<li>Magic</li>
-</ul>
+    <ul>
+    <li>Bird</li>
+    <li>Magic</li>
+    </ul>
 
   
 <li>Human Genome Resources at NCBI</li>
