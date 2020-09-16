@@ -1,4 +1,4 @@
-# There is an (admittedly better) cheatsheet [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
+# There is an (admittedly better) cheatsheet [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf). :octocat:
 
 
 To understand this cheatsheet, look at the RAW as well.
