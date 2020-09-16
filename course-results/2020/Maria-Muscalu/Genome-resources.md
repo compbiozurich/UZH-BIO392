@@ -17,4 +17,8 @@ This website can be used to insert the name of the gene of interest (e.g. IL7) a
 
 ### [Catalogue of somatic mutations in cancer](https://cancer.sanger.ac.uk/cosmic)
 
-The website can be used to search for genes. By clicking on the gene name, the map of the gene is displayed with all the mutations. For each gene, there is also a list of every mutation and cancer type where the gene is involved. The origin of the samples, as well as the number of analysed genes, is mentioned. The website also has a cancer browser, where the exact tissue section can be picked and the pages returns all the mutations connected to the tissue and their frequency.
+The website can be used to search for genes. By clicking on the gene name, the map of the gene is displayed with all the mutations. For each gene, there is also a list of every mutation and cancer type where the gene is involved. The origin of the samples, as well as the number of analysed genes, is mentioned. The website also has a cancer browser, where the exact tissue section can be picked and the pages returns all the mutations connected to the tissue and their frequency. The plot of the copy number variants (CNV) can be shown for a specific chromosome.
+
+### [Cancer Driver Log (CanDL)](https://candl.osu.edu/)
+
+A gene type or a mutation can be searched using the website. The output table indicates the normal amino acid and the one that replaces it due to the mutation. The cancer type and level of evidence are also indicated, as well as a link to a paper that is connected to the mutation.
