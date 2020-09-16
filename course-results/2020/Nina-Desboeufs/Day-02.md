@@ -2,8 +2,8 @@
 
 ---------
 
-## UCSC (University of California Santa Cruz) Genome browser [link](https://genome.ucsc.edu)
-> _Short description_: Useful bioinformatics tool enabling the visualisation of the genome (of different species) at any scale, completed by a aligned annotations "tracks". The annotions consist for example of gene predictions, mRNA, SNPs.
+## UCSC Genome browser [link](https://genome.ucsc.edu)
+> _Short description_: UCSC ((University of California Santa Cruz), useful bioinformatics tool enabling the visualisation of the genome (of different species) at any scale, completed by a aligned annotations "tracks". The annotions consist for example of gene predictions, mRNA, SNPs.
 
 > _Let's give it a try:_ I could find datasets specifically for **SARS-CoV-2** (i.e. lung expression). Really interesting was to find the **immunophetopying** related to COVID-19 using _t-distributed stochastic neighbor embedding_ (t-SNE) algorithm. Give useful information about the frequency of each cell type. <http://genome.ucsc.edu/covid19.html>
 
@@ -22,4 +22,9 @@
 ## Ensembl [link](https://www.ensembl.org/index.html)
 > _Short description:_ Contain vertebrate genomes, with gene identifications (annotation) and relationship to diseases. It offers varial bioinformatic tools such as BLAST/BLAT, Variant Effect Predictor (VEP), data slicer. 
 
-> _Let's give it a try_: 
+> _Let's give it a try_: Basic local alignment search tool (BLAST) allows the analysis of local alignment. Different BLAST are available:
+>
+|                  | Analysed sequence | Compared sequence | Use(s)                       |
+| -----------------|*------------------|*------------------|*-----------------------------|
+| BLASTp           |*------------------|*------------------|*-----------------------------|
+
