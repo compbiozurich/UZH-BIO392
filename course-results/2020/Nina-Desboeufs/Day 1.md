@@ -6,7 +6,7 @@
 
 But also: 
 * Push a brand to GitHub:  git push origin yourbranchname
-* Create a pull request (PR) and merge it (recommandation: delete the branch after merging it (to avoid a mess)). 
+* Create a **pull request** (PR) and merge it (recommandation: delete the branch after merging it (to avoid a mess)). 
 You can check that it was properly merged into the commits.
 
 
