@@ -15,6 +15,7 @@
 > ## Resources for genome variant data
 > *The following resources are specially to find divergence (mutation, variation, cancer ...) from the reference genome.* 
 > 1. NCBI
+>
 > The National Center for Biotechnology Information (NCBI) has several databases, for example:
 > * NCBI:dbSNP
 >>  [dbSNP](https://www.ncbi.nlm.nih.gov/snp/) provides singel nucleotide variations, microsatellites, small-scale insertions and deletions of the human genome. You can find common variants but also clinical mutations. The website provides examples of search terms for a better, faster searching.
