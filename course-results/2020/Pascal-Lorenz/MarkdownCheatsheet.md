@@ -1,3 +1,6 @@
+There is an (admittedly better) cheatsheet [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+
 To understand this cheatsheet, look at the RAW as well.
 
 
