@@ -1,5 +1,4 @@
 ## Resources for Genomic and Variant Data
-=====
 
 
 ### UCSC Genome Browser [link](http://genome.ucsc.edu/)
