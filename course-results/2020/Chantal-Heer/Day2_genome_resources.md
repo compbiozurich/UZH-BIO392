@@ -23,9 +23,10 @@
 > * NCBI:ClinVar
 >>    [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) is an archieve of reports about the relationship between human genome variation, their phenotype and observed health outcome. 
 > 2. EMBL-EBI:EVA
->>   The European Variation Archive of the European Molecular Biology Laboratory - European Bioinformatics Institute (short [EMBL-EBI:EVA])(https://www.ebi.ac.uk/eva/) provides an open-access database of all genetic variation types of many species. You can select a species and search for a SNP. For a more specified search, EMBL-EBI provides a Variant Browser. 
+>>   The European Variation Archive of the European Molecular Biology Laboratory - European Bioinformatics Institute (short [EMBL-EBI:EVA](https://www.ebi.ac.uk/eva/)) provides an open-access database of all genetic variation types of many species. You can select a species and search for a SNP. For a more specified search, EMBL-EBI provides a Variant Browser. 
 > 3. COSMIC
 >>   [COSMIC](https://cancer.sanger.ac.uk/cosmic) is a resource for somatic mutations in human cancer. You can browse the data by tissue type, histology, gene, mutation, cancer type ...
 > 4. ClinGen
 >>   The Nationnal Institues of Health (NIH) provides [this resource](https://clinicalgenome.org/). It shows how genes and their variations impact body, lead to diseases and the use in precisin medicine and research. You can search for a specific gene, disease or variant. ClinGen provides help when you are new to the website.
-> 5.
+> 5. arrayMap
+>>    [This resource](https://arraymap.progenetix.org/) contains the copy number profiles of various human cancers. Many search criteria specify and simplfy the search.
