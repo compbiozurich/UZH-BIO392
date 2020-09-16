@@ -9,7 +9,7 @@
  
 ### NCBI [URL](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/)
  
- The NCBI (National Center for Biotechnology Information) houses databases wich can be used as resource for bioinformatics. The NCBI contains Databases for DNA sequenes, Epigenomics database and Human variant collections. Its also possible to make run BLAST analyses on the site which is a tool for finding sequences similar to a reference sequence. Human variant collections (dbVar, ClinVar, dbSNP) can also be downloaded.
+ >The NCBI (National Center for Biotechnology Information) houses databases wich can be used as resource for bioinformatics. The NCBI contains Databases for DNA sequenes, Epigenomics database and Human variant collections. Its also possible to make run BLAST analyses on the site which is a tool for finding sequences similar to a reference sequence. Human variant collections (dbVar, ClinVar, dbSNP) can also be downloaded.
 
  * #### NCBI:dbSNP [URL](https://www.ncbi.nlm.nih.gov/snp/)
   Database for single nucleotide polymorphisms (SNPs) and multiple small-scale variations including insertions/deletions, microsatellites, non-polymorphic variants. Can be searched/filtered by SNP ID, Gene, Genomic location and Clinical significance.
