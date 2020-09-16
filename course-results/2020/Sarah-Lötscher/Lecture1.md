@@ -12,14 +12,14 @@
  >The NCBI (National Center for Biotechnology Information) houses databases wich can be used as resource for bioinformatics. The NCBI contains Databases for DNA sequenes, Epigenomics database and Human variant collections. Its also possible to make run BLAST analyses on the site which is a tool for finding sequences similar to a reference sequence. Human variant collections (dbVar, ClinVar, dbSNP) can also be downloaded.
 
  * #### NCBI:dbSNP [URL](https://www.ncbi.nlm.nih.gov/snp/)
-  >Database for single nucleotide polymorphisms (SNPs) and multiple small-scale variations including insertions/deletions, microsatellites, non-polymorphic variants. Can be searched/filtered by SNP ID, Gene, Genomic location and Clinical significance.
+  Database for single nucleotide polymorphisms (SNPs) and multiple small-scale variations including insertions/deletions, microsatellites, non-polymorphic variants. Can be searched/filtered by SNP ID, Gene, Genomic location and Clinical significance.
 
  * #### NCBI:dbVAR [URL](https://www.ncbi.nlm.nih.gov/dbvar/)
- >Database for genomic structural variation(VAR) like -insertions, deletions, duplications, inversions, multinucleotide substitutions, mobile element insertions, translocations, complex chromosomal rearrangements. Can be searched/filtered by Gene, Genomic location and Clinical significance.
+ Database for genomic structural variation(VAR) like -insertions, deletions, duplications, inversions, multinucleotide substitutions, mobile element insertions, translocations, complex chromosomal rearrangements. Can be searched/filtered by Gene, Genomic location and Clinical significance.
 
  
  * #### NCBI:ClinVar [URL](https://www.ncbi.nlm.nih.gov/clinvar/)
- >Database containing information about genomic variation and its relationship to human health.
+ Database containing information about genomic variation and its relationship to human health.
 
 ------
 
