@@ -15,7 +15,7 @@ In this section, you'll see a table which shows **the distribution of mutations 
 #### Mutation distribution
 This section displays a series of charts that show **the distribution of different types of mutations for KRAS.** 
 
-##### Some facts about KRAS
+#### Some facts about KRAS
 - It's is an *oncogene.*
 - 99% of detected mutations in 45430 samples are *missense substitutions*. 
 - KRAS is a census gene, which means it's a known *cancer gene*.
