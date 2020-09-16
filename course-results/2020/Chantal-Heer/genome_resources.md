@@ -16,12 +16,12 @@
 > *The following resources are specially to find divergence (mutation, variation, cancer ...) from the reference genome.* 
 > 1. NCBI
 > The National Center for Biotechnology Information (NCBI) has several databases, for example:
->   *1.1 NCBI:dbSNP
->>>       [dbSNP](https://www.ncbi.nlm.nih.gov/snp/) provides singel nucleotide variations, microsatellites, small-scale insertions and deletions of the human genome. You can find common variants but also clinical mutations. The website provides examples of search terms for a better, faster searching.
->   1.2 NCBI:dbVAR
->>      For larger variants (more than 50bp) of the human genome, you better use [dbVAR](https://www.ncbi.nlm.nih.gov/dbvar). This website covers variations such as insertions, deletions, duplications, inversions, mobile elements, translocations and complexer variants (such as complex chromosomal rearrangements).
->   1.3 NCBI:ClinVar
->>       [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) is an archieve of reports about the relationship between human genome variation, their phenotype and observed health outcome. 
+> * NCBI:dbSNP
+>>  [dbSNP](https://www.ncbi.nlm.nih.gov/snp/) provides singel nucleotide variations, microsatellites, small-scale insertions and deletions of the human genome. You can find common variants but also clinical mutations. The website provides examples of search terms for a better, faster searching.
+> * NCBI:dbVAR
+>>   For larger variants (more than 50bp) of the human genome, you better use [dbVAR](https://www.ncbi.nlm.nih.gov/dbvar). This website covers variations such as insertions, deletions, duplications, inversions, mobile elements, translocations and complexer variants (such as complex chromosomal rearrangements).
+> * NCBI:ClinVar
+>>    [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) is an archieve of reports about the relationship between human genome variation, their phenotype and observed health outcome. 
 > 2. EMBL-EBI:EVA
 >>   The European Variation Archive of the European Molecular Biology Laboratory - European Bioinformatics Institute (short [EMBL-EBI:EVA])(https://www.ebi.ac.uk/eva/) provides an open-access database of all genetic variation types of many species. You can select a species and search for a SNP. For a more specified search, EMBL-EBI provides a Variant Browser. 
 > 3. COSMIC
