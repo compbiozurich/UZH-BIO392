@@ -2,7 +2,7 @@
 There are several websites which represent whether germline or somatic genomics. One of the somatic genomics resources is **COSMIC** (Catalogue of Somatic Mutations in Cancer)
 
 ## COSMIC
-[click here] (https://cancer.sanger.ac.uk/cosmic) for the official website 
+[click here](https://cancer.sanger.ac.uk/cosmic) for the official website 
 
 ### What information do you get when you search for e.g. *KRAS* gene?
 
@@ -19,7 +19,7 @@ This section displays a series of charts that show the distribution of different
 - It's is an oncogene.
 - 99% of detected mutations in 45430 samples are *missense substitutions*. 
 - KRAS is a census gene, which means it's a known cancer gene.
-- It's also a hallmark gene [click here] (https://cancer.sanger.ac.uk/cosmic/census-page/KRAS) for further information about its effects on hallmarks.
+- It's also a hallmark gene [click here](https://cancer.sanger.ac.uk/cosmic/census-page/KRAS) for further information about its effects on hallmarks.
 
 
 
