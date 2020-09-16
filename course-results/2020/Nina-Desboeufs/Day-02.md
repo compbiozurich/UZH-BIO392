@@ -24,7 +24,15 @@
 
 > _Let's give it a try_: Basic local alignment search tool (BLAST) allows the analysis of local alignment. Different BLAST are available:
 >
-|                  | Analysed sequence | Compared sequence | Use(s)                       |
-| -----------------|*------------------|*------------------|*-----------------------------|
-| BLASTp           |*------------------|*------------------|*-----------------------------|
+|                  | Analysed sequence | Compared sequence | Use(s)                      
+| -----------------|:------------------|:------------------|:-----------------------------|
+| BLASTp           |AA                 |AA                 |Protein function, identify common regions and related proteins|
+| BLASTn           |Nucleotides        |nucleotides        |Map DNA, oligonucleotides or PCR product in a genome, identify repetitive elements|
+| BLASTx           |Nucleotides -> AA. |AA                 |Find a coding gene in a genome, determine the corresponding DNA to a protein|
+
+> Others: tBLASTn, tBLASTx 
+
+# DECIPHER [link](https://decipher.sanger.ac.uk)
+> _Short description:_ DECIPHER (DatabasE of genomiC varIation and Phenotype in Humans using Ensembl Resources) supports the interpretation of genomic variants and to relate them to a phenotype. Specifically used for clinical diagnosis. 
+
 
