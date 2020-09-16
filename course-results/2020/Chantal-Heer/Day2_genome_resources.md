@@ -28,6 +28,6 @@
 > 3. COSMIC
 >>   [COSMIC](https://cancer.sanger.ac.uk/cosmic) is a resource for somatic mutations in human cancer. You can browse the data by tissue type, histology, gene, mutation, cancer type ...
 > 4. ClinGen
->>   The Nationnal Institues of Health (NIH) provides [this resource](https://clinicalgenome.org/). It shows how genes and their variations impact body, lead to diseases and the use in precisin medicine and research. You can search for a specific gene, disease or variant. ClinGen provides help when you are new to the website.
+>>   The Nationnal Institues of Health (NIH) provides this resource. It shows how genes and their variations impact body, lead to diseases and the use in precisin medicine and research. You can search for a specific gene, disease or variant. [ClinGen](https://clinicalgenome.org/) provides help when you are new to the website.
 > 5. arrayMap
->>    [This resource](https://arraymap.progenetix.org/) contains the copy number profiles of various human cancers. Many search criteria specify and simplfy the search.
+>>    [This resource](https://arraymap.progenetix.org/) contains the copy number profiles of various human cancers. Many search criteria specify and simplfy the search. The website is a product of the UZH.
