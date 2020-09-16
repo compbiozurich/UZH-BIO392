@@ -16,8 +16,8 @@
 > *The following resources are specially to find divergence (mutation, variation, cancer ...) from the reference genome.* 
 > 1. NCBI
 > The National Center for Biotechnology Information (NCBI) has several databases, for example:
->   1.1 NCBI:dbSNP
->>       [dbSNP](https://www.ncbi.nlm.nih.gov/snp/) provides singel nucleotide variations, microsatellites, small-scale insertions and deletions of the human genome. You can find common variants but also clinical mutations. The website provides examples of search terms for a better, faster searching.
+>   *1.1 NCBI:dbSNP
+>>>       [dbSNP](https://www.ncbi.nlm.nih.gov/snp/) provides singel nucleotide variations, microsatellites, small-scale insertions and deletions of the human genome. You can find common variants but also clinical mutations. The website provides examples of search terms for a better, faster searching.
 >   1.2 NCBI:dbVAR
 >>      For larger variants (more than 50bp) of the human genome, you better use [dbVAR](https://www.ncbi.nlm.nih.gov/dbvar). This website covers variations such as insertions, deletions, duplications, inversions, mobile elements, translocations and complexer variants (such as complex chromosomal rearrangements).
 >   1.3 NCBI:ClinVar
