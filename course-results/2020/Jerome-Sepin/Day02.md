@@ -3,7 +3,7 @@
 
 | Browser        | Established           | Cool  |
 | ------------- |:-------------:| -----:|
-| UCSC (University of California Santa Cruz), | 2000 | Forever ensuring free public access to the human genome,  |
+| UCSC (University of California Santa Cruz), | 2000 | Forever ensuring free public access to the human genome <br> also incuding other organisms |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
