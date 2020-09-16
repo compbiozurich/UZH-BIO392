@@ -1,4 +1,4 @@
-# There is an (admittedly better) cheatsheet [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+# There is an (admittedly better) cheatsheet [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 
 
 To understand this cheatsheet, look at the RAW as well.
@@ -82,3 +82,11 @@ Markdown can also include images. They work very similar to links, so ![inline](
 [id]: /path/to.img "optional title"
 
 The only reason those words are actually visible is, of course, that the images don't exist.
+
+
+Tables | are made
+-------|---------
+by | separating
+the first | row
+with hyphens | and column entries
+with | \|
