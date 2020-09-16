@@ -17,6 +17,6 @@ Variants are typically discovered with short reads by mapping them to a referenc
 
 ## What can I do with this data banks?
 
-![alt text]("https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2020/Jerome-Sepin/wikipedia_ALDH2.png")
+![alt text](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2020/Jerome-Sepin/wikipedia_ALDH2.png)
 
 If a human genome consisting of 3 billions bp and laying there in ca. 5 milion variations, who dares to be the reference genome? 
