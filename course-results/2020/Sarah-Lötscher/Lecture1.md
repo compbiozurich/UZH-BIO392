@@ -10,7 +10,7 @@
  ### NCBI [link](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/)
  
  
-  *NCBI:dbSNP
+  * NCBI:dbSNP
  
  ### ENSEMBL [link](https://www.ensembl.org/index.html)
   
