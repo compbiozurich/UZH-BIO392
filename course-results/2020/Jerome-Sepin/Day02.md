@@ -1,0 +1,11 @@
+# Day 02
+---
+
+| Browser        | Established           | Cool  |
+| ------------- |:-------------:| -----:|
+| UCSC (University of California Santa Cruz), | 2000 | Forever ensuring free public access to the human genome,  |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+## Somatic Copy Number Variations - How is it done?
