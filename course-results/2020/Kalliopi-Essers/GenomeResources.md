@@ -1,7 +1,7 @@
-> Genome Resources
+> # Genome Resources
 > ========================
 
-> # NCBI
+> ## NCBI
 >   * ehm 
 > #HapMap and 1000 Genomes
 >   * examine the variation between the humans
