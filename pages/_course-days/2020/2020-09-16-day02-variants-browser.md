@@ -28,6 +28,10 @@ emphasis on human genetic variation and reasoning for "large scale data".
     - [cheat sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
     - John Gruber's [Markdown primer](https://daringfireball.net/projects/markdown/syntax)
 
+### Tasks
+
+* Browse/explore genome resources and provide some notes (1-2 pages total) in a doc posted on Github (.md)
+
 ### Material
 
 * today's [slides](/UZH-BIO392/course-material/2020/2020-09-16-BIO392-variants.pdf)
