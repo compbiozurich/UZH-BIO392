@@ -8,8 +8,8 @@
   
 > Easy to find genes if you know their name. However on first glance it's a lot of information and quite detailed,
 so it takes some time to find information on e.g. the genes location. 
-Additionally I couldn't find a way to download the gene sequence (Fasta oe.) Nevermind I found it.
-> Conclusion: Looks complicated at first but ok to navigate after some time. A lot of extra information available!
+Additionally I couldn't find a way to download the gene sequence (Fasta oe.) Nevermind I found it.   return
+Conclusion: Looks complicated at first but ok to navigate after some time. A lot of extra information available!
   
 <li>Human Genome Resources at NCBI</li>
   <p>(https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/)<p>
