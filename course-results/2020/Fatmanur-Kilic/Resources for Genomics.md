@@ -1,5 +1,5 @@
 # Resources for Genomics
-There are several websites which represent whether germline or somatic genomics. One of the somatic genomics resources is **COSMIC** (Catalogue of Somatic Mutations in Cancer)
+There are several websites. They can be whether germline or somatic genomics. One of the somatic genomics resources is **COSMIC** (Catalogue of Somatic Mutations in Cancer)
 
 ## COSMIC
 [click here](https://cancer.sanger.ac.uk/cosmic) for the official website 
