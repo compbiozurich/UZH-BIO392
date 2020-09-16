@@ -3,18 +3,18 @@
 blabla
 
 more text
- -1
- -2
- -3
-  -01
-   -011
-   -012
-  -02
-   -021
-   -022
-  -03
-   -031
-   -032
+ -a
+ -b
+ -c
+  -ca
+   -caa
+   -cab
+  -cb
+   -cba
+   -cbb
+  -cc
+   -cca
+   -ccb
   
  ![alt text] (http://picsum.photos/200/200)
  blabla
