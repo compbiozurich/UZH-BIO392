@@ -1,4 +1,5 @@
 # Markdown (h1)
+---
 To create a markdown file just add a .md or.markdown at the end
 
 ### Writing styles:
@@ -12,8 +13,6 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 # text in gray
 @@ text in purple (and bold)@@
 ```
-### Marked text:
-==Marked text==
 
 ### Links: 
 You can even [link to Google!](http://google.com)
