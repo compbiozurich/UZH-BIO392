@@ -13,4 +13,4 @@ variants. For each variant, there are more categories where the data is grouped.
 
 ### [My Cancer Genome](https://www.mycancergenome.org/)
 
-This website is different from the others, since here you can insert the name of the gene of interest (e.g. IL7). The page then returns all the information (which is grouped in biomarkers, diseases, drugs, clinical trials and pathways) from the data base connected to this gene. 
+This website can be used to insert the name of the gene of interest (e.g. IL7) and the page returns everything from the data base connected to this gene. The information is grouped in biomarkers, diseases, drugs, clinical trials and pathways. However, the search term has to be as exact as possible, otherwise the website will output all the data that has something to do with the searched gene. I think the website is also interesting because in some cases, it has a pathway section, which explains the interaction with other genes.
