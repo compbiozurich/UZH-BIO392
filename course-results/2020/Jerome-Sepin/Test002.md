@@ -13,7 +13,7 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 @@ text in purple (and bold)@@
 ```
 ### Marked text:
-<mark>Marked text</mark>
+==Marked text==
 
 ### Links: 
 You can even [link to Google!](http://google.com)
