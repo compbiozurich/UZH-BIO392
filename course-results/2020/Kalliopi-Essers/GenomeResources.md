@@ -1,5 +1,5 @@
-> ##Genome Resources
+> Genome Resources
 > ========================
 
-> #NCBI
+> NCBI
 > * ehm 
