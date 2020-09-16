@@ -39,11 +39,16 @@ Conclusion: I will use this site just for the 3D structure tool it's quite enter
   
 <li>ClinGen Knowledge Base</li>
   <p>(https://www.clinicalgenome.org/)<p>
-  
+
+> Very little information and I don't like the genome view too much. 
+Conclusion: Not the biggest fan to be honest...
   
 <li>OncoKB</li>
   <p>(https://www.oncokb.org/)<p> 
-  
+
+> Again cancer related information about different mutations and a nice graph which shows mutation frequency location. 
+But that's about it as far as I can tell.
+Conclusion: Specific information and nice if you look for mutation frequency distribution.
   
 </ol>
 
