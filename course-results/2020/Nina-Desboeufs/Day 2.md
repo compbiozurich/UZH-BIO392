@@ -14,3 +14,4 @@ I searched for **non-hodgkin lymphoma** variants. What I've found:
 
 > Where I've found the information: [Non-Hodgkin Lymphoma Variations](https://www.ncbi.nlm.nih.gov/clinvar?term=hodgkin%20lymphoma&cmd=correctspelling)
 
+> One example of one of the variation: **NRAS** (NM_002524.5(NRAS):c.38G>T (p.Gly13Val)). It's a SNV, leading to a missense. Here is the publication for non-hodgkin lymphoma, [Chang M, 2016](https://pubmed.ncbi.nlm.nih.gov/26619011/). 
