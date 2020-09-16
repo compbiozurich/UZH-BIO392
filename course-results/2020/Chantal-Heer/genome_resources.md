@@ -6,7 +6,7 @@
 > ## Resources for (reference) genomics
 >> The following websites show you the reference genome of a species. However, some also provide information about genome variations.
 > 1. USCS Genome Browser
->   [This website] [http://genome.ucsc.edu/] is made by the University of California Santa Cruz based on the international Human Genome Project in 2000. However, now covers this broswer also genomes of many vertebrates and model organisms species. The various tools can help you by browsing through a genome. You can even download genomes e.g. from an alpca. Most of the time you have the choise between several genomes (e.g. different alpacas or different date of categorisation).
+>>  [This website](http://genome.ucsc.edu/) is made by the University of California Santa Cruz based on the international Human Genome Project in 2000. However, now covers this broswer also genomes of many vertebrates and model organisms species. The various tools can help you by browsing through a genome. You can even download genomes e.g. from an alpca. Most of the time you have the choise between several genomes (e.g. different alpacas or different date of categorisation).
 > 2. Human genome resources at NCBI
 >   [This page] [https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/] shows you the human chromosomes. You can look at a specific chromosme or search for a gene. The website provides you the two recennt human reference genomes. You can download various information from a genome when you don't want to download the whole one. When you scroll down you can find more resources, also some for variations (covered down below). You also find some fact sheets for the additional resources. These are helpful to find the resource you need.
 > 3. Ensembl
