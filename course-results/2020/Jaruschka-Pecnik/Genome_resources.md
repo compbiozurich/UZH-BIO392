@@ -1,7 +1,8 @@
 # notes concerning exploring the genome resources
 
 
-
+database| informations, thoughts...
+--- | ---
 IGSR | informative, the overview is not very appealing 
 NIH | looks very informative (paragraphs about genomics, genetic disorders...)
 CGI | portal that interprets sequences according to validated oncogenic alterations and makes prediction | 
