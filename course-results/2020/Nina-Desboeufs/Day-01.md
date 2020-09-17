@@ -24,7 +24,7 @@ useful commands for Git/GitHub (between local and remote):
 | git merge  | merge a branch into the current branch| 
 | git remote    | connect the local repo to the remote server| 
 
-* git add - git commit - git push
+* git add - git commit - git pull - git push
 * git checkout / git merge 
 
 > Lets commit some stuff 
