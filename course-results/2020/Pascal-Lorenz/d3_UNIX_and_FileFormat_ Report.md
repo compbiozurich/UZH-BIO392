@@ -16,7 +16,8 @@ fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF a
     - `ls` to list contents of the current directory, if needed with the `-l` tag.
 
 - What | and > do in a terminal?
-    - ### (Don't know yet)
+    - `|`allows chaining commands to gether. the result of the earlier command is used as the input of the later command.
+    - `>`takes the output of the stuff on the left and puts it into a file names as what you put on the right.
 
 - How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).
     - `tail file_name.txt`
@@ -25,7 +26,8 @@ fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF a
     - ### (Don't know yet)
 
 - How can we print every third line of a text file? Please provide the command(s), and discuss what they do.
-    - ### (Don't know yet) (probably with wc)
+    - ``awk 'NR%3==0'`` basically goes on each line, then divides the current line number (NR), divides it by 3 and takes the remainder of that division.
+    If the remainder equals 0, that line is printed.
 
 - How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.
     - ### (Don't know yet)
