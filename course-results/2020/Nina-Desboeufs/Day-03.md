@@ -9,7 +9,7 @@ It contains 4 lines per read sequence:
 
 
 **Useful command lines**: 
-*To determine the number of sequence (number of line / 4): 
+* To determine the number of sequence (number of line / 4): 
 `wc file.fq | awk '{print $1 / 4}'`
 * To retrieve each 1st/2nd/3rd/4th line of the read sequence (i.e. the sequence): 
 `awk 'NR%4==1' file.sq` (NR: current line number; % modulo) (==2 / ==3/ ==0)
