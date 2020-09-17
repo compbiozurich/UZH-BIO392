@@ -18,6 +18,18 @@ It contains 4 lines per read sequence:
      NR % 4 == 2 {print}' SP1.fq \
      | > example.fa`
 
+## Unix shell 
+
+  Command         | Function        
+| --------------- |:----------------|
+| history         |history of the commands used in the shell |
+| clear           | clear the CLI   |
+| kill            | terminate or signal a process |
+|*                | matches any number of characters (none, one or more) in a file or directory name|
+|? | matches exactly one character - use '??' to match any group of 2 characters|
+| [] | specify a range of characters allowed at that position - use '!' to exclude a range of characters at that position |
+| {} | specify a list of terms - separated by commas |
+| mv | move or rename a file or a directory | 
 
 
 
