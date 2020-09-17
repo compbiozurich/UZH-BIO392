@@ -1,11 +1,8 @@
-## Day 3 Report
+## Day 3 Report unfinished
 
 * Why do we use the terminal in bioinformatics?
-   When working with many or large data its more easy and efficient to use the terminal
-   
-   ###provides more control on the computer than a Graphical User Interface (GUI)
-    ###sometimes the same task takes more time using an available GUI program than the unix command line equivalent
 
+   When working with many or large data its more easy and efficient to use the terminal
 
 
 ---
@@ -16,7 +13,7 @@
 ---
 * In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?
 
-
+This makes it
 
 ---
 * How can we list files are in a directory? Please provide the command(s).
@@ -50,9 +47,11 @@ $ tail ~/mnt/test/test.txt
 
 ---
 * How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).
+ $ cut -d -f 1 /mnt/test/test.txt
 
 ---
 * How can we print every third line of a text file? Please provide the command(s), and discuss what they do.
+
 
 
 ---
