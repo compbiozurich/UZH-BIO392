@@ -33,6 +33,10 @@ It contains 4 lines per read sequence:
 | cp _file, new name, location_ | Copy a file or a directory |
 | tar | manipulate archives |
 | chmod | Change file modes or access control lists | 
-| find | walk a file hierarchy: -name '*name*' |
+| find | walk a file hierarchy: _-name 'FileName'_ |
+| cat | display file content |
+| less | display the content of a text file one screen at a time (text viewer)|
+| sort | sort or merge records (lines) of text and binary files (-u (unique), -n (numeric), -r (reverse))|
+
 
 
