@@ -30,7 +30,9 @@ It contains 4 lines per read sequence:
 | [] | specify a range of characters allowed at that position - use '!' to exclude a range of characters at that position |
 | {} | specify a list of terms - separated by commas |
 | mv | move or rename a file or a directory | 
-
+| cp _file, new name, location_ | Copy a file or a directory |
+| tar | manipulate archives |
+| chmod | Change file modes or access control lists | 
 
 
 
