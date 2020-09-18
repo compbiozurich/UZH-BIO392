@@ -1,4 +1,4 @@
-# FIle Formats 
+# Variant Nomenclature and File Formats 
 
 ## Variant Nomenclature 
 
@@ -20,7 +20,15 @@ The Human Genome Variant Society (HGVS) is a standard nomenclature to describe v
  e.g. **NM_004006.2:c.4375C>T**, NM_004006.2 (Reference), c.4375C>T (variant) 
 
 
-The RNA and protein predictions have to be specified by using "()". _c_ stands for "coding DNA reference sequence" but _g_ can also be used since the whole genome is sequenced and stands for "genomic reference sequence". 
+The RNA and protein predictions have to be specified by using "()". _c_ stands for "coding DNA reference sequence" but _g_ can also be used since the whole genome is sequenced and stands for "genomic reference sequence". \
+Types of variants described by HGVS are the following: 
+| Variant             | Description            | Example            |
+|:--------------------|:-----------------------|:-------------------|
+| substitution        | ">"                    |c.4375C>T, 4375 describes the position |
+| deletion            | "del"              | c.4375_4379del |
+| duplication         | "dup"         | c.4375_4385dup. | 
+| insertion           | "ins" | c.4375_4376insACCT |
+| indel               | "delins" | c.4375_4376delinsAGTT | 
 
 
 **ISCN vs HGVS**: ISCN focuses on the resulting structure of the chromosomes while HGVS on the observed variants. 
