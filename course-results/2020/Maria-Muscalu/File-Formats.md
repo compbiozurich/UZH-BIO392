@@ -6,8 +6,7 @@ The discribtion of the chromosomal changes, which are detected using microscopic
 
 An example of the ISCN can be seen below:
 
-> chr2:g.pter_8,247,756::chr11:g.15,825,273_cen_qter (der11) 
-
+> chr2:g.pter_8,247,756::chr11:g.15,825,273_cen_qter (der11)
 > chr11:g.pter_15,825,272::chr2:g.8,247,757_cen_qter (der2)
 
 The previous lines indicates an example for a balanced translocation between chromosome two and 11, following the ISCN recomandations [[2]].
