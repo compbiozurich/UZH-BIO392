@@ -11,3 +11,7 @@ The previous line indicates an example for a balanced translocation between chro
 [1]: http://varnomen.hgvs.org/bg-material/consultation/ISCN/ 
 [2]: https://varnomen.hgvs.org/recommendations/DNA/variant/complex/
 [3]: https://www.coriell.org/0/Sections/Support/Global/iscn_help.aspx?PgId=263
+
+#### 2. Human Genome Variation Society (HGVS)
+
+
