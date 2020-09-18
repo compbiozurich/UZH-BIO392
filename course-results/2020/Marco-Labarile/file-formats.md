@@ -10,10 +10,10 @@ BAM files are essentially SAM files encoded in binary to enable more efficient u
 
 CRAM is a further development on the compression efficiency of BAM files. As such, it is also a binary encoded file format that stores read alignments relative to a reference.
 
-1. [https://www.internationalgenome.org/formats]
-2. [https://academic.oup.com/bioinformatics/article/25/16/2078/204688]
-3. [http://samtools.github.io/hts-specs/SAMv1.pdf]
-4. [http://samtools.github.io/hts-specs/CRAMv3.pdf]
+1. https://www.internationalgenome.org/formats
+2. https://academic.oup.com/bioinformatics/article/25/16/2078/204688
+3. http://samtools.github.io/hts-specs/SAMv1.pdf
+4. http://samtools.github.io/hts-specs/CRAMv3.pdf
 
 ## FASTA/FASTQ
 
@@ -23,14 +23,14 @@ FASTQ is an extension on FASTA and includes read quality scores on top of the se
 
 Compared to aligned sequence formats (SAM/BAM/CRAM), there seems to be little advantage to using FASTA or FASTQ besides maybe the simplicity and readability. For storing large amounts of basepairs with metadata, SAM/BAM/CRAM seem to be the best option.
 
-5. [https://en.wikipedia.org/wiki/FASTA_format]
-6. [https://academic.oup.com/nar/article/38/6/1767/3112533]
+5. https://en.wikipedia.org/wiki/FASTA_format
+6. https://academic.oup.com/nar/article/38/6/1767/3112533
 
 ## VCF
 
 VCF (Variant Call Format) is a file format used to store sequence variants with respect to a reference. VCF is a clear-text format that supports large amounts of metadata in addition to the variant data itself. The types of variants called can include basically any type of possible sequence transformation, such as insertions, duplications, deletions, etc. When the goal is the study and/or storage of genetic variants, VCF is the go-to file format.
 
-6. [https://www.internationalgenome.org/wiki/Analysis/variant-call-format]
+6. https://www.internationalgenome.org/wiki/Analysis/variant-call-format
 
 ## Cost considerations
 
