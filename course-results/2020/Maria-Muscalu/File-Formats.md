@@ -40,7 +40,8 @@ This file format is used to store genetic variants [[7]]. The file format can be
 #### 4. GA4GH Variation Representation Specification (VRS)
 
 The VRS uses the Jonson-based schema [[9]] and was done to standardize the exchange of variation data [[10]]. In VRS an allele object is composed of a location and state at the respective location and it uses interbase coordinates [11]. The information about an allele can be made into a VRS object using the Jonson-based schema, which is shown below [11]. 
-
+ 
+```python
 {
   "location": {
     "interval": {
@@ -57,7 +58,7 @@ The VRS uses the Jonson-based schema [[9]] and was done to standardize the excha
   },
   "type": "Allele"
 }
-
+```
 
 [9]. https://vr-spec.readthedocs.io/en/latest/terms_and_model.html#data-model-notes-and-principles
 [10]. https://vr-spec.readthedocs.io/en/latest/introduction.html
