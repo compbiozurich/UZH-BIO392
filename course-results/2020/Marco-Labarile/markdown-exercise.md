@@ -55,3 +55,44 @@ Tables using inline-HTML:
 
 https://github.com  
 [GitHub](https://github.com)
+
+## 1.5 Code
+
+```bash
+Chunks of code (or other text)
+can be displayed like this,
+using triple back-quotes.
+
+Syntax-highlighting is also supported:
+cd ~
+rm -rf *
+echo 'Job's done.'
+```
+
+```R
+x <- seq(-2*pi, 2*pi, length.out = 100)
+y <- sin(x)
+plot(x, y, type = "l")
+```
+
+Similar thing inside `regular` text using only a single back-quote.
+
+## 1.6 Expandable sections
+
+<details>
+ <summary>This is a tag called summary</summary>
+ 
+ This is some information that I want to show up upon clicking the summary tag.
+ Other elements such as
+ 
+ > quotes
+ 
+ and 
+ 
+ ```
+ blocks
+ of code
+ ```
+ 
+ can be used here.
+</details>
