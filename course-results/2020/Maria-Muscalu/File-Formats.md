@@ -14,6 +14,7 @@ The previous line indicates an example for a balanced translocation between chro
 
 #### 2. Human Genome Variation Society (HGVS)
 
-While the ISCN nomenclature provides recomandeations for the chromosomal changes, the HGVS nomenclature focuses on the describtion of the sequence variants [[4]]. The [Sequence Variant Nomenclature](https://varnomen.hgvs.org/recommendations/general/) website gives an overview of the recomanded symbols and abreviations, which, only in some cases, overlap with the ones from used by ISCN. (Umongst the common nomenclature for ISCN and HGVS are: *cen*, *chr*, *pter*, *qter*, *sup* and *::*)
+While the ISCN nomenclature provides recomandeations for the chromosomal changes, the HGVS nomenclature focuses on the describtion of the sequence variants [[4]]. The [Sequence Variant Nomenclature](https://varnomen.hgvs.org/recommendations/general/) website gives an overview of the recomanded symbols and abreviations, which, only in some cases, overlap with the ones from used by ISCN. (The common nomenclature for ISCN and HGVS are: *cen*, *chr*, *pter*, *qter*, *sup* and *::* [[5]])
 
 [4]: https://varnomen.hgvs.org/bg-material/basics/
+[5]: https://varnomen.hgvs.org/recommendations/general/
