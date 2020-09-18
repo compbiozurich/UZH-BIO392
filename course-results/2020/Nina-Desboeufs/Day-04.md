@@ -59,7 +59,7 @@ Miscellaneous variant formats are commonly used in bioinformatics depending on t
 ### SAM 
 The Sequence Alignment/Map (SAM) format is a _tab_-delimited text file originated from **SAMtools** (as BAM and CRAM). This last one is a software to post-process short DNA sequence read alignments. SAM takes into account the sequence reads as well as the alignment data that link short reads to a reference sequence. 
 
-> **Use**: visualize **short read sequences** in genome browsers such as IGV (Integrated Genome Viewer).
+> **Use**: visualize **short read sequences** in genome browsers such as IGV (Integrated Genome Viewer). \
 > **Comment(s)**: large file size!!
 
 It consists of a header (optional, starting with "@") and an alignment section. 
@@ -69,13 +69,20 @@ More information can be found [here](https://samtools.github.io/hts-specs/SAMv1.
 
 
 ### BAM
-To remediate to the large file size of SAM format, BAM is the **compressed binary** version of SAM. 
+To remediate to the large file size of SAM format, BAM is the **compressed binary** version of SAM (BGZF format as block compression -> gunzip compatible). BAM includes the same information as SAM but in another format. It includes indexable representation of nucleotide sequence alignments, which allows the processing of large data. 
+
+> **Use**: same as SAM (**alignment file**) but to compress the data. \
+> **Comment(s)**: SAM is easier to use by conventional text based software 
 
 
 ### CRAM
+Similar to BAM, CRAM is a restructured and binary compressed alignment format, with column-orientation. It is managed by GA4GH. 
 
+> **Use**: same as SAM (**sequence read file**) but highly space efficient due to the compression. \
+> **Comment(s)**: smaller file size than BAM
 
 ### VCF
+The Variant Call Format (VCF) 
 
 
 ### FASTA
