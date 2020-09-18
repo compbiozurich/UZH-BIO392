@@ -86,6 +86,8 @@ MPEG-G project has the goal to enable management of large genomic data, by achie
 [16]: https://zhanglab.ccmb.med.umich.edu/FASTA/
 [17]: https://www.biorxiv.org/content/10.1101/426353v1#:~:text=The%20MPEG%2DG%20standardization%20project,data%20processing%2C%20transport%20and%20sharing.
 
+#### 7. Estimate Storage Requirements for 1000 Genomes Project
+
 
 
 
