@@ -9,8 +9,7 @@ so it takes some time to find information on e.g. the genes location.
 Additionally I couldn't find a way to download the gene sequence (Fasta oe.) Nevermind I found it. <br />
 Conclusion: Looks complicated at first but ok to navigate after some time. A lot of extra information available!
 
-<li>Human Genome Resources at NCBI</li>
-  <p>(https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/)<p>
+2. [Human Genome Resources at NCBI](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/)
 
 > Much more overview on first glance and I've used NCBI before so it's already familiar. Get different genome reference to choose from
 and the gene sequence is easily available for Fasta and GenBank. Super easy to navigate and nice graphic which shows the translation direction of the gene.
