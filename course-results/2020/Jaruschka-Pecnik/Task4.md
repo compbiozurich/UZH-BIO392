@@ -1,6 +1,6 @@
-## Task 4
+# Task 4
 
-# for storing called variants:
+## for storing called variants:
 
 file format | format and functions | source |
 --- | --- | --- |
@@ -9,7 +9,7 @@ VCF (Variant Call Format) | - text file format (oftem compressed) <br> - informa
 FASTA | - text-based format for nucleotide or amino acid sequences (represented by single-letter codons) <br>- single-line description followed by lines of sequence data <br> - text lines should be in length shorter than 80 characters | [FASTA](https://en.wikipedia.org/wiki/FASTA_format) |
 
 
-# for full archival purposes:
+## for full archival purposes:
 
 file format | format and functions | source |
 --- | --- | --- |
@@ -17,7 +17,7 @@ BAM (Binary Alignment/Map) | - binary format of SAM <br> - used to store informa
 
 
 
-# for browser visualization:
+## for browser visualization:
 
 file format | format and functions | source |
 --- | --- | --- |
