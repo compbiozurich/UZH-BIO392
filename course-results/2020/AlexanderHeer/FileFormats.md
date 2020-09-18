@@ -37,11 +37,11 @@ SAM files consists of:
 * header section: must be prior to alignments and starts with @
 * alignment section: contains 11 mandatoory fields s for
 essential alignment information:
-  *QNAME: Query template name. Reads/segments having identical QNAME are regarded to come from
+  * QNAME: Query template name. Reads/segments having identical QNAME are regarded to come from
 the same template
-  *FLAG: combination of bitwise flags &#8594; detailed info: https://samtools.github.io/hts-specs/SAMv1.pdf
-  *RNAME: Reference sequence name of the alignment
-  *POS: 1-based leftmost mapping Position of the first CIGAR operation that “consumes” a reference
+  * FLAG: combination of bitwise flags &#8594; detailed info: https://samtools.github.io/hts-specs/SAMv1.pdf
+  * RNAME: Reference sequence name of the alignment
+  * POS: 1-based leftmost mapping Position of the first CIGAR operation that “consumes” a reference
 base  &#8594; detailed info: https://samtools.github.io/hts-specs/SAMv1.pdf
   * MAPQ: Mapping Quality
   * CIGAR: CIGAR string  &#8594;  detailed info: https://samtools.github.io/hts-specs/SAMv1.pdf
