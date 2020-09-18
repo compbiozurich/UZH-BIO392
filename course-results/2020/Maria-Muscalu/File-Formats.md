@@ -72,11 +72,17 @@ Interbase and 0-based coordinates refer to nucleotides or variant positions usin
 [12]: https://genviz.org/module-01-intro/0001/02/01/Review_of_Central_Concepts/
 [13]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383450/#:~:text=The%20so%2Dcalled%20%E2%80%9Cbase%E2%80%9D,nucleotide%20positions%20in%20the%20genome.
 
-#### 6. Sequence Alignment/Map (SAM)
+#### 6. Different genomic file formats and their use cases
 
-The file contains a header and an alignment section [14]. One of the differences between the two sections is that the header lines start with a $A$
+SAM (Sequence Alignment/Map) file contains a header and an alignment section [14]. One of the differences between the two sections is that the header lines start with a @ [[14]]. All the lines from the alignment section have 11 columns [[14]]. 
+
+The BAM file is the compressed binary format of SAM [15].
+
+The CRAM  have a compressed version of the alignment 
+
 
 [14]: https://samtools.github.io/hts-specs/SAMv1.pdf
+[15]: https://www.internationalgenome.org/formats
 
 
 
