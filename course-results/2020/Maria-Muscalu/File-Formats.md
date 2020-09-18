@@ -41,10 +41,30 @@ This file format is used to store genetic variants [[7]]. The file format can be
 
 The VRS uses the Jonson-based schema [[9]] and was done to standardize the exchange of variation data [[10]]. In VRS an allele object is composed of a location and state at the respective location and it uses interbase coordinates [11]. The information about an allele can be made into a VRS object using the Jonson-based schema, which is shown below [11].
 
+ 
+```python
+{
+  "location": {
+    "interval": {
+      "end": 32936732,
+      "start": 32936731,
+      "type": "SimpleInterval"
+    },
+    "sequence_id": "refseq:NC_000013.11",
+    "type": "SequenceLocation"
+  },
+  "state": {
+    "sequence": "C",
+    "type": "SequenceState"
+  },
+  "type": "Allele"
+}
+```
 
-[9]. https://vr-spec.readthedocs.io/en/latest/terms_and_model.html#data-model-notes-and-principles
-[10]. https://vr-spec.readthedocs.io/en/latest/introduction.html
-[11]. https://vr-spec.readthedocs.io/en/1.1/impl-guide/example.html
+
+[9]: https://vr-spec.readthedocs.io/en/latest/terms_and_model.html#data-model-notes-and-principles
+[10]: https://vr-spec.readthedocs.io/en/latest/introduction.html
+[11]: https://vr-spec.readthedocs.io/en/1.1/impl-guide/example.html
 
 
 
