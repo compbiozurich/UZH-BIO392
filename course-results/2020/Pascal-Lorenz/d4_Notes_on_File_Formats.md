@@ -8,9 +8,8 @@ the variants compared to a reference sequence. The advantage is that it is very 
 
 ### SAM/BAM
 SAM files are similar to FASTA/FASTQ in the sense that they also store sequences. The data is arranged with tab delimiters as opposed to a group of lines though,
-and there is some additional information stored. The main extra info is a record of where the sequence fits into a reference genome. This means that SAM can be
-used not only for storing entire sequences like FASTA and FASTQ, but also to store variant sections only. This also means that its efficiency depends more on how
-the user is using the format.  
+and there is some additional information stored. The main extra info is a record of where the sequence fits into a reference genome. The main use case for this is to 
+store sequences before aligning them. When doing shotgun sequencing, the long strand of source DNA (or RNA or protein) is sequenced in smaller parts. These parts overlap, and can then be reassembled to form the entire original sequence. And storing those shorter "shotgunned" reads is what SAM is great for. This also means that a SAM file contains each, or at least most sections of the original sequence more than once (remember: overlaps), which makes the file larger for obvious reasons.
 BAM is basically the same as SAM, except in binary. This means it is not really human readable anymore. It is also very efficiently compressable.
 
 ### VCF
@@ -25,4 +24,4 @@ genome browsers display in parallel to the genome.
 
 # Comparison in file sizes
 My estimation on the order of file size if you were to store a large amount of sequences with different formats (large to small):  
-FASTQ > FASTA > SAM > BAM > VCF
+SAM > BAM > FASTQ > FASTA > VCF
