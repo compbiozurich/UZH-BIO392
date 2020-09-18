@@ -40,7 +40,7 @@ The Global Alliance for Genomics and Health (GA4GH) is an international alliance
 --------------- 
 
 ## 2. Genomic Coordinate Systems 
-Genomic coordinates are describes as: 
+Genomic coordinates are described as: 
 * chromosome name 
 * start position 
 * end position 
@@ -50,6 +50,34 @@ Genomic coordinates are describes as:
    * "." both strands
 
 Genomic coordinate systems start either by **0** (called **0-indexed**) or by **1** (called **1-indexed**), depending on the format. To denotate the end, there are also two different ways, the **fully-closed** (also called **end-inclusive**) and the **half-open**. The first one includes the last position IN the feature, while the second one denotes the first position NOT included. Thus, there are **four** possible genomic coordinate systems combining start and end system together. More information can be found [here](https://plastid.readthedocs.io/en/latest/concepts/coordinates.html). 
+
+--------------
+
+## 3. Variant Formats 
+Miscellaneous variant formats are commonly used in bioinformatics depending on the use-cases. 
+
+### SAM 
+The Sequence Alignment/Map (SAM) format is a _tab_-delimited text file originated from **SAMtools** (as BAM and CRAM). This last one is a software to post-process short DNA sequence read alignments. SAM takes into account the sequence reads as well as the alignment data that link short reads to a reference sequence. 
+
+> **Use**: visualize **short read sequences** in genome browsers such as IGV (Integrated Genome Viewer).
+
+It consists of a header (optional, starting with "@") and an alignment section. 
+
+
+### BAM
+
+
+### CRAM
+
+
+### VCF
+
+
+### FASTA
+
+
+### MPEG-G 
+
 
 
 
