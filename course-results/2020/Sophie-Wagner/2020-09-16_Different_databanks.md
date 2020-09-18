@@ -2,7 +2,7 @@
 
 * I searched for DNMT3A on each databank for funsies :)
 
-1. [BUCSC Genome Browser](http://genome.ucsc.edu/)
+1. [UCSC Genome Browser](http://genome.ucsc.edu/)
 
 > Easy to find genes if you know their name. However on first glance it's a lot of information and quite detailed,
 so it takes some time to find information on e.g. the genes location.
@@ -17,8 +17,7 @@ Also easy accessible reference articles on the bottom.<br />
 Conclusion: Super clear and straightforward!
 
 
-<li>ENSEMBL</li>
-  <p>(http://www.ensembl.org/Human/Search/Results?q=;site=ensembl;facet_species=Human)<p>
+3.[ENSEMBL](http://www.ensembl.org/Human/Search/Results?q=;site=ensembl;facet_species=Human)
 
 > Direct link to UniProtKB which I've also used before in the summary. The summary on the top includes some info like
 gene type, name and reference sequence. The graph is quite comprehensive with a nice legend. You can go to region detail if you
@@ -26,25 +25,20 @@ would like a more detailes graph and some additional information. However, I cou
 Conclusion: Informative graph but couldn't find sequence.
 
 
-<li>COSMIC</li>
-  <p>(https://cancer.sanger.ac.uk/cosmic)<p>
+4. [COSMIC](https://cancer.sanger.ac.uk/cosmic)
 
 > Mostly focused on found mutations across DNMT3A and their carcinogenic properties with a lot of information regarding mutation
 frequency in a specific tissue. There's an incredibly cool tool to view the
 3D structure of the molecule with mutation frequency indicated! I love this<br />
 Conclusion: I will use this site just for the 3D structure tool it's quite entertaining.
 
-<li>ClinGen Knowledge Base</li>
-  <p>(https://www.clinicalgenome.org/)<p>
+5. [ClinGen Knowledge Base](https://www.clinicalgenome.org/)
 
 > Very little information and I don't like the genome view too much. <br />
 Conclusion: Not the biggest fan to be honest...
 
-<li>OncoKB</li>
-  <p>(https://www.oncokb.org/)<p>
+6. [OncoKB](https://www.oncokb.org/)<p>
 
 > Again cancer related information about different mutations and a nice graph which shows mutation frequency location.
 But that's about it as far as I can tell.<br />
 Conclusion: Specific information and nice if you look for mutation frequency distribution.
-
-</ol>
