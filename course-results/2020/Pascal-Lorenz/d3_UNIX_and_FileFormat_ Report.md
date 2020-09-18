@@ -23,7 +23,7 @@ fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF a
     - `tail /mnt/test/test.txt`
 
 - How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).
-    - `awk '{print $1}'`
+    - `awk '{print $1}' /mnt/test/test.txt`
 
 - How can we print every third line of a text file? Please provide the command(s), and discuss what they do.
     - ``awk 'NR%3==0' file_name.txt`` basically goes on each line, then divides the current line number (NR), divides it by 3 and takes the remainder of that division.
