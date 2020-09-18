@@ -1,3 +1,4 @@
+:octocat:
 ```
 man man # prints manual for manual
 man sed # commonly used editing program
