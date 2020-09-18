@@ -61,7 +61,6 @@ The VRS uses the Jonson-based schema [[9]] and was done to standardize the excha
 }
 ```
 
-
 [9]: https://vr-spec.readthedocs.io/en/latest/terms_and_model.html#data-model-notes-and-principles
 [10]: https://vr-spec.readthedocs.io/en/latest/introduction.html
 [11]: https://vr-spec.readthedocs.io/en/1.1/impl-guide/example.html
@@ -70,14 +69,14 @@ The VRS uses the Jonson-based schema [[9]] and was done to standardize the excha
 
 Interbase and 0-based coordinates refer to nucleotides or variant positions using the space between two bases on a genomic sequence, as opposed to the 1-based, which uses as coordinates the number of the actual nucleotide [[12]]-[[13]].
 
-![image](https://www.google.com/search?q=0-based+coordinates&rlz=1C5CHFA_enCH794CH794&sxsrf=ALeKk00nKrbtUg6BJcKxufc2A3HsPybOAw:1600465099976&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiyrImO1fPrAhWMlIsKHdFTD1sQ_AUoAXoECA4QAw&biw=1440&bih=701#imgrc=KjxP9PpRZfv7YM)
-
 [12]: https://genviz.org/module-01-intro/0001/02/01/Review_of_Central_Concepts/
 [13]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383450/#:~:text=The%20so%2Dcalled%20%E2%80%9Cbase%E2%80%9D,nucleotide%20positions%20in%20the%20genome.
 
+#### 6. Sequence Alignment/Map (SAM)
 
+The file contains a header and an alignment section [14]. One of the differences between the two sections is that the header lines start with a $A$
 
-
+[14]: https://samtools.github.io/hts-specs/SAMv1.pdf
 
 
 
