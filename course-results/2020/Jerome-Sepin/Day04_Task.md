@@ -17,11 +17,17 @@ I downloaded the ALDH2-Gene from Ensembl as a FASTA-File (Ending: .fa) and it wa
 
 ![alt text](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2020/Jerome-Sepin/FASTA_ALDH2.png)
 
-
 ## SAM:
 The SAM Format can be used to store sequence data, both aligned as well as unaligned, in a human readable format.
+A SAM and also a BAM format have a header first and afterwards a section which is called an alignment. Whereas the header contains information about the entire file the alignment section cointains information about each sequence by itself (how it aligns to the reference genome)
 
+### Example of a Header:
+![alt text](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2020/Jerome-Sepin/Header_Example.png)
+### Example of an Alignment and how its fields should then look like:
+![alt text](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2020/Jerome-Sepin/Alignment_Example.png)
 
 ## BAM:
 
-The BAM format provides binary versions of most of the same data as in SAM, and is designed to compress reasonably well.
+The BAM format provides binary versions of most of the same data as in SAM, and is designed to compress reasonably well. 
+
+I actually could not find any sequences in SAM or BAM file format and I wounder why?
