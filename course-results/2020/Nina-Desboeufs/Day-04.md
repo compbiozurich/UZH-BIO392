@@ -95,7 +95,7 @@ Similar to BAM, CRAM is a restructured and binary compressed alignment format, w
 > **Comment(s)**: smaller file size than BAM
 
 ### VCF
-The Variant Call Format (VCF) is the standard text file format for variant calls. A VCF file is composed of :
+The Variant Call Format (VCF) is the standard tab-delimited text file format for variant calls. A VCF file is composed of :
 * Header: File format, reference, dataset and definitions of all the annotations used to qualify and quantify the properties of the variant calls. It looks like this: 
 ```
 [HEADER LINES]
@@ -110,7 +110,7 @@ The Variant Call Format (VCF) is the standard text file format for variant calls
 ```
 #CHROM  POS ID  REF ALT     QUAL    FILTER  INFO    FORMAT  NA12878 [other samples...] 
 ```
-The first seven fileds are required in VCF format. 
+The first seven fields are required in VCF format. In more details, **CHROM** and **POS** is for the genomic coordinate system. 
 
 > **Use**: 
 > **Comment(s)**: very explicit, scalable and flexible. Smoe VCF files are very large and requires UNIX tools to access the part of interest. 
