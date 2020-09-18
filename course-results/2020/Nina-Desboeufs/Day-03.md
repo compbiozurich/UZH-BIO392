@@ -46,6 +46,8 @@ Protein entries. Each line starts with a two character line code such as ID for 
 | tr | translate characters, -d (delete), '' '' |
 | diff | compares two files and retrieve the difference |
 | grep | searches file(s) for words or patterns and displays the result lines | 
+| uniq | report one line if several identical and adjacent lines are found | 
+
 
 
 
