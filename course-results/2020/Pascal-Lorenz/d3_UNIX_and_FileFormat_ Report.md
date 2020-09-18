@@ -1,3 +1,4 @@
+:octocat:
 - Why do we use the terminal in bioinformatics?
     - It allows reproducibility of our actions, because we do our work as scripts. Any other person can simply execute the same script on their
     terminal to gt the same results (including our mistakes, but at least it's the same)
