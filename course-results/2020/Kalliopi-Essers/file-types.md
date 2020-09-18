@@ -4,9 +4,9 @@
 >   [Variant Call Format File](https://en.wikipedia.org/wiki/Variant_Call_Format#Common_FORMAT_fields)
 >
 > ##### Requirements
->         *Chromosome number
->         *Reference position 
->         *SNP or Cosmic ID
+>         * Chromosome number
+>         * Reference position 
+>         * SNP or Cosmic ID
 >
 > ##### For what is it for?
 >      * to Store gene sequence variations for large-scale genotyping and DNA sequencing projects
