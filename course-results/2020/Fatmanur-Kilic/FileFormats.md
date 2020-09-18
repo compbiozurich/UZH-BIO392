@@ -10,6 +10,9 @@ usage: stores biological **sequences aligned**<sup>2</sup> to a reference sequen
 ## BAM 
 - binary
 - compressed version of SAM
+usage: representation of aligned sequences up to 128 Mb
+
+
 
 
 
