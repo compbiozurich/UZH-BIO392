@@ -1,6 +1,6 @@
 # Variant Nomenclature and File Formats 
 
-## Variant Nomenclature 
+## 1. Variant Nomenclature 
 
 ### ISCN 
 The International System for Human Cytogenetic Nomenclature (ISCN) is a widely used nomenclature to describe the **human chromosome complement** and consists of symbols and abbreviated terms to specifically describe chromosomes and **numerical and structural chromosomal changes** (based on microscopic and cytogenetic techniques). It has been proposed since 1960 and the last update found was in 2016 named extension ISCN and recently modified in May 2020. E.g.:
@@ -33,3 +33,29 @@ Types of variants described by HGVS are the following:
 
 **ISCN vs HGVS**: ISCN focuses on the resulting structure of the chromosomes while HGVS on the observed variants. 
 >> Really useful and clear [link](https://varnomen.hgvs.org), where to find the sequence variant nomenclature (for DNA, RNA, Prot). 
+
+### GA4GH
+The Global Alliance for Genomics and Health (GA4GH) is an international alliance aiming the **standardization** in research and medicine by developing a framework for genomic and health-related data **sharing**. Concrete actions are for example update of the variant file formats, variant annotation, Crypt4GH (data accesibility, privacy). More information can be found [here](https://www.ga4gh.org). 
+
+--------------- 
+
+## 2. Genomic Coordinate Systems 
+Genomic coordinates are describes as: 
+* chromosome name 
+* start position 
+* end position 
+* chromosome strand 
+   * "+" forward strand 
+   * "-" reverse strand 
+   * "." both strands
+
+Genomic coordinate systems start either by **0** (called **0-indexed**) or by **1** (called **1-indexed**), depending on the format. To denotate the end, there are also two different ways, the **fully-closed** (also called **end-inclusive**) and the **half-open**. The first one includes the last position IN the feature, while the second one denotes the first position NOT included. Thus, there are **four** possible genomic coordinate systems combining start and end system together. More information can be found [here](https://plastid.readthedocs.io/en/latest/concepts/coordinates.html). 
+
+
+
+
+
+
+
+
+
