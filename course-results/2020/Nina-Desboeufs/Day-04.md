@@ -60,11 +60,16 @@ Miscellaneous variant formats are commonly used in bioinformatics depending on t
 The Sequence Alignment/Map (SAM) format is a _tab_-delimited text file originated from **SAMtools** (as BAM and CRAM). This last one is a software to post-process short DNA sequence read alignments. SAM takes into account the sequence reads as well as the alignment data that link short reads to a reference sequence. 
 
 > **Use**: visualize **short read sequences** in genome browsers such as IGV (Integrated Genome Viewer).
+> **Comment(s)**: large file size!!
 
 It consists of a header (optional, starting with "@") and an alignment section. 
+![SAM Format Example](~/Nina-Desboeufs/Screen_shot_SAM_Format.png) 
+
+More information can be found [here](https://samtools.github.io/hts-specs/SAMv1.pdf). 
 
 
 ### BAM
+To remediate to the large file size of SAM format, BAM is the **compressed binary** version of SAM. 
 
 
 ### CRAM
