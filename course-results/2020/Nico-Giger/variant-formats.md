@@ -36,3 +36,5 @@ Task: Estimate Storage Requirements for 1000 Genomes Project
 • Associated costs
 • Cost factors
 • Raw Storage costs
+
+
