@@ -8,6 +8,8 @@ An example of the ISCN can be seen below:
 
 > chr2:g.pter_8,247,756::chr11:g.15,825,273_cen_qter (der11)
 > chr11:g.pter_15,825,272::chr2:g.8,247,757_cen_qter (der2)
+> NC_000002.12:g.pter_8247756delins[NC_000011.10:g.pter_15825272]
+> NC_000011.10:g.pter_5825272delins[NC_000002.12:g.pter_8247756]
 
 The previous lines indicates an example for a balanced translocation between chromosome two and 11, following the ISCN recomandations [[2]].
   
