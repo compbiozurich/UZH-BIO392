@@ -156,7 +156,7 @@ Four types of shell commands:
  
  
  ##### Processes commands
- * A process is an executing - or running - program identified by a unique process identifier (PID)
+ * A process is an executing - or running - program identified by a __unique process identifier (PID)__
  It can:
   * run in the foreground
   * run in the background
@@ -169,7 +169,7 @@ Four types of shell commands:
  
  * To run it in the background: adding '__&__'
  
- * [CTRL+c] terminates process &#8594; in the __foreground__
+ * __[CTRL+c]__ terminates process &#8594; in the __foreground__
  
  * __kill %__ [job id/PID]  &#8594; in the __background__
 
@@ -181,3 +181,41 @@ Four types of shell commands:
  __fg %__ [job number] | move runnign process in the foreground or to reactivate a suspended process
  
  
+## UNIX shell: filesystem commands
+when the terminal is opned, the home directory is the working directory by default, represented by __~__. If a username is appended by it, it indicates the home directry of the logged in user
+
+Command | Description
+---|---
+__cd__ | change directory, followed by the directory we want to change to
+__ls__ | display the content of a directory. options: <ul><li>__-l__ = uses a long listing format, including the access rights</li><li>__-h__ or __--human-readable__ =prints file and directory sizes in human readable format</li><li> __-t__ = sorts by modification time - the default sorting is the filename</li><li> __-r__ = reverses the order while sorting</li><li> __-a__ or __--all__ = display all files, including those which names start with a '.' (hidden sub directories &#8594; current & parent directory as well as others  )</li></ul>
+__mkdir__ | create new directory, followed by the name of the directory
+__mv__ | <ul><li>move files or directories, followed by name of file or directory and the location where to move them to</li><li> Can also be used to rename a file or directory, in addition to location a new name is provided (added at end of the location)
+
+
+
+
+
+Wildcard | Description
+---|---
+__*__ | matches any number of characters in a file or directory name
+__?__ | matches exactly one character - use __'??'__ to match any group of 2 characters
+__[]__ | specify a range of characters allowed at that position
+__[!]__ |  exclude a range of characters at that position 
+__{}__ | curly brackets, specify a list of terms - separated by commas (or spaces?)
+ 
+Each file and directory has associated access rights (visible when using ls -l):
+* column on the left side
+* first character either __-__ (ordinary file type), __d__ (directory), __l__ (link)
+* 9 remaining characters  indicate access rights (three groups of three)
+  *  left group indicates the permissions for the user who owns the file 
+  * next group of three indicates the permissions for the primary group of the user who owns the file
+  * last group of three indicates the permissions for all other users
+* In every group of three:
+  * __'r'__ at the first position indicates that 'read' permission is granted
+  * __'w'__ at the second position indicates that 'write' permission is granted
+  * __'x'__ at the third position indicates that 'execution' permission is granted
+  * __'-'__ indicates the absence of permission
+* can be modified using __'chmod'__ <ownership> '+/-' <access>
+  * <ownership> indicates which owner affected. Can use any combination of the following characters u , g , o or a for All
+  * '+' or '-' used to give or remove the permission(s), '=' is used to set permissions
+  * <access> indicates which access level is concerned. Can use any combination of the characters r , w or x
