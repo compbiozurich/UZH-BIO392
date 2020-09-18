@@ -39,7 +39,7 @@ This file format is used to store genetic variants [[7]]. The file format can be
 
 #### 4. GA4GH Variation Representation Specification (VRS)
 
-The VRS uses the Jonson-based schema [[9]] and was done to standardize the exchange of variation data [[10]]. In VRS an allele object is composed of a location and state at the respective location and it uses interbase coordinates [11]. The information about an allele can be made into a VRS object using the Jonson-based schema, which is shown below [11].
+The VRS uses the Jonson-based schema [[9]] and was done to standardize the exchange of variation data [[10]]. In VRS an allele object is composed of a location and state at the respective location and it uses interbase coordinates [[11]]. The information about an allele can be made into a VRS object using the Jonson-based schema, which is shown below [[11]].
 
  
 ```python
@@ -65,6 +65,16 @@ The VRS uses the Jonson-based schema [[9]] and was done to standardize the excha
 [9]: https://vr-spec.readthedocs.io/en/latest/terms_and_model.html#data-model-notes-and-principles
 [10]: https://vr-spec.readthedocs.io/en/latest/introduction.html
 [11]: https://vr-spec.readthedocs.io/en/1.1/impl-guide/example.html
+
+#### 5. 0 or 1-based and "interbase" genomic coordinate systems
+
+Interbase and 0-based coordinates refer to nucleotides or variant positions using the space between two bases on a genomic sequence, as opposed to the 1-based, which uses as coordinates the number of the actual nucleotide [[12]]-[[13]].
+
+![image](/Users/mariamuscalu/Documents/BIO\ 392\ Bioinformatics\ of\ Molecular\ Sequence\ Variations/20200918/coordinates.png)
+
+[12]: https://genviz.org/module-01-intro/0001/02/01/Review_of_Central_Concepts/
+[13]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383450/#:~:text=The%20so%2Dcalled%20%E2%80%9Cbase%E2%80%9D,nucleotide%20positions%20in%20the%20genome.
+
 
 
 
