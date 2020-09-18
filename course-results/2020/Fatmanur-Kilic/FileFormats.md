@@ -5,16 +5,21 @@ Here is a brief introduction of different genomic file formats and their use cas
 - **TAB-delimited text format**<sup>1</sup>
 - human readable
 - often generated of BAM
-- stores biological **sequences aligned**<sup>2</sup> to a reference sequence
+
+usage: stores biological **sequences aligned**<sup>2</sup> to a reference sequence
 
 ## BAM  (Binary Alignment Map)
 - binary
 - compressed version of SAM
 
+usage: same as SAM
+
 ## CRAM
 - binary
 - columnar file format
 - more compressed than BAM
+
+usage: same as SAM
 
 ## VCF
 
