@@ -60,6 +60,11 @@ The VRS uses the Jonson-based schema [[9]] and was done to standardize the excha
 }
 ```
 
+
+
+
+
+
 [9]. https://vr-spec.readthedocs.io/en/latest/terms_and_model.html#data-model-notes-and-principles
 [10]. https://vr-spec.readthedocs.io/en/latest/introduction.html
 [11]. https://vr-spec.readthedocs.io/en/1.1/impl-guide/example.html
