@@ -37,8 +37,7 @@ FASTQ with tab delimiters + positional information in reference genome. --> also
 SAM in binary. --> non-human readable and easier to compressable.
 
 ## BED
-store annotations with coordinates on a reference genome. It is useful for storing the type of data that
-genome browsers display in parallel to the genome. 
+store annotations with coordinates of reference genome. --> useful for storing information that genome browsers display in parallel to the genome. 
 
 Task: Estimate Storage Requirements for 1000 Genomes Project
 • How much computer storage is required for the 1000 Genomes project
