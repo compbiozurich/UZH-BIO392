@@ -128,4 +128,4 @@ Over the last years the cost for the whole genome sequencing has dropped faster 
 
 #### Raw Storage costs
 
-
+In 2011 the alignment of the whole genome sequencing cost about 40$ for a 300 GB BAM file format. This price consisted of the transfer, storing of the raw data and mapping [[23]].
