@@ -93,7 +93,12 @@ MPEG-G project has the goal to enable management of large genomic data, by achie
 
 ##### WES & WEG
 
-According to the [NGS Data Management and Analysis](https://www.strand-ngs.com/support/ngs-data-storage-requirements) website the whole genome sequence (WGS) can take up to 150 GB and a whole exome sequence (WES) needs 8 GB. As a result the WGS would need a total of 150 TB and the WES would require 8 TB. The same website suggests that the data is stored as BAM files which take ap less space [[19]].
+According to the [NGS Data Management and Analysis](https://www.strand-ngs.com/support/ngs-data-storage-requirements) website the whole genome sequence (WGS) can take up to 150 GB and a whole exome sequence (WES) needs 8 GB. As a result the WGS would need a total of 150 TB and the WES would require 8 TB. The same website suggests that the data is stored as BAM files which take up less space [[19]].
 
 [19]: https://www.strand-ngs.com/support/ngs-data-storage-requirements
 
+##### VCR
+
+The VCR file format cis used to store information about the genomic variants [[7]], meaning that these files contain the differences among individual genomes [[20]]. If we consider that each genome has about 3 million variants, this will lead to VCR file format with a size of 125 MB per genome [[20]]. As a result 1000 genomes would require 125 GB.
+
+[20]: https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0
