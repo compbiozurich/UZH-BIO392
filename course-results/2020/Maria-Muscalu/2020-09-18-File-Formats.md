@@ -106,16 +106,23 @@ BAM file is used to store in a binary format the linear alignment of a segment (
 
 ##### SAM file format
 
-The [Uppsala Multidisciplinary Center for Advanced Computational Science](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/) indicates the differences in size between the SAM, BAM and CRAM format file. They use as an example a BAM file that has 1.9 GB and indicate that it was compressed from a 7.4 GB SAM file [[21]]. As a result considering that the BAM file format would need 100 TB to store 1000 Genomes, the SAM file format would take up 390 TB.
+As mentioned above the SAM file format is used to represent genome information as a "linear alignment of a segment" [[14]] per each line. The [Uppsala Multidisciplinary Center for Advanced Computational Science](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/) indicates the differences in size between the SAM, BAM and CRAM format file. They use as an example a BAM file that has 1.9 GB and indicate that it was compressed from a 7.4 GB SAM file [[21]]. As a result considering that the BAM file format would need 100 TB to store 1000 Genomes, the SAM file format would take up 390 TB.
 
 [21]: https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/
 
 ##### CRAM file format
-According to the [Uppsala Multidisciplinary Center for Advanced Computational Science](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/) website CRAM lossless file (which means that the convertion from BAM to CRAM and back to BAM has no data loss) has 1.4 GB [[21]]. A CRAM lossless file would need about 74 GB.
-
+The CRAM files are used to furter compress the BAM files [[15]]. According to the [Uppsala Multidisciplinary Center for Advanced Computational Science](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/) website CRAM lossless file (which means that the convertion from BAM to CRAM and back to BAM has no data loss) has 1.4 GB [[21]]. A CRAM lossless file would need about 74 GB. 
 
 ##### VCR file format
 
 The VCR file format cis used to store information about the genomic variants [[7]], meaning that these files contain the differences among individual genomes [[22]]. If we consider that each genome has about 3 million variants, this will lead to VCR file format with a size of 125 MB per genome [[22]]. As a result 1000 genomes would require 125 GB.
 
 [22]: https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0
+
+#### 2. Associated costs
+#### Cost factors
+Over the last years the cost for the whole genome sequencing has dropped faster than the Moore's law [23].
+
+[23]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3245608/
+
+
