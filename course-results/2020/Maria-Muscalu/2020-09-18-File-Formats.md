@@ -74,7 +74,7 @@ The interbase and 0-based coordinates refer to nucleotides or variant positions 
 
 #### 6. Different genomic file formats and their use cases
 
-The SAM (Sequence Alignment/Map) file format is separated in two sections: one for the header and a second one for the alignment [[14]]. One of the differences between the two sections is that the header lines start with the *@* symbol [[14]]. The information from the alignment section is separated into 11 mandatory columns [[14]]. Each line of the alignment segment indicates the "linear alignment of a segment" [[14]]. The BAM file is the binary format of SAM [[15]]. The CRAM format has a compressed version of the alignment as opposed to the BAM files, due to thee reference that is used to store the data [[15]].
+The SAM (Sequence Alignment/Map) file format is separated in two sections: one for the header and a second one for the alignment [[14]]. One of the differences between the two sections is that the header lines start with the *@* symbol [[14]]. The information from the alignment section is separated into 11 mandatory columns [[14]]. Each line of the alignment segment indicates the "linear alignment of a segment" [[14]]. The BAM file is the binary format of SAM [[15]] and because of this it needs less storage space but it is not as easy to read as SAM [[18]]. The CRAM and BAM files are both alignment files but the CRAM format more compressed as opposed to the BAM format, due to the reference that is used to store the data [[15]].
 
 FASTA files are used for storing nucleotide or peptide sequences [[16]]. The file has a .txt format and its content can be separated into two parts: a single information line (which begins with the symbol ">") and the sequence [[16]].
 
@@ -85,7 +85,7 @@ MPEG-G project has the goal to enable management of large genomic data, by achie
 [15]: https://www.internationalgenome.org/formats
 [16]: https://zhanglab.ccmb.med.umich.edu/FASTA/
 [17]: https://www.biorxiv.org/content/10.1101/426353v1#:~:text=The%20MPEG%2DG%20standardization%20project,data%20processing%2C%20transport%20and%20sharing.
-
+[18]: https://mdozmorov.github.io/BIOS668.2018/assets/03_Genomic_resources/01_File_formats.pdf
 
 
 
