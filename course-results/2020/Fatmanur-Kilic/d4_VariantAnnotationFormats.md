@@ -3,7 +3,7 @@ Here is a briefly summary of genomic variant formats and their use cases.
 
 ## ISCN
 
-## HGVS
+## HGVS (Human Genome Variation Society)
 
 ## VCF
 
