@@ -106,11 +106,12 @@ BAM file is used to store in a binary format the linear alignment of a segment (
 
 ##### SAM file format
 
-The [Uppsala Multidisciplinary Center for Advanced Computational Science](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/) indicates the differences in size between the SAM, BAM and CRAM format file. They use as an example a BAM file that has 1.9 GB and indicate that it was compressed from a 7.4 GB SAM file [[21]]. A CRAM lossless file (which means that the convertion from BAM to CRAM and back to BAM has no data loss) has 1.4 GB [[21]]. As a result considering that the BAM file format would need 100 TB to store 1000 Genomes, the SAM file format would take up 390 TB.
+The [Uppsala Multidisciplinary Center for Advanced Computational Science](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/) indicates the differences in size between the SAM, BAM and CRAM format file. They use as an example a BAM file that has 1.9 GB and indicate that it was compressed from a 7.4 GB SAM file [[21]]. As a result considering that the BAM file format would need 100 TB to store 1000 Genomes, the SAM file format would take up 390 TB.
 
 [21]: https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/
-##### CRAM file format
 
+##### CRAM file format
+According to the [Uppsala Multidisciplinary Center for Advanced Computational Science](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/) website CRAM lossless file (which means that the convertion from BAM to CRAM and back to BAM has no data loss) has 1.4 GB [[21]]. A CRAM lossless file would need about 74 GB.
 
 
 ##### VCR file format
