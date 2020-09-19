@@ -15,7 +15,7 @@ SAM, BAM and CRAM are all different forms of the original SAM format that was de
 - binary
 - compressed version of SAM
 - not human readable, must be converted to another format (e.g. SAM) in order to make sense to humans
-- contain a header section and an alignment section
+- contains a header section and an alignment section
   -	Header: Contains information about the entire file, such as sample name, sample length, and alignment method
   - Alignments: Contains read name, read sequence, read quality, alignment information, and custom tags.
   
