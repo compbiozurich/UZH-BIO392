@@ -11,7 +11,7 @@ Here is a briefly summary of genomic variant formats and their use cases.
   - *inv* Inversion
   - *t* Translocation
  - example usage:
-    - 46,XX,t(1;2)(p32;q22) means 46 chromosomes, female (XX sex chromosomes), with a balanced translocation between chromosomes 1 and 2 with breakpoints in the short arm of chromosome 1 at band 1p32 and the long arm of chromosome 2 at band 2q22.
+    - *46,XX,t(1;2)(p32;q22)* -> 46 chromosomes, female (XX sex chromosomes), with a balanced translocation between chromosomes 1 and 2 with breakpoints in the short arm of chromosome 1 at band 1p32 and the long arm of chromosome 2 at band 2q22.
 
 ## HGVS (Human Genome Variation Society)
 
