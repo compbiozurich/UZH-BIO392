@@ -35,7 +35,13 @@ SAM, BAM and CRAM are all different forms of the original SAM format that was de
 - allows extra information to be added to the info field
 - standard format for file-based storage of human genome variants
 
-## FASTA
+## FASTA [6](https://en.wikipedia.org/wiki/FASTA_format) [7](https://zhanglab.ccmb.med.umich.edu/FASTA/)
+- text-based format for representing either nucleotide sequences or amino acid sequences, in which nucleotides or amino acids are represented using single-letter codes
+- human readable
+- easy to manipulate and parse sequences using text-processing tools
+- a sequence in FASTA format begins with a single-line description, followed by lines of sequence data
+- the description line is distinguished from the sequence data by a greater-than (">") symbol in the first column.
+
 
 ## MPEG-G
 
