@@ -87,5 +87,13 @@ MPEG-G project has the goal to enable management of large genomic data, by achie
 [17]: https://www.biorxiv.org/content/10.1101/426353v1#:~:text=The%20MPEG%2DG%20standardization%20project,data%20processing%2C%20transport%20and%20sharing.
 [18]: https://mdozmorov.github.io/BIOS668.2018/assets/03_Genomic_resources/01_File_formats.pdf
 
+### Estimate Storage Requirements for 1000 Genomes
 
+#### 1. How much computer storage is required for 1000 Genomes
+
+##### WES & WEG
+
+According to the [NGS Data Management and Analysis](https://www.strand-ngs.com/support/ngs-data-storage-requirements) website the whole genome sequence (WGS) can take up to 150 GB and a whole exome sequence (WES) needs 8 GB. As a result the WGS would need a total of 150 TB and the WES would require 8 TB. The same website suggests that the data is stored as BAM files which take ap less space [[19]].
+
+[19]: https://www.strand-ngs.com/support/ngs-data-storage-requirements
 
