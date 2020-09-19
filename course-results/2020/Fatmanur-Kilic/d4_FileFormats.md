@@ -43,7 +43,11 @@ SAM, BAM and CRAM are all different forms of the original SAM format that was de
 - the description line is distinguished from the sequence data by a greater-than (">") symbol in the first column.
 
 
-## MPEG-G
+## MPEG-G (Moving Picture Experts Group) [7](https://www.biorxiv.org/content/10.1101/426353v1.full.pdf)
+- compressed data
+- enables large scale genomic data processing, transport and sharing
+- provides storage and transport capabilities for both raw genomic sequences and genomic sequences aligned to reference genomes
+
 
 
 
