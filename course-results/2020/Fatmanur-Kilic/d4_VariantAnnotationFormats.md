@@ -1,13 +1,13 @@
 # Variant Annotation Formats
 Here is a briefly summary of genomic variant formats and their use cases.
 
-## ISCN
+## ISCN (International System for Human Cytogenomic Nomenclature)
 
 ## HGVS (Human Genome Variation Society)
 
-## VCF
+## VCF (Variant Call Format)
 
-## GA4GH Variation Representation Specification
+## VRS (GA4GH Variation Representation Specification)
 
 # Genomic Coordinate Systems
 
