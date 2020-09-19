@@ -74,7 +74,7 @@ The interbase and 0-based coordinates refer to nucleotides or variant positions 
 
 #### 6. Other genomic file formats and their use cases
 
-The SAM (Sequence Alignment/Map) file format is separated in two sections: one for the header and a second one for the alignment [[14]]. One of the differences between the two sections is that the header lines start with the *@* symbol [[14]]. The information from the alignment section is separated into 11 mandatory columns [[14]]. Each line of the alignment segment indicates the "linear alignment of a segment" [[14]]. The BAM file is the binary format of SAM [[15]] and because of this it needs less storage space but it is not as easy to read as SAM [[18]]. The CRAM and BAM files are both alignment files but the CRAM format more compressed as opposed to the BAM format, due to the reference that is used to store the data [[15]].
+The SAM (Sequence Alignment/Map) file format is separated in two sections: one for the header and a second one for the alignment [[14]]. One of the differences between the two sections is that the header lines start with the *@* symbol [[14]]. The information from the alignment section is separated into 11 mandatory columns [[14]]. Each alignment line indicates the "linear alignment of a segment" [[14]]. The BAM file is the binary format of SAM [[15]] and because of this it needs less storage space but it is not as easy to read as SAM [[18]]. The CRAM and BAM files are both alignment files but the CRAM format more compressed as opposed to the BAM format, due to the reference that is used to store the data [[15]].
 
 FASTA files are used for storing nucleotide or peptide sequences [[16]]. The file has a .txt format and its content can be separated into two parts: a single information line (which begins with the symbol ">") and the sequence [[16]].
 
@@ -97,8 +97,14 @@ According to the [NGS Data Management and Analysis](https://www.strand-ngs.com/s
 
 [19]: https://www.strand-ngs.com/support/ngs-data-storage-requirements
 
-##### VCR
+##### BAM file format
 
-The VCR file format cis used to store information about the genomic variants [[7]], meaning that these files contain the differences among individual genomes [[20]]. If we consider that each genome has about 3 million variants, this will lead to VCR file format with a size of 125 MB per genome [[20]]. As a result 1000 genomes would require 125 GB.
+BAM file is used to store in a binary format the linear alignment of a segment (saves the binary format of the SAM file) [[14]]-[[15]]. According to the course BIO392 [slides](https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf) and the [Mass Genomics](http://massgenomics.org/2014/11/brace-yourself-for-large-scale-whole-genome-sequencing.html) website a BAM file can store 30x the whole genome for up to 100 GB. In total for a 1000 Genomes the BAM file format would need ~ 3.3 TB.
 
-[20]: https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0
+[20]: http://massgenomics.org/2014/11/brace-yourself-for-large-scale-whole-genome-sequencing.html
+
+##### VCR file format
+
+The VCR file format cis used to store information about the genomic variants [[7]], meaning that these files contain the differences among individual genomes [[21]]. If we consider that each genome has about 3 million variants, this will lead to VCR file format with a size of 125 MB per genome [[21]]. As a result 1000 genomes would require 125 GB.
+
+[21]: https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0
