@@ -67,14 +67,14 @@ The VRS uses the Jonson-based schema [[9]] and was done to standardize the excha
 
 #### 5. 0 or 1-based and "interbase" genomic coordinate systems
 
-The interbase and 0-based coordinates refer to nucleotides or variant positions using the space between two bases on a genomic sequence, as opposed to the 1-based, which uses as coordinates the number of the actual nucleotide [[12]]-[[13]]. The 0-based coordinates can sepcify a region using a half-closed-half-open interval, for example, to describe the part between the second and sixth nucleotide, the interval [1, 6) is used.
+The interbase and 0-based coordinates refer to nucleotides or variant positions using the space between two bases on a genomic sequence, as opposed to the 1-based, which uses as coordinates the number of the actual nucleotides [[12]]-[[13]]. On one hand, the 0-based coordinates can sepcify a region with a half-closed-half-open interval [[14]]. For example, to describe the part between the second and sixth nucleotide, the interval [1, 6) is appropriate [[14]]. On the other hand, the 1-based coordinates can refer to a part of sequence using a closed interval and for the example above, this would mean the [2, 6] interval [[14]].  
 
 [12]: https://genviz.org/module-01-intro/0001/02/01/Review_of_Central_Concepts/
 [13]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383450/#:~:text=The%20so%2Dcalled%20%E2%80%9Cbase%E2%80%9D,nucleotide%20positions%20in%20the%20genome.
 
 #### 6. Different genomic file formats and their use cases
 
-The SAM (Sequence Alignment/Map) file format is separated in two sections: one for the header and a second one for the alignment [14]. One of the differences between the two sections is that the header lines start with the *@* symbol [[14]]. The information from the alignment section is separated into 11 mandatory columns [[14]]. The BAM file is the binary format of SAM [[15]]. The CRAM format has a compressed version of the alignment as opposed to the BAM files, due to thee reference that is used to store the data [[15]].
+The SAM (Sequence Alignment/Map) file format is separated in two sections: one for the header and a second one for the alignment [[14]]. One of the differences between the two sections is that the header lines start with the *@* symbol [[14]]. The information from the alignment section is separated into 11 mandatory columns [[14]]. The BAM file is the binary format of SAM [[15]]. The CRAM format has a compressed version of the alignment as opposed to the BAM files, due to thee reference that is used to store the data [[15]].
 
 FASTA files are used for storing nucleotide or peptide sequences [[16]]. The file has a .txt format and its content can be separated into two parts: a single information line (which begins with the symbol ">") and the sequence [[16]].
 
