@@ -17,9 +17,8 @@ Here is a briefly summary of genomic variant formats and their use cases.
 - HGVS-nomenclature is used to report and exchange information regarding variants found in DNA, RNA and protein sequences and serves as an international standard
 - all variants should be described at the most basic level, the DNA level. Descriptions at the RNA and/or protein level may be given in addition
   - example variants: 
-    -*>* substitution (c.4375C>T: the C nucleotide at position c.4375 changed to a T)
-    
-    -*del* deletion (c.4375_4379del: the nucleotides from position c.4375 to c.4379 (CGATT) are missing (deleted))
+    - *>* substitution (c.4375C>T: the C nucleotide at position c.4375 changed to a T)
+    - *del* deletion (c.4375_4379del: the nucleotides from position c.4375 to c.4379 (CGATT) are missing (deleted))
 - all variants should be described in relation to an accepted reference sequence
   - a letter prefix is mandatory to indicate the type of reference sequence used.
   - example prefixes:
