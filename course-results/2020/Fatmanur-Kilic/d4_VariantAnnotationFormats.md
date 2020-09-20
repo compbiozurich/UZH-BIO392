@@ -52,3 +52,7 @@ the chromosome| the genome coordinate of the first base in the variant | a semic
 - examples for 1-based coordinate formats: SAM, VCF
 - examples for 0-based coordinate formats: BAM, BED
 
+## interbase
+![various interval types.](http://genome.ucsc.edu/blog/wp-content/uploads/2016/12/newInterval.png)
+
+
