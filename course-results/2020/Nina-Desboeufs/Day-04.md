@@ -139,7 +139,7 @@ LRYLRYRAEKDPARGMFKRFYGAEWTEEYIHGFLFDLERKLTVVK
 ### MPEG-G 
 The Moving Picture Expert Group (MPEG-G) 
 
-
+> **Use**: to compress, store, transmit and process sequencing data. Design for **high-throughput sequencing**. It offers the following functions: data streaming, compressed file concatenation, genomic studies aggregation.
 
 
 
