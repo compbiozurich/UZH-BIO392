@@ -1,5 +1,5 @@
 # Estimated Storage Requirements for 1000 Genomes
-## WES & WGS
+## WES (Whole Exome Sequencing) & WGS (Whole Genome Sequencing)
 ## Different File Formats
 ### SAM
 ### BAM
