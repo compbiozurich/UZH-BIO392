@@ -26,8 +26,7 @@ Here is a briefly summary of genomic variant formats and their use cases.
     - *g.* for a linear genomic reference sequence
     - *m.* for a mitochondrial DNA reference sequence
 
-## VCF (Variant Call Format) [5](https://samtools.github.io/hts-specs/VCFv4.2.pdf) [6](https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf) 
-[7](https://en.wikipedia.org/wiki/Variant_Call_Format#:~:text=The%20Variant%20Call%20Format%20(VCF,as%20the%201000%20Genomes%20Project.)
+## VCF (Variant Call Format) [5](https://samtools.github.io/hts-specs/VCFv4.2.pdf) [6](https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf) [7](https://en.wikipedia.org/wiki/Variant_Call_Format#:~:text=The%20Variant%20Call%20Format%20(VCF,as%20the%201000%20Genomes%20Project.))
 - tab-delimited text format
 - stores the results of a single or multiple interpretations of genome sequencing datasets, in comparison to a reference genome (stores only variants)
 - contains meta-information lines, a header line, and then data lines each containing information about a position in the genome
