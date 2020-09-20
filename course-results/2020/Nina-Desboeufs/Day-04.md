@@ -110,11 +110,17 @@ The Variant Call Format (VCF) is the standard tab-delimited text file format for
 ```
 #CHROM  POS ID  REF ALT     QUAL    FILTER  INFO    FORMAT  NA12878 [other samples...] 
 ```
-The first seven fields are required in VCF format. In more details, **CHROM** and **POS** is for the genomic coordinate system. 
+The first seven fields are required in VCF format. In more details:
+* **CHROM** and **POS**: For the genomic coordinate system. 
+* **ID**: Identification of the variant 
+* **REF** and **ALT**: The reference and alternative allele observed. Important because it gives the information if it's a SNP or an indel. Attention: based on the forward strand!  
+* **QUAL**: Gives the **Phred-scaled probability** that such a variant exists `(-10 * log(1-p))`. E.g. a value of 10 means a 1 in 10 chance of error. Attention: not to be be mistaken with Genome Quality (GQ). 
+* **Filter**: Indication of the failed or passed information about each filter the variant has been tested. 
 
-> **Use**: 
-> **Comment(s)**: very explicit, scalable and flexible. Smoe VCF files are very large and requires UNIX tools to access the part of interest. 
+> **Use**: standard format to store variants. 
+> **Comment(s)**: very explicit, scalable and flexible. Some VCF files are very large and requires UNIX tools to access the part of interest. A lot of tools are available to work on VCF files (e.g. VCF tools, BedTools, GATK).  
 
+For more information [here](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format). 
 
 ### FASTA
 
