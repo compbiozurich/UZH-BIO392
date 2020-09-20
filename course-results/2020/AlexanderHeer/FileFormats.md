@@ -43,12 +43,12 @@ SAM files consists of:
 essential alignment information:
   * QNAME: Query template name. Reads/segments having identical QNAME are regarded to come from
 the same template
-  * FLAG: combination of bitwise flags &#8594; detailed info: https://samtools.github.io/hts-specs/SAMv1.pdf
+  * FLAG: combination of bitwise flags &#8594; [detailed info](https://samtools.github.io/hts-specs/SAMv1.pdf)
   * RNAME: Reference sequence name of the alignment
   * POS: 1-based leftmost mapping Position of the first CIGAR operation that “consumes” a reference
-base  &#8594; detailed info: https://samtools.github.io/hts-specs/SAMv1.pdf
+base  &#8594; [detailed info](https://samtools.github.io/hts-specs/SAMv1.pdf)
   * MAPQ: Mapping Quality
-  * CIGAR: CIGAR string  &#8594;  detailed info: https://samtools.github.io/hts-specs/SAMv1.pdf
+  * CIGAR: CIGAR string  &#8594; [detailed info](https://samtools.github.io/hts-specs/SAMv1.pdf)
   * RNEXT:  Reference sequence name of the primary alignment of the next read in the template
   * PNEXT:  1-based Position of the primary alignment of the next read in the template
   * TLEN:  signed observed Template length
@@ -70,7 +70,7 @@ Like BAM files, CRAM files are compressed alignment files. It was designed as an
 
 #### FASTA
  The FASTA format is a text-based format for representing either nucleotide or
-amino acid sequences using single-letter codes (standard IUB/IUPA amino acid and nucleic acid codes, with a few exceptions &#8594; https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp). The sequences are not alignetd to a reference sequecne as in other formats. Blank lines are not allowed in the middle of FASTA inputIt. A FASTA file is structured as follows:
+amino acid sequences using single-letter codes (standard IUB/IUPA amino acid and nucleic acid codes, with a few [exceptions](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)). The sequences are not alignetd to a reference sequecne as in other formats. Blank lines are not allowed in the middle of FASTA inputIt. A FASTA file is structured as follows:
 * Begins with a single-line descrition, the defline
  * distinguished from sequences by the '>' symbol
 * Followed by lines of sequence data
