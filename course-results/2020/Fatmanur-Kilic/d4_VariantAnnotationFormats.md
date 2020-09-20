@@ -32,12 +32,13 @@ Here is a briefly summary of genomic variant formats and their use cases.
 - contains meta-information lines, a header line, and then data lines each containing information about a position in the genome
 - allows extra information to be added to the info field
 - standard format for file-based storage of human genome variants
+- the columns of a VCF
 
 | 1     | 2    | 3     | 4   | 5    | 6     | 7     | 8     | 9    | 10  |
 |-------|:----:|:-----:|:---:|:----:|:-----:|:-----:|:-----:|:----:|:---:|
 | CHROM | POS | ID | REF | ALT | QUAL | FILTER | INFO | FORMAT | SAMPLEs |
-The name of the sequence (typically a chromosome) on which the variation is being called. This sequence is usually known as 'the reference sequence', i.e. the sequence against which the given sample varies.| The 1-based position of the variation on the given sequence. | 	The identifier of the variation, e.g. a dbSNP rs identifier, or if unknown a ".". Multiple identifiers should be separated by semi-colons without white-space. |The reference base (or bases in the case of an indel) at the given position on the given reference sequence. | 	The list of alternative alleles at this position. |A quality score associated with the inference of the given alleles. |A flag indicating which of a given set of filters the variation has passed. |An extensible list of key-value pairs (fields) describing the variation. See below for some common fields. Multiple fields are separated by semicolons with optional values in the format: <key>=<data>[,data].  | An (optional) extensible list of fields for describing the samples. | For each (optional) sample described in the file, values are given for the fields listed in FORMAT
-
+the chromosome| the genome coordinate of the first base in the variant | a semicolon-separated list of marker identifiers | the reference allele expressed as a sequence of one or more A/C/G/T nucleotides | Tthe alternate allele expressed as a sequence of one or more A/C/G/T nucleotides |probability that the ALT allele is incorrectly specified, expressed on the the phred scale  |Either "PASS" or a semicolon-separated list of failed quality control filters. | additional information | colon-separated list of data subfields reported for each sample.
+20|1291018	|rs11449	|G	|A|	.	|PASS	|.	|GT	|0/0	|0/1|
 
 ## VRS (GA4GH Variation Representation Specification)
 
