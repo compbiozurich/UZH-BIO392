@@ -47,6 +47,8 @@ the chromosome| the genome coordinate of the first base in the variant | a semic
 
 # Genomic Coordinate Systems
 
-## 0 or 1-based
+## 0 or 1-based [1](https://arnaudceol.wordpress.com/2014/09/18/chromosome-coordinate-systems-0-based-1-based/#:~:text=Our%20internal%20database%20representations%20of,end%20in%20the%20graphical%20display.)
+- the bases can be numerated in two way: starting at 0 or starting at 1 -> 0-based and 1-based coordinate system.
+- examples for 1-based coordinate formats: SAM, VCF
+- examples for 0-based coordinate formats: BAM, BED
 
-## interbase
