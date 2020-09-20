@@ -35,8 +35,8 @@ Here is a briefly summary of genomic variant formats and their use cases.
 
 | 1     | 2    | 3     | 4   | 5    | 6     | 7     | 8     | 9    | 10  | 11   |
 |-------|:----:|:-----:|:---:|:----:|:-----:|:-----:|:-----:|:----:|:---:|-----:|
-| QNAME | FLAG | RNAME | POS | MAPQ | CIGAR | RNEXT | PNEXT | TLEN | SEQ | QUAL |
-Query template NAME | bitwise FLAG | References sequence NAME | 1- based leftmost mapping POSition | MAPping Quality | CIGAR String | References name of the mate/ next read | Position of the mate/ next read | observed Template LENgth | segment SEQuence | ASCII of Phred-scaled base QUALity+33
+| CHROM | POS | ID | POS | REF | ALT | QUAL | FILTER | INFO | FORMAT | SAMPLEs |
+The name of the sequence (typically a chromosome) on which the variation is being called. This sequence is usually known as 'the reference sequence', i.e. the sequence against which the given sample varies.| bitwise FLAG | References sequence NAME | 1- based leftmost mapping POSition | MAPping Quality | CIGAR String | References name of the mate/ next read | Position of the mate/ next read | observed Template LENgth | segment SEQuence | ASCII of Phred-scaled base QUALity+33
 
 
 ## VRS (GA4GH Variation Representation Specification)
