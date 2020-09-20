@@ -123,9 +123,21 @@ The first seven fields are required in VCF format. In more details:
 For more information [here](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format). 
 
 ### FASTA
+FASTA format is a text-based format. Its format is pretty simple since it is identified by a header starting with ">" and followed by the sequence data. The FASTA format can contain several different sequences. E.g.: 
 
+```
+>gi|186681228|ref|YP_001864424.1| phycoerythrobilin:ferredoxin oxidoreductase
+MNSERSDVTLYQPFLDYAIAYMRSRLDLEPYPIPTGFESNSAVVGKGKNQEEVVTTSYAFQTAKLRQIRA
+AHVQGGNSLQVLNFVIFPHLNYDLPFFGADLVTLPGGHLIALDMQPLFRDDSAYQAKYTEPILPIFHAHQ
+QHLSWGGDFPEEAQPFFSPAFLWTRPQETAVVETQVFAAFKDYLKAYLDFVEQAEAVTDSQNLVAIKQAQ
+LRYLRYRAEKDPARGMFKRFYGAEWTEEYIHGFLFDLERKLTVVK
+```
+
+> **Use**: to store and represent nucleotide or peptide sequence(s). 
+> **Comment**: easy to work with (compare sequences, primer design etc) but do not contain much more genomic information.
 
 ### MPEG-G 
+The Moving Picture Expert Group (MPEG-G) 
 
 
 
