@@ -26,7 +26,7 @@ Here is a briefly summary of genomic variant formats and their use cases.
     - *g.* for a linear genomic reference sequence
     - *m.* for a mitochondrial DNA reference sequence
 
-## VCF (Variant Call Format) [5](https://samtools.github.io/hts-specs/VCFv4.2.pdf) [6](https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf) [7](https://faculty.washington.edu/browning/intro-to-vcf.html)
+## VCF (Variant Call Format) [6](https://samtools.github.io/hts-specs/VCFv4.2.pdf) [7](https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf) [8](https://faculty.washington.edu/browning/intro-to-vcf.html)
 - tab-delimited text format
 - stores the results of a single or multiple interpretations of genome sequencing datasets, in comparison to a reference genome (stores only variants)
 - contains meta-information lines, a header line, and then data lines each containing information about a position in the genome
@@ -40,19 +40,19 @@ Here is a briefly summary of genomic variant formats and their use cases.
 the chromosome| the genome coordinate of the first base in the variant | a semicolon-separated list of marker identifiers | the reference allele expressed as a sequence of one or more A/C/G/T nucleotides | Tthe alternate allele expressed as a sequence of one or more A/C/G/T nucleotides |probability that the ALT allele is incorrectly specified, expressed on the the phred scale  |Either "PASS" or a semicolon-separated list of failed quality control filters. | additional information | colon-separated list of data subfields reported for each sample.
 20|1291018	|rs11449	|G	|A|	.	|PASS	|.	|GT	|0/0	|0/1|
 
-## VRS (GA4GH Variation Representation Specification) [8](https://www.ga4gh.org/news/variation-representation-a-standard-way-of-exchanging-genetic-variation-data-with-precision-and-consistency/)
+## VRS (GA4GH Variation Representation Specification) [9](https://www.ga4gh.org/news/variation-representation-a-standard-way-of-exchanging-genetic-variation-data-with-precision-and-consistency/)
 - provides a flexible framework of computational models, schemas, and algorithms to precisely and consistently exchange genetic variation data across communities
 - has a Machine Readable Schema to structure genetic variation data for electronic data exchange allows investigators to perform analyses with more clarity and ease
 - allows users to compare and interpret data sets collected at different institutions.
 
 # Genomic Coordinate Systems
 
-## 0 or 1-based [9](https://arnaudceol.wordpress.com/2014/09/18/chromosome-coordinate-systems-0-based-1-based/#:~:text=Our%20internal%20database%20representations%20of,end%20in%20the%20graphical%20display.)
+## 0 or 1-based [10](https://arnaudceol.wordpress.com/2014/09/18/chromosome-coordinate-systems-0-based-1-based/#:~:text=Our%20internal%20database%20representations%20of,end%20in%20the%20graphical%20display.)
 - the bases can be numerated in two way: starting at 0 or starting at 1 -> 0-based and 1-based coordinate system.
 - examples for 1-based coordinate formats: SAM, VCF
 - examples for 0-based coordinate formats: BAM, BED
 
-## interbase [10](http://genome.ucsc.edu/blog/the-ucsc-genome-browser-coordinate-counting-systems/)
+## interbase [11](http://genome.ucsc.edu/blog/the-ucsc-genome-browser-coordinate-counting-systems/)
 Figure below describes various interval types.
 ![various interval types.](http://genome.ucsc.edu/blog/wp-content/uploads/2016/12/newInterval.png)
 
