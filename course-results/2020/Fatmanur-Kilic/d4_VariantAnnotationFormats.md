@@ -27,6 +27,7 @@ Here is a briefly summary of genomic variant formats and their use cases.
     - *m.* for a mitochondrial DNA reference sequence
 
 ## VCF (Variant Call Format)
+described [here](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2020/Fatmanur-Kilic/d4_FileFormats.md#vcf-variant-call-format-4-5)
 
 ## VRS (GA4GH Variation Representation Specification)
 
