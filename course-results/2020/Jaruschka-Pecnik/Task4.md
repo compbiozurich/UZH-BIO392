@@ -104,6 +104,6 @@ Submit your files (.md) per pull request to your Github directory.
 		chr1  213943530  213944697
 		chr2  158364697  158365864
 		
-	- Source:
+	- Sources:
 		- [Wikipedia](https://en.wikipedia.org/wiki/BED_(file_format))
 		- [Ensembl](https://m.ensembl.org/info/website/upload/bed.html)
