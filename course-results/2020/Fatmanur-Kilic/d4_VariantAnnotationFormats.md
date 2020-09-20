@@ -1,11 +1,11 @@
 # Variant Annotation Formats
 Here is a briefly summary of genomic variant formats and their use cases.
 
-## ISCN (International System for Human Cytogenomic Nomenclature) [1](https://en.wikipedia.org/wiki/International_System_for_Human_Cytogenetic_Nomenclature) [2](http://varnomen.hgvs.org/bg-material/consultation/ISCN/)
+## ISCN (International System for Human Cytogenomic Nomenclature) [1](https://en.wikipedia.org/wiki/International_System_for_Human_Cytogenetic_Nomenclature) [2](http://varnomen.hgvs.org/bg-material/consultation/ISCN/) [3](http://www.slh.wisc.edu/clinical/cytogenetics/basics/)
 - international standard for human chromosome nomenclature
 - covers the description of numerical and structural chromosomal changes detected using microscopic and cytogenetic techniques
 - includes band names, symbols and abbreviated terms used in the description of human chromosome and chromosome abnormalities
-- example symbols [3](http://www.slh.wisc.edu/clinical/cytogenetics/basics/):
+- example symbols:
   - *del* Deletion
   - *dic* Dicentric chromosome
   - *inv* Inversion
