@@ -26,8 +26,19 @@ Here is a briefly summary of genomic variant formats and their use cases.
     - *g.* for a linear genomic reference sequence
     - *m.* for a mitochondrial DNA reference sequence
 
-## VCF (Variant Call Format)
-described [here](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2020/Fatmanur-Kilic/d4_FileFormats.md#vcf-variant-call-format-4-5)
+## VCF (Variant Call Format) [5](https://samtools.github.io/hts-specs/VCFv4.2.pdf) [5](https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf) [6](https://en.wikipedia.org/wiki/Variant_Call_Format#:~:text=The%20Variant%20Call%20Format%20(VCF,as%20the%201000%20Genomes%20Project.)
+- tab-delimited text format
+- stores the results of a single or multiple interpretations of genome sequencing datasets, in comparison to a reference genome (stores only variants)
+- contains meta-information lines, a header line, and then data lines each containing information about a position in the genome
+- allows extra information to be added to the info field
+- standard format for file-based storage of human genome variants
+
+| 1     | 2    | 3     | 4   | 5    | 6     | 7     | 8     | 9    | 10  | 11   |
+|-------|:----:|:-----:|:---:|:----:|:-----:|:-----:|:-----:|:----:|:---:|-----:|
+| QNAME | FLAG | RNAME | POS | MAPQ | CIGAR | RNEXT | PNEXT | TLEN | SEQ | QUAL |
+|-------|:----:|:-----:|:---:|:----:|:-----:|:-----:|:-----:|:----:|:---:|-----:|
+Query template NAME | bitwise FLAG | References sequence NAME | 1- based leftmost mapping POSition | MAPping Quality | CIGAR String | References name of the mate/ next read | Position of the mate/ next read | observed Template LENgth | segment SEQuence | ASCII of Phred-scaled base QUALity+33
+
 
 ## VRS (GA4GH Variation Representation Specification)
 
