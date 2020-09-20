@@ -40,7 +40,10 @@ Here is a briefly summary of genomic variant formats and their use cases.
 the chromosome| the genome coordinate of the first base in the variant | a semicolon-separated list of marker identifiers | the reference allele expressed as a sequence of one or more A/C/G/T nucleotides | Tthe alternate allele expressed as a sequence of one or more A/C/G/T nucleotides |probability that the ALT allele is incorrectly specified, expressed on the the phred scale  |Either "PASS" or a semicolon-separated list of failed quality control filters. | additional information | colon-separated list of data subfields reported for each sample.
 20|1291018	|rs11449	|G	|A|	.	|PASS	|.	|GT	|0/0	|0/1|
 
-## VRS (GA4GH Variation Representation Specification)
+## VRS (GA4GH Variation Representation Specification) [8](https://www.ga4gh.org/news/variation-representation-a-standard-way-of-exchanging-genetic-variation-data-with-precision-and-consistency/)
+- provides a flexible framework of computational models, schemas, and algorithms to precisely and consistently exchange genetic variation data across communities
+- has a Machine Readable Schema to structure genetic variation data for electronic data exchange allows investigators to perform analyses with more clarity and ease
+- allows users to compare and interpret data sets collected at different institutions.
 
 # Genomic Coordinate Systems
 
