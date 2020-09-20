@@ -57,7 +57,7 @@ FASTA file contain either nucleotide sequences or peptide sequences. It begins w
 [5]: http://genetics.bwh.harvard.edu/pph/FASTA.html
 
 
- #### MPEG-G
+ #### 6. MPEG-G
 MPEG-G can selectively access the data in the compressed domain by using APIs ( Class of data , Genomic regions etc..) but also specific transport format [[6]].
 
 [6]: https://www.biorxiv.org/content/10.1101/426353v1#:~:text=The%20MPEG%2DG%20standardization%20project,data%20processing%2C%20transport%20and%20sharing.
@@ -73,22 +73,38 @@ MPEG-G can selectively access the data in the compressed domain by using APIs ( 
 
 
 
-#### ISCN ( International System for Human Cytogenetic Nomenclature)
+#### 1. ISCN ( International System for Human Cytogenetic Nomenclature)
 
-First created in 1960 at the Denver Conference and still used nowadays, ISCN uses a nomenclature containing symbols, abbreviated terms and band term to describe the human chromosome and chromosome aberrations.
-Picture
+First created in 1960 at the Denver Conference and still used nowadays, ISCN uses a nomenclature containing symbols, abbreviated terms and band term to describe the human 
+chromosome and chromosome aberrations[[6]].
 
+An example of the nomenclature used for an insertion:
+>NC_000023.10:g.32867861_32867862insT (NM_004006.2:c.169_170insA)
 
----
-
-
-#### HGVS  (Human Genome Variation Society)
-HGVS provides recommendations on the description of sequence variant (change in sequence, change in amount and change in position) in DNA, RNA and protein sequences. For this purpose it uses HGNC gene symbols, abbreviations and reference sequence from reliable source s, e.g Ensemble(EBI) and RefSeq(NCBI). HGVS also uses recommendations to describe variant, where not all information are known ( e.g.  no mapping back of variant to a unique location or insertions not fully sequenced)
+[6]: http://varnomen.hgvs.org/bg-material/consultation/ISCN/
 
 
 ---
 
 
-##### GA4GH Variation Representation Specification
-GA4GH VR Specification standardizes the exchange and representation of variation data by using e. g terminology and information model, machine readable schema (JSON Schema), facilitating data sharing and unified computed identifiers.
+#### 2. HGVS  (Human Genome Variation Society)
+HGVS provides recommendations on the description of sequence variant (change in sequence, change in amount and change in position) in DNA, RNA and protein sequences. For this purpose it uses HGNC gene symbols, abbreviations and reference sequence from reliable source s, e.g Ensemble(EBI) and RefSeq(NCBI). HGVS also uses recommendations to describe variant, where not all information are known ( e.g.  no mapping back of variant to a unique location or insertions not fully sequenced) [[7-9]].
+
+AN example of the nomenclature is depicted below:
+
+>NM_004006.2:c.4375C>T
+
+
+[7]: https://varnomen.hgvs.org/recommendations/general/
+[8]: http://www.hgvs.org/varnomen/HGVS-basics2017.pdf
+[9]: https://varnomen.hgvs.org/recommendations/uncertain/
+
+
+---
+
+
+##### 3. GA4GH Variation Representation Specification
+GA4GH VR Specification standardizes the exchange and representation of variation data by using e. g terminology and information model, machine readable schema (JSON Schema), facilitating data sharing and unified computed identifiers [[10]].
+
+[10]: https://vr-spec.readthedocs.io/en/1.1/
 
