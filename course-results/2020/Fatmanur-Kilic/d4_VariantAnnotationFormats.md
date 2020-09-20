@@ -22,9 +22,9 @@ Here is a briefly summary of genomic variant formats and their use cases.
 - all variants should be described in relation to an accepted reference sequence
   - a letter prefix is mandatory to indicate the type of reference sequence used.
   - example prefixes:
-    -*c.* for a coding DNA reference sequence
-    -*g.* for a linear genomic reference sequence
-    -*m.* for a mitochondrial DNA reference sequence
+    - *c.* for a coding DNA reference sequence
+    - *g.* for a linear genomic reference sequence
+    - *m.* for a mitochondrial DNA reference sequence
 
 ## VCF (Variant Call Format)
 
