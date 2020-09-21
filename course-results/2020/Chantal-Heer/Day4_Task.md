@@ -13,6 +13,7 @@
 
 ## Genomic coordinate systems
 * 0 or 1-based
+> 
 * "interbase"
 
 -------------------------------------------------------------------------------------------------
@@ -20,14 +21,16 @@
 # Exploration of different file formats
 
 ## Which genomic file formats exist & what are their use cases?
-* SAM
->
-* BAM
->
+*[This page](https://genome.ucsc.edu/FAQ/FAQformat.html) give a good overview about various data file formats*
+
+* SAM (**S**equence **A**lignment/**M**ap)
+> SAM is a generic format for storing large nucelotide sequence alignments. It is flexible, simple and compact. Many NGS and analysis tools work with SAM.
+* BAM (**B**inary S**AM**)
+> BAM files are binary representation of the SAM format i.e. a compact and indexable representation of nucleotide sequence alignments. Many NGS and analysis tools work with BAM. For custom track display, it's advantegous that only the portions of the files needed to display a particular region are transferred to UCSC. 
 * CRAM
->
+> CRAM files are similar to BAM files but give a compressed repesentation of the alignment. This compression is driven by the reference the sequence data is aligned to. This file format was designed to reduce the disk foot print of alignment data. CRAM files are smaller than BAM files by taking advantage of an additional external "refernce sequence* file. This reference file is needed to compress and decompress the read information. 
 * VCF (**V**ariant **C**all **F**ormat)
-> VCF is a flexible and extendable file format and the standard for human genomic variant storage/representation.  It can store the results of a single or multiple interpretations of genome sequencing datasets. The variations are always in comparison to a reference genome.  
+> VCF is a flexible and extendable file format and the standard for human genomic variant storage/representation. The format has a tab delimiter.  It can store the results of a single or multiple interpretations of genome sequencing datasets. The variations are always in comparison to a reference genome. 
 * FASTA
 > 
 * MPEG-G
