@@ -13,8 +13,7 @@ There’s an easy way to distinguish the alignment and header line. In contrast 
 | 1     | 2    | 3     | 4   | 5    | 6     | 7     | 8     | 9    | 10  | 11   |
 |-------|:----:|:-----:|:---:|:----:|:-----:|:-----:|:-----:|:----:|:---:|-----:|
 | QNAME | FLAG | RNAME | POS | MAPQ | CIGAR | RNEXT | PNEXT | TLEN | SEQ | QUAL |
-
-Query template NAME | bitwise FLAG | References sequence NAME | 1- based leftmost mapping POSition | MAPping Quality | CIGAR String | References name of the mate/ next read | Position of the mate/ next read | observed Template LENgth | segment SEQuence | ASCII of Phred-scaled base QUALity+33
+| Query template NAME | bitwise FLAG | References sequence NAME | 1- based leftmost mapping POSition | MAPping Quality | CIGAR String | References name of the mate/ next read | Position of the mate/ next read | observed Template LENgth | segment SEQuence | ASCII of Phred-scaled base QUALity+33 |
 ### Why Sequence Alignment Map (SAM) and Binary Alignment Map (BAM)?
 SAM is used as a file format for storing alignment information of short reads mapped against reference sequences. Its main use is to store data derived from next generation sequencing technologies. The format includes short reads as well as long reads (up to 128 Mbp). Further this storage format was chosen for the 1000 Genomes Project. 
 BAM formats are the compressed binary version of a SAM file. BAM files are typically used if working with the file on the computer. SAM files on the other hand are used to make the whole file readable and understandable for us humans. 
@@ -87,12 +86,13 @@ VCF can be visualized with Integrative Genomics Viewer (IGV). In contrast to raw
 In a FASTA file various information is displayed. Namely, primary structure from DNA sequences and protein sequences. FASTA format includes one headline, indicated with “>”, after the header the sequence data are displayed. It is recommended that each line of the file should contain a maximum of 80 characters. 
 
 FASTA formats are known for their “easy” handling, since they are only a text-based format. It is easy to manipulate using text-processing tools and scripting languages like Python. 
-###Example of FASTA format:   
+### Example of FASTA format:   
 
     >seq0
      FQTWEEFSRAAEKLYLADPMKVRVVLKYRHVDGNLCIKVTDDLVCLVYRTDQAQDVKKIEKF
 
-##Browser Extensible Data (BED)
+## Browser Extensible Data (BED)
+
 BED format is a text file format used for storing genomic regions as coordinates and associated annotations. Its advantage is that in this format manipulation is done of coordinates instead of nucleotide sequences, which optimizes the power and computation time when comparing genomes. This format often contains a header (optional) to specify what data is in the file. This type of format is really good for comparing sequences, it is efficent using coordinates to extract sequences of interest. 
 
 ### Example of BED Format:
@@ -109,4 +109,6 @@ Today a huge amount of raw data (e.g. genome sequences) is produced. The problem
 # Summary
 -	Long genomic sequences: FASTA, BAM, SAM
 -	Variants :VCF
--	not yet finished
+-	for me FASTA files seemd to be the easiest to understand
+
+## How much computer storage is required for 1000 Genomes?
