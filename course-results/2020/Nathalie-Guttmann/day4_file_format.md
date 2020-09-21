@@ -5,7 +5,7 @@
  ####  1. SAM file format:
 
 SAM short for Sequence Alignment/Map format is a tab-separated values file. It processes short read alignments, which are mapped against a reference sequence. 
-Each record consists of 11 mandatory fields and optional fields, which are filling one line. This line gives you the information about where and how the sequence maps into the reference.   The file usually starts with a header using ‘@’ preceding the alignment [[1]].  
+Each record consists of 11 mandatory fields and optional fields, which are filling one line. This line gives you information about where and how the sequence maps into the reference. The file usually starts with a header using ‘@’ preceding the sequendce [[1]].  
 
 One example of a SAM format is illustrated below [[2]].
 ![](https://www.samformat.info/images/sam_format_annotated_example.5108a0cd.jpg)
@@ -34,8 +34,8 @@ For example, the compression of CRAM files is so efficient that the size of the 
 
  #### 4. VCF file format:
 VCF (Variant Call Format) is encoding data for SNPs storing information in a tab-delimited text file format. The file is separated into three part:  The first one is the Meta-information lines, which are optional and specify the VCF version number and contain other information. 
-The second part is  the header, where various important information are store such as for example the quality score or the start coordinate of the variant etc… 
-The last part indicates the information on genotype data, quality score , position on chromose and etc… [[4]].
+The second part is the header, where various important information are stored such as for example the quality score or the start coordinate of the variant 
+The last part of the file gives information on genotype data, quality score , position on chromose and etc… [[4]].
  
  The following picture illustrates the structure of a VCF file format:
  
@@ -48,7 +48,7 @@ The last part indicates the information on genotype data, quality score , positi
 ---
 
  ####  5. FASTA file format
-FASTA file contain either nucleotide sequences or peptide sequences. It begins with a header stating with ‘>’ and specifying the sequence ID followed by the sequence [[5]].
+FASTA file contain either nucleotide sequences or peptide sequences. It begins with a header starting with ‘>’ followed by a sequence ID followed and then by the sequence [[5]].
 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/0/03/FAM149A_Promoter_region_%28FASTA_format%29.png)
@@ -88,9 +88,9 @@ An example of the nomenclature used for an insertion:
 
 
 #### 2. HGVS  (Human Genome Variation Society)
-HGVS provides recommendations on the description of sequence variant (change in sequence, change in amount and change in position) in DNA, RNA and protein sequences. For this purpose it uses HGNC gene symbols, abbreviations and reference sequence from reliable source s, e.g Ensemble(EBI) and RefSeq(NCBI). HGVS also uses recommendations to describe variant, where not all information are known ( e.g.  no mapping back of variant to a unique location or insertions not fully sequenced) [[7-9]].
+HGVS provides recommendations on the description of sequence variant (change in sequence, change in amount and change in position) in DNA, RNA and protein sequences. For this purpose it uses HGNC gene symbols, abbreviations and reference sequence from reliable sources, e.g Ensemble(EBI) and RefSeq(NCBI). HGVS also uses recommendations to describe variants, where not all information are known (e.g.  no mapping back of variant to a unique location or insertions not fully sequenced) [[7-9]].
 
-AN example of the nomenclature is depicted below:
+An example of the nomenclature is depicted below:
 
 >NM_004006.2:c.4375C>T
 
