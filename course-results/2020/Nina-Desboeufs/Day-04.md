@@ -137,9 +137,20 @@ LRYLRYRAEKDPARGMFKRFYGAEWTEEYIHGFLFDLERKLTVVK
 > **Comment**: easy to work with (compare sequences, primer design etc) but do not contain much more genomic information.
 
 ### MPEG-G 
-The Moving Picture Expert Group (MPEG-G) 
+The Moving Picture Expert Group (MPEG-G) is a compressed text-based format. It consists of either a single read or a paired sequence read and its associated sequencing and alignment. 
 
-> **Use**: to compress, store, transmit and process sequencing data. Design for **high-throughput sequencing**. It offers the following functions: data streaming, compressed file concatenation, genomic studies aggregation.
+> **Use**: to compress, store, transmit and process sequencing data. Design for **high-throughput sequencing**. It offers the following functions: data streaming, compressed file concatenation, genomic studies aggregation, selective encryption of sequencing data and metadata, annotation and linkage of genomic segments, incremental update of sequencing data and metadata. 
+
+
+### Which format for which use(s), thoughts. 
+* which would you use for storing called variants? 
+> VCF, provides a lot of information about the variants and is really explicit. 
+* which for full archival purposes? 
+> SAM or one of the compressed format (BAM or CHRAM) ? If it's just the sequence, then FASTA. 
+* for browser visualisation?
+> VCF, since various tools are available. 
+
+
 
 
 
