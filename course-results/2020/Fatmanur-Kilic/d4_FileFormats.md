@@ -14,6 +14,7 @@ SAM, BAM and CRAM are all different forms of the original SAM format that was de
 ### BAM  (Binary Alignment Map)
 - binary
 - compressed version of SAM
+- archival purposes
 - not human readable, must be converted to another format (e.g. SAM) in order to make sense to humans
 - contains a header section and an alignment section
   -	Header: Contains information about the entire file, such as sample name, sample length, and alignment method
@@ -25,7 +26,7 @@ SAM, BAM and CRAM are all different forms of the original SAM format that was de
 - has the same information as SAM
 - more compressed than BAM, this compression is driven by the reference the sequence data is aligned to
 - lossless or lossy compression (for further information [click here](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/) )
-- suitable for long-term storage
+- suitable for long-term storage, archival purposes
 - basic structure of a CRAM file is a series of containers, the first of which holds a compressed copy of the SAM header (for further information [click here](https://en.wikipedia.org/wiki/CRAM_(file_format)#File_format) )
 
 ## VCF (Variant Call Format) [4](https://samtools.github.io/hts-specs/VCFv4.2.pdf) [5](https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf)
@@ -48,9 +49,20 @@ SAM, BAM and CRAM are all different forms of the original SAM format that was de
 - enables large scale genomic data processing, transport and sharing
 - provides storage and transport capabilities for both raw genomic sequences and genomic sequences aligned to reference genomes
 
+# Estimated Storage Requirements for 1000 Genomes [9](https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf)
+## WES (Whole Exome Sequencing) & WGS (Whole Genome Sequencing)
+**WGS**: all DNA, 3.1 billion base pairs
+**WES**: protein-coding DNA only, 31 million base pairs, 1-2% of the whole genome
 
+The amount of sequence needed for a 100X exome sample is ~5-6Gb, substantially less than the ~90Gb needed for WGS.[10](https://allseq.com/kb/wgsvswes/)
 
+## Associated Costs [10](https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data)
+# Cost Factors 
+- Labor, administration, management, utilities, reagents, and consumables
+- Sequencing instruments and other large equipment (amortized over three years)
+- Informatics activities directly related to sequence production (e.g., laboratory information management systems and initial data processing)
+- Submission of data to a public database
 
-
-
-
+# Raw Storage Costs 
+To calculate the cost for sequencing a genome, one needs to know the size of that genome and the required 'sequence coverage' to generate a high-quality assembly of the genome given the specific sequencing platform being used.
+![cost per raw mb of DNA sequence]https://www.genome.gov/sites/default/files/inline-images/Sequencing_Cost_per_Megabase_May2020.jpg
