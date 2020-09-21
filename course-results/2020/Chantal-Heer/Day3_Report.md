@@ -38,8 +38,7 @@
 
 * How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? 
   Please provide the command(s), and discuss what they do.
-> awk 'NR % 4 == 1 {print ">"$1};
->
->      NR % 4 == 2 {print}' file.fasta
+>      awk 'NR % 4 == 1 {print ">"$1};
+>           NR % 4 == 2 {print}' file.fasta
 >
 > **?!?!?!** **lecture Day6**
