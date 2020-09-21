@@ -56,7 +56,7 @@ SAM, BAM and CRAM are all different forms of the original SAM format that was de
 
 The amount of sequence needed for a 100X exome sample is ~5-6Gb, substantially less than the ~90Gb needed for WGS.[10](https://allseq.com/kb/wgsvswes/)
 
-## Associated Costs [10](https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data)
+## Associated Costs [11](https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data)
 # Cost Factors 
 - Labor, administration, management, utilities, reagents, and consumables
 - Sequencing instruments and other large equipment (amortized over three years)
