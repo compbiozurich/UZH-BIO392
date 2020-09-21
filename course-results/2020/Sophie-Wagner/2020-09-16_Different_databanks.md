@@ -17,7 +17,7 @@ Also easy accessible reference articles on the bottom.<br />
 Conclusion: Super clear and straightforward!
 
 
-3.[ENSEMBL](http://www.ensembl.org/Human/Search/Results?q=;site=ensembl;facet_species=Human)
+3. [ENSEMBL](http://www.ensembl.org/Human/Search/Results?q=;site=ensembl;facet_species=Human)
 
 > Direct link to UniProtKB which I've also used before in the summary. The summary on the top includes some info like
 gene type, name and reference sequence. The graph is quite comprehensive with a nice legend. You can go to region detail if you
