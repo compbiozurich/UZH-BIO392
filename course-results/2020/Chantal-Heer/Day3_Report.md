@@ -17,6 +17,7 @@
   
 * What | and > do in a terminal?
 > We can use the pipe '|' to combine several commands at the same time on the same line. | will pass directly the output from one program to another without creating intermediate or temporary files. 
+> 
 > '>' can be used to store the execution of a command in a new file. The file is either already present or will be created. 
 
 * How do we print the last 10 lines of the file named /mnt/test/test.txt? 
@@ -26,15 +27,19 @@
 * How do we print the first column of the file named /mnt/test/test.txt whose columns are separated by tabs? 
   Please provide the command(s).
 > cut -df 1 /mnt/test/test.txt
+>
 > *(Can I skip '-d' and just use '-f'?)*
 
 * How can we print every third line of a text file? 
   Please provide the command(s), and discuss what they do.
 > awk 'NR % 3 == 0' 
+>
 > **?? siehe (evtl) Exercise 9 Day3 und Day6**
 
 * How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? 
   Please provide the command(s), and discuss what they do.
 > awk 'NR % 4 == 1 {print ">"$1};
-       NR % 4 == 2 {print}' file.fasta
+>
+>      NR % 4 == 2 {print}' file.fasta
+>
 > **?!?!?!** **lecture Day6**
