@@ -108,7 +108,7 @@ An example of the nomenclature used for an insertion:
 
 
 #### 2. HGVS  (Human Genome Variation Society)
-HGVS provides recommendations on the description of sequence variant (change in sequence, change in amount and change in position) in DNA, RNA and protein sequences. For this purpose it uses HGNC gene symbols, abbreviations and reference sequence from reliable sources, e.g Ensemble(EBI) and RefSeq(NCBI). HGVS also uses recommendations to describe variants, where not all information are known (e.g.  no mapping back of variant to a unique location or insertions not fully sequenced) [[7-9]].
+HGVS provides recommendations on the description of sequence variant (change in sequence, change in amount and change in position) in DNA, RNA and protein sequences. For this purpose it uses HGNC gene symbols, abbreviations and reference sequence from reliable sources, e.g Ensemble(EBI) and RefSeq(NCBI). HGVS also uses recommendations to describe variants, where not all information are known (e.g.  no mapping back of variant to a unique location or insertions not fully sequenced) [[7]] [[8]] [[9]].
 
 An example of the nomenclature is depicted below:
 
