@@ -1,11 +1,10 @@
-## Task: Exploration and Reading up on Variant Formats(unfinished)
-
+## Task: Exploration and Reading up on Variant Formats
 
 ### SAM  (Sequence Alignment Map)
 
 -Type of alignement file.
 
--Starts with a header containing information about the reference genome such as name length or information about the sequencing and alignement.
+-Starts with a header containing information about the reference genome such as name and length and information about the sequencing and alignement.
 After the header the alined sequences are listed along with ther information like their names and position and what the differences are to the reference and where to find them on the sequenze.
 
 -The SAM format also gives a quality score for each alignment.
@@ -40,11 +39,11 @@ More about SAM : [URL1](https://samtools.github.io/hts-specs/SAMv1.pdf) / [URL2]
 
 ### VFC  (Variant Call Format)
 
--The VFC format is used to store information about variant and genetic alterations compared to a specified reference genome.
+-The VFC format is used to store informations about variants and genetic alterations compared to a specified reference genome.
 
 -It also contains a header with informationa about the reference genome.
 
--A VFC file specifies exactly at what position which type of variant is present of the sample sequences compared to the reference sequence.
+-A VFC file specifies exactly at what position of the reference, which type of variant is present in the sample sequences compared to the reference sequence.
 
 ````
 ##fileformat=VCFv4.3
@@ -73,7 +72,7 @@ More about SAM : [URL1](https://samtools.github.io/hts-specs/SAMv1.pdf) / [URL2]
 
 -FASTA is a format for listing DNA sequences.
 
--In the Fasta file sequences are listed starting with '>' follwed by the sequence name and information. On the next line the whole nucleotide or aminoacid sequence is displayed. 
+-In the FASTA file sequences are listed starting with '>' follwed by the sequence name and information. On the next line the whole nucleotide or aminoacid sequence is displayed. 
 
 -FASTA files with sequence information of specific genomes can be downloaded from Genome browsers such as NCBL.
 
