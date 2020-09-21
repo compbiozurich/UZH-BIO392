@@ -26,13 +26,15 @@
 * How do we print the first column of the file named /mnt/test/test.txt whose columns are separated by tabs? 
   Please provide the command(s).
 > cut -df 1 /mnt/test/test.txt
-> *(or can I skip '-d' and just use '-f'?)*
+> *(Can I skip '-d' and just use '-f'?)*
 
 * How can we print every third line of a text file? 
   Please provide the command(s), and discuss what they do.
-> akwk 'NR%9==3' 
-> **?? siehe Exercise 9 Day3**
+> awk 'NR % 3 == 0' 
+> **?? siehe (evtl) Exercise 9 Day3 und Day6**
 
 * How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? 
   Please provide the command(s), and discuss what they do.
-> **?!?!?!**
+> awk 'NR % 4 == 1 {print ">"$1};
+       NR % 4 == 2 {print}' file.fasta
+> **?!?!?!** **lecture Day6**
