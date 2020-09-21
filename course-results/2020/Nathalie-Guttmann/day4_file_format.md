@@ -123,7 +123,7 @@ An example of the nomenclature is depicted below:
 ---
 
 
-##### 3. GA4GH Variation Representation Specification
+####  3. GA4GH Variation Representation Specification
 GA4GH VR Specification standardizes the exchange and representation of variation data by using e. g terminology and information model, machine readable schema (JSON Schema), facilitating data sharing and unified computed identifiers [[10]].
 
 [10]: https://vr-spec.readthedocs.io/en/1.1/
