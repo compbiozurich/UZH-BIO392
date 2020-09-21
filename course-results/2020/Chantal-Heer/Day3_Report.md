@@ -13,7 +13,7 @@
 
 * How can we list files are in a directory? 
   Please provide the command(s).
-> ls
+>     ls
   
 * What | and > do in a terminal?
 > We can use the pipe '|' to combine several commands at the same time on the same line. | will pass directly the output from one program to another without creating intermediate or temporary files. 
@@ -22,17 +22,17 @@
 
 * How do we print the last 10 lines of the file named /mnt/test/test.txt? 
   Please provide the command(s).
-> tail /mnt/test/test.txt
+>     tail /mnt/test/test.txt
 
 * How do we print the first column of the file named /mnt/test/test.txt whose columns are separated by tabs? 
   Please provide the command(s).
-> cut -df 1 /mnt/test/test.txt
+>     cut -df 1 /mnt/test/test.txt
 >
 > *(Can I skip '-d' and just use '-f'?)*
 
 * How can we print every third line of a text file? 
   Please provide the command(s), and discuss what they do.
-> awk 'NR % 3 == 0' 
+>     awk 'NR % 3 == 0' 
 >
 > **?? siehe (evtl) Exercise 9 Day3 und Day6**
 
