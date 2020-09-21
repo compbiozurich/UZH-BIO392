@@ -64,5 +64,5 @@ The amount of sequence needed for a 100X exome sample is ~5-6Gb, substantially l
 - Submission of data to a public database
 
 # Raw Storage Costs 
-To calculate the cost for sequencing a genome, one needs to know the size of that genome and the required 'sequence coverage' to generate a high-quality assembly of the genome given the specific sequencing platform being used.
-![cost per raw mb of DNA sequence]https://www.genome.gov/sites/default/files/inline-images/Sequencing_Cost_per_Megabase_May2020.jpg
+To calculate the cost for sequencing a genome, one needs to know the size of that genome and the required 'sequence coverage' to generate a high-quality assembly of the genome given the specific sequencing platform being used. Figure below shows the cost of determining one megabase of DNA during the years.
+![cost per raw mb of DNA sequence](https://www.genome.gov/sites/default/files/inline-images/Sequencing_Cost_per_Megabase_May2020.jpg)
