@@ -9,13 +9,13 @@ Headings begin with the '@' symbol, which distinguishes them from the alignment 
 Aka stores the same data as SAM in a compressed binary representation.
 
 >Key features of both SAM/BAM: 
-* can store alignments from most aligners
-* Supports multiple sequencing technologies
-* Supports indexing for quick retrieving/viewing
-* Compact size
-* Reads can be grouped into logical groups
-* Wildly supported by variant calling software packages
-[Source] (https://www.slideshare.net/thomaskeane/wellcome-trust-advances-course-ngs-course-lecture1)
+>* can store alignments from most aligners
+>* Supports multiple sequencing technologies
+>* Supports indexing for quick retrieving/viewing
+>* Compact size
+>* Reads can be grouped into logical groups
+>* Wildly supported by variant calling software packages
+>[Source] (https://www.slideshare.net/thomaskeane/wellcome-trust-advances-course-ngs-course-lecture1)
 
 3. CRAM
 >CRAM is a file format for storing sequences aligned to a reference sequence and is smaller than BAM but similar features.
