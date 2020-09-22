@@ -47,8 +47,13 @@ A single strand of RNA or DNA is passed through ion channels. This blocks the fl
 
 ## 2. Count based vs. intensity based as principle NGS technologies
 
-Intensity based technologies rely on the measurement of the fluorescence to determine the nucleotides that are added by the polymerase. Some of technologies include: Illumina, single molecule sequencing and single molecule real time. The count based NGS technologies are the ones taht measure for example the release of pyrophosphate or the change in pH and current. Amongst these technologies are emulsion PCR, Ion Torrent and Nanopore.
+Intensity based technologies rely on the measurement of the fluorescence to determine the nucleotides that are added by the polymerase. Some of technologies include: Illumina, single molecule sequencing and single molecule real time. The count based NGS technologies are the ones that measure for example the release of pyrophosphate or the change in pH and current. Amongst these technologies are emulsion PCR, Ion Torrent and Nanopore.
 
+## 3. Molecular-cytogenetic techniques
+
+### 3.1 Array comparative genomic hybridization (array CGH) and SNP microarrays
+
+These two arrays can indicate the gain or loss in the copy number when compared to a reference sample or population. Array CGH is based on the comparative hybridization of two labelled sam
 
 
 
