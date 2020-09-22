@@ -30,7 +30,8 @@ This example indicates how to use the **|** symbol to pass the data from the fir
 The **>** symbol is used when the data is saved for example from an URL and into a text file. 
 For example:
 ```javascript
-curl -L https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/SP1.fq  > SP1.fq
+curl -L https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/SP1.fq  
+  > SP1.fq
 ```
 
 #### *6. How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).*
