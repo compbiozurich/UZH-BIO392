@@ -10,7 +10,8 @@
 * count based vs. intensity based as principle   
 *????*
 * BONUS: dig deeper for some molecular-cytogenetic techniques: 
-  * [SNP, aCGH arrays](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2020/2011-07-18___Schaaf%2C-Wiesnieszka-and-Beaudet__Copy-Number-and-SNP-Arrays-in-Clinical-Diagnostics__Ann-Rev-Genom__review.pdf)  
+  * [SNP, aCGH arrays](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2020/2011-07-18___Schaaf%2C-Wiesnieszka-and-Beaudet__Copy-Number-and-SNP-Arrays-in-Clinical-Diagnostics__Ann-Rev-Genom__review.pdf)    
+
 |     **a**rray **C**omparative **G**enomic **H**ybridisation     |                             **S**ingle **N**ucleotide **P**olymorphism                             |
 |:---------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------:|
 | Single sequence oligonucleotides of ~ 60bp                      | Two 20-60bp oligonucleotides of different sequence                                                 |
