@@ -16,7 +16,7 @@
 	- The problem nowadays are the costs that come along for storing the data	
 		- Associated costs:
 			- Cost factors are employees, technology, storage costs and so on
-				- [Example]((https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf)): Raw Storage costs for BAM format are appr. 40CHF/genome
+				- [Example](https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf): Raw Storage costs for BAM format are appr. 40CHF/genome
 
 
 ## File Formats
