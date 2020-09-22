@@ -23,3 +23,5 @@ A SAM and also a BAM format have a header first and afterwards a section which i
 The BAM format provides binary versions of most of the same data as in SAM, and is designed to compress reasonably well. BAM files are probably therefore the best for storing genome data efficiently rather than for visualisation purposes because one needs to have some additional Tools installed to work with it.
 
 I actually could not find any sequences in SAM or BAM file format and I wounder why?
+
+> Mabe looking at SAMtools: <https://github.com/samtools>

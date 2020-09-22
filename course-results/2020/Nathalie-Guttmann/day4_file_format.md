@@ -2,9 +2,9 @@
 ##  Exploration of different file formats
 
 
- ####  1. SAM file format:
+####  1. SAM file format:
 
-SAM short for Sequence Alignment/Map format is a tab-separated values file. It processes short read alignments, which are mapped against a reference sequence. 
+SAM short for Sequence Alignment/Map format is a tab-separated values file. It processes short read alignments, which are mapped against a reference sequence.
 Each record consists of 11 mandatory fields and optional fields, which are filling one line. This line gives you information about where and how the sequence maps into the reference. The file usually starts with a header using ‘@’ preceding the sequendce [[1]].  
 
 One example of a SAM format is illustrated below [[2]].
@@ -16,15 +16,16 @@ One example of a SAM format is illustrated below [[2]].
 
 ---
 
- #### 2. BAM file format:
-The BAM (Binary Alignment Map) file format is the compressed binary representation of SAM file format. 
+#### 2. BAM file format:
+
+The BAM (Binary Alignment Map) file format is the compressed binary representation of SAM file format.
 The storage is more efficient compared to SAM file format as it is compressed and uses a search index facilitating the access of individual records.  
 For those reasons BAM is the file format usually used as a storage format rather than the SAM file format [[1]].
 
 ---
 
  #### 3. CRAM file format:
-Like the BAM file formats CRAM is a compressed version of alignment using a reference-based sequence data. It is managed by the Global Alliance for Genomics and Health (GA4GH). 
+Like the BAM file formats CRAM is a compressed version of alignment using a reference-based sequence data. It is managed by the Global Alliance for Genomics and Health (GA4GH).
 For example, the compression of CRAM files is so efficient that the size of the CRAM file can be up to 60% smaller than the BAM [[3]].
 
 
@@ -33,12 +34,12 @@ For example, the compression of CRAM files is so efficient that the size of the 
 ---
 
  #### 4. VCF file format:
-VCF (Variant Call Format) is encoding data for SNPs storing information in a tab-delimited text file format. The file is separated into three parts:  The first one is the Meta-information lines, which are optional and specify the VCF version number and contain other information. 
-The second part is the header, where various important information are stored such as for example the quality score or the start coordinate of the variant. 
+VCF (Variant Call Format) is encoding data for SNPs storing information in a tab-delimited text file format. The file is separated into three parts:  The first one is the Meta-information lines, which are optional and specify the VCF version number and contain other information.
+The second part is the header, where various important information are stored such as for example the quality score or the start coordinate of the variant.
 The last part of the file gives information on genotype data, quality score , position on chromose and etc… [[4]].
- 
+
  The following picture illustrates the structure of a VCF file format:
- 
+
  ![](https://adatastory.files.wordpress.com/2016/09/example_vcf_wiki.jpg?w=1024)
 
 
@@ -69,22 +70,22 @@ MPEG-G can selectively access the data in the compressed domain by using APIs ( 
 
 -  	which would you use for storing called variants?
   >I would use VCF for storinh called variants
-  
-  
-  
+
+
+
 -   which would you use for full archival purposes?
   >I would use CRAM, BAM because those are compressed.
-  
-  
-  
-  
-  
+
+
+
+
+
  -  which would you use for browser visualization?
  >I would use BED
-  
-  
-  
-  
+
+
+
+
 
 ---
 ---
@@ -95,7 +96,7 @@ MPEG-G can selectively access the data in the compressed domain by using APIs ( 
 
 #### 1. ISCN ( International System for Human Cytogenetic Nomenclature)
 
-First created in 1960 at the Denver Conference and still used nowadays, ISCN uses a nomenclature containing symbols, abbreviated terms and band term to describe the human 
+First created in 1960 at the Denver Conference and still used nowadays, ISCN uses a nomenclature containing symbols, abbreviated terms and band term to describe the human
 chromosome and chromosome aberrations[[6]].
 
 An example of the nomenclature used for an insertion:
@@ -127,4 +128,3 @@ An example of the nomenclature is depicted below:
 GA4GH VR Specification standardizes the exchange and representation of variation data by using e. g terminology and information model, machine readable schema (JSON Schema), facilitating data sharing and unified computed identifiers [[10]].
 
 [10]: https://vr-spec.readthedocs.io/en/1.1/
-
