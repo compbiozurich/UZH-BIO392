@@ -1,11 +1,26 @@
-# Task 4 - File Formats
-
-Task description:
-Please provide 1-page size estimates and reasoning for the use of the different file types (i.e. which would you use for storing called variants, which for full archival purposes, browser visualisation), for 3-5 formats.
-Submit your files (.md) per pull request to your Github directory.
+# Task 4 - WGS, WES, Cost Estimations and File Formats
 
 
-## ... for storing called variants:
+## Whole Genome Sequencing (WGS) and Whole Exome Sequencing (WES)
+	- WGS is an attempt to sequence the entiretly genome (95% to 98% of the genome can be sequenced) and WES focuses on the protein coding sequences (about 2% of the genome)
+	- The decision which sequencing should be used depends what is wanted to be known about the organism
+	- Both are for detection of pathogenic genetic variations such as single nucleotide polymorphisms (SNPs) and insertions and/or deletions (Indels)
+	- Sources: 
+		- [AllSeq](https://allseq.com/knowledge-bank/1000-genome/wgs-vs-wes/)
+		- [CCI](https://www.uniklinik-freiburg.de/cci/forschung/bodo-grimbacher/forschungsgebiete/wes-wgs.html)
+
+
+
+## Estimation of costs
+
+	- Due to the new machine technologies for sequencing the costs for WGS and WES dropped immensively to appr. 1,000 US Dollars ([NIH](https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost))
+	- The problem nowadays are the costs that come along for storing the data	
+		- Associated costs:
+			- Cost factors are employees, technology, storage costs and so on
+				- Example: Raw Storage costs for BAM format are appr. 40CHF/genome ([Slides](https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf))
+
+
+## File Formats
 
 - **SAM (Sequence Alignment/Map)** 
 	- Generic alignment in text file format for storing read alignments against reference sequences
@@ -26,10 +41,27 @@ Submit your files (.md) per pull request to your Github directory.
 		- [GitHub](https://samtools.github.io/hts-specs/SAMv1.pdf)
 		- [Metagenomics](https://sites.google.com/site/wiki4metagenomics/tools/samtools/bam-sam-file-format) 	
 
-            
+
+
+- **BAM (Binary Alignment/Map)**
+	- Format: Binary format version of SAM 
+	- Used to store information, not readable for humans 
+	- Source:
+		- [Center for Statistical Genetics](https://genome.sph.umich.edu/wiki/BAM)
+
+
+
+- **CRAM**
+	- Compressed columnar file format for storing biological sequences, which are aligned to a reference sequence
+	- CRAM files are alignment files such like BAM files, but CRAM was designed to reduce the disk footprint of alignment data even more
+	- Sources:
+		- [Wikipedia](https://en.wikipedia.org/wiki/CRAM_(file_format))
+		- [IGSR](https://www.internationalgenome.org/faq/what-are-cram-files/)
+
+
 
 - **VCF (Variant Call Format)** 
-	- A generic format for storing DNA polymorphism data (like SNPs, deletions and structural variants) as well with rich annotations
+	- A generic format of variants for storing DNA polymorphism data (like SNPs, deletions and structural variants) as well with rich annotations
 	- Text file format (often compressed) 
 	- Format: Meta-information lines, a header line as well data lines that contain information about position in genome 
 	- [Example](https://samtools.github.io/hts-specs/VCFv4.2.pdf):
@@ -71,7 +103,7 @@ Submit your files (.md) per pull request to your Github directory.
 	- Text lines should be in length shorter than 80 characters 
 	- [Example](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)
 		
-		> >P01013 GENE X PROTEIN (OVALBUMIN-RELATED)
+		> .>P01013 GENE X PROTEIN (OVALBUMIN-RELATED)
 		QIKDLLVSSSTDLDTTLVLVNAIYFKGMWKTAFNAEDTREMPFHVTKQESKPVQMMCMNNSFNVATLPAE
 		KMKILELPFASGDLSMLVLLPDEVSDLERIEKTINFEKLTEWTNPNTMEKRRVKVYLPQMKIEEKYNLTS
 		VLMALGMTDLFIPSANLTGISSAESLKISQAVHGAFMELSEDGIEMAGSTGVIEDIKHSPESEQFRADHP
@@ -82,17 +114,6 @@ Submit your files (.md) per pull request to your Github directory.
 		- [NCBI](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)
 
 
-## ... for full archival purposes:
-
-- **BAM (Binary Alignment/Map)**
-	- Format: Binary format version of SAM 
-	- Used to store information, not readable for humans 
-	- Source:
-		- [Center for Statistical Genetics](https://genome.sph.umich.edu/wiki/BAM)
-
-
-
-## ... for browser visualization:
 
 - **BED (Browser Extensible Data)** 
 	- Text file format for storing coordinates and associated annotations 
@@ -107,3 +128,22 @@ Submit your files (.md) per pull request to your Github directory.
 	- Sources:
 		- [Wikipedia](https://en.wikipedia.org/wiki/BED_(file_format))
 		- [Ensembl](https://m.ensembl.org/info/website/upload/bed.html)
+
+
+
+- **MPEG-G (Moving Picture Experts Group for Genomic information)**
+	- Utilizes latest technology to further compress, store, transmit and process sequencing data for complex use, where the amount of information required is reduced to loslessly store and transmit DNA reads
+	- The complex use possibilities are data streaming, genomic studies aggregation or annotation and linkage of genomic segments.
+	- Example of file creation:
+		1. Place the reads in input file (corresponding to the reference genome)
+		2. Classify the reads in each bin according to the 6 classes (like P = perfect match with reference genome)
+		3. Convert the reads of each bin to a subset of 18 descriptors (specific to the defined class)
+		4. Create a matrix where the descriptors are in the columns
+		5. Compress each descriptor column
+		6. The compressed descriptors of a class of a bin are compressed in a Access Unit (AU), where per bin are up to 6 AUs
+		
+		![Picture of worflow](https://blog.chiariglione.org/wp-content/uploads/2018/12/Untitled-8.png)
+ 
+	- Sources:
+		- [MPEG-G](https://mpeg-g.org/about/)
+		- [Blog](https://blog.chiariglione.org/still-more-to-say-about-mpeg-standards/)
