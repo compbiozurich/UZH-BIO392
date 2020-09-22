@@ -44,6 +44,6 @@ awk '{print NR % 3 == 0}' /mnt/test/test.txt    # if the floor fivision of the l
 ### How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.
 
 ```
-awk 'NR % 4 == 1 {print ">"$1};  # take the line whose number when divided by 4 leaves a rest equals 1, then print ">" and afterwards print the thing before ($1)
+awk 'NR % 4 == 1 {print ">"$1};  # take the line whose number when divided by 4 leaves a rest equals 1, then print ">" and make sure the data is one row
      NR % 4 == 2 {print}' SP1.fq \ # take the line whose number when divided by 4 leaves a rest equals 2
 ```
