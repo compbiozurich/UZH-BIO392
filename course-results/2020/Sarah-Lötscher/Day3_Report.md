@@ -2,7 +2,7 @@
 
 * Why do we use the terminal in bioinformatics?
 
-   When working with many or large data its more easy and efficient to use the terminal
+   When working with many or large data its more easy and efficient to use the terminal. Italso gives the opportunity to save your work history / script.
 
 
 ---
@@ -13,16 +13,16 @@
 ---
 * In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?
 
-This makes it
+This makes it easier to access the data and work with it via terminal or other applications. Depending on what type of file format there is also a defined way/structure how the data is presented in the file which makes it easier to retrieve or find whatever is needed.
 
 ---
 * How can we list files are in a directory? Please provide the command(s).
 
 
-'ls' 
-or 'ls -l'for long listing format including the access rights
+'$ ls' 
+or 'l$ s -l 'for long listing format including the access rights
 
-'ls -a' to display all files including current '.' and parent '..' directories as well as other hidden files and directories
+'$ ls -a' to display all files including current '.' and parent '..' directories as well as other hidden files and directories
 
 ---
 * What | and > do in a terminal?
@@ -51,6 +51,10 @@ $ tail mnt/test/test.txt
 
 ---
 * How can we print every third line of a text file? Please provide the command(s), and discuss what they do.
+
+$awk 'NR % 3 == 0'  test.txt 
+
+This prints every third line by dividing the line number by three , if the remainder = 0 then it prints the line , else it goes to the next line.
 
 
 
