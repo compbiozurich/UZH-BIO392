@@ -1,6 +1,6 @@
 # Resources For Genomics
 
-## General about Genome Browsers
+## General about Genome Browsers   
 
 Genome browser are accessible for the publicity. It is a graphical interface for display of information from a biological database for genomic data. It enables researcher to get information about predicted structure, proteins, expression, regulation, variation, alternative splicing etc. 
 
