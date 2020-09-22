@@ -50,18 +50,19 @@
 
 ## How much computer storage is required for 1000 Genomes?
 * WES & WGS
-> 
+> **W**hole **E**xome **S**equence contains just the exonic regions which comprise 1-2% of the whole genome. Therefore, WES should take up less storage space.  A **W**hole **G**enome **S**equencing can be rounded off to about 150GB and a WES about 8GB (strand NGS size). For 1000 genomes, the storage of 150TB (WGS) and 8TB (WES). [](https://www.strand-ngs.com/support/ngs-data-storage-requirements)
 * Different file formats
-  * SAM
-  >
   * BAM
-  >
+  > We learned in the lecture of Day 4 that a 30x BAM file can store a genome in 100GB. Therefore, we need for 1000 genomes 100TB of BAM file format.
+  BAM is compromised format of SAM. 
+  * SAM
+  > 1.9GB BAM file == 7.4GB -> 3-Satz: 100'000/1.9*7.4 = 389473GB == 389.473 TB of a SAM file. [](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/)
   * CRAM
-  >
+  > CRAM is even more compromised compared to BAM. A 1.9GB BAM file (7.4GB SAM file) converted into a CRAM (lossless) file about 1.4GB. You need for 1000 genomes only (100'000/1.9*0.8 = 42105 =) around 42TB.      
   * VCF
-  >
+  > A VCF file stores the variants of a genome. A genome has about 3 million variants. Each VCF file line uses 45 bytes. For 3 million variants, we need around 125MG. 1000 genomes requires 125GB of a VCF file. [](https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0) 
   * FASTA
-  >
+  > to store only the raw data (without any information). When you download the [Reference Genome Sequence (GRCh38)](), you get a document about 920MB **??!**
 * Associated costs
   * Cost factors
   >
