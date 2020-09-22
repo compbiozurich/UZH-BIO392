@@ -15,7 +15,10 @@ When working with genome sequences, usually a lot of data is generated which nee
 
 #### *4. How can we list files are in a directory? Please provide the command(s).*
 
-The command for this is **l -ls**.
+The command for this is 
+```javascript
+l -ls
+```
 
 #### *5. What | and > do in a terminal?*
 
@@ -35,7 +38,7 @@ tail -10 ~/mnt/test/test.txt
 ```
 
 
-*How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).*
+#### *7. How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).*
 
 awk '{print $1}' ~/mnt/test/test.txt 
 
