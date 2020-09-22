@@ -55,7 +55,7 @@ Intensity based technologies rely on the measurement of the fluorescence to dete
 
 These two arrays can indicate the gain or loss in the copy number when compared to a reference sample or population. 
 
-The array CGH is based on the comparative hybridization of two labelled samples to hybridization targets. The result is a signal ratio used as a representation for the copy number. However the reference sample can have an effect on the copy number profile, because the examination of one sample with a loss in the reference, will lead to uncertainty about the gain in the target. The major supliers of array CGH are Roche NimbleGen and Agilent. 
+The array CGH is based on the comparative hybridization of two labelled samples to hybridization targets. The result is a signal ratio used as a representation for the copy number. However the reference sample can have an effect on the copy number profile, because the examination of one sample with a loss in the reference, will lead to uncertainty about the gain in the target. The major suppliers of array CGH are Roche NimbleGen and Agilent. 
 
 For the SNP microarry the hybridization is performed on single sample. The intensity measured across many samples is clustered and then log ratio is generated. The probes designed for the SNP microarrays are specific to single-nucleotide differences between DNA sequences. Another advantage is that this method uses SNP-allele specific probe to increase CNV sensitivity and it also has better SNP selection criteria for complex regions. However, a disadvantage is that, SNP microarrays have lower signal-to-noise ratio than the best array CGH.
 
@@ -68,4 +68,10 @@ M-FISH is used to detect a certain sequence on a chromosome [[3]]. For this meth
 [1]: https://www.genome.gov/genetics-glossary/Spectral-Karyotype#:~:text=Spectral%20karyotype%20(SKY)%20is%20a,compared%20with%20a%20conventional%20karyotype.
 [2]: https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/spectral-karyotyping
 [3]: https://www.genome.gov/genetics-glossary/Fluorescence-In-Situ-Hybridization#:~:text=%E2%80%8BFluorescence%20In%20Situ%20Hybridization%20(FISH)&text=Fluorescence%20in%20situ%20hybridization%20(FISH)%20is%20a%20laboratory%20technique%20for,fluorescent%20molecule%20attached%20to%20it.
+
+### 3.3 Chromosomal CGH
+
+This method is used to provide information about the copy number changes in chromosomes [[4]]. When the genome of a tumour is analysed using chromosomal CGH, this indicates all the gains and losses [[4]]. Tumor and normal DNA recived different fluorophores and they were added to normal chromosomes and left to hybridize [[4]]. The fluorescence ratio was used to assess the gain or loss of genetic material in a specific locous for tumour chromosomes [[4]]. 
+
+[4]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC395705/
 
