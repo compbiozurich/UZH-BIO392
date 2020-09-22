@@ -2,7 +2,8 @@
 
 ## General NGS technologies:
 
-### Sanger sequencing (1977): 
+### First Generation - Sanger sequencing (1977): 
+---
 Pros:
 remains the most appropriate
 not too expensive anymore (due to relatively cheap primers and automation)
@@ -12,6 +13,7 @@ Cons:
 * no high troughput
 
 ### Second Generation
+---
 Because of the need for analysis of large genomes at low costs.
 
 #### Sequencing by hybridization (1980):
@@ -25,15 +27,6 @@ Cons:
 * depend on using specific probes to analyse sequences
 
 #### Sequencing by synthesis:
-```
-Pros:
-* ???
-
-Cons:
-* short reads (300 - 500 bp)
-* high error rate (compared to Sanger) -> rely on high sequence coverage
-** bad for homopolymer sequences (multiples of the same base)
-```
 
 ##### Pyrosequencing:
 Pros:
@@ -63,6 +56,7 @@ Cons:
 * lack of synchrony in the synthesis can arise
 
 ### Third Generation
+---
 Because of the need for analysis of long DNA molecues (and RNA)
 
 #### Pacific Bioscience (PacBio):
@@ -79,7 +73,8 @@ Cons:
 * suffers from a inherently high error rate
 
 ### "Fourth" Generation
-long DNA molecules get passed trough small "holes" and one measures the differnt currents caused by the nucleotides passing by.
+---
+Long DNA molecules get passed trough small "holes" and one measures the differnt currents caused by the nucleotides passing by.
 
 #### Oxford Nanopore Technologie (2015):
 Pros:
