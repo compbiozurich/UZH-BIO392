@@ -2,10 +2,12 @@
 
 
 ### Why do we use the terminal in bioinformatics?
+Users can interact with the operating system of the computer through a terminal. Working with a terminal generally substitutes the graphical interface like choosing a directory with the mouse. However by working with a terminal has many advantages like being able to give more complex commands.
+Also important in bioinformatics for the sake of reproducibility we need to keep track of our analysis. This can be achieved with a bash scripts, which is a plain text file that contains a series of commands we would type into the terminal.
 
 ### What is a plain text file?
 
-#### In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?
+### In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?
 
 ### How can we list files are in a directory? Please provide the command(s).
 
