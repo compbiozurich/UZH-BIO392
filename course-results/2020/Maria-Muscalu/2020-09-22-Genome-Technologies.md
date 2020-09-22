@@ -4,6 +4,8 @@
 
 ##### 1.1 First-generation DNA sequencing
 
-|Year | Who | Describtion |
-|-----|-----|-------------|
-|1965|Robert Holley|whole nucleic acid sequence of alanine tRNA|
+|Year | Who | Description |
+|-----|-----|:------------|
+|1965|Robert Holley|Whole nucleic acid sequence of alanine tRNA|
+|1965|Fred Sagner|Method is used to detect radiolabeled partial-digestion fragments after two dimentional fractionation. This helped with the sequencing of ribosomal and transfer RNA|
+
