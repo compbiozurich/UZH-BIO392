@@ -28,7 +28,19 @@ DNA molecules connected to an adapter attach to complementary oligonucleotides o
 
 #### Ion Torrent
 
-Beads coated with clonal populations of DNA fragments are placed in a picowellplate. This technique measures the change in pH that occures during polymerisation.
+Beads coated with clonal populations of DNA fragments are placed in a picowellplate. This method measures the change in pH that occures during polymerisation.
 
 
+### 1.3 [Third-generation DNA sequencing](https://internal.baudisgroup.org/pdf/2016-01-15___Heather_and_Chain__The-sequence-of-sequencers__Genomics.pdf)
+
+#### Single molecule sequencing (SMS)
+DNA templates are attached to a surface and fluorescent reversible terminator dNTPs are added. The fluorescence of the dNTPs is measured and afterwards the fluorophore is cleaved and the polymerisation continues. This technology does not need amplification.
+
+#### Single molecule real time (SMRT)
+
+The DNA polymerisation takes place in zer-mode waveguides (ZMWs), which are holes in a metalic film on a chip. The diameter of ZMW causes the exponential decay of the wavelength and thus only the very bottom has light. As a result only the fluorophore of one dNTP is visualised at the bottom and than it is cleaved. The polymerase is also placed at the bottom of the ZMW. The nucleotides are read in real time, as they are added.  
+
+#### Nanopore
+
+A single strand of RNA or DNA is passed through ion channels. This blocks the flow of ions and decreases the current for a period of time proportional to the length of the nucleotide.
 
