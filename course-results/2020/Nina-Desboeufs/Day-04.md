@@ -54,7 +54,7 @@ Genomic coordinate systems start either by **0** (called **0-indexed**) or by **
 --------------
 
 ## 3. Variant Formats 
-Miscellaneous variant formats are commonly used in bioinformatics depending on the use-cases. 
+Miscellaneous variant formats are commonly used in bioinformatics depending on the use-cases. Great information source about different formats [here](https://genome.ucsc.edu/FAQ/FAQformat.html). 
 
 ### SAM 
 The Sequence Alignment/Map (SAM) format is a _tab_-delimited text file originated from **SAMtools** (as BAM and CRAM). This last one is a software to post-process short DNA sequence read alignments. SAM takes into account the sequence reads as well as the alignment data that link short reads to a reference sequence. 

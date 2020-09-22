@@ -61,28 +61,32 @@ Protein entries. Each line starts with a two character line code such as ID for 
 
 ## Questions 
 * Why do we use the terminal in bioinformatics?
-
+> Compared to the GUI, using the terminal allows to find the commands used (history).
 ---
 * What is a plain text file?
 > Every file that contains only text. 
 ---
 * In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?
-
+> File compression reduces the space for storage and speed up the data circulation
 ---
 * How can we list files are in a directory? Please provide the command(s).
 > `ls ~/path/to/the/directory`
 ---
 * What | and > do in a terminal?
-**Pipe "|"** allows us to pass from the output from one program **directly** to the input of another program. And ">" 
+> **Pipe "|"** allows us to pass from the output from one program **directly** to the input of another program. And ">" 
 ---
 * How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).
 > `tail ~/mnt/test/test.txt`
 ---
 * How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).
-> `awk `
+> `awk -F '|' '{print $1} ~/mnt/test/test.txt `
 ---
 * How can we print every third line of a text file? Please provide the command(s), and discuss what they do.
-
+> `awk 'NR%4==3 {print}' file.sq`. From the file.sq, take the remainder 3 of the modulo 4 of the current line number. 
 ---
 * How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.
-
+> `awk 'NR % 4 == 1 {print ">"$1}; 
+     NR % 4 == 2 {print}' SP1.fq \
+     | > example.fa` \
+Extract from the example.fa file, the 1st line (using the modulo 4 out of the number of current lines and print it with ">" (ID) for all lines ending up with 1. Similar for the 2nd line (seuqence), but just print it. 
+     
