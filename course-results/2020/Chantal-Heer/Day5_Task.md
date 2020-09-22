@@ -11,14 +11,6 @@
 *????*
 * BONUS: dig deeper for some molecular-cytogenetic techniques: 
   * [SNP, aCGH arrays](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2020/2011-07-18___Schaaf%2C-Wiesnieszka-and-Beaudet__Copy-Number-and-SNP-Arrays-in-Clinical-Diagnostics__Ann-Rev-Genom__review.pdf)  
-| **a**rray **C**omparative **G**enomic **H**ybridisation         | **S**ingle **N**ucleotide **P**olymorphism                                                         |  
-| -------------------------------------------------------         | ------------------------------------------                                                         |  
-| Single sequence oligonucleotides of ~ 60bp                      | Two 20-60bp oligonucleotides of different sequence                                                 |  
-| Two labeled DNAs (patient and control) per hybridization        | Only patient DNA labeled and hybridizied                                                           |  
-| Resolution down to size of oligonucleotides; exon by exon       | Resolution limited by SNP distribution and signal to background                                    |  
-| No detection of **U**ni**P**arental **D**isony or consanguinity | Able to detect consanguinity and most UPD                                                          |  
-| Limited SNP addition possible recently                          | Detection of most known clinically relevant **C**opy **N**number **V**ariants but not exon by exon |
-
 |     **a**rray **C**omparative **G**enomic **H**ybridisation     |                             **S**ingle **N**ucleotide **P**olymorphism                             |
 |:---------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------:|
 | Single sequence oligonucleotides of ~ 60bp                      | Two 20-60bp oligonucleotides of different sequence                                                 |
