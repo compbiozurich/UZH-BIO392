@@ -119,5 +119,3 @@ Today a huge amount of raw data (e.g. genome sequences) is produced. The problem
 -	Long genomic sequences: FASTA, BAM, SAM
 -	Variants :VCF
 -	for me FASTA files seemd to be the easiest to understand
-
-## How much computer storage is required for 1000 Genomes?
