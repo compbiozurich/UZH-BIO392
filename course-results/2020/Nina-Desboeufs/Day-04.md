@@ -134,7 +134,7 @@ LRYLRYRAEKDPARGMFKRFYGAEWTEEYIHGFLFDLERKLTVVK
 ```
 
 > **Use**: to store and represent nucleotide or peptide sequence(s). 
-> **Comment**: easy to work with (compare sequences, primer design etc) but do not contain much more genomic information.
+> **Comment**: easy to work with (compare sequences, primer design etc) but do not contain much more genomic information (like sequencing techniques, issues, etc).
 
 ### MPEG-G 
 The Moving Picture Expert Group (MPEG-G) is a compressed text-based format. It consists of either a single read or a paired sequence read and its associated sequencing and alignment. 

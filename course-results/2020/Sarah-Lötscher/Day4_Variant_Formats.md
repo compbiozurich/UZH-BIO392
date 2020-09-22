@@ -70,7 +70,7 @@ More about SAM : [URL1](https://samtools.github.io/hts-specs/SAMv1.pdf) / [URL2]
 ------
 ### FASTA
 
--FASTA is a format for listing DNA sequences.
+-FASTA is a format for storing DNA sequences.
 
 -In the FASTA file sequences are listed starting with '>' follwed by the sequence name and information. On the next line the whole nucleotide or aminoacid sequence is displayed. 
 

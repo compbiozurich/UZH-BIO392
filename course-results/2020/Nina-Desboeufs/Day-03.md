@@ -86,7 +86,7 @@ Protein entries. Each line starts with a two character line code such as ID for 
 ---
 * How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.
 > `awk 'NR % 4 == 1 {print ">"$1}; 
-     NR % 4 == 2 {print}' SP1.fq \
+     NR % 4 == 2 {print}' SP1.fq 
      | > example.fa` \
 Extract from the example.fa file, the 1st line (using the modulo 4 out of the number of current lines and print it with ">" (ID) for all lines ending up with 1. Similar for the 2nd line (seuqence), but just print it. 
      

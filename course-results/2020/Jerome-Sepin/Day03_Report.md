@@ -6,12 +6,20 @@ Users can interact with the operating system of the computer through a terminal.
 Also important in bioinformatics for the sake of reproducibility we need to keep track of our analysis. This can be achieved with a bash scripts, which is a plain text file that contains a series of commands we would type into the terminal.
 
 ### What is a plain text file?
+A plain text file is a document that contains only text which is human readable. It means also that there is no for instance bold text, fonts (graphical representation of text) or any other special text formatting.
 
 ### In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?
 
-### How can we list files are in a directory? Please provide the command(s).
+### How can we list files in a directory? Please provide the command(s).
+
+```
+cd ~/course/data  # goes to choosen directory
+ls -l course  #
+````
 
 ### What | and > do in a terminal?
+the '|' symbol is called 'pipe' in UNIX. It allows to directly pass the output from one program to the input of another without creating intermediate or temporary files.
+
 
 ### How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).
 
