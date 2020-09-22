@@ -28,7 +28,7 @@ DNA molecules connected to an adapter attach to complementary oligonucleotides o
 
 #### Ion Torrent
 
-Beads coated with clonal populations of DNA fragments are placed in a picowellplate. This method measures the change in pH that occures during polymerisation.
+Beads coated with clonal populations of DNA fragments are placed in a picowell plate. This method measures the change in pH that occures during polymerisation.
 
 
 ### 1.3 [Third-generation DNA sequencing](https://internal.baudisgroup.org/pdf/2016-01-15___Heather_and_Chain__The-sequence-of-sequencers__Genomics.pdf)
@@ -43,4 +43,13 @@ The DNA polymerisation takes place in zer-mode waveguides (ZMWs), which are hole
 #### Nanopore
 
 A single strand of RNA or DNA is passed through ion channels. This blocks the flow of ions and decreases the current for a period of time proportional to the length of the nucleotide.
+
+
+## 2. Count based vs. intensity based as principle NGS technologies
+
+Intensity based technologies rely on the measurement of the fluorescence to determine the nucleotides that are added by the polymerase. Some of technologies include: Illumina, single molecule sequencing and single molecule real time. The count based NGS technologies are the ones taht measure for example the release of pyrophosphate or the change in pH and current. Amongst these technologies are emulsion PCR, Ion Torrent and Nanopore.
+
+
+
+
 
