@@ -1,4 +1,4 @@
-# Some file formats
+# Some file formats :octocat:
 
 ### FASTA/FASTQ
 Stores genetic or protein sequences in full. FASTA adds only a sequence ID to this, while FASTQ also adds an (often unused) line for additional info and
