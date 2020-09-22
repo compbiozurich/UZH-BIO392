@@ -78,6 +78,21 @@ Cons:
 * not all modifications can be identified (Epigenetic)
 * suffers from a inherently high error rate
 
+### "Fourth" Generation
+long DNA molecules get passed trough small "holes" and one measures the differnt currents caused by the nucleotides passing by.
+
+#### Oxford Nanopore Technologie (2015):
+Pros:
+* long DNA molecules
+* small size -> portable
+* large number of molecules can be sequenced (reduces error)
+* can identify base modification
+* low-cost
+
+Cons:
+* relativels high error rate
+
+
 ## count based vs. intensity based as principle
 
 
