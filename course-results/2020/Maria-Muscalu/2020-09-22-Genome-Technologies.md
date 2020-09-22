@@ -59,8 +59,13 @@ The array CGH is based on the comparative hybridization of two labelled samples 
 
 For the SNP microarry the hybridization is performed on single sample. The intensity measured across many samples is clustered and then log ratio is generated. The probes designed for the SNP microarrays are specific to single-nucleotide differences between DNA sequences. Another advantage is that this method uses SNP-allele specific probe to increase CNV sensitivity and it also has better SNP selection criteria for complex regions. However, a disadvantage is that, SNP microarrays have lower signal-to-noise ratio than the best array CGH.
 
+### 3.2 Spectral karyotyping (SKY) and Multicolor Fluorescence In Situ Hybridization (M-FISH)
 
+The SKY method is used to visualise the chromosomes and especially their abnormalities [[1]]. One key aspect of this method is that the each of the homologous chromosome pairs have a different colour, which makes it easy to differentiate between them [[1]]. Inter, and intra-chromosomal genomic rearrangements can be easily spotted [[2]]. 
 
+M-FISH is used to detect a certain sequence on a chromosome [[3]]. For this method a probe, that has a fluorophore attached to it, can be designed to hyberdize to the chromosome [[3]]. This way a specific part of the DNA can be identified [[3]]. 
 
-
+[1]: https://www.genome.gov/genetics-glossary/Spectral-Karyotype#:~:text=Spectral%20karyotype%20(SKY)%20is%20a,compared%20with%20a%20conventional%20karyotype.
+[2]: https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/spectral-karyotyping
+[3]: https://www.genome.gov/genetics-glossary/Fluorescence-In-Situ-Hybridization#:~:text=%E2%80%8BFluorescence%20In%20Situ%20Hybridization%20(FISH)&text=Fluorescence%20in%20situ%20hybridization%20(FISH)%20is%20a%20laboratory%20technique%20for,fluorescent%20molecule%20attached%20to%20it.
 
