@@ -51,9 +51,15 @@ Intensity based technologies rely on the measurement of the fluorescence to dete
 
 ## 3. Molecular-cytogenetic techniques
 
-### 3.1 Array comparative genomic hybridization (array CGH) and SNP microarrays
+### 3.1 [Array comparative genomic hybridization (array CGH) and SNP microarrays](https://internal.baudisgroup.org/pdf/2011-05-12___Eichler_et_al__Review_structural_variations_arrays__NatRevGen.pdf)
 
-These two arrays can indicate the gain or loss in the copy number when compared to a reference sample or population. Array CGH is based on the comparative hybridization of two labelled sam
+These two arrays can indicate the gain or loss in the copy number when compared to a reference sample or population. 
+
+The array CGH is based on the comparative hybridization of two labelled samples to hybridization targets. The result is a signal ratio used as a representation for the copy number. However the reference sample can have an effect on the copy number profile, because the examination of one sample with a loss in the reference, will lead to uncertainty about the gain in the target. The major supliers of array CGH are Roche NimbleGen and Agilent. 
+
+For the SNP microarry the hybridization is performed on single sample. The intensity measured across many samples is clustered and then log ratio is generated. The probes designed for the SNP microarrays are specific to single-nucleotide differences between DNA sequences. Another advantage is that this method uses SNP-allele specific probe to increase CNV sensitivity and it also has better SNP selection criteria for complex regions. However, a disadvantage is that, SNP microarrays have lower signal-to-noise ratio than the best array CGH.
+
+
 
 
 
