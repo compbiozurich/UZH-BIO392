@@ -1,6 +1,6 @@
-### Report
+## Terminal and Unix Report
 
-*Why do we use the terminal in bioinformatics?*
+### *1. Why do we use the terminal in bioinformatics?*
 
 The terminal can be used to look a data files. For example, with some commands new folders and files can be made, data from URL links can be saved as well as copied to new files. The terminal code can extract and save specific data parts, as needed. Amongst other things, the terminal can display the data, the number of lines and other specific information.
 
