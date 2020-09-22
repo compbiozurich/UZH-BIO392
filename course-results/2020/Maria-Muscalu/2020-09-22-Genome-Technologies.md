@@ -18,5 +18,17 @@ The machines used for tese techniques can produce readouts less than one kilobas
 
 ### 1.2 [Second-generation DNA sequencing](https://internal.baudisgroup.org/pdf/2016-01-15___Heather_and_Chain__The-sequence-of-sequencers__Genomics.pdf)
 
-#### Sequencing machines produced by 454.
-Using adapter sequences, DNA libraries can be attached to beads. Afterwards, the beads are placed in a water-in-oil emulsion PCR (emPCR) and the initial DNA library is amplified. DNA-coated beads are washed over a plate that fits one beat per well. The pyrosequencing step occures when enzymes linked to smaller beads and dNTP are added. Pyrophosphate is then measured using a charged couple device.
+#### Clonally amplification usig emulsion PCR (emPCR).
+
+Adapter sequences attach DNA libraries to beads. Afterwards, emulsion PCR (emPCR) is used and the initial DNA library is amplified. DNA-coated beads are washed over a plate that fits one beat per well. The pyrosequencing step occures when enzymes linked to smaller beads and dNTP are added. Pyrophosphate is then measured using a charged couple device (CCD).
+
+#### Illumina
+
+DNA molecules connected to an adapter attach to complementary oligonucleotides on a flowcell. A process known as bridge amplification occures when during the solid phase PCR clusters of clonal populations are produced. The sequencing method is called sequencing by synthesis (SBS) and uses fluorescent 'reversible-terminator' dNTPs. After the incorporation of a dNTP to the growing strand, the fluorophore is excited and then measured with a CCD. The fluorophore must be cleaved in order for the polymerisation to continue and thus the sequence of nucleotides is optained.  
+
+#### Ion Torrent
+
+Beads coated with clonal populations of DNA fragments are placed in a picowellplate. This technique measures the change in pH that occures during polymerisation.
+
+
+
