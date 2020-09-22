@@ -4,11 +4,12 @@
 > The terminal is the command line interface (CLI, shell) between the user and the kernel. It's inteprets and execute the UNIX commands the user types in. MacOS and GNU/Linux computers have an terminal preinstalled. In Bioinformatics, we interpret DNA, proteins as text. Therefore, we use the UNIX language and the terminal to handle this big text data.
 
 * What is a plain text file?
-> A plain text file is a file that only contains text. The text is also no formatted. 
+> A plain text file is a file that only contains text. The text is also no formatted.
 
 * In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). 
   For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). 
   Why is that?
+> A plain text file can be used ... The compression of a file save storage.
 > **!!!!????**
 
 * How can we list files are in a directory? 
