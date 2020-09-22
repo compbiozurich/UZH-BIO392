@@ -17,7 +17,7 @@ When working with genome sequences, usually a lot of data is generated which nee
 
 The command for this is **l -ls**.
 
-*What | and > do in a terminal?*
+#### *5. What | and > do in a terminal?*
 
 The **|** symbol is called a “pipe” and it can be written in between commands in order to pass the output from one command to the other without having to save the extracted data I between or creating new files.
 For example:
@@ -28,9 +28,12 @@ The **>** symbol is used when the data is saved for example from an URL and into
 For example:
 curl -L https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/SP1.fq  > SP1.fq
 
-*How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).*
+#### *6. How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).*
 
+```javascript
 tail -10 ~/mnt/test/test.txt
+```
+
 
 *How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).*
 
