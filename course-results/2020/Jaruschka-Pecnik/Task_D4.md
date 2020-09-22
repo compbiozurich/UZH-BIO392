@@ -2,7 +2,7 @@
 
 
 ## Whole Genome Sequencing (WGS) and Whole Exome Sequencing (WES)
-	- WGS is an attempt to sequence the entiretly genome (95% to 98% of the genome can be sequenced) and WES focuses on the protein coding sequences (about 2% of the genome)
+- WGS is an attempt to sequence the entiretly genome (95% to 98% of the genome can be sequenced) and WES focuses on the protein coding sequences (about 2% of the genome)
 	- The decision which sequencing should be used depends what is wanted to be known about the organism
 	- Both are for detection of pathogenic genetic variations such as single nucleotide polymorphisms (SNPs) and insertions and/or deletions (Indels)
 	- Sources: 
@@ -12,12 +12,11 @@
 
 
 ## Estimation of costs
-
-	- Due to the new machine technologies for sequencing the costs for WGS and WES dropped immensively to appr. 1,000 US Dollars ([NIH](https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost))
+- Due to the new machine technologies for sequencing the costs for WGS and WES dropped immensively to appr. 1,000 US Dollars ([NIH](https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost))
 	- The problem nowadays are the costs that come along for storing the data	
 		- Associated costs:
 			- Cost factors are employees, technology, storage costs and so on
-				- Example: Raw Storage costs for BAM format are appr. 40CHF/genome ([Slides](https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf))
+				- [Example]((https://compbiozurich.org/UZH-BIO392/course-material/2020/2020-09-18-BIO392-files.pdf)): Raw Storage costs for BAM format are appr. 40CHF/genome
 
 
 ## File Formats
