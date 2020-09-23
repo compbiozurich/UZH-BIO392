@@ -11,8 +11,8 @@
 --> Because "DNA-data" is huge and plain text is a very accessible way of storing data.
 
 * How can we list files are in a directory? Please provide the command(s).
-$ 'ls' # list files in a given path
-$ 'ls -l' # lists files and their attributes
+$ ' ls ' # list files in a given path
+$ ' ls -l ' # lists files and their attributes
 
 * What | and > do in a terminal?
 
