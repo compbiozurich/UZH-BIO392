@@ -77,12 +77,13 @@ The FASTA file format [[2]]:
 The convertion of a FASTQ file to a FASTA format requires the extraction of the sequence identifier and the nucleotide sequence, which are the first two lines.
 
 ```javascript
-awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' ~/course/data/example.fq
+awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' ~/course/data/example.fq > ~/course/data/example.fa
 ```
  * **NR % 4 == 1** will print only the lines, for which the line number (NR) divided by 4 has 1 as remainder. The **%** symbol means modulo.
  * **{print ">"$1}** will output the **>** symbol in front of the first column of the line indicated by the **NR % 4 == 1** command. This will print the **>** symbol in front of the sequence identifier, as it is required by the FASTA file format. 
  * **NR % 4 == 2 {print}** will print only the lines, for which the line number (NR) divided by 4 has 2 as remainder. The command **{print}** will output every line for which the previous command is true.
- * “The **;** symbol stands for **or**, which means that the command is executed if the first part ('NR % 4 == 1 {print ">"$1}) **or** the second part (NR % 4 ==2) is true. In this case, both lines are printed. 
+ * The **;** symbol stands for **or**, which means that the command is executed if the first part ('NR % 4 == 1 {print ">"$1}) **or** the second part (NR % 4 ==2) is true. In this case, both lines are printed.
+ * The **>** symbol is used to save the extracted data at the same directory in a file called example.fa **/course/data/example.fa**.
 
 
 [1]: https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html
