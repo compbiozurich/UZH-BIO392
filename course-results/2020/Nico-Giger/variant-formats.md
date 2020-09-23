@@ -25,7 +25,7 @@ When you have a lot of calls with a lot of unique/rare variants, the format gets
 Structural variants (Chormosomal abberations) are generally diffucult to handle. In VCF files you can use symbolic chromosomes
 
 ## FASTA
-Stores genetic or protein sequences in full. --> not very storage efficient and no reference required.
+Stores genetic or protein sequences in full (tab-del). --> not very storage efficient and no reference required.
 
 ## FASTQ
 FASTA + info and quality scores
@@ -36,21 +36,14 @@ FASTQ with tab delimiters + positional information in reference genome. --> also
 ## BAM
 SAM in binary. --> non-human readable and easier to compressable.
 
+## CRAM
+compressed BAM --> increased storage efficiency.
+
 ## BED
 store annotations with coordinates of reference genome. --> useful for storing information that genome browsers display in parallel to the genome. 
 
-Task: Estimate Storage Requirements for 1000 Genomes Project
-• How much computer storage is required for the 1000 Genomes project
-• WES & WGS
-• Different file formats
-• SAM
-• BAM
-• CRAM
-• VCF
-• FASTA
-• BED
-• Associated costs
-• Cost factors
-• Raw Storage costs
+## Moving Picture Experts Group  (MPEG-G)
 
+New standard (tech) for compression and transport technologies for efficient processing, transport and sharing large scale genomic data --> > 10xBAM efficient (whatever that means)
 
+## CRMA > BAM > SAM > FASTQ > FASTA > VCF  (BED?, MPEG-G?)

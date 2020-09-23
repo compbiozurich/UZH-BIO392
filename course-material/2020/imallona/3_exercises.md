@@ -4,7 +4,50 @@ Please notice the comprehensive [SIB Course on UNIX](https://edu.sib.swiss/plugi
 
 You can launch a terminal in MacOS and GNU/Linux. If running another OS, please make use a [a Web-browser based emulator](https://cocalc.com/app?anonymous=terminal), or use a Linux virtual machine.
 
-Exercises are meant to be run in Y01-F50 in the morning; afternoons are meant for resources/browsing and reading. In any case, the outputs from all snippets are available within this document, in case it was needed to check them without access to an Unix machine.
+Exercises are meant to be run in Y01-F50 in the morning (learning by doing); afternoons are meant for resources/browsing and reading. In any case, the outputs from all snippets are available within this document, in case it was needed to check them without access to an Unix machine.
+
+Some of the exercises are meant to be solved/committed the GitHub repo (see them below).
+
+## Exercises to report to the GitHub repo
+
+Please commit to the BIO392 github a markdown report (*due date Oct 6 5pm*) describing:
+
+- Why do we use the terminal in bioinformatics?
+
+- What is a plain text file?
+
+- In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq, but also SAM, BED, GTF, VCF and others. Why is that?
+
+- How can we list files are in a directory? Please provide the command(s).
+
+- What `|` and  `>` do in a terminal?
+
+- How do we print the last 10 lines of the file named `/mnt/test/test.txt`? Please provide the command(s).
+
+- How do we print the first column of the file named `/mnt/test/test.txt` whose columns are separatedby tabs? Please provide the command(s).
+
+- How can we print every third line of a text file? Please provide the command(s), and discuss what they do.
+
+- How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.
+
+- Which are the advantages of BED/coordinate files as compared to storing just sequences?
+
+- Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
+
+We'd like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify).
+ 
+We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
+
+- Can we store this in SAM file? Why / why not?
+
+- Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
+
+- And in BED6? How? Are we losing any information?
+
+- And in BED12? How? Are we losing any information?
+
+- And in the most compact Wiggle as possible? How? Are we losing any information?
+
 
 ## Extra information
 
@@ -179,10 +222,22 @@ This way, we will control the software version we are installing, and we will ge
 
 Makefiles are written as sets of rules and are not only used to install software; workflows for data analysis can be coded as Makefiles. If curious about this, read more about [Makefiles at Wikipedia](https://en.wikipedia.org/wiki/Makefile), and about bioinformatics workflows [Holmes and Mungall, 2017](https://academic.oup.com/bioinformatics/article/33/21/3502/3806980) and reproducibility.
 
+In our case, we add a CPATH export to get the headers (wchar.h). By default, we get them at `xcrun --show-sdk-path`. After the export, will look for them at `xcrun --show-sdk-path`/usr/include.
+
 
 ```bash
 
 cd ~/course/soft
+
+# to avoid the following error, export the CPATH
+# 
+# /usr/local/include/c++/4.9.2/cwchar:44:19: fatal error: wchar.h: No such file or directory
+#  #include <wchar.h>
+#                    ^
+# compilation terminated.
+# make[1]: *** [../../../obj//bedFile.o] Error 1
+# make: *** [src/utils/bedFile] Error 2
+export CPATH=`xcrun --show-sdk-path`/usr/include
 
 ## download the source code
 curl -L https://github.com/arq5x/bedtools2/releases/download/v2.25.0/bedtools-2.25.0.tar.gz \
@@ -1220,9 +1275,11 @@ chr1	70	80	.	0	.
 
 ## Exercise 18
 
-Add a nucleotide to the start and subtract a nucleotide to the end to all records, regardless of the strand, to the file `~/course/soft/bedtools2/test/intersect/a.bed`.
+Add a nucleotide to the start and to the end to all records, regardless of the strand, to the file `~/course/soft/bedtools2/test/intersect/a.bed`.
 
 Tip: use `awk` and use the standard operators `+` or `-` to add/subtract values to each record.
+
+Tip: add means adding a nucleotide, that might be substracting a value to the 5' (start) nucleotide.
 
 <details><summary>
 Answer

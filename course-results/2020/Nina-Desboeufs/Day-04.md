@@ -54,7 +54,7 @@ Genomic coordinate systems start either by **0** (called **0-indexed**) or by **
 --------------
 
 ## 3. Variant Formats 
-Miscellaneous variant formats are commonly used in bioinformatics depending on the use-cases. 
+Miscellaneous variant formats are commonly used in bioinformatics depending on the use-cases. Great information source about different formats [here](https://genome.ucsc.edu/FAQ/FAQformat.html). 
 
 ### SAM 
 The Sequence Alignment/Map (SAM) format is a _tab_-delimited text file originated from **SAMtools** (as BAM and CRAM). This last one is a software to post-process short DNA sequence read alignments. SAM takes into account the sequence reads as well as the alignment data that link short reads to a reference sequence. 
@@ -110,23 +110,53 @@ The Variant Call Format (VCF) is the standard tab-delimited text file format for
 ```
 #CHROM  POS ID  REF ALT     QUAL    FILTER  INFO    FORMAT  NA12878 [other samples...] 
 ```
-The first seven fields are required in VCF format. In more details, **CHROM** and **POS** is for the genomic coordinate system. 
+The first seven fields are required in VCF format. In more details:
+* **CHROM** and **POS**: For the genomic coordinate system. 
+* **ID**: Identification of the variant 
+* **REF** and **ALT**: The reference and alternative allele observed. Important because it gives the information if it's a SNP or an indel. Attention: based on the forward strand!  
+* **QUAL**: Gives the **Phred-scaled probability** that such a variant exists `(-10 * log(1-p))`. E.g. a value of 10 means a 1 in 10 chance of error. Attention: not to be be mistaken with Genome Quality (GQ). 
+* **Filter**: Indication of the failed or passed information about each filter the variant has been tested. 
 
-> **Use**: 
-> **Comment(s)**: very explicit, scalable and flexible. Smoe VCF files are very large and requires UNIX tools to access the part of interest. 
+> **Use**: standard format to store variants. 
+> **Comment(s)**: very explicit, scalable and flexible. Some VCF files are very large and requires UNIX tools to access the part of interest. A lot of tools are available to work on VCF files (e.g. VCF tools, BedTools, GATK).  
 
+For more information [here](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format). 
 
 ### FASTA
+FASTA format is a text-based format. Its format is pretty simple since it is identified by a header starting with ">" and followed by the sequence data. The FASTA format can contain several different sequences. E.g.: 
 
+```
+>gi|186681228|ref|YP_001864424.1| phycoerythrobilin:ferredoxin oxidoreductase
+MNSERSDVTLYQPFLDYAIAYMRSRLDLEPYPIPTGFESNSAVVGKGKNQEEVVTTSYAFQTAKLRQIRA
+AHVQGGNSLQVLNFVIFPHLNYDLPFFGADLVTLPGGHLIALDMQPLFRDDSAYQAKYTEPILPIFHAHQ
+QHLSWGGDFPEEAQPFFSPAFLWTRPQETAVVETQVFAAFKDYLKAYLDFVEQAEAVTDSQNLVAIKQAQ
+LRYLRYRAEKDPARGMFKRFYGAEWTEEYIHGFLFDLERKLTVVK
+```
+
+> **Use**: to store and represent nucleotide or peptide sequence(s). 
+> **Comment**: easy to work with (compare sequences, primer design etc) but do not contain much more genomic information (like sequencing techniques, issues, etc).
 
 ### MPEG-G 
+The Moving Picture Expert Group (MPEG-G) is a compressed text-based format. It consists of either a single read or a paired sequence read and its associated sequencing and alignment. 
+
+> **Use**: to compress, store, transmit and process sequencing data. Design for **high-throughput sequencing**. It offers the following functions: data streaming, compressed file concatenation, genomic studies aggregation, selective encryption of sequencing data and metadata, annotation and linkage of genomic segments, incremental update of sequencing data and metadata. 
+
+
+### Which format for which use(s), thoughts. 
+* which would you use for storing called variants? 
+> VCF, provides a lot of information about the variants and is really explicit. 
+* which for full archival purposes? 
+> SAM or one of the compressed format (BAM or CHRAM) ? If it's just the sequence, then FASTA. 
+* for browser visualisation?
+> VCF, since various tools are available and Browser Extensible Data (BED) format. 
 
 
 
+## 4. Storage costs
+For 1000 whole genome sequences, using BAM format, **150 TB** are required without backup. More information about computational speed [here](https://www.strand-ngs.com/support/ngs-data-storage-requirements). Different variables have to be taken into account into the storage costs e.g. the quality as well as the coverage (whole genome or specific sequence). Different methods of compression have been developed and applied to format like BAM or MPEG-G to reduce the storage requirement. 
 
 
-
-
+> Let's try to create a pull request
 
 
 

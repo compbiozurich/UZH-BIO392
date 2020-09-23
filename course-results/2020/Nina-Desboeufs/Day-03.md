@@ -13,18 +13,63 @@ It contains 4 lines per read sequence:
 `wc file.fq | awk '{print $1 / 4}'`
 * To retrieve each 1st/2nd/3rd/4th line of the read sequence (i.e. the sequence): 
 `awk 'NR%4==1' file.sq` (NR: current line number; % modulo) (==2 / ==3/ ==0)
-* Convert FastQ to Fast (and save): 
-`awk 'NR % 4 == 1 {print ">"$1}; 
+* To convert FastQ to Fast (and save): 
+```
+awk 'NR % 4 == 1 {print ">"$1}; 
      NR % 4 == 2 {print}' SP1.fq \
-     | > example.fa`
+     | > example.fa
+```
+* To count the number of reads:
+`awk 'END{print NR/4}' file.fq`
      
 ## BED Format 
 "BED (Browser Extensible Data) format provides a flexible way to define the data lines that are displayed in an annotation track". BED files consist at least of three fields: 
 * **chrom**: the chromosome's name
 * **chromStart**: the starting position 
 * **chromEnd**: the ending position 
->and nine additional optional fields (name, score, strand, thickStart, thickEnd, itemRgb, blockCount, blockSizes, blockStarts)
+> and nine additional optional fields (name, score, strand, thickStart, thickEnd, itemRgb, blockCount, blockSizes, blockStarts)
 
+**Useful command lines**: 
+* To transform a BED6 to BED3 file (extract the first three columns): \
+`awk -v OFS='\t' '{print $1, $2, $3}' file.bed`
+* to add a nucleotide to the start and substract a nucleotide to the end: \
+`awk -v OFS='\t' '{print $1,$2-1,$3-1,$4,$5,$6}' file.bed`
+* to intersect two BED files (check for overlapping): \
+```
+alias bedtools='~/course/soft/bedtools2/bin/bedtools'
+bedtools intersect \
+  -file1  ~/path/to/the/directory/file1.bed \
+  -file2  ~/path/to/the/directory/file2.bed  
+```
+* to report intervals from a BED file 1 that do not overlap any of the intervals in BED file 2: \
+```
+bedtools intersect \
+  -v \
+  -file1  ~/path/to/the/directory/file1.bed \
+  -file2  ~/path/to/the/directory/file2.bed  
+```
+* to flag the amounts of overlap for all features when comparing two BED files: \
+```
+bedtools intersect \
+  -wao \
+  -file1  ~/path/to/the/directory/file1.bed \
+  -file2  ~/path/to/the/directory/file2.bed  
+```
+  
+  ## GTF file
+  
+  **Useful command lines**: 
+  * to retrieve the details of a specific transcripts (e.g. `ENST00000342247`) from a GTF file: \
+ ` grep ENST00000342247 file.gtf | grep "exon\s" ` \
+ and the number of exons: \
+ ` grep ENST00000342247 file.gtf | grep "exon\s" | wc -l `
+ * to determine the number of start / stop codon the chromosome have : \
+ ` grep start_codon file.gtf | wc -l ` replace by stop_codon
+ 
+  
+  
+
+  
      
 ## Swiss-Prot flatfile 
 Protein entries. Each line starts with a two character line code such as ID for the first, followed by "w\". The entry is ended by "\\". 
@@ -55,34 +100,57 @@ Protein entries. Each line starts with a two character line code such as ID for 
 | diff | compares two files and retrieve the difference |
 | grep | searches file(s) for words or patterns and displays the result lines | 
 | uniq | report one line if several identical and adjacent lines are found | 
+| gunzip | uncompress .gz files | 
 
 
 **Pipe "|"** allows us to pass from the output from one program **directly** to the input of another program.
 
 ## Questions 
 * Why do we use the terminal in bioinformatics?
-
+> Compared to the GUI, using the terminal allows to find the commands used (history).
 ---
 * What is a plain text file?
 > Every file that contains only text. 
 ---
 * In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?
-
+> File compression reduces the space for storage and speed up the data circulation
 ---
 * How can we list files are in a directory? Please provide the command(s).
 > `ls ~/path/to/the/directory`
 ---
 * What | and > do in a terminal?
-**Pipe "|"** allows us to pass from the output from one program **directly** to the input of another program. And ">" 
+> **Pipe "|"** allows us to pass from the output from one program **directly** to the input of another program. And ">" 
 ---
 * How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).
 > `tail ~/mnt/test/test.txt`
 ---
 * How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).
-> `awk `
+> `awk -F '|' '{print $1} ~/mnt/test/test.txt `
 ---
 * How can we print every third line of a text file? Please provide the command(s), and discuss what they do.
-
+> `awk 'NR%4==3 {print}' file.sq`. From the file.sq, take the remainder 3 of the modulo 4 of the current line number. 
 ---
 * How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.
+> `awk 'NR % 4 == 1 {print ">"$1}; 
+     NR % 4 == 2 {print}' SP1.fq 
+     | > example.fa` \
+Extract from the example.fa file, the 1st line (using the modulo 4 out of the number of current lines and print it with ">" (ID) with the value of line. Similar for the 2nd line (seuqence), but just print it. 
 
+Which are the advantages of BED/coordinate files as compared to storing just sequences?
+
+Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
+
+We'd like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify).
+
+We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
+
+Can we store this in SAM file? Why / why not?
+
+Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
+
+And in BED6? How? Are we losing any information?
+
+And in BED12? How? Are we losing any information?
+
+And in the most compact Wiggle as possible? How? Are we losing any information?
+     
