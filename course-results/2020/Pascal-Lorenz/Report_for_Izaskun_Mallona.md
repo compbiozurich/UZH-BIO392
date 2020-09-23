@@ -44,7 +44,7 @@ fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF a
 
 - We'd like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify).  
 We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
-    - First of all: I will use 1 counting / half open. Since the question doesn't specify, I'll assume that "The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2" is using 1 counting as well. Also: markdown displays the '\t' delimiter as a space for whatever reason..
+    - First of all: I will use 1 counting / half open. Since the question doesn't specify, I'll assume that "The first one starts [...] in position 1000 of chr2" is using 1 counting as well. Also: markdown displays the '\t' delimiter as a space for whatever reason..
     
     - Can we store this in SAM file? Why / why not?
         - No, we would need a sequence read at the least for that.
