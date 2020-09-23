@@ -1,50 +1,67 @@
 # Report 
---> not finished
 
 **Why do we use the terminal in bioinformatics?**
-	- to write the commands in it, which executes them
+- to write the commands in it, which executes them
 
 **What is a plain text file?**
-	- is a loose term file for data including only characters of readable material
-	- it differs from formatted text and binary files
-	- [Source](https://en.wikipedia.org/wiki/Plain_text)
+A plain text file is a loose term file for data including only characters of readable material. It differs from formatted text and binary files. [Source](https://en.wikipedia.org/wiki/Plain_text)
 
 **In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?**
-	- that they are readable for us and to store them it is easier and uses less space, when the are compressed
+- that they are readable for us and to store them it is easier and uses less space, when the are compressed
 
 **How can we list files are in a directory? Please provide the command(s).**
-	- 
+- command: ls -l
 
 **What | and > do in a terminal?**
-	- the "|" symbol is called pipe in UNIX
-		- directly pass the output form one program ro the input of another without creating intermediate steps in files
-	- the ">" symbol is
+- the "|" symbol is called pipe in UNIX
+	- directly pass the output form one program ro the input of another without creating intermediate steps in files
+- the ">" symbol is
 
 
 **How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).**
-	- commands to use:
-		- 'sort -nr' command: for sort the file in reverse order
-		- 'head -10' command: display only the first ten lines of the reverse-ordered file
-	- whole command: /mnt/test/test.txt | sort -nr | head -10
+- commands to use:
+	- 'sort -nr' command: for sort the file in reverse order
+	- 'head -10' command: display only the first ten lines of the reverse-ordered file
+- whole command: /mnt/test/test.txt | sort -nr | head -10
 
 **How do we print the first column of the file named /mnt/test/test.txt whose columns are separated by tabs? Please provide the command(s).**
-	- commands to use:
-		- "'tr " " "\\n"' command: for transforming the following characters into next line characters
-		- '<' command: executing the left part of the symbol using the content on the right side of the symbol (the file)
-		- 'head -1' command: displays the first line of characters
-	- whole command: tr " " "\\n" < /mnt/test/test.txt | head -1
+- commands to use:
+	- "'tr " " "\\n"' command: for transforming the following characters into next line characters
+	- '<' command: executing the left part of the symbol using the content on the right side of the symbol (the file)
+	- 'head -1' command: displays the first line of characters
+- whole command: tr " " "\\n" < /mnt/test/test.txt | head -1
 
 **How can we print every third line of a text file? Please provide the command(s), and discuss what they do.**
-	- command: awk 'NR%3==1' ~ (directory of text file)
-	- NR is equal to the current line number
-	- modulo operator % returns the number and with == it looks that divided by 3 is equal 1 (for the third line)
+- command: awk 'NR%3==1' ~ (directory of text file)
+- NR is equal to the current line number
+- modulo operator % returns the number and with == it looks that divided by 3 is equal 1 (for the third line)
 
 **How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.**
-	- commands: awk 'NR'
+- commands: awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' file.fq
 
 
+**Which are the advantages of BED/coordinate files as compared to storing just sequences?**
+- 
 
+**Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?**
+- 
 
+**We’d like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify). We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we’d like to include the start nucleotide too) in position 1000 of chr2. We don’t have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.**
+
+- **Can we store this in SAM file? Why / why not?**
+	- 
+
+- **Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?**
+	- 
+
+- **And in BED6? How? Are we losing any information?**
+	- 
+
+- **And in BED12? How? Are we losing any information?**
+	- 
+
+- **And in the most compact Wiggle as possible? How? Are we losing any information?**
+	- 
 
 
 
