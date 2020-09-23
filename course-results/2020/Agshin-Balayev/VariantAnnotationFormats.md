@@ -1,6 +1,6 @@
 # Genomic Variant Annotation Formats
 
-##ISCN Report: used to report chromosomal abnormalities through cytogenetic techniques FISH, SKY and SNP arrays. 
+## ISCN Report: used to report chromosomal abnormalities through cytogenetic techniques FISH, SKY and SNP arrays. 
 
 * At least two patient identifiers: patient name and date of birth, gender (advised)
 * Laboratory number
