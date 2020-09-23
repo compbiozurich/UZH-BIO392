@@ -25,32 +25,32 @@
 *[This page](https://genome.ucsc.edu/FAQ/FAQformat.html) give a good overview about various data file formats*
 
 * SAM (**S**equence **A**lignment **M**ap)
-> SAM is a generic format for storing large nucelotide sequence alignments. It is flexible, simple (human readable) and compact. Many NGS and analysis tools work with SAM. The sequence in a SAM file is aligned to the reference genome. This leads to the 11 mandatory fields: 1) QNAME 2) FLAG 3) RNAME 4) POS 5)  
-| QNAME | Query NAME of the read/read pair                  |
-| FLAG  | Bitwise FLAG                                      |
-| RNAME | Reference sequence NAME                           |
-| POS   | 1-Based leftmost POSition of clipped alignment    |
-| NAPQ  | MAPping Quality (Phred-scaled)                    |
-| CIGAR | Extended CIGAR string                             |
-| MRNM  | Mate Reference NaMe (= if same as RNAME           |
-| MPOS  | 1-Based leftmost Mate POSition                    |
-| ISIZE | Inferred Insert SIZE                              |
-| SEQ   | Query SEQuence on the same strand as the referenc |
-| QUAL  | Query QUALity                                     |  
+> SAM is a generic format for storing large nucelotide sequence alignments. It is flexible, simple (human readable) and compact. Many NGS and analysis tools work with SAM. The sequence in a SAM file is aligned to the reference genome. This leads to the 11 mandatory fields:  
+1)  QNAME | Query NAME of the read/read pair  
+2)  FLAG  | Bitwise FLAG  
+3)  RNAME | Reference sequence NAME  
+4)  POS   | 1-Based leftmost POSition of clipped alignment  
+5)  NAPQ  | MAPping Quality (Phred-scaled)  
+6)  CIGAR | Extended CIGAR string  
+7)  MRNM  | Mate Reference NaMe (= if same as RNAME)  
+8)  MPOS  | 1-Based leftmost Mate POSition  
+9)  ISIZE | Inferred Insert SIZE  
+10) SEQ   | Query SEQuence on the same strand as the referenc  
+11) QUAL  | Query QUALity  
 * BAM (**B**inary **A**lignment **M**ap)
 > BAM files are binary representation of the SAM format i.e. a compact and indexable representation of nucleotide sequence alignments but no longer human readable. BAM contains the same information as the SAM file. Many NGS and analysis tools work with BAM.   
 * CRAM
 > CRAM files are similar to BAM files but give a compressed repesentation of the alignment. This compression is driven by the reference the sequence data is aligned to. This file format was designed to reduce the disk foot print of alignment data. CRAM files are smaller than BAM files by taking advantage of an additional external "refernce sequence* file. This reference file is needed to compress and decompress the read information. 
 * VCF (**V**ariant **C**all **F**ormat)
-> VCF is a flexible and extendable file format and the standard for human genomic variant storage/representation. The format has a tab delimiter.  It can store the results of a single or multiple interpretations of genome sequencing datasets. The variations are always in comparison to a reference genome. The information is shown in eight columns:   
-| CHROM | chromosome                  |
-| POS  | 1-based start of variant                                      |
-| ID | unique identifier of vaiant                           |
-| REF   | reference allele    |
-| ALT  | , separated list of alternate non-reference alleles  |
-| QUAL | phred-scaled quality score                             |
-| FILTER  | site filztering information           |
-| INFO  | ; separated list of additional annotation                    |  
+> VCF is a flexible and extendable file format and the standard for human genomic variant storage/representation. The format has a tab delimiter.  It can store the results of a single or multiple interpretations of genome sequencing datasets. The variations are always in comparison to a reference genome. The information is shown in eight columns:  
+1) CHROM | chromosome  
+2) POS  | 1-based start of variant  
+3) ID | unique identifier of vaiant  
+4) REF   | reference allele  
+5) ALT  | , separated list of alternate non-reference alleles  
+6) QUAL | phred-scaled quality score  
+7) FILTER  | site filztering information  
+8) INFO  | ; separated list of additional annotation  
 * FASTA
 > FASTA is a text format for linear annotation of single-letter nucleotides or amino acid codes. The format is readable and not optimized for size. FASTA starts always with a definition line. After '>' follows the identifier of the sequence (mostly with a unique SeqID) and a (optimal) description. There should be no space between '>' and the forst letter of identifier. The nucleotides are either on one line or in a column of 80nt. The reference genome is stored in a FASTA file.  
 The FASTQ is a FASTA file inculsive quality data. A FASTQ file contains 4 lines (@ + SeqID, sequence, '+', quality score). 
