@@ -1,7 +1,6 @@
 # Report 
 
 **Why do we use the terminal in bioinformatics?**
-- 
 
 
 **What is a plain text file?**
