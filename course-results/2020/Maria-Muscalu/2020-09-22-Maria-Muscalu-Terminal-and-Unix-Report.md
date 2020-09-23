@@ -2,11 +2,11 @@
 
 #### *1. Why do we use the terminal in bioinformatics?*
 
-The terminal can be used to look a data files. For example, with some commands new folders and files can be made, data from URL links can be saved as well as copied to new files. The terminal code can extract and save specific data parts, as needed. Amongst other things, the terminal can display the data, the number of lines and other specific information.
+The terminal can be used to look at and work with text files. For example, with some commands new folders and files can be made, data from URL links can be saved as well as copied to new files. The terminal code can extract and save specific parts of the data, as needed. Amongst other things, the terminal can display the data, the number of lines and other specific information. The terminal can also be used to change the format of a file.
 
 #### *2. What is a plain text file?*
 
-It is a document that can be used to write and display only text. These text files usually have a defined structure according to the format in which they come (e.g. SAM, FASTA, FASTQ, BED).
+It is a document that can be used to write and display only text. These text files usually have a defined structure according to their format (e.g. SAM, FASTA, FASTQ or BED).
 
 
 #### *3. In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?*
@@ -15,10 +15,15 @@ When working with genome sequences, usually a lot of data is generated which nee
 
 #### *4. How can we list files are in a directory? Please provide the command(s).*
 
-The command for this is 
+The are two options for this command depending on how much information is required about the files in a directory. 
 ```javascript
-l -ls
+ls 
 ```
+Will return the names of the files that are in a directory, while
+```javascript
+ls -l
+```
+shows a long listing format, with the access rights.
 
 #### *5. What | and > do in a terminal?*
 
