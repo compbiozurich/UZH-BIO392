@@ -61,3 +61,37 @@
 ---
 * How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.
 
+   $ awk ‘NR % 4 ==1 {a=substr($0,2);}  NR % 4 ==2  {print”>”a”\n”$0}’  file.fasta
+   
+   Takes the first line with the identifier and the second line with the sequence, and replaces "@" with ">"
+   
+   
+---
+* Which are the advantages of BED/coordinate files as compared to storing just sequences?
+
+
+
+---
+* Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
+
+
+
+
+---
+* We'd like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify).
+
+We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
+
+    Can we store this in SAM file? Why / why not?
+
+    Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
+
+    And in BED6? How? Are we losing any information?
+
+    And in BED12? How? Are we losing any information?
+
+    And in the most compact Wiggle as possible? How? Are we losing any information?
+
+   
+   
+   
