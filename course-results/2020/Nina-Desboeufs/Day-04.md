@@ -148,7 +148,7 @@ The Moving Picture Expert Group (MPEG-G) is a compressed text-based format. It c
 * which for full archival purposes? 
 > SAM or one of the compressed format (BAM or CHRAM) ? If it's just the sequence, then FASTA. 
 * for browser visualisation?
-> VCF, since various tools are available. 
+> VCF, since various tools are available and Browser Extensible Data (BED) format. 
 
 
 
