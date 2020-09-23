@@ -13,17 +13,19 @@ It contains 4 lines per read sequence:
 `wc file.fq | awk '{print $1 / 4}'`
 * To retrieve each 1st/2nd/3rd/4th line of the read sequence (i.e. the sequence): 
 `awk 'NR%4==1' file.sq` (NR: current line number; % modulo) (==2 / ==3/ ==0)
-* Convert FastQ to Fast (and save): 
+* To convert FastQ to Fast (and save): 
 `awk 'NR % 4 == 1 {print ">"$1}; 
      NR % 4 == 2 {print}' SP1.fq \
      | > example.fa`
+* To count the number of reads:
+`awk 'END{print NR/4}' file.fq`
      
 ## BED Format 
 "BED (Browser Extensible Data) format provides a flexible way to define the data lines that are displayed in an annotation track". BED files consist at least of three fields: 
 * **chrom**: the chromosome's name
 * **chromStart**: the starting position 
 * **chromEnd**: the ending position 
->and nine additional optional fields (name, score, strand, thickStart, thickEnd, itemRgb, blockCount, blockSizes, blockStarts)
+> and nine additional optional fields (name, score, strand, thickStart, thickEnd, itemRgb, blockCount, blockSizes, blockStarts)
 
      
 ## Swiss-Prot flatfile 
@@ -88,5 +90,5 @@ Protein entries. Each line starts with a two character line code such as ID for 
 > `awk 'NR % 4 == 1 {print ">"$1}; 
      NR % 4 == 2 {print}' SP1.fq 
      | > example.fa` \
-Extract from the example.fa file, the 1st line (using the modulo 4 out of the number of current lines and print it with ">" (ID) for all lines ending up with 1. Similar for the 2nd line (seuqence), but just print it. 
+Extract from the example.fa file, the 1st line (using the modulo 4 out of the number of current lines and print it with ">" (ID) with the value of line. Similar for the 2nd line (seuqence), but just print it. 
      
