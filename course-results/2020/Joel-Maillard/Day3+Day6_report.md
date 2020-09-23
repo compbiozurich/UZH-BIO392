@@ -33,11 +33,19 @@
 
 * How can we print every third line of a text file? Please provide the command(s), and discuss what they do.
 
+-->`awk 'NR%3==0' file.txt ==> it prints the line only if (NR)/3 == 0
+
 * How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.
+
+--> `awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' SP1.fq` ==> adds a ">" to the first line (sequence identifier) of each group of 4 and also prints the second line (genomic code) of all groups. (the other lines are ignored)
 
 * Which are the advantages of BED/coordinate files as compared to storing just sequences?
 
+--> The files are much smaller like this
+
 * Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
+
+--> I
 
 * Can we store this in SAM file? Why / why not?
 
