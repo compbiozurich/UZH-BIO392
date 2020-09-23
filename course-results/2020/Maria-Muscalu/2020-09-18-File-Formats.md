@@ -67,14 +67,14 @@ The VRS format currently has the JSON-based schema [[9]] and the file is used to
 
 #### 5. 0 or 1-based and "interbase" genomic coordinate systems
 
-The interbase and 0-based coordinates refer to nucleotides or variant positions using the space between two bases on a genomic sequence, as opposed to the 1-based, which uses as coordinates the number of the actual nucleotides [[12]]-[[13]]. On the one hand, the 0-based coordinates can specify a region with a half-closed-half-open interval [[14]]. For example, to describe the part between the second and sixth nucleotide, the interval [1, 6) is appropriate [[14]]. On the other hand, the 1-based coordinates can refer to a part of a sequence using a closed interval and for the example above, this would mean the [2, 6] interval [[14]].  
+The interbase and 0-based coordinates start to count the genomic sequence from 0, while the 1-based counts the nucleotides starting with 1 [[12]]-[[13]]. The 0-based coordinates can specify a region with a half-closed-half-open interval [[14]]. For example, to describe the part from the second to the sixth nucleotide, the interval [1, 6) is appropriate [[14]]. On the other hand, the 1-based coordinates can refer to a part of a sequence using a closed interval and for the example above, this would mean the [2, 6] interval [[14]].  
 
 [12]: https://genviz.org/module-01-intro/0001/02/01/Review_of_Central_Concepts/
 [13]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383450/#:~:text=The%20so%2Dcalled%20%E2%80%9Cbase%E2%80%9D,nucleotide%20positions%20in%20the%20genome.
 
 #### 6. Other genomic file formats and their use cases
 
-The SAM (Sequence Alignment/Map) file format is separated into two sections: one for the header and a second one for the alignment [[14]]. One of the differences between the two sections is that the header lines start with the *@* symbol [[14]]. The information from the alignment section is separated into 11 mandatory columns [[14]]. Each alignment line indicates the linear alignment of a segment [[14]]. The BAM (Binary Alignment/Map) file is the binary format of SAM [[15]], and because of this it needs less storage space, but it is not as easy to read as SAM [[18]]. The CRAM and BAM files are both alignment files but the CRAM format is more compressed as opposed to the BAM format (due to the reference that is used to store the data) [[15]].
+The SAM (Sequence Alignment/Map) file format is separated into two sections: one for the header and a second one for the alignment [[14]]. One of the differences between the two sections is that the header lines start with the *@* symbol [[14]]. The information from the alignment section is separated into 11 mandatory columns [[14]]. Each alignment line indicates the linear alignment of a segment [[14]]. The BAM (Binary Alignment/Map) file is the binary format of SAM [[15]], and because of this it needs less storage space, but it is not as easy to read as SAM [[18]]. BAM is compressed using the BGZF library [[24]]. The CRAM and BAM files are both alignment files but the CRAM format is more compressed as opposed to the BAM format (due to the reference that is used to store the data) [[15]].
 
 FASTA files are used for storing nucleotide or peptide sequences [[16]]. The file has a .txt format and its content can be separated into two parts: a single information line (which begins with the symbol ">") and the sequence [[16]]. This format is also easy to read and work with. 
 
@@ -129,3 +129,5 @@ Over the last years, the cost for the whole genome sequencing has dropped faster
 #### Raw Storage costs
 
 In 2011 the alignment of the whole genome sequencing cost about 40$ for a 300 GB BAM file format. This price consisted of the transfer, storing of the raw data and mapping [[23]]. For 1000 genomes this price will rise to 1334$.
+
+[24]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2723002/
