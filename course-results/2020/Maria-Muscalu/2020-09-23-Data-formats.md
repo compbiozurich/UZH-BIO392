@@ -9,6 +9,6 @@ The General Feature Format (GFF) has one line per feature, and the information i
 ### 3. [Wiggle Track Format (WIG)]( https://genome.ucsc.edu/goldenpath/help/wiggle.html)
 This is the recommended format for the graphing track. The first line of the Wiggle format is a track definition line. The files are composed of declaration and data lines. The data can be formatted in two ways: variableStep and fixedStep.
 
-variableStep format is used for irregular intervals between two data points. The first two lines  give the track definition and the declaration. The following data is separated in 2 columns and informs about the chromosome position and data values.
+**variableStep format** is used for irregular intervals between two data points. The first two lines  give the track definition and the declaration. The following data is separated in 2 columns and informs about the chromosome position and data values.
 
-fixedStep format contains data with regular intervals between new data. The format of the first two lines is the same as for the variableStep. The rest of the data is arranged in one column, which indicates the data values.
+**fixedStep format** contains data with regular intervals between new data. The format of the first two lines is the same as for the variableStep. The rest of the data is arranged in one column, which indicates the data values.
