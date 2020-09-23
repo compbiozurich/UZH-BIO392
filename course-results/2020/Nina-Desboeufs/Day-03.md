@@ -14,9 +14,11 @@ It contains 4 lines per read sequence:
 * To retrieve each 1st/2nd/3rd/4th line of the read sequence (i.e. the sequence): 
 `awk 'NR%4==1' file.sq` (NR: current line number; % modulo) (==2 / ==3/ ==0)
 * To convert FastQ to Fast (and save): 
-`awk 'NR % 4 == 1 {print ">"$1}; 
+```
+awk 'NR % 4 == 1 {print ">"$1}; 
      NR % 4 == 2 {print}' SP1.fq \
-     | > example.fa`
+     | > example.fa
+```
 * To count the number of reads:
 `awk 'END{print NR/4}' file.fq`
      
@@ -27,6 +29,47 @@ It contains 4 lines per read sequence:
 * **chromEnd**: the ending position 
 > and nine additional optional fields (name, score, strand, thickStart, thickEnd, itemRgb, blockCount, blockSizes, blockStarts)
 
+**Useful command lines**: 
+* To transform a BED6 to BED3 file (extract the first three columns): \
+`awk -v OFS='\t' '{print $1, $2, $3}' file.bed`
+* to add a nucleotide to the start and substract a nucleotide to the end: \
+`awk -v OFS='\t' '{print $1,$2-1,$3-1,$4,$5,$6}' file.bed`
+* to intersect two BED files (check for overlapping): \
+```
+alias bedtools='~/course/soft/bedtools2/bin/bedtools'
+bedtools intersect \
+  -file1  ~/path/to/the/directory/file1.bed \
+  -file2  ~/path/to/the/directory/file2.bed  
+```
+* to report intervals from a BED file 1 that do not overlap any of the intervals in BED file 2: \
+```
+bedtools intersect \
+  -v \
+  -file1  ~/path/to/the/directory/file1.bed \
+  -file2  ~/path/to/the/directory/file2.bed  
+```
+* to flag the amounts of overlap for all features when comparing two BED files: \
+```
+bedtools intersect \
+  -wao \
+  -file1  ~/path/to/the/directory/file1.bed \
+  -file2  ~/path/to/the/directory/file2.bed  
+```
+  
+  ## GTF file
+  
+  **Useful command lines**: 
+  * to retrieve the details of a specific transcripts (e.g. `ENST00000342247`) from a GTF file: \
+ ` grep ENST00000342247 file.gtf | grep "exon\s" ` \
+ and the number of exons: \
+ ` grep ENST00000342247 file.gtf | grep "exon\s" | wc -l `
+ * to determine the number of start / stop codon the chromosome have : \
+ ` grep start_codon file.gtf | wc -l ` replace by stop_codon
+ 
+  
+  
+
+  
      
 ## Swiss-Prot flatfile 
 Protein entries. Each line starts with a two character line code such as ID for the first, followed by "w\". The entry is ended by "\\". 
@@ -57,6 +100,7 @@ Protein entries. Each line starts with a two character line code such as ID for 
 | diff | compares two files and retrieve the difference |
 | grep | searches file(s) for words or patterns and displays the result lines | 
 | uniq | report one line if several identical and adjacent lines are found | 
+| gunzip | uncompress .gz files | 
 
 
 **Pipe "|"** allows us to pass from the output from one program **directly** to the input of another program.
