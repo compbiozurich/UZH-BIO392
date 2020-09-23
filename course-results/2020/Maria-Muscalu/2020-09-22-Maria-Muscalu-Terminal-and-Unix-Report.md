@@ -29,8 +29,10 @@ shows a long listing format, with the access rights.
 
 The **|** symbol is called a “pipe” and it can be written in between commands in order to pass the output from one command to the other without having to save the extracted data I between or creating new files.
 For example:
+```javascript
 awk 'NR % 2 == 0' ~/course/data/example.bed | wc -l
-This example indicates how to use the **|** symbol to pass the data from the first command to the second one. First of all, every second line is extracted from these example.bed file and then the number of lines are counted.
+```
+This example indicates how to use the **|** symbol to pass the data from the first command to the second one. First of all, every second line is extracted from these example.bed file and then the number of lines is counted.
 
 The **>** symbol is used when the data is saved for example from an URL and into a text file. 
 For example:
