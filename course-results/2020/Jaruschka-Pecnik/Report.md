@@ -1,7 +1,7 @@
 # Report 
 
 **Why do we use the terminal in bioinformatics?**
-- to write the commands in it, which executes them
+- 
 
 
 **What is a plain text file?**
@@ -42,12 +42,18 @@ A plain text file is a loose term file for data including only characters of rea
 
 
 **Which are the advantages of BED/coordinate files as compared to storing just sequences?**
-- 
+- simpler data representation, which is smaller and easier to handle
+- usually BED files are the next step after getting the SAM files, where for instance BED files get generated with genomic coverages after mapping a new genome-wide sequencing
+
 
 **Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?**
-- 
+
+
 
 **We’d like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify). We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we’d like to include the start nucleotide too) in position 1000 of chr2. We don’t have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.**
+- concerning th encode counting:
+	- I would use the 0-start, hybrid-interval/ half-open (interval type is: start-included, end-excluded), because it is more human readable and the UCSC Genome Browser uses it as well
+
 
 - **Can we store this in SAM file? Why / why not?**
 	- no, a SAM file is for reads
