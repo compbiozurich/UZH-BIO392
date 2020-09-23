@@ -63,15 +63,27 @@ This command will print every line for which the condition NR % 3 == 0 is true. 
 #### *9. How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.*
 
 The FASTQ file format has four lines to describe one sequence, while the FASTA format has only two. 
-The first line in a FASTQ file format is the sequence identifier (which begins with the @ symbol), the second one indicates the sequence, followed by a separator (which is a line that only has the + symbol) and the quality scores are shown in the fourth line [[1]]. The convertion of a FASTQ file to a FASTA format requires the extraction of the sequence identifier and the nucleotide sequence, which are the first two lines.
+
+The FASTQ file format [[1]]:
+  1. Is the sequence identifier, which begins with the **@** symbol
+  2. The sequence
+  3. A separator (which is a line that only has the **+** symbol)
+  4. The quality scores 
+
+The FASTA file format [[2]]: 
+  1. The description line, which starts with the **>** symbol
+  2. The sequence 
+
+The convertion of a FASTQ file to a FASTA format requires the extraction of the sequence identifier and the nucleotide sequence, which are the first two lines.
 
 ```javascript
 awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' example.fq
 ```
  * **NR % 4 == 1** will print only the lines, for which the line number (NR) divided by 4 has 1 as remainder. The **%** symbol means modulo.
- * **{print ">"$1}** will print the **>** symbol in front of the first column from the line that is indicated by the command **NR % 4 == 1**. This will print the **>** symbol in front of the sequence identifier, as it is required by the FASTA file format. 
+ * **{print ">"$1}** will output the **>** symbol in front of the first column of the line indicated by the **NR % 4 == 1** command. This will print the **>** symbol in front of the sequence identifier, as it is required by the FASTA file format. 
  * **NR % 4 == 2 {print}** will print only the lines, for which the line number (NR) divided by 4 has 2 as remainder. The command **{print}** will output every line for which the previous command is true.
- * “;” symbol stands for “or”, which means that the command is executed if the first part ('NR % 4 == 1 {print ">"$1}) **or** the second part (NR % 4 ==2) is true. In these case, both lines are printed. 
+ * “;” symbol stands for “or”, which means that the command is executed if the first part ('NR % 4 == 1 {print ">"$1}) **or** the second part (NR % 4 ==2) is true. In this case, both lines are printed. 
 
 
 [1]: https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html
+[2]: https://zhanglab.ccmb.med.umich.edu/FASTA/
