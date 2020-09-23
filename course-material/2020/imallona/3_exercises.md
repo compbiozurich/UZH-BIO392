@@ -1275,9 +1275,11 @@ chr1	70	80	.	0	.
 
 ## Exercise 18
 
-Add a nucleotide to the start and subtract a nucleotide to the end to all records, regardless of the strand, to the file `~/course/soft/bedtools2/test/intersect/a.bed`.
+Add a nucleotide to the start and to the end to all records, regardless of the strand, to the file `~/course/soft/bedtools2/test/intersect/a.bed`.
 
 Tip: use `awk` and use the standard operators `+` or `-` to add/subtract values to each record.
+
+Tip: add means adding a nucleotide, that might be substracting a value to the 5' (start) nucleotide.
 
 <details><summary>
 Answer
