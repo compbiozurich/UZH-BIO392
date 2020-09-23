@@ -68,7 +68,7 @@ What we want next is the second line (actual sequence). This line is identical i
 |:---|:---|:---|:---|
 |FASTA| >VIT_201s0011g0352530\n AAAAAAAAAATTTTTTTTTGGGGGGGGCCCCCCCCC|BED3| chr7    127471196  127472363\n chr7    127472363  127473530|
 
-The advantage of BAM files is that they refere to a reference genome, they do not list the whole sequence. Therefore the storage they need is much smaller compared to sequence storing files. 
+The advantage of BED files is that they refere to a reference genome, they do not list the whole sequence. Therefore the storage they need is much smaller compared to sequence storing files. Additionally you don't look at the entire genome, you can just look up the sequence you are interested in given by the coordinates of BED.
 
 ### Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
 - not finished
