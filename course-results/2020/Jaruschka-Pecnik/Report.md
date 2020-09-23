@@ -1,7 +1,6 @@
 # Report 
 
 **Why do we use the terminal in bioinformatics?**
-- to write the commands in it, which executes them
 
 **What is a plain text file?**
 A plain text file is a loose term file for data including only characters of readable material. It differs from formatted text and binary files. [Source](https://en.wikipedia.org/wiki/Plain_text)
@@ -32,44 +31,51 @@ A plain text file is a loose term file for data including only characters of rea
 - whole command: tr " " "\\n" < /mnt/test/test.txt | head -1
 
 **How can we print every third line of a text file? Please provide the command(s), and discuss what they do.**
-- command: awk 'NR%3==1' ~ (directory of text file)
+- command: awk 'NR%3==0' ~ (directory of text file)
 - NR is equal to the current line number
-- modulo operator % returns the number and with == it looks that divided by 3 is equal 1 (for the third line)
+- the NR number is divided by 3 and the modulo operator of 3 should be equal 0, since there should not be any left overs (for the third line)
+
 
 **How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.**
 - commands: awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' file.fq
 
 
 **Which are the advantages of BED/coordinate files as compared to storing just sequences?**
-- 
+- simpler data representation, which is smaller and easier to handle
+- usually BED files are the next step after getting the SAM files, where for instance BED files get generated with genomic coverages after mapping a new genome-wide sequencing
+
 
 **Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?**
 - 
 
+
 **We’d like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify). We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we’d like to include the start nucleotide too) in position 1000 of chr2. We don’t have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.**
+- concerning th encode counting:
+	- I would use the 0-start, hybrid-interval/ half-open (interval type is: start-included, end-excluded), because it is more human readable and the UCSC Genome Browser uses it as well
+
 
 - **Can we store this in SAM file? Why / why not?**
-	- 
+	- no, a SAM file is for sequences
 
 - **Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?**
-	- 
+	- yes, because in BED3 are the information for chromosome (scaffold), start and end
+	- file:
+		- chr2		1000		1999
+		- chr2		2000		2999
+		- chr2		3000		3999
+
 
 - **And in BED6? How? Are we losing any information?**
-	- 
+	- no, because additionaly to BED3 BED6 has information about name, score and strand
+		- chr2		1000		1999		A		0		+
+		- chr2		2000		2999		B		0		+
+		- chr2		3000		3999		C		1000	+
 
 - **And in BED12? How? Are we losing any information?**
-	- 
+	- no there won't be any information lost, because we don't have more information
+	- the file would look like the one from BED6, but the addiditional column that come with that format would be empty
 
 - **And in the most compact Wiggle as possible? How? Are we losing any information?**
-	- 
-
-
-
-
-
-
-
-
 
 
 
