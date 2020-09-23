@@ -91,4 +91,22 @@ Protein entries. Each line starts with a two character line code such as ID for 
      NR % 4 == 2 {print}' SP1.fq 
      | > example.fa` \
 Extract from the example.fa file, the 1st line (using the modulo 4 out of the number of current lines and print it with ">" (ID) with the value of line. Similar for the 2nd line (seuqence), but just print it. 
+
+Which are the advantages of BED/coordinate files as compared to storing just sequences?
+
+Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
+
+We'd like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify).
+
+We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
+
+Can we store this in SAM file? Why / why not?
+
+Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
+
+And in BED6? How? Are we losing any information?
+
+And in BED12? How? Are we losing any information?
+
+And in the most compact Wiggle as possible? How? Are we losing any information?
      
