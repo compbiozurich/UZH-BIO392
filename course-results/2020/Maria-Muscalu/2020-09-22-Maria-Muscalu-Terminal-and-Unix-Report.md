@@ -77,7 +77,7 @@ The FASTA file format [[2]]:
 The convertion of a FASTQ file to a FASTA format requires the extraction of the sequence identifier and the nucleotide sequence, which are the first two lines.
 
 ```javascript
-awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' example.fq
+awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' ~/course/data/example.fq
 ```
  * **NR % 4 == 1** will print only the lines, for which the line number (NR) divided by 4 has 1 as remainder. The **%** symbol means modulo.
  * **{print ">"$1}** will output the **>** symbol in front of the first column of the line indicated by the **NR % 4 == 1** command. This will print the **>** symbol in front of the sequence identifier, as it is required by the FASTA file format. 
