@@ -2,7 +2,7 @@
 
 #### *1. Why do we use the terminal in bioinformatics?*
 
-The terminal can be used to look at and work with text files. For example, with some commands new folders and files can be made, data from URL links can be saved as well as copied to new files. The terminal code can extract and save specific parts of the data, as needed. Amongst other things, the terminal can display the data, the number of lines and other specific information. The terminal can also be used to change the format of a file.
+The terminal can be used to look at and work with text files. For example, with some commands new folders and files can be made, data from URL links can be saved as well as copied to new files. The terminal code can extract and save specific parts of the data, as needed. Amongst other things, the terminal can display the entire data from a text file or only specific things like the number of lines and other information. The terminal can also be used to change the format of a file.
 
 #### *2. What is a plain text file?*
 
@@ -15,26 +15,26 @@ When working with genome sequences, usually a lot of data is generated which nee
 
 #### *4. How can we list files are in a directory? Please provide the command(s).*
 
-The are two options for this command depending on how much information is required about the files in a directory. 
 ```javascript
+cd ~/course/data
 ls 
 ```
-Will return the names of the files that are in a directory, while
+This command will return all the names of the files that are in the folder data, while
 ```javascript
 ls -l
 ```
-shows a long listing format, with the access rights.
+shows the long listing format of the files in data, with the access rights.
 
 #### *5. What | and > do in a terminal?*
 
-The **|** symbol is called a “pipe” and it can be written in between commands in order to pass the output from one command to the other without having to save the extracted data I between or creating new files.
-For example:
+The **|** symbol is called a “pipe” and it can be written in between commands in order to pass the output from one command to the other without having to save the extracted data in between or creating new files.
+
 ```javascript
 awk 'NR % 2 == 0' ~/course/data/example.bed | wc -l
 ```
-This example indicates how to use the **|** symbol to pass the data from the first command to the second one. First of all, every second line is extracted from these example.bed file and then the number of lines is counted.
+The example indicates how to use the **|** symbol to pass the data from the first command to the second one. First of all, every second line is extracted from the example.bed file and then the number of lines is counted.
 
-The **>** symbol is used when the data is saved for example from an URL and into a text file. 
+The **>** symbol is used when the data is saved from a text file to another one or from an URL link into a text file. 
 For example:
 ```javascript
 curl -L https://raw.githubusercontent.com/compbiozurich/UZH-BIO392/imallona/course-material/2020/imallona/examples/SP1.fq  
@@ -58,7 +58,7 @@ awk '{print $1}' ~/mnt/test/test.txt
 ```javascript
 awk 'NR % 3 == 0' ~/ mnt/test/test.txt 
 ```
-This command will print every line for which the condition NR % 3 == 0 is true. For this condition the NR is the number of the current line and if this number is divided by 3 and there is no remainder then the line is printed.
+This command will print every line for which the condition NR % 3 == 0 is true. The first part of the command (NR % 3) calculates the remainder of the NR and 3 division. If the remainder is equal to 0, then the second part of the command (== 0) is true and the line from the text file is printed. 
 
 #### *9. How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.*
 
