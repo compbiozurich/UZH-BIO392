@@ -34,5 +34,5 @@ which can be detected during their release from the growing DNA strand.
 > The DNA strand gets threaded though a nanopore and nucleatide additions occurs in the nanopora and can be detected.
 
 
-#### Intensity based vs cound based princile
+#### Intensity based vs count based princile
 ????
