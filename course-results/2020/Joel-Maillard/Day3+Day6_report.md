@@ -10,11 +10,12 @@
 --> It's a file that only contains text. Unlike a rich-text document, a plain text file cannot have bold text, fonts, larger font sizes, or any other special text formatting.
 
 * In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?
+
 --> Because "DNA-data" is huge and plain text is a very accessible way of storing data.
 
 * How can we list files are in a directory? Please provide the command(s).
-$ ' ls ' # list files in a given path
-$ ' ls -l ' # lists files and their attributes
+$ `ls` # list files in a given path
+$ `ls -l` # lists files and their attributes
 
 * What | and > do in a terminal?
 
