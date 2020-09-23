@@ -39,16 +39,37 @@ fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF a
     - The files are potentially significantly smaller, since not all of the sequence must be saved, only coordinates on the reference.
 
 - Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
-    - # to do
+    - I'm not quite sure I understand this question correctly but:  
+    Sources of error that accumulate are in sequencing, alignment and, if applicaple, QC of the reference genome.
 
 - We'd like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify).  
 We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
-
+    - First of all: I will use 1 counting / half open. Since the question doesn't specify, I'll assume that "The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2" is using 1 counting as well.
+    
     - Can we store this in SAM file? Why / why not?
+        - No, we would need a sequence read at the least for that.
 
     - Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
+        - We would be unable to save the information on scores with BED3, but it is possible:  
+        chr2 1000 1999  
+        chr2 2000 2999  
+        chr2 3000 3999
 
     - And in BED6? How? Are we losing any information?
+        - Perfectly possible, and ideal for this data without loss of information.  
+        chr2 1000 1999 A 0 +  
+        chr2 2000 2999 B 0 +  
+        chr2 3000 3999 C 1000 +
 
     - And in BED12? How? Are we losing any information?
+        -  Possible, and no info lost, though the last 6 columns will contain no information in this example.
+        chr2 1000 1999 A 0 + . . . . . .  
+        chr2 2000 2999 B 0 + . . . . . .  
+        chr2 3000 3999 C 1000 + . . . . . .
+    
     - And in the most compact Wiggle as possible? How? Are we losing any information?
+        - Yes it's possible. The only thing we miss out on is the names of the strands.
+        fixedStep chrom=chr2 start=1000 step=1000 span=1000 (not sure about the span part.. is it needed? is 1000 correct?)  
+        0  
+        0  
+        1000
