@@ -35,10 +35,12 @@
 	- whole command: tr " " "\\n" < /mnt/test/test.txt | head -1
 
 **How can we print every third line of a text file? Please provide the command(s), and discuss what they do.**
-	- 
+	- command: awk 'NR%3==1' ~ (directory of text file)
+	- NR is equal to the current line number
+	- modulo operator % returns the number and with == it looks that divided by 3 is equal 1 (for the third line)
 
 **How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.**
-	- 
+	- commands: awk 'NR'
 
 
 
