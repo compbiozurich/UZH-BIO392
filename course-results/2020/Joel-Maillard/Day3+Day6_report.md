@@ -14,12 +14,18 @@
 --> Because "DNA-data" is huge and plain text is a very accessible way of storing data.
 
 * How can we list files are in a directory? Please provide the command(s).
-$ `ls` # list files in a given path
-$ `ls -l` # lists files and their attributes
+
+--> $ `ls` # list files in a given path
+--> $ `ls -l` # lists files and their attributes
 
 * What | and > do in a terminal?
 
+--> |:Run command A and then pass the result to command B (joins commands together)
+--> >: Push output to file, keep in mind it will get overwritten
+
 * How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).
+
+--> `tail /mnt/test/test.txt
 
 * How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).
 
