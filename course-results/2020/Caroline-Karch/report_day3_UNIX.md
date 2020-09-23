@@ -1,4 +1,4 @@
-# Report UNIX
+# Report UNIX 
 ## Why do we use the terminal in bioinformatics?
 
 Before the Graphical User Interface (GUI) was developed, there only was the Command Line Interface (CLI). CLI is exclusively used with text commands. In bioinformatics you interact with programs by typing things in the command line, generally through a terminal. The terminal is a text-based interface to your computer. 
@@ -20,33 +20,27 @@ The first step is to go into the directory you are interested in: `cd /C/Users/C
 The next step is then to list the entries in this directory by simply typing the command `ls`. `ls -l` provides us the list with some more informations, such as access rights (user, group and others), time etc.
 
 ## What | and > do in a terminal?
- - "|" in the terminal e.g. XXX | YYY: | is called "pipe" in UNIX. It symbolizes that the output from the first (XXX) will be the new input for the next (YYY), whereby no intermediate or temporary files (intermediates) are created. 
- - ">" in terminal: `>` the greater than sign is used to create a new file. Example: `old.txt > new.txt`. Pay attention by doing this, since this can overwrite a file if you name it the same way. Two >> will append the output at the end of an existing file. Example: `old1.txt old2.txt >> new.txt`.
+ - | in the terminal e.g. XXX | YYY: | is called "pipe" in UNIX. It symbolizes that the output from the first (XXX) will be the new input for the next (YYY), whereby no intermediate or temporary files (intermediates) are created. 
+ - > in terminal: `>` the greater than sign is used to create a new file. Example: `old.txt > new.txt`. Pay attention by doing this, since this can overwrite a file if you name it the same way. Two >> will appends the output at the end of an existing file. Example: `old1.txt old2.txt >> new.txt`.
 
 ## How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).
 
-`tail /mnt/test/test.txt`
-
+`tail mnt/test/test.txt`
 The tail and head command allways provide the last and respectively the first ten lines of a file.
-Another option is to first go into the directory of interest: `cd /mnt/test` and after this directly typing `tail test.txt`
+Another option is to first go into the directory of interest: `cd mnt/test` and after this directly typing `tail test.txt`
 
 ## How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).
-First we again go in the directory we want: `cd /mnt/test`
-I first tried a way that maybe is a bit complicated, since we have to create a new file first and our file should only contain one tab per line... but I show it anyway: `tr ' ' '\n' < test.txt > testnew.txt`
-After this, each space is removed and we have only one column. 
-Since I said above this file should only contain two columns, we now can do following command to extract only first line characters: `awk 'NR%2 == 1' testnew.txt`.
+First we again go into the directory we have our file into: `cd mnt/test`
 
-For another way I have to do some more searching...
+The awk command looks at the file line by line. By typing `awk '{print $1}' test.txt` we  get the first column only. (or direct `awk '{print $1}' mnt/test/test.txt`
 
-So, what I found out is that awk extracts the line we are looking for by typing:`awk '{print $1}' test.txt`
-
-before doing so, one should go to the directory of interest: `cd /mnt/test`
 
 ## How can we print every third line of a text file? Please provide the command(s), and discuss what they do.
-first go to directory where your file of interest is: `cd /mnt/test`
+first go to directory where your file of interest is: `cd mnt/test`
 
 second type: `awk 'NR % 3 == 0' test.txt`
-The `awk` is able to scan a file line by line. By only typing `awk {print} test.txt` each line would be printed, one by one. Here we want only every third line printed, that is why we specifiy Numbers: with the modulos operator (%) we only get these lines which are divisible by 3. In the end we just specify from which file we want every third line. 
+
+The `awk` is able to scan a file line by line. By only typing `awk {print} test.txt` each line would be printed, one by one. Here we want only every third line printed, that is why we we use NR (current line number). With the modulos operator (%) we only get these lines which are divisible by 3 with a remain of 0. In the end we just specify from which file we want every third line. (or direct `awk 'NR % 3 == 0' mnt/test/test.txt`)
 
 
 ## How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.
@@ -54,17 +48,17 @@ The `awk` is able to scan a file line by line. By only typing `awk {print} test.
 ### FASTA and FASTQ
  - FASTA: header starts with '>', followed by the Sequence ID. The next lines contain the actual sequence.
  - FASTQ: contains additionally quality scores for each nucleotide. Format: A line (1) starting with '@' contains the sequence ID. Next line (2) contains the actual sequence. A new line starting with the character '+', and being either empty or repeating the sequence ID (3). Last we have one line containing the quality scores (4).
- - What do we need to transform FASTQ to FASTA?
+ 
+#### What do we need to transform FASTQ to FASTA?
 
-We need the header which starts with '@' in FASTQ and should start with '>' in FASTA (first line). 
-Second we need the actual sequence (second line).
+We need the header which starts with '>' in FASTA (first line of FASTQ). Second we need the actual sequence (second line of FASTQ).
 
-By using the `sed` command we are able to replace, insert or delete in a file. The first to commands are maybe not the most elegant way of solving this problem, but since I used it above, and know how this works I just did it with the modulus operator again.
+#### How do we get the lines we want? 
+With the `awk` command we look at our FASTAQ file line by line. We first specify `'NR % 4 == 1'` this means that we devide NR (line number) by 4, if the remain is 1 (modulus operator), then these statement is true. `{print ">"$1}`, this following command is used to say "what to do if the command was correct" so we want to print this line with the greater than sign in advance. 
+What we want next is the second line (actual sequence). This line is identical in FASTQ and FASTA. We again specify every second line by typing `NR % 4 == 2`. In the end we just tell for which file this should be done (FASTQ.fq). In the end we can (if we want) save the FASTA format with the > sign.
 
- - print lines 1, 5, 9, 13, etc.: `awk '(NR + 3) % 4 == 0' test.txt`
- - print lines 2, 6, 10, 14, etc.: `awk '(NR + 2) % 4 == 0' test.txt`
- - transfrom "@" to ">": `sed -i 's/@/>/g' test.txt`
+`awk 'NR % 4 == 1 {print ">"$1}; 
+     NR % 4 == 2 {print}' FASTQ.fq > FASTA.fa`
 
-Now those three commands should be combined somehow to create this new FASTA file...
 
-I don't know how to do so... I will try to solve this problem at another time point:).
+
