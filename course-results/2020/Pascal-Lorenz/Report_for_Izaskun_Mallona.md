@@ -34,3 +34,21 @@ fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF a
     - ``awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' SP1.fq`` takes the first line of each group of 4 (the sequence identifier), adds a `>` before
     it and keeps that, then also keeps the second line (the genomic code) and keeps that as is, and ignores the other lines. The lines are identified using
     modulo as explained before.
+
+- Which are the advantages of BED/coordinate files as compared to storing just sequences?
+    - The files are potentially significantly smaller, since not all of the sequence must be saved, only coordinates on the reference.
+
+- Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
+    - # to do
+
+- We'd like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify).  
+We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
+
+    - Can we store this in SAM file? Why / why not?
+
+    - Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
+
+    - And in BED6? How? Are we losing any information?
+
+    - And in BED12? How? Are we losing any information?
+    - And in the most compact Wiggle as possible? How? Are we losing any information?
