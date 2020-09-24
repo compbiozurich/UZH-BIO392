@@ -33,6 +33,8 @@ Structured **day by day**
 - General NGS technologies 
 - Count based vs intensity based as principle 
 
+## Day 06 - Questions for Imallona
+
 ## Day 07 
 - Genome Versions
 - UCSC genome browser
