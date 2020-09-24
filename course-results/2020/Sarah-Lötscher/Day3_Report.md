@@ -8,6 +8,7 @@
 ---
 * What is a plain text file?
 
+A plain text file is a file created with a text editor and often ends with a txt extention. It supports no formating. As a comparison file created by world is considered a rich text file since it supports formating. 
 
 
 ---
@@ -85,12 +86,16 @@ We have three genomic intervals. All intervals are 1000 nt long. They are contig
 
     * Can we store this in SAM file? Why / why not?
     
-      It wouldn’t really make sense to store the information in a SAM file since we don’t have the reads nor alignements.
+      It wouldn’t really make sense to store the information in a SAM file since we don’t have the reads nor alignements. 
     
 
     * Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
      
       We could store the Information in a BED3 ----- but we would lose information about the quality score and strand information.
+      
+      chr2 1000 
+      chr2
+      chr2
 
     * And in BED6? How? Are we losing any information?
     
@@ -102,6 +107,6 @@ We have three genomic intervals. All intervals are 1000 nt long. They are contig
       
     * And in the most compact Wiggle as possible? How? Are we losing any information?
 
-      
+      It should be possible 
    
    
