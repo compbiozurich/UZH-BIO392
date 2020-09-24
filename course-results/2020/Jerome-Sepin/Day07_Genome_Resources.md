@@ -1,4 +1,4 @@
-# Genome Browsers
+Genome Browsers
 ==================
 
 ### What is a genome browser?
