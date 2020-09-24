@@ -25,9 +25,9 @@ Ensembl aims to provide a centralized resource for geneticists, molecular biolog
 
 ### Tools (all online):
 * Variant Effect Predictor (VEP)
-Analyse your own variants and predict the functional consequences of known and unknown variants
+  Analyse your own variants and predict the functional consequences of known and unknown variants
 * BLAST/BLAT
-Search our genomes for your DNA or protein sequence.
+  Search our genomes for your DNA or protein sequence.
 * File Chameleon
 Convert Ensembl files for use with other analysis tools
 * Assembly Converter
@@ -43,3 +43,23 @@ Get a subset of data from a BAM or VCF file
 *	Post-GWAs
 Upload GWAS summary statistics and highlight likely causal gene candidates
 
+---
+## UniProt
+UniProt is a freely accessible database of protein sequence and functional information about the proteins.
+
+### Features:
+•	UniProtKB (Protein Knowledge Base)
+•	UniParc (Contains publicly available protein sequences → only uniqe sequences get stored)
+•	UniRef (Clusters sets of sequences → gives complete coverage)
+•	Proteomes (UniProt provides proteomes for species with completely sequenced genomes)
+•	Supporting data (Literature citations, Taxonomy, Subcellular locations, Cross-ref. Databases, Diseases, Keywords)
+
+### Tools (online):
+•	BLAST 
+Finds regions of local similarity between sequences, which can be used to infer functional and evolutionary relationships between sequences as well as help identify members of gene families
+•	Align
+Align two or more protein sequences to view their characteristics (identitiy, similarity etc.) alongside each other.
+•	Retrieve/ID mapping
+Convert identifiers which are of a different type to UniProt identifiers or vice versa and download the identifier lists. Can then also be downloaded in different formates.
+•	Peptide search
+Give a peptide sequence and the tool is searching to which species it belongs and what protein it is
