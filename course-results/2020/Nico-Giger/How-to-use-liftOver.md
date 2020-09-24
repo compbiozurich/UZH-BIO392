@@ -6,7 +6,7 @@
 
 ### generall liftOver code
 
-./liftOver /home/durzo/github/UZH-BIO392/course-results/2020/Nico-Giger/example-bed.bed hg38ToHg19.over.chain.gz unMapped
+./*pathlift*/liftOver old-bed-file-path chain-file-path new-file-path unMapped-file-path
 
 ## e.g.
 ### input
@@ -17,3 +17,5 @@
 Reading liftover chains
 
 Mapping coordinates
+
+
