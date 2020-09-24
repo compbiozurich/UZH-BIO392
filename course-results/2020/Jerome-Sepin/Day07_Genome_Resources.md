@@ -33,9 +33,9 @@ Ensembl aims to provide a centralized resource for geneticists, molecular biolog
 * File Chameleon
  
   Convert Ensembl files for use with other analysis tools
-*   Assembly Converter
+* Assembly Converter
     
-    Map (liftover) your data's coordinates to the current assembly
+  Map (liftover) your data's coordinates to the current assembly
 * ID History Converter
   
   Convert a set of Ensembl IDs from a previous release into their current equivalents
