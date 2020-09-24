@@ -32,7 +32,7 @@
 * The advantage of the BED files is that they need less storage compared to sequence storing files. The files refere to a reference genome. It do not list the hole genome, you just look up the sequence you are interestet in.
 
 ##### Which QC values are tracked during a normal bioinformatic NGS workflow? (from sequencing to variant calling)?
-* The Quality control (QC)-...............- 
+* The Quality control (QC) of the sample, the library, the sequencing, the sequence analysis viewer and the sequencing reads.
 
 ### We’d like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify).
 
