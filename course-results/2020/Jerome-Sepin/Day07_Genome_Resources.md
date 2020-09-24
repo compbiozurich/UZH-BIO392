@@ -45,7 +45,7 @@ Ensembl aims to provide a centralized resource for geneticists, molecular biolog
 * VCF to PED converter
   
   Parse a vcf file to create a linkage pedigree file (ped) and a marker information file, which together may be loaded into ld visualization tools like Haploview.
-*	Data Slicer
+* Data Slicer
   
   Get a subset of data from a BAM or VCF file
 * Post-GWAs
