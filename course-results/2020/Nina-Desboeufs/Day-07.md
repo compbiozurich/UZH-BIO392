@@ -59,7 +59,7 @@ Switch to hg19 and find TP53.
 * Does it reveal anything? Is it what you expected?
 > 
 
-## Genome liftOver 
+## 3. Genome LiftOver 
 "To convert data between the genomes versions by re-aligning the original data to the target genome version. However, if the raw data are not available, another possibility is using a map table"."LiftOver converts genome coordinates and genome annotation files between assemblies."
 * Down-lift: TP53 from hg38 to hg19:
 > chr17:7,668,402-7,687,538 -> chr17:7571720-7590856
@@ -70,6 +70,13 @@ Switch to hg19 and find TP53.
 * Multi-step-lift: TP53 from hg38 to hg 18
 >
 
+**Advantages**: Locally available, borad cross-species lifting possible \
+**Limitations**: Not everything can be lifted for several reasons (deletion of the regions, split in different regions, duplication etc) \
+**Other resources**: 
+* [NCBI Genome Remapping Service](https://www.ncbi.nlm.nih.gov/genome/tools/remap), finer remapping but only online and limited cross-species lifting. 
+
+
+## 4. Genome Resources
 
 
 
