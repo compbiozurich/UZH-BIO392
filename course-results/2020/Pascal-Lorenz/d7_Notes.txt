@@ -1,0 +1,17 @@
+Latest:		h: GRCh38.p13, dec 13		m: GRCm39, jul 20		e: 
+First:		h: hg1, may 00			m: MGSCv2, nov 01		e:
+Num:		h: 18				m: 11				e:
+
+
+len(GRC37.p13) - len(GRC38.p13): 	3,101,788,170 - 3,099,706,404 = 2081766	(got smaller)
+
+
+TP53 in hg38: 
+    - on chr17.p13.1:7668402-7675244
+    - 19 isoforms
+    - 11 exons
+    - ca 1.2 kb longest exon
+    - next 3 downstream: WRAP53, EFNB2, DNAH2
+    - next 3 upstream: ATP1B2, SHBG, SAT2
+    - in hg19: chr17.p13.1:7571720-7590868
+    - Zebrafish has it too, but not drosophila
