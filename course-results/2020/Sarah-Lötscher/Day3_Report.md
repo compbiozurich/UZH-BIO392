@@ -8,6 +8,7 @@
 ---
 * What is a plain text file?
 
+A plain text file is a file created with a text editor and often ends with a txt extention. It supports no formating. As a comparison file created by world is considered a rich text file since it supports formating. 
 
 
 ---
