@@ -68,8 +68,10 @@ UniProt is a freely accessible database of protein sequence and functional infor
   
   Finds regions of local similarity between sequences, which can be used to infer functional and evolutionary relationships between sequences as well as help identify members of gene families
 * Align
+  
   Align two or more protein sequences to view their characteristics (identitiy, similarity etc.) alongside each other.
 * Retrieve/ID mapping
+  
   Convert identifiers which are of a different type to UniProt identifiers or vice versa and download the identifier lists. Can then also be downloaded in different formates.
 * Peptide search
 
