@@ -1,4 +1,4 @@
-# Genome Versions, UCSC genome browser 
+# Genome Versions, UCSC genome browser and genome liftover 
 
 ## 1. Genome Versions 
 
@@ -58,6 +58,24 @@ Switch to hg19 and find TP53.
 > Arranged by cancer types, 
 * Does it reveal anything? Is it what you expected?
 > 
+
+## Genome liftOver 
+"To convert data between the genomes versions by re-aligning the original data to the target genome version. However, if the raw data are not available, another possibility is using a map table"."LiftOver converts genome coordinates and genome annotation files between assemblies."
+* Down-lift: TP53 from hg38 to hg19:
+> chr17:7,668,402-7,687,538 -> chr17:7571720-7590856
+* Up-lift: TP53 from hg19 to hg38
+> chr17:7475038-7494186 -> chr17:7475038-7494174
+* Cross-species-lift: TP53 from human to mouse 
+> chr17:7,668,402-7,687,538 -> to mouse chr11:69580357-69591890
+* Multi-step-lift: TP53 from hg38 to hg 18
+>
+
+
+
+
+
+
+
 
 
 
