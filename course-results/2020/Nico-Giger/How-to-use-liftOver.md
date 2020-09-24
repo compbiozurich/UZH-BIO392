@@ -6,7 +6,7 @@
 
 ### generall liftOver code
 
-./*pathlift*/liftOver old-bed-file-path chain-file-path new-file-path unMapped-file-path
+./*path*/liftOver old-bed-file-path chain-file-path new-file-path unMapped-file-path
 
 ## e.g.
 ### input
