@@ -34,11 +34,11 @@
   Please provide the command(s), and discuss what they do.
 >     awk 'NR % 3 == 0' 
 >
-> **?? siehe (evtl) Exercise 9 Day3 und Day6**
+> The progrma goes through every line. When the current line number (NR) divided by 3 doesn't give a reminder, the terminal prints the line.
 
 * How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? 
   Please provide the command(s), and discuss what they do.
 >      awk 'NR % 4 == 1 {print ">"$1};
->           NR % 4 == 2 {print}' file.fasta
+>           NR % 4 == 2 {print}' file.fasta > file.fastq
 >
-> The computer goes through every line. The current line number (NR) will be divided by 4. When the result is 1, the computer adds a '@' at the front of the line and print it. When the result is 2, the whole line will be printed. Everything will be saved in the new file called 'file.fasta'. **galubs emu**
+> The computer goes through every line. The current line number (NR) will be divided by 4 (using a modulos operator '%'). When the reminder is 1, the computer adds a '@' at the front of the line and print it. When the reminder is 2, the whole line will be printed. Everything will be saved in the new file called 'file.fastq'.
