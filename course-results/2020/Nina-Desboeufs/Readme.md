@@ -32,3 +32,8 @@ Structured **day by day**
 ## Day 05
 - General NGS technologies 
 - Count based vs intensity based as principle 
+
+## Day 07 
+- Genome Versions
+- UCSC genome browser
+- Genome liftover
