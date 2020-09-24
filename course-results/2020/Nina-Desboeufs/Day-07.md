@@ -77,7 +77,39 @@ Switch to hg19 and find TP53.
 
 
 ## 4. Genome Resources
+Also in Day-02. 
 
+### JBrowse Genome Browser [link](https://jbrowse.org) 
+Looks really nice !! It's a genome browser, which can be either directly used locally or on the remote encoded with JavaScript and HTML5. It seems friendly-user since a large documentation is available with demonstrations. 
+
+**Features**: 
+* "Scales easily to multi-gigabase genomes and deep-coverage sequencing". 
+* "Supports GFF3, BED, FASTA, Wiggle, BigWig, BAM, CRAM, VCF (with either .tbi or .idx index), REST, and more." No decompression needed for BAM, BigBed, BigWig, and VCF. 
+* Thousands of tracks possible. 
+* "Very light server resource requirements". 
+
+### Ensembl Genome Browser [link](https://www.ensembl.org/info/website/index.html)
+Ensembl is a genome browser for vertebrate genomes which allows the following functions: comparative genomics, evolution, sequence variation and transcriptional regulation. Only online! 
+
+**Features**: 
+* Comparative genomics (Genomic alignment, gene tree, gene gain/loss tree, orthologues, paralogues, Ensembl protein families)
+* Ontologies (Cellular component, molecular function, biological processes)
+* Phenotypes
+* Genetic Variants 
+* Gene expression 
+* Pathway 
+* and more 
+
+**Tools**: Variant Effect Predictor (VEP), BLAST/BLAT, File Chameleon, **Assembly Converter**, ID History Converter, Linkage Disequilibrium Calculator, VCF to PED converter, Data slicer, Post-GWAS. 
+
+### UCSC Xena [link](http://xena.ucsc.edu)
+UCSC Xena is a genome browser for functional genomics visualization and analysis. Pretty nice too, it contains tutorials and a wide documentation!!
+
+**Features**: 
+* Visualize cancer genome data (and own data)
+* Combine data (different data types: DNA methylation, CNVs, Gene and exon expression, protein and mRNA expression, positional mutations, phenotype/annotations).
+* Combined with Galaxy (offers different tools to manipulate data)
+* Combined with MuPIT (to map variant positions to annotated, interactive 3D structures)
 
 
 
