@@ -63,21 +63,19 @@ The FASTQ is a FASTA file inculsive quality data. A FASTQ file contains 4 lines 
 
 ## How much computer storage is required for 1000 Genomes?
 * [WES & WGS](https://www.strand-ngs.com/support/ngs-data-storage-requirements)
-> **W**hole **E**xome **S**equence contains just the exonic regions which comprise 1-2% of the whole genome. Therefore, WES should take up less storage space.  A **W**hole **G**enome **S**equencing can be rounded off to about 150GB and a WES about 8GB (strand NGS size). For 1000 genomes, the storage of 150TB (WGS) and 8TB (WES).
+> **W**hole **E**xome **S**equence contains just the exonic regions which comprise 1-2% of the whole genome. Therefore, WES should take up less storage space.  A **W**hole **G**enome **S**equencing can be rounded off to about 150GB and a WES about 8GB (strand NGS size). For 1000 genomes, the storage of **150TB** (WGS) and **8TB** (WES).
 * Different file formats
   * BAM
-  > We learned in the lecture of Day 4 that a 30x BAM file can store a genome in 100GB. Therefore, we need for 1000 genomes 100TB of BAM file format. BAM is the compromised format of SAM and therefore no more human readable.
+  > We learned in the lecture of Day 4 that a 30x BAM file can store a genome in 100GB. Therefore, we need for 1000 genomes **100TB** of BAM file format. BAM is the compromised format of SAM and therefore no more human readable.
   * SAM
   > SAM file format stores genome sequence aligned at the reference genome.  
-  > [1.9GB BAM file == 7.4GB SAM file](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/) -> 100'000GB / 1.9GB x 7.4GB = 389473GB == 389.473TB of a SAM file.
+  > [1.9GB BAM file == 7.4GB SAM file](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/) -> 100'000GB / 1.9GB x 7.4GB = 389473GB == **389.473TB** of a SAM file.
   * CRAM
-  > CRAM is even more compromised compared to BAM. A 1.9GB BAM file (7.4GB SAM file) converted into a CRAM (lossless) file about [1.4GB](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/). You need for 1000 genomes only (100'000GB / 1.9GB x 0.8GB = 42105GB =) around 42TB.      
+  > CRAM is even more compromised compared to BAM. A 1.9GB BAM file (7.4GB SAM file) converted into a CRAM (lossless) file about [1.4GB](https://www.uppmax.uu.se/support/user-guides/using-cram-to-compress-bam-files/). You need for 1000 genomes only (100'000GB / 1.9GB x 0.8GB = 42105GB =) around **42TB**.      
   * VCF
-  > A VCF file stores the variants of a genome. A genome has about [3 million variants](https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0). Each VCF file line uses 45 bytes. For 3 million variants, we need around 125MG. 1000 genomes requires 125GB of a VCF file.
+  > A VCF file stores the variants of a genome. A genome has about [3 million variants](https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0). Each VCF file line uses 45 bytes. For 3 million variants, we need around 125MG. 1000 genomes requires **125GB** of a VCF file.
   * FASTA
-  > A FASTA file stores the raw data (without 'any' information). When you download the [Reference Genome Sequence (GRCh38)](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/), you get a document about 920MB. 1000 x 920MB = 920GB of a FASTA file is necessary to store 1000 (reference) genomes. 
+  > A FASTA file stores the raw data (without 'any' information). When you download the [Reference Genome Sequence (GRCh38)](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/), you get a document about 920MB. 1000 x 920MB = **920GB** of a FASTA file is necessary to store 1000 (reference) genomes. 
 * Associated costs
   * Cost factors
   > The costs to sequence a genome dropped since the start in 2001. A massive drop occured in the year 2007 when Illumnia appeared on the market. Sequencing a whole human genome costs nowadays around 1000$.
-  * Raw Storage costs
-  > **??!!**
