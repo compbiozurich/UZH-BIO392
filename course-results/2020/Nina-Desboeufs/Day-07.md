@@ -74,7 +74,8 @@ Switch to hg19 and find TP53.
 **Limitations**: Not everything can be lifted for several reasons (deletion of the regions, split in different regions, duplication etc) \
 **Other resources**: 
 * [NCBI Genome Remapping Service](https://www.ncbi.nlm.nih.gov/genome/tools/remap), finer remapping but only online and limited cross-species lifting. 
-
+* [CrossMap](http://crossmap.sourceforge.net)
+* [Segment-Liftover](https://pypi.org/project/segment-liftover/), converts continuous segments (python program :). 
 
 ## 4. Genome Resources
 Also in Day-02. 
