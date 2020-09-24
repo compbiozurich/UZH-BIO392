@@ -9,8 +9,7 @@
 * In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). 
   For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). 
   Why is that?
-> A plain text file can be used ... The compression of a file save storage.
-> **!!!!????**
+> A plain text file is the easiest way to handle your data and many file formats support it. When you convert the file into another format, it should be no problem. The compression is important to minimize the storage size. 
 
 * How can we list files are in a directory? 
   Please provide the command(s).
@@ -42,4 +41,4 @@
 >      awk 'NR % 4 == 1 {print ">"$1};
 >           NR % 4 == 2 {print}' file.fasta
 >
-> **?!?!?!** **lecture Day6**
+> The computer goes through every line. The current line number (NR) will be divided by 4. When the result is 1, the computer adds a '@' at the front of the line and print it. When the result is 2, the whole line will be printed. Everything will be saved in the new file called 'file.fasta'. **galubs emu**
