@@ -25,12 +25,16 @@ Ensembl aims to provide a centralized resource for geneticists, molecular biolog
 
 ### Tools (all online):
 * Variant Effect Predictor (VEP)
+  
   Analyse your own variants and predict the functional consequences of known and unknown variants
 * BLAST/BLAT
+  
   Search our genomes for your DNA or protein sequence.
 * File Chameleon
+ 
   Convert Ensembl files for use with other analysis tools
 *   Assembly Converter
+    
     Map (liftover) your data's coordinates to the current assembly
 * ID History Converter
   Convert a set of Ensembl IDs from a previous release into their current equivalents
