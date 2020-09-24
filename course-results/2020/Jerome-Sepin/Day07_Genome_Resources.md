@@ -39,8 +39,8 @@ Ensembl aims to provide a centralized resource for geneticists, molecular biolog
 * ID History Converter
   
   Convert a set of Ensembl IDs from a previous release into their current equivalents
-*	Linkage Disequilibrium Calculator:
- 
+* Linkage Disequilibrium Calculator:
+  
   Linkage Disequilibrium (LD) Calculator is a tool for calculating LD between variants using genotypes from a  selected population (Are allels inherited independently or not? Crossingover)
 * VCF to PED converter
   
@@ -48,7 +48,7 @@ Ensembl aims to provide a centralized resource for geneticists, molecular biolog
 *	Data Slicer
   
   Get a subset of data from a BAM or VCF file
-*	Post-GWAs
+* Post-GWAs
   
   Upload GWAS summary statistics and highlight likely causal gene candidates
 
@@ -64,15 +64,13 @@ UniProt is a freely accessible database of protein sequence and functional infor
 *	Supporting data (Literature citations, Taxonomy, Subcellular locations, Cross-ref. Databases, Diseases, Keywords)
 
 ### Tools (online):
-*	BLAST
+* BLAST
   
   Finds regions of local similarity between sequences, which can be used to infer functional and evolutionary relationships between sequences as well as help identify members of gene families
-*	Align
-  
+* Align
   Align two or more protein sequences to view their characteristics (identitiy, similarity etc.) alongside each other.
-*	Retrieve/ID mapping
-  
+* Retrieve/ID mapping
   Convert identifiers which are of a different type to UniProt identifiers or vice versa and download the identifier lists. Can then also be downloaded in different formates.
-*	Peptide search
-  
+* Peptide search
+
   Give a peptide sequence and the tool is searching to which species it belongs and what protein it is
