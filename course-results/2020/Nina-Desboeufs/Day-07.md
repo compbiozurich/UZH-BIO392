@@ -48,3 +48,17 @@ Switch to hg19 and find TP53.
 > Yes, chr5:24,086,227-24,097,805
 * Switch to Fruitfly, can you find TP53?
 > No. 
+
+### Exercise 3: Annotation tracks 
+* Compare human TP53 with other species, how similar are they?
+> Quite similar for the Rhesus much more than mouse. 
+* Find out the conservation regions of TP53
+> the exon 11 is not conserved (with Cons 100 verts)
+* Find out the frequent mutations of TP53 in cancer
+> Arranged by cancer types, 
+* Does it reveal anything? Is it what you expected?
+> 
+
+
+
+
