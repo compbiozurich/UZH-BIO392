@@ -60,23 +60,27 @@ A plain text file is a loose term file for data including only characters of rea
 - **Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?**
 	- yes, because in BED3 are the information for chromosome (scaffold), start and end
 	- file:
-		> chr2		1000		1999 <br>
-		> chr2		2000		2999 <br>
-		> chr2		3000		3999 <br>
+    chr2	1000	1999 <br>
+    chr2 	2000	2999 <br>
+    chr2	3000	3999 <br>
 
 
 - **And in BED6? How? Are we losing any information?**
 	- no, because additionaly to BED3 BED6 has information about name, score and strand
-		> chr2		1000		1999		A		0		+ <br>
-		> chr2		2000		2999		B		0		+ <br>
-		> chr2		3000		3999		C		1000		+ <br>
+    chr2	1000	1999	A	0	+ <br>
+    chr2	2000	2999	B	0	+ <br>
+    chr2	3000	3999	C	1000	+ <br>
 
 - **And in BED12? How? Are we losing any information?**
 	- no there won't be any information lost, because we don't have more information
 	- the file would look like the one from BED6, but the addiditional column that come with that format would be empty
 
 - **And in the most compact Wiggle as possible? How? Are we losing any information?**
-
+	- 
+    fixedStep chrom=chr2 start=1000 step=1000 span=1000
+    0
+    0
+    1000
 
 
 
