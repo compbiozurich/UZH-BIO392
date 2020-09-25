@@ -9,7 +9,7 @@ A plain text file is a loose term file for data including only characters of rea
 - that they are readable for us and to store them it is easier and uses less space, when the are compressed
 
 **How can we list files are in a directory? Please provide the command(s).**
-- command: ls -l
+> ls -l
 
 **What | and > do in a terminal?**
 - the "|" symbol is called pipe in UNIX
@@ -18,26 +18,26 @@ A plain text file is a loose term file for data including only characters of rea
 
 
 **How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).**
-- commands to use:
+> /mnt/test/test.txt | sort -nr | head -10
 	- 'sort -nr' command: for sort the file in reverse order
 	- 'head -10' command: display only the first ten lines of the reverse-ordered file
-- whole command: /mnt/test/test.txt | sort -nr | head -10
+
 
 **How do we print the first column of the file named /mnt/test/test.txt whose columns are separated by tabs? Please provide the command(s).**
-- commands to use:
+> tr " " "\\n" < /mnt/test/test.txt | head -1
 	- "'tr " " "\\n"' command: for transforming the following characters into next line characters
 	- '<' command: executing the left part of the symbol using the content on the right side of the symbol (the file)
 	- 'head -1' command: displays the first line of characters
-- whole command: tr " " "\\n" < /mnt/test/test.txt | head -1
+
 
 **How can we print every third line of a text file? Please provide the command(s), and discuss what they do.**
-- command: awk 'NR%3==0' ~ (directory of text file)
+> awk 'NR%3==0' ~ (directory of text file)
 - NR is equal to the current line number
 - the NR number is divided by 3 and the modulo operator of 3 should be equal 0, since there should not be any left overs (for the third line)
 
 
 **How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.**
-- commands: awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' file.fq
+> awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' file.fq
 
 
 **Which are the advantages of BED/coordinate files as compared to storing just sequences?**
@@ -60,16 +60,16 @@ A plain text file is a loose term file for data including only characters of rea
 - **Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?**
 	- yes, because in BED3 are the information for chromosome (scaffold), start and end
 	- file:
-		- chr2		1000		1999
-		- chr2		2000		2999
-		- chr2		3000		3999
+		> chr2		1000		1999
+		> chr2		2000		2999
+		> chr2		3000		3999
 
 
 - **And in BED6? How? Are we losing any information?**
 	- no, because additionaly to BED3 BED6 has information about name, score and strand
-		- chr2		1000		1999		A		0		+
-		- chr2		2000		2999		B		0		+
-		- chr2		3000		3999		C		1000	+
+		> chr2		1000		1999		A		0		+
+		> chr2		2000		2999		B		0		+
+		> chr2		3000		3999		C		1000	+
 
 - **And in BED12? How? Are we losing any information?**
 	- no there won't be any information lost, because we don't have more information
