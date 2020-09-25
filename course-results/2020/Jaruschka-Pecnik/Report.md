@@ -70,17 +70,17 @@ A plain text file is a loose term file for data including only characters of rea
 - yes, because in BED3 are the information for chromosome (scaffold), start and end
 - file:
 
-    chr2	1000	1999 <br>
-    chr2 	2000	2999 <br>
-    chr2	3000	3999 <br>
+    chr2	1000	1999
+    chr2 	2000	2999
+    chr2	3000	3999
 
 
 **And in BED6? How? Are we losing any information?**
 - no, because additionaly to BED3 BED6 has information about name, score and strand
 
-    chr2	1000	1999	A	0	+ <br>
-    chr2	2000	2999	B	0	+ <br>
-    chr2	3000	3999	C	1000	+ <br>
+    chr2	1000	1999	A	0	+
+    chr2	2000	2999	B	0	+
+    chr2	3000	3999	C	1000	+
 
 
 **And in BED12? How? Are we losing any information?**
