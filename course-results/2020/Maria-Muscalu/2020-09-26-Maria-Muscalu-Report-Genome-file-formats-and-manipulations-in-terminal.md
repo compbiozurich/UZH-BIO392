@@ -22,25 +22,31 @@ I do not think that the given data can be stored as a SAM file, because this for
 
 For writing down the files I choose the 0 start, half open interval.
 
-chr2	1000	2000
-chr2	2000	3000
-chr2	3000	4000
+> chr2	1000	2000
+>
+> chr2	2000	3000
+>
+> chr2	3000	4000
 
 The information can be stored using a BED3 file format, however some things are lost when compared with the information given in the text, like the name, score and strand. But still, all the additional information is optional, because for the BED file format only the name of the chromosome, the start and end position are required.
 
 #### **3.3 And in BED6? How? Are we losing any information?**
 
-chr2	1000	2000	A	0	+
-chr2	2000	3000	B	0	+
-chr2	3000	4000	C	1000	+
+> chr2	1000	2000	A	0	+
+>
+> chr2	2000	3000	B	0	+
+>
+> chr2	3000	4000	C	1000	+
 
 The BED6 file format was also written using the 0 start, half open interval and it contains all the information given by the text
 
 #### **3.4 And in BED12? How? Are we losing any information?**
 
-chr2	1000	2000	A	0	+	1000	2000
-chr2	2000	3000	B	0	+	2000	3000	
-chr2	3000	4000	C	1000	+	3000	4000
+> chr2	1000	2000	A	0	+	1000	2000
+>
+> chr2	2000	3000	B	0	+	2000	3000	
+>
+> chr2	3000	4000	C	1000	+	3000	4000
 
 This is a BED12 file format with 0 start and a half opened interval. However not all the information that can be saved in a BED12 file is available in the text. For example, the RGB values, the number of exons (blocks), the block size and block start are missing. The only information that could be included in this file was the thickStart and thickEnd. 
 
@@ -50,10 +56,13 @@ For a BED file the first three columns, which are the name of chromosome, the st
 
 The most compact Wiggle file format is the fixedStep:
 
-fixedStep 	chrom=chr2	start=1000 	step=1000	span=1000
-0
-0
-1000
+> fixedStep 	chrom=chr2	start=1000 	step=1000	span=1000
+>
+> 0
+>
+> 0
+>
+> 1000
 
 All the information could be saved using this file, apart from mentioning that the nucleotides are in the plus strang.
 
