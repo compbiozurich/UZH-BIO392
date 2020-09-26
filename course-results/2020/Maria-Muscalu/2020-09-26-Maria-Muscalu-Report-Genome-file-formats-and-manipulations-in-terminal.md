@@ -9,8 +9,7 @@ The BED or other coordinate files can save pre line only information about a seg
 The quality control (QC) is done by looking at the Phed quality score for each nucleotide. For example, a score value of 10 corresponds to a base accuracy of 90%, which means that there is a probability of 1 in 10 for the nucleotide to be wrong. On the other hand, a Phed quality score of 60 indicates a 99.9999% accuracy, with only 1 in 1’000’000 chance for the nucleotide to be false. However, it is very important to check which technology was used to obtain the data, because depending on the machine, the intervals for the Phed quality scores vary.
 
 
-### **3. We’d like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify).
-We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we’d like to include the start nucleotide too) in position 1000 of chr2. We don’t have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.**
+### **3. We’d like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify). We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we’d like to include the start nucleotide too) in position 1000 of chr2. We don’t have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.**
 
 #### **3.1 Can we store this in SAM file? Why / why not?**
 
