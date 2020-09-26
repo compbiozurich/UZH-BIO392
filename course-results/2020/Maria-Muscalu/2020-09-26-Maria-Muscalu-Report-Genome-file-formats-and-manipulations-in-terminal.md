@@ -29,9 +29,9 @@ The information can be stored using a BED3 file format, however some things are 
 
 #### **3.3 And in BED6? How? Are we losing any information?**
 
-> chr2	1000	2000	A	0	+
+> chr2  1000	2000	A    0  +
 >
-> chr2	2000	3000	B	0	+
+> chr2	2000	3000	B	   0	+
 >
 > chr2	3000	4000	C	1000	+
 
@@ -39,9 +39,9 @@ The BED6 file format was also written using the 0 start, half open interval and 
 
 #### **3.4 And in BED12? How? Are we losing any information?**
 
-> chr2	1000	2000	A	0	+	1000	2000
+> chr2	1000	2000	A	   0	+	1000	2000
 >
-> chr2	2000	3000	B	0	+	2000	3000	
+> chr2	2000	3000	B	   0	+	2000	3000	
 >
 > chr2	3000	4000	C	1000	+	3000	4000
 
