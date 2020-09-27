@@ -1,12 +1,13 @@
 # Report 
 
 **Why do we use the terminal in bioinformatics?**
+Terminal is a text-based interface to the computer where the commands that are typed in will be executed by the command line interpreter (CLI). This allows more flexibility and eficinecy in comparison of using instead the graphical users interface (GUI).
 
 **What is a plain text file?**
-A plain text file is a loose term file for data including only characters of readable material. It differs from formatted text and binary files. [Source](https://en.wikipedia.org/wiki/Plain_text)
+A plain text file is a loose term file for data including only characters of readable material. It differs from formatted text and binary files.
 
 **In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?**
-- that they are readable for us and to store them it is easier and uses less space, when the are compressed
+They are more readable for us and easier to store, since they use in the compressed format less space.
 
 **How can we list files are in a directory? Please provide the command(s).**
 
@@ -70,17 +71,17 @@ A plain text file is a loose term file for data including only characters of rea
 - yes, because in BED3 are the information for chromosome (scaffold), start and end
 - file:
 
-    chr2 1000 1999 <br>
-    chr2 2000 2999 <br>
-    chr2 3000 3999 <br>
+    >chr2 1000 1999 <br>
+    >chr2 2000 2999 <br>
+    >chr2 3000 3999 <br>
 
 
 **And in BED6? How? Are we losing any information?**
 - no, because additionaly to BED3 BED6 has information about name, score and strand
 
-    chr2 1000 1999 A 0 + <br>
-    chr2 2000 2999 B 0 + <br>
-    chr2 3000 3999 C 1000 + <br>
+    >chr2 1000 1999 A 0 + <br>
+    >chr2 2000 2999 B 0 + <br>
+    >chr2 3000 3999 C 1000 + <br>
 
 
 **And in BED12? How? Are we losing any information?**
@@ -90,10 +91,10 @@ A plain text file is a loose term file for data including only characters of rea
 **And in the most compact Wiggle as possible? How? Are we losing any information?**
 - Yes informtion will get lost, the strand can't be integrated 
 
-    fixedStep chrom=chr2 start=1000 step=1000 span=1000 <br>
-    0 <br>
-    0 <br>
-    1000
+    >fixedStep chrom=chr2 start=1000 step=1000 span=1000 <br>
+    >0 <br>
+    >0 <br>
+    >1000
 
 
 
