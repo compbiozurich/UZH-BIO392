@@ -4,6 +4,7 @@
 	- Mathematical opterators: + - * / ^
 	- Logical operator: == <= >0 %in%
 	- Assignment operator: <- =
+	- Programming: if conditional, for loop
 	- Calculation: mean max median sum log
 	- Comment: #
 
