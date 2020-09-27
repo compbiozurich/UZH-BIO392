@@ -1,4 +1,4 @@
-#Notes: Getting familiar with R 
+# Notes: Getting familiar with R 
 
 - Basics
 	- Mathematical opterators: + - * / ^
