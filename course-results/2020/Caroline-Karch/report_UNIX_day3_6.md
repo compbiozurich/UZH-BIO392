@@ -56,8 +56,7 @@ We need the header which starts with '>' in FASTA (first line of FASTQ). Second,
 With the `awk` command we look at our FASTAQ file line by line. We first specify `'NR % 4 == 1'` this means that we divide NR (line number) by 4, if the remainder is 1 (modulus operator), then this statement is true. `{print ">"$1}`, this following command is used to say "what to do if the command was ture" so we want to print this line with the greater than sign in advance. 
 What we want next is the second line (actual sequence). This line is identical in FASTQ and FASTA. We again specify every second line by typing `NR % 4 == 2`. In the end we just tell for which file this should be done (FASTQ.fq). In the end we can (if we want) save the FASTA format with the > sign.
 
-`awk 'NR % 4 == 1 {print ">"$1};` <br>
-     `NR % 4 == 2 {print}' FASTQ.fq > FASTA.fa`
+`awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' FASTQ.fq > FASTA.fa`
 
 
 
