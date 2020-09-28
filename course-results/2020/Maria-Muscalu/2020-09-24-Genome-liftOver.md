@@ -3,6 +3,8 @@
 ### **1. Convert other files to the BED format (programmatically).**
 
 ```javascript
+cd ~/Documents/BIO392
+
 awk -v OFS='\t' '{print "chr"$2,$3,$4,$1"-SEGPROBES-"$7,$6,$5,$3,$4}' 20200924/segments.tsv \
 > 20200924/segments_transformed.bed
 ```
@@ -107,4 +109,4 @@ diff 20200924/liftOver_converted_segments_transformed.bed 20200924/py_liftOver_s
 
 deactivate
 ```
-However most of these differences are caused by minor changes in one column as indicated by the example above.  In the liftOver_converted_segments_transformed.bed file the strang has a “–“ symbol, while the 20200924/py_liftOver_segments_transformed.bed file (which was done using segment_liftover and then converted to a bed file) has a -1.
+However most of these differences are caused by minor changes in one column as indicated by the example above.  In the 20200924/liftOver_converted_segments_transformed.bed file the strang has a “–“ symbol, while the 20200924/py_liftOver_segments_transformed.bed file (which was done using segment_liftover and then converted to a bed file) has a -1.
