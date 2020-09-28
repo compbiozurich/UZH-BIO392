@@ -11,8 +11,8 @@ awk -v OFS='\t' '{print "chr"$2,$3,$4,$1"-SEGPROBES-"$7,$6,$5,$3,$4}' 20200924/s
 
 
 ```javascript
-# The program is made executable using
-chmod a+x liftOver # The path to liftOver was previously changed using cd ~/Documents/BIO392
+// The program is made executable using
+chmod a+x liftOver // The path to liftOver was previously changed using cd ~/Documents/BIO392
 
 ./liftOver # information about how to use appears
 
