@@ -103,5 +103,8 @@ diff 20200924/liftOver_converted_segments_transformed.bed 20200924/py_liftOver_s
 < chr11	106961340	134996570	SAMPLE_1-SEGPROBES-53	-0.1915	-	106961340	134996570
 ---
 > chr11	106961340	134996570	SAMPLE_1-SEGPROBES-53	-0.1915	-1	106961340	134996570
+
+
+deactivate
 ```
 However most of these differences are caused by minor changes in one column as indicated by the example above.  In the liftOver_converted_segments_transformed.bed file the strang has a “–“ symbol, while the 20200924/py_liftOver_segments_transformed.bed file (which was done using segment_liftover and then converted to a bed file) has a -1.
