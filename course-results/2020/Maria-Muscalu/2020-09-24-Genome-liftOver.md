@@ -16,17 +16,17 @@ chmod a+x liftOver // The path to liftOver was previously changed using cd ~/Doc
 
 ./liftOver # information about how to use appears
 
-/* To run the program a map.chain file is needed
-This can be downloaded at http://hgdownload.cse.ucsc.edu/goldenPath/hg18/liftOver/
-I used the hg18toHg19.over.chain */
+// To run the program a map.chain file is needed
+// This can be downloaded at http://hgdownload.cse.ucsc.edu/goldenPath/hg18/liftOver/
+// I used the hg18toHg38.over.chain 
 
 
-# Is very important that the BED file used in liftOver does not have a header row that describes what is in every column.
+// It is very important that the BED file used in liftOver does not have a header row that describes what is in every column.
 
 awk -v OFS='\t' 'NR !=1 {print "chr"$2,$3,$4,$1"-SEGPROBES-"$7,$6,$5,$3,$4}' 20200924/segments.tsv \
 > 20200924/segments_transformed.bed
 
-# The command line should have the following format: liftOver oldFile map.chain newFile unmapped
+// The command line should have the following format: liftOver oldFile map.chain newFile unmapped
 
 ./liftOver 20200924/segments_transformed.bed hg18toHg38.over.chain \
 20200924/liftOver_converted_segments_transformed.bed unmapped-to-grch37
@@ -55,25 +55,31 @@ chr2	127242557	218289625	SAMPLE_1-SEGPROBES-91	0.0679	0	127242557	218289625
 chr2	218300389	242124921	SAMPLE_1-SEGPROBES-34	-0.0636	0	218300389	242124921
 chr3	78046	89521897	SAMPLE_1-SEGPROBES-126	-0.1647	-	78046	89521897
 chr3	93909306	198029529	SAMPLE_1-SEGPROBES-127	0.0804	0	93909306	198029529
-mariamuscalu@Marias-MacBook-Air-2 BIO392 % 
 
 ```
 
+### **3. Use segment_liftover:**
 
+#### **3.1 Setup Python virtual environment and install segment_liftover:**
 ```javascript
 cd ~/Documents/BIO392
 
-# Setup Python virtual environment
+// Setup Python virtual environment
 python3 -m venv myenv 
 source myenv/bin/activate 
 pip install --upgrade pip 
 
-# Install segment_liftover: 
+// Install segment_liftover: 
 pip install segment_liftover
 
+```
+#### **3.2 Use segment_liftover to convert the segment file again.**
+```javascript
+// Convert to Hg38
 segment_liftover -l ./liftOver -i 20200924/ -o 20200924/ -c hg18ToHg38 -si segments.tsv \
 -so py_liftOver_segments.tsv 
 
+// Convert from a .tsv file to a .bed file
 awk -v OFS='\t' 'NR !=1 {print "chr"$2,$3,$4,$1"-SEGPROBES-"$7,$6,$5,$3,$4}' 20200924/py_liftOver_segments.tsv \
 > 20200924/py_liftOver_segments_transformed.bed
 
@@ -89,7 +95,7 @@ chr2	111992513	127192691	SAMPLE_1-SEGPROBES-17	0.2419	1	111992513	127192691
 chr2	127242557	218289625	SAMPLE_1-SEGPROBES-91	0.0679	0	127242557	218289625
 chr2	218300389	242124921	SAMPLE_1-SEGPROBES-34	-0.0636	0	218300389	242124921
 ```
-
+#### **3.3 Compare the results with liftOver and make a simple analysis**
 There are a many differences between the two files:
 ```javascript
 diff 20200924/liftOver_converted_segments_transformed.bed 20200924/py_liftOver_segments_transformed.bed
