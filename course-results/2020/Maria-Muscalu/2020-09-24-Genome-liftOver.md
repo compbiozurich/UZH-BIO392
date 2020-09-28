@@ -16,9 +16,9 @@ chmod a+x liftOver // The path to liftOver was previously changed using cd ~/Doc
 
 ./liftOver # information about how to use appears
 
-# To run the program a map.chain file is needed
-# This can be downloaded at http://hgdownload.cse.ucsc.edu/goldenPath/hg18/liftOver/
-# I used the hg18toHg19.over.chain
+/* To run the program a map.chain file is needed
+This can be downloaded at http://hgdownload.cse.ucsc.edu/goldenPath/hg18/liftOver/
+I used the hg18toHg19.over.chain */
 
 
 # Is very important that the BED file used in liftOver does not have a header row that describes what is in every column.
