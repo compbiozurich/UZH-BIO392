@@ -42,12 +42,10 @@ They are more readable for us and easier to store, since they use in the compres
 
 
 ## How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.
-- in general, FASTA consits of the sequence identifier of the FASTQ with a ">" in front of the line and the following line is the genomic code 
-
 
     awk 'NR % 4 == 1 {print ">" $1}; NR % 4 == 2 {print}' file.fq
 
-
+- in general: FASTA consits of the sequence identifier of the FASTQ with a ">" in front of the line and the following line is the genomic code 
 - awk reads the lines of the file
 - 'NR % 4 == 1 {print ">" $1} 
 	-> the first line of the FASTQ sequence will be used (FASTQ has 4 lines) and printed with an ">" in fornt of the first line (typical for FASTA)
@@ -62,7 +60,7 @@ They are more readable for us and easier to store, since they use in the compres
 
 
 ## Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
-During a bioinformatic variant calling are the quality control values, the Phred quality scores, tracked. These scores are logarithmically linked to error probabilities (Q = -10 log<sub>10<sup> *P*). It is important to know, which NGS was used, because the encoded score frame can vary.
+During a bioinformatic variant calling are the quality control values, the Phred quality scores, tracked. These scores are logarithmically linked to error probabilities (Q = -10 log<sub>10</sub> *P*). It is important to know, which NGS was used, because the encoded score frame can vary.
 
 
 ## We’d like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify). We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we’d like to include the start nucleotide too) in position 1000 of chr2. We don’t have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
