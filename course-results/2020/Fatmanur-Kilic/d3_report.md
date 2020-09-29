@@ -12,6 +12,7 @@ ls -al: formatted listing with hidden files
 
 ### What | and > do in a terminal?
 |: With the pipe you can connect two or more commands at a time. The output of one program used directly as input to the next one.
+
 ">": This symbol means "take the output of a command and redirect it into a file". Consequently, the whole file will overwritten. 
 
 ### How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).
