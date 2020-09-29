@@ -1,5 +1,7 @@
 ## Izaskun Mallona Report
 
+
+
 * **Why do we use the terminal in bioinformatics?**
 
    When working with many or large data its more easy and efficient to use the terminal. Italso gives the opportunity to save your work history / script.
@@ -63,9 +65,9 @@
 ---
 * **How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.**
 
-   ``` $ awk ‘NR % 4 ==1 {a=substr($0,2);}  NR % 4 ==2  {print”>”a”\n”$0}’  file.fasta```
+   ``` $ awk ‘NR % 4 ==1 {a=substr($0,2);}  NR % 4 ==2  {print”>”a”\n”$0}’  file.fasta ```
    
-   Takes the first line with the identifier and the second line with the sequence, and replaces "@" with ">"
+   Goes through all lined step by step. Takes the first line with the identifier and the second line with the sequence (by dividing the linenumber with 4 and looking at the remainder), if remainder = 1 takes the line and removes the "@" and stores it in variable a. If the remainder is 2 it prints ">" then the name stored in variable a , new line "\n",and the sequence row.
    
    
 ---
@@ -113,8 +115,8 @@ We have three genomic intervals. All intervals are 1000 nt long. They are contig
 
       It should be possible. we would lose information about the strand information and the intervall names. It should look something like this:
    
-      variableStep chrom=chr2 span=1000
-      1000 0
-      2000 0
-      3000 1000
+      variableStep chrom=chr2 start=1000 step=1000 span=1000
+      0
+      0
+      1000
    
