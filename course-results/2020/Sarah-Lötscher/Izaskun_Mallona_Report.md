@@ -65,9 +65,9 @@
 ---
 * **How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.**
 
-   ``` awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' file.fasta ```
+   ``` awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' file.fastq > newfile.fasta ```
    
-   Goes through all lined step by step. Takes the first line with the identifier and the second line with the sequence (by dividing the linenumber with 4 and looking at the remainder), if remainder = 1 takes the line and adds ">" and prints line. If the remainder is 2 it prints the sequence line.
+   Goes through all lined step by step. Takes the first line with the identifier and the second line with the sequence (by dividing the linenumber with 4 and looking at the remainder), if remainder = 1 takes the line and adds ">" and prints line. If the remainder is 2 it prints the sequence line. It stores the 'prints' in the new file.
    
    
 ---
@@ -86,11 +86,14 @@
 
    We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
 
+
+
  
    * Can we store this in SAM file? Why / why not?
     
       It wouldn’t really make sense to store the information in a SAM file since we don’t have the reads nor alignements. 
     
+
 
     * Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
      
@@ -100,6 +103,8 @@
       chr2 2000 2999
       chr2 3000 3999
 
+
+
     * And in BED6? How? Are we losing any information?
     
       The Data can be stored in a BED6 file. I dont think there would be any informaion loss by using the BED6 format. This format semms to work best for the information given.
@@ -108,10 +113,14 @@
       chr2 2000 2999 intervalB 0 +
       chr2 3000 3999 intervalc 1000 +
 
+
+
     * And in BED12? How? Are we losing any information?
     
       The data could be stored in a BED12 file and there would be no dataloss but i think it would be a bit unnecessary since there is no further information so the 'new six datapoints' would be left blank.
-      
+     
+     
+     
     * And in the most compact Wiggle as possible? How? Are we losing any information?
 
       It should be possible. we would lose information about the strand information and the intervall names. It should look something like this:
