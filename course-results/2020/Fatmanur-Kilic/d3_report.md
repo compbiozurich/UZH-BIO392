@@ -7,12 +7,18 @@ Data, that represent only characters of readable material. No graphical represen
 By storing data in plain text files, you can easily handle it e.g. via terminal. Compressed versions provide storage. 
 
 ### How can we list files are in a directory? Please provide the command(s).
+ls: directory listing (ls means list storage)
+ls -al: formatted listing with hidden files
 
 ### What | and > do in a terminal?
+|: With the pipe you can connect two or more commands at a time. The output of one program used directly as input to the next one.
+>: This symbol means "take the output of a command and redirect it into a file". Consequently, the whole file will overwritten. 
 
 ### How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).
+tail /mnt/test/test.txt	
 
 ### How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).
+
 
 ### How can we print every third line of a text file? Please provide the command(s), and discuss what they do.
 
