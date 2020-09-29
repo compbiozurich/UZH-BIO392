@@ -89,13 +89,13 @@
 
 
  
-   * Can we store this in SAM file? Why / why not?
+   * **Can we store this in SAM file? Why / why not?**
     
       It wouldn’t really make sense to store the information in a SAM file since we don’t have the reads nor alignements. 
     
 
 
-    * Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
+    * **Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?**
      
       We could store the Information in a BED3 (I will use 0 counting / fully-closed) but we would lose information about the quality score and strand information.
       
@@ -105,7 +105,7 @@
 
 
 
-    * And in BED6? How? Are we losing any information?
+    * **And in BED6? How? Are we losing any information?**
     
       The Data can be stored in a BED6 file. I dont think there would be any informaion loss by using the BED6 format. This format semms to work best for the information given.
       
@@ -115,13 +115,13 @@
 
 
 
-    * And in BED12? How? Are we losing any information?
+    * **And in BED12? How? Are we losing any information?**
     
       The data could be stored in a BED12 file and there would be no dataloss but i think it would be a bit unnecessary since there is no further information so the 'new six datapoints' would be left blank.
      
      
      
-    * And in the most compact Wiggle as possible? How? Are we losing any information?
+    * **And in the most compact Wiggle as possible? How? Are we losing any information?**
 
       It should be possible. we would lose information about the strand information and the intervall names. It should look something like this:
    
