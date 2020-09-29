@@ -1,0 +1,40 @@
+# Liftover
+
+Definition: converttion of genomic coordinates and genomic annotation files from one genome assembly to the other. (e.g. hg19 to hg38)
+
+## Convert "segments.tsv" text file to "segments.bed" bed file
+
+Code: python with only three columns included as BED3 file
+
+text= pd.read_table('segments.tsv')
+new=open('segments.bed','w+')
+for j in range(len(text)):
+    e={}
+    e=('{}{} {:d} {:d}{}'.format('chr', text.iloc[j,1], text.iloc[j,2],text.iloc[j,3],"\n"))
+    new.write(e)
+ 
+ ## Use liftover program locally
+ 
+ Instructions:
+ 
+ 1) Install liftOver: I) Run this command from Terminal: in case of Mac user
+ rsync -aP rsync://hgdownload.soe.ucsc.edu/genome/admin/exe/macOSX.x86_64/liftOver  /Users/agshin_balayev/Downloads/
+ 
+ For Windows and Linux distributions, see [page](http://hgdownload.soe.ucsc.edu/admin/exe/)
+ 
+ 2) Download chain file containing mapping coordinates from one assembly to the other using: hg19 to hg38
+ wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz
+ 
+ 3) Run Liftover: 
+ design: directory_to_liftover_executable/liftOver ooriginal_file chain_file  newly_generated_file  unmapped_file
+./liftOver segments.bed hg19ToHg38.over.chain.gz segmentshg38.bed segmentsunmapped.bed
+
+## Use segment_liftover
+
+1) Install segment_liftover:
+pip install segment_liftover
+segment_liftover --help
+
+2) Run:
+segment_liftover -l ./liftOver -i /Users/agshin_balayev/Downloads -c hg19ToHg38.over.chain.gz -o /Users/agshin_balayev/Downloads -si segmentsmod.bed
+
