@@ -65,9 +65,9 @@
 ---
 * **How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.**
 
-   ``` $ awk ‘NR % 4 ==1 {a=substr($0,2);}  NR % 4 ==2  {print”>”a”\n”$0}’  file.fasta ```
+   ``` awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print}' file.fasta ```
    
-   Goes through all lined step by step. Takes the first line with the identifier and the second line with the sequence (by dividing the linenumber with 4 and looking at the remainder), if remainder = 1 takes the line and removes the "@" and stores it in variable a. If the remainder is 2 it prints ">" then the name stored in variable a , new line "\n",and the sequence row.
+   Goes through all lined step by step. Takes the first line with the identifier and the second line with the sequence (by dividing the linenumber with 4 and looking at the remainder), if remainder = 1 takes the line and adds ">" and prints line. If the remainder is 2 it prints the sequence line.
    
    
 ---
@@ -84,9 +84,10 @@
 ---
 * **We'd like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify).**
 
-We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
+   We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
 
-    * Can we store this in SAM file? Why / why not?
+ 
+   * Can we store this in SAM file? Why / why not?
     
       It wouldn’t really make sense to store the information in a SAM file since we don’t have the reads nor alignements. 
     
