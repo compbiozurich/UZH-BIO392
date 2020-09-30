@@ -4,5 +4,11 @@ We see that both samples are present in the “2_tumor_normal_m2.bam” file. We
 
 ##### 2. What are the three grouped tracks for the bamout? What do the colors indicate? What differentiates the pastel versus gray reads?
 
+Three bamout files:
+- Normal bam (blood sample)
+-	Tumor bam
+- and...
+
+Colors: The alignments are colored by tag HC. I think the grey ones does not belong to this HC group and therefore were not colored. 
 
 
