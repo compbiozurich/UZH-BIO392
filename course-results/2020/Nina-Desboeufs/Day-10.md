@@ -25,3 +25,17 @@ Cross-sample contamination, meaning that we have DNA from the tumor as well as t
 accross samples. 
 
 * **HaplotypeCaller**: "Call germline SNPs and indels via local re-assembly of haplotypes". 
+
+* **Matched normal control**: to exclude rare germline variations, which were not noticed by the germline resource as well as individual-specific artifacts.
+
+* **Panel of normals**: to exclude additional _noise_ in the sequencing data (not catched by the matched normal control and the population resource) e.g. mapping or datat processing artifacts. It consists of a certain number of exom samples, which were aligned with the same reference genome.
+
+* **Germline resource**:  "to limit the analysis of sites that are commonly variant (like gnomAD)". 
+
+* **FilterMutectCalls**: the following command "uses the annotations within the callset, and if provided, uses the contamination table in filtering", in order to only extract true positives. 
+
+* **FUNCOTATOR**: useful to visualize the impacts of the variant at he transcriptional level (Missense, Nonesens, silent mutation, etc). Here, we used GATK4 Funcotator.  
+
+
+
+
