@@ -1,9 +1,7 @@
 # Variants GATK 
 
 * We see a C→T variant light up in red for the tumor but not the normal. What do you think is happening in 2_tumor_normal_m2.bam?
-> Compared to the reference, the tumor cells present the C→T variant (location_ chr17:7.674.220), while the tumor not. This is clear since all the tumor samples aligned reads display this variant while the control (normal) samples reads do not (i.e. present a C at this location). \
-
-Cross-sample contamination, meaning that we have DNA from the tumor as well as the normal samples? This is supported by the contamination calculation done in step 3.1.2 (with a contamination ~0.0191). Looking at the filtered BAM file, we don't have the mix between C and T any more but just the variants.
+> Compared to the reference, the tumor cells present the C→T variant (location_ chr17:7.674.220), while the tumor not. This is clear since all the tumor samples aligned reads display this variant while the control (normal) samples reads do not (i.e. present a C at this location). 
 
 * What does the coverage tell you ? 
 > IGV displays the matching coverage tracks and informs us about the number of reads covering each base. In this particular case, we have a coverage of 131 reads for the C→T variant (40% C, 60% T). 
@@ -21,8 +19,7 @@ Cross-sample contamination, meaning that we have DNA from the tumor as well as t
 > Really interested! Especially about all the available options, that IGV offers. Regarding the noticed variant C→T, the clear cut between our data (normal vs tumor) gives a good confidence. 
 
 **A few definitions**: 
-* **Cross-sample contamination**: can occur during samples manipulation and data processing (i.e. sample handling, DNA/RNA extraction, library preparation and amplification, sample multiplexing and inaccurate barcode sequencing) 
-accross samples. 
+* **Cross-sample contamination**: can occur during samples manipulation and data processing (i.e. sample handling, DNA/RNA extraction, library preparation and amplification, sample multiplexing and inaccurate barcode sequencing) accross samples. Cross-sample contamination, meaning that we have DNA from the tumor as well as the normal samples? This is supported by the contamination calculation done in step 3.1.2 (with a contamination ~0.0191). Looking at the filtered BAM file, we don't have the mix between C and T any more but just the variants.
 
 * **HaplotypeCaller**: "Call germline SNPs and indels via local re-assembly of haplotypes". 
 
