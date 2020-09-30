@@ -39,3 +39,6 @@ Structured **day by day**
 - Genome Versions
 - UCSC genome browser
 - Genome liftover
+
+## Day 10 
+- Variants GATK 
