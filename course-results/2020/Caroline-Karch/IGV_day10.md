@@ -5,10 +5,11 @@ We see that both samples are present in the “2_tumor_normal_m2.bam” file. We
 ##### 2. What are the three grouped tracks for the bamout? What do the colors indicate? What differentiates the pastel versus gray reads?
 
 Three bamout files:
-- Normal bam (blood sample)
--	Tumor bam
-- and...
+- Normal bam: HCC1143_normal
+-	Tumor bam: HCC1143_tumor
+- P_Germline?
 
 Colors: The alignments are colored by tag HC. I think the grey ones does not belong to this HC group and therefore were not colored. 
-
+the red pastel samples belong to the normal cell linage and the green to the tumor cell linage.
+For the grey I detect tumor and normal cell samples. I don't really understand what this means...
 
