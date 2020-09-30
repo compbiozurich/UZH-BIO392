@@ -1,5 +1,4 @@
 # GATK Questions:
-=============
 
 ### *1.	We see a C→T variant light up in red for the tumor but not the normal.* 
 ### *What do you think is happening in 2_tumor_normal_m2.bam?*
@@ -21,8 +20,10 @@ Because we have another track with only the exome of the tumour cell which says 
 * Track 1: Shows what kind of haplotypes are possible
 * Track 2: Reads of the Normal Cells
 * Track3: Reads of the Tumor Cells
-What do the colors indicate? 
+
+### *What do the colors indicate?*
 Assigns the reads to the haplotype that matches the best
-What differentiates the pastel versus gray reads?
+
+### *What differentiates the pastel versus gray reads?*
 The pastel one seems to correspond to the haplotype called HC = 1514625493 whereas the grey one has no HC number. Since the colour is grey, and everything in grey seems like it belongs tot he reference genome, I assume this colour also stands fort he haplotype oft he reference genome. But I am not sure.
 
