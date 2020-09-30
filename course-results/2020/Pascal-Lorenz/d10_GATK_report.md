@@ -15,5 +15,3 @@
 
 - ### How do you feel about this somatic call? ###
     - Pretty good. Especially the clear separation of normal vs tumor in regards to that C -> T mutation are promising for this being an important distinguisher. The fact that the red and green HC clearly come from the two separate strains also speaks for high quality of our findings.
-
-- ### Examine the annotations for the TP53 mutation that we viewed earlier in IGV, at chr17:7674220 ###
