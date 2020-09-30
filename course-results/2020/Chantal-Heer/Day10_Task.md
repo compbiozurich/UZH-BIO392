@@ -4,12 +4,6 @@
 *  What are the three grouped tracks for the bamout? 
 What do the colors indicate? 
 What diﬀerentiates the pastel versus gray reads?
-> The alignments are grouped in the folowwing groups: 1. HC (HaplotypeCaller) 2. normal sample (HCC1143_normal) and 3. tumor sample (HCC1143_tumor)  
-> The colours indicate the different haloptypes. In our case, there are four different haplotypes in the pastel colours red, blue, green and violet. In the  
-> The read strand in pastel red indicates positive rightward (5' -> 3') DNA strand
-
-Now, right-click on the alignments track and
-
-Group by sample
-Color alignments by tag: HC
-Sort by base
+> The alignments are grouped in the followwing groups: 1. HC (HaplotypeCaller) 2. normal sample (HCC1143_normal) and 3. tumor sample (HCC1143_tumor).  
+> The colours indicate the different haloptypes. In our case, there are four different haplotypes in the pastel colours red, blue, green and violet. In the normal sample, we see mostly red reads (and one violet read). The tumor sample shows reads in pastel green.  
+> The grey reads refer to the reference genome (hg38) and the pastel coloured ones to the haplotype. 
