@@ -19,8 +19,8 @@
 * **What are the three grouped tracks for the bamout? What do the colors indicate? What differentiates the pastel versus gray reads?**
 
   (HC -> HaplotypeCaller)
-  The three grouped tracks are the normal samples, tumor samples and the HC. The grey reads belong to the referennce genome where the pastel reads to haplotypes each color representing what HC the reads are part of. 
-  Only thee green and red one seem to be relevant for this C → T Mutation. The green one seems to refer the tumor cells and the red one to the normal cells.
+  The three grouped tracks are the normal samples, tumor samples and the HC. The grey reads belong to the referennce genome where the pastel reads to haplotypes each color representing what haplotype the reads are part of. 
+  Only thee green and red one seem to be relevant for this C → T Mutation. The green one seems to refer a tumor cell haplotype and the red one to the normal cells haplotype.
  
 
 
