@@ -3,6 +3,14 @@
 ## 1. ClinVar [link](https://www.ncbi.nlm.nih.gov/clinvar/)
 ClinVar focuses on the variants and their link to clinical phenotype. See Day-02. 
 
+Disease | Gene | Variant(s) 
+:-------|:-----|:----------
+beta-thalassemia | HBB | NC_000011.10:g.5225158_5227199delinsCTTAT		\ NC_000011.9:g.5246388_5248429delinsCTTAT		\ NG_000007.3:g.70417_72458delinsATAAG \ NG_042296.1:g.3_730delinsTAT		\ NG_046672.1:g.3093_5134delinsCTTAT		\ NG_053049.1:g.1479_3011delinsCTTAT		\ NG_059281.1:g.4873_6914delinsATAAG |
+MYH-associated polyposis (or APF) | MUTYH | NC_000001.11:g.45329096_45333380del4285insTA		\ NM_001128425.1:c.348+33_*210delinsTA		\ LRG_220t1:c.348+33_*210delinsTA		\ LRG_220:g.12091_16375delinsTA | 
+Marfan Syndrome | TGFb2 | NM_003238.6:c.622delinsGG MANE SELECT (frameshift) \ NM_001135599.4:c.706delinsGG (frameshift) |
+Addison's disease | PTPN | NM_015967.7(PTPN22):c.1858C>T (p.Arg620Trp) (missense) | 
+
+
 
 
 ## 2. ClinGen [link](https://clinicalgenome.org)
@@ -19,3 +27,4 @@ KRAS | HGNC:6407 | chr12:25,205,246-25,250,929 | KRAS | Noonan Syndrome | 3C (hi
 
 
 As Nox1, a lot of genes, that I lokked for, were not curated (CD146, EGLN1/2/3, EPAS1, BCL2, OLFM3, ERBB2). 
+
