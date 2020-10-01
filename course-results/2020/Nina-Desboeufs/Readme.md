@@ -42,3 +42,7 @@ Structured **day by day**
 
 ## Day 10 
 - Variants GATK 
+
+## Day 11
+- ClinVar
+- ClinGen
