@@ -1,4 +1,4 @@
-# ClinVar and ClinGen
+# Genome Resources and databases
 
 ## 1. ClinVar [link](https://www.ncbi.nlm.nih.gov/clinvar/)
 ClinVar focuses on the variants and their link to clinical phenotype. See Day-02. 
@@ -25,6 +25,11 @@ CDKN2A | HGNC:1787 | chr9:21,967,753-21,975,098 | CDKN2A | melanoma-pancreatic c
 KRAS | HGNC:6407 | chr12:25,205,246-25,250,929 | KRAS | Noonan Syndrome | 3C (high evidence)
 
 
-
 As Nox1, a lot of genes, that I lokked for, were not curated (CD146, EGLN1/2/3, EPAS1, BCL2, OLFM3, ERBB2). 
 
+## 3. Progenetix [link](https://www.progenetix.org) 
+Progenetix is a database collecting and commenting CNVs/CNAs for all types of human malignancies. Through the platform, we can search either by cancer types or CNVs in gene(s) of interest. Beside that, it lists the attached publications as well as data visualization. The data were acquired by the following techniques: CGH and  Whole Genome or Whole Exome Sequecing. 542 cancer types!  
+
+
+**Definition**: 
+* **Beacon**: "is a federated, web-accessible service that can be queried for information about a specific genomic variant, e.g. a single nucleotide polymorphism (SNP/SNV) or a copy number variation (CNV), and reports about its existence in the queried resources". 
