@@ -1,6 +1,9 @@
 ### adapted from vignette source 'DNAcopy' ###
 
 ### Install package 
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
 BiocManager::install("DNAcopy")
 ### if prompted with not able to access
 
