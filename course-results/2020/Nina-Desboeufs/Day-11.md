@@ -9,7 +9,7 @@ beta-thalassemia | HBB | NC_000011.10:g.5225158_5227199delinsCTTAT		\ NC_000011.
 MYH-associated polyposis (or APF) | MUTYH | NC_000001.11:g.45329096_45333380del4285insTA		\ NM_001128425.1:c.348+33_*210delinsTA		\ LRG_220t1:c.348+33_*210delinsTA		\ LRG_220:g.12091_16375delinsTA | 
 Marfan Syndrome | TGFb2 | NM_003238.6:c.622delinsGG MANE SELECT (frameshift) \ NM_001135599.4:c.706delinsGG (frameshift) |
 Addison's disease | PTPN | NM_015967.7(PTPN22):c.1858C>T (p.Arg620Trp) (missense) | 
-
+Von Hippel Lindau Syndrome | VHL | NC_000003.11:g.(?_10094061)_(10191659_?)del \ NC_000003.11:g.(?_10094061)_(10191659_?)dup \ NM_000551.3(VHL):c.-195G>A \ NM_000551.3(VHL):c.-75_-55del| 
 
 
 
