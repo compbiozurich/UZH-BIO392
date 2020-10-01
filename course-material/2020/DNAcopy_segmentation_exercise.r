@@ -1,7 +1,7 @@
 ### adapted from vignette source 'DNAcopy' ###
 
 ### Install package 
-
+BiocManager::install("DNAcopy")
 ### if prompted with not able to access
 
 ### Data Information ###
