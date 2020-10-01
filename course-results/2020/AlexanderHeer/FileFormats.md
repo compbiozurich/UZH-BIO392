@@ -1,5 +1,23 @@
 # File Formats
 
+## The reference genomes
+
+* Not a file format or standard per se but the key for many of them as they need a reference to be aligned against
+* Describe the "consensus" DNA
+* Multiple assemblies have been released
+* GRCh = "Genome Reference Consortium"
+ * E.g. GRCh38.p13, where the p13 stands for the version of the reference, as older versions are still accesible
+ * Due to convention, the numebring is gapped
+* Mitochondrial genome is a special case due to its high variability
+ * Makes it hard to find a usefull reference
+ 
+## Reprodcability
+
+There is a need for standardizing data analysis using reproducible workflows:
+* Scripts for data retreival
+* Keeping track of analysis steps
+* Avoiding manual editing
+* Data storage standards &#8594; Standardized **file formats**
 
 ## Whih genomic file formats exist & what are thei use cases?
 
@@ -27,7 +45,25 @@ Therefore, it is one of the most commonly used file format when studying genetic
 
 
 ### HGVS-nomenclature
-The HGVS is used ti report and exchange information  bout variants in DNA, RNA and protein sequences. It is authorised by the Human Genome Variation Society (HGVS), Human Variome Project (HVP) and the HUan Genome Organization (HUGO) and serves an an international standard. The extensive nomenclature defines the basic variant types as stricly as possible to enhance clarity and facilitate computational analysis and descrition of the sequence variants. Detailed information on the nomenclature and its definitions can be found in [Dunnen et al.(2016)](https://onlinelibrary.wiley.com/doi/full/10.1002/humu.22981)
+The HGVS is used to report and exchange information  about variants in DNA, RNA and protein sequences. It is authorised by the Human Genome Variation Society (HGVS), Human Variome Project (HVP) and the HUman Genome Organization (HUGO) and serves an an international standard. The extensive nomenclature defines the basic variant types as stricly as possible to enhance clarity and facilitate computational analysis and descrition of the sequence variants. Detailed information on the nomenclature and its definitions can be found in [Dunnen et al.(2016)](https://onlinelibrary.wiley.com/doi/full/10.1002/humu.22981).
+
+From slides:
+It allows the annotation of sequence variants of DNA, RNA & proteins with relation to a genomic ("g") or protein ("c") reference
+
+### BED
+
+* Browser Extensible Data
+* provides flexible way to define data lines that are displayed in an annotation track
+* BED lines have three required fields and nine additional options:
+ * **chrom** : name of the chromosome or scaffold
+ * **chromStat** : starting position of the feature in the chromosome scaffold
+  * First base is numbered 0
+ * **chromEnd** : ending posiiton of the feature in th chromosome or scaffold. chromEnd base is not included in the display of the feature BUT the numebr in posiiton format will be represented 
+ * name, score, strand, thickStart, thickEnd, itemRgb, blockCount (exons), blockSize, blockStarts
+* Number of fields has to be consistent throughout any single set of data in an annotation track
+* order of the optional fields is binding &#8594; lower fields must be populated if higher fields are used
+* If field content has to be empty: "."
+* BED fields in custom tracks can be whitespace-delimited or tab-delimited
 
 
 ### SAM & BAM
@@ -73,15 +109,52 @@ Like BAM files, CRAM files are compressed alignment files. It was designed as an
 
 #### FASTA
  The FASTA format is a text-based format for representing either nucleotide or
-amino acid sequences using single-letter codes (standard IUB/IUPA amino acid and nucleic acid codes, with a few [exceptions](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)). The sequences are not alignetd to a reference sequecne as in other formats. Blank lines are not allowed in the middle of FASTA inputIt. A FASTA file is structured as follows:
-* Begins with a single-line descrition, the defline
+amino acid sequences using single-letter codes (standard IUB/IUPA amino acid and nucleic acid codes, with a few [exceptions](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)) for **nucleotides** or amino acid codes. The sequences are **not aligned** to a reference sequecne as in other formats. Blank lines are not allowed in the middle of FASTA input. A FASTA file is structured as follows:
+* Begins with a single-line descrition, the **defline**
  * distinguished from sequences by the '>' symbol
+ * usualy with uinque Sequence ID
 * Followed by lines of sequence data
 
-Compared to other file formats the FASTA fomrat is simple and easily readable, making it easy to maipulate and parse sequences using text-processing tools and scripting languages. The trade-off for its simplicity is that it contains less information than other formats.
+Compared to other file formats the FASTA fomrat is simple and easily readable, making it easy to maipulate and parse sequences using text-processing tools and scripting languages. The trade-off for its simplicity is that it contains less information than other formats and it is not optimised for size
 
 #### FASTQ
 The FASTQ file format can be looked at as an extension to the FASTAn format. Additionally to the same information of a FASTA file, it also includes a quality score (Phred) for each base, represented as a ASCII character. A problem with the format is, that it is not standardized. This means that different variants are in common use, which are not possible to reliably automatically be destinguished. NEvertheless it has become the de facto standard for storing high throughput sequening instrument (e.g. Illumina Genome Analyzer) outputs.
 
 ### MPEG-G
 MPEG-G stands for Moving Picture Experts Group and is a project that by proiding new compression and transport technologies and a family if standard specifications which aims to efficiently process, transport and share large scale genomic data. The possibility to implement leading-edge compression technology that can achieve an improvement of more than 10x over the BAM format. A more detailed introduction to MPEG-G can be found in the paper of [Alberti et al. (2018)](https://www.biorxiv.org/content/10.1101/426353v1).
+
+### ISCN
+
+* Stands for International System for Human Cytogenetic Nomenclature
+* Annotation format for chromosomal aberrations
+ * i.e. traditional microscopically visible structrual and quantitative abnormalities in karyotypes
+* Extension for "molecular cytogenetics" 
+ * e.g. M-FISH, SKY, genomic arrays
+ * Aims to prevent confusion in reporting research cytogenetic results. 
+ 
+ ### dbVar
+ 
+ * NCBI's database of human genomic structural variation
+  * idels
+  * dulpications
+  * inversions
+  * mobile elements
+  * translocations
+ * structural genome variations are still not completely solved with respect to unambiguous annotation
+ 
+### Sequence Ontology (SO)
+
+* describes types of biological sequence alterations (or normal status)
+* by itslef not suitable for complete variant description
+ * e.g. lacking the localisation &#8594; has to be attached to a sequence or functional element
+ 
+ 
+### GA4GH Transitional model
+
+* object model for the representation of genomic variants in the context of an experimental read-out (callset)
+* based on VCF principles 
+* allows to place variants into intervals with "fuzzy ends"
+not yet suitable for genotype reconstruction 
+* https://schemablocks.org/schemas/blocks/Variant.html
+
+  

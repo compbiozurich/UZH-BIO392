@@ -46,3 +46,4 @@ Structured **day by day**
 ## Day 11
 - ClinVar
 - ClinGen
+- Progenetix 
