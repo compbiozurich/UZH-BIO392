@@ -236,7 +236,7 @@ plot(segment.smoothed.CNA.object, plot.type="c")
 # plotSample(segment.smoothed.CNA.object, xmaploc = TRUE) 
 # or (because we just have one sample)
 plot(segment.smoothed.CNA.object, plot.type="p")
-# See if noises has been detected 
+# See if noise has been detected 
 
 
 
