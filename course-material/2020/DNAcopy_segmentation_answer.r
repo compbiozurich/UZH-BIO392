@@ -39,7 +39,7 @@ unique(coriell$Chromosome)
 unique(coriell[,2])
 
 ### How to get a quick estimate of the values/how the values distribute?
-hist(coriell$Chromosome)
+hist(coriell$Chromosome, breaks = 0:23)
 
 ### What is the range of the positions? 
 range(coriell$Position)
@@ -78,6 +78,7 @@ hist(Coriell13330[,4])
 log2(1/2)
 log2(2/2)
 log2(3/2)
+
 #### It's the base 2 log of the ratio between the sample copy number and reference copy number (2)
 
 ### Plot the line directly on the histogram to see where the values lie.
@@ -117,8 +118,8 @@ plot_chromosome(check_chr, Coriell13330)
 ### The method is called "circular binary segmentation", here we just learn how to implement it.
 
 ### Create a ‘copy number array’ data object from the data table Coriell05296
-### Hint: Use help() to understand how to use the function CNA.object().
-help(CNA.object)
+### Hint: Use help() to understand how to use the function CNA().
+help(CNA)
 CNA.object <- CNA(Coriell05296$Value,
                   Coriell05296$Chromosome,Coriell05296$Position,
                   data.type="logratio",sampleid="c05296")
@@ -170,13 +171,13 @@ table(seg_out$chrom)
 ### The DNAcopy library also has some nice plotting tools to easily visualize this segmentation.
 ### plot probe and segment data by chromosome and positions.
 ### Hint: Use help() to understand how to use the function plotSample().
-plotSample(segment.smoothed.CNA.object, plot.type="w")
+plot(segment.smoothed.CNA.object, plot.type="w")
 #### The red lines correspond to mean values in segments. 
 #### Note that the points are in alternate colors to indicate different chromosomes.
 
 ### plot with separate chromosomes with same method plotSample() but different "plot.type".
-plotSample(segment.smoothed.CNA.object, plot.type="s") 
+plot(segment.smoothed.CNA.object, plot.type="c") 
 
 ### plot with x position ordered by segment values with same method plotSample() but different "plot.type".
-plotSample(segment.smoothed.CNA.object, plot.type="p")
+plot(segment.smoothed.CNA.object, plot.type="p")
 
