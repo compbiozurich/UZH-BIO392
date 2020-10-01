@@ -1,6 +1,8 @@
 # Task: Variants & Diseases
 
-* ## Explore ClinVar: Create a relational list
+* ## Explore [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/): Create a relational list
+
+ ClinVar aggregates information about genomic variation and its relationship to human health.
 
 Disease | Gene | Variant
 ------------ | -------------| -------------
@@ -13,11 +15,11 @@ Tay sachs disease | HEXA 	| NC_000015.10:g.72346271T>A, NC_000015.9:g.72638612T>
 Fragile X syndrome | FMR1 | NC_000023.10:g.147031110T>C, NC_000023.11:g.147949590T>C, NM_002024.6:c.*746T>C
 Huntington's disease | HTT | NC_000004.12:g.3074877CAG(27_35), NC_000004.11:g.3076604CAG(36-39), NC_000004.11:g.3076604CAG[(36_39)]
 
+----
 
+* ## Explore [ClinGen](https://clinicalgenome.org/): Create a relational list
 
-* ## Explore ClinGen: Create a relational list
-
-
+ClinGen is a National Institutes of Health (NIH)-funded resource dedicated to building a central resource that defines the clinical relevance of genes and variants for use in precision medicine and research.
 
  Gene | Genename | Chromosomal locaion | Gene product | Disease
 ------------ | -------------| -------------| -------------| -------------
