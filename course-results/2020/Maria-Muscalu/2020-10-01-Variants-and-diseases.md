@@ -9,3 +9,5 @@
 |Cystic Fibrosis|NPHP4|[NC_000001.10:g.5923011A>C](https://www.ncbi.nlm.nih.gov/nuccore/NC_000001.10?report=graph&mk=5923011|NC_000001.10\:g.5923011A%3EC|green)|
 |Tay sachs disease|HEXB|[NC_000005.10:g.74721131G>A](https://www.ncbi.nlm.nih.gov/nuccore/NC_000005.10?report=graph&mk=74721131|NC_000005.10\:g.74721131G%3EA|green)|
 |Fragile X syndrome|PLOD1|[NC_000001.10:g.12025599C>G](https://www.ncbi.nlm.nih.gov/nuccore/NC_000001.10?report=graph&mk=12025599|NC_000001.10\:g.12025599C%3EG|green)|
+
+[NC_000001.10:g.12025599C>G](https://www.ncbi.nlm.nih.gov/nuccore/NC_000001.10?report=graph&mk=12025599|NC_000001.10\:g.12025599C%3EG|green)
