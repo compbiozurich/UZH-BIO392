@@ -1,4 +1,3 @@
-(to be modified)
 # Classes of structural variation
 
 * Deletion (> 50 bp)
@@ -184,6 +183,8 @@ Disadvantages: low base calling quality
 See [video of Oxford Nanopore Technology](https://www.youtube.com/watch?v=rXfS4wJoVLQ)
 
 - Note all of the sequencing technologies produce Fastq file to be analyzed through computation.
+
+# Sequencing-based computational approaches
 
 - Methods for computational analysis of CNVs through NGS technologies such whole-exome-sequencing and whole-genome-sequencing:
 
