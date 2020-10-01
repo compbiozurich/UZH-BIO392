@@ -72,7 +72,7 @@ data(coriell)
 ### The method is called "circular binary segmentation", here we just learn how to implement it.
 
 ### Create a ‘copy number array’ data object from the data table Coriell05296
-### Hint: Use help() to understand how to use the function CNA.object().
+### Hint: Use help() to understand how to use the function CNA().
 
 ### Smoothen the data by outlier deletion
 ### Hint: Use help() to understand how to use the function smooth.CNA()
