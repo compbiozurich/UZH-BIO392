@@ -50,7 +50,27 @@ The HGVS is used to report and exchange information  about variants in DNA, RNA 
 From slides:
 It allows the annotation of sequence variants of DNA, RNA & proteins with relation to a genomic ("g") or protein ("c") reference
 
-### BED
+### BEDTools
+
+In genomics it is a fundamental task to deternmine wether distinct sets of genomic features (e.g. aligned seq reads, gene annotation, ESTs, genetic polymorphisms, mobile elements, etc.) overlap or are associated with one another. 
+Genomic features are often represented by Browser Extensible Data (BED, below) or General Feature Format (GFF, below). Comparisons are often performed using the UCSC Genome Browser (among others). While these tools are conveniant and reliable, they need an interaction with a remote or local web site installation. Thus, they are not amenable to large datasets. BedTools was developed to adrress the need for fatser and more felxible tools to conduct a greater number and more diverse set of experiments. 
+
+Possible problem that can be approached:
+if genomic features of two distinct sets share at least one base pair they are defined as *intersecting* or *overlapping*, thereofre a typical question would be ‘Which of my novel genetic variants overlap with exons?’. 
+ &#8594; BEDTools efficiently addresses such questions without requiring an installation of the UCSC or Galaxy browsers
+ 
+Advantages:
+* Can read data from standard input and write to standard output
+ * Allows complex set operatins to be perfomred (combination of operations form BEDTools among each other and with UNIX utilities)
+* Most tools distinguish DNA strands when searching for overlaps
+ * Allows orientaton to be considered when interpreting paired-end mapping or RNA-seq data
+* Mitigates the need to interact with local or public instances of the UCSC Genome Browser or Galaxy
+ * Avoinding a major bottleneck when working with large genomics datasets
+* Speed and functionallity allow greater flexibility in defining and refinig genomic comparisons 
+ * Allows for diverse and complex comparisons between ever-larger genomic datasets
+
+
+## BED
 
 * Browser Extensible Data
 * provides flexible way to define data lines that are displayed in an annotation track
@@ -65,6 +85,54 @@ It allows the annotation of sequence variants of DNA, RNA & proteins with relati
 * If field content has to be empty: "."
 * BED fields in custom tracks can be whitespace-delimited or tab-delimited
 
+Formating compared to UCSC Genome Browser (web interface):
+ 
+BED | UCSC
+--- | ---
+"0-start, half-open” system | "1-start, fully-closed" system (as coordinates are “positioned” in the browser)
+Written as Written as: chr1 127140000 127140001: <ul><li>Spaces between chromosome, start coordinate, and end coordinate</li><li>no punctuation</li></ul> | Written as: chr1:127140001-127140001<ul><li>No spaces</li><li>Includes punctuation: a colon after the chromosome, and a dash between the start and end coordinates</li></ul>
+More efficient method | Needs one more step in the calculation but is more intuitive
+Used for database tables in UCSC | Used in the UCSC web browser to be more humanly readable
+ 
+## GFF
+* Originally for the intechange of time-series data between analysis systems
+* Extended for storage of processed acoustic data, nonacoustic dasa & event data
+* Employs the chunk concept to provide extendability while providing a measure of backwards compatibility
+* Includes .txt, .csv, .doc, .pdf, .jp[e]g, .png, ... (?)
+
+## GFF3
+
+* Generic Feature Format Version 3
+* addresses the most common extensions to GFF, while preserving backward compatibility with previous formats
+* Adds a mechanism for representing more than one level of hierarchical grouping of features and subfeatures
+* Separates the ideas of group membership and feature name/id
+* Constrains the feature type field to be taken from a controlled vocabulary
+* Allows a single feature, such as an exon, to belong to more than one group at a time
+* Provides an explicit convention for pairwise alignments
+* Provides an explicit convention for features that occupy disjunct regions
+* tab-delimited
+* plain text file
+* use of UTF-8 recomended 
+* nine-columns
+ * seqiq
+ * source 
+ * type
+ * start
+ * end
+ * score
+ * strand
+ * phase
+ * attributes
+* tab (%09)
+* newline (%0A)
+* carriage return (%0D)
+* % percent (%25)
+* control characters (%00 through %1F, %7F)
+* reversed meaning in column 9:
+ * ; semicolon (%3B)
+ * = equals (%3D)
+ * & ampersand (%26)
+ * , comma (%2C)
 
 ### SAM & BAM
 
