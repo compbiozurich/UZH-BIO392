@@ -22,5 +22,6 @@ _In more details_: example with Illumina (sequencing by synthesis) ([YouTube vid
 ## 3. Bonus: Dig deeper for some molecular cytogenetic techniques 
 
 ### SNP, aCGHs array
+See Day 09
 
 
