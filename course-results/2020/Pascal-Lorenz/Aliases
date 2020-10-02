@@ -1,9 +1,7 @@
 alias bedtools='~/course/soft/bedtools2/bin/bedtools
-
 alias blastn='~/course/soft/ncbi-blast-2.10.1+/bin/blastn'
 alias blastp='~/course/soft/ncbi-blast-2.10.1+/bin/blastp'
 alias blastx='~/course/soft/ncbi-blast-2.10.1+/bin/blastx'
 alias tblastn='~/course/soft/ncbi-blast-2.10.1+/bin/tblastn'
 alias tblastx='~/course/soft/ncbi-blast-2.10.1+/bin/tblastx'
-
 alias plink='~/course/soft/plink'
