@@ -23,7 +23,8 @@
 
 #### What differentiates the pastel versus gray reads?
 
->The pastel reads represent to which HC this read belongs to and where there was a difference compared to the reference genome The gray reads represent bases of reads from the reference genome.
+> The pastel reads represent to which HC this read belongs to and where there was a difference compared to the reference genome The gray reads represent bases of reads from the reference genome.
 
 #### How do you feel about this somatic call?
+> This variant could be a potential variant to distinguish  breast tumor samples from normal ones, however because we don't have a big difference in the coverage between T and C ( 60%T and 40% C) and that some gray reads have T variant instead of C, it is not really possible to make any statement for this specific variant to be present in all breast tumor samples.
 
