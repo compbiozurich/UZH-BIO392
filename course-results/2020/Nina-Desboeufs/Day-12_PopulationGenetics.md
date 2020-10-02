@@ -5,7 +5,11 @@ Plink is a whole genome analysis data toolset allowing the analysis of genotype 
 statistics (e.g. frequency), population stratification (e.g. Complete linkage hierarchical clustering), etc. 
 
 ### 1. Definitions
+The population genetics study focuses on the genetic variations encountered in a population, i.e. changes in genes/alleles frequencies over generations. Developping of models to predict the evolution of genomic evolution as well as associate genetic variant to phenotypic diversity. 
 
+* **Linkage**: "genetic markers are inherited together rather than being broken apart by recombination events".
+* **Linkage Disequilibrium**: association (by recombination point) of alleles at two or more loci. LDs depend on several factors such as local recombination rate, genetic drift, non- random mating, mutation rate and population structure. 
+* **Linkage Disequilibrium Decay**: seuquential reduction of the linked blocks over generations (move from LD to linkage equilibrium). 
 
 ### 2. Commands 
 **Input file**:
@@ -22,7 +26,7 @@ e.g.  `./plink -vcf my.file.vcf -make-bed -out new.name`
 
 **Filtering**: 
 * -extract (removes all unlisted variants from the current analysis)
-* -maf _threshold.value_ (minor allele frequencies/count, filters out all variants with MAF below the provided threshold)
+* -maf _threshold.value_ (minor allele frequencies/count, filters out all variants with MAF below the provided threshold, defined as common or rare (<1%))
 * -geno _treshold_value_ (missing genotype rates, filters out all variants with missing call rates exceeding the provided value)
 * -mind _threshol.value_ (same but for samples)
 * -prune (filters out all samples with missing phenotypes) 
@@ -109,4 +113,17 @@ $ ./plink --vcf my.file.vcf --r2 --ld-window-r2 0 --ld-window 300 -out name.LDd
 # LD plots
 $ ./plink --vcf my.file.vcf --r2 --ld-window-r2 0 -out name.pLd
 ```
+### 4. Literature 
+**Human genetic variation and its contribution to complex traits** (Frazer, K.A. et al, 2009): \
+Association of genetic variants in a population with phenotypic diversity (Definitions, challenges, methods). \
+Classes of human genetic variants: 
+* **SNPs**: the most prevalent, 
+* **Indels**: Insertion - deletions variants 
+* **Block substitution**: 
+* **Inversion variant**: 
+* **CNVs**: 
+
+
+
+
 
