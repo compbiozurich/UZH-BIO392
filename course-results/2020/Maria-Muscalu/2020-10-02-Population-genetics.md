@@ -32,6 +32,9 @@ HG00097	HG00097
 ...
 
 // This command returns 5 files: .bed, .bim, .fam, .log, .nosex
+// --extract normally accepts a text file with a list of variant IDs and removes all unlisted variants from the current
+// analysis.
+// Usually one ID per line, but it's okay for them to just be separated by spaces).
 ./plink --vcf ALL.chr20.chunk1.vcf.gz --extract mysnps.txt --make-bed -out extracted
 
 95626 variants loaded from .bim file.
@@ -103,8 +106,7 @@ head ALL.chr20.hwe
 
 ```
 
---extract normally accepts a text file with a list of variant IDs and removes all unlisted variants from the current analysis.
-Usually one ID per line, but it's okay for them to just be separated by spaces).
+
 
 --indep 50 5 2 produce a pruning list of variants based on LD
 --indep requires three parameters: a window size in variant count or kb units, a variant count to shift the window at the end of each step, and a variance inflation factor (VIF) threshold. At each step, all variants in the current window with VIF exceeding the threshold are removed.
