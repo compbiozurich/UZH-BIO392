@@ -1,6 +1,6 @@
 ## tutorial commands cheat sheet
 ### population genetics
-* minor allele frequency
+#### minor allele frequency
 - cli
 ```
 plink --vcf xxx --make-bed -out xxx
@@ -11,17 +11,24 @@ plink --bfile xxx -maf
 hist(your_maf)
 ```
 
-* LD decay
+#### LD decay
 - cli
-`plink --vcf xxx --r2 --ld-window-r2 0 --out xxx`
+```
+plink --vcf xxx --r2 --ld-window-r2 0 --out xxx
+```
 
- * LD plots
- -cli
- `plink --vcf xxx --r2 --ld-window-r2 0 ---ld-window 300 -out xxx`
- 
 - R
 ```
 plotDecayLD(your_ld_decay_data,xlim = c(0,100), ylim = c(0,1), avgwin = 80, title = your_title) ## make 80 averaging windows
+```
 
+#### LD plots
+- cli
+```
+plink --vcf xxx --r2 --ld-window-r2 0 ---ld-window 300 -out xxx
+```
+
+- R
+```
 plotPairwiseLD(your_ld_data ,ylim=c(0,300), xbreaks = 10, title = your_title)  ## make 10 axis breaks
 ```
