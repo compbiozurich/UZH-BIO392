@@ -114,7 +114,7 @@ $ ./plink --vcf my.file.vcf --r2 --ld-window-r2 0 --ld-window 300 -out name.LDd
 $ ./plink --vcf my.file.vcf --r2 --ld-window-r2 0 -out name.pLd
 ```
 ### 4. Literature 
-**Human genetic variation and its contribution to complex traits** (Frazer, K.A. et al, 2009): \
+**Human genetic variation and its contribution to complex traits** ([Frazer, K.A. et al, 2009](https://www.nature.com/articles/nrg2554)): \
 Association of genetic variants in a population with phenotypic diversity (Definitions, challenges, methods). \
 Classes of human genetic variants: 
 * **SNPs**: the most prevalent, 
