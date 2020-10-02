@@ -69,36 +69,36 @@ We have three genomic intervals. All intervals are 1000 nt long. They are contig
 ### Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
 
 ```
-chr2 1000 1101
-chr2 1100 1201
-chr2 1200 1301
+chr2 1000 1999
+chr2 2000 2999
+chr2 3000 3999
 ```
 In a BED3 file no information is stored about the score and about the strand, so we will miss this information.
 
 ### And in BED6? How? Are we losing any information?
 
 ```
-chr2 1000 1101 . 0 +
-chr2 1100 1201 . 0 +
-chr2 1200 1301 . 1000 +
+chr2 1000 1999 A 0 +
+chr2 2000 2999 B 0 +
+chr2 3000 3999 C 1000 +
 ```
 In  a BED6 file all information which is available from the text above can be stored. No information gets lost.
 
 ### And in BED12? How? Are we losing any information?
-???
+
 ```
-chr2 1000 1101 . 0 + . . 0 1 . .
-chr2 1100 1201 . 0 + . . 0 1 . .
-chr2 1200 1301 . 1000 + . . 0 1 . .
+chr2 1000 1999 A 0 + . . 0 1 . .
+chr2 2000 2999 B 0 + . . 0 1 . .
+chr2 3000 3999 C 1000 + . . 0 1 . .
 ```
 We are not loosing any information but we just cant give any more information.
 
 ### And in the most compact Wiggle as possible? How? Are we losing any information? 
 
 ```
-fixedStep chrom=chr2 start=1000 step=100
+fixedStep chrom=chr2 start=1000 step=1000
 0
 0
 1000
 ```
-We are not loosing any information and the file is also not asking for more.
+We are loosing the name of the intervals and the information that all of them are in the plus strand.
