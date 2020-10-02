@@ -5,3 +5,7 @@ alias blastx='~/course/soft/ncbi-blast-2.10.1+/bin/blastx'
 alias tblastn='~/course/soft/ncbi-blast-2.10.1+/bin/tblastn'
 alias tblastx='~/course/soft/ncbi-blast-2.10.1+/bin/tblastx'
 alias plink='~/course/soft/plink'
+
+
+awk {'if ($6=="AFR") print'} igsr_samples.tsv > AFR.tsv
+awk {'if ($4=="CHB") print'} igsr_samples.tsv > HAN.tsv
