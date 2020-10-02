@@ -1,6 +1,6 @@
 # File Formats
 
-## The reference genomes
+### The reference genomes
 
 * Not a file format or standard per se but the key for many of them as they need a reference to be aligned against
 * Describe the "consensus" DNA
@@ -10,8 +10,29 @@
  * Due to convention, the numebring is gapped
 * Mitochondrial genome is a special case due to its high variability
  * Makes it hard to find a usefull reference
+* Collection of contigs/scaffolds
+ * contig = strech of DNA seq encoded as A,G,C,T,N
+ * Typically in FASTA format
+ * ">" contains scaffold name, other lines are the seq
+
+### Primary assembly
+* best known assembly of a haploid genome
+ * chromosome assembly
+ * Unlocalized seq &#8594; associated to a chromosome but whose order/orientation is unknown
+ * Unplaced sequence &#8594; not linekd to any chromosome 
  
-## Reprodcability
+### Alternate loci
+
+* Alternate representation of a locus
+ * usually highly polimorphic regions, e.g. MHC region
+ 
+### Patches
+
+* Contig seq released outside of the full assembly release
+ * Fix/error correction
+ * Novel/ne seq that will be included into the next full assembly release
+ 
+### Reprodcability
 
 There is a need for standardizing data analysis using reproducible workflows:
 * Scripts for data retreival
@@ -19,9 +40,41 @@ There is a need for standardizing data analysis using reproducible workflows:
 * Avoiding manual editing
 * Data storage standards &#8594; Standardized **file formats**
 
+**From slides (some info repeated):**
+How do we do this in a reproducible manner?
+* Scripting: We store an up-to-date reference genome in our
+computer (once)
+* use specific file standards to specify the genome annotation (i.e. GTF, BED files)
+
+## alignments
+
+* local alignments: identify regions of similarity within long sequences that are often widely divergent overall
+ * often prefere but can be more dfficult to calculate (difficulty of identifying regions of similarity
+* global alignments: global optimization that "forces" the alignment to span the entire length of all query sequences
+* more info: https://www.majordifferences.com/2016/05/difference-between-global-and-local.html#.X3c6oGgzZnI
+* Semi-global alignment: mix?
+
+### Annotations
+Genomic annotations are layers to genomic coordinates specifying their nature (e.g. exon, intron, untranslated region, open reading frame, ...). They are commonly stored in GFF or GTF files files
+
+
 ## Whih genomic file formats exist & what are thei use cases?
+Access to the same data and tools is necessary but not enough: there is also a need for data standards
+
+### Overview of common formats and their intended use
+* Fasta and FastQ
+* SAM/BAM (Alignments)
+* BED (Genomic ranges)
+* GFF/GTF (Gene annotation)
+* BEDgraphs (Genomic ranges)
+* Wiggle files, BEDgraphs and BigWigs (Genomic scores).
+* Indexed BEDgraphs/Wiggles
+* VCFs (variants)
+
+
 
 ### VCF Files
+
 
 VCF stands for __Variant Call Format__. This text format is used for storing sequence variants (e.g. SNPs).
 It consists of:
@@ -66,11 +119,13 @@ Advantages:
  * Allows orientaton to be considered when interpreting paired-end mapping or RNA-seq data
 * Mitigates the need to interact with local or public instances of the UCSC Genome Browser or Galaxy
  * Avoinding a major bottleneck when working with large genomics datasets
-* Speed and functionallity allow greater flexibility in defining and refinig genomic comparisons 
+* Speed and functionallity allow greater flexibility in defining and refinig genomic comparisons access to the same data and tools is not enough: the
+need for data standards
+Izaskun
  * Allows for diverse and complex comparisons between ever-larger genomic datasets
 
 
-## BED
+#### BED
 
 * Browser Extensible Data
 * provides flexible way to define data lines that are displayed in an annotation track
@@ -93,14 +148,32 @@ BED | UCSC
 Written as Written as: chr1 127140000 127140001: <ul><li>Spaces between chromosome, start coordinate, and end coordinate</li><li>no punctuation</li></ul> | Written as: chr1:127140001-127140001<ul><li>No spaces</li><li>Includes punctuation: a colon after the chromosome, and a dash between the start and end coordinates</li></ul>
 More efficient method | Needs one more step in the calculation but is more intuitive
 Used for database tables in UCSC | Used in the UCSC web browser to be more humanly readable
+
+From slides:
+* BED files are simpler data representations, usually the next
+step after getting the SAM files
+ * smaller and essier to handle
+* Come in different flavors:
+ * **BED3:** 3 tab separated columns, chromosome (scaffold), start, end
+ * **BED6:** BED3 plus name, score, strand
+ * **BED12**
+
  
-## GFF
+#### BEDgraph
+* To display continuous-valued data in track format
+* useful for probability scores
+* Advantages: the coordinates are specied, so sparsity is
+allowed
+*
+
+#### GFF 
+
 * Originally for the intechange of time-series data between analysis systems
 * Extended for storage of processed acoustic data, nonacoustic dasa & event data
 * Employs the chunk concept to provide extendability while providing a measure of backwards compatibility
 * Includes .txt, .csv, .doc, .pdf, .jp[e]g, .png, ... (?)
 
-## GFF3
+#### GFF3
 
 * Generic Feature Format Version 3
 * addresses the most common extensions to GFF, while preserving backward compatibility with previous formats
@@ -134,6 +207,10 @@ Used for database tables in UCSC | Used in the UCSC web browser to be more human
  * & ampersand (%26)
  * , comma (%2C)
 
+#### GTF
+Stands for gene transfer format. It is a format used to hold information about gene structure. It is a tab-delimited text format based on the general feature format (GFF), but contains some additional conventions specific to gene information
+
+
 ### SAM & BAM
 
 #### SAM
@@ -161,6 +238,7 @@ base  &#8594; [detailed info](https://samtools.github.io/hts-specs/SAMv1.pdf)
   * SEQ: segment sequence
   * QUAL: Quality score, phred-scaled
 
+More info: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2723002/
 #### BAM
 
 BAM stands for __Binary Alignment Map__. It contains the same information as a SAM file but as binary infomration.
@@ -187,6 +265,30 @@ Compared to other file formats the FASTA fomrat is simple and easily readable, m
 
 #### FASTQ
 The FASTQ file format can be looked at as an extension to the FASTAn format. Additionally to the same information of a FASTA file, it also includes a quality score (Phred) for each base, represented as a ASCII character. A problem with the format is, that it is not standardized. This means that different variants are in common use, which are not possible to reliably automatically be destinguished. NEvertheless it has become the de facto standard for storing high throughput sequening instrument (e.g. Illumina Genome Analyzer) outputs.
+
+Sequencing short reads is common practice. We get hundereds of millions of reads and instead of assembling them, we align them to a reference. Sequencers provide sequence and error rates assessment, therefore thefasta format is not suitable, but fastq is
+ &#8594; Standard de facto for short read, high-throughput sequencing instruments such (i.e. Illumina)
+ 
+From slides:
+Plain text files with chunks of four lines:
+* @ identifier line
+* Sequence
+* "+" (sometimes the sequence name, again)
+* Quality scores (diferent encodings exist)
+ 
+##### Phred
+
+* The sequencing quality score of a given base Q is defined by as Q = -10 log10 P
+* Logaritimically linked to error probabilities
+ * score of 10 = 90% base call accuracy
+ * score of 20 = 99% base call accuracy
+ * score of 30 = 99.9% base call accuracy
+ * score of 40 = 99.99% base call accuracy
+ * ...
+ 
+
+
+
 
 ### MPEG-G
 MPEG-G stands for Moving Picture Experts Group and is a project that by proiding new compression and transport technologies and a family if standard specifications which aims to efficiently process, transport and share large scale genomic data. The possibility to implement leading-edge compression technology that can achieve an improvement of more than 10x over the BAM format. A more detailed introduction to MPEG-G can be found in the paper of [Alberti et al. (2018)](https://www.biorxiv.org/content/10.1101/426353v1).
@@ -225,4 +327,19 @@ MPEG-G stands for Moving Picture Experts Group and is a project that by proiding
 not yet suitable for genotype reconstruction 
 * https://schemablocks.org/schemas/blocks/Variant.html
 
-  
+### Wig files
+* To display continuos-value data
+* GC percent, probability scores, and transcriptome data.
+* Data is not sparse! Wiggle data elements must be equally sized (step)
+* Basic Wig file: specifies the chromosome (once), the nucleotide, and the score.
+* Improved Wig: add the span if the score applies to several nucleotides
+* Improved Wig: how to represent the scores of 300 nucleotides from chr3, starting from 400601, where the first 100 nt are scored 11, the next 100 nt 22, and the last 33?
+
+General structure:
+Wiggle format is line-oriented. For wiggle custom tracks, the first line must be a track definition line (i.e., track type=wiggle_0), which designates the track as a wiggle track and adds a number of options for controlling the default display.
+
+Wiggle format is composed of declaration lines and data lines, and require a separate wiggle track definition line. There are two options for formatting wiggle data: variableStep and fixedStep. These formats were developed to allow the file to be written as compactly as possible.
+
+
+Data values:
+Wiggle track data values can be integer or real, positive or negative values. Only positions specified have data. Positions not specified do not have data and will not be graphed. All positions specified in the input data must be in numerical order. NaN values are not supported by the browser and, if included, may have unforeseen effects.
