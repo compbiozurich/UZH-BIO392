@@ -14,9 +14,9 @@ library(ggplot2)
 #' @param minr2 A value between 0 and 1. All SNPs with R2 value below this 
 #' value is excluded from plot.
 #' 
-plotPairwiseLD <- function(dfr,chr,xlim=c(NA,NA),ylim=c(NA,NA),minr2, xbreaks, title) {
+plotPairwiseLD <- function(ld,chr,xlim=c(NA,NA),ylim=c(NA,NA),minr2, xbreaks, title) {
 
-  if(missing(dfr)) stop("Input data.frame 'dfr' missing.")
+  if(missing(ld)) stop("Input data.frame 'ld' missing.")
   
   if(!missing(chr)) {
     ld <- filter(ld,CHROM_A==get("chr") & CHROM_B==get("chr"))
@@ -74,8 +74,8 @@ plotPairwiseLD <- function(dfr,chr,xlim=c(NA,NA),ylim=c(NA,NA),minr2, xbreaks, t
 #' @param minr2 A value between 0 and 1. All SNPs with R2 value below this 
 #' value is excluded from plot.
 #' 
-plotDecayLD <- function(dfr,chr,xlim=c(NA,NA),ylim=c(NA,NA),avgwin=0,minr2, title) {
-  if(missing(dfr)) stop("Input data.frame 'dfr' missing.")
+plotDecayLD <- function(ld,chr,xlim=c(NA,NA),ylim=c(NA,NA),avgwin=0,minr2, title) {
+  if(missing(ld)) stop("Input data.frame 'ld' missing.")
   
   if(!missing(chr)) {
     ld <- filter(ld,CHROM_A==get("chr") & CHROM_B==get("chr"))
