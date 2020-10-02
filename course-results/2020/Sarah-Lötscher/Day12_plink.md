@@ -39,21 +39,16 @@ $ ./plink --bfile ALL.chr20.chunk1 -keep-fam han_list.txt -make-bed -out HAN
 $ ./plink --bfile HAN -maf 0.05 -make-bed -out HAN.maf
 $ ./plink --bfile AFR -maf 0.05 -make-bed -out AFR.maf
 
+#Allele freq
 $ ./plink -bfile HAN -freq -out HAN
 $ ./plink -bfile AFR -freq -out AFR
+$ ./plink -vcf ALL.chr20.chunk1.vcf freq -out ALL
 ```
 
 ```
+#LD decay
 $ ./plink --vcf ALL.chr20.chunk1.vcf --r2 --ld-window-r2 0 --ld-window 300 -out ALL.chr20LDd
+#LD plots
 $ ./plink --vcf ALL.chr20.chunk1.vcf --r2 --ld-window-r2 0 -out ALL.chr20pLd
 
 ```
-
-* LD decay
-- cli
-`plink --vcf xxx --r2 --ld-window-r2 0 --out xxx`
-
- * LD plots
- -cli
- `plink --vcf xxx --r2 --ld-window-r2 0 --ld-window 300 -out xxx`
- 
