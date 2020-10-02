@@ -42,4 +42,71 @@ e.g. `./plink -bfile myfile.bed.bim.fam -maf 0.05 -make-bed -out filtered.maf`
 * -r2 (calculates linkage/correlation)
 * -blocks no-pheno-req (generate LD blocks = identifies the genetic markers that are linked to each other)
 
+### 3. Exercises (Commands)
+
+**Files conversion**: 
+
+```
+# .vcf -> .bed .bim .fam
+$ ./plink -vcf my.file.vcf -recode -out new.name  
+# .vcf -> .ped .map
+$ ./plink -vcf my.file.vcf -make-bed -out new.name
+# .bed -> .vcf 
+$ ./plink -vcf my.file.bed -recode vcf -out new.name
+```
+
+**Filtering**: 
+
+```
+# extract all the SNPs listed in mysnps 
+$ ./plink -vcf my.file.vcf.gz -extract mysnps.txt -make-bed -out extracted
+# remove all the maf below 0.05 
+$ ./plink -bfile my.file -maf 0.05 -make-bed -out ALL.maf
+# removes all the variants with missing calls aboce 0.05 
+$ ./plink -bfile my.file -geno 0.05 -make-bed -out ALL.geno
+# removes all variants with a Hardy-Weinberg equilibrium p.value below 1e-3
+$ ./plink -bfile my.file -hwe 1e-3 -make-bed -out ALL.hwe
+# removes all the samples with missing calls below 0.01
+$ ./plink -bfile my.file -mind 0.01 -make-bed -out ALL.mind
+```
+
+**Statistics**: 
+
+```
+# report a minor allele frequency
+$ ./plink -bfile my.file -freq -out All.frq
+# report missing variants 
+$ ./plink -bfile my.file  -missing -out All.lmiss
+$ awk 'BEGIN{fs=" +"}{if ($0>0) print}' All.lmiss |head
+```
+
+**Population genetics metrics**: 
+
+```
+# report subset of markers that are in approximate linkage equilibrium
+$ ./plink -bfile my.file -indep 50 5 2 -out ld.indep
+# calculate linkage/correlation
+$ ./plink -bfile my.file -r2 -out r2_cal
+# Genetic markers identification, that are correlated together 
+$ ./plink -bfile ALL.chr20.chunk1 -blocks no-phno-req -out All.chr
+```
+
+**Subset population**: 
+
+```
+# Select only the family listed in my_list
+$ ./plink --bfile my.file -keep-fam my_list.txt -make-bed -out fam.name
+# Same as previously 
+$ ./plink --bfile my.file -maf 0.05 -make-bed -out filtered.maf
+$ ./plink -bfile my.file -freq -out name.frq
+```
+
+**Linkage disequilibrium decay**: 
+
+```
+# LD decay
+$ ./plink --vcf my.file.vcf --r2 --ld-window-r2 0 --ld-window 300 -out name.LDd
+# LD plots
+$ ./plink --vcf my.file.vcf --r2 --ld-window-r2 0 -out name.pLd
+```
 
