@@ -16,7 +16,7 @@ ls -al: formatted listing with hidden files
 ">": This symbol means "take the output of a command and redirect it into a file". Consequently, the whole file will overwritten. 
 
 ### How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).
->tail /mnt/test/test.txt	
+tail /mnt/test/test.txt	
 
 ### How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).
 awk '{print $1}' /mnt/test/test.txt
