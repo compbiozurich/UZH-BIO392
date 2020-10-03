@@ -61,7 +61,7 @@ For the SNP microarry the hybridization is performed on single sample. The inten
 
 ### 3.2 Spectral karyotyping (SKY) and Multicolor Fluorescence In Situ Hybridization (M-FISH)
 
-The SKY method is used to visualise the chromosomes and especially their abnormalities [[1]]. One key aspect of this method is that the each of the homologous chromosome pairs have a different colour, which makes it easy to differentiate between them [[1]]. Inter, and intra-chromosomal genomic rearrangements can be easily spotted [[2]]. 
+The SKY method is used to visualise the chromosomes and especially their abnormalities [[1]]. One key aspect of this method is that each of the homologous chromosome pairs have a different colour, which makes it easy to differentiate between them [[1]]. Inter, and intra-chromosomal genomic rearrangements can be easily spotted [[2]]. 
 
 M-FISH is used to detect a certain sequence on a chromosome [[3]]. For this method a probe, that has a fluorophore attached to it, can be designed to hyberdize to the chromosome [[3]]. This way a specific part of the DNA can be identified [[3]]. 
 
