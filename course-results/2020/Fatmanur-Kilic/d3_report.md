@@ -16,15 +16,18 @@ ls -al: formatted listing with hidden files
 ">": This symbol means "take the output of a command and redirect it into a file". Consequently, the whole file will overwritten. 
 
 ### How do we print the last 10 lines of the file named /mnt/test/test.txt? Please provide the command(s).
-tail /mnt/test/test.txt	
+>tail /mnt/test/test.txt	
 
 ### How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).
-
-
+> awk '{print $1}' /mnt/test/test.txt
 ### How can we print every third line of a text file? Please provide the command(s), and discuss what they do.
+> awk '{print NR % 3 == 0}' /mnt/test/test.txt 
+It processes each line and checks NR % 3 ==0 (if NR is multiples of 3). If it is, the line will be printed.
 
 ### How can we transform FASTQ into FASTA files using standard Unix tools (sed, awk, etc)? Please provide the command(s), and discuss what they do.
-
+> awk 'NR % 4 == 1 {print ">"$1};  # each line will be checked if its rest equals 1 when divided by 4 (gets the header line in the fastq file). If it is, this line will be printed as the header line in the fasta file
+      'NR % 4 == 2 {print}' file.fq > file1.fa # each line will be checked if its rest equals 2 when divided by 4 (gets the sequence line in the fastq file). If it is, this line will be the sequence line in the fasta file. 
+      
 ### Which are the advantages of BED/coordinate files as compared to storing just sequences?
 
 ### Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
