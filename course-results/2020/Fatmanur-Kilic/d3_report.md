@@ -45,7 +45,7 @@ BED stores genomic regions as coordinates. One of the advantages of this format 
 Read quality, mapping quality, variant calling quality
 
 ## We'd like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify). We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have a score of 0, and interval C has a score of 1000.
-I choose 1 counting full-closed.
+I choose 0 based half-open.
 
 ### Can we store this in SAM file? Why / why not?
 SAM stores biological sequences aligned to a reference sequence. In this case, we have neither reads nor alignments. It wouldn't make sense to store it in SAM file.
@@ -54,17 +54,17 @@ SAM stores biological sequences aligned to a reference sequence. In this case, w
 Yes. The information score, plus name and strand are lost.
 
 ```
-chr2 1000 2000
-chr2 2000 3000
-chr2 3000 4000
+chr2 1000 1999
+chr2 2000 2999
+chr2 3000 3999
 ```
 
 ### And in BED6? How? Are we losing any information?
 No information loss.
 ```
-chr2 1000 2000 intervalA 0 +
-chr2 2000 3000 intervalB 0 +
-chr2 3000 4000 intervalC 1000 -
+chr2 1000 1999 intervalA 0 +
+chr2 2000 2999 intervalB 0 +
+chr2 3000 3999 intervalC 1000 +
 ```
 
 ### And in BED12? How? Are we losing any information?
