@@ -29,8 +29,8 @@ It processes each line and checks NR % 3 ==0 (if NR is multiples of 3). If it is
 > awk 'NR % 4 == 1 {print ">"$1}; 
       'NR % 4 == 2 {print}' file.fq > file1.fa
       
-awk 'NR % 4 == 1 {print ">"$1}: each line will be checked if its rest equals 1 when divided by 4 (gets the header line in the fastq file). If it is, this line will be printed as the header line in the fasta file      
-'NR % 4 == 2 {print}' file.fq > file1.fa: each line will be checked if its rest equals 2 when divided by 4 (gets the sequence line in the fastq file). If it is, this line will be the sequence line in the fasta file. 
+**awk 'NR % 4 == 1 {print ">"$1}:** each line will be checked if its rest equals 1 when divided by 4 (gets the header line in the fastq file). If it is, this line will be printed as the header line in the fasta file      
+**'NR % 4 == 2 {print}' file.fq > file1.fa:** each line will be checked if its rest equals 2 when divided by 4 (gets the sequence line in the fastq file). If it is, this line will be the sequence line in the fasta file. 
       
 ### Which are the advantages of BED/coordinate files as compared to storing just sequences?
 
