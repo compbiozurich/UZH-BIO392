@@ -26,6 +26,4 @@ By the intensity based methode (e.g. DNA microarray), you look at the fluorescen
 | Two labeled DNAs (patient and control) per hybridization        | Only patient DNA labeled and hybridizied                                                           |
 | Resolution down to size of oligonucleotides; exon by exon       | Resolution limited by SNP distribution and signal to background                                    |
 | No detection of **U**ni**P**arental **D**isony or consanguinity | Able to detect consanguinity and most UPD                                                          |
-| Limited SNP addition possible recently                          | Detection of most known clinically relevant **C**opy **N**number **V**ariants but not exon by exon |
-  * SKY, M-FISH
-  * chromosomal CGH
+| Limited SNP addition possible recently                          | Detection of most known clinically relevant **C**opy **N**umber **V**ariants but not exon by exon |
