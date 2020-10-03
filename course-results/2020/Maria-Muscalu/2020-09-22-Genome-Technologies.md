@@ -18,7 +18,7 @@ The machines used for tese techniques can produce readouts less than one kilobas
 
 ### 1.2 [Second-generation DNA sequencing](https://internal.baudisgroup.org/pdf/2016-01-15___Heather_and_Chain__The-sequence-of-sequencers__Genomics.pdf)
 
-#### Clonally amplification usig emulsion PCR (emPCR).
+#### Clonal amplification using emulsion PCR (emPCR).
 
 Adapter sequences attach DNA libraries to beads. Afterwards, emulsion PCR (emPCR) is used and the initial DNA library is amplified. DNA-coated beads are washed over a plate that fits one beat per well. The pyrosequencing step occures when enzymes linked to smaller beads and dNTP are added. Pyrophosphate is then measured using a charged couple device (CCD).
 
