@@ -67,7 +67,7 @@ The VRS format currently has the JSON-based schema [[9]] and the file is used to
 
 #### 5. 0 or 1-based and "interbase" genomic coordinate systems
 
-The interbase and 0-based coordinates start to count the genomic sequence from 0, while the 1-based counts the nucleotides starting with 1 [[12]]-[[13]]. The 0-based coordinates can specify a region with a half-closed-half-open interval [[14]]. For example, to describe the part from the second to the sixth nucleotide, the interval [1, 6) is appropriate [[14]]. On the other hand, the 1-based coordinates can refer to a part of a sequence using a closed interval and for the example above, this would mean the [2, 6] interval [[14]].  
+The interbase and 0-based coordinates start to count the genomic sequence from 0, while the 1-based counts the nucleotides starting with 1 [[12]]-[[13]]. The 0-based coordinates can specify a region with a half-closed-half-open interval [[14]]. For example, to describe the part from the second to the sixth nucleotide, the interval [2, 7) is appropriate [[14]]. On the other hand, the 1-based coordinates can refer to a part of a sequence using a closed interval and for the example above, this would mean the [2, 6] interval [[14]].  
 
 [12]: https://genviz.org/module-01-intro/0001/02/01/Review_of_Central_Concepts/
 [13]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383450/#:~:text=The%20so%2Dcalled%20%E2%80%9Cbase%E2%80%9D,nucleotide%20positions%20in%20the%20genome.
