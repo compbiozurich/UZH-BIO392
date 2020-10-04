@@ -117,11 +117,29 @@ $ ./plink --vcf my.file.vcf --r2 --ld-window-r2 0 -out name.pLd
 **Human genetic variation and its contribution to complex traits** ([Frazer, K.A. et al, 2009](https://www.nature.com/articles/nrg2554)): \
 Association of genetic variants in a population with phenotypic diversity (Definitions, challenges, methods). \
 Classes of human genetic variants: 
-* **SNPs**: the most prevalent, 
+* **SNPs**: the most prevalent, base substitution. 
 * **Indels**: Insertion - deletions variants 
-* **Block substitution**: 
-* **Inversion variant**: 
-* **CNVs**: 
+* **Block substitution**
+* **Inversion variant**
+* **CNVs**
+
+**From Lecture 01**: 
+
+At the level transcription: 
+* **Silent**: no change in aa seq
+* **Nonsense**: stop codon 
+* **Missense**: chnage in aa seq 
+
+These mentionned changes might affect the protein structure (folding, stability, binding sites, etc), which then alter the proteins function(s). 
+> _Structure is better conserved than sequence._
+The protein structure can be determined by: 
+* X-ray Crystallography 
+* Nuclear Magnetic Resonance (NMR) spectroscopy
+* Electron Microscopy/Diffraction
+
+**Sickle cell anemia:** Glu -> Val (hydrophobic residue), hb agglutination. 
+
+
 
 
 
