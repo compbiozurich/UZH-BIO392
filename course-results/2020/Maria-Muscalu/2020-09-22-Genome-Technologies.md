@@ -18,7 +18,7 @@ The machines used for tese techniques can produce readouts less than one kilobas
 
 ### 1.2 [Second-generation DNA sequencing](https://internal.baudisgroup.org/pdf/2016-01-15___Heather_and_Chain__The-sequence-of-sequencers__Genomics.pdf)
 
-#### Clonally amplification usig emulsion PCR (emPCR).
+#### Clonal amplification using emulsion PCR (emPCR).
 
 Adapter sequences attach DNA libraries to beads. Afterwards, emulsion PCR (emPCR) is used and the initial DNA library is amplified. DNA-coated beads are washed over a plate that fits one beat per well. The pyrosequencing step occures when enzymes linked to smaller beads and dNTP are added. Pyrophosphate is then measured using a charged couple device (CCD).
 
@@ -61,9 +61,9 @@ For the SNP microarry the hybridization is performed on single sample. The inten
 
 ### 3.2 Spectral karyotyping (SKY) and Multicolor Fluorescence In Situ Hybridization (M-FISH)
 
-The SKY method is used to visualise the chromosomes and especially their abnormalities [[1]]. One key aspect of this method is that the each of the homologous chromosome pairs have a different colour, which makes it easy to differentiate between them [[1]]. Inter, and intra-chromosomal genomic rearrangements can be easily spotted [[2]]. 
+The SKY method is used to visualise the chromosomes and especially their abnormalities [[1]]. One key aspect of this method is that each of the homologous chromosome pairs have a different colour, which makes it easy to differentiate between them [[1]]. Inter, and intra-chromosomal genomic rearrangements can be easily spotted [[2]]. 
 
-M-FISH is used to detect a certain sequence on a chromosome [[3]]. For this method a probe, that has a fluorophore attached to it, can be designed to hyberdize to the chromosome [[3]]. This way a specific part of the DNA can be identified [[3]]. 
+M-FISH is used to detect a certain sequence on a chromosome [[3]]. For this method a probe, that has a fluorophore attached to it, can be designed to hybridize to the chromosome [[3]]. This way a specific part of the DNA can be identified [[3]]. 
 
 [1]: https://www.genome.gov/genetics-glossary/Spectral-Karyotype#:~:text=Spectral%20karyotype%20(SKY)%20is%20a,compared%20with%20a%20conventional%20karyotype.
 [2]: https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/spectral-karyotyping
@@ -71,7 +71,7 @@ M-FISH is used to detect a certain sequence on a chromosome [[3]]. For this meth
 
 ### 3.3 Chromosomal CGH
 
-This method is used to provide information about the copy number changes in chromosomes [[4]]. When the genome of a tumour is analysed using chromosomal CGH, this indicates all the gains and losses [[4]]. Tumor and normal DNA recived different fluorophores and they were added to normal chromosomes and left to hybridize [[4]]. The fluorescence ratio was used to assess the gain or loss of genetic material in a specific locous for tumour chromosomes [[4]]. 
+This method is used to provide information about the copy number changes in chromosomes [[4]]. When the genome of a tumour is analysed using chromosomal CGH, this indicates all the gains and losses [[4]]. Tumor and normal DNA recived different fluorophores and they were added to normal chromosomes and left to hybridize [[4]]. The fluorescence ratio, measured along the chromosomal axis, was used to assess the gain or loss of genetic material in a specific locous for the tumor DNA [[4]]. 
 
 [4]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC395705/
 

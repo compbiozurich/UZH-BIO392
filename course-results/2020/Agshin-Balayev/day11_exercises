@@ -1,0 +1,160 @@
+### adapted from vignette source 'DNAcopy' ###
+
+### Install package 
+# BiocManager::install("DNAcopy")
+### if prompted with not able to access
+
+### Data Information ###
+### We selected a subset of the data set presented in Snijders et al. (2001). 
+### We are calling this data set coriell. The data correspond to two array CGH studies of 
+### fibroblast cell strains. In particular, we chose the studies GM05296 and GM13330. 
+### There is accompanying spectral karyotype data (not included), which can serve as a gold standard. 
+### The data can be found at http://www.nature.com/ng/journal/v29/n3/suppinfo/ng754_S1.html
+
+### Load the library
+library(DNAcopy)
+
+### Load data
+data(coriell)
+
+### What's the type of the object?
+class(coriell)
+
+### What's the dimension of the data frame?
+dim(coriell)
+
+### What information does the table contain?
+head(coriell) 
+colnames(coriell) 
+
+### So how does the values of the chromosome column look like?
+### Answer: They are integers
+### What are the unique values in the column?
+unique(coriell[, "Chromosome"])
+
+### How to get a quick estimate of the values/how the values distribute?
+plot(coriell[,"Chromosome"], coriell[,"Position"], main="Allocation of probes by chromosome positions", xaxt="n", xlab= "Chromosome", ylab = "Chromosome position")
+axis(1, at=seq(1, 23, by=1), las=2)
+
+### What is the range of the positions? 
+for (i in unique(coriell[,"Chromosome"])) {
+  print(paste("chr",paste(i)))
+  print(min(subset(coriell,Chromosome == i, select=Position)))
+  print(max(subset(coriell,Chromosome == i, select=Position)))
+}
+
+### Human genome has about 3 billion basepairs. Check that the "Position" value restarts from 1 for every chromosome?
+### Answer: "Position" value begins from 0 for each chromosome
+
+### Ideally we want the probes to be homogeneously distributed in each chromosome, check it for Chromosome 1
+### Answer: probes seem to be homogeneously distributed across all positions for Chromosome 1 except around 148000 where it seems to be a short gap.
+
+### yes this looks more or less similarly probed everywhere in Chromosome 1.
+### Answer: for other chromosomes, probe distribution look homogeneous with certain gaps too. 
+### Columns 5 and 6 are the measured values for two samples: Coriell.05296 and Coriell.13330.
+### Check the values: are there NAs?
+any(is.na(coriell$Coriell.05296))
+any(is.na(coriell$Coriell.13330))
+
+### Create two separate data frames for each sample, named Coriell05296 and Coriell13330
+Coriell05296= data.frame("Chromosome"=coriell$Chromosome, "Position"= coriell$Position ,coriell$Coriell.05296)
+Coriell13330=data.frame("Chromosome"= coriell$Chromosome, "Position"=coriell$Position, coriell$Coriell.13330)
+
+### change the name of value column to "Value"
+
+names(Coriell05296)[names(Coriell05296) == "coriell.Coriell.05296"] <- "Value"
+names(Coriell13330)[names(Coriell13330) == "coriell.Coriell.13330"] <- "Value"
+
+### remove NAs from both data frames
+Coriell05296 = na.omit(Coriell05296)
+Coriell13330 = na.omit(Coriell13330)
+### Now what are the values?
+head(Coriell05296)
+head(Coriell13330)
+### Copy number (CN) of DNA should be normally 2 (father, mother), or abnormal 0, 1 with CN loss, or 3,4,5... with CN gain
+### So what is this value?
+### Log(CN of test/CN of reference) where CN of reference =2
+### Google the concept "log ratio" for copy number data and calculate converting CN = 1, 2, 3 to log ratio
+### Answer: At CN=1, log2(1/2)=-1, at CN=2, log2(2/2)=0, at CN=3, log2(3/2)=0.585
+### Plot the line directly on the histogram to see where the values lie.
+hist(Coriell05296$Value, main="Frequency of probe-allocated chromosome coordinates",xlab="Position")
+points(Coriell05296$Position,Coriell05296$Value,pch=19)?
+
+
+### Do a simple plot of the values on Chromosome 1
+### Hint: just use Position as x axis, log ratio value as y axis.
+chr1_positions_05296 = subset(Coriell05296, Chromosome == 1, select=Position)
+chr1_values_05296= subset(Coriell05296, Chromosome == 1, select=Value)
+chr1_positions_13330 = subset(Coriell13330, Chromosome == 1, select = Position)
+chr1_values_13330= subset(Coriell13330, Chromosome == 1, select = Value)
+plot(as.matrix(chr1_positions_13330),as.matrix(chr1_values_13330), type='p', main="Allocation of CNVs across chromosome 1 coordinates", xlab='Chromosome 1 coordinates', ylab="Log2-transformed CN ratio",col="blue")
+lines(as.matrix(chr1_positions_05296),as.matrix(chr1_values_05296),type='p', main="Allocation of CNVs across chromosome  1 coordinates", xlab='Chromosome 1 coordinates', ylab="Log2-transformed CN ratio",col="red")
+legend(0,0.8, legend=c("Coriell05296","Coriell13330"),col=c("red","blue"),lty=1:2)
+
+### change check_chr from above to check Chromosomes 10 and 11.
+chr1011_positions_05296 = subset(Coriell05296, Chromosome == 10:11, select=Position)
+chr1011_values_05296= subset(Coriell05296, Chromosome == 10:11, select=Value)
+chr1011_positions_13330 = subset(Coriell13330, Chromosome == 10:11, select = Position)
+chr1011_values_13330= subset(Coriell13330, Chromosome == 10:11, select = Value)
+plot(as.matrix(chr1011_positions_13330),as.matrix(chr1011_values_13330), type='p', main="Allocation of CNVs across chromosome 10 & 11 coordinates", xlab='Chromosome 10 & 11 coordinates', ylab="Log2-transformed CN ratio",col="blue")
+lines(as.matrix(chr1011_positions_05296),as.matrix(chr1011_values_05296),type='p', main="Allocation of CNVs across chromosome  10 & 11 coordinates", xlab='Chromosome 10 & 11 coordinates', ylab="Log2-transformed CN ratio",col="red")
+legend(0,0.3, legend=c("Coriell05296","Coriell13330"),col=c("red","blue"),lty=1:2)
+
+### What do you observe compared to Chr 1?
+
+### Answer: it seems there is single copy gain for Coriell13330 sample on chromosome 1 but no gain/loss for either sample on chromosome 10 and 11. Coriell05296 does not resemble to have copy gain or loss on chromosome 1,10 & 11. 
+
+### It's clear by eye that there should be a region in Chr 10 with CN =3
+### How to find start end positions of the region?
+### It turns out to be not an easy question.
+### Statisticians developed this R library DNAcopy, especially to solve this segmentatino problem.
+### The method is called "circular binary segmentation", here we just learn how to implement it.
+
+### Create a ‘copy number array’ data object from the data table Coriell05296
+### Hint: Use help() to understand how to use the function CNA().
+cna_Coriell05296=CNA(Coriell05296$Value, Coriell05296$Chromosome, Coriell05296$Position, data.type="logratio")
+### Smoothen the data by outlier deletion
+### Hint: Use help() to understand how to use the function smooth.CNA()
+smoothened_Coriell05296=smooth.CNA(cna_Coriell05296)
+### Segmentation step
+### Hint: Use help() to understand how to use the function segment()
+segmented_smoothened_CNAobject_Coriell05296=segment(smoothened_Coriell05296)
+### What does different parameters imply?
+### Answer: weights = contribution of each probe to CN (>1 sample is needed). Alpha: under which p-value threshold, result is significant.nperm = number of permutations to estimate p-value for each CN.
+### p.method: describe methods to estimate p-value, "perm" - shuffles probes contributing to the CN and by generating distribution, computes p-value. "hybrid": distribution is made by selecting max(log ratio probe) of small segment contributing to CN and max(log ratio probe) of the rest contributing to CN. At the end, final p-value = multiplication of all larger segment log ratio probabilities.
+### min.width: minimum two probes should support the CN segment. 
+### kmax: number of probes to be considered as smaller segment in p-value estimation using hybrid method.
+### nmin: length of the rest segment used in hybrid method.Minimum: 4*kmax
+
+### Now the segmentation algorithm has finished with our parameter "smooth.region" as 10 and "outlier.SD.scale" as 4.
+### What is the segmentation output?
+### Hint: type "segment.smoothed.CNA.object$" in the console and hit Tab key to see what prompts.
+### Hint: you can also check in the "Environment" window and open the variable "segment.smoothed.CNA.object" to see its content.
+segmented_smoothened_CNAobject_Coriell05296$output
+### What does each column mean?
+### Answer: Each row stand for one segment and columns stand : ID = sample ID, chrom = chromosome number, loc.start = map position of start of segment, loc.end = map position of end of segment, num.mark = number of markers in segment, seg.mean = average log ratio value in segment
+
+### do a simple scatter plot with "chrom" as x and "seg.mean" as y
+plot(segmented_smoothened_CNAobject_Coriell05296$output$chrom, segmented_smoothened_CNAobject_Coriell05296$output$seg.mean, main="Allocation of CNVs", xlab="Chromosome coordinates", ylab="Average log-ratio")
+
+### use table() to check how many segments each chromosome has
+table(segmented_smoothened_CNAobject_Coriell05296$output$chrom)
+
+### change parameters for smoothing and for segmentation and see if the number of segments change
+### and check with plot() or table()
+### e.g. for smoothing: "smooth.region" as 20 and "outlier.SD.scale" as 8.
+### e.g. for segmentation: "undo.splits" as "sdundo", "undo.SD" as 3 and "verbose" as 1
+smoothened_Coriell05296_2=smooth.CNA(cna_Coriell05296,smooth.region = 20, outlier.SD.scale = 8)
+segmented_smoothened_CNAobject_Coriell05296_2=segment(smoothened_Coriell05296_2, undo.splits = "sdundo", undo.SD = 3, verbose=1)
+table(segmented_smoothened_CNAobject_Coriell05296_2$output$chrom)
+
+### A: beside chromosomes 10 and 11 that have 3 CNVs, all chromosomes have single CNV. 
+
+### The DNAcopy library also has some nice plotting tools to easily visualize this segmentation.
+### plot probe and segment data by chromosome and positions.
+### Hint: Use help() to understand how to use the function plotSample().
+plot(segmented_smoothened_CNAobject_Coriell05296_2)
+### plot with separate chromosomes with same method plotSample() but different "plot.type".
+plot(segmented_smoothened_CNAobject_Coriell05296, plot.type="c")
+### plot with x position ordered by segment values with same method plotSample() but different "plot.type".
+plot(segmented_smoothened_CNAobject_Coriell05296, plot.type="p")

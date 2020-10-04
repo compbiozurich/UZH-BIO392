@@ -110,3 +110,17 @@ diff 20200924/liftOver_converted_segments_transformed.bed 20200924/py_liftOver_s
 deactivate
 ```
 However most of these differences are caused by minor changes in one column as indicated by the example above.  In the 20200924/liftOver_converted_segments_transformed.bed file the strang has a “–“ symbol, while the 20200924/py_liftOver_segments_transformed.bed file (which was done using segment_liftover and then converted to a bed file) has a -1.
+
+### **Other genome resources**
+
+#### **[ALLIANCE of Genome Resources](https://www.alliancegenome.org/#:~:text=The%20primary%20mission%20of%20the,human%20biology%2C%20health%20and%20disease.)**
+
+This website offers sustainable genome information resources of diverse model organisms. 
+
+#### **[ClinGen](https://www.clinicalgenome.org/)**
+
+It is used to define the clinical relevance of a genes and variants.
+
+#### **[Mouse Genome Informatics MGI](http://www.informatics.jax.org/)**
+
+Is a website that is focused only on mouse genome and variations. It could be practical for research in mice. 

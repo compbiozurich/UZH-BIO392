@@ -9,7 +9,7 @@ We'd like to store the following information. You can decide to encode them coun
 
 We have 3 genomic intervalls. All intervalls are 1'000 nt long. They are continguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in position 1'000 of chr2. We don't have reads nor alignments, just scores (integers). Intervals A and B have score of 0 and interval C has a score of 1'000.  
 * Can we store this in SAM file? Why / why not?  
-> We can't store this information because the sequences are avaiable as scores. The SAM file format stores the sequences information as alignment to the reference genome. 
+> We can't store this information because the sequences are available as scores. The SAM file format stores the sequences information as alignment to the reference genome. 
 * Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?  
 > The information can be stored in a BED3 file. However, we lose some informtaion (BED3 has only three columns).  
 >

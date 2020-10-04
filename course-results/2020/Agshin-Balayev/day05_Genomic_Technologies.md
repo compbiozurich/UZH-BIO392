@@ -44,7 +44,7 @@ Limitations of Arrays:
 
 - Assay sensitivity to detect short CNV and assumptions like diploid reference genome even if it is not the case. For example: duplication in reference genome causes more than two copies of one region.
 
-See ![aCGH method](https://www.researchgate.net/profile/Sebastiano_Cavallaro/publication/305078193/figure/fig2/AS:391208695287857@1470282829808/Array-CGH-procedure-is-characterized-by-the-isolation-of-DN$
+See [aCGH method](https://www.researchgate.net/profile/Sebastiano_Cavallaro/publication/305078193/figure/fig2/AS:391208695287857@1470282829808/Array-CGH-procedure-is-characterized-by-the-isolation-of-DN$
 Advantages of Arrays: cost and throughput
 
 * Single Molecule Analysis:
@@ -56,6 +56,135 @@ copy number alterations and their locations.
 
 - NGS technologies seem to surpass arrays in the near future for CNV detection but are presented with computational and bioinformatic challenges. A lot of the computational algorithms have been \
 designed to investigate capillary sequencing reads and fully-sequenced large-insert clones.
+
+- ** Evolution of sequencing technologies **
+
+## 1) First generation DNA sequencing:
+
+* **Maxam-Gilbert Technique (1977)** : technique giving birth to first generation sequencing. 
+
+-Technology: after DNA is denatured at high temperature, it is labelled at 5'-end with radioactive P32. Then, after preparing four tubes with same concentration of radiolabelled DNA, four substances (acid, dimethyl sulphate, hydrazine, hydrazine + salt) are added to each of the tubes. Acid hydrolyzes purines (A and G) by cleaving from deoxyribose-base link, dimethyl sulphate methylates guanines causing removal of guanine from polynucleotide chain, hydrazine cleaves pyrimidines (T and C) at deoxyribose-base bond and hydrazine + salt cause same reaction at cytosine. Hot piperidine cleaves phosphodiester bond at 5'-end of abasic sites and generates different DNA fragments which are subsequently run on polyacrylamide gel and visualized utilizing autoradiography. 
+
+Advantage: can sequence any nucleic acid molecule
+Disadvantage: low-throughput
+
+See [video of Maxam-Gilbert Sequencing](https://www.youtube.com/watch?v=_B5Dj8PL4E0)
+
+* **Sanger Sequencing (1977)** : method which is a trademark of "first generation sequencing". After development of less adopted "Plus and Minus technique" which was limited by repetitive sequence nucleotides, Fred Sanger has come up with "chain-termination" approach called "Sanger Sequencing".
+
+-Technology: four tubes with equal DNA concentrations are made. To each tube, single type of radiolabelled dideoxyribonucleotides (ddNTPs) which does not include 3'-OH group needed for extension of DNA chain and remaining three types of deoxyribonucleotides are added. For example: 
+
+** Tube 1: DNA + ddATP + dCTP + dGTP + dTTP + primed DNA polymerase
+** Tube 2: DNA + ddCTP + dATP + dGTP + dTTP + primed DNA polymerase
+** Tube 3: DNA + ddGTP + dATP + dCTP + dTTP + primed DNA polymerase
+** Tube 4: DNA + ddTTP + dATP + dCTP + dGTP + primed DNA polymerase
+
+Note: proportion of dideoxynucleotide concentration should be very low relative to deoxynucleotide concentration due to polymerisation step to happen.
+
+-Technology (continued): sequence of DNA is synthesized until ddNTP is incorporated and by looking at 4 lanes on polyacrylamide gel utilizing autoradiography, different size bands can be envisioned and the DNA molecule content may be disclosed. 
+
+Advantages of original Sanger Sequencing: may sequence any type of nucleic acid molecule.
+
+Disadvantages of original Sanger Sequencing: low-throughput. 
+
+-Remark: to increase throughput, fluorescent labels are used instead of radiolabelled ddNTPs and novel polymerases are utilized handling varied chemical moieties as ddNTPs vs dNTPs. 
+
+[video of Sanger Sequencing)(https://www.youtube.com/watch?v=KTstRrDTmWI)
+
+## Second generation DNA sequencing: 
+
+* **Pyrosequencing (1985)** : pioneered by Pal Nyren, this method uses the same "sequencing by synthesis" methodology like "Sanger Sequencing". It is licensed by the company "454 Life Sciences" and was used to sequence the genome of James Watson. 
+
+-Technology (modern): DNA is fragmented through sonication or nebulization and adapters are attached. Then, each fragment is attached to paramagnetic bead in the picotiter well on the flow cell which is done in parallel for many wells. Each DNA fragment attached to bead in picotiter well is clonally amplified through emulsion-PCR (oil suspension in water --> to reduce contamination by covering the bead). Oil is removed from every well by washing over picotiter plate and small bead-linked enzymes + dNTPs are added. The principle of detection: 
+
+Contents of the well: Clonally-amplified fragment of DNA attached to bead + ATP sulfurylase + luciferase + luciferin + O2 + dNTP
+Steps:
+1) Add dATP to well 1 and it incorporates to the newly generated strand.
+2) Released pyrophosphate molecule from dATP --> AMP + PPi reaction, is converted to from PPi to ATP by ATP sulfurylase enzyme. (PPi + adenylyl sulphate --> ATP + sulphate)
+3) Luciferin + O2 + ATP --> Light (Luciferase)
+Conclusion: more PPi, more light
+4) Light is detected by charged coupled device on bottom of the wells
+
+Note: add one dNTP at a time to each well. To remove excessive dNTP, when switching to another kind of dNTP, apyrase enzyme usually used. (ATP --> PPi + AMP)
+
+Advantages: no use of ddNTPs only natural dNTPs, high-throughput, produce 400-500 bp for 1M wells
+
+Disadvantages: detection of homopolymers due to noise ensuing four to five sam type of sequence nucleotides)
+
+See [video of Pyrosequencing](https://www.youtube.com/watch?v=wY8to-_zAEo&t=136s)
+
+* **Illumina Sequencing** : is a parallel sequencing technique which uses different amplification method from "Pyrosequencing" and most commonly utilized sequencing method. 
+
+-Technology: DNA is fragmented and adapters are attached to the ends. Each adapter is complementary to the oligonucleotide bound to a flow cell which makes fragments bind to oligonucleotides. Then, sequencing by synthesis begin and after first nucleotide is added, reaction is terminated due to flurophore attached at the 3'-OH end. Each dNTP is attached to a different fluorophore to be distinguished visually through the sensor. After, charged coupled device sensor detects the color in parallel for many fragments attached to complementary oligonucleotides, reaction is reversed through enzymatic cleavage and continues with next nucleotide binding. At the end of single strand synthesis, dNTP + DNA pol + temptlate strand are washed out. After arching off nascent strand to another complementary oligonucleotide, another synthesis step commences. This way, paired-end sequencing is done and DNA fragment is amplified by solid phase PCR (i.e. bridge amplification). 
+
+Advantages: high-throughput, generate high read length + read depth, paired-end reads useful to detect structural variations and spliced exons. 
+Disadvantage: cost
+
+See [video of Illumina Sequencing](https://www.youtube.com/watch?v=fCd6B5HRaZ8&t=132s)
+
+* **Ion Torrent** : developed by Jonathan Rothburg after 454, uses different detection approach.
+
+-Technology: after DNA is fragmented and attached to the bead in parallel inside of many wells in a chip, amplified using emulsion-PCR and single dNTP in a solution is added. Then if nucleotide is used to construct nascent strand, H+ is secreted which changes pH of solution detected by the complementary metal-oxide semi-conductor (CMOS) technology. Then dNTP is washed out and switched to next dNTP kind. 
+
+Advantage: highly parallelized as pyrosequencing
+Disadvantage: bad for detection of repetitive nucleotides (consecutive 4-5 nucleotide)
+
+See [video of Ion Torrent](https://www.youtube.com/watch?v=zBPKj0mMcDg)
+
+
+* **SOLiD** : method using "sequencing by ligation" method, developed by Applied Biosystems.
+
+-Technology: after DNA is fragmented, it is attached to two universal adapters: P1 and P2. Then, many P1-adapter attached fragments bind to complementary sequences on the beads. Using these primers, fragments are amplified through PCR and make numerous copies of same DNA sequence on the bead (polonies). Then, to select beads with clonally amplified DNA fragments, big polysterene beads with complementary P2 adapters attach to 3'-end of every DNA fragment. Unattached beads are washed by centrifuging due to low density. Sequencing:
+1) All beads with clonally amplified DNA are attached to glass slides through complementarity to P1 adapter already attached to slide. 
+2) Oligonucleotide probes are designed using this manner: two Watson-Crick dinucleotides, three universal nucleotides, three universal nucleotides with flurophore.
+3) Using DNA ligase, 8-nucleotide long probe is ligated to the P1 adapter and complementary DNA fragment. After, last three universal nucleotides are cleaved and fluorophore is released to be detected by sensor.
+
+Details: every 4 dinucleotide is represented by green, blue, red, orange light. For example, assume DNA fragment sequence: GTACTGTTGAT
+Since last nucleotide of P1 is thymine, first probe has A as 1st base and another base as second. Probes are added by one dinucleotide type. 
+Note: due to sequencing every 5 bases because of 3 universal bases in the oligonucleotide, primers are offset by 1. 
+
+Advantages: low cost, reduced error rate relative to "sequencing by synthesis" method.
+Disadvantage: time-costly, can't be used to sequence palindromic sequences.
+See [video of SOLiD](https://www.youtube.com/watch?v=YLT-DUeaLms)
+
+* **DNA nanoballs** : technique invented by Complete Genomic and uses "sequencing by ligation" approach. 
+
+-Technology: like in Illumina sequencing, DNA is fragmented and adapters attached. Then, additional adapters are attached to both ends of DNA fragment which is sequentially denatured to ssDNA and this forms circular DNA by adapter ligation. Amplification is carried out using Phi 29 DNA pol (unlike to original DNA nanoballs approach) and concatamer forms which further takes nanoball shape. This type of amplification is **rolling circle amplification**.Nanoballs are loaded to array flow cell and attach by positively-charged aminosilane. Sequencing occurs as in Illumina sequencing.
+
+Advantages: no optical duplicates, more total reads generated compared to Illumina, cost-comparative, high-throughput
+Disadvantage: absolute cost
+
+See [video of DNA nanoballs technique](https://www.youtube.com/watch?v=RGcpftDHpng)
+
+## Third Generation Sequencing:
+- Determined by no requirement to amplify molecules to sequence (i.e. single molecule sequencing (SMS))
+
+* **PacBio** : technique invented by Pacific Biosciences which utilizes single molecule real-time sequencing (SMRT) platform. 
+
+-Technology: DNA pol and DNA template are placed in a microfabricated nanowell called zero-mode waveguides (ZMWs). Every ZMW is illumined with a laser of 600 nm excitaion wavelength but due to narrow diameter of the bottom of ZMW, light exclusively illumines botttom of the cell. During sequencing which closely resemble Illumina sequencing, fluorescence from incorporated nucleotide can be detected, other nucleotides are washed out, another type of nucleotide is added, reaction is reversed and further. 
+
+Advantages: SMRT platform, reduced background noise, very high-throughput, longer read length (compared to Illumina), good in kinetics studies of DNA pol
+Disadvantages: expensive.  
+
+See [video of PacBio sequencing](https://www.youtube.com/watch?v=NHCJ8PtYCFc)
+
+## Fourth Generation Sequencing: 
+- Utility of nanopores to sequence nucleic acid molecules is called nanopore sequencing which is promised to generate ultra long reads, high read depth, accuracy, portability in short timeframe. One of such technologies is **Oxford Nanopore Technology** which despite not matching to all characteristics described in the first sentence, is a revolutionary tool under the improvement. 
+
+MinION: a portable sequencing device invented by Oxford Nanopore, uses following steps to sequence long DNA and RNA molecules:
+1) DNA and RNA molecules are attached to complementary primers and motor proteins. 
+2) This complex travels to the electrically-resistant membrane well in every nanopore where DNA pol synthesize new strand and attaches to protein embedded in the membrane. This strand passes through membrane and disrupt the ionic current by predicting the base due to differential disruptions. 
+
+-Computational part is carried out by MinKNOW, MinION control software which shows results in real-time in companion analysis device MinIT or laptop connected by USB. 
+
+Advantages: fast, portable, ultra long reads
+Disadvantages: low base calling quality
+
+See [video of Oxford Nanopore Technology](https://www.youtube.com/watch?v=rXfS4wJoVLQ)
+
+- Note all of the sequencing technologies produce Fastq file to be analyzed through computation.
+
+# Sequencing-based computational approaches
 
 - Methods for computational analysis of CNVs through NGS technologies such whole-exome-sequencing and whole-genome-sequencing:
 
@@ -72,17 +201,17 @@ HYDRA, Corona and SPANNER.
 example.
 
 
-* Assembly-based approach: assembly of reads into contigs are done through de novo assembly and local assembly techniques. Well-known de novo assembly algorithms for next-generation whole-genome \
-shotgun (NG-WGS) data include EULER-USR, ABySS, SOAPdenovo and ALLPATHS-LG. Using the Cortex assembler, variant assembly can be done entirely de novo or with different degrees of information from a \
-reference, and Cortex has the ability to simultaneously assemble multiple genomes and call SVs between samples without the need for a reference. The NovelSeq framework merges de novo and local-assembly \
-methods to characterize novel sequence insertions and, finally, TIGRA aims to improve breakpoint estimations in SV discovery. Assembly-based approach can identify all types of structural variations.
+* Assembly-based approach: assembly of reads into contigs are done through de novo assembly and local assembly techniques. De novo assembly algorithms EULER-USR, ABySS, SOAPdenovo and ALLPATHS-LG. Cortex assembler can de novo assemble multiple genomes and find variants or structural variations using small degrees of information from the reference genome and the NovelSeq implements both de novo and local assembly approaches to find novel sequence insertions. Assembly-based approach can identify all types of structural variations.
 
 See ![computational approach to find structural variants](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrg2958/MediaObjects/41576_2011_Article_BFnrg2958_Fig2_HTML.jpg)
-
-
 
 Softwares:
 
 - SPANNER, CNVer and Genome STRiP combine read-pair and read-depth methods in different ways to more reliably detect CNVs.
-- BreakSeq was developed to build a library of SV breakpoints discovered in the literature
+- BreakSeq was developed to build a library of SV breakpoints discovered in the literature.
+
+## Cytogenetic methods: used before arrays and sequencing.
+
+Multicolor Metaphase FISH:
+* **FISH and SKY** : are hybridization-based diagnostic techniques used across many fields of biology to detect cytogenetic variations. They rely on probe hybridization to denatured DNA on 24 chromosomes with different fluorochrome combinations. Images are detected by highly sensitive monochromatic camera and charge-coupled device camera, respectively. 
 
