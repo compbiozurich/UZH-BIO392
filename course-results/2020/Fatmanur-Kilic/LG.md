@@ -6,6 +6,7 @@ You should be able to demonstrate an understanding of the relationships between 
     - 3.1 billion base pairs haploid, 22 paired chromosomes + 23rd pairs of sex chromosomes, ~1.5% of the total human genome are exons
 **- size of largest human chromosome**
     - chromosome 1: about 249 million nucleotide base pairs, represents about 8% of the total DNA in human cells
+    
 **- example(s) for sequencing “depth/coverage” in standard analysis scenarios, and the impact this has to the different genome file formats**
     - Why: Even though the sequencing accuracy for each individual nucleotide is very high, the very large number of nucleotides in the genome means that if an individual genome is only sequenced once, there will be a significant number of sequencing errors. Furthermore, many positions in a genome contain rare single-nucleotide polymorphisms (SNPs). Hence to distinguish between sequencing errors and true SNPs, it is necessary to increase the sequencing accuracy even further by sequencing individual genomes a large number of times. 
     - On a genome basis, it means that, on average, each base has been sequenced a certain number of times (10X, 20X...).
