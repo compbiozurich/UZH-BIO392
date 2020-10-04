@@ -76,27 +76,27 @@ awk 'NR % 4 == 1 {print ">"$1};
 -  Yes it is possible to store it BED, however we would loose the score and information on the direction of the strand ( here plus strand)
 
 ```
-chr2 1000 1999
-chr2 2000 2999
-chr2 3000 3999
+chr2 1000 2000
+chr2 2000 3000
+chr2 3000 4000
 ```
 
 ### 15. And in BED6? How? Are we losing any information?
 
 -  Yes it is possible as we also have information on the name (interval A-C), the direction of the strand and the score.
 ```
-chr2 1000 1999  A 0 +
-chr2 2000 2999  B 0 +
-chr2 3000 3999  C 1000 +
+chr2 1000 2000  A 0 +
+chr2 2000 3000  B 0 +
+chr2 3000 4000  C 1000 +
 ```
 
 ### 16. And in BED12? How? Are we losing any information?
 
 -  Yes it is also possible. For the remaining BED fields (thickStart, thickEnd, itemRGB, blockCount, blockSizes and blockStarts) we will have a dot instead. However if we dont have a thick part,thickStart and thickEnd will be set to the ChromStart position. 
 ```
-chr2 1000 1999  A 0 + . . . . . .
-chr2 2000 2999  B 0 + . . . . . .
-chr2 3000 3999  C 1000 + . . . . . .
+chr2 1000 2000  A 0 + . . . . . .
+chr2 2000 3000  B 0 + . . . . . .
+chr2 3000 4000  C 1000 + . . . . . .
 ```
 
 ### 17. And in the most compact Wiggle as possible? How? Are we losing any information?
