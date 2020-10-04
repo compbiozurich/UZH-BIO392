@@ -2,15 +2,19 @@
 You should be able to demonstrate an understanding of the relationships between inherited and acquired genome variants and their possible implications for understanding phenotypic human variation. What are problems encountered there, and why do we think we need many more genomes, to be available for comparative analyses? Also, examples of data types beyond genome data relevant for understanding genomic variation should be provided. You should know some disease examples for which a genomic contribution could be described.
 
 ### Some factlets:
+
 **- approximate size of human genome**
     - 3.1 billion base pairs haploid, 22 paired chromosomes + 23rd pairs of sex chromosomes, ~1.5% of the total human genome are exons
+    
 **- size of largest human chromosome**
     - chromosome 1: about 249 million nucleotide base pairs, represents about 8% of the total DNA in human cells
     
 **- example(s) for sequencing “depth/coverage” in standard analysis scenarios, and the impact this has to the different genome file formats**
+
     - Why: Even though the sequencing accuracy for each individual nucleotide is very high, the very large number of nucleotides in the genome means that if an individual genome is only sequenced once, there will be a significant number of sequencing errors. Furthermore, many positions in a genome contain rare single-nucleotide polymorphisms (SNPs). Hence to distinguish between sequencing errors and true SNPs, it is necessary to increase the sequencing accuracy even further by sequencing individual genomes a large number of times. 
     - On a genome basis, it means that, on average, each base has been sequenced a certain number of times (10X, 20X...).
     - Researchers typically determine the necessary NGS coverage level based on the method they're using, as well as other factors such as the reference genome size, gene expression levels, specific application of interest, published literature, and best practices from the scientific community.
+    
     - |Sequencing method|Recommended Coverage|
       |-----------------|:------------------:|
       | WGS | 30× to 50× for human WGS|
