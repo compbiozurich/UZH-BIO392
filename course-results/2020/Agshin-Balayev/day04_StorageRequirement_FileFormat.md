@@ -11,8 +11,14 @@
 ## BAM: binary file used for sequence alignment and compressed version of the SAM.
 ## CRAM: binary file and extermely compressed version of SAM file. 
 ## FASTA: text file to store reference genome. Useful for archival purposes.
+* Linear nucleotide or amino acid representation with sequence ID
+* Plain text file
+* Readable, not optimized for size
 ## FASTQ: text file to store read info
+* Sequence id: read sequence: "+" sign: quality check scores 
 ## VCF: text file to embed variants. Useful for preserving variants. 
+* Expressive, but complex interpretation due to difficulty to select threshold for various parameters as mapping quality, read depth, allele frequency and et.c. \
+mix of observed and population variants
 ## MPEG-G: standard with certain improvements to limitations facing genomic alignment value. For example:
 * 10x improvement in compression relative to BAM 
 * Selective access
