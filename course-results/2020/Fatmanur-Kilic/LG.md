@@ -3,9 +3,16 @@ You should be able to demonstrate an understanding of the relationships between 
 
 ### Some factlets:
 - approximate size of human genome
+    - 3.1 billion base pairs haploid, 22 paired chromosomes + 23rd pairs of sex chromosomes, ~1.5% of the total human genome are exons
 - size of largest human chromosome
+    - chromosome 1: about 249 million nucleotide base pairs, represents about 8% of the total DNA in human cells
 - example(s) for sequencing “depth/coverage” in standard analysis scenarios, and the impact this has to the different genome file formats
 - (dis)advantages of WES & WGS (and what those acronyms stand for)
+|WES (Whole Exome Sequencing): | WGS (Whole Genome Sequencing)|  
+|-------|:----:|
+cheaper, tend to be run ~100x depth, faster | tend to be run ~30x depth, includes mutations outside of exons (e.g. in regulatory elements) but challenge in interpretation.
+    
+    
 - What are “genome reference assemblies”, and can you name (some of) them?
 - Structuring of HGVS annotations (and - possibly made up - example)
 - Basic understanding of cytogenetic banding annotation, and (approximate) spatial resolution of such annotations
