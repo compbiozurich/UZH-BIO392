@@ -155,8 +155,7 @@ The Moving Picture Expert Group (MPEG-G) is a compressed text-based format. It c
 ## 4. Storage costs
 For 1000 whole genome sequences, using BAM format, **150 TB** are required without backup. More information about computational speed [here](https://www.strand-ngs.com/support/ngs-data-storage-requirements). Different variables have to be taken into account into the storage costs e.g. the quality as well as the coverage (whole genome or specific sequence). Different methods of compression have been developed and applied to format like BAM or MPEG-G to reduce the storage requirement. 
 
-
-> Let's try to create a pull request
-
-
+> **2 bits** per base are required to store TCGA. Whole genome is about **3.1 billion** base pairs -> x 2 -> about **715 MB**. 1 PB reprensents about **1.4 Mio** genomes.
+> About **50 CHF/genome** in BAM format. So **50'000 CHF** just for the storage of the 1000 whole genome sequences. 
+> About **1500 CHF/genome** for sequencing. So **1.5 Mi0 CHF** for sequencing cost. 
 
