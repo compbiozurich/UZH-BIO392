@@ -11,16 +11,17 @@ You should be able to demonstrate an understanding of the relationships between 
     
 **- example(s) for sequencing “depth/coverage” in standard analysis scenarios, and the impact this has to the different genome file formats**
 
-    - Why: Even though the sequencing accuracy for each individual nucleotide is very high, the very large number of nucleotides in the genome means that if an individual genome is only sequenced once, there will be a significant number of sequencing errors. Furthermore, many positions in a genome contain rare single-nucleotide polymorphisms (SNPs). Hence to distinguish between sequencing errors and true SNPs, it is necessary to increase the sequencing accuracy even further by sequencing individual genomes a large number of times. 
-    - On a genome basis, it means that, on average, each base has been sequenced a certain number of times (10X, 20X...).
-    - Researchers typically determine the necessary NGS coverage level based on the method they're using, as well as other factors such as the reference genome size, gene expression levels, specific application of interest, published literature, and best practices from the scientific community.
+   - Why: Even though the sequencing accuracy for each individual nucleotide is very high, the very large number of nucleotides in the genome means that if an individual genome is only sequenced once, there will be a significant number of sequencing errors. Furthermore, many positions in a genome contain rare single-nucleotide polymorphisms (SNPs). Hence to distinguish between sequencing errors and true SNPs, it is necessary to increase the sequencing accuracy even further by sequencing individual genomes a large number of times. 
+   - On a genome basis, it means that, on average, each base has been sequenced a certain number of times (10X, 20X...).
+   - Researchers typically determine the necessary NGS coverage level based on the method they're using, as well as other factors such as the reference genome size, gene expression levels, specific application of interest, published literature, and best practices from the scientific community.
     
-    - |Sequencing method|Recommended Coverage|
-      |-----------------|:------------------:|
-      | WGS | 30× to 50× for human WGS|
-      | WES | 100x |
-      | RNA sequencing | Usually calculated in terms of numbers of millions of reads to be sampled. Detecting rarely expressed genes often requires an increase in the depth of coverage. |
-      | ChIP-Seq  | 100x  |
+   - |Sequencing method|Recommended Coverage|
+     |-----------------|:------------------:|
+     | WGS | 30× to 50× for human WGS|
+     | WES | 100x |
+     | RNA sequencing | Usually calculated in terms of numbers of millions of reads to be sampled. Detecting rarely expressed genes often requires an increase in the depth of coverage. |
+     | ChIP-Seq  | 100x  |
+     
 **- (dis)advantages of WES & WGS (and what those acronyms stand for) [1](https://www.mlo-online.com/molecular/dna-rna/article/13017563/wes-vs-wgs-why-the-exome-isnt-the-whole-story-and-sometimes-when-its-better)**
 
 |WES (Whole Exome Sequencing): | WGS (Whole Genome Sequencing)|  
