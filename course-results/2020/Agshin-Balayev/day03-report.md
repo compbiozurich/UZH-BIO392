@@ -56,7 +56,7 @@ Answer: Yes, but we would lose information about the score and the strand.
 Answer: We can store it in BED6 without any information loss using 6 columns including the score.
 
 ## Question 15: And in BED12? How? Are we losing any information?
-Answer:  We can store it in BED12 without any information loss using 12 columns including the score.
+Answer:  We can store it in BED12 without any information loss but it is hard to infer any additional information on the file.
 
 ## Question 16: And in the most compact Wiggle as possible? How? Are we losing any information?
 Answer: Yes, we could store score values in Wiggle file using non-sparse coordinate system and one score field per interval but information on strand is lost.
