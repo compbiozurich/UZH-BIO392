@@ -36,4 +36,27 @@ Answer: awk 'NR % 3==0' text_file_name
 awk 'NR % 4==1 {print ">"$1}; NR % 4==2' SP1.fq > SP1.fa # command takes rows whose number divided by 4 produces remainder of 1 and adds ">" sign in front of the first element in that row. Then, rows \
 with number producing remainder of 2 when dividing by 4 are appended to the newly created file. 
 
+## Question 10: Which are the advantages of BED/coordinate files as compared to storing just sequences?
+Answer: They include information about the genomic coordinates of the sequences in a more compact way. As a result, they are simpler data representations compared to SAM files and easier to use. They \
+also take much less space compared to SAM/BAM files and can include genome coverage information.
 
+## Question 11: Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
+Answer: Read quality --> Mapping quality --> Variant quality
+
+We'd like to store the following information. You can decide to encode them counting by 0, 1, and closed/open at your convenience (but please specify).
+
+We have three genomic intervals. All intervals are 1000 nt long. They are contiguous (head to tail). All in the plus strand. The first one starts (we'd like to include the start nucleotide too) in positi$
+## Question 12: Can we store this in SAM file? Why / why not?
+Answer: Yes. This just means there're reads aligned on the interval C and not on interval A or B and these reads can be stored in SAM file.
+
+## Question 13: Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
+Answer: Yes, but we would lose information about the score.
+
+## Question 14: And in BED6? How? Are we losing any information?
+Answer: We can store it in BED6 without any information loss using 6 columns including the score.
+
+## Question 15: And in BED12? How? Are we losing any information?
+Answer:  We can store it in BED12 without any information loss using 12 columns including the score.
+
+## Question 16: And in the most compact Wiggle as possible? How? Are we losing any information?
+Answer: Yes, we could store score values in Wiggle file using non-sparse coordinate system and one score field per interval.
