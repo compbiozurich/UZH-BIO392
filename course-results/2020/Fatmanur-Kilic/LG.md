@@ -11,7 +11,7 @@ You should be able to demonstrate an understanding of the relationships between 
 
 |WES (Whole Exome Sequencing): | WGS (Whole Genome Sequencing)|  
 |------------------------------|:----------------------------:|
-|cheaper, tend to be run ~100x depth, faster | tend to be run ~30x depth, includes mutations outside of exons (e.g. in regulatory elements) but challenge in interpretation.|
+|cheaper, tend to be run ~100x depth, faster, ignores the impact of truly insignificant variations | - tend to be run ~30x depth, - includes mutations outside of exons (e.g. in regulatory elements) but challenge in interpretation, - more complete in its coverage and is generalizable across the whole organism|
     
     
 - What are “genome reference assemblies”, and can you name (some of) them?
