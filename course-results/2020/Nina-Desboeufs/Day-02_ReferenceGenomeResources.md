@@ -58,5 +58,5 @@
 
 **And more:** Oncomine, UALCAN, KM Plotter, GEO. 
 
-
+![Variants resources for cancer genomics](Variant_Resources.png) 
 
