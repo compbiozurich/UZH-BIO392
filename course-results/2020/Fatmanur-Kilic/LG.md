@@ -4,10 +4,12 @@ You should be able to demonstrate an understanding of the relationships between 
 ### Some factlets:
 
 **- approximate size of human genome**
-    - 3.1 billion base pairs haploid, 22 paired chromosomes + 23rd pairs of sex chromosomes, ~1.5% of the total human genome are exons
+
+   - 3.1 billion base pairs haploid, 22 paired chromosomes + 23rd pairs of sex chromosomes, ~1.5% of the total human genome are exons
     
 **- size of largest human chromosome**
-    - chromosome 1: about 249 million nucleotide base pairs, represents about 8% of the total DNA in human cells
+
+   - chromosome 1: about 249 million nucleotide base pairs, represents about 8% of the total DNA in human cells
     
 **- example(s) for sequencing “depth/coverage” in standard analysis scenarios, and the impact this has to the different genome file formats**
 
