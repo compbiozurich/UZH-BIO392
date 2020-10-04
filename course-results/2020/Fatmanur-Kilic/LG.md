@@ -8,9 +8,10 @@ You should be able to demonstrate an understanding of the relationships between 
     - chromosome 1: about 249 million nucleotide base pairs, represents about 8% of the total DNA in human cells
 - example(s) for sequencing “depth/coverage” in standard analysis scenarios, and the impact this has to the different genome file formats
 - (dis)advantages of WES & WGS (and what those acronyms stand for)
+
 |WES (Whole Exome Sequencing): | WGS (Whole Genome Sequencing)|  
-|-------|:----:|
-cheaper, tend to be run ~100x depth, faster | tend to be run ~30x depth, includes mutations outside of exons (e.g. in regulatory elements) but challenge in interpretation.
+|------------------------------|:----------------------------:|
+|cheaper, tend to be run ~100x depth, faster | tend to be run ~30x depth, includes mutations outside of exons (e.g. in regulatory elements) but challenge in interpretation.|
     
     
 - What are “genome reference assemblies”, and can you name (some of) them?
