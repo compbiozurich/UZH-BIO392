@@ -5,11 +5,11 @@
 
 ### 2. What is a plain text file?
 
--  A plain text file is a type of file, which contains only characters(letter,numeric and punctuation marks) but no specific effects such as graphs and images,  Moreover this file  is simple to use and it facilitates the portability between all operating system.
+-  A plain text file is a type of file, which contains only ASCII characters(letter,numeric and punctuation marks) but no specific effects such as graphs and images.  Moreover this file  is simple to use and it facilitates the portability between all operating system.
 
 ### 3. In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq, but also SAM, BED, GTF, VCF and others. Why is that?
 
--  Plain text file are rather simple file format as they don't contain any complex structures. This reduces its storage size but it also 
+- Bioinformaticians are using this type of file format because of the small storage size, reproducibility but also for its protability.
 
 ### 4. How can we list files are in a directory? Please provide the command(s).
 
@@ -17,10 +17,10 @@
 ls [options] [relative path/absolute path]
 
 ```
-
+- possible options: -l: listing the long format
 ### 5. What | and > do in a terminal?
 
-- '>': it will redirect the output into a file(filename)
+- '>': it will redirect the output into a new file
 - '|':  the pipe will pass the output from one program to the input of another file without creating a temporaray file.
 
 
@@ -28,6 +28,7 @@ ls [options] [relative path/absolute path]
 ```
 tail ~/mnt/test/test.txt
 ```
+- Don't need to specify the number of lines as the "tail" default is the listing the last 10 lines.
 
 ### 7. How do we print the first column of the file named /mnt/test/test.txt whose columns are separatedby tabs? Please provide the command(s).
 ```
@@ -54,7 +55,7 @@ awk 'NR % 4 == 1 {print ">"$1};
 
 ### 10. Which are the advantages of BED/coordinate files as compared to storing just sequences?
 
--  It uses specific coordinates instead of a nucleotide sequence. It is stored as 1 line per sequence, which reduces the used storage size.
+-  It uses specific coordinates instead of a nucleotide sequence. It is stored as 1 line per sequence, which reduces the storage size.
 
 
 ### 11. Which QC values are tracked during a bioinformatic variant calling NGS workflow? (from sequencing to variant calling)?
