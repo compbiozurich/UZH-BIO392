@@ -125,7 +125,7 @@ The first seven fields are required in VCF format. In more details:
 * **Filter**: Indication of the failed or passed information about each filter the variant has been tested. 
 
 > **Use**: standard format to store variants. 
-> **Comment(s)**: very explicit, scalable and flexible. Some VCF files are very large and requires UNIX tools to access the part of interest. A lot of tools are available to work on VCF files (e.g. VCF tools, BedTools, GATK).  
+> **Comment(s)**: very explicit, scalable and flexible. Some VCF files are very large and requires UNIX tools to access the part of interest. A lot of tools are available to work on VCF files (e.g. VCF tools, BedTools, GATK). It does not allow the representation of chromosomal fusion or translocation -> specify in the ALT, the symbolic allele. 
 
 For more information [here](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format). 
 
