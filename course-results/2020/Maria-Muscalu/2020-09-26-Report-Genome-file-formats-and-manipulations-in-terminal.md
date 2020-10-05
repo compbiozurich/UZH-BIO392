@@ -13,7 +13,7 @@ The quality control (QC) is done by looking at the Phed quality score for each n
 
 #### **3.1 Can we store this in SAM file? Why / why not?**
 
-I do not think that the given data can be stored as a SAM file, because this format has 11 mandatory columns and a lot of information would be missing. The text also mentions that the information about the reads and the alignments is not available, which make up two columns. Other important data, such as the bitwise FLAG, mapping quality, CIGAR sting, reference name of the next fragment and Phred scaled base quality, is also missing.
+I do not think that the given data can be stored as a SAM file, because this format has 11 mandatory columns and a lot of information would be missing. The text also mentions that the information about the reads and the alignments is not available, which make up two columns. Other important data, such as the bitwise FLAG, mapping quality, CIGAR sting, reference name of the next fragment and Phred scaled base quality, is also missing. The text also does not brovide enough information for the header of the SAM file.
 
 #### **3.2 Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?**
 
