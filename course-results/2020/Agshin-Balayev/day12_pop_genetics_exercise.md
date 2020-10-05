@@ -75,7 +75,7 @@ head freq_stat.frq
   20    rs7345645       59     2504  0.02356
   20    rs6051642      219     2504  0.08746
   
-  frequency of kissing variant
+  frequency of missing variant
   
   -Get Hardy-Weinberg report: deviation from equilibrium, first two homozygous
   
