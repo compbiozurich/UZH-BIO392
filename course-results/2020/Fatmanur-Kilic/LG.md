@@ -46,6 +46,7 @@ You should be able to demonstrate an understanding of the relationships between 
 **- Structuring of HGVS annotations (and - possibly made up - example)**
 
 **- Basic understanding of cytogenetic banding annotation, and (approximate) spatial resolution of such annotations**
+- Each human chromosome has a short arm ("p" for "petit") and long arm ("q" for "queue"), separated by a centromere. The ends of the chromosome are called telomeres. Each chromosome arm is divided into regions, or cytogenetic bands, that can be seen using a microscope and special stains. The cytogenetic bands are labeled p1, p2, p3,   q1, q2, q3, etc., counting from the centromere out toward the telomeres. At higher resolutions, sub-bands can be seen within the bands. The sub-bands are also numbered from the centromere out toward the telomere.
 
 **- “1000 genomes” - what are they, and advantages vs. problems associated with using them in genomics workflows**
 
@@ -100,11 +101,18 @@ You should be able to demonstrate an understanding of the relationships between 
 
 ### Tutorials
 **- What is “liftover” being used for?**
+- converts genome coordinates and genome annotation files between assemblies. The current version supports both forward and reverse conversions, as well as conversions between selected species.
 
 **- Linkage disequilibrium and population genetics**
-
+- population genetics: study of genetic variation within the population, change of allele frequency, genotype frequency over time
+- hardy weinberg equilibrium: under certain conditions, allele frequency remains constant from one generation to the next. reasons for HWE deviation:
+   - non-random mating, genetic drift, migration, population bottleneck/founder event, mutation + selection
+- Linkage and Linkage disequilibrium (LD)
+   - Linkage: genetic markers are inherited together rather than being broken apart by recombination events
+   - LD: continuous stretches of founder chromosomes from the initial generation, non-random association of alleles at different loci in a given population. Loci are said to be in linkage disequilibrium when the frequency of association of their different alleles is higher or lower than what would be expected if the loci were independent and associated randomly, difference between observed and expected allelic frequencies (assuming random distribution due to independent assortment).
+   
   **- What do you analyse with PLINK?**
-  
+- a genotype/phenotype analysis tool
   **- Examples for filters/parameters used in linkage analysis**
   
 ### Genomic privacy
