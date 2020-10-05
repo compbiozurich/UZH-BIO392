@@ -1,5 +1,20 @@
 # Variants GATK 
 
+## 1. Introduction
+
+Genome Analysis Toolkit (GATK) offers various **command-line tools** to anylse high-throughput sequencing data and mainly focuses on **variant discovery**. It provides scripted implementations, which can be found [here](https://gatk.broadinstitute.org/hc/en-us/articles/360035894751), and can be run on [Terra.Bio](https://app.terra.bio/#). 
+**Somatic short variant discovery (SNVs + Indels)**: Two main steps: generation of a large set of candidate somatic variants -> filtration to obtain a more confident set of somatic variant calls:
+1. **Call candidate variant**:  using **Mutect2** tool (Pair-HMM algorithm) to realign the reads to each haplotype based on a likelihood matrix. 
+2. **Calculate contamination**: using **GetPileupSummaries** and **CalculateContamination**, to estimate the fraction of "reads due to cross-sample contamination for each tumor sample and an estimate of the allelic copy number segmentation of each tumor sample".
+3. **Filter Variants**: using **FilterMutectCalls**, "to detect alignment artifacts and probabilistic models for strand and orientation bias artifacts, polymerase slippage artifacts, germline variants, and contamination" and to finally filter these sites. 
+4. **Annotate Variants**: using **Funcotator**, to annotate each variant. 
+
+
+![GATK Workflow Diagram](GATK_Worflow)
+
+
+## 2. Questions 
+
 * We see a C→T variant light up in red for the tumor but not the normal. What do you think is happening in 2_tumor_normal_m2.bam?
 > Compared to the reference, the tumor cells present the C→T variant (location_ chr17:7.674.220), while the tumor not. This is clear since all the tumor samples aligned reads display this variant while the control (normal) samples reads do not (i.e. present a C at this location). 
 
@@ -18,7 +33,9 @@
 * How do you feel about this somatic call?
 > Really interested! Especially about all the available options, that IGV offers. Regarding the noticed variant C→T, the clear cut between our data (normal vs tumor) gives a good confidence. 
 
-**A few definitions**: 
+
+## 3. Definitons 
+
 * **Cross-sample contamination**: can occur during samples manipulation and data processing (i.e. sample handling, DNA/RNA extraction, library preparation and amplification, sample multiplexing and inaccurate barcode sequencing) accross samples. Cross-sample contamination, meaning that we have DNA from the tumor as well as the normal samples? This is supported by the contamination calculation done in step 3.1.2 (with a contamination ~0.0191). Looking at the filtered BAM file, we don't have the mix between C and T any more but just the variants.
 
 * **HaplotypeCaller**: "Call germline SNPs and indels via local re-assembly of haplotypes". 
