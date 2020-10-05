@@ -10,7 +10,7 @@ Genome Analysis Toolkit (GATK) offers various **command-line tools** to anylse h
 4. **Annotate Variants**: using **Funcotator**, to annotate each variant. 
 
 
-![GATK Workflow Diagram](GATK_Worflow)
+![GATK Workflow Diagram](GATK_Workflow.png)
 
 
 ## 2. Questions 
