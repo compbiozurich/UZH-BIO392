@@ -44,7 +44,7 @@
 -Get frequency report
 
 ./plink_mac_20200921/plink -bfile ALL.chr20.chunk1 --freq -out freq_stat
-
+```
 head freq_stat.frq
  CHR          SNP   A1   A2          MAF  NCHROBS
   20   rs10485818    C    A       0.1991     5008
@@ -56,13 +56,14 @@ head freq_stat.frq
   20    rs6082985    G    C      0.05531     5008
   20    rs7345645    C    T       0.1894     4890
   20    rs6051642    C    T       0.4179     4570
+  ```
   
   Frequency report: probes
   
   -Get missing data report
   
   ./plink_mac_20200921/plink -bfile ALL.chr20.chunk1 --missing -out missing_stat
-  
+  ```
   head missing_stat.lmiss
    CHR          SNP   N_MISS   N_GENO   F_MISS
   20   rs10485818        0     2504        0
@@ -74,13 +75,14 @@ head freq_stat.frq
   20    rs6082985        0     2504        0
   20    rs7345645       59     2504  0.02356
   20    rs6051642      219     2504  0.08746
+  ```
   
   frequency of missing variant
   
   -Get Hardy-Weinberg report: deviation from equilibrium, first two homozygous
   
   ./plink_mac_20200921/plink -bfile ALL.chr20.chunk1 --hardy -out hardy_stat
-  
+  ```
   head hardy_stat.hwe
    CHR          SNP     TEST   A1   A2                 GENO   O(HET)   E(HET)            P 
   20   rs10485818  ALL(NP)    C    A         117/763/1624   0.3047   0.3189      0.02816
@@ -92,13 +94,13 @@ head freq_stat.frq
   20    rs6082985  ALL(NP)    G    C           9/259/2236   0.1034   0.1045       0.5649
   20    rs7345645  ALL(NP)    C    T         302/322/1821   0.1317    0.307   5.622e-145
   20    rs6051642  ALL(NP)    C    T         755/400/1130   0.1751   0.4865   4.209e-219
-
+```
 # Exercise 4
 
 pruning list of variants: independence of variants
 ./plink_mac_20200921/plink -bfile ALL.chr20.chunk1 -indep 50 5 2
 -Shows SNPs which are independent variants.
-
+```
 ./plink_mac_20200921/plink -bfile ALL.chr20.chunk1 -out ALL.chr20.chunk1 -r2
 head ALL.chr20.chunk1.ld
  CHR_A         BP_A                                             SNP_A  CHR_B         BP_B                                             SNP_B           R2 
@@ -111,7 +113,7 @@ head ALL.chr20.chunk1.ld
     20        63231                                         rs6076506     20        64150                                         rs7274499     0.435329 
     20        63733                                        rs75670495     20        63808                                        rs76004960            1 
     20        63733                                        rs75670495     20        68264                                        rs60878529      0.48818
-
+```
 -Shows position of two variants and their correlation coefficient. 
 
 ./plink_mac_20200921/plink -bfile ALL.chr20.chunk1 --blocks 'no-pheno-req'
