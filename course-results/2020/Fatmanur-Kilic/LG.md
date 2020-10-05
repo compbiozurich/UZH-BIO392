@@ -58,6 +58,8 @@ You should be able to demonstrate an understanding of the relationships between 
 **- reproducibility (OpenSource, versioning, standard formats, programmatic data manipulation, stable resources/repositories)**
 
 **- general workflow steps from reads to variants**
+   - Sequencing: 
+
 
 ### Resources
 
@@ -113,7 +115,17 @@ You should be able to demonstrate an understanding of the relationships between 
    
   **- What do you analyse with PLINK?**
 - a genotype/phenotype analysis tool
+- usage:
+   - manage genomic data with file format conversion
+   - filter by quality, genomic location, list of SNPs, missing, allele frequency, correlation
+   - perform basic statistics
+   - calculate population genetic metrics
+ - 2 file types: .ped (contains information about family, phenotype and genotype) and .map (contains information about marker location)
+   
   **- Examples for filters/parameters used in linkage analysis**
+  - -maf 0.05: minor allele fraction: relative frequency in a relevant population of the 2nd most common allele. SNPs below the treshold are removed. Low maf SNPs are more susceptible to genotyping errors. 
+  - -geno 0.05: filters out all variants with missing call rates exceeding the provided value (0.05) to be removed. The call rate for a given SNP is defined as the proportion of individuals in the study for which the corresponding SNP information is not missing. We retain SNPs for which there is less than 5% missing data. 
+  - -hwe 1e-3
   
 ### Genomic privacy
 **- genome “Beacons”**
