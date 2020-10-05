@@ -1,9 +1,9 @@
 ## Questions 
 * Why do we use the terminal in bioinformatics?
-> Compared to the GUI, using the terminal improves the reproducibility (history/scripts) as well as the efficiency of large data processing.
+> Compared to the GUI, using the terminal improves the reproducibility (history/ bash scripts) as well as the efficiency of large data processing. Furthermore, Unix is designed to handle text streams (text streams are used for DNA and proteins in bioinformatics). 
 ---
 * What is a plain text file?
-> Every file that contains only text, i.e. sequence of characters (vs rich text). A major advantage of plain text file is the portability, meaning that it is portable between the different operating systems. Here is a list of plain text file editors: vim, BBEdit, Byword.
+> Every file that contains only text, i.e. sequence of characters (vs rich text;  mapped directly to ASCII characters). A major advantage of plain text file is the portability, meaning that it is portable between the different operating systems. Here is a list of plain text file editors: vim, BBEdit, Byword.
 ---
 * In bioinformatics, most of the data are stored in plain text files with added syntax/structure (and commonly compressed afterwards). For instance, fasta or fastq files we have discussed them today, but also SAM, BED, GTF, VCF and others (to be discussed next week). Why is that?
 > Plain text files reduces the space for storage and speed up the data circulation. 
