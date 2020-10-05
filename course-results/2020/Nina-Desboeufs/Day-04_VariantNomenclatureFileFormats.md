@@ -82,6 +82,7 @@ r004    0   ref 16  30  6M14N1I5M   *   0   0   ATAGCTCTCAGC    *
 r003    16  ref 29  30  6H5M    *   0   0   TAGGC   *
 r001    83  ref 37  30  9M  =   7   -39 CAGCGCCAT   *
 ```
+![](SAM_Format.png)
 
 Example of SAM/BAM format: 
 
