@@ -63,7 +63,7 @@ Genuine SNP-trait are expected to deviate slightly from Hardy-Weinberg equilibri
  CHR                                               SNP   N_MISS   N_GENO   F_MISS
   20                                       rs527639301        0     2504        0
 
-'BEGIN{FS=" +"}{if ($6>0) print }' ALL.chr20.lmiss
+> 'BEGIN{FS=" +"}{if ($6>0) print }' ALL.chr20.lmiss
  CHR                                               SNP   N_MISS   N_GENO   F_MISS
   20                                       rs186497980        2     2504 0.0007987
   20                           rs528633005;rs528368427        7     2504 0.002796
