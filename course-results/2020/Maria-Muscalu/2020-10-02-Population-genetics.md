@@ -2,30 +2,19 @@
 
 This command makes 5 files: .bed, .bim, .fam, .log, .nosex
 > ./plink --vcf ALL.chr20.chunk1.vcf.gz --make-bed -out ALL.chr20.chunk1 
+>
+> head ALL.chr20.chunk1.bim
 
-95626 variants loaded from .bim file.
-2504 people (0 males, 0 females, 2504 ambiguous) loaded from .fam.
-Ambiguous sex IDs written to ALL.chr20.chunk1.nosex .
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 2504 founders and 0 nonfounders present.
-Calculating allele frequencies... done.
-Total genotyping rate is 0.999839.
-95626 variants and 2504 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to ALL.chr20.chunk1.bed + ALL.chr20.chunk1.bim +
-ALL.chr20.chunk1.fam ... done.
-
-head ALL.chr20.chunk1.bim
 20	rs527639301	0	60343	A	G
 20	rs538242240	0	60419	G	A
 ...
 
-head ALL.chr20.chunk1.fam
+> head ALL.chr20.chunk1.fam
 HG00096 HG00096 0 0 0 -9
 HG00097 HG00097 0 0 0 -9
 ...
 
-head ALL.chr20.chunk1.nosex
+> head ALL.chr20.chunk1.nosex
 HG00096	HG00096
 HG00097	HG00097
 ...
@@ -33,28 +22,16 @@ HG00097	HG00097
 This command returns 5 files: .bed, .bim, .fam, .log, .nosex
 --extract normally accepts a text file with a list of variant IDs and removes all unlisted variants from the current analysis. Usually one ID per line, but it's okay for them to just be separated by spaces).
 > ./plink --vcf ALL.chr20.chunk1.vcf.gz --extract mysnps.txt --make-bed -out extracted
-
-95626 variants loaded from .bim file.
-2504 people (0 males, 0 females, 2504 ambiguous) loaded from .fam.
-Ambiguous sex IDs written to extracted.nosex .
---extract: 165 variants remaining.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 2504 founders and 0 nonfounders present.
-Calculating allele frequencies... done.
-Total genotyping rate is 0.999932.
-165 variants and 2504 people pass filters and QC.
-Note: No phenotypes present.
---make-bed to extracted.bed + extracted.bim + extracted.fam ... done.
-
-head extracted.bim
+>
+> head extracted.bim
 20	rs1858597	0	147685	C	A
 20	rs4816104	0	148084	T	C
 
-head extracted.fam
+> head extracted.fam
 HG00096 HG00096 0 0 0 -9
 HG00097 HG00097 0 0 0 -9
 
-head extracted.nosex
+> head extracted.nosex
 HG00096	HG00096
 HG00097	HG00097
 
@@ -82,7 +59,7 @@ Genuine SNP-trait are expected to deviate slightly from Hardy-Weinberg equilibri
   HG00096   HG00096          Y       11    95626 0.000115
   HG00097   HG00097          Y       12    95626 0.0001255
 
-head ALL.chr20.lmiss
+> head ALL.chr20.lmiss
  CHR                                               SNP   N_MISS   N_GENO   F_MISS
   20                                       rs527639301        0     2504        0
 
