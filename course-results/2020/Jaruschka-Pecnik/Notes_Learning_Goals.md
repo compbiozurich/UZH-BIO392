@@ -20,27 +20,27 @@
     - Both are for detection of pathogenic genetic variations such as single nucleotide polymorphisms (SNPs) and insertions and/or deletions (Indels)
 -	What are “genome reference assemblies”, and can you name (some of) them?
   - Reference genomes: describe the consensus DNA sequence -> multiple assemblies of genomes
-    - NCBI (National Center for Biotechnology Information)
-      - Entry point for genome reference data
-      - Human genome assemblies and human variant collections for download
-    - USCS (University California Santa Cruz)
-      - Originated from the human genome project
-      - Most widely used general genome browser, many default tracks and species, with BED files
-    - EMBL-EBI: European bioinformatic institute
-    - Ensembl
-      - Entry point for many genome data services and collections
+      - NCBI (National Center for Biotechnology Information)
+        - Entry point for genome reference data
+        - Human genome assemblies and human variant collections for download
+      - USCS (University California Santa Cruz)
+        - Originated from the human genome project
+        - Most widely used general genome browser, many default tracks and species, with BED files
+      - EMBL-EBI: European bioinformatic institute
+      - Ensembl
+        - Entry point for many genome data services and collections
 -	Structuring of HGVS annotations (and - possibly made up - example)
   - HGVS = Human Genome Variation Societies
-    - Allows the annotation of sequence variants with relation to a genomic or protein reference
-    - example: g.241T>C (genomic reference sequence -> T to C substitution)
+      - Allows the annotation of sequence variants with relation to a genomic or protein reference
+      - example: g.241T>C (genomic reference sequence -> T to C substitution)
 - Basic understanding of cytogenetic banding annotation, and (approximate) spatial resolution of such annotations
   - Conventional analysis: 100 genes/band, 9 x 106 base pairs/band and 9Mb band width are observed at the 350 band level
   - Short arm: p, long arm: q
   - Example: 46,XX,del(5p)
 -	“1000 genomes” - what are they, and advantages vs. problems associated with using them in genomics workflows
-  - Launched: 2008, finished: 2015
-  - Goal: establish most detailed catalogue of human genetic variation
-  - WGS of pops and also targeted exome sequencing
+    - Launched: 2008, finished: 2015
+    - Goal: establish most detailed catalogue of human genetic variation
+    - WGS of pops and also targeted exome sequencing
 
 
 ## General computing & science questions
@@ -52,11 +52,11 @@
 Some familiarity with selected genome & molecular knowledge resources, their primary goals and example use cases is expected.
 - ClinGen and ClinVar -> find relationships between genetic diseases and genes/variants -> creates a relational list of disease, gene and variant
   -	ClinGen
-    - Disease associations
+     - Disease associations
   - ClinVar
-    - NCBI database resource
-    - Basis for curated variant
-    - Aggregates information about genomic variation and its relationships to human health
+     - NCBI database resource
+     - Basis for curated variant
+     - Aggregates information about genomic variation and its relationships to human health
 -	UCSC genome browser
    - Hosted by the university of California, Santa Cruz
     - A graphical visualization tool for genomic data
@@ -77,9 +77,9 @@ You should be able to list at least 2-3 core features (main use cases, type, cor
   - Tab-delimited text format, used for storage of read alignment formation
   - SAM: human readable, BAM: binary format of SAM
   - SAM format:
-    - head section (optional and starts with at sign)
-    - alignment section
-      - often done after FASTQ -> sequence get aligned
+      - head section (optional and starts with at sign)
+      - alignment section
+        - often done after FASTQ -> sequence get aligned
 -	BED (=Browser extensible data)
   - Genomic ranges
   - Simple tab-delimited file, contains section/regions of the genome
@@ -91,8 +91,7 @@ You should be able to list at least 2-3 core features (main use cases, type, cor
   - Contains a list of variants
   - Represent variants in a single sample or multiple samples
   - Depth and variant allele freq (VAF) can be shown
-  - Worklfow:
-    - Sequencer – alignment – deduplication/recalibration – variant calling - vcf
+  - Worklfow: Sequencer – alignment – deduplication/recalibration – variant calling - vcf
 
 
 ## Tutorials
@@ -104,24 +103,24 @@ You should be able to list at least 2-3 core features (main use cases, type, cor
 -	Linkage disequilibrium and population genetics
   - Population genetics: study of genetic variation within the pop -> change of allele frequency, genotype freq over time
   - What do you analyse with PLINK?
-    - Genotype/phenotype analysis tool
-    -	whole genome association analysis toolset, designed to perform a range of basic, large-scale analyses in a computationally efficient manner with genotype/phenotype
-    - what can I do with plink?
-      - manage genomic data with file format conversion
-      - filter by quality,genomic location, list of snps…
-      - perform basis statistics and calulcate population genetics metrics
-    - how to use plink
-      - always consult the LOG file
-      - plink has no memory
-    - standard plink files are .ped and .map
-      - ped contains info about family, phenotype and genotype
-      - map contains info about marker and location
+      - Genotype/phenotype analysis tool
+      -	whole genome association analysis toolset, designed to perform a range of basic, large-scale analyses in a computationally efficient manner with genotype/phenotype
+      - what can I do with plink?
+        - manage genomic data with file format conversion
+        - filter by quality,genomic location, list of snps…
+        - perform basis statistics and calulcate population genetics metrics
+      - how to use plink
+        - always consult the LOG file
+        - plink has no memory
+      - standard plink files are .ped and .map
+        - ped contains info about family, phenotype and genotype
+        - map contains info about marker and location
 - Examples for filters/parameters used in linkage analysis
   - LD (linkage disequilibrium) used as markers
 
 ## Genomic privacy
 -	genome “Beacons”
-  - concept: balanced approach for accessing genome variant data from internationally distributed resources
-  - “unbreakable”?
+    - concept: balanced approach for accessing genome variant data from internationally distributed resources
+    - “unbreakable”?
 -	de-identification attacks
-  - can be linked to a person due to the known variants
+    - can be linked to a person due to the known variants
