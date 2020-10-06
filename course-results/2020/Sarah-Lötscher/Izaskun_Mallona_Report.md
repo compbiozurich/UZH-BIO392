@@ -99,20 +99,24 @@
      
       We could store the Information in a BED3 (I will use 0 counting / fully-closed) but we would lose information about the quality score and strand information.
       
+      ```
       chr2 1000 1999 
       chr2 2000 2999
       chr2 3000 3999
-
+      ```
 
 
     * **And in BED6? How? Are we losing any information?**
     
       The Data can be stored in a BED6 file. I dont think there would be any informaion loss by using the BED6 format. This format semms to work best for the information given.
       
+      ```
+      
       chr2 1000 1999 intervalA 0 +
       chr2 2000 2999 intervalB 0 +
       chr2 3000 3999 intervalc 1000 +
-
+      ```
+      
 
 
     * **And in BED12? How? Are we losing any information?**
@@ -124,9 +128,11 @@
     * **And in the most compact Wiggle as possible? How? Are we losing any information?**
 
       It should be possible. we would lose information about the strand information and the intervall names. It should look something like this:
-   
+      ```
+      
       variableStep chrom=chr2 start=1000 step=1000 span=1000
       0
       0
       1000
+      ```
    
