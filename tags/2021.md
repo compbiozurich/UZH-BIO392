@@ -6,11 +6,13 @@ layout: default
 {%- assign this_tag = this_name[0] | replace: '-alpha-sorted', '' -%}
 {%- assign this_pagetitle = this_tag | replace: '_', ' ' -%}
 
-<div style="width: 100%;">
-	<div style="width: 10%; padding-top: 10px; float: right; font-size: 0.8em; text-align: right;">
-		<a href="{{this_tag}}-date-sorted.html">[date &darr;]</a>
+<div id="listpage_headline_wrapper">
+	<div id="listpage_sortmarker">
+		<a href="{{this_tag}}-date-sorted.html">[date&nbsp;&darr;]</a>
+ 		<a href="{{this_tag}}-date-sorted-reverse.html">[date&nbsp;&uarr;]</a>
+		<a href="{{this_tag}}-alpha-sorted-reverse.html">[Z&nbsp;&rarr;&nbsp;A]</a>
 	</div>
-	<div style="width: 80%; float: left; clear: none;">
+	<div id="listpage_headline">
 		<h2 class="page_title">Pages tagged "{{ this_pagetitle  }}"</h2>
 	</div>
 </div>
