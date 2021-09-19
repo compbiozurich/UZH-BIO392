@@ -10,29 +10,23 @@ category:
 tags:
   - documentation
   - FAQ
-  - '2021'
-  - BIO392
+  - '2020'
 ---
 
 ## {{ page.title }}
 
 This is a repository for materials related to the BIO392 _Bioinformatics of Sequence Variation_ introductory course at the University of Zürich. The course takes place in each Autumn semester (September/October).
 
-### 2021 COVID19 Notes
+### 2020 COVID19 Notes
 
 As per current rules for labs/block courses, BIO392 is held with "in person" attendance. Please follow the UZH [Coronavirus Guidelines](https://www.uzh.ch/en/about/coronavirus/students.html).
 
-##### Some specific issues for this course:
+Some specific issues for this course:
 
-* masks are not required; however, the recommendation in the course is that non-vaccinated participants wear on
+* masks are required if not enough distancing is possible
 * we will limit the "on site" course time, with much of the afternoon part assigned to tasks which can be performed remotely (thereby also enabling lower/mixed occuppancy)
-* unfortunately group work has to be limited and "hands on help" has to be reduced - "one person, one keyboard"
-* we will use a chat system through a [Gitter](https://gitter.im) channel
-
-### Technical requirements
-
-* the course lab is equipped with iMacs - however, feel free to use your personal machines (which may anyway be advantageous for "home office" work)
-* you will need to have / create a [Github](https://github.com) account
+* unfortunately group work has to be limited and "hands on help" has to be reduced - "one person, one "keyboard"
+* we have established a chat system through a MS Teams channel - please see OLAT fopr the sign up link
 
 #### Summary
 
@@ -44,8 +38,8 @@ One of the fastest growing areas of bioinformatics is in the analysis, warehousi
 
 #### Links
 
-* BIO392 HS 2021 in the [UZH OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17064820860/CourseNode/85421310414617) system
-* BIO392 HS 2021 in the [UZH directory](https://studentservices.uzh.ch/uzh/anonym/vvz/index.html#/details/2021/003/SM/50920456)
+* BIO392 HS 2020 in the [UZH OLAT](https://lms.uzh.ch/auth/RepositoryEntry/16814276759/CourseNode/102334353205516) system
+* BIO392 HS 2020 in the [UZH directory](https://studentservices.uzh.ch/uzh/anonym/vvz/index.html#/details/2020/003/SM/50920456)
 
 #### Literature and Resources
 
