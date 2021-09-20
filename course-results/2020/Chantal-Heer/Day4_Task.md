@@ -2,20 +2,20 @@
 
 ## Which "genomic" variant formats exist & what are their use cases?
 * ISCN (**I**nternational **S**ystem for Human **C**ytogenetic **N**omenclature)
-> ISCN is a book about the standard nomenclature thaat describes any chromosomal abberations. The genomic rearrangement are identified by techniques liek karyotyping, FISH, SKY, genomic microarray, various region specific assay and DNA sequencing. The nomeclature is used for molecular cytogenetics.
+> ISCN is a book about the standard nomenclature that describes any chromosomal abberations. The genomic rearrangement are identified by techniques like karyotyping, FISH, SKY, genomic microarray, various region specific assay and DNA sequencing. The nomenclature is used for molecular cytogenetics.
 * HGVS (**H**uman **G**enome **V**ariation **S**ociety)
-> This society provides an overview about several [databases](https://www.hgvs.org/content/databases-tools) for various variations/mutations. The website is a good starting point for gene variation research.  
-> HGVS offers also a [Sequence Variant Nomenclature](https://varnomen.hgvs.org/). The nomenclature gives an overview over the sequence variant description for human DNA, RNA, protein, etc. Be aware of the reference that the variant relates to. Such a standardized description of variants makes the international cooperation easier.
+> This society provides an overview of several [databases](https://www.hgvs.org/content/databases-tools) for various variations/mutations. The website is a good starting point for gene variation research.  
+> HGVS offers also a [Sequence Variant Nomenclature](https://varnomen.hgvs.org/). The nomenclature gives an overview over the sequence variant description for human DNA, RNA, protein, etc. Be aware of the reference to which the variant relates to. Such a standardized description of variants makes the international cooperation easier.
 * VCF (**V**ariant **C**all **F**ormat)
-> VCF is a file format and the standard for human genomic variant storage/representation. Variants such as insertions/deletions, single nucleotide, copy number and structural variants. It can store the results of a single or multiple interpretations of genome sequencing datasets. The variations are always in comparison to a reference genome. The VCF is good for short or common and not rare or structure variants.
+> VCF is a file format and the standard for human genomic variant storage/representation. Variants such as insertions/deletions, single nucleotide, copy number and structural variants are stored in a VCF file. It can store the results of a single or multiple interpretations of genome sequencing datasets. The variations are always in comparison to a reference genome. The VCF can store short or common variants better than rare or structure ones.
 * GA4GH Variation Representation Specification 
-> The **G**lobal **A**lliance **for** **G**enomics and **H**ealth developed a Variant Representation Specification (VRS) to faciliate sharing of genetic information and improve international collaboration. The Specification covers many classed of genetic variations. VRS uses a terminology and information model, machine readable schema (JSON Schema), conventions that promore reliable data sharing, globally unique identifiers and a Python implementation.   
+> The **G**lobal **A**lliance **for** **G**enomics and **H**ealth developed a Variant Representation Specification (VRS) to faciliate sharing of genetic information and improve international collaboration. The Specification covers many classes of genetic variations. VRS uses a terminology and information model, machine readable schema (JSON Schema), conventions that promote reliable data sharing, globally unique identifiers and a Python implementation.   
 
 ## Genomic coordinate systems
 * [0 or 1-based](http://genome.ucsc.edu/blog/the-ucsc-genome-browser-coordinate-counting-systems/)
 > There are two possible ways to count: either you start with one (**1-based**) or with zero (**0-based**). Additional to the start, you can also choose from three interval types: **fully-closed** (start and end included), **fully-open** (start and end excluded) and **half-open** (start included and end excluded). UCSC Genome Browser web interface uses 1-based, fully-closed (= common counting convention). The calculation of the range needs an extra step (compared with "interbase"): size = end - start (+ 1). 
 * "interbase"
-> The interbase coordinate system is the same as 0-based, half-open. This is used in UCSC Genome Browser tables, BAM and BED files. With the interbase coordinate system, you have the ability to present features that occur between nucleotides and the math to calculate the range of basepairs (size = end - start).
+> The interbase coordinate system is the same as 0-based, half-open. This is used in UCSC Genome Browser tables, BAM and BED files. With the interbase coordinate system, you have the ability to present features that occur between nucleotides. The math to calculate the range of basepairs (size = end - start) is shorter.
 
 -------------------------------------------------------------------------------------------------
 
@@ -47,7 +47,7 @@
 2) POS  | 1-based start of variant  
 3) ID | unique identifier of vaiant  
 4) REF   | reference allele  
-5) ALT  | , separated list of alternate non-reference alleles  
+5) ALT  | , separated list of alternate non-reference alleles (= the variant)  
 6) QUAL | phred-scaled quality score  
 7) FILTER  | site filztering information  
 8) INFO  | ; separated list of additional annotation  

@@ -1,0 +1,80 @@
+# Genomic Resource Web Browsers
+
+## Ensembl: 
+* Website URL: ensembl.org
+
+**Introduction**
+* Ensembl Genomic Browser was launched in 1999 by European Bioinformatics Institute (EBI) which owns European Variant Archive database stroing variation from \
+numerous species. 
+
+**Features**
+
+* Stores genome reference assemblies for a lot of species with the constant updates (e.g. sheep reference genome and pig reference genome of 12 novel breeds)
+* Stores main information about genes: chromosome coordinates, splicing isoforms, regulatory elements for a lot of species.
+* Genetic variation linked with the genes of interest: SNPs, short indels, somatic SNVs and structural variations.
+* Comparative genomics features of the gene of interest: gene tree, orthologues, paralogues and genomic alignments with other species.
+* Highlighted pathways where genes of interest are annotated
+* Stores reference genome annotation files in gtf, gff3 and bed formats
+
+**Tools**
+
+* Genomic Alignment tools: BLASTN, TBLASTX, BLAT. BLAST is aminoacid and nucleotide alignment algorithm developed at NCBI using less time-consuming but relatively inaccurate method \
+than Smith-Waterman algorithm. BLASTN is a subtype of BLAST which takes and outputs nucleotide sequences. TBLASTX takes nucleotide as query, translates it in \
+six-frames and aligns to six frames of nucleotide database sequence. BLAT is an pairwise sequence alignment software developed at UCSC. 
+
+[BLAST algorithm](https://en.wikipedia.org/wiki/BLAST_(biotechnology)#:~:text=In%20bioinformatics%2C%20BLAST%20(basic%20local,DNA%20and%2For%20RNA%20sequences)
+[BLAT algorithm](https://en.wikipedia.org/wiki/BLAT_(bioinformatics))
+
+* Variant Effect Predictor: takes VCF, HGVS variant calling format files and based on transcript annotation files (e.g. RefSeq transcripts, ENSEMBL/GENCODE \
+transcripts), identifies the effect of the variant on transcript function. 
+
+* Linkage Disequilibrium Calculator
+* Assembly Converter
+
+## ClinGen:
+* Website URL: https://clinicalgenome.org/
+
+**Introduction**
+* ClinGen is NIH-funded portal storing the clinical implications of the genes and the associated variants for contribution to personalized medicine. 
+
+**Features**
+
+* Standardized curation procedure documents of gene-disease connection (i.e. strength of evidence), variant pathogenicity, clinical actionability (genes conferring severe \
+risk of disease), dosage sensitivity (evidence upholding haploinsufficiency or triplosensitivity of genes in the disease) and somatic variants (i.e. evidence \
+supporting effect of somatic variants in tumor).
+* Stores information on genes and variants about the above described concepts. 
+
+**Tools**
+
+* Tools to explore issues on Gene-Disease Validity, Variant Pathogenicity, Clinical Actionability, Dosage Sensitivity and Somatic Variants combining genetic, \
+population, clinical, functional evidence with a class of 1-5 experts in the connected fields evaluating variant.
+* ClinVar Miner: investigates variants in ClinVar portal by their significance, by gene and by condition.
+*Patient Data Sharing Program: process of sharing data of patients through GenomeConnect and other tools. 
+
+## COSMIC:
+* Website URL: https://cancer.sanger.ac.uk/cosmic
+
+**Introduction**
+* COSMIC (Catalogue of Somatic Mutations in Cancer) was developed in 2004 by Wellcome Trust Sanger Institute and holds somatic mutations and their impact in human \
+cancer.
+
+**Features**
+
+* Stores list of genes (Cancer Gene Census) with reported somatic variations in human cancer.
+* Stores list of gene fusions reported in solid tumors and leukemias.
+* Stores name of the genes and associated mutations, conferring acquired (after treament) and intrinsic (before treatment) drug resistance in human cancer therapies.
+* Exhibits mutational signatures from the pubmed literature with mutational profiles across tissues, their etiologies and connection with other mutational \
+signatures. 
+-Note: currently there are three types of mutational signatures [single base substitution](https://cancer.sanger.ac.uk/cosmic/signatures/SBS/index.tt), 
+[doubtlet base substituion](https://cancer.sanger.ac.uk/cosmic/signatures/DBS/index.tt), [small insertion and deletion](https://cancer.sanger.ac.uk/cosmic/signatures/ID/index.tt)
+
+
+**Tools**
+
+* Cancer Browser: find somatic mutations based on tissue type and histology
+* Genome Browser: find information about gene coordinates, splicing isoforms and somatic mutations
+* CONAN (Copy number analysis):  find info about amplification, homozygous deletion and loss of heterozygosity of the gene or genomic coordinate.
+* GA4GH Beacon Query: take the variant as input and output if mutant allele for it exists. 
+
+
+

@@ -1,1 +1,0 @@
-awk -v OFS='\t' '{if (NR!=1) {print "chr"$2,$3,$4,$5,$6,$7}}' segments.tsv > segments.bed

@@ -2,7 +2,31 @@
 
 ## What is UNIX?
 
-UNIX is a family of computer operating systems that comply with the Single Unix Specifications
+UNIX is a family of computer operating systems that comply with the Single Unix Specifications. 
+Its philosophy is to :
+* Write programs that do one thing and do it well
+* Write programs to work together
+* Write programs to handle text streams as that is a universal interface
+
+We use it in bioinformatics as we interpret DNA & proteins as text and UNIX is for test streams. Furhtermore, we work with big data that is too large to be handled by a spreadsheet. 
+
+## Computer files
+
+* Data representations stored in computers as arrays of bytes
+* File type defined by its bytes, not by the filename extension!
+* contain metadata
+* Plain text files are composed by bytes mapped directly to ASCII characters
+* Text editors allow editingg text fiels
+* Text fiels can be read without proprietary software
+
+## Organizing a shell script
+
+* UNIX command are case sensitive, if we use TextEdit, we have to disable the automatic spell checks
+* We wirte on top of the shebang
+* Always write the date, what the script is about and your name
+* comment lines start with #
+* multiline chuncks are split by a \
+* commands are introduced one line each
 
 Key Unix features   | Description
 ---|---

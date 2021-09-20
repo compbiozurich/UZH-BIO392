@@ -58,8 +58,26 @@ We have three genomic intervals. All intervals are 1000 nt long. They are contig
 
 * Can we store this in a BED3? How (please write down the BED file)? Are we losing any information?
 
+-->Yes but we'd lose some information:
+chr2 1000 1999
+chr2 2000 2999
+chr2 3000 3999
+
 * And in BED6? How? Are we losing any information?
+
+-->Possible, without losing anything.
+chr2 1000 1999 A 0 +
+chr2 2000 2999 B 0 +
+chr2 3000 3999 C 1000 +
 
 * And in BED12? How? Are we losing any information?
 
+-->Same as before, but here some columnes will be "unused" they remain blank
+
 * And in the most compact Wiggle as possible? How? Are we losing any information?
+
+-->Yes but the names and the direction of the strands will be lost
+fixedStep chrom=chr2 start=1000 step=1000 span=1000
+0
+0
+1000
