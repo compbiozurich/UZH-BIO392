@@ -63,7 +63,7 @@ The FASTQ is a FASTA file inculsive quality data. A FASTQ file contains 4 lines 
 
 ## How much computer storage is required for 1000 Genomes?
 * [WES & WGS](https://www.strand-ngs.com/support/ngs-data-storage-requirements)
-> **W**hole **E**xome **S**equence contains just the exonic regions which comprise 1-2% of the whole genome. Therefore, WES should take up less storage space.  A **W**hole **G**enome **S**equencing can be rounded off to about 150GB and a WES about 8GB (strand NGS size). For 1000 genomes, the storage of **150TB** (WGS) and **8TB** (WES) is necessary.
+> **W**hole **E**xome **S**equence contains just the exonic regions which comprise 1-2% of the whole genome. Therefore, WES should take up less storage space.  A **W**hole **G**enome **S**equencing can be rounded off to about 150GB and a WES about 8GB (strand NGS size). For 1000 genomes, the storage of **150TB** (WGS) and **8TB** (WES).
 * Different file formats
   * BAM
   > We learned in the lecture of Day 4 that a 30x BAM file can store a genome in 100GB. Therefore, we need for 1000 genomes **100TB** of BAM file format. BAM is the compromised format of SAM and therefore no more human readable.
