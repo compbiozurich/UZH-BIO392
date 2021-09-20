@@ -1,0 +1,13 @@
+PLINK v1.90b4.4 64-bit (21 May 2017)
+Options in effect:
+  --extract mysnps.txt
+  --maf
+
+Hostname: ieu1218-k01f
+Working directory: /Users/jpecni/course/data
+Start time: Fri Oct  2 10:30:13 2020
+
+Error: No input dataset.
+For more information, try 'plink --help [flag name]' or 'plink --help | more'.
+
+End time: Fri Oct  2 10:30:13 2020
