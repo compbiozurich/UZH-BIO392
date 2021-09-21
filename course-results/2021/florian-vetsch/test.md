@@ -36,3 +36,14 @@ As Kanye West said:
 
 I think you should use an
 `<addr>` element here instead.
+
+:grinning:
+~~this~~
+
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
