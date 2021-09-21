@@ -9,6 +9,7 @@ category:
   - people
 tags:
   - Qingyao
+  - teachers
 ---
 
 ## Qingyao Huang

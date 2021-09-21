@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 date: 2019-08-28
 image_file: 'Elif-Ozkirimli-Olmez.png'
 category:
-  - people
+  - alumni
 tags:
   - previous
 ---

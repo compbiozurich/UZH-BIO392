@@ -1,17 +1,18 @@
 ---
-title:  "Bo Gao"
-permalink: '/group/Bo_Gao/'
-excerpt_link: https://info.baudisgroup.org/group/Bo_Gao/
+title:  "Ziying Yang"
+permalink: '/group/Ziying_Yang/'
+excerpt_link: https://info.baudisgroup.org/group/Ziying_Yang/
 excerpt_separator: <!--more-->
 layout: default
-date: 2016-09-01
+date: 2020-10-01
 category:
-  - alumni
+  - people
 tags:
   - group
+  - teachers
 ---
 
-## Bo Gao
+## Ziying Yang
 #### PhD candidate in Molecular Life Sciences, Institute of Molecular Life Sciences, University of Zurich & Swiss Institute of Bioinformatics **SIB**
 
 <!--more-->

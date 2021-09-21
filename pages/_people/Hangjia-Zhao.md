@@ -1,17 +1,17 @@
 ---
-title:  "Bo Gao"
-permalink: '/group/Bo_Gao/'
-excerpt_link: https://info.baudisgroup.org/group/Bo_Gao/
+title:  "Hangjia Zhao"
+permalink: '/group/Hangjia_Zhao/'
+excerpt_link: https://info.baudisgroup.org/group/Hangjia_Zhao/
 excerpt_separator: <!--more-->
 layout: default
-date: 2016-09-01
+date: 2021-07-01
 category:
-  - alumni
+  - people
 tags:
   - group
 ---
 
-## Bo Gao
+## Hangjia Zhao
 #### PhD candidate in Molecular Life Sciences, Institute of Molecular Life Sciences, University of Zurich & Swiss Institute of Bioinformatics **SIB**
 
 <!--more-->
