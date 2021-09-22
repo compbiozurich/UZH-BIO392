@@ -25,4 +25,13 @@ Earlier this year, the New York Genome Center (NYGC) released high-coverage (30x
 * make notes
 * think about questions for discussion rounds
 
+#### The sequence of sequencers: The history of sequencing
+* First-generation DNA sequencing
+* Second-generation DNA sequencing
+* Third-generation DNA sequencing
 
+#### Finding the Rare Pathogenic Variants in a Human Genome
+
+Note:
+
+<For example, current estimates of genetic risks in a healthy individual carrying a disease-associated variant discovered by sequencing are likely inflated since risk estimates have been derived from studying patients presenting clinically, thus selecting for the most extreme cases.>
