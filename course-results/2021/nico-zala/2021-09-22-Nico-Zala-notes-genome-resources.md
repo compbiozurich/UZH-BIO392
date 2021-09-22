@@ -6,7 +6,7 @@
 
 Logo | **Genome Resource** | Field | Tools | Species | Comments |
 ---- | :-----------------: | ----- | ----- | ------- | -------- |
-<img src="http://genome.ucsc.edu/images/ucscHelixLogo.png" width="150" height="150" /> | [GENOME USCS](http://genome.ucsc.edu/) | General Genome Browsing | - Genome Browser <br> - COVID-19 Search <br> - BLAT (sequence alignment) <br> | - great apes <br> - non-ape primates <br> - non-primate mammals <br> - non-mammal chordates <br> - invertebrates <br> - viruses | This is an open-source database, <br/> which covers reference genomes of many various species. |
+<img src="http://genome.ucsc.edu/images/ucscHelixLogo.png" width="500" height="70" /> | [GENOME USCS](http://genome.ucsc.edu/) | General Genome Browsing | - Genome Browser <br> - COVID-19 Search <br> - BLAT (sequence alignment) <br> | - great apes <br> - non-ape primates <br> - non-primate mammals <br> - non-mammal chordates <br> - invertebrates <br> - viruses | This is an open-source database, <br/> which covers reference genomes of many various species. |
 |||||
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/US-NLM-NCBI-Logo.svg" width="150" height="150" />|[NCBI](www.ncbi.nlm.nih.gov/projects/genome/guide/human/) | Human Genome Assemblies and Genome Variant Data| - NCBI:dbSNP <br> - NCBI:dbVAR <br> - NCBI:ClinVar| - human | This database contains human reference genomes, including data about SNPs, microsatelites, insertions, deletions, duplications and information about genomic variation and its relationship to human health. |
 |||||
@@ -16,6 +16,7 @@ Logo | **Genome Resource** | Field | Tools | Species | Comments |
 |||||
 <img src="https://clinicalgenome.org/site/templates/resources/img/logo/logo-clinical-genome-logo-vector.svg" width="150" height="150" />|[CLINGEN](clinicalgenome.org) | Clinical Relevance of Genes | - Gene-Disease Validity <br> - Variant Pathonecity <br> - Dosage Sensitivity <br> - Clinical Actionability | - human | This database contains data of the clinical relevance of genes and variants for use in precision medicine and research. |
 |||||
+
 
 ###### Task 2: read up on yesterday’s general genome variation papers & make notes / think about questions for discussion rounds. 
 
