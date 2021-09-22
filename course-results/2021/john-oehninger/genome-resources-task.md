@@ -1,6 +1,6 @@
 # Genome Resources
 ---------------------------
-What to do?
+**Task**
 * Browse/explore genome resources and provide some notes:
 -------------------------------
 These are some of the most common genome resource webpages there are:
@@ -11,11 +11,12 @@ These are some of the most common genome resource webpages there are:
 
 
 ## Table of Genome Resources
-Resource | Comments
+Genome Resource | Notes
 ---|---
- [**UCSC GENOME BROWSER**](http://genome.cse.ucsc.edu) | <ul><li>Many default tracks</li><li>Most widely used general genome browser</li><li>Overwhelming at first <ul><li>a lot of information at once</li></ul></li><li>Most widely used general genome browser</li><li>Many species</li><li>Quick navigation<ul><li>if you know what you are looking for</li></ul></li><li>Also has SARS-CoV-2 genomic dataset</li><li>Nice layout for browsing species<ul><li>Phylogenetic tree</li><li>Model species front and center</li></ul> <></li><li>Customization with "BED" files</li></ul>
- [**HUMAN GENOME RESOURCES AT NCBI**](www.ncbi.nlm.nih.gov/projects/genome/guide/human)| <ul><li>Entry point for genome reference data</li><li>human genome assemblies</li><li>Human variant collections for download<ul><li>dbVar</li><li>ClinVar</li><li>dbSNP</li></ul></li><li>User-freindly interface</li><li>very quick to e.g. get reference genome</li><li>more non-model species than UCSC<ul><li>e.g. *Tursiops aduncus*</li></ul></li></ul>
- [**ENSEMBL**](www.ensembl.org/Homo_sapiens/Info/Index)| <ul><li>Entry point for many genome data services and collections</li><li>Downloads ("BioMart"), REST API</li><li>"using this Website" as first register<ul><li>Quick to find guide for startrers</li></ul>
+ [**UCSC GENOME BROWSER**](http://genome.cse.ucsc.edu) | <ul>Browser contains many tools which are developed and updated by the USCS Genome Browser Team, such as:<ul><li>Genome Browser</li><li>BLAT</li><li>In-Silico PCR</li><li>LiftOver</li></ul> In the Genome Browser you can search for specific positions or gene symbols within a variety of species, which range from humans to rabbits to fish and many more. It is the most widely used genome browser in the world, since it has such a wide range of species to search for. <br> UCSC has also added a section regarding COVID-19 Research , which can be explored with the SARS-CoV-2 genome browser.<br> They could use an updated GUI. The one in place now seems rather old and outdated. I feel like we're in a aera where it wouldn't be too much to ask for a perhaps more intuitive and welcoming GUI for such an important browser. At least browsing the different species is nicely displayed with a phylogenetic tree and nice layout.</ul>
+ [**Ensembl Human Genome Server**](http://useast.ensembl.org)| <ul> Ensembl is a genome browser for vertebrate genomes that supports research in comparative genomics, evolution, sequence variation and transcriptional regulation. Ensembl annotates genes, computes multiple alignments, predicts regulatory function and collects disease data. Ensembl tools include: <ul><li>BLAST/BLAT: Search genomes for a DNA or protein sequence</li><li>BioMart: Export custom datasets from Ensembl with this data-mining tool </li><li>Variant Effect Predictor (VEP): Analyse your own variants and predict the functional consequences of known and unknown variants for all supported species</li><li>File Chameleon: Convert Ensembl files for use with other analysis tools</li><li>Assembly Converter: Map (liftover) your data's coordinates to the current assembly.</li></ul>
+ [**NCBI Human Genome Guide**](http://ncbi.nlm.nih.gov)| <ul>This is the National Center for Biotechnology Information. <li>Entry point for genome reference data</li><li>human genome assemblies</li><li>Human variant collections for download<ul><li>dbVar</li><li>ClinVar</li><li>dbSNP</li></ul></li><li>User-freindly interface</li><li>very quick to e.g. get reference genome</li><li>more non-model species than UCSC<ul><li>e.g. *Tursiops aduncus*</li></ul></li></ul>
+
  **COSMIC** | Resource for cancer genomics (among many others)
  [**ClinGen**](https://www.clinicalgenome.org/)| <ul><li>For focused discussions on resolving discrepancies in variant interpretation and creating consistent curation guidliens</li><li>Interpreted genome variants with disease association</li></ul>
   [arrayMap](https://arraymap.progenetix.org/)| Reference resource for copy number variation data in cancer
