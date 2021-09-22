@@ -2,7 +2,7 @@
 
 &nbsp;
 
-Over the course of the last century, the analysis & understanding of the human genome has become an essential part of many fields of medicine and biology. Most notably with cancer, the discovery and annotation of specific genomic alterations has lead to enormous progress towards various treatments. Since specific cancer types tend to respond very differently to the same treatments, an accurate understanding of all possible alterations and their respective treatments is necessary. The identification of these driver mutations is aided by various online tools, which are often available for free. Other tools not specific to cancer are also readily available free of charge and can be used to investigate the convervation of specific genome regions, genetic diseases and more.
+Over the course of the last century, the analysis & understanding of the human genome has become an essential part of many fields of medicine and biology. Most notably with cancer, the discovery and annotation of specific genomic alterations has lead to enormous progress towards various treatments. Since specific cancer types tend to respond very differently to the same treatments, an accurate understanding of all possible alterations and their respective treatments is necessary. The identification of these mutations is aided by various online tools, which are often available for free. Other tools not specific to cancer are also readily available free of charge and can be used to investigate the conservation of specific genome regions, genetic diseases and more.
 
 The success of these tools and personalized medicine depends on a few key elements:
 
@@ -22,7 +22,7 @@ The USCS Genome Browser is an open source genome browser that originated from th
 <img src="https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/denis-adamec/images/USCS_Browser.png" width="600">
 </p>
 
-* ### [Human Genome Resources at NCBI](  www.ncbi.nlm.nih.gov/projects/)
+* ### [Human Genome Resources at NCBI](www.ncbi.nlm.nih.gov/projects/)
 
 This browser is focused solely on the *human* genome. It is the main entry point for genome reference data and contains human genome assemblies as well as variant collections.
 
