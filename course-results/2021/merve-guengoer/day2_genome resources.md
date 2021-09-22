@@ -1,5 +1,5 @@
 ## **Genome Resources**
-===
+------------------------
 
 ## Resources for (reference) genomes
 
