@@ -1,0 +1,4 @@
+This is the first file in my pseudo GitHub BIO392 training folder.
+I will next commit my folder and this file to the master branch.
+
+Then I will create a separate branch to simulate a side project, make changes in parallel to files on both branches, experiment with committing and finally merge the two branches (usually, in other projects, I would request to merge the branches, I suppose, except when I am the owner of the repository).
