@@ -22,5 +22,8 @@ Ensembl is a genome browser for vertebrate genomes. The browser is able to annot
 
 4. [COSMIC](https://cancer.sanger.ac.uk/cosmic)
 
+The COSMIC browser is a resource for exploring the impact of somatic mutations in human cancer. Typing the gene of interest in the search box delivers a table with with informations to analysed samples, mutations, PubMed publications and studies regarding the gene. The browser provides also very nicely informations to the gene, the drug resistance associated with mutations on the gene and the distribution of mutations accross tissue types.
+
+>The website is very easy to handle and contains a lot of useful information for people working in the research area of cancer.
 
 ## **Resources for genome variant data**
