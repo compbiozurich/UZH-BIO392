@@ -18,10 +18,9 @@
 * **Cancer genomics**
   * [COSMIC](https://cancer.sanger.ac.uk/cosmic)
   * [ClinGen](www.clinicalgenome.org)
-  * ICGC Cancer Genome Projects
+  * [ICGC Cancer Genome Projects](https://dcc.icgc.org/)
   * [PMKB Precision Medicine Knowledgebase](https://pmkb.weill.cornell.edu)
-  * arrayMap
-  * Progenetix Cancer CNV Information Resource
+  * [Progenetix arrayMap](https://arraymap.progenetix.org/progenetix-cohorts/arraymap/)
 
 ## Reference genomes
 
@@ -79,3 +78,26 @@
 * If you search for a condition, you get the top 20 genes, genes with mutations and genes without mutations that are correlated
 * You can look for different kinds of variants
 * Quite easy to understand genome browser
+
+### ClinGen
+* Regularily updated
+* Really nice layout
+* Interesting options like Gene-Disease Validity, Variant Pathogenicity, Clinical Actionability, Dosage Sensitivity, Somatic Cancer Variant and Baseline Annotation
+* Seems to be mostly correlations(?)
+
+### ICGC Cancer Genome Projects
+* Also really nice layout
+* Quite a few external references and also an overview over mutations and drugs for specific genes
+* Nice interface to look through the cancer projects
+* Apparently the ICGC [ARGO Data Platform](https://platform.icgc-argo.org/) is the successor(?)
+
+### PMKB Precision Medicine Knowledgebase
+* You can check different mutations in cancers of different regions of the body, with a short explanation and clinical relevance
+* You can also check different tumors and mutations that are present in them
+* Easy to understand
+
+### Progenetix arrayMap
+* Data from different sources
+* Nice search function
+* There's a plotting tool which sounds pretty cool
+
