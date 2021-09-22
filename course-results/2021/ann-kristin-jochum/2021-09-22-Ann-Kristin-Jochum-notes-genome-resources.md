@@ -15,6 +15,7 @@
   * [NCBI:dbVAR](https://www.ncbi.nlm.nih.gov/dbvar/)
   * [NCBI:ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)
   * [EMBL-EBI:EVA](https://www.ebi.ac.uk/eva/)
+  * [IGSR: The International Genome Sample Resource](https://www.internationalgenome.org/)
 * **Cancer genomics**
   * [COSMIC](https://cancer.sanger.ac.uk/cosmic)
   * [ClinGen](www.clinicalgenome.org)
@@ -70,6 +71,15 @@
 * Seems to be regularily updated
 * Links to Ensembl
 * If I understand it correctly, you can look for specific studies and the position on the chromosome, but not for gene names
+
+### IGSR: The International Genome Sample Resource
+* *The International Genome Sample Resource (IGSR) maintains and shares the human genetic variation resources built by the 1000 Genomes Project. We also update the resources to the current reference assembly, add new data sets generated from the 1000 Genomes Project samples and add data from projects working with other openly consented samples.*
+* Last announcement from August 2020
+* Goals:
+  * Ensure the future access to and usability of the 1000 Genomes reference data
+  * Incorporate additional published genomic data on the 1000 Genomes samples
+  * Expand the data collection to include new populations not represented in the 1000 Genomes Project
+* Works with *Ensemble*
 
 ## Cancer genomics
 
