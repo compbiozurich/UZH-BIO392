@@ -18,7 +18,7 @@ The USCS Genome Browser is an open source genome browser for the display, annota
 
 * ### [MolecularMatch](https://www.molecularmatch.com)
 
-MolecularMarch is another tool that allows for the matching of different genetic alterations. Like other tools, it also suggests diagnosis and prescription options pertaining to the specific alterations.
+MolecularMarch is a tool that allows for the matching of different genetic alterations. Like other tools, it also suggests diagnosis and prescription options pertaining to the specific alterations.
 
 &nbsp;
 &nbsp;
@@ -46,7 +46,7 @@ Another resource which can be used to interpret identified alterations in cancer
 
 * ### [Cancer Driver Log](https://candl.osu.edu/)
 
-Cancer driver log is similar in functionality to the first two resources, however entries are classified into four levels of evidence:
+Cancer driver log is similar in functionality to the first two resources, with the added functionality of classifying entries into four levels of evidence:
 
 
 1. Alteration has matching FDA approved or NCCN recommended therapy.
