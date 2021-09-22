@@ -1,6 +1,6 @@
 ## **Genome Resources**
 ------------------------
 
-## Resources for (reference) genomes
+# **Resources for (reference) genomes**
 
-## Resources for genome variant data
+# **Resources for genome variant data**
