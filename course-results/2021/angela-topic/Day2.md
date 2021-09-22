@@ -18,3 +18,5 @@ It is again a platform for gemone browsing. By entering eighter a gene, position
 
 ## [COSMIC](https://cancer.sanger.ac.uk/cosmic)
 It is a database for somatic mutation in cancer. One can select different tissues for example and then the all genes are displayed and one can select the one with possible mutation which have an impact on the developement of cancer.
+
+There are also many other platfomrs which are used for different purpose, for that have a look at the figure below:
