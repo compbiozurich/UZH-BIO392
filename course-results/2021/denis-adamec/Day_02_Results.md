@@ -2,7 +2,7 @@
 
 &nbsp;
 
-Over the course of the last century, the analysis & understanding of the human genome has become an essential part of many fields of medicine and biology. Most notably with cancer, the discovery and annotation of specific genomic alterations has lead to enormous progress towards various treatments. Since specific cancer types tend to respond very differently to the same treatments, an accurate understanding of all possible alterations and their respective treatments is necessary. The identification of these driver mutations is aided by various online tools, which are often available for free. Other tools not specific to cancer can also be found and used for investigations into convervation of specific genome regions, genetic diseases and more.
+Over the course of the last century, the analysis & understanding of the human genome has become an essential part of many fields of medicine and biology. Most notably with cancer, the discovery and annotation of specific genomic alterations has lead to enormous progress towards various treatments. Since specific cancer types tend to respond very differently to the same treatments, an accurate understanding of all possible alterations and their respective treatments is necessary. The identification of these driver mutations is aided by various online tools, which are often available for free. Other tools not specific to cancer are also readily available free of charge and can be used to investigate the convervation of specific genome regions, genetic diseases and more.
 
 &nbsp;
 
