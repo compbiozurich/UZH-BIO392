@@ -1,5 +1,9 @@
 # Genome Resources  
 
+###### Task 1: Browse/explore genome resources and provide some notes in a doc posted on Github (.md)  
+<br/>
+
+
 Logo | **Genome Resource** | Field | Tools | Species |
 ---- | :-----------------: | ----- | ----- | ------- | 
 ![](http://genome.ucsc.edu/images/ucscHelixLogo.png) | [GENOME USCS](http://genome.ucsc.edu/) | General Genome Browsing | - Genome Browser <br> - COVID-19 Search <br> - BLAT (sequence alignment) <br> | - great apes <br> - non-ape primates <br> - non-primate mammals <br> - non-mammal chordates <br> - invertebrates <br> - viruses |
