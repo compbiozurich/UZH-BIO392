@@ -1,6 +1,6 @@
-## Notes Day 2
+# Notes Day 2
 
-The following notes are to the website: https://internationalgenome.org
+## Notes to https://internationalgenome.org
 
 The IGSR contains the data set produced by the 1000 Genomes Project and proceeds to include new data that follor the IGSR sampling principles. The Goals of the IGSR are to:
 * **1.** Ensure the future acces to and usability of the 1000 Genomes reference data.
@@ -10,4 +10,11 @@ The IGSR contains the data set produced by the 1000 Genomes Project and proceeds
 * **3.** Expand the data collection to include new populations not represented in the 1000 Genomes Project.
   *  Since the 1000 Genomes Project does not capture all populations, further samples that follow the IGSR's sample collection principles are added, for example 
 
-@maxhartm
+## Notes to https://genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost
+
+The costs for sequencing genomes were reduced over the past quarter-century due to advances in the field of genomics.
+
+
+
+A primer on Genome Sequencing
+* Organisms can differ widely in their genome sizes. The genome of *E. coli* is around 5 million bases while that of a fruit fly is ~123 million bases and that of the loblolly pine tree is ~23 billion bases. 
