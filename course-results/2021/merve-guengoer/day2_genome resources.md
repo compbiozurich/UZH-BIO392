@@ -8,8 +8,11 @@ The UCSC genome browser is originated from the Human Genome Project and the most
 
 In my opinion, the website was not so easy to handle and too complicated at first sight. However, I think it is worth to take some time and learn how to handle the website, since it contains a lot of detailed informations when searching for genes, which could be usable for research reasons.
 
-2. 
+2. [Human Genome Resources at NCBI](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/)
 
+The NCBI browser is an entry point for genome reference data and allows to look and visualize for different reference genomes. 
+
+The website was very inviting and structured and easier to handle than other browsers. What I really liked about it was, that it gives us a summary about the function of the gene we are looking for.
 
 
 
