@@ -14,7 +14,9 @@ Two reference genomes (hg37 and hg19) can be used.
 
 Upon succesful identification of an oncogenic alteration, potentially effective prescriptions are directly displayed: 
 
-<img src="https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/denis-adamec/images/CGI_Result.png" width="750">
+<p align="center">
+<img src="https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/denis-adamec/images/CGI_Result.png" width="600">
+</p>
 
 
 * ### [Clinical Interpretation of Variants in Cancer](https://civicdb.org/home)
