@@ -14,7 +14,24 @@ The IGSR contains the data set produced by the 1000 Genomes Project and proceeds
 
 The costs for sequencing genomes were reduced over the past quarter-century due to advances in the field of genomics.
 
+![Cost per genome data - 2020](https://www.genome.gov/sites/default/files/inline-images/NHGRISequencing_Cost_per_Genome_Aug2020.jpg)
 
+### A primer on Genome Sequencing
+* Organisms can differ widely in their genome sizes. The genome of *E. coli* is around 5 million bases while that of a fruit fly is ~123 million bases and that of the loblolly pine tree is ~23 billion bases.
+* Genomes are very large and can not yet be read out in order end-to-end in a single step. The DNA must be broken down into smaller pieces, then each pieces undergoes chemical reactions so that then its identity and order of its bases can be deduced. The base order of one DNA piece is a so-called sequence-read. These billions of sequence reads is computationally assembled back together to get the sequence of the input genome. This process called shotgun sequencing. When an entire genome is being sequenced, the process is called whole-genome sequencing.
 
-A primer on Genome Sequencing
-* Organisms can differ widely in their genome sizes. The genome of *E. coli* is around 5 million bases while that of a fruit fly is ~123 million bases and that of the loblolly pine tree is ~23 billion bases. 
+![Comparions of human genome sequencing methods during the time of the Human Genome Prokect and circa 2016](https://www.genome.gov/sites/default/files/inline-images/sequencing.jpg)
+
+* It is also possible to only sequence part of a genome, mostly protein-coding regions of a genome which reside within DNA segments called exons and reflect the currently best understood part of most genomes. Obviously such a method is cheaper than whole-genome sequencing.
+* The costs of genome sequencing is also dependent on the quality of the data. The higher its quality, the higher its costs. This is because higher quality means that each base in the genome is read more often.
+* But there are different factors that make up the costs and there are different types and quality levels of genome sequences. To understand the true cost of a genome sequence therefore requires knowledge about what was and was not included in calculating that cost
+
+### Timeline of Costs
+#### Around 2000 (Human Genome Project)
+The quality of the reference sequence of the humane genome created by the HGP was very high. Its estimated error rate was <1 in 100,000 bases -> this is a much higher quality than in a typical human genome sequence produced today. The human genome for this project was first mapped and then sequenced. At this time it was necessary to map the genome since no "framework" for organizing the actual sequencing was available, but these efforts were quite expensive being in tens of millions of dollars. The generating of the initial "draft" human genome sequence is ~300 million dollars. In 2003 the "finished" sequence was genearted which costed ~150 million dollars.
+
+#### 2006
+The costs to generate a high-quality "draft" human genome sequence had dropped to ~14 million dollars, hypothetically to generate a "finished" human genome sequence it would have probablly costed around 20-25 million dollars.
+
+#### 2016
+The costs to generate a high-quality "draft" human genome sequence are around 1000 dollars. The costs to generate a whole-exome sequence are generally below 1000 dollars.
