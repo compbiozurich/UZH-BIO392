@@ -1,7 +1,6 @@
-# **Genome Resources**
+## **Genome Resources**
 ------------------------
 
-## **Resources for (reference) genomes**
 1. [UCSC Genome Browser](http://genome.ucsc.edu/)
 
 The UCSC genome browser is originated from the Human Genome Project and the most widely used general genome browser. The browser allows us to search for specific genes by using for example the name or the position of the gene of interest. The browser provides a lot of detailed informations as the position of the gene of interest in the chromosome or the legth of it, to list only a few. Additionally, we can download an annotated data and sequence of our gene of interest.
