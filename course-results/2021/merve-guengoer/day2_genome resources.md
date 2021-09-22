@@ -10,9 +10,9 @@ The UCSC genome browser is originated from the Human Genome Project and the most
 
 2. [Human Genome Resources at NCBI](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/)
 
-The NCBI browser is an entry point for genome reference data and allows to look and visualize for different reference genomes. Seq. variants!
+The NCBI browser is an entry point for genome reference data and allows to look and visualize for different reference genomes. The browser is also connected to other NCBI resources as [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) and [dbSNP](https://www.ncbi.nlm.nih.gov/snp/) and can therefore additionally provide data for genome variants.
 
->The website was very inviting and structured and easier to handle than other browsers. What I really liked about it was, that it gives us a summary about the function of the gene we are looking for.
+>The website was very inviting and structured and easier to handle than other browsers. What I really liked about it was, that it gives us a very good summary about the function of the gene we are looking for. Also the connection to genome variant browsers could be very useful.
 
 3. [ENSEMBL](http://www.ensembl.org/Human/Search/Results?q=;site=ensembl;facet_species=Human)
 
@@ -25,5 +25,3 @@ Ensembl is a genome browser for vertebrate genomes. The browser is able to annot
 The COSMIC browser is a resource for exploring the impact of somatic mutations in human cancer. Typing the gene of interest in the search box delivers a table with with informations to analysed samples, mutations, PubMed publications and studies regarding the gene. The browser provides also very nicely informations to the gene, the drug resistance associated with mutations on the gene and the distribution of mutations accross tissue types.
 
 >The website is very easy to handle and contains a lot of useful information for people working in the research area of cancer.
-
-## **Resources for genome variant data**
