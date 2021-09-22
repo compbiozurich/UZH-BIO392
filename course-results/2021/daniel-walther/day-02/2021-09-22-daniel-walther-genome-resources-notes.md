@@ -9,6 +9,10 @@ The *purpose* of this file or task is to familiarise myself with the Markdown la
 ## Noteworthy genome resources
 The resources mentioned below are from today's lecture. These resources could be characterised by the kind of genomic data they provide (e.g. human, microbial, synthetic, RNA etc.) and by their purpose (e.g. archive, raw data, aggregated health metadata, publicly accessible etc.) or other properties.
 
+### Reference _and_ genome variant resource(s)
+[IGSR](https://www.internationalgenome.org/): The International Genome Sample Resource - "Supporting open human variation data".
+I found on page outside of the lecture, on the course website. At first glance, it appears to cover both reference genome and genomve variant data
+
 ### _Reference_ genome resources
 (?) These resources collect reference genomes, i.e. genomes to be used as reference sequences when working with genomic data in general. E.g. genomes of healthy to-be-mothers.
 
