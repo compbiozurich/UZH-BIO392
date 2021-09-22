@@ -1,4 +1,4 @@
-# Genome Resources in Bioinformatics (of Molecular Sequence Variation)
+# Notes on Genome Resources in Bioinformatics
 
 What is it? What does it do? Why?
 
