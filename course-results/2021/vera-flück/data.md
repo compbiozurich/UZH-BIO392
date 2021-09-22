@@ -16,6 +16,8 @@ With the growing scale of human genetics studies and the increasing number of cl
 ![Costs per genome](https://www.genome.gov/sites/default/files/inline-images/NHGRISequencing_Cost_per_Genome_Aug2020.jpg)
 *Figure 1:* Sequencing cost per genome data
 
+## Genome
+Earlier this year, the New York Genome Center (NYGC) released high-coverage (30x) data for an additional 698 samples from the 1000 Genomes Project sample collections. These 698 samples are related to the original set of 2,504 samples previously sequenced by NYGC. The 2,504 samples are a set of samples unrelated to each other that made up the panel used by the 1000 Genomes Project in its third (and final) phase. This brings the total number of samples sequenced to high-coverage by NYGC to 3,202, in work funded by NHGRI.
 
 ### Second Task
 
