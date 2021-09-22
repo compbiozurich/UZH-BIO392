@@ -20,19 +20,24 @@ Upon succesful identification of an oncogenic alteration, potentially effective 
 
 * [Clinical Interpretation of Variants in Cancer](https://civicdb.org/home)
 
-
+Another resource which can be used to interpret identified alterations in cancer genomes. Approximately 455 genes and a total of 2854 variants are catalogued in this database.
 
 &nbsp;
 
 * [Cancer Driver Log](https://candl.osu.edu/)
 
-
+Cancer driver log is similar in functionality to the first two resources, however entries are classified into four levels of evidence:
 
 &nbsp;
 
-* [Personalized Cancer Therapy Database](https://pct.mdanderson.org/#/home)
+1. Alteration has matching FDA approved or NCCN recommended therapy.
+2. Alteration has matching therapy based on evidence from clinical trials, case reports, or exceptional responders.
+3. Alteration predicts for response or resistance to therapy based on evidence from pre-clinical data (in vitro or in vivo models).
+4. Alteration is a putative oncogenic driver based on functional activation of a pathway.
 
+&nbsp;
 
+This allows for easy decisions on the potential of different suggested prescriptions.
 
 &nbsp;
 &nbsp;
