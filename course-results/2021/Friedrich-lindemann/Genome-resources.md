@@ -1,5 +1,9 @@
 ### Reference Genome Resources
 * genome.ucsc.edu UCSC genome browser
+  * 
+  * 
+  * 
+  * 
   * afjifjefs 
 * HUMAN GENOME RESOURCES AT NCBI
 * Ensembl
@@ -17,3 +21,12 @@
 ### Cancer Variant resources
 * arrayMap
 * Progenetix
+### other
+* 23andme
+* ACGI
+* cancer moonshot
+* GENIE/AACR
+* ICGC
+* RPGEH
+* Precision medicine initiative
+* UK Biobank
