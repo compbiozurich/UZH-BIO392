@@ -1,11 +1,11 @@
-### **Resources for genome analysis and genomic research**
+# **Resources for genome analysis and genomic research**
 
 &nbsp;
 &nbsp;
 
 ## Cancer specific resources:
 
-* # [Cancer Genome Interpreter](https://www.cancergenomeinterpreter.org/home)
+* ### [Cancer Genome Interpreter](https://www.cancergenomeinterpreter.org/home)
 
 The Cancer Genome interpreter is a tool used primarily for the identification of oncogenic alterations in a known cancer genome.
 In order to identify an alteration (point mutation, block substitution, indel, complex indel, etc.) specific input formats have to be used.
@@ -14,15 +14,15 @@ Two reference genomes (hg37 and hg19) can be used.
 
 Upon succesful identification of an oncogenic alteration, potentially effective prescriptions are directly displayed: 
 
-![CGI Result example](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/denis-adamec/images/CGI_Result.png)
+![CGI Result example](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/denis-adamec/images/CGI_Result.png | width = 400)
 
 
-* # [Clinical Interpretation of Variants in Cancer](https://civicdb.org/home)
+* ### [Clinical Interpretation of Variants in Cancer](https://civicdb.org/home)
 
 Another resource which can be used to interpret identified alterations in cancer genomes. Approximately 455 genes and a total of 2854 variants are catalogued in this database.
 
 
-* # [Cancer Driver Log](https://candl.osu.edu/)
+* ### [Cancer Driver Log](https://candl.osu.edu/)
 
 Cancer driver log is similar in functionality to the first two resources, however entries are classified into four levels of evidence:
 
