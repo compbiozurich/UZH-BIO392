@@ -13,7 +13,7 @@
 
 With the growing scale of human genetics studies and the increasing number of clinical applications for genome sequencing, even greater attention is being paid to understanding the underlying costs of generating a human genome sequence. The NHGRI has carefully tracked costs per genome for many years (see Figure 1).
 
-![Costs per genome](
+![Costs per genome][NHGRISequencing_Cost_per_Megabase_Aug2020.jpg]
 
 
 ### Second Task
