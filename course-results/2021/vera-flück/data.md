@@ -1,8 +1,9 @@
-#This is a markdown file
+# This is a markdown file
 
-## Genome data
+## Day 2
 
-*Browse/explore genome resources and provide some notes (1-2 pages total) in a doc posted on Github (.md)
+*Browse/explore genome resources and provide some notes (1-2 pages total) in a doc posted on Github (.md):*
+Links:
 [InternationalGenome](https://www.internationalgenome.org/)
 
 
@@ -10,4 +11,4 @@
 *make notes
 *think about questions for discussion rounds
 
-under these links:
+u
