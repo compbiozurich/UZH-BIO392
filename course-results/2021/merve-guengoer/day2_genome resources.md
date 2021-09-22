@@ -1,3 +1,9 @@
+## **Human Genome Project**
+---------------------------
+The Human Genome Project (HGP) was the international research effort to determine the DNA sequence of the entire human genome, where the first 'reference' sequence of the human genome was generated. Since the completion of the HGP and the arrival of revolutionary new DNA sequencing technologies on the screne, such as 'next-generation' DNA sequencing methods, genomics groups continued to refine the basic methodologies used during the HGP and continued lowering the costs for genome sequencing.
+
+![Cost per genome data - 2020](https://www.genome.gov/sites/default/files/inline-images/NHGRISequencing_Cost_per_Genome_Aug2020.jpg)
+
 ## **Genome Resources**
 ------------------------
 
