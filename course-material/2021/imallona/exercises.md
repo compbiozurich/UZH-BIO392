@@ -173,7 +173,7 @@ DISCLAIMER: data is based upon the beautiful Genome Analysis Workshop (MOLB 7621
 
 Retrieve the data for these exercises (mind the path you're working at, should be `~/course/data`).
 
-The path for URL for the data is https://molb7621.github.io/workshop/_downloads/SP1.fq
+The path for URL for the data is http://imlspenticton.uzh.ch/imallona/teaching/SP1.fq
 
 
 <details><summary>
@@ -184,7 +184,7 @@ Answer
 
 ```bash
 cd ~/course/data
-curl -L https://molb7621.github.io/workshop/_downloads/SP1.fq  \
+curl -L http://imlspenticton.uzh.ch/imallona/teaching/SP1.fq  \
    > SP1.fq
 ```
 
