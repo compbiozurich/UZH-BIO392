@@ -1219,7 +1219,7 @@ Tip
 * What fraction of the GWAS SNPs are exonic?
 
 
-## Extra eercises block 37
+## Extra exercises block 37
 
 Explore (not necessarily run) more usage examples with biological meaning using UNIX and BEDTools [http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/](http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/).
 
