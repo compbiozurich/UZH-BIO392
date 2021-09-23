@@ -229,10 +229,10 @@ head -n 4 SP1.fq
 produces
 
 ```
-@cluster_2:UMI_ATTCCG
-TTTCCGGGGCACATAATCTTCAGCCGGGCGC
+@A01251:208:HJVFJDRXY:2:2101:23782:1000 1:N:0:CGCTCATT
+TNGAAAATGATAAAAACCACACTGTAGAACAGATTAGATGAGTGAGTTACACTGAAAAACACATTCTTTGGAAACGGGATTTGTAGAATAGTGTATATCAATGAGTTACAATGAGAAACATGTAAAATTAAAAAAACCACAAAGTACAACA
 +
-9C;=;=<9@4868>9:67AA<9>65<=>591
+F#FFFFFFFFFFFFFFFFFFFFFF:F:FFFFFFFFFFFFFFFFFFF:FFFFFFFFFFFFFFFFFFF,FFFFFFFF,FFF,FFFFFFFF,FFFFFFFFFFFFFFFFFFFFFFFFF:FF::,,F,FFF,F,:,FFFFFF,F,F,,F,:,,F,:
 ```
 
 * So Line 1 contains a sequence identifier that begins with an `@`
@@ -268,12 +268,12 @@ sequence identifier. Why doesn't this work?
 ```bash
 wc -l SP1.fq | awk '{print $1 / 4}'
 ```
-renders `250`
+renders `10`
 
 ```bash
 grep -c "@" SP1.fq
 ```
-renders `459`.
+renders `12`.
 <details><summary>
 Answer
 </summary>
@@ -475,7 +475,7 @@ awk 'NR % 2 == 1' example.fa | wc -l
 
 ## Exercise 15
 
-Download the compressed SAM data from ` https://github.com/samtools/samtools/raw/develop/examples/ex1.sam.gz`,  uncompress (`.gz` files need to be uncompressed with `gunzip`) and inspect it.
+Download the compressed SAM data from `https://github.com/samtools/samtools/raw/develop/examples/ex1.sam.gz`,  uncompress (`.gz` files need to be uncompressed with `gunzip`) and inspect it.
 
 <details><summary>
 Answer
