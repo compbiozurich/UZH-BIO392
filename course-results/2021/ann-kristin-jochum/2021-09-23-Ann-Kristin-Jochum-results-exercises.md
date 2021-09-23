@@ -101,3 +101,29 @@
 * Now both strands are reported next to each other, and non overlaps are on neither strand(?)
 
 ## Exercise 25
+* Quite a few columns
+* 56295 lines
+
+## Exercise 26
+* Exons: 20 (grep ENST00000342247 chr22_with_ERCC92.gtf | grep "exon\s" | wc -l)
+
+## Exercise 27
+* Underscore not possible in the web terminal
+* According to answer (grep start_codon chr22_with_ERCC92.gtf | wc -l
+  grep stop_codon chr22_with_ERCC92.gtf | wc -l)
+  
+## Exercise 28
+* xzvf vcftools_0.1.13.tar.gz
+
+## Exercise 29
+* Latest version: v0.1.16
+
+## Exercise 30
+* 24 example files (find -name "*vcf" -type f)
+
+## Exercise 31
+* Make an alias (alias vcftools='~/course/soft/vcftools_0.1.13/bin/vcftools')
+
+## Exercise 32
+* Filter (vcftools --vcf ~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf)
+* No idea what this means
