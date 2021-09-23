@@ -1010,11 +1010,43 @@ vcftools --vcf CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 </p>
 </details>
 
+To evaluate the VCF structure, we can browse the 1000 Genomes' documentation: [README for low coverage mobile elements insertions](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/README.2010_10.low_coverage_MobileElementInsertions). Some items from the document linked above:
+
+```
+POS
+NCBI build 36.3 position of insertion
+
+ALT 
+<INS:ME:ALU> is used for Alu element insertions. 
+<INS:ME:L1> is used for L1 element insertions. 
+<INS:ME:SVA> is used for SVA element insertions. 
+
+QUAL
+The phred quality (with some definition)
+
+FILTER
+Filter flags indicate that the given event was likely to be an artifact
+
+INFO fields:
+
+SVTYPE
+'INS' for insertion.
+
+SVLEN
+Estimated length of the inserted sequence.
+
+VALIDATED, VALMETHOD
+Flag indicating that the given loci was validated by PCR experiments done at LSU, 
+EMBL, or Yale.
+```
+
 ## Exercise 34
 
 As a first exercise, let's evaluate how many of these mobile elements insertions overlap human exons? Do you expect it to be a low or high proportion?
 
 To do so download an exons bedfile from `https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed` and then use bedtools intersect. Tip: it won't work because of the chromosome numbering (tip: check how chromosome numbers are encoded in both exons.bed and the vcf file, i.e. whether starting with a `chr` or not, and harmonize them using `awk`).
+
+Also, which genomic assembly does this file belong to? How much does this matter? (e.g. put in context with human genome reference liftovers).
 
 <details><summary>
 Answer
@@ -1062,7 +1094,7 @@ bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 
 ```
 
-Are these few or lots? What would you expect?
+Are these few or lots of insertiosn in exons? Biologically, would you expect lots of little events of exon disruption by mobile elements insertion?
 
 
 ```bash
@@ -1072,7 +1104,7 @@ bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 ## number of variants 
 wc -l CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 
-## is the ratio low or high?
+## if dividing former by the latter, is the ratio low or high?
 ```
 
 </p>
@@ -1115,18 +1147,20 @@ head hesc.chromHmm.bed
 # chr1	28537	30137	1_Active_Promoter
 
 
-## this file still encodes `chromosome 1` as `chr1`, whist our VCF encodes it as `1`.
+## this chromHMM file again encodes `chromosome 1` as `chr1`, whilst our VCF encodes it as `1`.
 ## so we'll remove `chr``strings from it
 sed 's/^chr//g' hesc.chromHmm.bed > hesc.chromHmm_nochr.bed
 
 ## to check the abundance of variants per chromatin state, we'll intersect the variants file
 ## with the chromatin states one, print the column with the states, and count the number of items
+## output format of uniq -c:
+## number of bed records (first column), grouped by chromatin state (second column)
 bedtools intersect\
   -b CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \
   -a  hesc.chromHmm_nochr.bed | awk '{print $4}' | sort | uniq -c
 ```
 
-So apparently there is plenty of  heterochromatin/low CNV regions, but is there an overrepresentation? How many heterochromatin/low CNV regions are there in the whole genome?
+So apparently there is plenty of heterochromatin/low CNV regions, but is there an overrepresentation? How many heterochromatin/low CNV regions are there in the whole genome?
 
 ```bash
 ## we similarly count the number of active promoters, weak txn etc records
@@ -1137,10 +1171,9 @@ awk '{print $4}' hesc.chromHmm_nochr.bed | sort | uniq -c
 </p>
 </details>
 
-How do you biologically interpret this? Random thoughts: selective pressure and exon conservation (do transposon integrations disrupt fitness? would a deletereous insertion give rise to an adult?), retrotransposition mechanisms (homology with prior retrotransposons/repetitive elements), etc.
+We're not evaluating this overrepresentation statistically, but how do we biologically interpret this? Random thoughts: selective pressure (do transposon integrations interrupt open reading frames, distort protein generation, and impair fitness? would a deletereous insertion give rise to an adult?); retrotransposition mechanisms (homology with prior retrotransposons/repetitive elements), etc.
 
-Are this calculations fair? We were counting BED records, but we didn't take into account the actual span (in nucleotides) of the different genomic compartments. How could we do that?
-
+Also, numerically: are this calculations fair? We were counting BED records, but we didn't take into account the actual span (in nucleotides) of the different genomic compartments. How could we do that?
 
 ## Extra exercises block 36
 
