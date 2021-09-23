@@ -970,7 +970,7 @@ vcftools --vcf ~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf
 
 Explore human variation data for mobile elements insertion using the [1000genomes data](http://www.internationalgenome.org/data). More precisely, download the pilot [pilot data](ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/) named `CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz` (the full path to the remote FTP server is `ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz`).
 
-Then, explore the number of variants (tip: use `vcftools`), the file contents etc.
+Then, explore the number of variants (tip: use `vcftools`), the file contents (head, less), etc.
 
 Tip: remember where the `bedtools` and `vcftools` binaries are and/or use an alias to them.
 
@@ -983,15 +983,26 @@ Answer
 <p>
 
 ```bash
-
+## path we'll download the data to
 cd ~/course/data
+
+## download command (will generate a compressed file)
 curl -L ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz > CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz
 
+## to check the filetype
+file CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz
 
-gunzip CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz 
+## this will uncompress the file, resulting in a file named
+## gunzip CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+gunzip CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz
 
+## to check it's uncompressed text
+file CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+
+## to evaluate the number of reported insertions
 wc -l CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf 
 
+## to get a summary of the quality-fiiltered variants, as well as other stats
 vcftools --vcf CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 
 ```
@@ -1001,7 +1012,7 @@ vcftools --vcf CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 
 ## Exercise 34
 
-As a first exercise, how many of these intertions overlap human exons? Do you expect it to be a low or high proportion?
+As a first exercise, let's evaluate how many of these mobile elements insertions overlap human exons? Do you expect it to be a low or high proportion?
 
 To do so download an exons bedfile from `https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed` and then use bedtools intersect. Tip: it won't work because of the chromosome numbering (tip: check how chromosome numbers are encoded in both exons.bed and the vcf file, i.e. whether starting with a `chr` or not, and harmonize them using `awk`).
 
@@ -1016,25 +1027,36 @@ Answer
 
 cd ~/course/data
 
+## download the exons location (bedfile)
 curl -O https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed
 
+## explore the file
+head exons.bed
+
+## how many exons are there in total?
+wc -l exons.bed
+
+## look for the VCF records overlapping exons; that is, bedtools intersect
+## with the VCF as `a` file, and the exons as `b` file
 bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \
   -b exons.bed
 
 ## this does not work as intended! or, rather, gives some warnings.
-## Why? The chr strings at the coordinates are present in one bedfile but not in the other
-
+## Why does it crash? The chr strings at the coordinates are present in one bedfile but not in the other
 tail CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 
 tail exons.bed
 
-## removing the chr string from the exons bedfile
+## so chromosomes have/not have 'chr' strings on them depending on the file; e.g.
+## for one resource, `chromosome 1` is encoded as `chr1`, and `1` for the other
 
+## removing the chr string from the exons bedfile to harmonize both
 sed 's/^chr//g' exons.bed > exons_nochr.bed
 
+# check they're gone
 head exons_nochr.bed
 
-## this should work (chr naming conventions are equivalent)
+## now the bedtools intersect should work (chr naming conventions are equivalent)
 bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \
   -b exons_nochr.bed
 
@@ -1044,10 +1066,13 @@ Are these few or lots? What would you expect?
 
 
 ```bash
-
+## number of variants overlapping exons
 bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf   -b exons_nochr.bed | wc -l
 
+## number of variants 
+wc -l CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 
+## is the ratio low or high?
 ```
 
 </p>
@@ -1056,7 +1081,9 @@ bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
 
 ## Exercise 35
 
-Continuing with the mobile elements insertions, where do they insert preferentially? In active or inactive regions? To briefly explore this get the chromatin states with the highest number of insertions using the `CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf` and the Ernst's genome segmentation ([more info here](http://compbio.mit.edu/ChromHMM/)) as downloaded from `https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed`. Tip: then select the fourth column of the ChromHMM bedfile, sort it and count with `uniq -c`.
+Continuing with the mobile elements insertions, and given they're not particularly present in exons, where do they insert preferentially? In active or inactive regions? How do we know where active regions are?
+
+To briefly explore this we'll make use of the chromatin states models, and will find the ones with the highest number of insertions using the `CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf` and the Ernst's chromatin states segmentation ([more info here](http://compbio.mit.edu/ChromHMM/)) as downloaded from `https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed`. Tip: then select the fourth column of the ChromHMM bedfile, sort it and count with `uniq -c`.
 
 For further details on what is a ChromHMM segmentation (i.e. assigning functions to genomic ranges) please read [Nature Methods volume 9, pages 215–216 (2012)](https://www.nature.com/articles/nmeth.1906).
 
@@ -1073,10 +1100,27 @@ cd ~/course/data
 
 curl -O https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed
 
-# first removing the chrstrings again
+head hesc.chromHmm.bed
 
+## what does the four column mean?
+# chr1	10000	10600	15_Repetitive/CNV
+# chr1	10600	11137	13_Heterochrom/lo
+# chr1	11137	11537	8_Insulator
+# chr1	11537	11937	11_Weak_Txn
+# chr1	11937	12137	14_Repetitive/CNV
+# chr1	12137	14137	11_Weak_Txn
+# chr1	14137	27537	9_Txn_Transition
+# chr1	27537	27737	6_Weak_Enhancer
+# chr1	27737	28537	2_Weak_Promoter
+# chr1	28537	30137	1_Active_Promoter
+
+
+## this file still encodes `chromosome 1` as `chr1`, whist our VCF encodes it as `1`.
+## so we'll remove `chr``strings from it
 sed 's/^chr//g' hesc.chromHmm.bed > hesc.chromHmm_nochr.bed
 
+## to check the abundance of variants per chromatin state, we'll intersect the variants file
+## with the chromatin states one, print the column with the states, and count the number of items
 bedtools intersect\
   -b CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \
   -a  hesc.chromHmm_nochr.bed | awk '{print $4}' | sort | uniq -c
@@ -1085,19 +1129,22 @@ bedtools intersect\
 So apparently there is plenty of  heterochromatin/low CNV regions, but is there an overrepresentation? How many heterochromatin/low CNV regions are there in the whole genome?
 
 ```bash
-
+## we similarly count the number of active promoters, weak txn etc records
+## of the whole genome (background/baseline)
 awk '{print $4}' hesc.chromHmm_nochr.bed | sort | uniq -c
 
 ```
 </p>
 </details>
 
-How do you biologically interpret this? Random thoughts: selective pressure and exon conservation (do transposon integrations disrupt fitness? would a deletereous insertion give rise to an adult?), retrotransposition mechanisms (homology with prior retrotransposons/repetitive elements), etc
+How do you biologically interpret this? Random thoughts: selective pressure and exon conservation (do transposon integrations disrupt fitness? would a deletereous insertion give rise to an adult?), retrotransposition mechanisms (homology with prior retrotransposons/repetitive elements), etc.
+
+Are this calculations fair? We were counting BED records, but we didn't take into account the actual span (in nucleotides) of the different genomic compartments. How could we do that?
 
 
-## Exercises block 36
+## Extra exercises block 36
 
-Play with other real genomic data using the [BEDtools tutorial](http://quinlanlab.org/tutorials/bedtools/bedtools.html) which explores the Maurano et al paper [Systematic Localization of Common Disease-Associated Variation in Regulatory DNA published in Science, 2012](https://www.ncbi.nlm.nih.gov/pubmed/22955828).
+If interested, you could play with other real genomic data using the [BEDtools tutorial](http://quinlanlab.org/tutorials/bedtools/bedtools.html) which explores the Maurano et al paper [Systematic Localization of Common Disease-Associated Variation in Regulatory DNA published in Science, 2012](https://www.ncbi.nlm.nih.gov/pubmed/22955828).
 
 Mind that the tutorial recommends creating a folder with `mkdir -p ~/workspace/monday/bedtools`: if you do so and move (`mv`) there, your path (the one you can get using `pwd`) won't be at the standard `~/course` we used till now.
 
@@ -1172,7 +1219,7 @@ Tip
 * What fraction of the GWAS SNPs are exonic?
 
 
-## Exercises block 37
+## Extra exercises block 37
 
 Explore (not necessarily run) more usage examples with biological meaning using UNIX and BEDTools [http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/](http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/).
 
