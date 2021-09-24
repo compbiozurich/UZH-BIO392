@@ -66,6 +66,8 @@ pwd  # printing current directory
 
 curl http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bedToBigBed \
    > bedToBigBed
+   
+# the binaries for other platforms can be found here: https://hgdownload.soe.ucsc.edu/admin/exe/ 
 
 file bedToBigBed
 
