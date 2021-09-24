@@ -1,7 +1,14 @@
-### Markdown
+### Markdown tryouts
+
+Florian:
+
+>First we look at some general tricks in markdown
+>then we do an overview of genetic data banks.
+
 
 *This text will be italic*
 _This will also be italic_
+
 
 **This text will be bold**
 __This will also be bold__
