@@ -1,9 +1,11 @@
 _Preface, useful link(s)_
 * [List of biological databases](https://en.wikipedia.org/wiki/List_of_biological_databases) - good general starting point.
-"(?)" at the start of the line means "uncertain of the correctness of this statement".
+
+"(?)" at the start of the line means "uncertain of the correctness about this statement". All uncertainties may be resolved at some point.
 
 # Notes on Genome Resources in Bioinformatics
 This file contains information on some genome resources which are online portals for exchange and storage of genome sequencing data, and maybe also a demonstration of the Markdown language. I will do this by listing properties of the resources mentioned in the lecture from this morning.
+
 The *purpose* of this file or task is to familiarise myself with the Markdown language by summarising and comparing properties of data resources used frequently in the field of bioinformatics, thus learning about two things simultaneously (skill and knowledge).
 
 ## Noteworthy genome resources
@@ -11,10 +13,10 @@ The resources mentioned below are from today's lecture. These resources could be
 
 ### Reference _and_ genome variant resource(s)
 [IGSR](https://www.internationalgenome.org/): The International Genome Sample Resource - "Supporting open human variation data".
-I found on page outside of the lecture, on the course website. At first glance, it appears to cover both reference genome and genomve variant data
+I found one page outside of the lecture, on the course website. At first glance, it appears to cover both reference genome and genomve variant data
 
 ### _Reference_ genome resources
-(?) These resources collect reference genomes, i.e. genomes to be used as reference sequences when working with genomic data in general. E.g. genomes of healthy to-be-mothers.
+These resources collect reference genomes, i.e. genomes to be used as reference sequences when working with genomic data in general. E.g. representative genomes of wild organisms found in nature.
 
 #### The [UCSC Genome Browser](https://genome.ucsc.edu/) (lecture)
 This resource originated from the Human Genome Project (based in Santa Cruz (CA)).
@@ -22,7 +24,7 @@ This resource originated from the Human Genome Project (based in Santa Cruz (CA)
 * _Many species_
 * Many default tracks (?)
 * Customisation with "BED" files (?)
-* [Europe mirror](https://genome-euro.ucsc.edu/) and [asia mirror](https://genome-asia.ucsc.edu/)
+* [Europe mirror](https://genome-euro.ucsc.edu/) and [asia mirror](https://genome-asia.ucsc.edu/). (These) mirrors are especially useful when one site is under maintenance or otherwise unavailable (like on day 3 of this course for instance).
 
 #### The [Human Genome Resources at NCBI](https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/)
 * Entry point for genome reference data
@@ -34,7 +36,7 @@ This resource originated from the Human Genome Project (based in Santa Cruz (CA)
 * Downloads ("BioMart"), REST API
 
 ### Genome _variant_ resources
-(?) These resources collect variants of genomes with (potentially) interesting variability, i.e. genomes of interest in genetic experiments/research. E.g. genomes of cancer-ridden to-be-mothers.
+These resources collect variants of genomes with (potentially) interesting variability, i.e. genomes of interest in genetic experiments/research. E.g. genomes of genetically engineered viruses.
 
 #### Particularly useful reference resources for human genome variants
 * NCBI:dbSNP
