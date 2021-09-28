@@ -9,6 +9,8 @@ Different researchers and institutions track and account for such costs differen
 ### Primer on Genome Sequencing
 The genome is considered to e the total number of bases in one representive copy of its nuclear DNA. That corresponds to one copy of each chromosome pair in diploid organisms.
 Different organisms have a different genome size, e.g:
+
+
 Organism | Genome Size
 ---------|------------
 *E. coli* | ~5 M bases
@@ -24,7 +26,7 @@ An alternative to whole-genome sequencing is targeting sequencin, mostly protein
 But since whole exome sequencing requires additional alboratory work, the cost of whole-exom Sequencing is not 1.5% of the whole-genome-sequencing. But for now, since fewer bases
 are sequenced, it's still cheaper.
 
-Costs also largely depends on the data quality, which itself depends on the average number each base is actually read. During the human genome project (HGP) the 
+Costs also largely depends on the data quality, which itself depends on the average number each base is actually read. During the human genome project (HGP) the
 typical levels of quality considered were:
   1. "Draft Sequence": ~ 99% of the genome with ~99.9% accuracy
   2. "Finished Sequence": >95% of the genome with ~99.99% accuracy
@@ -33,7 +35,7 @@ Producing truely "Finished Sequence" is very expensive. In fact, most of the hum
 
 ### Timeline of Cost
 
-The human genome project created a human reference genom with an estimated error rate of <1 in 100'000 bases of a 3 B bases genome. This is a much higher error rate than 
+The human genome project created a human reference genom with an estimated error rate of <1 in 100'000 bases of a 3 B bases genome. This is a much higher error rate than
 a typical human genome sequencing produced today.
 
 At that time, mapping was needed as a scaffold to connect individual segments of assembled DNA sequence. That itself costs tens of millions of dollars, probably up to
@@ -70,4 +72,3 @@ is heavily used by the biomedical science community.
 
 The IGSR ensures the future usability and accessibility of data from the 1000 genome project and to extend the data set produced by the 1000 Genomes Project to include new
 data generated from the 1000 Genomes Project samples and new population where sampling has been carried out in line with the new sampling principles.
-
