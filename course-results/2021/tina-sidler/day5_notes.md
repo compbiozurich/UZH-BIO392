@@ -8,11 +8,18 @@ There are 2 ways to convert data from different genome assemblies
   2. Convert the coordinates of genome data between assemblies by using a mapping file.
 
 There exist different tools for conversion between genome assemblies by coordinates which are all quite efficient and provide almost identical results. But tools like these are generally limited due to the limitation to single input files.
-Segment_liftover is a tool to perform integrity-preserving conversion of genomic segments data between genome assemblies. It distinguishes itself to previous tools by 2 major additional functions
+*Segment_liftover* is a tool to perform integrity-preserving conversion of genomic segments data between genome assemblies. It distinguishes itself to previous tools by 2 major additional functions
   1. Re-conversion by locus approximation (in instances where a precise conversion of genomic positions fails)
   2. The capability to handle any number of files an optional intergration into data processing pipelines with supporting features such as autmatic file traversal, interruption resumption and detailed logging.
 
 ### Methods of the segment_liftover:
 #### 1. Implementation:
 Both probe files and segment files can be converted at the same time or in separate runs. It starts from a structured directory or a list of files. then traverses and converts all files meeting the specified name pattern, and finally outputs to a designated directory.
-For a segment conversion to be successful, it needs to meet different criteria. If some of the criteria are not met, depending on the criteria segment_lifover
+For a segment conversion to be successful, it needs to meet different criteria. If some of the criteria are not met (depending on the criteria) *segment_lifover* will either make an approximate conversion, will report the data as unconvertible or the conversion will be reported as rejected.
+
+
+#### 2. Operation
+*Segment_liftover* is implemented in Python and it is available for Linux and OSX. Its approximate conversion is being done with the *UCSC liftOver*. Chain files between common human assemblies are included in the program package.
+
+### Summary
+Translation between genome versions is a very important task in bioinformatics. *Segment_liftover* reduces the complexity and workload of such data processing by automated batching, approximate conversion and segment conversion. The detailed logs of execution from *segment_liftover* allow easy and clear follow up analysis.
