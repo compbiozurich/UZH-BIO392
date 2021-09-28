@@ -45,7 +45,7 @@ Already done above
 
 ## Notes about lift-overs
 
-### Ressources:
+### Resources:
 
 https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/nichols/presentations/ohbm2014/imggen/Nho-ImgGen-WGSeqPractical.pdf
 
