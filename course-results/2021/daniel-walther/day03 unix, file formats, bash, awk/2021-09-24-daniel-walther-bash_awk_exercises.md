@@ -169,14 +169,22 @@ So let's extract the sequences of the fasta file `SP1.fq`
 awk 'NR%4==2'   ~/course/data/SP1.fq
 ```
 
-10. ...
-11. ...
-12. ...
-13. ...
-14. ...
+10. - 12. skills result in code from 13. - skipping notes' redundancy
+13. convert SP1.fq into the FASTA file format and store it in the file 'example.fa'
+
+```bash
+awk 'NR % 4 == 1 {print ">"$0}; NR % 4 == 2 {print}' SP1.fq > example.fa
+```
+
+14. Check that both, FASTQ and FASTA files have the same number of sequences (10).
+
+```bash
+awk 'NR % 4 == 2 {print NR}' SP1.fq | wc -l # 10
+awk 'NR % 2 == 0 {print NR}' example.fa | wc -l # 10, checks out.
+```
 
 I finished the exercises 1-14 and understand everything so far. I like AWK.
 
 TBD:
-- Redo them and write down notes on exercises 6-14.
+- Write awk cheatsheet for exercises 6-14.
 - Exercises 17-32, at least (done by this evening, focus on knowledge and skills, and files - not notes, for now).
