@@ -41,16 +41,21 @@
 
 ### Meta-information
 * Optional
-* Information such as source, version, reference, file format, ...
+* Information such as source, version, reference, file format, meanings of the keys...
 
-### Header
+### Columns
 * 8 fixed, mandatory columns + 1 optional if genotype data is present
 * CHROM = chromosome; identifier from the reference genome or an angle-bracketed ID string 
 * POS = position; reference position, with the 1st base = position 1
 * ID = identifier; varient identifiers if available, rs numbers for dbSNP variants
 * REF = reference base(s); A, C, G, T, N from the reference genome
 * ALT = alternate base(s); A, C, G, T, N, * (missing due to deletion) or . (no variant)
-* QUAL = quality; Phred-scaled quality score 
-* FILTER = 
-* INFO =
-* (FORMAT =
+* QUAL = quality; Phred-scaled quality score for assertion made in ALT
+* FILTER = filter status; PASS if position has passed all filters, otherwise reason for fail is given
+* INFO = additional information; short key representing additional information (such as AA1 = ancestral allele or ADR = total read depth for each allele)
+* (END = end reference position; normally not necessary, except when symbolic alleles are used)
+* (FORMAT = genotype information; short key representing additional information (such as DP1 = read depth or ECA = expected alternate allele counts)
+* DATA SETs
+
+### Important points for understanding VCF
+* 
