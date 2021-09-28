@@ -4,11 +4,21 @@
 > segment_liftover aims at continuity-preserving remapping of genome segments between assemblies.
 <br/>
 
-**Features** provided by segment liftover are the following:
+**Features** provided by segment liftover:
 *  approximate locus conversion
 *  automated batch processing
 *  comprehensive logging to facilitate processing of datasets containing large numbers of structural genome variation data
 
+
+
+### Cost in CHF per 1 genome(30x)/exome(90x) per year
+|  | liftOver| CrossMap | Remap | segment_liftover |
+|--------|--------|-----------|-----------|-----------|
+| web service | yes| yes | limited | x |
+| command line utility | yes | yes | yes | yes |
+| convert between organisms | yes | x | limited | x |
+| convert files in BAM/SAM/BigWig format | x | yes | x | x | x |
+| dealing with non-continuous genome segments in target assembly| break the segment into smaller segments | break the segment into smaller segments |  keeps the integrity of the segment | keeps the integrity of the segment |
 
 The process of assembling a species’ reference genome may be performed in a number of iterations, with subsequent genome assemblies differing in the coordinates of mapped elements.
 
