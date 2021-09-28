@@ -1,6 +1,6 @@
-# Segment_liftover and VCF
+# *Segment_liftover* and VCF
 
-## Segment liftover: A Python tool to convert segments between genome assemblies (Gao et al.)
+## *Segment_liftover: A Python tool to convert segments between genome assemblies* by Gao et al.
 
 ### Background
 * Reference genomes change frequently due to error corrections and other updates
