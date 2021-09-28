@@ -54,56 +54,89 @@ awk '{print $1}' file # prints the first field of the current line (and goes thr
 ```
 
 
-# day03 [bash & file handling exercises](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2021/imallona/exercises.md)
+# day03 [bash, awk & file handling exercises](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2021/imallona/exercises.md)
 
 These exercises are about learning UNIX shell (officially running MacOS in the course, but I am running the WSL (Windows Subsystem for Linux) ubuntu interface for Windows 10 - there might be minor syntax differences) and awk, for handling genomic data files.
+
+__Disclaimer__: Some sections might be directly copied from the [exercises.md](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2021/imallona/exercises.md).
 
 ## [Set up](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2021/imallona/exercises.md#set-up)
 
 Exercises 1-4.
 
-1. number of lines of the file ```~/course/data/example.bed```
-```~$ wc ~/course/data/example.bed
+### 1.
+
+number of lines of the file `~/course/data/example.bed`
+
+```bash
+~$ wc ~/course/data/example.bed
 100  300 1862 /home/radroy392/course/data/example.bed
 ~$ wc -l ~/course/data/example.bed
-100 /home/radroy392/course/data/example.bed```
+100 /home/radroy392/course/data/example.bed
+```
+
 100 lines
 
-2. Get manual page of ```head```, what is command for?
-```man head```
-```head - output the first part of files```
+### 2.
 
-3. Get the first 5 lines of the file ```~/course/data/example.bed```
-```~$ head -5 ~/course/data/example.bed
+Get manual page of ```head```, what is command for?
+
+```bash
+man head
+head - output the first part of files
+```
+
+### 3.
+
+Get the first 5 lines of the file ```~/course/data/example.bed```
+
+```bash
+~$ head -5 ~/course/data/example.bed
 chr1    13219   13390
 chr1    14695   14837
 chr1    15784   15947
 chr1    16848   17058
-chr1    17231   17374```
-
-4. Using pipes ``` | ```, chain command ```head -5``` before ```wc -l``` to check that there are 5 lines returned
+chr1    17231   17374
 ```
 
-## [FASTQ/A Exercises](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2021/imallona/exercises.md#fastqa-exercises)
+### 4.
+
+Using pipes ``` | ```, chain command ```head -5``` before ```wc -l``` to check that there are 5 lines returned. Been there, done that.
+
+## [FASTQ/-A Exercises](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2021/imallona/exercises.md#fastqa-exercises)
 
 Exercises 5-14.
 
-5. retrieve file from some link
-```curl -L http://imlspenticton.uzh.ch/imallona/teaching/SP1.fq > SP1.fq
+### 5.
+
+Retrieve a file from some link.
+
+```bash
+curl -L http://imlspenticton.uzh.ch/imallona/teaching/SP1.fq > SP1.fq
 ```
 
-6. Inspect the file from the previous exercise (file size, number of lines, and visualize its head)
+### 6.
 
-```~/course/data/
+Inspect the file from the previous exercise (file size, number of lines, and visualize its head)
+
+```bash
+~/course/data/
 ls -lh # file size
 wc -l SP1.fq # line count (words are not meaningful)
-head SP1.fq```
+head SP1.fq
+```
+
 SP1.fq is a FASTQ file, 4 lines per entry (or "read sequence" - identifier, sequence, separator ('+'), and quality of sequence.
+
 new entry (identifier) is a line starting with '@' (at least here).
 
-7. The FASTQ file stored at ~/course/data/SP1.fq is in FASTQ format, meaning it contains 4 lines per read sequence.
+### 7.
 
-```head -n 4 SP1.fq```
+The FASTQ file stored at ~/course/data/SP1.fq is in FASTQ format, meaning it contains 4 lines per read sequence.
+
+```bash
+head -n 4 SP1.fq
+```
 
 produces
 
@@ -121,13 +154,14 @@ F#FFFFFFFFFFFFFFFFFFFFFF:F:FFFFFFFFFFFFFFFFFFF:FFFFFFFFFFFFFFFFFFF,FFFFFFFF,FFF,
 
 First use ```wc``` and ```awk``` to determine the number of sequences in the fastq
 
-```
+```bash
 wc -l SP1.fq # 40, so 10 sequences.
 wc -l SP1.fq | awk '{print $1/4}' # 10, so 10 fastq records
 ```
 
-8. A common mistake is to use ``grep`` to pattern match the ``@`` in the
-sequence identifier. Why doesn't this work?
+### 8.
+
+A common mistake is to use ``grep`` to pattern match the ``@`` in the sequence identifier. Why doesn't this work?
 
 ```bash
 wc -l SP1.fq | awk '{print $1 / 4}'
@@ -141,19 +175,21 @@ renders `12`.
 
 This does not work, because the Phred quality scores in this file contain some '@' and do not indicate start of new records. The pattern search would have to be refined / changed to another symbol, depending on the specific Phred encoding used (can be seen in the ID lines, if you know them well enough).
 
-9. Next, extract only the _sequences_ of the records. Remember, these are only every second out of every four lines in fastq files.
+### 9.
+
+Next, extract only the _sequences_ of the records. Remember, these are only every second out of every four lines in fastq files.
 
 ```bash
 awk 'NR % 4 == 2' SP1.fq # returns all the sequences. awk 'NR' keeps track of the current line number
 awk 'NR % 4 == 2' SP1.fq | wc -l # 10. so the command works as intended and all 10 sequences are returned, with the newlines.
 ```
 
-Answer (teacher): 2 ways:
+Answer:
 
-One approach to this problem is to use the ``%`` `modulo operator` ([Wikipedia](https://en.wikipedia.org/wiki/Modulo_operation)), which returns the remainder after division of two integers. For example using ``awk``
+One approach to this problem is to use the `%` `modulo operator` ([Wikipedia](https://en.wikipedia.org/wiki/Modulo_operation)), which returns the remainder after division of two integers. For example using `awk`.
 
 ```bash
-awk 'BEGIN { {print 4 % 2}}' # dw: i don't get this command structure (BEGIN and the double {{}}) (?)
+awk 'BEGIN { {print 4 % 2}}' # DW: unclear, why there are two brackets {{}} (?)
 awk 'BEGIN { {print 4 % 3}}'
 awk 'BEGIN { {print 5 % 3}}'
 awk 'BEGIN { {print 1 % 4}}'
@@ -169,14 +205,21 @@ So let's extract the sequences of the fasta file `SP1.fq`
 awk 'NR%4==2'   ~/course/data/SP1.fq
 ```
 
-10. - 12. skills result in code from 13. - skipping notes' redundancy
-13. convert SP1.fq into the FASTA file format and store it in the file 'example.fa'
+### 10. - 12.
+
+skills result in code from 13. - skipping notes' redundancy
+
+### 13. FASTQ ~> FASTA
+
+convert SP1.fq into the FASTA file format and store it in the file 'example.fa'
 
 ```bash
 awk 'NR % 4 == 1 {print ">"$0}; NR % 4 == 2 {print}' SP1.fq > example.fa
 ```
 
-14. Check that both, FASTQ and FASTA files have the same number of sequences (10).
+### 14.
+
+Check that both, FASTQ and FASTA files have the same number of sequences (10).
 
 ```bash
 awk 'NR % 4 == 2 {print NR}' SP1.fq | wc -l # 10
@@ -184,6 +227,8 @@ awk 'NR % 2 == 0 {print NR}' example.fa | wc -l # 10, checks out.
 ```
 
 I finished the exercises 1-14 and understand everything so far. I like AWK.
+
+### 15.
 
 TBD:
 - Write awk cheatsheet for exercises 6-14.
