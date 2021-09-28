@@ -58,4 +58,6 @@
 * DATA SETs
 
 ### Important points for understanding VCF
-* 
+* **Allele**: representing single genetic haplotypes (A, T, ATC)
+* **Genotype**: an assignment of alleles for each chromosome of a single named sample at a particular locus
+* **VCF record**: a record holding all segregating alleles at a locus (as well as genotypes, if appropriate, for multiple individuals containing alleles at that locus
