@@ -1,5 +1,5 @@
 # Gene database overview
-#### *Achived by using Markdown*
+#### Achived by using Markdown
 <br/>
 <br/>
                               
