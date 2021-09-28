@@ -50,3 +50,7 @@ this figure illustrates the workflow of the tool _segment_liftover_
 #### Examples
 ##### Converting arrayMap data from hg19 to hg38
 99.99% of Probes and >99% of segemnst could be directly converted from hg19 to hg38
+
+### Summary
+translation between genome versions is tedious but crucial. _segment_liftover_ can dramatically reduce the complexity and workload of such data processing.
+Furthermore, _segment_liftover_'s detailed logs of execution result provide an easy and clear foundation for follow up analysis
