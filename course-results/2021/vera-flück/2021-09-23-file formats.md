@@ -22,7 +22,7 @@ These format can be perfectly used for browser visualisation and it will fit wit
 
 
 VCF: Variant Call Format
-advent of large-scale genotyping and DANN sequencing projects -> only the variations need to be stored along with a reference genome
+advent of large-scale genotyping and DNA sequencing projects -> only the variations need to be stored along with a reference genome
 contains metainformation lines, header line, data line containing information about a position in the genome
 One full sequenced reference genome is used and the variations of 88 million variants, so I estimate the storing costs on around 200 CHF.
 These file format can be used for full archival purposes because you can put all the relevant data in it and need less space because the same sequences are saved only once.
