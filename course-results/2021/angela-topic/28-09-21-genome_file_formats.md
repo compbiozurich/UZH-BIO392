@@ -9,6 +9,7 @@ WGE: 3 billion bp
 WES: 1.5% of whole genome: 45 million bp
 
 ### [SAM](https://samtools.github.io/hts-specs/SAMv1.pdf)
+
 It is a TAB-delimited text-based format it has a header section and an alignment section. The header starts with @. The alignment has 11 fields for information as mapping position.
 
 
@@ -21,6 +22,7 @@ Compressed binary version of a SAM file,it has to be converted first before it c
 *One BAM file stores one whole genome with 100GB and a WEG for 1.5 GB, resp for 1000 genomes 100TB and 1.4 TB.This costs 50000CHF and 750CHF.*
 
 ### [VCF](file:///Users/angelatopic/Downloads/VCFv4.2.pdf)
+
 It is a text file format where variants can be stored. It consists of a header and data lines. Each data line stores information about a position in the genome. It shows which chromnosome, position, what the reference base is, the variation for both alleles, quality, filter, additional information and than all samples tested.
 
  ![VCF file](VCF.png)
@@ -29,7 +31,7 @@ It is a text file format where variants can be stored. It consists of a header a
 *For one WGS 125 MB need to be used. For a WEG: 1.875 MB, For the 1000 Genome 125 GB resp. 1.875 GB. The cost tehrefore is is 62.50 CHF and 0.95 CHF.*
 
 
-### [FASTA]
+### FASTA
 A FASTA file is a text-based format for representing nucleotide or peptide sequences. The format begins with a single line description, this line starts with a >.
 
 
@@ -42,6 +44,7 @@ Already done above
 
 
 https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/nichols/presentations/ohbm2014/imggen/Nho-ImgGen-WGSeqPractical.pdf
+
 https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0
 
  
