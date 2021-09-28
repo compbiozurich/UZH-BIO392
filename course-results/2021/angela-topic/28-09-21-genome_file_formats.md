@@ -1,7 +1,7 @@
 # Genome file formats
 2 bits per base required, therefore a genome requires 715 MB (1 MB = 8000000 Bit)
 1 PB costs 500000CHF
-FOr the cost and storage capacities 1000 genomes are taken 
+For the cost and storage capacities 1000 genomes are taken 
 
 ## File formats and storage capacities
 *Considering WEG (Whole Genome Sequencing) and WES (Whole Exome Sequencing)*
@@ -16,7 +16,7 @@ It is a TAB-delimited text-based format it has a header section and an alignment
 * WES: 7.5TB cost: 3750CHF
 
 ### BAM
-Compressed binary version of a SAM file,it has to be converted first before it canbe read for us humans :)
+Compressed binary version of a SAM file,it has to be converted first before it can be read by us humans :)
 
 * WEG: 100TB cost: 50000CHF
 * WES: 1.5TB cost: 750CHF
@@ -25,7 +25,7 @@ Compressed binary version of a SAM file,it has to be converted first before it c
 
 ### [VCF](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3137218/)
 
-It is a text file format where variants can be stored. It consists of a header and data lines. Each data line stores information about a position in the genome. It shows which chromnosome, position, what the reference base is, the variation for both alleles, quality, filter, additional information and than all samples tested.
+It is a text file format where variants can be stored. It consists of a header and data lines. Each data line stores information about a position in the genome. It shows which chromosome, position, what the reference base is, the variation for both alleles, quality, filter, additional information and than all samples tested.
 
  ![VCF file](VCF.png)
 
@@ -43,7 +43,8 @@ A FASTA file is a text-based format for representing nucleotide or peptide seque
 ## Getting familiarized with VCF format
 Already done above
 
-## Notes about lift-overs
+## Notes about lift-overs:
+will follow
 
 ### Resources:
 
