@@ -53,3 +53,10 @@ Content column 1 | Content column 2
 - [ ] this is an incomplete item
 - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
 - [x] list syntax required (any unordered or ordered list supported)
+
+## Block quotes
+
+Here follows a block quote:
+> start block quote lines with `>` characters
+> every line.
+Now the block quote is over.
