@@ -1,1 +1,18 @@
+## <<how big is a genome in terms of bytes?
 
+So, I found a good article which gives a good overview about how to calculate the ways, in which different sizes of basepairs can be converted into Bytes. 
+
+Below I will present a table, where one can check which file takes how many Bytes for which size of base pairs. 
+
+
+[The article can be found here](https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0). 
+
+
+| File format   | Base pairs    | Bytes  |
+| ------------- |:-------------:| -----:|
+| None, just bp | whole genome  | 700mb |
+| FASTQ         | whole genome  | 200mb |
+| VCF           | whole genome  | 125mb |
+
+
+So now I will present the calculations: 
