@@ -29,9 +29,28 @@
 
 ### Examples
 * More than 99% of files could be converted with the tool, with the uncovenvertible regions mostly being telomeres, centromeres or similar locations
-* When comparing different conversion stategies, it could be shown that the *segment_liftover* tool had a result that was very close to the one of the standard pipeline, meaning that less data is lost than in previous strategies
+* When comparing different conversion stategies, it could be shown that the *segment_liftover* tool had a result that was very close to the one of the standard pipeline, meaning that less data is lost than in other converting strategies
 
 ### My thoughts
 * Though I have no experience with working with sequence files, it seems to me that  *segment-liftover*  is an efficient and helpful tool to "update" large amounts of data when a new reference genome is published, with a minimal loss of information
 
-## 
+## The Variant Call Format (VCF)
+
+### General notes
+* VCF is a text file format that contains meta-information lines (##), a header line (#) and data lines about a position in the genome and genotype information on samples for each position
+
+### Meta-information
+* Optional
+* Information such as source, version, reference, file format, ...
+
+### Header
+* 8 fixed, mandatory columns + 1 optional if genotype data is present
+* CHROM = chromosome; identifier from the reference genome or an angle-bracketed ID string 
+* POS = position; reference position, with the 1st base = position 1
+* ID = identifier; varient identifiers if available, rs numbers for dbSNP variants
+* REF = reference base(s); A, C, G, T, N from the reference genome
+* ALT = alternate base(s); A, C, G, T, N, * (missing due to deletion) or . (no variant)
+* QUAL = quality; Phred-scaled quality score 
+* FILTER = 
+* INFO =
+* (FORMAT =
