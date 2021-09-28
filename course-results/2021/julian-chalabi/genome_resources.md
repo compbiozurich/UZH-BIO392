@@ -6,9 +6,3 @@ I looked also at the genome data banks, e.g. of [international genome](https://w
 
 On [ensembl](https://www.ensembl.org/Homo_sapiens/Gene/Compara_Tree?g=ENSG00000139618;r=13:32315086-32400268) I found also "gene trees", in this case for the BRCA2 gene. One can in which line of ancestry this gene, or some variations thereof, previously appeared. So for example in the case of the Gorilla, one sees that the gene seems to be almost identical to the one found in human. This is a big reason why today, when we talk about "species" or "ancestry" we rely a lot on these gene symmetries, gene similarities. There are other examples, [Cosmic](https://cancer.sanger.ac.uk/cosmic) provides mostly information about mutations in cancer related genes. They recently celebrated their 10'millionth mutation that they have curated.
 
-
-| File format   | Base pairs    | Bytes  |
-| ------------- |:-------------:| -----:|
-| None, just bp | whole genome  | 700mb |
-| FASTQ         | whole genome  | 200mb |
-| VCF           | whole genome  | 125mb |
