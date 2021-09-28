@@ -48,9 +48,9 @@ There exist 3 efficient tools for the conversion between genome assemblies by co
 - **liftOver** (from USCS)
     comprehensive selction of assemblies of different organism with the capability to convert between many of them  
 
-All 3 tools give almost similar result. But if the genome segments that are not continuous anymore, these 3 tools have different strategies:  
+All 3 tools give almost similar result. But **if the genome segments that are not continuous** anymore, these 3 tools have different strategies:  
 Remap maps the span to the target assembly. CrossMap and liftOver break the segment into smaller segments and map them on different locations.  
 
 
 
-![](https://www.ncbi.nlm.nih.gov/corecgi/tileshop/tileshop.fcgi?p=PMC3&id=825747&s=77&r=1&c=3)
+![](liftover.png)
