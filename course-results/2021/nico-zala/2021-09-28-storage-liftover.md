@@ -28,8 +28,21 @@ File Format | WGS | WES
 In the early 2000s the first human reference genome was released. In the upcoming years several improved editions of the human reference genome were made.  
 Even the latest version (GRch38) isn't perfect and contains still unplaced bases.  
 In the field of biology and medicine a lot of studies were performed and identified data mapped to different versions of the reference genome.  
-To use the genome analysis coming from different genome editions, the **liftover** was created to convert all data to the same genomic system.  
+To use the genome analysis coming from different genome editions, the **liftover** was created to convert all data to the same genomic coordinate system.  
 
-There exist
+There are 2 main methodes:
+*  **re-align** the original sequence data to the target assembly (best results but time-consuming)  
+* **convert** the coordinates of genome data between assemblies by using a mapping file (small information loss but good balance btw performance and accuracy)  
+
+
+There exist 3 efficient tools for the conversion between genome assemblies by coordinates:
+
+- CrossMap (from Zhao)
+
+- Remap (from NCBI)
+
+- liftOver (from USCS)
+
+Currently, three tools are in widespread use for the conversion between genome assemblies by coordinates: liftOver from University of California, Santa Cruz (referred as UCSC liftOver in the following article) 2; CrossMap from Zhao 3; and Remap from NCBI 4. The UCSC liftOver tool exists in two flavours, both as web service and command line utility. It offers the most comprehensive selection of assemblies for different organisms with the capability to convert between many of them. CrossMap has the unique functionality to convert files in BAM/SAM or BigWig format. It generates almost identical results as UCSC liftOver, but is not optimised for converting genome coordinates between species. Remap provides for each organism a comprehensive list of major assemblies and the corresponding sub-versions. It can also perform cross species mapping, however, with only a limited number of organisms
 
 
