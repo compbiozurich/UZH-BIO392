@@ -12,14 +12,14 @@
 -from slides: 50CHF/100GB --> 0.5CHF/1GB  
 -BAM files are the binary compressed format of SAM files and are ~1/4 of the size of SAM files.  
 
--FASTA: 200Mb for 2*10^7 bp  
+-FASTA: 200Mb for 2*10^8 bp  
 -VCF: 125GB per genome , depth 30
 
 File Format | WGS | WES
 ----------- | --- | ---
 **BAM** | 50'000 Fr | 1'500 Fr
 **SAM** | 200'000 Fr | 6'000 Fr
-**FASTA** |450'000 Fr |12'000 Fr
+**FASTA** |45'000 Fr |1'200 Fr
 **VCF** |62'500 Fr | 1'850 Fr
 
 
