@@ -1,4 +1,4 @@
-# This is my first markdown file
+# Resource notes
 
 ## Day 2
 
