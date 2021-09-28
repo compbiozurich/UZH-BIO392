@@ -1,4 +1,4 @@
-# **Task 1: Genome File Formats**
+# **Task: Estimate Storage Requirements for 1000 Genomes**
 
 Genome Storage Space & Cost required for 1000 Genomes for WEG (Whole Exome Sequencing) and WGS (Whole Genome Sequencing)
 
