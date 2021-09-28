@@ -44,7 +44,7 @@ For the conversion between genome assemblies by coordinates there are 3 tools av
 
 
 
-## *The challenge of segment liftover*
+## **The challenge of segment liftover**
 
 *All tools provide almost identical results in coordinate conversion. The big advantage of Remap and segment_liftover is, that these tools do not break down the segment into smaller segments to map them to different locations as the other tools. They keep the integrity of the segment, which is important in research such as analysis of copy number variation (CNV) data, where the quantitative representation of a genomic region is more important than the base-specific accuracy. The segment breakdown performed with tools as liftOver and CrossMap can lead to data loss in the analysis of copy number variations.*
 
