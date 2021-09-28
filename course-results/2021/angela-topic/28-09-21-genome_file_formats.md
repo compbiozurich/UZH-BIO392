@@ -21,6 +21,7 @@ Compressed binary version of a SAM file,it has to be converted first before it c
 
 *One BAM file stores one whole genome with 100GB and a WEG for 1.5 GB, resp for 1000 genomes 100TB and 1.4 TB.This costs 50000CHF and 750CHF.*
 
+
 ### [VCF](file:///Users/angelatopic/Downloads/VCFv4.2.pdf)
 
 It is a text file format where variants can be stored. It consists of a header and data lines. Each data line stores information about a position in the genome. It shows which chromnosome, position, what the reference base is, the variation for both alleles, quality, filter, additional information and than all samples tested.
