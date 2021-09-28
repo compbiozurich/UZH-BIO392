@@ -21,4 +21,5 @@ For a segment conversion to be successful, it needs to meet different criteria. 
 #### 2. Operation
 *Segment_liftover* is implemented in Python and it is available for Linux and OSX. Its approximate conversion is being done with the *UCSC liftOver*. Chain files between common human assemblies are included in the program package.
 
+### Summary
 Translation between genome versions is a very important task in bioinformatics. *Segment_liftover* reduces the complexity and workload of such data processing by automated batching, approximate conversion and segment conversion. The detailed logs of execution from *segment_liftover* allow easy and clear follow up analysis.
