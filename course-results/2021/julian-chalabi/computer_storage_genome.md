@@ -23,3 +23,10 @@ So now I will present the calculations from the article:
 3. For the variant file format, we look at the specific format it presents and find that one line uses 45 bytes. So we multiply this by by 3 million variants (0.1% of the genome) and we get a VCF-file of about 135'000'000 bytes, which is around 125 megabytes. 
 
 As we see, it depends very much on what we'd like to cover. And the different file formats will present very different things. The variant file format of course only presents the variants present in the genome. But also for the file formats, the article only presents some version of a calculation. In the end, many factors play a role when trying to calculate something like this.
+
+
+----
+## THE PYTHON TOOL SEGMENT_LIFTOVER
+
+Finally, some thoughts on segment_liftover tool for Python from the Article by Baudis et Al. The success rate of 99.99% in one of the "use" examples seems very good, especially good if one wants to switch from some of the most famous versions of the reference genomes. I also think it's very nice that the tools for converting these famous reference genomes is already in the package which one can download. I don't know how useful the segment_liftover tool will be for other species, since it does come with a large amount of exceptions and difficulties, it seems. If "unconvertible regions" are e.g. telomeres, centromeres, but also "gene-sparse locations", I ask myself the question if this will not be a problem in a lot of genomic material with which Biologists or whoever in the end will be working with. 
+But considering that there already are different tools, and this tool is meant as a sort of addition with which one has less problems in the tedious task of constant switching from one reference to the other, I think it's very useful to provide this. I also saw that there were some useful comments for the article, so maybe in the end the package can be improved and improved. But still - very annoying that there are these different reference genomes etc. I hope that in the future this will not be such a problem anymore, since many will be working on the same reference genome!
