@@ -11,13 +11,13 @@
 * WGS = 3'000'000'000 bp
 * WES = 30'000'000 bp
 
-## Tables
+## Tables (to be completed)
 
 ### WES (Whole Exome Sequencing)
 
 File format | Size | Total cost | Cost per genome
 ----------- | ----------- | ------------ | -------------
-SAM | Content
+SAM | 500 GB/sample
 BAM | Content
 VCF | Content
 FASTA | Content
