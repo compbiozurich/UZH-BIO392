@@ -31,3 +31,15 @@ contains metainformation lines, header line, data line containing information ab
 One full sequenced reference genome is used and the variations of 88 million variants, so I estimate the storing costs on around 200 CHF.
 These file format can be used for full archival purposes because you can put all the relevant data in it and need less space because the same sequences are saved only once.
 (They used also this file format for the 1000 Genome Project)
+
+Which file format would I use for storing variations?
+--> To store variations I would use the VCF-file format, because it shows in an ‘easy and clear’ way the 
+variations to a specific reference genome. It needs the smallest storage and is also one of the cheapest option 
+
+Which file format would I use for full archival purposes?
+--> I think the best option for this is the BAM-file format. Because it uses binary code to store the full sequence alignment 
+(compressed way).BAM also allows searching after indexing. 
+Another option would be CRAM, which is even more compressed than the BAM file-format. 
+
+Which file format would I use for presenting a sequence? 
+--> I would use the FASTA-sequence because it’s very simple to ready and also very flexible.
