@@ -92,7 +92,7 @@ Transforming
 * In UNIX: `awk 'NR % 4 == 2' file.txt` will print all the lines that we want
 * Transforming FastQ into Fasta: `awk 'NR % 4 == 1 {print ">"$1}; NR % 2 {print}' file.fasta`
 
-#### SAM (Sequence Alignment Map)
+#### SAM (Sequence Alignment Map) - Depreceated, everybody uses BAM
 
 1. Chromosome Number, Starting Coordinate, etc.
 2. Locus
