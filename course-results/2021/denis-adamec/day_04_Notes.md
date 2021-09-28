@@ -33,4 +33,3 @@
 * Can be used for both probe files and segment files
 * Depends on the UCSC liftOver program and a chain file between the two genome assemblies (can be obtained from the USCS Genome Browser)
 * There are certain genetic elements that can cause slight problems with the conversion. These include Telemores, Centromeres & other gene-sparse locations.
-* 
