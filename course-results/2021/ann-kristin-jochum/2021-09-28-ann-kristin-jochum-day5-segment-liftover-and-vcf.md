@@ -1,4 +1,4 @@
-# Tasks of day 5
+# Segment_liftover and VCF
 
 ## Segment liftover: A Python tool to convert segments between genome assemblies (Gao et al.)
 
