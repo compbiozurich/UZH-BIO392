@@ -4,13 +4,13 @@
 
 Several editions of the human genome haven been released over the years to perfect the quality of the genome assembly. Different genomic studies haven generated data that is mapped to different versions of the reference genome. But when using data from multiple resources, all the data needs to be converted to one genomic coordinate system.
 There are 2 ways to convert data from different genome assemblies
-* 1. Re-align the original sequence data to the target assembly. This is very time-consuming but could provide the best result if the original sequence data is available and does not consist of direct sequences.
-* 2. Convert the coordinates of genome data between assemblies by using a mapping file.
+  1. Re-align the original sequence data to the target assembly. This is very time-consuming but could provide the best result if the original sequence data is available and does not consist of direct sequences.
+  2. Convert the coordinates of genome data between assemblies by using a mapping file.
 
 There exist different tools for conversion between genome assemblies by coordinates which are all quite efficient and provide almost identical results. But tools like these are generally limited due to the limitation to single input files.
 Segment_liftover is a tool to perform integrity-preserving conversion of genomic segments data between genome assemblies. It distinguishes itself to previous tools by 2 major additional functions
-* 1. re-conversion by locus approximation (in instances where a precise conversion of genomic positions fails)
-* 2. the capability to handle any number of files an optional intergration into data processing pipelines with supporting features such as autmatic file traversal, interruption resumption and detailed logging.
+  1. Re-conversion by locus approximation (in instances where a precise conversion of genomic positions fails)
+  2. The capability to handle any number of files an optional intergration into data processing pipelines with supporting features such as autmatic file traversal, interruption resumption and detailed logging.
 
 ### Methods of the segment_liftover:
 #### 1. Implementation:
