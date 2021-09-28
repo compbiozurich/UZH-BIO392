@@ -1,8 +1,23 @@
+# Structure and known issues
+
+If run on a terminal within Windows or a git bash: several commands missing, e.g. manpages.
+
+If run on renku: manpages missing (because it's a minimal image). Renku repository to fork/run the exercises with: https://renkulab.io/projects/izaskun.mallona/uzh-bio392
+
+If run on iMacs: compilation will fail unless defining SDK headers. To fix this:
+
+```
+## either run 
+(this will stick until you open a new Terminal window or quit and reopen Terminal)
+export CPATH=`xcrun --show-sdk-path`/usr/include
+
+## or (permanent solution) add this line to .zshrc or .bashrc
+export CPATH=`xcrun --show-sdk-path`/usr/include
+```
+
 # Introduction
 
 Please run the tutorial at [SIB Course on UNIX](https://edu.sib.swiss/pluginfile.php/2878/mod_resource/content/4/couselab-html/content.html) first.
-
-(Mind that we are running MacOS and not GNU/Linux)
 
 Cheatsheets:
 
@@ -57,6 +72,11 @@ head hg19.genome
 
 ## Executable software download
 
+Some authors release their programs as both source code and binaries (executables). First, we'll download `bedToBigBed` as an executable. UCSC offers these executables in several OS flavours in http://hgdownload.soe.ucsc.edu/admin/exe . Please update the URL to retrieve those matching your system.
+
+You can skip this step if you are using renku (i.e. `bedToBigBed` is already installed).
+
+
 ```bash
 
 mkdir ~/course/soft/kent
@@ -64,20 +84,29 @@ cd ~/course/soft/kent
 
 pwd  # printing current directory
 
+## executable download for Mac (notice the `macOSX.x86_64` part of the URL)
 curl http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bedToBigBed \
-   > bedToBigBed
-   
-# the binaries for other platforms can be found here: https://hgdownload.soe.ucsc.edu/admin/exe/ 
+     > bedToBigBed
+
+## executable download for Linux (notice the `linux.x86_64` part of the URL)
+# curl http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/bedToBigBed \
+#      > bedToBigBed
 
 file bedToBigBed
 
 ## adding exec permissions to the binary
 chmod a+x bedToBigBed
 
-# testing usage
+```
 
-## running the actual command
+To test the usage, you could execute the binary specifying its location in the working directory (`./bedToBigBed`) or without if it's in the $PATH (e.g. if using renku)
+
+```bash
+## running the actual command if the executable is in this folder
 ./bedToBigBed ../../data/example.bed ../../data/hg19.genome ~/course/output/out.bb
+
+## running the command if the executable is in the $PATH
+bedToBigBed ../../data/example.bed ../../data/hg19.genome ~/course/output/out.bb
 
 ls -lah ~/course/data/example.bed
 ls -lah ~/course/output/out.bb
@@ -87,18 +116,29 @@ file ~/course/output/out.bb
 
 ## Software compiling (bedtools)
 
-Retrieving source code and using a Makefile.
+Retrieving bedtools and compiling it using a Makefile. [Extra reading about Makefiles](https://www.gnu.org/software/make/manual/make.html) and about [compiling from source](https://www.linuxandubuntu.com/home/basics-of-compiling-software-from-source-code-in-linux).
 
+(Run this step regardless of whether using renku/your computer, as it will also retrieve data.)
 
 ```bash
 
 cd ~/course/soft
+
 curl -L https://github.com/arq5x/bedtools2/releases/download/v2.25.0/bedtools-2.25.0.tar.gz \
   > bedtools-2.25.0.tar.gz
 
 tar zxvf bedtools-2.25.0.tar.gz
 cd bedtools2
+```
+ 
+```bash
+## interpret the Makefile recipe, compile bedtools' source code
 make  ## will take time!
+
+# we compiled the software as a non-root user; hence, the binary is not in the $PATH
+#   (http://www.linfo.org/path_env_var.html)
+# alias the binary, so typing `bedtools` will suffice to run the binary,
+##   without specifying the full path to the binary
 alias bedtools='~/course/soft/bedtools2/bin/bedtools'
 
 bedtools --help
@@ -108,7 +148,6 @@ bedtools --help
 ## Exercise 1
 
 Find the number of lines of the file `~/course/data/example.bed`
-
 
 <details><summary>Answer</summary>
 <p>
@@ -349,7 +388,9 @@ We can also prepend the line number to the FASTQ file (please note we asume `SP1
 Tip: `awk '{print $0 }'` filename prints the whole line, to which you can add the ``NR``.
 
 ```bash
-awk '{print NR, $0 }' SP1.fq | head # note output in first column
+# first column: line number
+# other: all S1.fq content (awk's $0 prints the full line)
+awk '{print NR, $0 }' SP1.fq | head
 
 ```
 
@@ -405,7 +446,7 @@ ATCGTCGATGCTAGTCGA
 AGCTAGCTAGCTAGC
 ```
 
-Convert fastq to fasta (tip: use lines 1 and 2)
+Convert fastq to fasta (tip: use lines 1 and 2). (There are many solutions for this.)
 
 
 <details><summary>
@@ -612,7 +653,8 @@ cat ~/course/soft/bedtools2/test/intersect/b.bed
 What will happen if you intersect those files? For example, the `a.bed` region chr1:100-200 overlaps with `b.bed`
 
 ```bash
-alias bedtools='~/course/soft/bedtools2/bin/bedtools'
+# you might need to alias bedtools if it's not in your $PATH
+# alias bedtools='~/course/soft/bedtools2/bin/bedtools'
 
 bedtools intersect \
   -a  ~/course/soft/bedtools2/test/intersect/a.bed \
@@ -628,7 +670,7 @@ Answer
 
 <p>
 
-The output is a direct intersect:
+The output (BED6) is a direct intersect:
 
 ```bash
 
@@ -671,7 +713,12 @@ bedtools intersect \
   -a  ~/course/soft/bedtools2/test/intersect/b.bed
 ```
 
-Tip: check the strands
+```
+chr1    100     101     b2      2       -
+chr1    100     110     b3      3       +
+```
+
+Tip: to understand the output, check the strands
 </p>
 </details>
 
@@ -778,6 +825,12 @@ wc -l chr22_with_ERCC92.gtf
 
 ```
 
+How many exons are there?
+
+```
+grep exon_number chr22_with_ERCC92.gtf | wc -l
+```
+
 </p>
 </details>
 
@@ -881,8 +934,13 @@ Answer
 
 Git repository at [https://github.com/vcftools/vcftools](https://github.com/vcftools/vcftools)
 
-There is a tag named v0.1.16 (as for the 26th Sept 2018) [https://github.com/vcftools/vcftools/releases](https://github.com/vcftools/vcftools/releases)
+There is a tag named v0.1.16 (from 2nd Aug 2018) [https://github.com/vcftools/vcftools/releases](https://github.com/vcftools/vcftools/releases)
 
+Nonetheless, we installed an older version
+
+```
+~/course/soft/vcftools_0.1.13/bin/vcftools
+```
 </p>
 </details>
 
@@ -1136,17 +1194,9 @@ curl -O https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed
 
 head hesc.chromHmm.bed
 
-## what does the four column mean?
+## the fourth column assigns a chromatin state to a coordinate (left)
 # chr1	10000	10600	15_Repetitive/CNV
 # chr1	10600	11137	13_Heterochrom/lo
-# chr1	11137	11537	8_Insulator
-# chr1	11537	11937	11_Weak_Txn
-# chr1	11937	12137	14_Repetitive/CNV
-# chr1	12137	14137	11_Weak_Txn
-# chr1	14137	27537	9_Txn_Transition
-# chr1	27537	27737	6_Weak_Enhancer
-# chr1	27737	28537	2_Weak_Promoter
-# chr1	28537	30137	1_Active_Promoter
 
 
 ## this chromHMM file again encodes `chromosome 1` as `chr1`, whilst our VCF encodes it as `1`.
