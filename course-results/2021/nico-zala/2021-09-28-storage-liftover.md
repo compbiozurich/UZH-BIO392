@@ -37,12 +37,20 @@ There are 2 main methodes:
 
 There exist 3 efficient tools for the conversion between genome assemblies by coordinates:
 
-- CrossMap (from Zhao)
+- **CrossMap** (from Zhao):
+    converts files in BAM/SAM or BigWig format  
+    
 
-- Remap (from NCBI)
-
-- liftOver (from USCS)
-
-Currently, three tools are in widespread use for the conversion between genome assemblies by coordinates: liftOver from University of California, Santa Cruz (referred as UCSC liftOver in the following article) 2; CrossMap from Zhao 3; and Remap from NCBI 4. The UCSC liftOver tool exists in two flavours, both as web service and command line utility. It offers the most comprehensive selection of assemblies for different organisms with the capability to convert between many of them. CrossMap has the unique functionality to convert files in BAM/SAM or BigWig format. It generates almost identical results as UCSC liftOver, but is not optimised for converting genome coordinates between species. Remap provides for each organism a comprehensive list of major assemblies and the corresponding sub-versions. It can also perform cross species mapping, however, with only a limited number of organisms
+- **Remap** (from NCBI)
+    provides for each organism a comprehensive list of major assemblies and can perform cross species mapping
 
 
+- **liftOver** (from USCS)
+    comprehensive selction of assemblies of different organism with the capability to convert between many of them  
+
+All 3 tools give almost similar result. But if the genome segments that are not continuous anymore, these 3 tools have different strategies:  
+Remap maps the span to the target assembly. CrossMap and liftOver break the segment into smaller segments and map them on different locations.  
+
+
+
+![]https://www.ncbi.nlm.nih.gov/corecgi/tileshop/tileshop.fcgi?p=PMC3&id=825747&s=77&r=1&c=3
