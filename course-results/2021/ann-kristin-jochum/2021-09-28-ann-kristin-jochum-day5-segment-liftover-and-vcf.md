@@ -1,6 +1,6 @@
-# Tasks of day 5
+# *Segment_liftover* and VCF
 
-## Segment liftover: A Python tool to convert segments between genome assemblies (Gao et al.)
+## *Segment_liftover: A Python tool to convert segments between genome assemblies* by Gao et al.
 
 ### Background
 * Reference genomes change frequently due to error corrections and other updates
@@ -61,3 +61,7 @@
 * **Allele**: representing single genetic haplotypes (A, T, ATC)
 * **Genotype**: an assignment of alleles for each chromosome of a single named sample at a particular locus
 * **VCF record**: a record holding all segregating alleles at a locus (as well as genotypes, if appropriate, for multiple individuals containing alleles at that locus
+* **Tag naming conventions**:
+  * "L" suffix = *likelihood* as log-likelihood in the sampling distribution (log10)
+  * "P" suffix = *probability* as linear-scale probability in the posterior distribution
+  * "Q" suffix = *quality* as log-complementary-phred-scale posterior probability

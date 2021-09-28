@@ -1,4 +1,4 @@
-# **Task 1: Genome File Formats**
+# **Task: Estimate Storage Requirements for 1000 Genomes**
 
 Genome Storage Space & Cost required for 1000 Genomes for WEG (Whole Exome Sequencing) and WGS (Whole Genome Sequencing)
 
@@ -21,7 +21,7 @@ Raw Storage Costs: 500’000CHF = 1PB
 
 ## **SAM (Sequence Alignment/Map)**
 
-Is a genetic format for storing large nucleotide sequence alignments (plain text format)
+Is a genetic format for storing large nucleotide sequence alignments (plain text format).
 
 [~500GB per genome (WGS)](https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/nichols/presentations/ohbm2014/imggen/Nho-ImgGen-WGSeqPractical.pdf)
 
@@ -32,7 +32,7 @@ WES for 1000 genomes = ~7.5TB (1.5%) (Estimated cost: CHF 3'750)
  
 ## **BAM**
 
-Is a compressed binary version of Sequence Alignment/Map (SAM)
+Is a compressed binary version of Sequence Alignment/Map (SAM).
 
 [~100 GB per genome (WGS)](https://compbiozurich.org/UZH-BIO392/course-material/2021/2021-09-28-BIO392-file-formats-storage-genomes.pdf)
 
@@ -43,7 +43,7 @@ WES for 1000 genomes = ~1.5 TB (1.5%) (Estimated cost: CHF 750)
  
 ## **VCF (Variant Call Format)**
 
-Is a text file format containing meta-information lines; a header line, and then data lines (each containing information about a position in the genome)
+Is a text file format, which contains meta-information lines, a header line, and data lines (each containing information about a position in the genome).
 
 [~125 MB per genome (WGS)](https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0)
 
@@ -51,9 +51,10 @@ WGS for 1000 genomes = ~125 GB (Estimated cost: CHF 62.50)
 
 WES for 1000 genomes = ~1.9 GB (1.5%) (Estimated cost: CHF 0.95)
 
+
 ## **FASTA**
 
-FASTA format is a text-based format for representing either nucleotide sequences or peptide sequences, in which base pairs or amino acids are represented using single-letter codes. 
+It is a text-based format for representing either nucleotide sequences or peptide sequences. Base pairs or amino acids are represented using single-letter codes.
 
 [~200 MB per genome (WGS)](https://www.ensembl.org/Homo_sapiens/Info/Index) -> I tried to download the GRCh38 from Ensembl.org
 
@@ -62,3 +63,5 @@ WGS for 1000 genomes = ~200 GB (Estimated cost: CHF 100)
 WES for 1000 genomes = ~3 GB (1.5%) (Estimated cost: CHF 1.50)
 
 
+## **Task: Familiarize with VCF format**
+Klick [here](https://www.internationalgenome.org/wiki/Analysis/vcf4.0) for a good example of VCF format and explanations.
