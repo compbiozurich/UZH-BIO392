@@ -38,6 +38,19 @@ curl [options] url # get/load what the given url points to
 curl -L url # follows (potential(?)) redirects of url and loads whatever page it lands on.
 
 [command] > filename # saves the output in the file with filename, creates the file if it not already exists.
+
+# continue this cheatsheet in due time from exercise 6 onwards.
+```
+
+## [AWK cheatsheet and more explanations surrounding AWK](https://www.grymoire.com/Unix/Awk.html#toc-uh-1)
+
+No electronic copies allowed without explicit written approval.
+Efficient, effective, elaboratory, teaching.
+Anything written below is from myself, as a result of working through the course.
+
+```bash
+awk '{print $0}' file # prints the whole line (and goes through the file).
+awk '{print $1}' file # prints the first field of the current line (and goes through the file).
 ```
 
 
@@ -76,4 +89,94 @@ chr1    17231   17374```
 Exercises 5-14.
 
 5. retrieve file from some link
-```~/course/data$ curl 
+```curl -L http://imlspenticton.uzh.ch/imallona/teaching/SP1.fq > SP1.fq
+```
+
+6. Inspect the file from the previous exercise (file size, number of lines, and visualize its head)
+
+```~/course/data/
+ls -lh # file size
+wc -l SP1.fq # line count (words are not meaningful)
+head SP1.fq```
+SP1.fq is a FASTQ file, 4 lines per entry (or "read sequence" - identifier, sequence, separator ('+'), and quality of sequence.
+new entry (identifier) is a line starting with '@' (at least here).
+
+7. The FASTQ file stored at ~/course/data/SP1.fq is in FASTQ format, meaning it contains 4 lines per read sequence.
+
+```head -n 4 SP1.fq```
+
+produces
+
+```
+@A01251:208:HJVFJDRXY:2:2101:23782:1000 1:N:0:CGCTCATT
+TNGAAAATGATAAAAACCACACTGTAGAACAGATTAGATGAGTGAGTTACACTGAAAAACACATTCTTTGGAAACGGGATTTGTAGAATAGTGTATATCAATGAGTTACAATGAGAAACATGTAAAATTAAAAAAACCACAAAGTACAACA
++
+F#FFFFFFFFFFFFFFFFFFFFFF:F:FFFFFFFFFFFFFFFFFFF:FFFFFFFFFFFFFFFFFFF,FFFFFFFF,FFF,FFFFFFFF,FFFFFFFFFFFFFFFFFFFFFFFFF:FF::,,F,FFF,F,:,FFFFFF,F,F,,F,:,,F,:
+```
+
+* So Line 1 contains a sequence identifier that begins with an @
+* Line 2 contains the read sequence (A,T,C,G,N)
+* Line 3 is a comment line, often unused and only contains a +
+* Line 4 is the Phred quality score for each sequence encoded in ASCII format
+
+First use ```wc``` and ```awk``` to determine the number of sequences in the fastq
+
+```
+wc -l SP1.fq # 40, so 10 sequences.
+wc -l SP1.fq | awk '{print $1/4}' # 10, so 10 fastq records
+```
+
+8. A common mistake is to use ``grep`` to pattern match the ``@`` in the
+sequence identifier. Why doesn't this work?
+
+```bash
+wc -l SP1.fq | awk '{print $1 / 4}'
+```
+renders `10`
+
+```bash
+grep -c "@" SP1.fq
+```
+renders `12`.
+
+This does not work, because the Phred quality scores in this file contain some '@' and do not indicate start of new records. The pattern search would have to be refined / changed to another symbol, depending on the specific Phred encoding used (can be seen in the ID lines, if you know them well enough).
+
+9. Next, extract only the _sequences_ of the records. Remember, these are only every second out of every four lines in fastq files.
+
+```bash
+awk 'NR % 4 == 2' SP1.fq # returns all the sequences. awk 'NR' keeps track of the current line number
+awk 'NR % 4 == 2' SP1.fq | wc -l # 10. so the command works as intended and all 10 sequences are returned, with the newlines.
+```
+
+Answer (teacher): 2 ways:
+
+One approach to this problem is to use the ``%`` `modulo operator` ([Wikipedia](https://en.wikipedia.org/wiki/Modulo_operation)), which returns the remainder after division of two integers. For example using ``awk``
+
+```bash
+awk 'BEGIN { {print 4 % 2}}' # dw: i don't get this command structure (BEGIN and the double {{}}) (?)
+awk 'BEGIN { {print 4 % 3}}'
+awk 'BEGIN { {print 5 % 3}}'
+awk 'BEGIN { {print 1 % 4}}'
+```
+
+In ``awk`` there is a special variable ``NR`` which is equal to the
+current line number.
+
+So let's extract the sequences of the fasta file `SP1.fq`
+
+
+```bash
+awk 'NR%4==2'   ~/course/data/SP1.fq
+```
+
+10. ...
+11. ...
+12. ...
+13. ...
+14. ...
+
+I finished the exercises 1-14 and understand everything so far. I like AWK.
+
+TBD:
+- Redo them and write down notes on exercises 6-14.
+- Exercises 17-32, at least (done by this evening, focus on knowledge and skills, and files - not notes, for now).
