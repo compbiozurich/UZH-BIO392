@@ -34,4 +34,4 @@ Earlier this year, the New York Genome Center (NYGC) released high-coverage (30x
 
 Note:
 
-<For example, current estimates of genetic risks in a healthy individual carrying a disease-associated variant discovered by sequencing are likely inflated since risk estimates have been derived from studying patients presenting clinically, thus selecting for the most extreme cases.>
+>For example, current estimates of genetic risks in a healthy individual carrying a disease-associated variant discovered by sequencing are likely inflated since risk estimates have been derived from studying patients presenting clinically, thus selecting for the most extreme cases.
