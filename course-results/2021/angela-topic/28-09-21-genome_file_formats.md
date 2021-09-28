@@ -1,7 +1,7 @@
 # Genome file formats
-2 bits per base required, therefore a *perfect* genome requires 715 MB (1 MB = 8000000 Bit) 
-
+2 bits per base required, therefore a genome requires 715 MB (1 MB = 8000000 Bit)
 1 PB costs 500000CHF
+FOr the cost and storage capacities 1000 genomes are taken 
 
 ## File formats and storage capacities
 *Considering WEG (Whole Genome Sequencing) and WES (Whole Exome Sequencing)*
@@ -12,14 +12,15 @@ WES: 1.5% of whole genome: 45 million bp
 
 It is a TAB-delimited text-based format it has a header section and an alignment section. The header starts with @. The alignment has 11 fields for information as mapping position.
 
-
- *For one WGE 500GB therefore for  WES 7.5GB. For 1000 genomes 500TB resp. 7.5TB the cost are 250000CHF resp. 3750CHF*
+* WEG: 500TB cost: 250000CHF
+* WES: 7.5TB cost: 3750CHF
 
 ### BAM
 Compressed binary version of a SAM file,it has to be converted first before it canbe read for us humans :)
 
+* WEG: 100TB cost: 50000CHF
+* WES: 1.5TB cost: 750CHF
 
-*One BAM file stores one whole genome with 100GB and a WEG for 1.5 GB, resp for 1000 genomes 100TB and 1.4 TB.This costs 50000CHF and 750CHF.*
 
 
 ### [VCF](file:///Users/angelatopic/Downloads/VCFv4.2.pdf)
@@ -28,21 +29,23 @@ It is a text file format where variants can be stored. It consists of a header a
 
  ![VCF file](VCF.png)
 
-
-*For one WGS 125 MB need to be used. For a WEG: 1.875 MB, For the 1000 Genome 125 GB resp. 1.875 GB. The cost tehrefore is is 62.50 CHF and 0.95 CHF.*
+* WEG: 125GB cost: 62.50CHF
+* WES: 1.875GB cost: 0.95CHF
 
 
 ### FASTA
 A FASTA file is a text-based format for representing nucleotide or peptide sequences. The format begins with a single line description, this line starts with a >.
 
+* WEG: 200GB cost: 100CHF
+* WES: 3GB cost: 1.5CHF
 
-*~200MB for one WGS tehrefore,3MB, therefore for 1000 genome 200GB and 3GB. The costs are 100CHF, 1.5CHF.*
  
 ## Getting familiarized with VCF format
 Already done above
 
 ## Notes about lift-overs
 
+### Ressources:
 
 https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/nichols/presentations/ohbm2014/imggen/Nho-ImgGen-WGSeqPractical.pdf
 
