@@ -84,11 +84,11 @@ cd ~/course/soft/kent
 
 pwd  # printing current directory
 
-## executable download for Mac
+## executable download for Mac (notice the `macOSX.x86_64` part of the URL)
 curl http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bedToBigBed \
      > bedToBigBed
 
-## executable download for Linux
+## executable download for Linux (notice the `linux.x86_64` part of the URL)
 # curl http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/bedToBigBed \
 #      > bedToBigBed
 
