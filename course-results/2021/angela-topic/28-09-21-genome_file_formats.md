@@ -23,7 +23,7 @@ Compressed binary version of a SAM file,it has to be converted first before it c
 
 
 
-### [VCF](file:///Users/angelatopic/Downloads/VCFv4.2.pdf)
+### [VCF](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3137218/)
 
 It is a text file format where variants can be stored. It consists of a header and data lines. Each data line stores information about a position in the genome. It shows which chromnosome, position, what the reference base is, the variation for both alleles, quality, filter, additional information and than all samples tested.
 
