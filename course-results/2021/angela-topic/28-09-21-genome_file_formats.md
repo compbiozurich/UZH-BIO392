@@ -1,6 +1,10 @@
 # Genome file formats
-2 bits per base required, therefore a genome requires 715 MB (1 MB = 8000000 Bit)
+2 bits per base required, therefore a whole genome requires 715 MB (1 MB = 8000000 Bit)
+
+
 1 PB costs 500000CHF
+
+
 For the cost and storage capacities 1000 genomes are taken 
 
 ## File formats and storage capacities
@@ -43,8 +47,6 @@ A FASTA file is a text-based format for representing nucleotide or peptide seque
 ## Getting familiarized with VCF format
 Already done above
 
-## Notes about lift-overs:
-will follow
 
 ### Resources:
 

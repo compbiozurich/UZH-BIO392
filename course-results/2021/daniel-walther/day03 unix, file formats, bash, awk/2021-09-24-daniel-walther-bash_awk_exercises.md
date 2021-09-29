@@ -476,10 +476,20 @@ grep ENST00000342247 chr22_with_ERCC92.gtf | grep codon # returns 2 lines. 1 sta
 
 ### 34.
 
+QU: What are mobile element insertions, exactly?
+
+> Also, which genomic assembly does this file belong to? How much does this matter? (e.g. put in context with human genome reference liftovers).
+
+Disclaimer: I am unsure about the meaning of mobile element insertions. I can't help but think of retrovirally inserted sequences which are in general non-coding and just get dragged along, so to speak. Then, exons shouldn't be affected that much. And then, the genome assembly also doesn't matter since the overlap described above is 
+
+This potentially matters a lot (and generally, I would make sure to compare same assemblies, if possible). If comparing sequences directly, this should not matter, since sequences are rarely flat-out removed between genomic assemblies. However, if comparing locus information and the referenced assembly versions are not the same, and you don't have tools for 'translating' between versions (liftover chain files and what not), then which assembly which file belongs to matters a lot.
+
 ```bash
 ```
 
 ### 35.
+
+_(mobile element insertions: really ask about what they are if you haven't so far!)_
 
 ```bash
 ```
