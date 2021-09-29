@@ -194,7 +194,7 @@ load hesc.chromHmm.bed --> remove 'chr' notation to match CEUlow_coverage.2010_1
 
 To check the abundance of variants per chromatin state, we'll intersect the variants file with the chromatin states one, print the column with the states, and count the number of items output format of uniq -c: number of bed records (first column), grouped by chromatin state (second column).  
 
-`bedtools intersect  -b CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf   -a  hesc.chromHmm_nochr.bed | awk '{print $4}' | sort | uniq -c`  
+`bedtools intersect  -b CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf   -a  hesc.chromHmm_nochr.bed | awk '{print $4}' | sort | uniq -c | sort -V`  
 
 
 
