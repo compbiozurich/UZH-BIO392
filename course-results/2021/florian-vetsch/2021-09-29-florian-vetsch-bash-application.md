@@ -1,5 +1,6 @@
-# New commands learnt
+# New commands learned
 
+### General
 create all 3 subfolders and course dir  
 `mkdir -p course/soft course/data course/output`  
   
@@ -10,7 +11,11 @@ adding exec permissions to the binary
   
 downlaod and save  
 `curl http://imlspenticton.uzh.ch/imallona/teaching/example.bed > example.bed`  
-  
+
+aliasing  
+`alias vcftools='~/course/soft/vcftools_0.1.13/bin/vcftools'`  
+
+### FASTQ
 counting sequences  
 `wc -l SP1.fq | awk '{print $1 / 4}'`  
   
@@ -28,8 +33,49 @@ fastq to fasta (only getting first column of identifier)
       NR%4==2 {print}' SP1.fq  
       > SP1.fa`  
   
-``  
+### BED
+bed6 to bed3 (only first way seperates by tab)  
+`awk -v OFS='\t' '{print $1,$2,$3}' a.bed`  or `awk '{print $1,$2,$3}' a.bed`
+  
+bed3 to bed 6  
+`awk -v OFS='\t' '{print $1,$2,$3,".",0,"."}' a.bed`  
+  
+Add a nucleotide to the start and subtract a nucleotide from the end to all records  
+`awk -v OFS='\t' '{print $1,$2+1,$3-1,$4,$5,$6}' a.bed`  
+  
+checking overlap between two files reported on the file defined as -a (not considering strandness and only report the parts of each line that do have overlap with b)  
+`bedtools intersect \
+  -b  x.bed \
+  -a  z.bed`    
+  
+considering strandness  
+`bedtools intersect \
+  -s \
+  -a  a.bed \
+  -b  b.bed`   
+  
+ use -v to repport all lines that don't overlap, only reports the lines that have completly no overlap (-wa -wb to get extra info)  
+`bedtools intersect \
+  -v \
+  -b  ~/course/soft/bedtools2/test/intersect/a.bed \
+  -a  ~/course/soft/bedtools2/test/intersect/b.bed`  
+  
+ get clearest idea of overlap (lines in a with no overlap will show . and -1) 
+`bedtools intersect \
+>   -wao \
+>   -a  ~/course/soft/bedtools2/test/intersect/a.bed \
+>   -b  ~/course/soft/bedtools2/test/intersect/b.bed`  
+  
+### VCF  
+install
+`cd ~/course/soft/
+curl -L https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download > \
+   vcftools.tar.gz
+tar xzvf vcftools.tar.gz
+cd vcftools_0.1.13/
+make`  
+  
   
 ``  
-  
-``  
+
+
