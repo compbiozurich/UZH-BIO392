@@ -37,9 +37,34 @@ awk 'NR % 4 == 2 {print $0}' SP1.fq | wc -l
 ```awk 'NR % 4 == 2 {print $0}' SP1.fq``` or ```awk 'NR % 4 == 2' SP1.fq```
 
 
-### Ex 4
+### Ex 10
 
-### Ex 4
-### Ex 4
-### Ex 4
-### Ex 4
+awk '{print NR}' SP1.fq  
+prepend linenumbers:  
+awk '{print NR, $0 }' SP1.fq  
+
+### Ex 11
+
+awk 'NR % 4 == 1' SP1.fq | head  # get header line  
+awk 'NR % 4 == 2' SP1.fq | head  # get sequence line  
+awk 'NR % 4 == 3' SP1.fq | head  # get comment line  
+awk 'NR % 4 == 0' SP1.fq | head  # get quality line  
+
+### Ex 12
+
+awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print $0}' SP1.fq 
+
+### Ex 13
+
+awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print $0}' SP1.fq > example.fa
+
+### Ex 14
+
+awk 'NR % 4 == 1' SP1.fq | wc -l
+awk 'NR % 2 == 1' example.fa | wc -l
+
+## Ex 15
+
+
+
+
