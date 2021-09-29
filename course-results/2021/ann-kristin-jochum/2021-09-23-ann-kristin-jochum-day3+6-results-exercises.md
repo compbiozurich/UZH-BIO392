@@ -129,3 +129,23 @@
 * No idea what this means
 
 ## Exercise 33
+* 3225 reported insertions
+* All sites were kept after filtering
+
+## Exercise 34
+* I would think that mobile insertions aren't as frequent in exons as in non-protein-coding regions, so more of a low proportion.
+* 459752 exons in the file
+* Chromsomes are differently encoded, one just as a number and the other as chr + number
+* Removing the chr is necessary (with sed)
+* 110 variants overlapping exons => 110/3225 = 3.41%
+* Considerung that insertions in exons might be influencing the protein encoded in them, I think it's a pretty high number.
+
+## Exercise 35
+* We have to remove the chr again
+* Check intersection of variant file with chromatin activity file (bedtools intersect\
+  -b CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \
+  -a  hesc.chromHmm_nochr.bed | awk '{print $4}' | sort | uniq -c)
+* 2334 heterochromatin low, while the others range between 3 and 79, except Weak Txn (490)
+* In the whole genome, heterochromatin low is in the higher range (3rd highest), but not in the same proportion as they are present in the exons (relatively speaking)
+* **Biological interpretation**: Biologically speaking, this is rather curious - insertions or any mutations in an exon can change the amino acid sequence of a protein and therefore alter its function, and most time this is not to the organisms advantage. Maybe this is the remaining "healthy" variation, since the insertions obviously didn't lead to the organisms death early in life. However, this doesn't explain the lack of insertions in the non-coding regions, where I would think insertions would have a smaller impact on the organisms survival.
+* **Numerical interpretation**: No, this isn't totally fair - we were just counting lines, while the different compartments might make up different proportions of the genome => counts are not normalized to the sizes

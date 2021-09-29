@@ -1,3 +1,4 @@
+
 In this file, I tried to calculate the storage cost of the GWS for different storage formats.
 From the slides of Prof. Baudis lecture, I took the estimations for the raw storage cost and the estimations
 for the storag cost with additional costs involved (facilities, service...).
@@ -11,7 +12,7 @@ From the GWS-paper, we can take the informations we need for our calculations:
 ##BAM file format:
 30x BAM file = 100 GB --> 7.4x BAM file = (7.4*100)/30 = 24.76 GB/Genome
 We now have 2504 genomes --> 2504*24.76= 61'999.04 GB for the whole GWS
-One GB costs abou 0.50CHF to store --> 30'999.52 CHF for the whole GWS.
+
 
 ##SAM file format:
 (Internet research)= 1 30x Genome needs about 500GB.
