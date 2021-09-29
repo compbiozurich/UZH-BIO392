@@ -93,18 +93,61 @@ cat ~/course/soft/bedtools2/test/intersect/b.bed
 
 ### Ex 20
 
-```bedtools intersect -a a.bed -b b.bed  
+```bedtools intersect -a a.bed -b b.bed```  
 
 **output:**  
 chr1    100     101     a2      2       -
 chr1    100     110     a2      2       -
 
-### Ex 15
-### Ex 15
-### Ex 15
-### Ex 15
-### Ex 15
-### Ex 15
+### Ex 21
+
+```bedtools intersect -b a.bed -a b.bed```  
+
+**output:**  
+chr1    100     101     b2      2       -
+chr1    100     110     b3      3       +
+
+### Ex 22
+
+bedtools intersect -s -a a.bed -b b.bed
+
+### Ex 23
+
+bedtools intersect -v -a a.bed -b b.bed
+
+### Ex 24
+
+bedtools intersect -wao -a a.bed -b b.bed
+
+### Ex 25 GTF
+
+curl -L http://genomedata.org/rnaseq-tutorial/annotations/GRCh38/chr22_with_ERCC92.gtf > chr22_with_ERCC92.gtf
+
+### Ex 26 Retrieve the details of transcript ENST00000342247 (tip: use grep) from the chr22_with_ERCC92.gtf file. Then, retrieve the details of the exons of transcript ENST00000342247 (tip: use grep after the grep). How many exons are they?
+
+grep ENST00000342247 chr22_with_ERCC92.gtf | grep "exon\s" | wc -l
+
+### Ex 27
+
+rep start_codon chr22_with_ERCC92.gtf |  wc -l; grep stop_codon chr22_with_ERCC92.gtf |  wc -l
+
+### Ex 28
+
+### Ex 29
+
+### Ex 30
+
+### Ex 31
+
+### Ex 32
+
+
+
+
+
+
+
+
 ### Ex 15
 
 
