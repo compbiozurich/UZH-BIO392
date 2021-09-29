@@ -16,7 +16,7 @@
 * VCF = 125 GB/WGS
 * FASTA = 
 
-## Tables (referring to 1'000 genomes, to be completed)
+## Tables (referring to 1'000 genomes)
 
 ### WES (Whole Exome Sequencing)
 
@@ -26,7 +26,7 @@ Raw | 7.15 GB | 3.575 CHF | 0.003575 CHF
 SAM | 4'000 GB | 2'000 CHF | 2.00 CHF
 BAM | 1'000 GB | 500 CHF | 0.50 CHF
 VCF | 1'250 GB | 625 CHF | 0.625 CHF
-FASTA | Content
+FASTA | no reliable information found
 
 ### WGS (Whole Genome Sequencing)
 
@@ -36,4 +36,4 @@ Raw | 715 GB | 357.5 CHF | 0.3575 CHF
 SAM | 400'000 GB | 200'000 CHF | 200 CHF
 BAM | 100'000 GB | 50'000 CHF | 50 CHF
 VCF | 125'000 GB | 62'500 CHF | 62.50 CHF
-FASTA | Content
+FASTA | no reliable information found
