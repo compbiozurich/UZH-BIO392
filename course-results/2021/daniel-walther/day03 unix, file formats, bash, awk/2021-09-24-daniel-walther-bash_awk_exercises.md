@@ -491,6 +491,22 @@ vcftools # but nevermind. just unintuitive
 cd ~/course/soft/vcftools_0.1.13
 find -name "*vcf" -type f # lists all files
 find ~/course/soft/vcftools_0.1.13 -name "*vcf" -type f # also works
+find ~/course/soft/vcftools_0.1.13/ -name *vcf # also works
+find ~/course/soft/vcftools_0.1.13/ -name *.vcf # also works
+
+# insepcting vcf files, how do they look?
+
+head consensus.vcf
+# output:
+##fileformat=VCFv4.1
+#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    FORMAT  NA001
+1       5       .       C       *       .       PASS    .       GT      0/1
+1       10      .       G       *       .       PASS    .       GT      0/0
+1       12      .       GACT    G*      .       PASS    .       GT      0/1
+1       16      .       T       T***    .       PASS    .       GT      1/1
+1       61      .       C       *       .       PASS    .       GT      1/1
+2       61      .       AGAG    A*      .       PASS    .       GT      0/1
+2       481     .       T       *,@     .       PASS    .       GT      0/2
 ```
 
 ### 31.
@@ -523,16 +539,77 @@ Questions, comments, and suggestions should be emailed to:
 > How many variants are kept after filtering at ~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf? Tip: use the --vcf flag to vcftools. What does this result mean?
 
 ```bash
+cd ~/course/soft/vcftools_0.1.13/examples/
+vcftools --vcf merge-test-a.vcf # not sure what this does.
+# output:
+
+VCFtools - v0.1.13
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+        --vcf merge-test-a.vcf
+
+After filtering, kept 1 out of 1 Individuals
+After filtering, kept 9 out of a possible 9 Sites
+Run Time = 0.00 seconds
 ```
+
+So all the data has been kept and has passed the filtering by `vcftools --vcf`, and it appears that there are 9 variants (kept 9 ... Sites).
+
+QU: What does this mean?
+
+guess: The measurement quality is sufficient for all 9 variants (found in 1 individual, I suppose).
+Maybe it is a file from some segment liftover process, then individual could mean a (temporary) consensus or merged sequence.
+Although, 9 possible Sites suggests that there are 9 possibilities for some matching or binding site. I don't know.
+
+## [Project: mobile elements insertions in 1000genomes data](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2021/imallona/exercises.md#project-mobile-elements-insertions-in-1000genomes-data)
 
 ### 33.
 
+> Explore human variation data for mobile elements insertion using the [1000genomes data](http://www.internationalgenome.org/data). More precisely, download the pilot data named CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz (the full path to the remote FTP server is ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf.gz).
+>
+> Then, explore the number of variants (tip: use vcftools), the file contents (head, less), etc.
+>
+> Tip: remember where the bedtools and vcftools binaries are and/or use an alias to them.
+>
+> For further details on mobile elements insertion as a source of human variation please check the paper [Stewart et al 2011](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002236).
+
 ```bash
+# ... directory, download, gunzip ...
+
+wc -l CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+# output:
+3225 CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf # 3225 lines! nüme nüt
+
+vcftools --vcf CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+# output:
+VCFtools - v0.1.13
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+        --vcf CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+
+After filtering, kept 0 out of 0 Individuals
+After filtering, kept 3201 out of a possible 3201 Sites
+Run Time = 0.00 seconds
 ```
+
+It appears that filtering has already been done (all sites kept).
+
+> To evaluate the VCF structure, we can browse the 1000 Genomes' documentation: (README for low coverage mobile elements insertions](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/paper_data_sets/a_map_of_human_variation/low_coverage/sv/README.2010_10.low_coverage_MobileElementInsertions). Some items from the document linked above:
+
+_see [Exercise 33](https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2021/imallona/exercises.md#exercise-33)_
 
 ### 34.
 
+> As a first exercise, let's evaluate how many of these mobile elements insertions overlap human exons? Do you expect it to be a low or high proportion?
+
+I'm guessing that `bedtools intersect` can be used to check for overlaps. I expect a low proportion of these mobile elements insertions to overlap with human exons.
+
 QU: What are mobile element insertions, exactly?
+A: genetic elemens (sequences) that can jump and duplicate themselves, like retrotransposons. Some elements even have their own retrotransposase encoded in their own sequence. Reminder: transoposons use DNA, retrotransposons use RNA.
+
+> To do so download an exons bedfile from https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed and then use bedtools intersect. Tip: it won't work because of the chromosome numbering (tip: check how chromosome numbers are encoded in both exons.bed and the vcf file, i.e. whether starting with a chr or not, and harmonize them using awk).
 
 > Also, which genomic assembly does this file belong to? How much does this matter? (e.g. put in context with human genome reference liftovers).
 
@@ -541,14 +618,86 @@ Disclaimer: I am unsure about the meaning of mobile element insertions. I can't 
 This potentially matters a lot (and generally, I would make sure to compare same assemblies, if possible). If comparing sequences directly, this should not matter, since sequences are rarely flat-out removed between genomic assemblies. However, if comparing locus information and the referenced assembly versions are not the same, and you don't have tools for 'translating' between versions (liftover chain files and what not), then which assembly which file belongs to matters a lot.
 
 ```bash
+cd ~/course/data
+
+curl -O https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed > exons.bed # why -O? quick web search (letter o, not zero)
+
+head exons.bed
+chr1    11873   12227   NR_046018_exon_0_0_chr1_11874_f 0       +
+chr1    12612   12721   NR_046018_exon_1_0_chr1_12613_f 0       +
+chr1    13220   14409   NR_046018_exon_2_0_chr1_13221_f 0       +
+chr1    14361   14829   NR_024540_exon_0_0_chr1_14362_r 0       -
+chr1    14969   15038   NR_024540_exon_1_0_chr1_14970_r 0       -
+chr1    15795   15947   NR_024540_exon_2_0_chr1_15796_r 0       -
+chr1    16606   16765   NR_024540_exon_3_0_chr1_16607_r 0       -
+chr1    16857   17055   NR_024540_exon_4_0_chr1_16858_r 0       -
+chr1    17232   17368   NR_024540_exon_5_0_chr1_17233_r 0       -
+chr1    17605   17742   NR_024540_exon_6_0_chr1_17606_r 0       -
+
+wc -l exons.bed
+459752 exons.bed # now we're talking
 ```
+
+Searching for the name in ucsc doesn't work (hg38), maybe I've got the wrong assembly. But searching for the region sure works, but without assembly info, this is not that meaningful. [this UCSC query](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr1%3A11874%2D12227&hgsid=1174562015_RoewDhVaFdmbpps1XsXjQG0yuJVC)
+
+```bash
+bedtools intersect -a exons.bed -b CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+# doesn't work, "bed file has unusual structure"~
+```
+
+Copied from solutions:
+
+```bash
+## this does not work as intended! or, rather, gives some warnings.
+## Why does it crash? The chr strings at the coordinates are present in one bedfile but not in the other
+tail CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+
+tail exons.bed
+
+## so chromosomes [in .vcf format] have/not have 'chr' strings on them depending on the file; e.g.
+## for one resource, `chromosome 1` is encoded as `chr1`, and `1` for the other
+
+## removing the chr string from the exons bedfile to harmonize both
+sed 's/^chr//g' exons.bed > exons_nochr.bed # [whatever you say]
+
+# check they're gone
+head exons_nochr.bed # nice, thx
+```
+
+Now my part again:
+
+```bash
+bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf -b exons_nochr.bed | wc -l
+# output:
+110 # out of 3'225 mobile elements, and 459'752 human exons.
+```
+
+Less than .5% of given mobile elements overlap with the human exons (of <...> hg assembly). I don't think this is a lot, but noteworthy nonetheless.
 
 ### 35.
 
-_(mobile element insertions: really ask about what they are if you haven't so far!)_
+Read and thought it through.
 
 ```bash
+# copy start
+
+cd ~/course/data
+
+curl -O https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed
+
+head hesc.chromHmm.bed
+
+## the fourth column assigns a chromatin state to a coordinate (left)
+# chr1	10000	10600	15_Repetitive/CNV
+# chr1	10600	11137	13_Heterochrom/lo
+
+# then use bedtools intersect
 ```
+
+_Finally_ compare overall heterochromatin proportion of genome to evaluate potential overrepresentation of 
+m.e.insertions into hetero-/euchromatin, __what we are actually interested in__ here, imo.
+
+Now the state of skills has reached a rookie practical level in reality.
 
 ### Extra exercises block 36.
 
