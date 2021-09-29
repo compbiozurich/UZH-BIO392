@@ -170,22 +170,33 @@ and file: exons.bed
 
 to harmonize the files, we need to remove the 'chr' from the exons.bed file:  
 
-awk -v OFS='\t' '{print substr($1,4) ,$2,$3,$4,$5,$6}' exons.bed > exons_nochr.bed  
+`awk -v OFS='\t' '{print substr($1,4) ,$2,$3,$4,$5,$6}' exons.bed > exons_nochr.bed`  
 or  
-sed 's/^chr//g' exons.bed > exons_nochr.bed
+`sed 's/^chr//g' exons.bed > exons_nochr.bed`
+
+--> ‘s/regexp/replacement/flags’ s: substitute, the regular expression with the replacement (in our case with nothing) and flag /g: do replacement for all matches to regex.  
 
 and then check for intersects and count them:
 
 `bedtools intersect -b exons_nochr.bed -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf | wc -l`  
 --> 110 insertions overlapping exons
 
-`wc -l CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf  
+`wc -l CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf`  
 --> from total 3225 insertions  
 
 110/3225 = 3.4% --> only a small proportion of all insertions are in exones!  
 
+### Ex35 mobile elements insertions, and given they're not particularly present in exons, where do they insert preferentially? In active or inactive regions?
 
-### Ex 
+load hesc.chromHmm.bed --> remove 'chr' notation to match CEUlow_coverage.2010_10.MobileElementInsertions.sites.vcf file.  
+
+`sed 's/^chr//g' hesc.chromHmm.bed > hesc.chromHmm_nochr.bed`
+
+To check the abundance of variants per chromatin state, we'll intersect the variants file with the chromatin states one, print the column with the states, and count the number of items output format of uniq -c: number of bed records (first column), grouped by chromatin state (second column).  
+
+`bedtools intersect  -b CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf   -a  hesc.chromHmm_nochr.bed | awk '{print $4}' | sort | uniq -c`  
+
+
 
 
 
