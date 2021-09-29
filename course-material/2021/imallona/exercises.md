@@ -1124,7 +1124,7 @@ Answer
 cd ~/course/data
 
 ## download the exons location (bedfile)
-curl -O https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed
+curl -O https://s3.amazonaws.com/bedtools-tutorials/web/exons.bed > exons.bed
 
 ## explore the file
 head exons.bed
