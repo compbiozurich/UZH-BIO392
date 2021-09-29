@@ -1,4 +1,4 @@
-# *BEDTools: a flexible suite of utilities for comparing genomic features* by Quinlan and Hall
+# *BEDTools: a flexible suite of utilities for comparing genomic features* by Quinlan and Hall (2010)
 
 ## Notes
 
@@ -18,7 +18,7 @@
 * New format called BEDPE which facilitates comparisons of discontinuous features
 * *intersectBed* and *pairToBed* compute overlaps between sequence alignments in BAM format
 * Many more useful functions
-* Advantages:
+* **Advantages**:
   * Can read from and write to standard output => combination with each other or with existing UNIX utilities possible
   * Most tools can distinguish between DNA strands => orientation can be considered
   * Local or public instances not necessary
