@@ -74,4 +74,25 @@ BED9:
 > chr7    127477031    127478198    Neg2    0    -    127477031    127478198    0,0,255   
 > chr7    127478198    127479365    Neg3    0    -    127478198    127479365    0,0,255   
 > chr7    127479365    127480532    Pos5    0    +    127479365    127480532    255,0,0   
-> chr7    127480532    127481699    Neg4    0    -    127480532    127481699    0,0,255   
+> chr7    127480532    127481699    Neg4    0    -    127480532    127481699    0,0,255 
+
+
+##GTF
+Gene transfer format. It is a format used to hold information about the gene structure. It is based on the general feature format GFF but contains
+additional conventions specific to gene information. Given a Sequence and a GTF file, one can check that the format is correct.
+GTF is identical to GFF version 2.
+#### GFF
+It is a format to describing genes and other features of DNA, RNA and protein sequences
+
+Structure: They have 9 fields per line. 
+|Position index|Position Name|Description|
+---------------|-------------|-----------|
+1 | sequence | The name of the sequence where the feature is located
+2 | source | keyword identifying the source of the feature (Programm, organisation ...)
+3 | feature | feature type name like "gene" or "exon"|
+4 | start | Genomic start of the feature with 1-base offset (BED is 0-offset)
+5 | end | genomic end of the feature
+6 | score | numeric value indicates the confidence of the source. "." means null value
+7 | strand | Single character that indicates the strand ("+" : 5' -> 3', "-": 3' -> 5', ".": undetermined)
+8 | phase | phase of CDS feature (?)
+9 | attributes | all other information. varies the most
