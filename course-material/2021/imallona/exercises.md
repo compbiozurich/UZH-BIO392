@@ -4,6 +4,8 @@ If run on a terminal within Windows or a git bash: several commands missing, e.g
 
 If run on renku: manpages missing (because it's a minimal image). Renku repository to fork/run the exercises with: https://renkulab.io/projects/izaskun.mallona/uzh-bio392
 
+If run on renku: notice you might be either under `/home/rstudio` or `/work/uzh-bio392`, please take this into account when using aliases and check `pwd` to print your current location if you cannot find your files using the terminal.
+
 If run on iMacs: compilation will fail unless defining SDK headers. To fix this:
 
 ```
@@ -120,6 +122,10 @@ Retrieving bedtools and compiling it using a Makefile. [Extra reading about Make
 
 (Run this step regardless of whether using renku/your computer, as it will also retrieve data.)
 
+Note on BigSur users: you might need to compile https://github.com/arq5x/bedtools2/releases/download/v2.30.0/bedtools-2.30.0.tar.gz instead.
+
+Note on zlib errors under linux: you might need to install zlib1g-dev or zlib if you find compilation errors related to missing `lz`. For that and under Debian/Ubuntu, please run `sudo apt install zlib1g-dev`.
+
 ```bash
 
 cd ~/course/soft
@@ -140,6 +146,9 @@ make  ## will take time!
 # alias the binary, so typing `bedtools` will suffice to run the binary,
 ##   without specifying the full path to the binary
 alias bedtools='~/course/soft/bedtools2/bin/bedtools'
+
+# in renku, could be something like:
+#alias bedtools='/home/rstudio/course/soft/bedtools2/bin/bedtools'
 
 bedtools --help
 
@@ -475,18 +484,11 @@ Answer
 
 <p>
 
+
+
 ```bash
 
 awk 'NR % 4 == 1 {print ">"$1}; 
-     NR % 4 == 2 {print}' SP1.fq \
-     > ~/course/data/example.fa
-```
-
-or, equivalently (data is one-column),
-
-```bash
-
-awk 'NR % 4 == 1 {print ">"$0}; 
      NR % 4 == 2 {print}' SP1.fq \
      > ~/course/data/example.fa
 ```
@@ -597,7 +599,7 @@ cd - ## to go back to the previous directory
 
 ## Exercise 18
 
-Add a nucleotide to the start and subtract a nucleotide to the end to all records, regardless of the strand, to the file `~/course/soft/bedtools2/test/intersect/a.bed`.
+Add a nucleotide to the start and subtract a nucleotide from the end to all records, regardless of the strand, to the file `~/course/soft/bedtools2/test/intersect/a.bed`.
 
 Tip: use `awk`.
 
@@ -612,11 +614,13 @@ Answer
 ## to go to the a.bed file directory
 cd ~/course/soft/bedtools2/test/intersect/
 
-awk -v OFS='\t' '{print $1,$2-1,$3+1,$4,$5,$6}' a.bed
+awk -v OFS='\t' '{print $1,$2+1,$3+1,$4,$5,$6}' a.bed
 
 cd - ## to go back to the previous directory
 
 ```
+
+Please notice this is not trivial at all, what happens if interested in doing that strand aware? are the add/subtract arithmetics dependent upon the strand? What if we get out of the chromosome sizes bounds? Extra task: browse https://bedtools.readthedocs.io/en/latest/content/tools/slop.html and https://bedtools.readthedocs.io/en/latest/content/tools/flank.html .
 </p>
 </details>
 
