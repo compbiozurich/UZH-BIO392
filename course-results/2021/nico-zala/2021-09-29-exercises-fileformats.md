@@ -137,23 +137,24 @@ Install old version of VCFtools:
 
 
 cd ~/course/soft/
-
-curl -L https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download > \
-   vcftools.tar.gz
+curl -L https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download > vcftools.tar.gz
 
 tar xzvf vcftools.tar.gz
-
 cd vcftools_0.1.13/
-
-make```
+make 
 
 ### Ex 29
 
 ### Ex 30
 
+find ~/course/soft/vcftools_0.1.13 -name "*vcf*" -type f
+
 ### Ex 31
 
-### Ex 32
+alias vcftools='~/course/soft/vcftools_0.1.13/bin/vcftools'
+vcftools
+
+### Ex 3
 
 
 
