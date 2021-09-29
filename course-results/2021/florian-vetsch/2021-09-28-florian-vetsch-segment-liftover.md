@@ -1,17 +1,15 @@
 # Segment liftover
 <br/>
 
-> segment_liftover aims at continuity-preserving remapping of genome segments between assemblies.
+**Problem:**  
+Assesmbling a reference genome is often done in multiple releases. Those assemblies differ in coordinates of mapped elements. For genome analysis we need the same genomic coordinate system.  
+  
+**Solution:**  
+Genomic coordinate conversion with liftover tools. 
+
 <br/>
 
-**Features** provided by segment liftover:
-*  approximate locus conversion
-*  automated batch processing
-*  comprehensive logging to facilitate processing of datasets containing large numbers of structural genome variation data
-
-
-
-### Cost in CHF per 1 genome(30x)/exome(90x) per year
+### Comparison between different liftover tools
 |  | liftOver| CrossMap | Remap | segment_liftover |
 |--------|--------|-----------|-----------|-----------|
 | web service | yes| yes | limited | x |
@@ -20,13 +18,19 @@
 | convert files in BAM/SAM/BigWig format | x | yes | x | x | x |
 | dealing with non-continuous genome segments in target assembly| break the segment into smaller segments | break the segment into smaller segments |  keeps the integrity of the segment | keeps the integrity of the segment |
 
-The process of assembling a species’ reference genome may be performed in a number of iterations, with subsequent genome assemblies differing in the coordinates of mapped elements.
+Segment_liftover suprasses the other tools when:
+* many genome coordinated have to be lifted at the same time 
+* large genome segments  may be mapped into smaller sub-segments in the target assembly (especially important in context of CNV)
 
+<br/>  
 
-However, when performing genome analyses integrating data from multiple resources, it is imperative to convert all data to the same genomic coordinate system.
-
-This method, although bearing a side effect of minor information loss, for most applications provides a good balance between performance and accuracy.
-
-All those tools are efficient in coordinate conversion and provide almost identical results. However, as shown in Figure 1a, challenges arise when dealing with genome segments that are not continuous anymore in the target assembly
-
-In research such as analysis of copy number variation (CNV) data, where the quantitative representation of a genomic range takes precedence over base-specific representation, the integrity of a continuous segment indicates the proper conversion between assemblies, but may not be a direct outcome of current re-mapping approaches.
+> segment_liftover aims at continuity-preserving remapping of genome segments between assemblies.
+  
+**Features** provided by segment liftover:
+*  approximate locus conversion
+*  automated batch processing
+*  comprehensive logging to facilitate processing of datasets containing large numbers of structural genome variation data  
+*  good balance between performance and accuracy
+  
+<br/>
+<img src="https://f1000researchdata.s3.amazonaws.com/manuscripts/16527/750d34c7-0b41-4b42-96ce-a37bc5a7d6c0_figure1.gif">  
