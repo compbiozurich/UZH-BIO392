@@ -15,7 +15,11 @@ _daniel walther_
 Zmittag
 
 - task day03, 28-32 (VCF)
-- task day03, 33-35 (mobile elements insertions)
+=> gelöst (ohne 32)
+
+Daheim
+
+- task day03, 32-35 (mobile elements insertions)
 - task day04, git cli, course page. eigenes train-repo benutzen, um commit-Statistiken nicht zu verfälschen~
   - kann ja nach vollendeten Übungen immer noch die repos 'mergen' (not sure if terminology applies)
 - include bash home directory in my github course repo, if can do that (git cli). would that be a merge of 2 repositories (?)

@@ -310,7 +310,7 @@ QU: Subtracting a nucleotide from the end means shortening the record, so should
 A: ~nontrivial. however, there are (bed)tools for this: flank, slop - might be worth googling them. there can be found many errors regarding this (usually mathematicians and physicists get the strand thing wrong because they lack the biological knowledge to understand the problem).
 I just want you to think about this problem. It could also be, that in some cases you get out of bounds of a chromosome [due to an error, assumably].
 
-=> in the case of slop: if slop is used to change the start and end position of a sequence, you can not go out of bounds, id doesn't let you. This version of bedtools does not appear to give error or warning messages, though.
+=> in the case of slop: if slop is used to change the start and end position of a sequence, you can not go out of bounds, it doesn't let you. This version of bedtools does not appear to give error or warning messages, though.
 
 ### 19.
 
@@ -446,25 +446,81 @@ grep ENST00000342247 chr22_with_ERCC92.gtf | grep codon # returns 2 lines. 1 sta
 
 ### 28.
 
+> Install an old version of VCFtools (disclaimer, this is old! this version is ok for teaching purposes, but please consider installing an up-to-date verson for handling your data in the future) you can download from https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download using `make`. The path you can choose, but you can use for instance ~/course/soft/.
+
+On the specified url there are several redirects - but the link works (for bash), the direct download link does not work (for bash, works fine in browser).
+
 ```bash
+cd ~/cours/soft # for software
+curl -L https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download >vcftools.tar.gz
+
+tar xzvf vcftools.tar.gz # copied from solution
+
+cd vcftools_0.1.13/
+make
 ```
 
 ### 29.
 
+> Check which is the current version of VCFtools? How should installation be carried out? (tip: Git repositories release tagged versions).
+
 ```bash
+~/course/soft/vcftools_0.1.13/bin/vcftools
+# output:
+
+VCFtools (v0.1.13)
+© Adam Auton and Anthony Marcketta 2009
+
+Process Variant Call Format files
+
+For a list of options, please go to:
+        https://vcftools.github.io/examples.html
+
+Questions, comments, and suggestions should be emailed to:
+        vcftools-help@lists.sourceforge.net
+
+# somehow it doesn't work when in directory ..../bin/ to just type
+vcftools # but nevermind. just unintuitive
 ```
 
 ### 30.
 
+> VCFtools has some data for testing purposes; find all the VCF files (filenames similar to *vcf*) that you downloaded during installation and inspect them using head.
+
 ```bash
+cd ~/course/soft/vcftools_0.1.13
+find -name "*vcf" -type f # lists all files
+find ~/course/soft/vcftools_0.1.13 -name "*vcf" -type f # also works
 ```
 
 ### 31.
 
+> Alias the vcftool binary (full path) to vcftools and then run it with no parameters
+
 ```bash
+alias vcftools = '~/course/soft/vcftools_0.1.13/bin/vcftools' # doesn't work (because of the spaces).
+alias vcftools='~/course/soft/vcftools_0.1.13/bin/vcftools' # works.
+
+cd ~
+vcftools # works.
+# output:
+
+VCFtools (v0.1.13)
+© Adam Auton and Anthony Marcketta 2009
+
+Process Variant Call Format files
+
+For a list of options, please go to:
+        https://vcftools.github.io/examples.html
+
+Questions, comments, and suggestions should be emailed to:
+        vcftools-help@lists.sourceforge.net
+
 ```
 
 ### 32.
+
+> How many variants are kept after filtering at ~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf? Tip: use the --vcf flag to vcftools. What does this result mean?
 
 ```bash
 ```
