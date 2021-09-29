@@ -127,3 +127,5 @@
 ## Exercise 32
 * Filter (vcftools --vcf ~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf)
 * No idea what this means
+
+## Exercise 33
