@@ -61,13 +61,10 @@ considering strandness
   -a  ~/course/soft/bedtools2/test/intersect/b.bed`  
   
  get clearest idea of overlap (lines in a with no overlap will show . and -1) 
-`bedtools intersect \
->   -wao \
->   -a  ~/course/soft/bedtools2/test/intersect/a.bed \
->   -b  ~/course/soft/bedtools2/test/intersect/b.bed`  
+`bedtools intersect -wao -a  ~/course/soft/bedtools2/test/intersect/a.bed -b  ~/course/soft/bedtools2/test/intersect/b.bed`  
   
 ### VCF  
-install
+install  
 `cd ~/course/soft/
 curl -L https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download > \
    vcftools.tar.gz
@@ -76,19 +73,20 @@ cd vcftools_0.1.13/
 make`  
   
 check how many of the transposable elements in humans are covered by exon positions 
-transforme exons.bed to match chromo nomenclature of vcf file
+transforme exons.bed to match chromo nomenclature of vcf file  
 `sed 's/^chr//g' exons.bed > exons_nochr.bed`  
 `bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \
   -b exons_nochr.bed > overlap.txt`  
 `wc -l overlap.txt`  
 
-are they in active or inactive regions
+are they in active or inactive regions  
 `curl -O https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed`  
 `sed "s/^chr//g" hesc.chromHmm.bed > chromHmm.bed`  
 `bedtools intersect -a chromHmm.bed -b CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf > chrom_state_intersect.txt`  
 `awk '{print $4}' chrom_state_intersect.txt | sort | uniq -c | sort -nr`  
 
-
+compared to genetic background  
+`awk '{print $4}' hesc.chromHmm.bed | sort | uniq -c | sort -rn`
 
 
 
