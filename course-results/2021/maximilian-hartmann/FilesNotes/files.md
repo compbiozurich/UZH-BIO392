@@ -1,3 +1,5 @@
+
+
 ## FASTA
 FASTA sores a variable number of sequence recors and for each records it stores the sequence itself + an sequence ID.
 Each Record starts is composed of:
@@ -96,3 +98,24 @@ Structure: They have 9 fields per line.
 7 | strand | Single character that indicates the strand ("+" : 5' -> 3', "-": 3' -> 5', ".": undetermined)
 8 | phase | phase of CDS feature (?)
 9 | attributes | all other information. varies the most
+
+## SAM/BAM
+SAM: Sequence alignment MAP. This format is for storing biological sequences aligned to a reference genome. This format supports long reads (up to 128 Mbp).
+It consists of a header and and alignment section. The binary Alignment MAP (BAM) file is the binary equivalent of SAM, which stores the same data in a compressed
+binary representation. The header starts with an "@". There are 11 mandatory fields, as well as a number of optional fields. 
+Here the mandatory fields
+
+|Column|Field|Type|Description|
+-------|-----|----|-----------|
+1 | QName| String | Query Template Name: Reads/segments having a identical QName are regarded to come form the same template
+2 | FLAG | Int | Combination of bitwise flags (denote multiple attributes of a read alignment in binary)
+3 | RNAME| String | Reference sequence NAME of the alignment
+4 | POS | Int | 1-based leftmost mapping POSition of the first matching base. First base = 1. POS = 0 for an unmaped read without coordinates
+5 | MAPQ | Int | Mapping quality ( = -10 log10Pr{mapping position worng}
+6 | CIGAR | String | Concise Idiosyncratic Gapped Alignment Report string (?)
+7 | RNEXT | String | Refernece name of the next read/mate
+8 | PNEXT | Int | Position of the mate/next read
+9 | TLEN | Int | observed template length
+10 | SEQ | Stirng | segment SEQuence (Asterix if empty)
+11 | QUAL | String | ASCII of Phred-scaled base QUALity+33
+
