@@ -305,6 +305,12 @@ awk -v OFS='\t' '{print $1,$2-1,$3+1,$4,$5,$6}' a.bed
 ```
 
 QU: Subtracting a nucleotide from the end means shortening the record, so shouldn't it be `$3-1`, too?
+=> pay attention to which strand you change (+ or -)!
+
+A: ~nontrivial. however, there are (bed)tools for this: flank, slop - might be worth googling them. there can be found many errors regarding this (usually mathematicians and physicists get the strand thing wrong because they lack the biological knowledge to understand the problem).
+I just want you to think about this problem. It could also be, that in some cases you get out of bounds of a chromosome [due to an error, assumably].
+
+=> in the case of slop: if slop is used to change the start and end position of a sequence, you can not go out of bounds, id doesn't let you. This version of bedtools does not appear to give error or warning messages, though.
 
 ### 19.
 
@@ -383,23 +389,57 @@ On the website in [this table](https://bedtools.readthedocs.io/en/latest/content
  bedtools intersect -wao -a a.bed -b b.bed
 ```
 
-QU: Something is doing weird. I think bash is drunk and has to go to sleep.
+QUA: restart OS in case of weird.
 
-## GTF (?)
+## GTF (annotated genomic data)
 
 ### 25.
 
+> Download and visualize the GTF estructure from the chr22 GRCh38 human genome (available at http://genomedata.org/rnaseq-tutorial/annotations/GRCh38/chr22_with_ERCC92.gtf)
+
 ```bash
+curl -L <url> > chr22_with_ERCC92.gtf
+
+file chr22_with_ERCC92.gtf
+# output:
+chr22_with_ERCC92.gtf: ASCII text, with very long lines # cool, thanks!
+
+wc -l chr22_with_ERCC92.gtf
+# output:
+56295 chr22_with_ERCC92.gtf # many lines!
 ```
+
+bonus: How many exons are there?
+
+```bash
+awk grep *exon* '{print $1,$2,$3,$4,$5,$6,$7,$8$}' chr22_with_ERCC92
+```
+
+QU: Why are you using exon_number for the grep query?
+guess: Did I miss something about .gtf files (like can there be cross-references to e.g. exons from lines which do not represent exons)?
+A: ~guess correct. roughly.
 
 ### 26.
 
-```bash
+> Retrieve the details of transcript ENST00000342247 (tip: use grep) from the chr22_with_ERCC92.gtf file. Then, retrieve the details of the exons of transcript ENST00000342247 (tip: use grep after the grep). How many exons are they?
+
 ```
+cd ~/course/data
+
+grep ENST00000342247 chr22_with_ERCC92.gtf | grep "exon_id" # only the lines annotating exons have the "exon_id" string in them, others might contain "...exon..." as well, but have e.g. "protein_id" in them instead of "exon_id"
+grep ENST00000342247 chr22_with_ERCC92.gtf | grep "exon_id" | wc -l # 20 exons 
+```
+
+QU: Why `exon\s` in the grep query?
+
+A: `\s` is a whitespace character.
 
 ### 27.
 
+> How many start codons and stop codons does the chr22 have? Tip: use the gtf and grep for start_codon and stop_codon.
+
 ```bash
+grep ENST00000342247 chr22_with_ERCC92.gtf | grep codon # returns 2 lines. 1 start codon, 1 stop codon
 ```
 
 ## VCF (Variant Call Format)
