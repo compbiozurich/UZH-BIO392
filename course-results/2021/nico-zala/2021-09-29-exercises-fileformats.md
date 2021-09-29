@@ -63,8 +63,49 @@ awk 'NR % 4 == 1 {print ">"$1}; NR % 4 == 2 {print $0}' SP1.fq > example.fa
 awk 'NR % 4 == 1' SP1.fq | wc -l
 awk 'NR % 2 == 1' example.fa | wc -l
 
-## Ex 15
+### Ex 15 SAM format
 
+curl -L https://github.com/samtools/samtools/raw/develop/examples/ex1.sam.gz \
+  > ex1.sam.gz
+
+gunzip ex1.sam.gz
+
+### Ex 16 BED format BED6 to BED3
+
+awk -v OFS='\t' '{print $1,$2,$3}' a.bed  
+
+```-v OFS='\t'``` specifies the output field separator: a tab (\t).
+
+### Ex 17 BED3 to BED6
+
+awk -v OFS='\t' '{print $1,$2,$3,"unspecified strand",0,"."}' recordsOutOfOrder.bed  
+
+### Ex 18 Add a nucleotide to the start and subtract a nucleotide to the end to all records, regardless of the strand, to the file
+
+awk -v OFS='\t' '{print $1,$2+1,$3-1,$4,$5,$6}' a.bed
+
+### Ex 19
+
+cat ~/course/soft/bedtools2/test/intersect/a.bed  
+cat ~/course/soft/bedtools2/test/intersect/b.bed  
+
+-> both files are BED6
+
+### Ex 20
+
+```bedtools intersect -a a.bed -b b.bed  
+
+**output:**  
+chr1    100     101     a2      2       -
+chr1    100     110     a2      2       -
+
+### Ex 15
+### Ex 15
+### Ex 15
+### Ex 15
+### Ex 15
+### Ex 15
+### Ex 15
 
 
 
