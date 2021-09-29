@@ -75,7 +75,26 @@ tar xzvf vcftools.tar.gz
 cd vcftools_0.1.13/
 make`  
   
-  
-``  
+check how many of the transposable elements in humans are covered by exon positions 
+transforme exons.bed to match chromo nomenclature of vcf file
+`sed 's/^chr//g' exons.bed > exons_nochr.bed`  
+`bedtools intersect -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf \
+  -b exons_nochr.bed > overlap.txt`  
+`wc -l overlap.txt`  
+
+are they in active or inactive regions
+`curl -O https://s3.amazonaws.com/bedtools-tutorials/web/hesc.chromHmm.bed`  
+`sed "s/^chr//g" hesc.chromHmm.bed > chromHmm.bed`  
+`bedtools intersect -a chromHmm.bed -b CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf > chrom_state_intersect.txt`  
+`awk '{print $4}' chrom_state_intersect.txt | sort | uniq -c | sort -nr`  
+
+
+
+
+
+
+
+
+
 
 
