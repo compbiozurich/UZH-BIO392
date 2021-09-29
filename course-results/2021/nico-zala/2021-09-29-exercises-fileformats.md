@@ -154,16 +154,38 @@ find ~/course/soft/vcftools_0.1.13 -name "*vcf*" -type f
 alias vcftools='~/course/soft/vcftools_0.1.13/bin/vcftools'
 vcftools
 
-### Ex 3
+### Ex 32
+
+vcftools --vcf ~/course/soft/vcftools_0.1.13/examples/merge-test-a.vcf
+
+## Project: mobile elements insertions in 1000genomes data
+
+### Ex 33+34
+
+load file: CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+and file: exons.bed
+
+--> check bedtools intersect
+--> Problem: the 2 files have not same annotation, for one resource `chromosome 1` is encoded as `chr1`, and `1` for the other 
+
+to harmonize the files, we need to remove the 'chr' from the exons.bed file:  
+
+awk -v OFS='\t' '{print substr($1,4) ,$2,$3,$4,$5,$6}' exons.bed > exons_nochr.bed  
+or  
+sed 's/^chr//g' exons.bed > exons_nochr.bed
+
+and then check for intersects and count them:
+
+bedtools intersect -b exons_nochr.bed -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf | wc -l
+--> 110 insertions overlapping exons
+
+wc -l CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+--> from total 3225 insertions  
+
+110/3225 = 3.4% --> only a small proportion of all insertions are in exones!  
 
 
-
-
-
-
-
-
-### Ex 15
+### Ex 
 
 
 
