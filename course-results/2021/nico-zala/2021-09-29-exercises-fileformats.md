@@ -131,7 +131,21 @@ grep ENST00000342247 chr22_with_ERCC92.gtf | grep "exon\s" | wc -l
 
 rep start_codon chr22_with_ERCC92.gtf |  wc -l; grep stop_codon chr22_with_ERCC92.gtf |  wc -l
 
-### Ex 28
+### Ex 28 VCF
+
+Install old version of VCFtools:  
+
+
+cd ~/course/soft/
+
+curl -L https://sourceforge.net/projects/vcftools/files/vcftools_0.1.13.tar.gz/download > \
+   vcftools.tar.gz
+
+tar xzvf vcftools.tar.gz
+
+cd vcftools_0.1.13/
+
+make```
 
 ### Ex 29
 
