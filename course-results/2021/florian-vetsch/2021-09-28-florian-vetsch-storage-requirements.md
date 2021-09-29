@@ -13,10 +13,12 @@ WGS would then be approx 50 CHF per year as well, which is very odd as **FASTA**
 ### Cost in CHF per 1 genome(30x)/exome(90x) per year
 |  | WES| WGS|
 |--------|--------|-----------|
-| FASTA | no reliable source | no reliable source |
+| FASTA | 3% of WGS | no reliable source* |
 | SAM | 6 | 200 |
 | BAM | 1.50 | 50 |
-| VCF | 1.50 | 50 |
+| VCF | 1.50 | 50 |  
 
+*but certainly most expensive  
+  
 Of course this are all very unprecise approximations that are only meant to give a relation for the prices!
 
