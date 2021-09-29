@@ -176,10 +176,10 @@ sed 's/^chr//g' exons.bed > exons_nochr.bed
 
 and then check for intersects and count them:
 
-bedtools intersect -b exons_nochr.bed -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf | wc -l
+`bedtools intersect -b exons_nochr.bed -a CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf | wc -l`  
 --> 110 insertions overlapping exons
 
-wc -l CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf
+`wc -l CEU.low_coverage.2010_10.MobileElementInsertions.sites.vcf  
 --> from total 3225 insertions  
 
 110/3225 = 3.4% --> only a small proportion of all insertions are in exones!  
