@@ -6,8 +6,8 @@
 * It encodes part of a surface glycoprotein.
 
 # Exercise Uniprot:
-* Uniprot ID: P0DTC2.
-* The sequence comes from a Spike glycoprotein.
-* This sequence belongs to SARS-CoV-2.
-* Attaches the virion to the cell membrane by interacting with host receptor, initiating the infection. Binding to human ACE2 receptor and internalization of the virus into the endosomes of the host cell induces conformational changes in the Spike glycoprotein.
-* 
+* Uniprot ID: P01116.	
+* The sequence comes from a GTPase KRas.
+* This sequence belongs to Homo sapiens (Human).
+* Ras proteins bind GDP/GTP and possess intrinsic GTPase activity. Plays an important role in the regulation of cell proliferation. Plays a role in promoting oncogenic events by inducing transcriptional silencing of tumor suppressor genes (TSGs) in colorectal cancer (CRC) cells in a ZNF304-dependent manner.
+* Variant associated with acute leukemia in this protein: Natural variantiVAR_034601.
