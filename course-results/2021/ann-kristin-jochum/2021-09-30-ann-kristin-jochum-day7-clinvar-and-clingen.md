@@ -20,10 +20,10 @@
 ### [Relational list using ClinGen](https://clinicalgenome.org/)
 |Gene|Gene name|Chromosomal location|Gene product|Disease|
 |----|---------|--------------------|------------|-------|
-|CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|
-|CYBB|		|		| 		|		 |
-|HJV|		|		|		|		|
-|CDKN2A|		|		|		|		|
-|KRAS|		|		|		|		|
-|TP53|		|		|		|		|
-|		|		|		|		|Fragile X syndrome|
+|CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|cystic fibrosis|
+|CYBB|cytochrome b-245 beta chain|Xp21.1-p11.4|component of the membrane-bound oxidase of phagocytes that generates superoxide|x-linked chronic granulomatous disease|
+|HJV|hemojuvelin|1q21.1|bone morphogenetic protein (BMP) coreceptor|hemochromatosis type 2A|
+|CDKN2A|cyclin dependent kinase inhibitor 2A|9p21.3|negative regulator of the proliferation of normal cells by interacting strongly with CDK4 and CDK6|melanoma-pancreatic cancer syndrome|
+|KRAS|Kirsten rat sarcoma virus|12p12.1|GTPase, regulation of cell differentiation|Noonan syndrome|
+|TP53|tumor protein p53|17p13.1|tumor suppressor, induces growth arrest or apoptosis depending on the physiological circumstances and cell type|Li-Fraumeni syndrome 1|
+|FMR1|fragile X mental retardation 1|Xq27.3|multifunctional polyribosome-associated RNA-binding protein that plays a central role in neuronal development and synaptic plasticity|Fragile X syndrome|
