@@ -50,7 +50,7 @@ tion of low-coverage whole-genome sequencing, deep exome sequencing, and dense m
   
 * NGS has lead to exponential increase in the discovery of smaller structural-variation events
 * however some global discovery biases remain (some ethnicities better covered then others)
-* HQ de novo assembly of human genomes needed to get full picture of all classes of structural variation
+* HQ de novo assembly of human genomes needed to get full picture of all classes of structural variation (beyond reach of current tech, parallel sequencing of long fragments needed for reasonable cost)
 
 **Copy number variation (CNV)**:  
 Phenomenon in which sections of the genome are **repeated and the number of repeats in the genome varies between individuals.**  
