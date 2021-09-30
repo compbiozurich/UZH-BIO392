@@ -16,5 +16,7 @@
 * **Most possible manually reviewed entry**: 	P01116
 * **Protein**: GTPase KRas
 * **Organism**: Homo sapiens
-* **Function of the protein**: Ras proteins bind GDP/GTP and possess intrinsic GTPase activity, plays an important role in the regulation of cell proliferation, plays a role in promoting oncogenic events by inducing transcriptional silencing of tumor suppressor genes (TSGs) in colorectal cancer (CRC) cells in a ZNF304-dependent manner.
-* **Variant associated with acute leukemia**: Natural variant VAR_034601; G → GG in AML; expression in 3T3 cell causes cellular transformation; expression in COS cells activates the Ras-MAPK signaling pathway; lower GTPase activity; faster GDP dissociation rate.
+* **Function of the protein**: Ras proteins bind GDP/GTP and possess intrinsic GTPase activity => play an important role in the regulation of cell proliferation.
+* **Variant associated with acute leukemia**: Natural variant VAR_034601; G → GG in position 10.
+
+
