@@ -19,8 +19,8 @@ Huntington disease |
 |Disease|Gene|Variants|
 |-------|----|--------|
 |Hemochromatosis|HJV|NM_213653.3:c.959G>T|
-|Thalassemia|		|		|
-|Haemophilia|		|		|
+|Thalassemia|	HBB	|	NM_000518.5:c.371_378del	|
+|Haemophilia|	VWF	|	NM_000552.4:c.3922C>T	|
 |Cystic Fibrosis|		|		|
 |Tay sachs disease|		|		|
 |Fragile X syndrome|		|		|
