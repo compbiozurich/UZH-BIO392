@@ -19,6 +19,6 @@ Gene             | Gene name                  | Chromosomal location        | Ge
 ---------------- | ---------------------------| ----------------------------| -----------------------|   --------------
 CYBB             | cytochrome b-245 beta chain| Xp21.1-p11.4                |  Critical component of the membrane-bound oxidase of phagocytes that generates superoxide.  | granulomatous disease, chronic, X-linked
 HJV              |     hemojuvelin BMP co-receptor         | 1q21.1|Acts as a bone morphogenetic protein (BMP) coreceptor. | hemochromatosis type 2A
-CDKN2A           | VWF          | NC_000012.11:g.6127833T>C  | 
+CDKN2A           |     cyclin dependent kinase inhibitor 2A          |     9p21.3  | Acts as a negative regulator of the proliferation of normal cells by interacting strongly with CDK4 and CDK6. | melanoma-pancreatic cancer syndrome 
 Kras             |NPHP4         | NC_000001.11:g.5862951A>C  |
 TP53             |GM2A          |NC_000005.10:g.151253113T>C |
