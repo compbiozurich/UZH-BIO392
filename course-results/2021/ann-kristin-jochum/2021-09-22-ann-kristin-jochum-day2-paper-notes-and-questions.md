@@ -46,3 +46,24 @@
 ## *A global reference for human genetic variation* by The 1000 Genomes Project Consortium
 
 ### Notes
+* Goal of 1'000 Genomes Project: comprehensive description of common human genetic variants by applying WGS to a diverse set of individuals from multiple population
+* 2'504 individuals from 26 populations (AFR, EAS, EUR, SAS, AMR), over 88 mio variants (84.7 mio SNPs, 3.6 mio short indels, 60'000 SV)
+* To control false discovery rate: variant quality score threshold was defined using high depth (>30x) PCR-free sequence data generated for one individual per population; for SVs, additional orthogonal methods were used for confirmation
+  * SNP and indels: FDR < 5%
+  * deletions, duplications and multi-allelic copy-number variants, Alu and L1 insertions: FDR < 5%
+  * inversions, SVA composite retrotransposon insertions and NUMTs: FDR < 20%
+* **Typical genome**:
+  * differs from reference human genome at 4.1 million to 5.0 million sites
+  * over 99.9% of variants consist of SNPs and short indels, 2'100 - 2'500 SV that affect more bases (20 mio bases of sequence)
+* Individuals from African ancestry populations show greates numbers of variant sites
+* Majority of variants in the data set are rare, but majority of variants observed in a single genome are common
+* 2'000 variants per genome associated with complex traits through genome-wide association studies and 24 - 30 variants per genome implicated in rare disease through ClinVar
+* 86% of variants were restricted to a single continental group
+* Results show a shared demographic history for all humans beyond 150'000 to 200'000 years ago; European, Asian and American populations shared strong and sustained bottlenecks, all with N < 1'500, between 15'000 and 20'000 years ago; in African populations N > 4'250
+* 762'000 variants are rare (frequency < 0.5%) within global sample but much more common (frequency > 5%) in at least one population
+* Analysis of the small set of variants with large frequency differences between closely related populations can identify targets of recent localized adaption
+* **Advantages of 1'000 Genomes Project**: broad representation of human genetic variation; project incorporates multiple analysis strategies, callsets and variant types; project samples and data can be shared broadly
+
+### Questions
+
+
