@@ -17,9 +17,9 @@
 |Gene|Gene name|Chromosomal location|Gene product|Disease|
 |----|---------|--------------------|------------|-------|
 |CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|
-|CYBB|		|		| 		|		 |
-|HJV|		|		|		|		|
-|CDKN2A|		|		|		|		|
-|KRAS|		|		|		|		|
-|TP53|		|		|		|		|
-|		|		|		|		|Fragile X syndrome|
+|CYBB|cytochrome b-245 beta chain|Xp21.1-p11.4|component of the membrane-bound oxidase of phagocytes that generates superoxide|Chronic Granulomatous Disease|
+|HJV|hemojuvelin BMP co-receptor|1q21.1|bone morphogenetic protein (BMP) coreceptor, regulates iron homeostasis|Juvenile Haemochromatosis (JH)|
+|CDKN2A|cyclin dependent kinase inhibitor 2A|9p21.3|negative regulator of the proliferation of normal cells by interacting strongly with CDK4 and CDK6|melanoma-pancreatic cancer syndrome|
+|KRAS|KRAS proto-oncogene, GTPase|12p12.1|bind GDP/GTP and possess intrinsic GTPase activity, important role in the regulation of cell proliferation|Noonan syndrome|
+|TP53|tumor protein p53|17p13.1|tumor suppressor in many tumor types, induces growth arrest or apoptosis of cells|Li-Fraumeni syndrome 1|
+|FMR1|FMRP translational regulator 1|Xq27.3|Multifunctional polyribosome-associated RNA-binding protein, plays a central role in neuronal development and synaptic plasticity|Fragile X syndrome|
