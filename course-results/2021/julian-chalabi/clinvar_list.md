@@ -1,5 +1,5 @@
 
-#Exercise ClinVar
+## Exercise ClinVar
 
 
 Disease          | Gene         | Variants                    |
