@@ -20,5 +20,5 @@ Gene             | Gene name                  | Chromosomal location        | Ge
 CYBB             | cytochrome b-245 beta chain| Xp21.1-p11.4                |  Critical component of the membrane-bound oxidase of phagocytes that generates superoxide.  | granulomatous disease, chronic, X-linked
 HJV              |     hemojuvelin BMP co-receptor         | 1q21.1|Acts as a bone morphogenetic protein (BMP) coreceptor. | hemochromatosis type 2A
 CDKN2A           |     cyclin dependent kinase inhibitor 2A          |     9p21.3  | Acts as a negative regulator of the proliferation of normal cells by interacting strongly with CDK4 and CDK6. | melanoma-pancreatic cancer syndrome 
-Kras             |NPHP4         | NC_000001.11:g.5862951A>C  |
+Kras             |    KRAS proto-oncogene, GTPase       |     12p12.1  |Ras proteins bind GDP/GTP and possess intrinsic GTPase activity (PubMed:20949621). Plays an important role in the regulation of cell proliferation (PubMed:23698361, PubMed:22711838). Plays a role in promoting oncogenic events by inducing transcriptional silencing of tumor suppressor genes (TSGs) in colorectal cancer (CRC) cells in a ZNF304-dependent manner (PubMed:24623306). | Noonan syndrome,  cardiofaciocutaneous syndrome,  Costello syndrome 
 TP53             |GM2A          |NC_000005.10:g.151253113T>C |
