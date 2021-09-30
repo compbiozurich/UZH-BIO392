@@ -5,7 +5,7 @@
 |Disease|Gene|Variants|
 |-------|----|--------|
 |Hemochromatosis|HJV|NM_213653.3:c.959G>T|
-|Thalassemia|		|		|
+|Thalassemia|	HBB, LOC107133510, LOC110006319|NC_000011.9:g.5246486_5247105delinsTCTACTT|
 |Haemophilia|		|		|
 |Cystic Fibrosis|		|		|
 |Tay sachs disease|		|		|
