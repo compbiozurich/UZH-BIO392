@@ -1,5 +1,5 @@
 
-##Exercise ClinVar
+#Exercise ClinVar
 
 
 Disease          | Gene         | Variants                    |
@@ -11,8 +11,3 @@ Cystic Fibrosis  |NPHP4         | NC_000001.11:g.5862951A>C  |
 Tay Sachs Disease|GM2A          |NC_000005.10:g.151253113T>C |
 Fragile X Syndr. |
 Huntington's D.  |HTT           |NG_009378.1:g.5197CAG(36_39)|
-
-First Header | Second Header
------------- | -------------
-Content cell 1 | Content cell 2
-Content column 1 | Content column 2
