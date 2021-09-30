@@ -31,7 +31,7 @@ Huntington disease |
 |Gene|Gene name|Chromosomal location|Gene product|Disease|
 |----|---------|--------------------|------------|-------|
 |CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|
-|CYBB|		|		| 		|		 |
+|CYBB|	cytochrome b-245 beta chain	|	Xp21.1-p11.4	| 	component of the membrane-bound oxidase	|		 |
 |HJV|		|		|		|		|
 |CDKN2A|		|		|		|		|
 |KRAS|		|		|		|		|
