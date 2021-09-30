@@ -15,9 +15,9 @@ Huntington's D.  |HTT           |NG_009378.1:g.5197CAG(36_39)|
 
 ## Exercise ClinGen
 
-Gene             | Gene name    | Chromosomal location        | Gene product | Disease      |
----------------- | -------------| ---------------------------- -------------- ---------------
-CYBB             | cytochrome b-245 beta chain          |     Xp21.1-p11.4 | Critical component of the membrane-bound oxidase of phagocytes that generates superoxide. | granulomatous disease, chronic, X-linked
+Gene             | Gene name                  | Chromosomal location        | Gene product           | Disease      |
+---------------- | ---------------------------| ---------------------------- -----------------------   --------------
+CYBB             | cytochrome b-245 beta chain| Xp21.1-p11.4                |  generates superoxide. | granulomatous disease, chronic, X-linked
 HJV              | HJV          | NC_000001.10:g.145416661G>T|
 CDKN2A           | VWF          | NC_000012.11:g.6127833T>C  | 
 Kras             |NPHP4         | NC_000001.11:g.5862951A>C  |
