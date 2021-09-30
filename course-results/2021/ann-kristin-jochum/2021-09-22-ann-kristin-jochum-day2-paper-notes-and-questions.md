@@ -22,7 +22,7 @@
   * Initial efforts: microbial rRNA or tRNA, or genomes of single-stranded RNA bacteriophages => only composition
   * Combining techniques that measure composition with selective ribonuclease treatments to produce fully and partially degraded RNA fragments => first whole nucleic acid sequence of alanine tRNA from *Saccharomyces cerevisiae*
   * Sanger and colleagues developed technique based on detection of radiolabelled partial-digestion fragments after two-dimensional fractionation
-  * Coulson and Sanger developed "plus and minus" system (DNA polymerase synthesizes from a primer with radiolabelled nucleotides, either with only a single type of nucleotide or with the other three)
+  * Coulson and Sanger developed "plus and minus" system (DNA polymerase synthesizes from a primer with radiolabelled nucleotides, either with only a single type of nucleotide or with the other three
   * Maxam and Walter developed a chemical cleavage technique (chemicals break chain at specific bases)
   * **Breakthrough in 1977**: Sanger's "chain-termination" or dideoxy technique => ddNTPs terminate synthesis at all possible lengths => electrophoresis
   * Length of reads from first-generation DNA sequencing machines: slightly less than one kilobase => instead "shotgun sequencing" and assembly into one sequence
@@ -42,3 +42,7 @@
 
 ### Questions
 * For second-generation sequencing, how was the sequence of the oligonucleotides for the bridge amplification decided?
+
+## *A global reference for human genetic variation* by The 1000 Genomes Project Consortium
+
+### Notes
