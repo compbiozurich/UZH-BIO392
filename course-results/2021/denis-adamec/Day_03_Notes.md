@@ -1,8 +1,8 @@
-# Day 03 - File Formats & UNIX 
+# Day 03 - File Formats & UNIX
 
 ## Variant Calling Flow
 
-* 
+*
 *
 *
 *
@@ -33,7 +33,7 @@
 
 #### Reproducibility
 
-* Commands like UNIX have to be used, since manual spreadsheet editing (such as excel) is not reproducible 
+* Commands like UNIX have to be used, since manual spreadsheet editing (such as excel) is not reproducible
 * Use scripts
 * Use data standards
 * Using control-version systems
@@ -92,12 +92,12 @@ Transforming
 * In UNIX: `awk 'NR % 4 == 2' file.txt` will print all the lines that we want
 * Transforming FastQ into Fasta: `awk 'NR % 4 == 1 {print ">"$1}; NR % 2 {print}' file.fasta`
 
-#### SAM (Sequence Alignment Map)
+#### SAM (Sequence Alignment Map) - Depreceated, everybody uses BAM
 
 1. Chromosome Number, Starting Coordinate, etc.
 2. Locus
 3. CIGAR String i.e. 20M1D2M - 40 bases continuously match, 1 deletion from reference, 2 base match
-4. Some Flags (which strand the mapping is on, whether mapping is global or local, what kind of error & how many, etc.) 
+4. Some Flags (which strand the mapping is on, whether mapping is global or local, what kind of error & how many, etc.)
 
 <p align="center">
 <img src="https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/denis-adamec/images/SAM_Structure.png" width="800">
@@ -109,7 +109,7 @@ Analogue to SAM file, but binary & compressed.
 
 #### BED (Browser Extensible Data)
 
-BED files are for storing the *features* of reads by coordinates, not their actual sequence, for example: 
+BED files are for storing the *features* of reads by coordinates, not their actual sequence, for example:
 * RNA-seq: Expression level per gene
 * Chiq-seq: Binding per bin
 * Variant calling: Varian detection
@@ -138,10 +138,10 @@ BED: 6 tab seperated columns: Chromosome | Start | End | Name | Score | Strand
 * Specifies the chromosome (once per file), the nucleotide and the score pertaining to that specific nucleotide
 * If a score applies to multiple nucleotides, a "span" can be added in the first line (e.g. `span=5`)
 * If the score should change after a certain amount of nucleotides, a "step" can be added in the first line (e.g. `step=100`)
-* Example: `step=100 span=5` 100-104 will be the same, 200-204 will be the same, etc. 
+* Example: `step=100 span=5` 100-104 will be the same, 200-204 will be the same, etc.
 * Scores that are saved in Wig files are usually representet as very continuous graphs in the UCSC (e.g. conservation values)
 
-#### VCF 
+#### VCF
 
 * Standard file format for storing variation data
 * Unambiguos, scalable and flexble
@@ -180,8 +180,11 @@ BED: 6 tab seperated columns: Chromosome | Start | End | Name | Score | Strand
 * `head file.txt` shows first 10 lines of file
 * `tail file.txt` shows last 10 lines of file
 * `grep` search for strings in files
-* `wc` count words 
+* `wc` count words
 * `print $2` only prints the second column
 * `sed 's/X/Y/g'` modify all X to Y (g at the end means "for all instances") e.g. echo 'Hello World' | sed 's/Hello/Hi/g' -> Hi all
 * `awk 'NR % 4 == 2' file.txt`  Gives every fourth line starting with the second line
 * `awk 'NR % 4 == 1 {print ">"$1}; NR % 2 {print}' file.fasta` Transforms FastQ into Fasta
+
+
+Test
