@@ -49,9 +49,9 @@ pgxFreqplot(freq, chrom = 21)
 ```
 
 
-There is a loss in 1p, 3p, 3q, 4, 4q, 9p, 9q, 13p and a gain in 1q, 2p, 2q, 5q (19p, 19q)
-[Literture](https://pubmed.ncbi.nlm.nih.gov/33435319/) finds gains in chromosomes 15q, 10q, 14q and 22q and loss in 4q. I do not find this exactly.
-Differetn [Paper](https://academic.oup.com/jcem/article/88/4/1866/2845562?login=true), 4 years later, finds deletion in 1p, 3q, 4, 9q, 13p and 22q and amplifications in 19, which, I noticed, I find to.
-That is quite that what I find.
-This [study](https://academic.oup.com/jcem/article/99/6/E1104/2537354?login=true) found losses in 1q, 2q and 3q and gians in 2p, 7q, 11q, which I too find.
-So in general, these findings are accepted in the latest literature
+#There is a loss in 1p, 3p, 3q, 4, 4q, 9p, 9q, 13p and a gain in 1q, 2p, 2q, 5q (19p, 19q)
+#[Literture](https://pubmed.ncbi.nlm.nih.gov/33435319/) finds gains in chromosomes 15q, 10q, 14q and 22q and loss in 4q. I do not find this exactly.
+#Differetn [Paper](https://academic.oup.com/jcem/article/88/4/1866/2845562?login=true), 4 years later, finds deletion in 1p, 3q, 4, 9q, 13p and 22q and amplifications in 19, #which, I noticed, I find to.
+#That is quite that what I find.
+#This [study](https://academic.oup.com/jcem/article/99/6/E1104/2537354?login=true) found losses in 1q, 2q and 3q and gians in 2p, 7q, 11q, which I too find.
+#So in general, these findings are accepted in the latest literature
