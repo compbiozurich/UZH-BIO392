@@ -32,4 +32,4 @@ They could be missing from genomes from healthy people there for they need to be
 Some of them are age-related phenotypes, Rh-neg bloos type, susceptibility to MS, autoimmune disease and placental and fetal wellbeing.
 
 ## If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV?
-Us it as a refference to see in what context such a CNV may relate with a disease.
+Us it as a reference to see in what context such a CNV may relate with a disease.
