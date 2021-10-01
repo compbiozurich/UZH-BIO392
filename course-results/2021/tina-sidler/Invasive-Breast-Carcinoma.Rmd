@@ -1,0 +1,73 @@
+---
+title: "CNV-freq-Invasive-Breast-Carcinoma"
+author: "Tina Sidler"
+date: "10/1/2021"
+output: html_document
+---
+
+````{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Step 1: Install package
+
+```{r}
+if (!require(devtools)){
+    install.packages('devtools')
+}
+devtools::install_github('progenetix/pgxRpi')
+library(pgxRpi)
+```
+
+## Step2: Search esophageal adenocarcinoma NCIt code
+
+## Step3: Access the CNV frequency data from samples with esophageal adenocarcinoma
+
+```{r}
+freq <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C9245',
+                  codematches=T)
+```
+
+### The retreived data is an object contaning two slots `meta` and `data`.
+
+The `meta` slot looks like this:
+
+```{r}
+freq$meta
+```
+
+The `data` slot includes two matrices.
+
+```{r}
+names(freq$data)
+```
+
+In this case, these two matrices are the same.
+
+```{r}
+head(freq$data$`NCIT:C9245`)
+```
+
+```{r}
+dim(freq$data$`NCIT:C9245`)
+```
+
+## Step4: Visualize data
+
+### By genome
+
+```{r}
+pgxFreqplot(freq)
+```
+
+### By chromosome
+
+```{r}
+pgxFreqplot(freq,chrom = 21)
+```
+
+## Step5: Analyse the data
+
+According the plot, we can see frequenct gains on chromosome 1q, 8q, 20q and frequenct losses on chromosome 1p, 8p, 13q, 16q, 17p, 18p, 18q, 19p, 19q. 
+
+There is a literature where the findings are consistent with the majority of mine. Here is the paper-link: https://elifesciences.org/articles/51480

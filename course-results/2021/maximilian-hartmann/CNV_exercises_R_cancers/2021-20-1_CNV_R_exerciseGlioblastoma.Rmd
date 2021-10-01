@@ -1,0 +1,40 @@
+---
+title: "2021-20-1_CNV_R_exercise2"
+author: "Maximilian Hartmann"
+date: "1 10 2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list = ls())
+if (!require(devtools)){
+    install.packages('devtools')
+}
+devtools::install_github('progenetix/pgxRpi')
+library(pgxRpi)
+```
+
+
+#Glioblastoma (NCIT:C3058)
+```{r}
+freq <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C3058',
+                  codematches=T)
+```
+
+```{r}
+pgxFreqplot(freq)
+```
+
+```{r}
+pgxFreqplot(freq, chrom = 9)
+```
+
+# I find gians in 7, 19, 20
+# and losses in 6, 10 and 9p
+# that is similar to what was found by [McNulty et. al 2019](https://www.sciencedirect.com/science/article/pii/S0046817718304970))
+
+#

@@ -1,0 +1,39 @@
+---
+title: "2021-20-1_CNV_R_exercise2"
+author: "Maximilian Hartmann"
+date: "1 10 2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list = ls())
+if (!require(devtools)){
+    install.packages('devtools')
+}
+devtools::install_github('progenetix/pgxRpi')
+library(pgxRpi)
+```
+
+
+#Lung non small cell carcinoma C2926
+```{r}
+freq <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C2926',
+                  codematches=T)
+```
+
+```{r}
+pgxFreqplot(freq)
+```
+
+```{r}
+pgxFreqplot(freq, chrom = 14)
+```
+
+# I find losses at: 3p, 4, 5q, 6q 8q, 9, 10, 13q, 15p, 17q, 19q, 21q
+# Gains at: 1q, 3q, 5q, 7, 8q, 14, 20, X
+# These findings generally are accepted by [this paper](https://www.sciencedirect.com/science/article/pii/S1556086415322450)
+
