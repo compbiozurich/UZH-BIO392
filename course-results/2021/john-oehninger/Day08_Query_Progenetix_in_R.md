@@ -10,5 +10,5 @@ With this I then querried in
 </p>
 
 According to the plot, we can see:
-* Frequency gains: p7, q7
-* Frequency losses: 
+* Frequency gains: q1, p5, p6, p7, q7, q8, p20, q20, q22
+* Frequency losses: p4, q4, p9, q9, p10, q10, Y
