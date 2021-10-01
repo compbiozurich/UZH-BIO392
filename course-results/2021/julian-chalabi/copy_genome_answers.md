@@ -9,7 +9,7 @@ Answer: Because clinicians and researchers need to discriminate between benign v
 Answer: Currently, it's 50bp to 3 Mb. 
 
 # What are the primary approaches used for CNV detection? And what are the advantages and limitations 
-## for these technologies? 
+# for these technologies? 
 
 Answer: Microarrays and Next-Generation-Sequencing are the most commong approaches for CNV detection. Microarrays with large clones have been used in the past, but now CGH-arrays [comparative genomic hybridization arrays] and SNP-based arrays are being used. 
 Arrays are very useful for quantitative variants, but miss small variants. Duplications are more likely to be missed by SNP-based arrays and NGS-methods, but not by array CGH. NGS can detect smaller variants, has high sensitivity and high accuracy, while array-based approaches have lower resolution. Small differences in copy numbers are more likely to be caught on by CGH-array-based methods.
@@ -41,4 +41,9 @@ In the paper they find, that the Exons of non-coding genes contributed the most 
 # homozygous deleted. What are the functions of these genes? And why did the authors say that they seem 
 # to be non-essential?
 
-Answer: 
+Answer: They seem to be non-essential because they were seemingly missing from healthy individuals. They may be related to late-stage offset of certain phenotypes associated with diseases, among them age-related phenotypes, delayed AIDS from HIV-1 infection, autoimmune disease, placental function and fetal wellbeing etc. 
+
+# If you are a medical doctor,  how do you use this map as a tool to assess the clinical importance of a 
+# CNV?
+
+Answer: Are found CNVs present in the CNV map? Are they overlapping with medically relevant genes? Comparing inclusive and stringent map to detect certain age-related phenotypes and their mechanisms and causes in the genome.
