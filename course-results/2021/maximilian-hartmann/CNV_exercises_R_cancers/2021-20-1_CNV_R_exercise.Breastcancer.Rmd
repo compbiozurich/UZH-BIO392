@@ -1,0 +1,38 @@
+---
+title: "2021-20-1_CNV_R_exercise2"
+author: "Maximilian Hartmann"
+date: "1 10 2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list = ls())
+if (!require(devtools)){
+    install.packages('devtools')
+}
+devtools::install_github('progenetix/pgxRpi')
+library(pgxRpi)
+```
+
+
+#invasive breast carcinoma (NCIT:C9245)
+```{r}
+freq <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C9245',
+                  codematches=T)
+```
+
+```{r}
+pgxFreqplot(freq)
+```
+
+```{r}
+pgxFreqplot(freq, chrom = 21)
+```
+
+# I find losses at: 1q, 4, 9, 10q, ~11, 13q, X, 19
+# And Gains at: 1p, 8p, 16q, 20
+# These findings are confirmed by #[literature](https://elifesciences.org/articles/51480)

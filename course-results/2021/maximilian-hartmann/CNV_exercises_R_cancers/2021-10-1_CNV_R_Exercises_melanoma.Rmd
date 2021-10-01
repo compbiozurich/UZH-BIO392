@@ -1,0 +1,39 @@
+---
+title: "2021-20-1_CNV_R_exercise2"
+author: "Maximilian Hartmann"
+date: "1 10 2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list = ls())
+if (!require(devtools)){
+    install.packages('devtools')
+}
+devtools::install_github('progenetix/pgxRpi')
+library(pgxRpi)
+```
+
+
+#Melanoma C3224
+```{r}
+freq <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C3224',
+                  codematches=T)
+```
+
+```{r}
+pgxFreqplot(freq)
+```
+
+```{r}
+pgxFreqplot(freq, chrom = 24)
+```
+
+# I find gains at: 2q, 6q, 7, 8q, 17q, 20, 22q
+# losses at: 4, 6q, 9, 10, 11, Y(?)
+# These finds are consistant with the majority of this [paper](https://onlinelibrary.wiley.com/doi/full/10.1111/pcmr.12436)
+
