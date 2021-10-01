@@ -1,0 +1,65 @@
+---
+title: "Copy-Number_Variation"
+author: "Vera Flueck"
+date: "30 9 2021"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Library
+```{r}
+library(pgxRpi)
+```
+
+# Glioblastoma (NCIT:C3058)
+```{r}
+freq1 <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C3058',
+                  codematches=T)
+
+pgxFreqplot(freq1)
+pgxFreqplot(freq1,chrom = 1)
+
+```
+The Glioblastoma Cancer shows abberations in copy number in Chromosome 7, Chromosome 19 and Chromosome 20 as a gain and in copy 9p, Chromosome 10, chromosome 13q, Chromosome 14q, Chromosome 21q as a loss. Chromosome 13, 14 and 15 show very little abberation in the p arm.
+
+
+# Invasive Breast Carcinoma (NCIT:C9245)
+```{r}
+freq2 <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C9245',
+                  codematches=T)
+pgxFreqplot(freq2)
+```
+The invasive breast cancer carsinoma shows CNVs in Chromosome 1 in the q arm, in Chromosome 8 in the q arm a copy number gain. In Chromosome 1 in the p arm, Chromosome 4, Chromosome 16q and Chromosome X a loss.
+
+
+# Lung Non-Small Cell Carcinoma (NCIT:C2926)
+```{r}
+freq3 <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C2926',
+                  codematches=T)
+pgxFreqplot(freq3)
+pgxFreqplot(freq3, chrom = 21)
+pgxFreqplot(freq3, chrom = 13)
+```
+The Lung non-small call carcinoma shows a lot of abberation in Chromosome 1, Chromosome 3p, Chromosome 5p, Chromosome 8p and q (loss and gain), and apperantly a complete loss of Chromosome 13p, 14p, 15p, 21p, 22p. Again here, Chromosome 13, 14 and 15 show again very little change in the p arm.
+
+# Colon Adenocarcinoma(NCIT:C4349)
+```{r}
+freq4 <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C4349',
+                  codematches=T)
+pgxFreqplot(freq4)
+```
+The colon adenocarcinoma shows abberations in Chromosome 4, 7, 8, 13, 18, 20. For Chromosome 14p, it could be that the data gathered is not enough or there are no probes detecting the 14p arm. For the q arm however, there seems to be a trend for a loss of an allel. Interesting is that in general the background noise in this Cancer is lower and the extremer abberations are more prominent.
+
+# Melanoma(NCIT:C3224)
+```{r}
+freq5 <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C3224',
+                  codematches=T)
+pgxFreqplot(freq5)
+```
+In the Melanoma especially Chromosomes 4, 7, 9 10, maybe 11, 13, 14, 15, 21 and 22 show trends of abnormal. Samples 13, 14, 15 all show very low aberation in the p arm, so the noise is cancelled out. The changes are more fluctuating, there are single positions within, which show stronger abberations.
+
