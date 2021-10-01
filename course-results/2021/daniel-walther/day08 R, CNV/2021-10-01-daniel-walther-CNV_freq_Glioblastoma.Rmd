@@ -1,9 +1,8 @@
 ---
-title: Copy Number Variation of a human Glioblastoma sample
-author: Daniel Walther
-date: 10/01/2021
-  output:
-  pdf_document: default
+title: "CNV of human Glioblastoma"
+author: "Daniel Walther"
+date: "10/01/2021"
+output: pdf_document
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -67,14 +66,10 @@ pgxFreqplot(freq)
 ### By chromosome
 
 ```{r}
-pgxFreqplot(freq, chrom = 7)
+par(mfrow = c(2, 2))
 pgxFreqplot(freq, chrom = 9)
-pgxFreqplot(freq, chrom = 10)
 pgxFreqplot(freq, chrom = 13)
 pgxFreqplot(freq, chrom = 14)
-pgxFreqplot(freq, chrom = 15)
-pgxFreqplot(freq, chrom = 19)
-pgxFreqplot(freq, chrom = 20)
 pgxFreqplot(freq, chrom = 22)
 ```
 
@@ -83,7 +78,7 @@ pgxFreqplot(freq, chrom = 22)
 According the plot, we can see frequency gains on chromosome 7p, 7q, 19p, 19q, 20p, 20q.
 and frequency losses on chromosome 9p, 10p, 10q, 13q, 14q, 15q, 17p, 18q, 22q.
 
-The threshold for noteworthyness was chosen at roughly 20% gain or loss respectively.
+The threshold for mentioning was arbitrarily chosen at roughly 20% gain or loss respectively (based on what sticks out in the genome visualization).
 
 On chromosomes 13p, 14p and 22p there is nearly no gain at all and maybe 1% loss. This could indicate deletion of the whole p-half (potentially even both parental copies) of these chromosomes.
 
