@@ -8,3 +8,7 @@ With this I then querried in
 <p align="center">
 <img src="https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/john-oehninger/Images/Melanoma_CNV_plot.png" width="700">
 </p>
+
+According to the plot, we can see:
+* Frequency gains: p7, q7
+* Frequency losses: 
