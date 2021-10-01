@@ -40,12 +40,24 @@ unique(coriell[,2])
 
 ### How to get a quick estimate of the values/how the values distribute?
 hist(coriell$Chromosome, breaks = 0:23)
+par(mfrow=c(3,4))
+for (chr in 1:23){
+  hist(coriell$Position[coriell$Chromosome==chr], 
+       main = paste('chromosome:',chr),
+       xlab = 'position (bp)')
+}
 
 ### What is the range of the positions? 
+for (chr in 1:23){
+  print(paste(paste('chromosome', chr, 'range:'),
+        paste(range(coriell$Position[coriell$Chromosome==chr]), collapse = '-')))
+}
 range(coriell$Position)
 
 ### Human genome has about 3 billion basepairs. Check that the "Position" value restarts from 1 for every chromosome?
+par(mfrow=c(1,1))
 plot(coriell$Position)
+plot(coriell$Chromosome, coriell$Position)
 
 ### Ideally we want the probes to be homogeneously distributed in each chromosome, check it for Chromosome 1
 hist(coriell$Position[coriell$Chromosome==1])
@@ -114,8 +126,8 @@ plot_chromosome(check_chr, Coriell13330)
 ### It's clear by eye that there should be a region in Chr 10 with CN =3
 ### How to find start end positions of the region?
 ### It turns out to be not an easy question.
-### Statisticians developed this R library DNAcopy, especially to solve this segmentatino problem.
-### The method is called "circular binary segmentation", here we just learn how to implement it.
+### Statisticians developed this R library DNAcopy, especially to solve this segmentation problem.
+### The method is called "circular binary segmentation", here we just learn how to run it.
 
 ### Create a ‘copy number array’ data object from the data table Coriell05296
 ### Hint: Use help() to understand how to use the function CNA().
