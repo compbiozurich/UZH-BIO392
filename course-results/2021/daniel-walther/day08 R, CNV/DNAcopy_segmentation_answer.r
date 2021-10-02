@@ -84,6 +84,9 @@ hist(Coriell05296[,4])
 hist(Coriell13330[,4])
 #### Most values are centered around 0 and mostly within +/-0.2. 
 
+#####
+# CNV, more interesting stuff
+
 ### Copy number (CN) of DNA should be normally 2 (father, mother), or abnormal 0, 1 with CN loss, or 3,4,5... with CN gain
 ### So what is this value?
 ### Google the concept "log ratio" for copy number data and calculate converting CN = 1, 2, 3 to log ratio
@@ -128,6 +131,9 @@ plot_chromosome(check_chr, Coriell13330)
 ### It turns out to be not an easy question.
 ### Statisticians developed this R library DNAcopy, especially to solve this segmentation problem.
 ### The method is called "circular binary segmentation", here we just learn how to run it.
+
+#####
+# Learning to run segmentation algorithm ~
 
 ### Create a ‘copy number array’ data object from the data table Coriell05296
 ### Hint: Use help() to understand how to use the function CNA().
