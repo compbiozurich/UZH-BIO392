@@ -11,10 +11,10 @@
 * Divides time into small intervals where the intervals aer defined by the unique times of failure (death)
 * We want to know the probability of a subject surviving the next time interval given that they have survived so far (based on conditional probabilities)
 * Late entry can also be dealt with
-* * Example: we have N=50: probability for a subject surviving = (1-1/50).
-* * After some time, an individual dies. New probablity for a subject surviving = (1-1/49).
-* * After some time, another individual dies. But in the mean time, also one individual was censored. New probability for a subject surviving = (1-1/47).
-* The probability of a subject surviving sinks with N.
+  * Example: we have N=50: probability for a subject surviving = (1-1/50).
+  * After some time, an individual dies. New probablity for a subject surviving = (1-1/49).
+  * After some time, another individual dies. But in the mean time, also one individual was censored. New probability for a subject surviving = (1-1/47).
+  * The probability of a subject surviving sinks with N.
 
 3. Achieve a principal understanding of TNM codes & write some "translations" (T1N1M0: small tumor with regional lymph node involvement and no detected distant metastases)
 
