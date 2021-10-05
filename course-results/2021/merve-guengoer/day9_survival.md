@@ -12,4 +12,4 @@ The NCI Thesaurus (NCIt), from the U.S. National Cancer Institute provides indiv
 ## **TNM**
 The TNM is a Classification for Clinical Cancer Stage Parameters and is the most widely used cancer staging system. The letters of TNM describe 3 features of the detected cancer in a patient; T refers to the size and extent of the main tumor, N refers to the the number / location of nearby lymph nodes that have cancer infiltration and M refers to whether the cancer has metastasized. The staging system is only used for solid tumors and not used for leukemias or lymphomas.
 
-![image](TNM.png)
+![image] (TNM.png)
