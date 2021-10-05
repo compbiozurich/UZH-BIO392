@@ -1,6 +1,8 @@
 ## Survival analysis
 
-<img src="https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/florian-vetsch/pictures/survival.png" width="750" height="500">  
+<img src="https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/florian-vetsch/pictures/survival.png" width="750" height="500">    
+
+[Video](https://www.youtube.com/watch?v=K-_sblQZ5rE)
 
 ## Cancer classification systems:
 * ICD-10:
