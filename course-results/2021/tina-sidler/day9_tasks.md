@@ -32,14 +32,17 @@ T: size and extent of the main tumor
 * T2: tumor > 3cm
 * T3: tumor can be any size, but near the airway or has spread to local areas such as the chest wall or diaphragm
 * T4: tumor can be any size, but is located in the airway, or has invaded local structures such as the heart or the esophagus
+
 N: number / location of nearby lymph nodes that have cancer infiltration
 * N0: no lymph nodes are affected
 * N1: tumor has spread to nearby nodes on the same side of the body
 * N2: tumor has spread to nodes further away but on the same side of the body
 * N3: cancer cells are present in lymph nodes on the other side of the chest from the tumor, or in nodes near the collarbone or neck muscles
+
 M: whether the cancer has metastasized
 * M0: no metastases are present
 * M1: tumor has spread (metastasized) to other regions of the body or the other lung
+
 Examples:
 * T3N2M1: small tumor in the chest with infected nodes further away (but on the same side if the body) and detected metastases.
 * T2N3M1: big tumor with infected nodes in the collarbone and detected metastases.
