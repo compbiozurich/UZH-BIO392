@@ -16,4 +16,7 @@ The TNM is a Classification for Clinical Cancer Stage Parameters and is the most
 
 
 # **Kaplan-Meier plots**
+The Kaplan-Meier method is the most common method to estimate survival based on conditional probabilities. It divides time into small intervals where the intervals are defined by the unique times of failure (death). In medical research, it is often used to measure the fraction of patients living for a certain amount of time after treatment. The method can also be used to see the effect of a treatment for patients of a disease when comparing them to a control group.
+
+![image](Explanation-of-Kaplan-Meier-drug-survival-curve-Kaplan-Meier-drug-survival-analysis.jpg)
 
