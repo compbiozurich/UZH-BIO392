@@ -4,6 +4,7 @@
 ### ICD-O3
 Stands for International Classification of Diseases for Oncology. It consits of two codes for the site (topography) and the
 histology (morphology) of a neoplasm. Mostly used by pathologists and not in clinics. One disadvantage is that there is no ontology and not really hirarchical. The second code is a advantages to have the location of the tumor. 
+
 *"Adenocarcinoma" of the "Sigmoid colon" --> 8140/3 C18.7*
 
 ### ICD-10 
