@@ -1,5 +1,7 @@
 ## Survival analysis
 
+<img src="https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/florian-vetsch/pictures/survival.png" width="750" height="500">  
+
 ## Cancer classification systems:
 * ICD-10:
   * often used in clinicals
@@ -18,4 +20,6 @@
 <img src="https://www.scientificanimations.com/wp-content/uploads/2017/10/TNM-Infographics.jpg" width="750" height="500">  
 
 Notes: T3,T4 are about location of tumor not size anymore; N1,N2,N3 are implying M1
+
+
 
