@@ -23,3 +23,4 @@ Is used for cancer staging. T stands forsize and extend of main tumor, N refers 
 
 ### Kaplan-Meier
 ![image](Kaplan.png)
+[Resource](https://www.researchgate.net/publication/281527709_Drug_Survival_Studies_in_DermatologyPrinciples_Purposes_and_Pitfalls)
