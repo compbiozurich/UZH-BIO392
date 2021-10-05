@@ -19,7 +19,8 @@
 * We want to know the probability of a subject surviving the next time interval given that they have survived so far (based on conditional probabilities).
 * Late entry can also be dealt with.
 * Censored: Individual is not part of the study anymore but for reasons other than failure (death), for example withdrawing from the study.
-  * Example: we have N=50: probability for a subject surviving = (1-1/50).
+* Example:
+  * We have N=50: probability for a subject surviving = (1-1/50).
   * After some time, an individual dies. New probablity for a subject surviving = (1-1/49).
   * After some time, another individual dies. But in the mean time, also one individual was censored. New probability for a subject surviving = (1-1/47).
   * The probability of a subject surviving sinks with N.
