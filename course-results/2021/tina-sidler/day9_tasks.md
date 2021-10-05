@@ -34,5 +34,5 @@ M: whether the cancer has metastasized
 * M0: no metastases are present
 * M1: tumor has spread (metastasized) to other regions of the body or the other lung
 Examples:
-* T3N2M1: 
-sgvdf
+* T3N2M1: small tumor in the chest with infected nodes further away (but on the same side if the body) and detected metastases.
+* T2N3M1: big tumor with infected nodes in the collarbone and detected metastases.
