@@ -1,9 +1,15 @@
 # Task 2: Survival analyses, cancer classifications, staging
 
 #### 1. Familiarize yourself with the different concepts behind different disease classification systems - what are there use, advantages, problems? E.g. ICD-10, ICD-O, NCIt (you can use Progenetix to explore e.g. ontology mapping)
-* ICD-10: Hierarchical. More clinical use than ICD-0. Not specialisied for oncology (wider use, includes also other diseases).
-* ICD-0: Used in cancer registries for coding the site (topography) and the histology (morphology) of neoplasms, usually obtained from a pathology report -> 2 codes per cancer. Mix of "biology" (i.e. tumor morphology) and "clinical" (i.e. tumor site). Widely accepted pathologists. Limited clinial use (better use ICD-10). No ontology & no real hierarchy). Many entities are difficult to remap if using only single code.
-* NCIt: Only 1 code per cancer (individual codes for site-specific occurrences of "biological" diagnoses. NCI's core referece terminology and biomedical ontology are collected in the NCI Thesaurus (NCIt). Truly hierarchical ontology -> empowers "logical OR" queries. Terms can have multiple occurrences in diagnostic tree. Soft aggregation possible due to assignment of code to different groupings (e.g. a type of colorectal adenocarcinoma with all colon tumors or with all adenocarcinomas)
+* ICD-10:
+  * Pros: Hierarchical. More clinical use than ICD-O.
+  * Cons: Not specialisied for oncology (wider use, includes also other diseases).
+* ICD-O: Used in cancer registries for coding the site (topography) and the histology (morphology) of neoplasms, usually obtained from a pathology report -> 2 codes per cancer. Mix of "biology" (i.e. tumor morphology) and "clinical" (i.e. tumor site).
+ * Pros: Widely accepeted by pathologists. Many entities are difficult to remap if using only single code.
+ * Cons: Limited clinial use (better use ICD-10). No ontology & no real hierarchy).
+* NCIt: Only 1 code per cancer (individual codes for site-specific occurrences of "biological" diagnoses). NCI's core referece terminology and biomedical ontology are collected in the NCI Thesaurus (NCIt).
+  * Pros: Truly hierarchical ontology -> empowers "logical OR" queries. Soft aggregation possible due to assignment of code to different groupings (e.g. a type of colorectal adenocarcinoma with all colon tumors or with all adenocarcinomas)
+  * Cons: Terms can have multiple occurrences in diagnostic tree. Many entities are difficult to remap if using only single code.
 
 
 #### 2. Learn to "read" Kaplan-Meier plots (preparation for explorative analyses later this week).
