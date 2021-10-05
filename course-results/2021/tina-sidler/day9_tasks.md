@@ -35,3 +35,4 @@ M: whether the cancer has metastasized
 * M1: tumor has spread (metastasized) to other regions of the body or the other lung
 Examples:
 * T3N2M1: 
+sgvdf
