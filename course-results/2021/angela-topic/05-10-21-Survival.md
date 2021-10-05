@@ -17,4 +17,9 @@ Used for Neoplasm classifications. There is a NCI Thesaurus where all reference 
 ### TNM
 Is used for cancer staging. T stands forsize and extend of main tumor, N refers to the number/location of neraby lymphnodes which are inflitrated and M stands for wether the tumor metastasized. (Not used for leukemia or lymphoma) There are also other staging system which can be used for that. On the picture below the different stages can be seen. To discribe a tumor thhis annotation can be used: T1N1M0 meaning small tumor with regional lymph node involvement and no detected distant metastases.
 
-(image)[TNM.png]
+![image](TNM.png)
+
+## Survival analysis
+
+### Kaplan-Meier
+
