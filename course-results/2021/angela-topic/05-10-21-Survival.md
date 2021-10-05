@@ -23,7 +23,7 @@ Is used for cancer staging. T stands forsize and extend of main tumor, N refers 
 
 ### Kaplan-Meier
 
-It captures the time until an event occures. It can also be used to compare two kinds of groups. Cencored: Participant leave the studie or ar excluded in the shown data. Step: The event occured to at percent of participants. 
+It captures the time until an event occures. It can also be used to compare two kinds of groups. Cencored: Participant leave the studie or ar excluded in the shown data. Step: The event occured. 
 
 ![image](Kaplan.png)
 
