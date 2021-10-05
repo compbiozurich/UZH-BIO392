@@ -28,6 +28,20 @@ Investigating not whole genomes of (un)healthy individuals but rather specific g
 ## 2. https://internal.baudisgroup.org/pdf/articles/2016-01-15___Heather_and_Chain__The-sequence-of-sequencers__Genomics.pdf 
 (8 pages)
 
+_'First-generation' sequencing method(s)_:
+`note to self: cut down this section into short descriptions of: 1st gen seq (Sanger); shotgun seq;`
+
+- Sanger: see other local repo. aka 'plus and minus' system. DNA polymerase is used. 'plus reaction': only have one nucleotide available - all strands end with that nucleotide. 'minus reaction': only have the other three nucleotides - all strands are elongated up to the point where the fourth nucleotide would follow.
+Used polyacrylamide to resolve DNA fragments.
+- Maxam-Gilbert: aka chemical cleavage technique.
+> ... radiolabelled DNA is treated with chemicals which break the chain at specific bases; after running on a polyacrylamide gel the length of cleaved fragments (and thus position of specific nucle- otides) can be determined and therefore sequence inferred (see Fig. 1, right). This was the first technique to be widely adopted, and thus _might be considered the real birth of ‘first-generation’DNA sequencing_.
+Also used polyacrylamide to resolve DNA fragments.
+
+_The next significant improvement_:
+-  1977 Sanger's ‘chain-termination’or dideoxy technique, aka **'Sanger method'**:
+  - p.2: "... strands of each possible length being produced, as the dideoxy nucleotides get randomly incorporated as the strand extends, halting further progression."
+  - 
+
 ## 3. uhttps://internal.baudisgroup.org/pdf/articles/2015-10-01___1000-Genomes-Consortium__A-global-reference-for-human-genetic-variation__Nature.pdf
 (20 pages)
 
