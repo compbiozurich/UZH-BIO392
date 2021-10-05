@@ -8,7 +8,7 @@ Papers 1-4 are yet to be read. Notes regarding the task will be added in this fi
 
 Four _general genome variation papers_ introducing the topic of this course:
 
-## 1. [Finding the Rare Pathogenic Variants in a Human Genome]https://internal.baudisgroup.org/pdf/articles/2017-05-09___Evans__Clinical_genome_sequencing__JAMA_comment.pdf
+## 1. [Finding the Rare Pathogenic Variants in a Human Genome](https://internal.baudisgroup.org/pdf/articles/2017-05-09___Evans__Clinical_genome_sequencing__JAMA_comment.pdf)
 (2 pages) Copyright 2017 American Medical Association. All rights reserved.
 
 ### Vocabulary ([deepl.com](https://www.deepl.com/translator#en/de/concomitantly%0Aameliorate) ):
@@ -25,10 +25,13 @@ Investigating not whole genomes of (un)healthy individuals but rather specific g
 -- This idea was written down before reading the section "Evidence Supporting Genome Sequencing in Healthy Individual". Thus, the idea of investigating penetrance as a more limiting issue is somewhat supported by this paper.
 - Although getting cheaper, gathering genomic data harbors data privacy issues and has many unpleasant implications, imo. (elaborate)
 
-## 2. https://internal.baudisgroup.org/pdf/articles/2016-01-15___Heather_and_Chain__The-sequence-of-sequencers__Genomics.pdf 
+## 2. [The sequence of sequencers: The history of sequencing DNA](https://internal.baudisgroup.org/pdf/articles/2016-01-15___Heather_and_Chain__The-sequence-of-sequencers__Genomics.pdf)
 (8 pages)
+First genereation sequencing methods:
+- Sanger sequencing: detection of radiolabelled partial-digestion fragments after two-dimensional fractionation, yielding ribosomal and transfer RNA sequences.
+- Maxam-Gilbert sequencing: 
 
-## 3. uhttps://internal.baudisgroup.org/pdf/articles/2015-10-01___1000-Genomes-Consortium__A-global-reference-for-human-genetic-variation__Nature.pdf
+## 3. https://internal.baudisgroup.org/pdf/articles/2015-10-01___1000-Genomes-Consortium__A-global-reference-for-human-genetic-variation__Nature.pdf
 (20 pages)
 
 ## 4. https://internal.baudisgroup.org/pdf/articles/2011-05-12___Eichler_et_al__Review_structural_variations_arrays__NatRevGen.pdf
