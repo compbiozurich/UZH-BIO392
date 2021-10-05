@@ -22,4 +22,4 @@ Is used for cancer staging. T stands forsize and extend of main tumor, N refers 
 ## Survival analysis
 
 ### Kaplan-Meier
-
+![image](Kaplan.png)
