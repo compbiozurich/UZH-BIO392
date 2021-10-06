@@ -21,6 +21,7 @@
 hg38 and the last patch of hg19.* 
 
 hg19 patch 13 (latest): total length = 3,101,788,170 bp
+
 hg38 patch 13 (latest): total length = 3,099,706,404 bp
 
 => The older patch has more total bp than the newest.
@@ -28,7 +29,9 @@ hg38 patch 13 (latest): total length = 3,099,706,404 bp
 *2. With your favorite gene, find out its position in hg38 and hg18.*
 
 => looked for BRCA1
+
 hg38 position: chr17:43044295-43125483
+
 hg18 position: chr17:38449840-38530994
 
 ### **Task 3: UCSC Genome Browser**
@@ -65,12 +68,15 @@ Downstream: WRAP53, RP11-199F11.2, EFNB3
 *Switch to hg19 and find TP53.*
 
 *1. What is the start and end positions?*
+
 7,571,720-7,590,868
 
 *2. Switch to zebrafish, can you find TP53?*
+
 Yes
 
 *3. Switch to Fruitfly, can you find TP53?*
+
 No.
 
 
@@ -85,4 +91,5 @@ chrX	130621262	154318397	0	0.0757	45 (hg38) => chrX	129755236	153546744	0	0.0757
 *2. Limitations of the liftover.*
 
 => We realized, that the UCSC liftover always fails in the conversion of 1 record, when we want to convert more than 1 sequence range at once (input as BED format).
+
 => One other limitation of this browser is, that it breaks the segment into smaller segments to map them to different locations
