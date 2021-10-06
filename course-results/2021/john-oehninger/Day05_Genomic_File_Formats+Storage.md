@@ -15,6 +15,10 @@ Stands for Sequence Alignment Map. Was developed by Hang Li and Bob Handsaker et
 * header
 * alignment section
 
+Here is an example of a SAM file with descriptions of all the variables.
+<p align="center">
+<img src="https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/john-oehninger/Images/sam_format_annotated_example.5108a0cd.jpg" width="700">
+</p>
 
 ### BAM:
 
