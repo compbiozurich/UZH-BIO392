@@ -83,3 +83,7 @@ There are transcript annotation resources such as GENCODE that capture such info
 > Examine the annotation for the TP53 mutations that we viewd earlier in IGV. at chr17:7674220
 
 We se an arginine to glutamine missense mutation at position 248. In our mutation records, 12 are annotated with missense and of these, ten PASS filters
+
+
+
+%Take home what the normals are, what is filtering, what are contamination etc.
