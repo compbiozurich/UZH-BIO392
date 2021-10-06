@@ -46,4 +46,4 @@ After loading the analysis results into IGV, I navigated to the TP53 locus at ch
 > Gray reads do not present any haplotype and are therefore aligned with the reference genome (in our case, hg38), while the pastel reads do.
 
 * How do you feel about this somatic call?
-> Really interested! Especially about all the available options, that IGV offers. Regarding the noticed variant C→T, the clear cut between our data (normal vs tumor) gives a good confidence.
+> I find it very interesting. IGV is a great GUI for browsing such data. Regarding the variant C→T mentioned above, the clear difference between our data (normal vs tumor) gives me good confidence in the validity of the assumption.
