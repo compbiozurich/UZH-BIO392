@@ -43,8 +43,23 @@ hg38 and the last patch of hg19.
   - 12 exons (7 coding exons)  
 
 * What the size of its longest exon? (roughly)
-
+  - 1'300 bp  
 
 * Find the three closest genes in upstream and downstream, respectively.
+  - upstream: ATP1B2, SHBG, SAT2
+  - downstream: WRAP53, DNAH2, EFNB3  
+
+> Liftover
+
+* Switch to hg19 and find TP53.
+* What is the start and end positions?
+  - from chr17:7,571,720 to ch17:7,590,868, length: 19149 bp 
+    
+* Switch to zebrafish, can you find TP53?
+  - yes on Chromsome 5, from chr5:24,086,227 to chr5:24,097,799, length: 11,573 bp  
+  
+* Switch to Fruitfly, can you find TP53?
+  - I found on chromosome 2R a TP53 homeolog, from chr2R:11,983,429 to chr2R:11,984,899, length: 1,471 bp  
+
 
 
