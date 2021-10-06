@@ -26,6 +26,7 @@ hg38 patch 13 (latest): total length = 3,099,706,404 bp
 => The older patch has more total bp than the newest.
 
 *2. With your favorite gene, find out its position in hg38 and hg18.*
+
 => looked for BRCA1
 hg38 position: chr17:43044295-43125483
 hg18 position: chr17:38449840-38530994
@@ -57,6 +58,7 @@ hg18 position: chr17:38449840-38530994
 *6. Find the three closest genes in upstream and downstream, respectively.*
 
 Upstream: SHBG, SAT2, ATP1B2
+
 Downstream: WRAP53, RP11-199F11.2, EFNB3
 
 ### **Task 4: UCSC Genome Browser**
