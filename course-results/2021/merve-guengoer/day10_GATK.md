@@ -7,9 +7,9 @@ First, we call somatic short mutations on the HCC1143 tumor sample and matched n
 Therefore we generate: 1) A raw unfiltered somatic callset restricted to the specified intervals list, 2) A BAM containing reassembled alignments and 3) A Mutect stats file.
 
 > Mutect2 uses:
-* the matched normal to additionally exclude rare germline variation not captured by the germline resource and individual-specific artifacts
-* a germline population resource towards evidence of alleles being germline
-* Mutect2 uses the PoN to catch additional sites of noise in sequencing data, like mapping artifacts or other somewhat random but systematic artifacts of sequencing and data processing
+>* the matched normal to additionally exclude rare germline variation not captured by the germline resource and individual-specific artifacts
+>* a germline population resource towards evidence of alleles being germline
+>* Mutect2 uses the PoN to catch additional sites of noise in sequencing data, like mapping artifacts or other somewhat random but systematic artifacts of sequencing and data processing
 
 > PoN: A panel of normals has a vital role that fills a gap between the matched normal and the population resource.
 
@@ -34,6 +34,7 @@ The tool FilterMutectCalls uses the annotations within the callset, and if provi
 ### **1.5 Review calls with IGV**
 Load analysis data and reference genome GRCh38 on IGV -> TP53 gene
 We see a C→T variant light up in red for the tumor but not the normal. What do you think is happening in 2_tumor_normal_m2.bam?
+
 => The coverage in this bam file is 40% C and 60% T 
 => the file consists of tumor and normal samples, therefore the C belongs to normal samples and the T belongs to tumor samples
 => All tumor cells have a C-T transition at this position
