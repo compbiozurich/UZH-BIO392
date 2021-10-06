@@ -26,7 +26,7 @@ Next level of complexity after FASTA file formats. Te Q stands for quality. This
 > !''((((+))%%%++)(%%%%).1*-+*''))*655CCF>>>>>>CCCCCCC65  
 
 * **FAST5**
-
+FAST5 format from Oxford Nanopore (ONT) is in fact HDF5, which is a very flexible data model, library, and file format for storing and managing data. It is able to store an unlimited variety of datatypes.
 
 
 ### Aligned Reads file formats
@@ -74,6 +74,7 @@ needed storing place would take 260'000 GB
 because of the compressed binary code, these file type is appropriate for storing called variants
 
 * **CRAM**
+CRAM is a compressed columnar file format for storing biological sequences aligned to a reference sequence. It is an efficient references-based alternative to SAM and BAM. It uses a genomic reference to describe differences between the aligned sequence fragments and the reference sequence, reducing storage costs.
 
 ### Genome Annotation file formats
 * **GFF**
