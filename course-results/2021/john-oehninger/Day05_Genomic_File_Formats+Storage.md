@@ -11,9 +11,9 @@ The human genome contains ~3 billion base pairs. When sequencing, one needs to c
 ## Types of formats
 
 ### SAM
-Stands for Sequence Alignment Map. Was developed by Hang Li and Bob Handsaker et al. It was developed when the 1000 Genomes Project wanted to move away from the MAQ mapper format and decided to design a new format. The format consists of:
-* header
-* alignment section
+Stands for **Sequence Alignment Map**. Was developed by Hang Li and Bob Handsaker et al. It was developed when the 1000 Genomes Project wanted to move away from the MAQ mapper format and decided to design a new format. The format consists of:
+* Header
+* Alignment section
 
 Here is an example of a SAM file with descriptions of all the variables.
 <p align="center">
@@ -21,7 +21,14 @@ Here is an example of a SAM file with descriptions of all the variables.
 </p>
 
 ### BAM:
+Is the compressed binary version of a SAM file that is used to represent aligned sequences up to 128 Mb. They consist of a:
+* Header
+* Alignment section
 
 ### VCF:
+Stands for **Variant Call Factor**. It is a widely used file format developed by the genomics scientific community that contains information about variants found at specific postisions in a reference genome. It consists of a:
+* Header
+* File Data Lines
+
 
 ### FASTA:
