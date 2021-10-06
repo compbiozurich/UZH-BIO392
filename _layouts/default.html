@@ -279,7 +279,13 @@
   <div class="pagestamp">
 
   {%- if page.author -%}
-    {%- for this_author in page.author -%}
+    {%- assign page_authors = page.author -%}
+  {%- elsif page.authors -%}
+    {%- assign page_authors = page.authors -%}
+  {%- endif -%}
+
+  {%- if page_authors -%}
+    {%- for this_author in page_authors -%}
       {%- if this_author contains "@" -%}
         {% assign this_g_author = this_author | remove: "@" %}
 <a href="https://github.com/{{this_g_author}}/" target="_blank">{{this_author}}</a>&nbsp;
