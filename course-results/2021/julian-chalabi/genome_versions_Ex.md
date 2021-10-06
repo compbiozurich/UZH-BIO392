@@ -39,4 +39,25 @@ Answer: 2000 bp?
 
 10. **Find three closest genes in upstream and downstream, respectively**
 
-Answer: 
+Answer: Upstream: 1. WRAP53 2. EFNB3 3. DNAH2 
+      Downstream: 1. ATP1B2 2. SHBG  3. SAT2 
+      
+11. **Switch to hg19 and find TP53. What is the start and end positions?**
+
+Answer: chr17:7,571,720-7,590,868 - quite different! 
+
+12. **Switch to Zebrafish, can you find TP53?**
+
+13. **Downlift: TP53 from hg38 to hg19**
+
+
+
+Answer: Yes
+
+13. **Switch to Fruitfly, can you find TP53?**
+
+Answer: No 
+
+**Limitations of the liftover**
+
+14. It fails, if there are gaps between different basepairs, if a chain is missing. Also if multiple chains are intersecting.
