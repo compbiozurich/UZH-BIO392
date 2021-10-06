@@ -28,7 +28,7 @@ hg38 and the last patch of hg19.
 - With your favorite gene, find out its position in hg38 and hg18.
 
   - hg38: OCA2 at chr15:27754875-28099315  
-  - hg17: OCA2 at chr15:25673616-26018056  
+  - hg18: OCA2 at chr15:25673616-26018056  
 
 > The USCS Genome Browser
 
@@ -49,7 +49,7 @@ hg38 and the last patch of hg19.
   - upstream: ATP1B2, SHBG, SAT2
   - downstream: WRAP53, DNAH2, EFNB3  
 
-> Liftover
+> TP53
 
 * Switch to hg19 and find TP53.
 * What is the start and end positions?
@@ -61,5 +61,31 @@ hg38 and the last patch of hg19.
 * Switch to Fruitfly, can you find TP53?
   - I found on chromosome 2R a TP53 homeolog, from chr2R:11,983,429 to chr2R:11,984,899, length: 1,471 bp  
 
+> Liftover with USCS Genome Browser  
+
+* Down-lift: TP53 from hg38 to hg19
+  - chr17:7,668,421-7,687,490 to chr17:7571739-7590808
+
+* Up-lift: TP53 from hg19 to hg38
+  - chr17:7,571,720-7,590,868 to chr17:7668402-7687550
+ 
+* Cross-species-lift: TP53 from human to mouse
+  - chr17:7,668,421-7,687,490 to chr11:69471228-69482695
+
+* Multi-step-lift: TP53 from hg38 to hg18
+  - chr17:7,668,421-7,687,490 to chr17:7571739-7590808 to chr17:7512464-7531533
+
+> BED file liftover
+
+* Liftover multiple positions with a BED file. Lift a larger range and interpret the result.
+  - tried to liftover example.bed: works for 74 records, but failed to liftover 24 records.  
+  
+* Limitations of the liftover.
+  - When liftover larger ranges it can lead to several errors as:  
+    - #Deleted in new
+    - #Partially deleted in new 
+    - #Split in new
+  - The mapping is often not straightforward, specially when a region has been deleted/added, over gaps or if SNVs with mutliple coordinates are present in target/original genome.      
+  - If positions are too distanced, they may be seperated and cannot e mapped properly to another assembly.
 
 
