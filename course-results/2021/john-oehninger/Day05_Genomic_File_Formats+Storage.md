@@ -15,6 +15,9 @@ Stands for **Sequence Alignment Map**. Was developed by Hang Li and Bob Handsake
 * Header
 * Alignment section
 
+#### Costs
+
+
 Here is an example of a SAM file with descriptions of all the variables.
 <p align="center">
 <img src="https://github.com/compbiozurich/UZH-BIO392/blob/master/course-results/2021/john-oehninger/Images/sam_format_annotated_example.5108a0cd.jpg" width="700">
@@ -42,6 +45,9 @@ An example sequence in FASTA format is:
       QHLSWGGDFPEEAQPFFSPAFLWTRPQETAVVETQVFAAFKDYLKAYLDFVEQAEAVTDSQNLVAIKQAQ
       LRYLRYRAEKDPARGMFKRFYGAEWTEEYIHGFLFDLERKLTVVK
 
+~ 1 Mb per assembly
+
+## Associated costs
 
 
 
