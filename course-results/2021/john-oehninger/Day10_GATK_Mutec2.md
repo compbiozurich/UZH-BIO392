@@ -26,15 +26,15 @@ After, I applied filters with FilterMutectCalls.
 I then copied the results of the analysis into the workspace bucket to then be able to load it into IGV.
 
 ## IGV
-After loading the analysis results into IGV, I navigated to the TP53 locus at chr17:7,666,402-7,689,550. After zooming in farther, a C --> T variant became clearly visible.
+After loading the analysis results into IGV, I navigated to the TP53 locus at chr17:7,666,402-7,689,550. After zooming in farther, a C→T variant became clearly visible.
 
-# Questions
+## Questions
 
 * We see a C→T variant light up in red for the tumor but not the normal. What do you think is happening in 2_tumor_normal_m2.bam?
-> Compared to the reference, the tumor cells present the C→T variant (location_ chr17:7.674.220), while the tumor not. This is clear since all the tumor samples aligned reads display this variant while the control (normal) samples reads do not (i.e. present a C at this location).
+> Compared to the reference, the tumor cells present the C→T variant (location_ chr17:7.674.220), while the tumor does not. This is rather clear since all the tumor samples aligned reads show this variant, while the normal sample reads do not.
 
 * What does the coverage tell you ?
-> IGV displays the matching coverage tracks and informs us about the number of reads covering each base. In this particular case, we have a coverage of 131 reads for the C→T variant (40% C, 60% T).
+> IGV displays the matching coverage tracks and informs about the number of reads that cover each base.
 
 *  What are the three grouped tracks for the bamout?
 > The new "reference", i.e. haplotype caller (HC), the normal and the tumor samples.
