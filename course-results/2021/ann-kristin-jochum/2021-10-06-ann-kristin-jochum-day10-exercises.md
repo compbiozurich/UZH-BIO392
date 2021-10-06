@@ -4,19 +4,20 @@
 
 ### Most species have more than one versions of the reference genome.
 * The name and time of the latest version for Human, Mouse and E Coli:
-  * Human: GRCh38/hg38 (17th December 2013)
-  * Mouse: GRCm39/mm39 (June 2020)
-  * E Coli: 
+  * **Human**: GRCh38/hg38 (17th December 2013)
+  * **Mouse**: GRCm39/mm39 (June 2020)
+  * **E Coli**: no name (strand: E. coli O157:H7 str. Sakai) (August 2018)
 * The name and time of the first version for Human, Mouse and E Coli:
-  * Human: hg1 (May 2000)
-  * Mouse: MGSCv2/mm1 (November 2001)
-  * E Coli:
+  * **Human**: hg1 (May 2000)
+  * **Mouse**: MGSCv2/mm1 (November 2001)
+  * **E Coli**: no name (strand: E. coli K-12) (1997)
 * How many reference genomes were released in total for Human, Mouse and E Coli:
-  * Human: 18
-  * Mouse: 11
-  * E Coli:
+  * **Human**: 18
+  * **Mouse**: 11
+  * **E Coli**: 2 (with several updates)
 * Sources:
   - https://genome.ucsc.edu/FAQ/FAQreleases.html#release1
+  - https://www.ncbi.nlm.nih.gov/genome/?term=txid562[orgn]
 
 ### What do you think of the difference between genome versions?
 * Find out the difference in chromosome length between the latest patch of hg38 and the last patch of hg19.
@@ -65,7 +66,7 @@ chrY |	57,227,415 | 59,373,566
 * How many isoforms does it have?
   * **Isoforms**: 17
 * How many exons does it have?
-  * **Exons**: 12
+  * **Exons**: 11 (12 with alternative splicing)
 * What the size of its longest exon? (roughly)
   * **Largest exon**: roughly 1250
 * Find the three closest genes in upstream and downstream, respectively.
@@ -79,14 +80,22 @@ chrY |	57,227,415 | 59,373,566
   * **End**: 7,590,868
 * Switch to zebrafish, can you find TP53?
   * Yes, TP53 at chr5:24,086,227-24,097,799
-* Switch to Fruitfly, can you find TP53?
-  * Yes, P53 at chr3R:23,049,657-23,053,505
+* Switch to fruitfly, can you find TP53?
+  * The homologue P53 at chr3R:23,049,657-23,053,505
 
 ## Introduction to Genome Liftover
 
 ### Part 1
 * Down-lift: TP53 from hg38 to hg19
+  * chr17:7,668,421-7,687,490 => chr17:7,571,739-7,590,808
 * Up-lift: TP53 from hg19 to hg38
+  * chr17:7,571,720-7,590,868 => chr17:7,668,402-7,687,550
 * Cross-species-lift: TP53 from human to mouse
-* Multi-step-lift: TP53 from hg38 to hg 18
+  * chr17:7,668,421-7,687,490 => chr11:69,471,228-69,482,695
+* Multi-step-lift: TP53 from hg38 to hg18
+  * chr17:7,668,421-7,687,490 => chr17:7,512,464-7,531,533
 
+### Part 2
+* Liftover multiple positions with a BED file.
+* Lift a larger range and interpret the result.
+* Limitations of the liftover: When converting the example bed file from hg38 to hg19, 74 records could be successfully converted while the conversion failed on 24 records; liftover therefore doesn't work with all sequences. I assume larger ranges, gaps or bigger jumps (where the probability is higher that a "disruptive" change occurred between versions) might be a problem for the application.
