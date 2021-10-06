@@ -64,3 +64,34 @@ _E. coli_: 2
 Huntingtin position:
 hg38: Chr4: 3,074,681 - 3,243,960
 hg19: Chr4: 3,076,408 - 3,245,687
+
+
+> 1. Show gene TP53 in the genome browser. 
+> 2. Where is this gene? (chromosome, cytoband, and exact start and end 
+> positions) 
+> 3. How many isoforms does it have? 
+> 4. How many exons does it have? 
+> 5. What the size of its longest exon? (roughly) 
+> 6. Find the three closest genes in upstream and downstream, respectively.
+
+2. TP53 is on Chr 17 on 17p13.1, which is quite central on the p-arm. exact: chr17:7,668,421-7,687,490
+3. 11?
+4. 10 / coding: 10
+5. maybe around 1.25 kb
+6. upstream: ATP1B2, SHBG, SAT2
+   downstream: WRAP53, EFNB3, DNH2
+   
+> 1. Switch to hg19 and find TP53. 
+> 2. What is the start and end positions?  
+> 3. Switch to zebrafish, can you find TP53? 
+> 4. Switch to Fruitfy, can you find TP53?
+
+2. chr17:7,571,720-7,590,868
+3. I guess its on chr5:24,086,227-24,097,799 in zebrafish in the GRCz11/danRer11
+4. I don't think so. The only result will give a ribonucleotide reductase M2 B (TP53 inducible) S-homolog at chr2R:11,983,429-11,984,899
+
+
+> 1. Down-lift: TP53 from hg38 to hg19 
+> 2. Up-lift: TP53 from hg19 to hg38 
+> 3. Cross-species-lift: TP53 from human to mouse 
+> 4. Multi-step-lift: TP53 from hg38 to hg 18
