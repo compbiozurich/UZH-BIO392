@@ -11,19 +11,22 @@
   * Load results into IGV
   * Set up IGV
   * Navigate to the location of the genome where variants were called
+5. Annotate mutations with Funcotator: another approach to filtering mutation calls by the significance of their functional impact.
+  * Find missense mutations
+  * Find insertions and deletions
 
 
 ## Questions
 1. What is the value of using a matched normal control?
   * The matched normal excludes rare germline variation that is not captured by the germline resource and individual-specific artifacts.
-2. We see a C->T variant light up in red for the tumor but not the normal. What do you think is happening in 2_tumo_normal_m2.bam?
+2. We see a C->T variant light up in red for the tumor but not the normal. What do you think is happening in 2_tumor_normal_m2.bam?
   * I guess we have a real somatic mutation at this point.
 4. What does the coverage tell you?
-  *
+  * How many reads per nucleotide are available
 5. What are the three grouped tracks for the bamout? What do the colors indicate? What differentiates the pastel versus gray reads?
-  * Pastel: different haplotypes
+  * The first track gives us the HC that were found in the general population. The second track gives us the HC found in the healthy cells of the patient. The third track gives us the HC found in the tumor cells of the patient. The different pastel colors indicate different haplotypes. The grey reads can not be assigned to any of the haplotypes, either because the reads are too short or because they have gaps.
 6. How do you feel about this somatic call?
-  * 
+  * Since the coverage is pretty high, I think we can assume that it is indeed a somatic mutation.
 
 
 ## Glossary
