@@ -72,3 +72,15 @@ Yes
 No.
 
 
+## **Task 5: Liftover with UCSC Genome Browser**
+
+*1. Lift a larger range and interpret the result.*
+
+chrX	130621262	154318397	0	0.0757	45 (hg38) => chrX	129755236	153546744	0	0.0757	4 (hg19)
+
+=> The liftover from hg38 to hg19 results in a upstream shift and to a smaller sequence length. This might be due to the reason, that we have today much more specific sequencing methods.
+
+*2. Limitations of the liftover.*
+
+=> We realized, that the UCSC liftover always fails in the conversion of 1 record, when we want to convert more than 1 sequence range at once (input as BED format).
+=> One other limitation of this browser is, that it breaks the segment into smaller segments to map them to different locations
