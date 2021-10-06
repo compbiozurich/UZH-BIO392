@@ -26,4 +26,4 @@ After, I applied filters with FilterMutectCalls.
 I then copied the results of the analysis into the workspace bucket to then be able to load it into IGV.
 
 ## IGV
-After loading the analysis results into IGV, I navigated to the TP53 locus at chr17:7,666,402-7,689,550. After zooming in farther, a c --> T variant became clearly visible.
+After loading the analysis results into IGV, I navigated to the TP53 locus at chr17:7,666,402-7,689,550. After zooming in farther, a C --> T variant became clearly visible.
