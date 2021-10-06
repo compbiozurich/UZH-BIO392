@@ -27,7 +27,7 @@ Run `GetPileupSummaries` to summarize read support for a set number of known var
  
  Estimate contamination with CalculateContamination: The resulting files from the tumor and normal samples each give the fraction contamination and the error.
  
-### ** 1.4 Apply filters with FilterMutectCalls**
+### **1.4 Apply filters with FilterMutectCalls**
 
 The tool FilterMutectCalls uses the annotations within the callset, and if provided, uses the contamination table in filtering the vcf file of somatic mutations.
 
@@ -38,3 +38,4 @@ We see a C→T variant light up in red for the tumor but not the normal. What do
 => the file consists of tumor and normal samples, therefore the C belongs to normal samples and the T belongs to tumor samples
 => All tumor cells have a C-T transition at this position
 
+![image](igv.PNG)
