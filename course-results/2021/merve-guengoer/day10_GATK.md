@@ -1,4 +1,4 @@
-## **Somatic Short Mutation Calling using GATK4 Mutect2**
+## **1 Somatic Short Mutation Calling using GATK4 Mutect2**
 
 ![image](gatk.PNG)
 
@@ -63,3 +63,8 @@ What does the coverage tell you?*
 *How do you feel about this somatic call?*
 
 It was difficult to follow all the steps during the processing and to keep the overview about all of the files generated. But in the end, the visualization with IGV makes everything more clear.
+
+
+## **2 Annotate Somatic Mutations with Funcotator**
+
+GATK4 Funcotator is another approach to filter mutation calls by the significance of their functional impact of the mutation (GTF files include this information).
