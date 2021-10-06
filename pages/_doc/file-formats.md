@@ -15,7 +15,7 @@ tags:
 
 ## {{page.title}}
 
-This page will contain information about file formats relervant for genomic data
+This page will contain information about file formats relevant for genomic data
 storage, exchange and analysis
 
 <!--more-->
