@@ -1,4 +1,5 @@
-### GATK
+
+## GATK
 
 1. Raw Sequence and Reference Sequence are aligned --> Aligned BAM
 2. Mark duplicates in the BAM file
@@ -6,7 +7,7 @@
 4. Alanysis ready BAM sequence is obtained
 
 
-### App.Terra.Bio
+## App.Terra.Bio
 
 **Setup** - Setup of the Virtual Environment + Installation & Google login of Integrative Genomics Viewer (IGV)
 
@@ -33,6 +34,74 @@ In the end, the contamination + error values inform us of which allele fractions
 
 In IGV, the mapped reads can be seen in the 2_tumor_normal_m2.bam track. A single SNV (C>T) is highlighted in red.
 
+
+## Introduction to Genome Versions / Liftovers
+
+### The Reference Genome
+
+* First reference genome was obtained from multiple individuals using sanger sequencing
+* New reference genomes become available due to more data (e.g. additional locations) being discovered that needs to be integrated into the reference genome
+
+#### Questions
+
+1. Name & Time of the lastest version for Human, Mouse and E. Coli
+	* *Human: Dec 2013 - GRCh38/hg38*
+	* *Mouse: Jun 2020 - GRCm39/mm39*
+	* *E. Coli: 1997 - K-12 MG1655 (recently updated and annotated, but no "new" assembly)*
+2. Name & Time of the first version for Human, Mouse and E Coli 
+	* *Human: July 2003 - NCBI34/hg16*
+	* *Mouse: Aug 2005 - NCBI35/mm7*
+	* *E. Coli: 1997 - K-12 MG1655*
+4. How many reference genomes were released in total for Human, Mouse, and E Coli
+	* *Human 5 + Mouse 5 + E. Coli 1 = 11*
+
+* Using old assemblies or migrating to new assemblies can cause significant problems
+
+### USCS Genome Browser
+
+* Graphic visualization tool for genomic data for many different species & annotations
+* Liftover tool is offered on the website to transfer between different releases
+
+#### Questions
+
+1. Show gene TP53 in the genome broser
+2. Where is this gene?
+	* *chr17:7,668,421-7,687,490*
+3. How many isoforms does it have?
+	* *9*
+4. How many exons does it have?
+	* *11*
+5. What's the size of its longest exon?
+	* 
+6. Find the three closest genes in upstream and downstream, respectively
+	* *ATP1B2, WRAP53 & EFNB3*
+7. Switch to hg19 and find TP53
+8. What are the start and end positions
+	* *chr17:7,571,720-7,590,868*
+9. Switch to zebrafish, can you find TP53
+	* *yes*
+10. Switch to Fruitfly, can you find TP53? 
+	* *no*
+
+
+### Liftovers
+
+* Used to convert data between different genome versions
+* The best strategy is to re-align the original data to the target genome version.
+	* Disadvantages: Availability of the data & Computational Workload
+* More practical solution uses a map table
+	* Disadvantages: Some information may be lost
+
+#### Exercises
+
+1. Down-lift: TP53 from hg38 to hg19
+2. Up-lift: TP53 from hg19 to hg38
+3. Cross-species-lift: TP53 from human to mouse
+4. Multi-step-lift: TP53 from hg28 to hg18
+5. Liftover multiple positions with a BED file
+6. Lift a larger range and interpret the result
+7. Limitations of the liftover
+	* Often, not all records can be lifted over
 
 
 
