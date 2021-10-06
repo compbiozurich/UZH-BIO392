@@ -32,9 +32,10 @@ Run `GetPileupSummaries` to summarize read support for a set number of known var
 The tool FilterMutectCalls uses the annotations within the callset, and if provided, uses the contamination table in filtering the vcf file of somatic mutations.
 
 ### **1.5 Review calls with IGV**
-Load analysis data and reference genome GRCh38 on IGV -> TP53 gene
-We see a C→T variant light up in red for the tumor but not the normal. What do you think is happening in 2_tumor_normal_m2.bam?
-What does the coverage tell you?
+Loaded the analysis data and reference genome GRCh38 on IGV -> TP53 gene
+
+*We see a C→T variant light up in red for the tumor but not the normal. What do you think is happening in 2_tumor_normal_m2.bam?
+What does the coverage tell you?*
 
 => The coverage in this bam file is 40% C and 60% T 
 => the file consists of tumor and normal samples, therefore the C belongs to normal samples and the T belongs to tumor samples
@@ -43,12 +44,14 @@ What does the coverage tell you?
 ![image](igv.PNG)
 
 
-What are the three grouped tracks for the bamout? 
+*What are the three grouped tracks for the bamout?* 
+
 * Group by sample
 * Color alignments by tag: HC
 * Sort by base
 
-What do the colors indicate? What differentiates the pastel versus gray reads?
+*What do the colors indicate? What differentiates the pastel versus gray reads?*
+
 => Reads with 50bp or shorter are grey
 => Reads longer than 50bp are in pastel
 => green: (normal sample) C at position chr17:7,674,161-7,674,274 (like reference genome)
@@ -57,5 +60,6 @@ What do the colors indicate? What differentiates the pastel versus gray reads?
 => lila: C->T at position chr17:7,674,161-7,674,274 + T->A mutation at other position 
 
 
-How do you feel about this somatic call?
+*How do you feel about this somatic call?*
+
 It was difficult to follow all the steps during the processing and to keep the overview about all of the files generated. But in the end, the visualization with IGV makes everything more clear.
