@@ -76,7 +76,18 @@ This produces a VCF callset 9_somatic_oncefiltered.vcf.gz and index. Calls that 
 
 This step seemingly applies 20 filters, including contamination. However, if an annotation a filter relies on is absent, the tool skips the particular filtering. The filter will still appear in the header. For example, the duplicate_evidence filter requires a nonstandard annotation that our callset omits.
 
-##### Step4: Review calls with IGV
+##### Step4: Review calls with IGV (on hg38)
 
+navigate IGV to the TP53 locus at **chr17:7,666,402-7,689,550** --> Zoom into chr17:7,673,333-7,675,077 to better see the somatic call. 
+-> Scroll through the data and notice the coverage for the samples.
+
+**We see a C→T variant light up in red for the tumor but not the normal. What do you think is happening in 2_tumor_normal_m2.bam?**. 
+
+**What does the coverage tell you?**. 
+
+> Now, right-click on the alignments track and
+  * Group by sample
+  * Color alignments by tag: HC
+  * Sort by base
 
 
