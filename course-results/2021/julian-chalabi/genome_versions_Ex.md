@@ -48,10 +48,6 @@ Answer: chr17:7,571,720-7,590,868 - quite different!
 
 12. **Switch to Zebrafish, can you find TP53?**
 
-13. **Downlift: TP53 from hg38 to hg19**
-
-
-
 Answer: Yes
 
 13. **Switch to Fruitfly, can you find TP53?**
