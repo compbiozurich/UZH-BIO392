@@ -16,7 +16,8 @@ Stands for **Sequence Alignment Map**. Was developed by Hang Li and Bob Handsake
 * Alignment section
 
 #### Costs
-
+* WEG: 500TB cost: ~250000CHF
+* WES: 7.5TB cost: ~3750CHF
 
 Here is an example of a SAM file with descriptions of all the variables.
 <p align="center">
@@ -27,12 +28,17 @@ Here is an example of a SAM file with descriptions of all the variables.
 Is the compressed binary version of a SAM file that is used to represent aligned sequences up to 128 Mb. They consist of a:
 * Header
 * Alignment section
+#### Costs
+* WEG: 100TB cost: ~50000CHF
+* WES: 1.5TB cost: ~750CHF
 
 ### VCF:
 Stands for **Variant Call Factor**. It is a widely used file format developed by the genomics scientific community that contains information about variants found at specific postisions in a reference genome. It consists of a:
 * Header
 * File Data Lines
-
+#### Costs
+* WEG: 125GB cost: ~60CHF
+* WES: 1.875GB cost: ~1CHF
 
 ### FASTA:
 FASTA format is a text-based format for representing either nucleotide sequences or peptide sequences, in which base pairs or amino acids are represented using single-letter codes. A sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column. It is recommended that all lines of text be shorter than 80 characters in length.
@@ -45,9 +51,10 @@ An example sequence in FASTA format is:
       QHLSWGGDFPEEAQPFFSPAFLWTRPQETAVVETQVFAAFKDYLKAYLDFVEQAEAVTDSQNLVAIKQAQ
       LRYLRYRAEKDPARGMFKRFYGAEWTEEYIHGFLFDLERKLTVVK
 
-~ 1 Mb per assembly
+#### Costs
+* WEG: 200GB cost: ~100CHF
+* WES: 3GB cost: ~1.5CHF
 
-## Associated costs
 
 
 
