@@ -18,7 +18,7 @@ Therefore we generate: 1) A raw unfiltered somatic callset restricted to the spe
 Out of 40 exome samples aligned to GRCh38 (BAM files) using GATK4.beta.6.
 
 ### **1.3 Filter for confident somatic calls**
-Using filtering tools: identification of which mutation candidates are likely to be real somatic mutations out of the unfiltered Mutect2 callset. -> Filterin out germline mutations
+Using filtering tools: identification of which mutation candidates are likely to be real somatic mutations out of the unfiltered Mutect2 callset. -> Filtering out germline mutations
 Estimation of cross-sample contamination with the tools GetPileupSummaries and CalculateContamination.
 
 Run `GetPileupSummaries` to summarize read support for a set number of known variant sites: It involves a known germline variant resource to limit analysis to sites that are commonly variant. We should use a population germline resource containing only common biallelic variants (Normal samples).
@@ -30,6 +30,8 @@ Run `GetPileupSummaries` to summarize read support for a set number of known var
 ### **1.4 Apply filters with FilterMutectCalls**
 
 The tool FilterMutectCalls uses the annotations within the callset, and if provided, uses the contamination table in filtering the vcf file of somatic mutations.
+
+=> removes noise and background 
 
 ### **1.5 Review calls with IGV**
 Loaded the analysis data and reference genome GRCh38 on IGV -> TP53 gene
