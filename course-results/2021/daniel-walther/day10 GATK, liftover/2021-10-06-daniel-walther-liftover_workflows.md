@@ -4,8 +4,6 @@ _daniel walther_
 
 ## liftover
 
-what even is it, what does it do, why even do anything, define stuff. give scope.
-
 ### Introduction to Genome Versions
 
 #### 1: Exercise:
