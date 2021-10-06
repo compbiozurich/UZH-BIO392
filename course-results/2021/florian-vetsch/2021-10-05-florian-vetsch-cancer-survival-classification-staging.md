@@ -24,7 +24,7 @@
 Notes:   
 T3,T4 are about location of tumor not size anymore;  
 <s> N1,N2,N3 are implying M1 </s>  
-N3 basically says "heavy/distant lymph node infiltration"; but as long as no other organs are involved or the cancer cells have broken the node capsule it isn't considered "metastasized".
+> N3 basically says "heavy/distant lymph node infiltration"; but as long as no other organs are involved or the cancer cells have broken the node capsule it isn't considered "metastasized".
 ... oddly, people may use "metastasized to lymph nodes" and "lymph node metastasis"; but these are kept as separate concepts.
 
 
