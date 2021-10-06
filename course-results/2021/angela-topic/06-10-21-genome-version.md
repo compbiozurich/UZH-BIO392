@@ -53,7 +53,7 @@ Chr 17; Cytoband p13.1 ;  positions: 7,668,421 - 7,687,490
 ### What is the start and end positions?
 7,571,720-7,590,868
 
-### Switch to zebra!sh, can you find TP53?
+### Switch to zebrafish, can you find TP53?
 Yes
 
 ### Switch to Fruit#y, can you find TP53?
@@ -67,7 +67,7 @@ No.
 In the newer version is the start moved to a larger position due to more assembled positions upstream. In hg38 the sequence is also smaller,maybe because of sequencing errors.
 
 ### Limitations of the liftover.
---> we relized that one position always fail to convert
+--> we relized that one position always fail to convert, this can be due to the fact, that this browser breacks the sequence into small pieces and than maps it back to the other coordinates.
 
 
 
