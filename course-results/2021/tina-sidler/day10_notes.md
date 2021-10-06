@@ -6,4 +6,4 @@ Compare tumor, normal and germline-variants from the population -> Contamination
 Then **filter** the raw variants and the contamination -> .... -> variants
 
 Panel Normals: accumulation of match normals, to make sure variants we don't want have been filtered out
-Match normal: from same individual as the tumor
+Match normal: is a sample of healthy tissue from the same individual to distinguish germline mutations from somatic mutations
