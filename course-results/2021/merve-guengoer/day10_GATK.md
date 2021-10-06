@@ -38,7 +38,9 @@ Loaded the analysis data and reference genome GRCh38 on IGV -> TP53 gene
 What does the coverage tell you?*
 
 => The coverage in this bam file is 40% C and 60% T 
+
 => the file consists of tumor and normal samples, therefore the C belongs to normal samples and the T belongs to tumor samples
+
 => All tumor cells have a C-T transition at this position
 
 ![image](igv.PNG)
@@ -53,10 +55,15 @@ What does the coverage tell you?*
 *What do the colors indicate? What differentiates the pastel versus gray reads?*
 
 => Reads with 50bp or shorter are grey
+
 => Reads longer than 50bp are in pastel
+
 => green: (normal sample) C at position chr17:7,674,161-7,674,274 (like reference genome)
+
 => blue: (tumor sample) C->T mutation at position chr17:7,674,161-7,674,274
+
 => red: T->A mutation at other position 
+
 => lila: C->T at position chr17:7,674,161-7,674,274 + T->A mutation at other position 
 
 
