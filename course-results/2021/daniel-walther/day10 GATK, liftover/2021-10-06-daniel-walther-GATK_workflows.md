@@ -12,7 +12,7 @@ __Task:__
 
 ![GATK workflow schematic from the .ipynb workspace](https://storage.googleapis.com/gatk-tutorials/images/3-somatic/GATK_Mutect2_V4.1_042319_lg.png), taken from [app.terra.bio](https://app.terra.bio/#workspaces/bio392-2021/GATKTutorials-Somatic%20new/notebooks/launch/1-somatic-mutect2-tutorial.ipynb?mode=playground).
 
-![GATK workflow schematic drawn by Rahel Paloots on the whiteboard]() insert photograph taken with phone here.
+![GATK workflow chart from lecture](./"GATK workflow whiteboard.jpg") insert photograph taken with phone here.
 
 __short summary:__
 get data - control, interest
