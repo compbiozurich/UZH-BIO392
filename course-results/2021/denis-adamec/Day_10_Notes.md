@@ -29,5 +29,11 @@ In the end, the contamination + error values inform us of which allele fractions
 
 3. In this step the tool `FilterMutectCalls` is used to filter a small data vcd file. In the output VCF Call file, calls that are likely true positives get the **PASS** label, while others are labeled with the reason for filtering.
 
+4. IGV
+
+In IGV, the mapped reads can be seen in the 2_tumor_normal_m2.bam track. A single SNV (C>T) is highlighted in red.
+
+
+
 
 
