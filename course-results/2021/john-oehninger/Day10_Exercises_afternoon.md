@@ -61,3 +61,8 @@ Switch to zebrafish, can you find TP53
 
 Switch to Fruitfly, can you find TP53? 
 > * No
+
+
+### Liftover
+Liftovers are used to convert genomecoordinates between different genome versions, since reference genomes are continuously updated.
+
