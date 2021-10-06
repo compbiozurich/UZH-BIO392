@@ -34,7 +34,22 @@
 * Purpose: uses the annotations within the callset and (if provided) the contamination table in filterung
 * Produces a VCF callset and index; calls that are likely true positives get the PASS label in the FILTER field, and calls that are likely false positives are labeled with the reason(s= for filtering in the FILTER field of the VCF
 
-### Review calls with IGV
+### Review calls with IGV (Integrative Genomics Viewer)
 * Purpose: to get a good somatic callset
 * Necessary to compare callsets from different callers, manually reviewing passing and filtered calls and (if necessary) additional filtering
 * Examine the BAMOUT since clean alignments will not necessarily reflect the calls
+
+#### Set up your IGV window
+* Make sure to load the right reference genome!
+* Answer to question: In 2_tumor_normal_m2.bam, sequences from both the tumor and the normal samples are present, and about two thirds have a T while one third has a C (according to Coverage) => C -> T mutation in tumor
+* Answer to question: Coverage tells me how many of the sequences show a C and how many show a T
+* Answer to question: the three grouped tracks are the samples (haplotype coloring legend, tumor and normal), the colors indicate different haplotypes, pastel means that the read was assigned to a haplotype, while gray means that it couldn't be assigned to a haplotype due to the length of the read
+* The somatic call seems legit, since all reads from the tumor sample have it and the coverage is also high
+
+### Annotate mutations with *GATK4 Funcotator*
+* Different approach to filtering mutation calls: by significance of their functional impact (e.g. stop codon or missense mutations in protein-coding regions)
+* Transcript annotation resources: GENCODE (information in standardized General Transfer Format (GTF))
+* GATK4 Funcotator annotates variant alleles with information from chosen annotation resources
+
+#### Review filtered indels to study the logic behind different filters
+
