@@ -9,3 +9,4 @@
 7. Next we use **FilterMutectCalls** to produce a VCF callset and an index. Calls that are likely true positives get a PASS label. Likely false positives are labelled with the reasons for filtering in the FILTER field of the VCF. There seem to be 20 filtering criteria, but if an annotation the filter relies upon is absent, the tool will skip the particular filtering. 
 8. We now examine the BAMOUT file, putting it in our bucket so we can load it into the IGV.
 9. We load hg38 as our reference genome in IGV, and load in the files via URL. We zoom into a particular section, delete irrelevant sections, and are now clearly able to see certain mutations which occur only in the Tumor sample (C<T e.g.).  
+10. Next we use the **Funcotator** tool to produce a VCF with annotations. We see that an Arginine(R) has been changed into a Glutamine(Q) - a missense mutation at position 248. We can count mutations records, missense records and missense records which PASS filers.
