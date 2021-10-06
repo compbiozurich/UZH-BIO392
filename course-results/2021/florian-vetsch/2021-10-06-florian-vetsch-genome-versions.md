@@ -40,17 +40,17 @@ Most species have more than one versions of the reference genome. Please find ou
   
   ### Liftover with UCSC Genome Browser 
 * Down-lift: TP53 from hg38 to hg19  
-chr17:7,668,421-7,687,490 -> chr17:7571739-7590808
-* Up-lift: TP53 from hg19 to hg38
- chr17:7,571,720-7,590,868 -> chr17:7,668,402-7,687,550
-* Cross-species-lift: TP53 from human to mouse
-(GrCh38 to GRCm39)
+chr17:7,668,421-7,687,490 -> chr17:7571739-7590808  
+* Up-lift: TP53 from hg19 to hg38  
+ chr17:7,571,720-7,590,868 -> chr17:7,668,402-7,687,550  
+* Cross-species-lift: TP53 from human to mouse  
+(GrCh38 to GRCm39)  
 chr17:7,668,421-7,687,490 -> chr11:69471228-69482695  
-* Multi-step-lift: TP53 from hg38 to hg 18
-(hg38 -> hg19 -> hg18)
-chr17:7,668,421-7,687,490 -> chr17:7571739-7590808 -> chr17:7512464-7531533
+* Multi-step-lift: TP53 from hg38 to hg 18  
+(hg38 -> hg19 -> hg18)  
+chr17:7,668,421-7,687,490 -> chr17:7571739-7590808 -> chr17:7512464-7531533  
 
 * Liftover multiple positions with a BED file / Lift a larger range and interpret the result / Limitations of the liftover  
-Works for the biggest part but several error messages were displayed eg. #Deleted in new, #Partially deleted in new, #Split in new 
+Works for the biggest part of the BED file but several error messages were displayed eg. #Deleted in new, #Partially deleted in new, #Split in new 
 We observe that the mapping is often not trivial and has various caveats  
-SNVs with mutliple coordinates in target/base can eg cause problems.  
+Especially if mapping occurs over gaps or if SNVs with mutliple coordinates are present in target/base .  
