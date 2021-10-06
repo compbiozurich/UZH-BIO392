@@ -95,3 +95,33 @@ hg19: Chr4: 3,076,408 - 3,245,687
 > 2. Up-lift: TP53 from hg19 to hg38 
 > 3. Cross-species-lift: TP53 from human to mouse 
 > 4. Multi-step-lift: TP53 from hg38 to hg 18
+
+1. it worked. "Successfully converted 1 record
+2. Same here :-)
+3. I am converting it from hg38 to GRCm38/mm10): It worked too :-)
+4. I opened in atom and copied it back in and it worked
+
+
+> Liftover with UCSC Genome Browser
+> 1. Liftover multiple positions with a BED file. 
+> 2. Lift a larger range and interpret the result. 
+> 3. Limitations of the liftover.
+
+1. I copied the example.bed into the browser assuming its hg38. Clifting it to hg19. It succcessfully converted 74 records and failed at 24 records.
+
+Error-message
+```  
+Deleted in new:
+    Sequence intersects no chains
+Partially deleted in new:
+    Sequence insufficiently intersects one chain
+Split in new:
+    Sequence insufficiently intersects multiple chains
+Duplicated in new:
+    Sequence sufficiently intersects multiple chains
+Boundary problem:
+    Missing start or end base in an exon
+```  
+
+2. try to lift chr17:7,000,000-13,000,000. That worked. Output: chr17:6903319-12903317. The region seem to be similarly big
+3. Limitations: there seem to be a problem when there are insufficient intersects. See error message.
