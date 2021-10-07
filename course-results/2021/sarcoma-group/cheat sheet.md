@@ -1,5 +1,5 @@
 ### Functions to get gene data
-```python
+
 def transform_to_df(data):
     data = pd.DataFrame(data)
     data.columns = data.iloc[0]
@@ -26,14 +26,49 @@ def get_gene_data(cancer_type,gene_name):
         if line[14] in ids:
             gene_data.append(line)
 
+    cancerdf = transform_to_df(cancer)
+    genedf = transform_to_df(gene_data)
+
     # print(len(ids),len(gene_data))
 
-    return cancer, gene_data
-```
+    return cancerdf, genedf
 
+sarcoma, tp53 =  get_gene_data('sarcoma','tp53del')
+sarcomanum = sarcoma.apply(pd.to_numeric, errors='coerce').fillna(sarcoma)
 
-
+""" gene names of the other genes
 get_gene_data('sarcoma erbb2.csv')
 get_gene_data('sarcoma rp53.csv')
 get_gene_data('sarcoma myc.csv')
 get_gene_data('sarcoma cdkn2a.csv')
+"""
+    
+## boxplot
+NCIT = sarcomanum['histologicalDiagnosis.label'].unique()
+i=0
+while i < len(NCIT):
+    mean = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT[i])
+
+    ax=plt.subplot(2, 4, i+1)
+    mean.boxplot(fontsize=5)
+    ax.set_xticklabels(['cnvcoverage','delcoverage','dupcoverage','death'],rotation=90)
+    ax.set_title(NCIT[i],fontsize=7)
+
+
+    i=i+1
+    
+## KM analysis
+
+while i < len(NCIT):
+    group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT[i])
+    kmf = KaplanMeierFitter()
+    durations = group['info.cnvstatistics.cnvcoverage']
+    event_observed = group['info.death']
+    kmf.fit(durations, event_observed, label=NCIT[i], xlael='cnvcoverage')
+    kmf.plot(ci_show=False)
+
+
+
+    i=i+1
+    
+plt.show()

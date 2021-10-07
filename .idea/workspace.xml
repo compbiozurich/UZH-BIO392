@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="014e3928-bd91-4263-8c82-7f7ea4ee60ee" name="Default Changelist" comment="" />
+    <list default="true" id="014e3928-bd91-4263-8c82-7f7ea4ee60ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/UZH-BIO392.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UZH-BIO392.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/cheat sheet.md" beforeDir="false" afterPath="$PROJECT_DIR$/course-results/2021/sarcoma-group/cheat sheet.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/sarcoma cdkn2a.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/sarcoma erbb2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/sarcoma tp53.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/sarcoma_MYC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_analysis_sarcoma.py" beforeDir="false" afterPath="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_analysis_sarcoma.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1yZpKP7hLnfHfEjIvFpyniYhFmw" />
   <component name="ProjectViewState">
@@ -14,6 +28,57 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="UZH-BIO392" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="survival_analysis_sarcoma" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="UZH-BIO392" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\popsicle cell\PycharmProjects\bio392\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course-results/2021/sarcoma-group" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_analysis_sarcoma.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.survival_analysis_sarcoma" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -23,7 +88,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632468902201</updated>
+      <workItem from="1633607771079" duration="3339000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
