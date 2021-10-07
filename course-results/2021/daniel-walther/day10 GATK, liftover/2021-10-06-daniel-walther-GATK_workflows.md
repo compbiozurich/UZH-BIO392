@@ -8,38 +8,30 @@ maybe bit more in summary.
 
 __Task:__ short summary of the workflow (what & why) in an .md file. No need to memorise the commands, just understand the process.
 
-## GATK (genome analysis toolKit) workflow
+## GATK (genome analysis toolKit) workflow & terminology
 
-| ![GATK workflow schematic from the .ipynb workspace](https://storage.googleapis.com/gatk-tutorials/images/3-somatic/GATK_Mutect2_V4.1_042319_lg.png), taken from [app.terra.bio](https://app.terra.bio/#workspaces/bio392-2021/GATKTutorials-Somatic%20new/notebooks/launch/1-somatic-mutect2-tutorial.ipynb?mode=playground). | ![GATK workflow chart from lecture](/GATK_workflow_whiteboard.jpg) |
+![GATK workflow schematic from the .ipynb workspace](https://storage.googleapis.com/gatk-tutorials/images/3-somatic/GATK_Mutect2_V4.1_042319_lg.png), taken from [app.terra.bio](https://app.terra.bio/#workspaces/bio392-2021/GATKTutorials-Somatic%20new/notebooks/launch/1-somatic-mutect2-tutorial.ipynb?mode=playground)
 
-## terminology
+terminology & purpose:
 
-What does it mean to 'call somatic SNV &/ indels' with mutect2 or otherwise?
-- 
-What is a 'somatic callset'?
-- 
-What is 'G pop'?
-- Germline population, for capturing rare germline variants not associated with tumour cells.
-
-__shorten & extract useful info. from below__
-* Mutect2 uses the matched normal to additionally exclude rare germline variation not captured by the germline resource and individual-specific artifacts.
-* Mutect2 uses a germline population resource towards evidence of alleles being germline. The simplified sites-only gnomAD resource retaining allele-specific frequencies is available at ftp://gsapubftp-anonymous@ftp.broadinstitute.org/bundle/Mutect2.
-* A panel of normals (PoN) has a vital role that fills a gap between the matched normal and the population resource. Mutect2 uses the PoN to catch additional sites of noise in sequencing data, like mapping artifacts or other somewhat random but systematic artifacts of sequencing and data processing.
+* T: tumor samples (from the tumor cells of interest)
+* N: match normal samples (genetic data from blood samples).
+  * Mutect2 uses the matched normal to additionally exclude rare germline variation not captured by the germline resource and individual-specific artifacts.
+* G pop: Germline population, for capturing rare germline variants not associated with tumour cells.
+  * Mutect2 uses a germline population resource towards evidence of alleles being germline.
+* PoN: Panel of Normals.
+  * A panel of normals (PoN) has a vital role that fills a gap between the matched normal and the population resource. Mutect2 uses the PoN to catch additional sites of noise in sequencing data, like mapping artifacts or other somewhat random but systematic artifacts of sequencing and data processing.
+* HCC1143: HC stands for Haplotype Colouring
+* callset: (genomics) A collection of variant calls, typically for one sample. (wikipedia)
+* somatic callset: a collection of somatic mutation variant calls.
+* SNV: A single-nucleotide variant (SNV) is a variation in a single nucleotide. SNVs differ from SNPs (single-nucleotide polymorphisms) in that a SNV can be somatic[9] and can be caused by cancer,[10] but a SNP has to segregate in a species' population of organisms. (wikipedia)
+* __SNV calling__: SNV calling from NGS data is any of a range of __methods for identifying the existence of single nucleotide variants__ (SNVs) from the results of next generation sequencing (NGS) experiments. These are computational techniques, and are in contrast to special experimental methods based on known population-wide single nucleotide polymorphisms (see SNP genotyping). (wikipedia). The same principle applies to indels, of course.
+* indels: Indel is a molecular biology term for an insertion or deletion of bases in the genome of an organism. It is classified among small genetic variations, measuring from 1 to 10 000 base pairs in length,[1][2][3][4][5][6][7] including insertion and deletion events that may be separated by many years, and may not be related to each other in any way. (wikipedia)
+* What it means to 'call somatic SNV &/ indels' with mutect2 or otherwise:
 
 > 1-somatic-mutect2-tutorial:
 > 2-somatic-cna-tutorial: The workflow is suitable for detecting _somatic copy ratio alterations_, more familiarly copy number alterations (_CNAs_), or copy number variants (_CNVs_) for whole genomes and targeted exomes.
 
-- HCC1143: HC stands for Haplotype Colouring
-
-- - - prep. for workflow
-  - have raw seq
-  - have ref seq
-- =>align
-- align BAM
-- mark dup.seq
-- realign
-- analyse ready(?) bam seq
-- - -
 > "today: somatic variant calling. based on tumour (T) & match normal (N)"
   > "match normal: is usuallby a blood sample with the normal genome of this person (compared to the tumour sample)."
 
@@ -47,7 +39,7 @@ __shorten & extract useful info. from below__
 - G Pop: Germline Population. For identifying germline variants not yet captured with reference variants
 - PoN: Panel of Normals, vital, for bridging the gap between the matched normals and the germline population.
 
-# personal notes on the topic
+## personal notes on the topic
 
 This workspace focuses on the use of _jupyter_ notebooks (.ipynb files).
 
