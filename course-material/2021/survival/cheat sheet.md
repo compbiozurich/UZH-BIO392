@@ -31,6 +31,7 @@ def get_gene_data(cancer_type,gene_name):
     # print(len(ids),len(gene_data))
 
     return cancerdf, genedf
+
 sarcoma, tp53 =  get_gene_data('sarcoma','tp53del')
 sarcomanum = sarcoma.apply(pd.to_numeric, errors='coerce').fillna(sarcoma)
     
