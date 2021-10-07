@@ -58,7 +58,7 @@ while i < len(NCIT):
     kmf = KaplanMeierFitter()
     durations = group['info.cnvstatistics.cnvcoverage']
     event_observed = group['info.death']
-    kmf.fit(durations, event_observed, label=NCIT[i], xlael='cnvcoverage')
+    kmf.fit(durations, event_observed, label=NCIT[i])
     kmf.plot(ci_show=False)
 
 
