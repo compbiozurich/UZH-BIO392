@@ -25,7 +25,42 @@ def get_gene_data(cancer_type,gene_name):
         if line[14] in ids:
             gene_data.append(line)
 
+    cancerdf = transform_to_df(cancer)
+    genedf = transform_to_df(gene_data)
+
     # print(len(ids),len(gene_data))
 
-    return cancer, gene_data
+    return cancerdf, genedf
+sarcoma, tp53 =  get_gene_data('sarcoma','tp53del')
+sarcomanum = sarcoma.apply(pd.to_numeric, errors='coerce').fillna(sarcoma)
+    
+## boxplot
+NCIT = sarcomanum['histologicalDiagnosis.label'].unique()
+i=0
+while i < len(NCIT):
+    mean = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT[i])
+
+    ax=plt.subplot(2, 4, i+1)
+    mean.boxplot(fontsize=5)
+    ax.set_xticklabels(['cnvcoverage','delcoverage','dupcoverage','death'],rotation=90)
+    ax.set_title(NCIT[i],fontsize=7)
+
+
+    i=i+1
+    
+## KM analysis
+
+while i < len(NCIT):
+    group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT[i])
+    kmf = KaplanMeierFitter()
+    durations = group['info.cnvstatistics.cnvcoverage']
+    event_observed = group['info.death']
+    kmf.fit(durations, event_observed, label=NCIT[i], xlael='cnvcoverage')
+    kmf.plot(ci_show=False)
+
+
+
+    i=i+1
+    
+plt.show()
 
