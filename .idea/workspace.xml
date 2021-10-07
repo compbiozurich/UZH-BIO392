@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="014e3928-bd91-4263-8c82-7f7ea4ee60ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/kaplan_meier_plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/course-results/2021/sarcoma-group/kaplan_meier_plotting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_analysis_sarcoma.py" beforeDir="false" afterPath="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_analysis_sarcoma.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +13,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1yZpKP7hLnfHfEjIvFpyniYhFmw" />
   <component name="ProjectViewState">
@@ -24,7 +33,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.survival_analysis_sarcoma">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="UZH-BIO392" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -39,6 +48,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kaplan_meier_plotting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="UZH-BIO392" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course-results/2021/sarcoma-group" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/course-results/2021/sarcoma-group/kaplan_meier_plotting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -69,6 +97,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.survival_analysis_sarcoma" />
+        <item itemvalue="Python.kaplan_meier_plotting" />
       </list>
     </recent_temporary>
   </component>
@@ -81,6 +110,8 @@
       <option name="presentableId" value="Default" />
       <updated>1632468902201</updated>
       <workItem from="1633607771079" duration="9431000" />
+      <workItem from="1633624829391" duration="1068000" />
+      <workItem from="1633633137631" duration="3753000" />
     </task>
     <servers />
   </component>
@@ -97,5 +128,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
