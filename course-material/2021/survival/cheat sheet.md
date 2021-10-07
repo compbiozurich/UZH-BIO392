@@ -52,7 +52,7 @@ while i < len(NCIT):
     i=i+1
     
 ## KM analysis
-
+i=0
 while i < len(NCIT):
     group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT[i])
     kmf = KaplanMeierFitter()
