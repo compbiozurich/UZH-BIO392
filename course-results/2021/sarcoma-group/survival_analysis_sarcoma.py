@@ -10,11 +10,12 @@ bio392: survival project
 import csv
 
 # packages for numerical computation (arrays, matrices, data frames - more practical data types for changing & plotting)
-import numpy as np
+#import numpy as np
 import pandas as pd  # basically numpy with additional names for rows/columns, instead of only indeces.
 
 # packages for plotting
 import matplotlib.pyplot as plt
+from lifelines import KaplanMeierFitter
 
 
 #%% Data Handling
@@ -103,6 +104,11 @@ def get_gene_data(cancer_type, gene_name):
 sarcoma, tp53 =  get_gene_data('sarcoma', 'tp53del')
 sarcomanum = sarcoma.apply(pd.to_numeric, errors='coerce').fillna(sarcoma)
 
+print(sarcomanum['info.followupMonths'])
+
+sarcomanum_km
+
+
 """ gene names of the other genes
 get_gene_data('sarcoma erbb2.csv')
 get_gene_data('sarcoma rp53.csv')
@@ -111,37 +117,39 @@ get_gene_data('sarcoma cdkn2a.csv')
 """
 
 
-#%% Boxplot (CNV fraction) (cheatsheet)
-
-
-NCIT = sarcomanum['histologicalDiagnosis.label'].unique()
-i=0
-while i < len(NCIT):
-
-    mean = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT[i])
-
-    ax=plt.subplot(2, 4, i+1)
-    mean.boxplot(fontsize=5)
-    ax.set_xticklabels(['cnvcoverage','delcoverage','dupcoverage','death'],rotation=90)
-    ax.set_title(NCIT[i],fontsize=7)
-
-    i=i+1
-
-
 #%% KM analysis (Kaplan-Meier / Survival Plot) (cheatsheet)
 
+NCIT_surv = sarcomanum['histologicalDiagnosis.label'].unique()
 
-while i < len(NCIT):
+i = 0
+while i < len(NCIT_surv):
 
-    group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT[i])
-    durations = group['info.cnvstatistics.cnvcoverage']
+    group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[i])
+    kmf = KaplanMeierFitter()
+    durations = group['info.cnvstatistics.cnvcoverage']  # cnvcoverage ("test for me") -> change to followup
     event_observed = group['info.death']
 
-    kmf = KaplanMeierFitter()
-
-    kmf.fit(durations, event_observed, label=NCIT[i], xlael='cnvcoverage')
+    kmf.fit(durations, event_observed, label=NCIT_surv[i])
     kmf.plot(ci_show=False)
 
     i=i+1
 
 plt.show()
+
+
+#%% Boxplot (CNV fraction) (cheatsheet)
+
+
+NCIT_box = sarcomanum['histologicalDiagnosis.label'].unique()  # moved to previous chunk
+i=0
+while i < len(NCIT_box):
+    mean = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_box[i])
+    ax=plt.subplot(2, 4, i+1)
+    mean.boxplot(fontsize=5)
+    ax.set_xticklabels(['cnvcoverage','delcoverage','dupcoverage','death'],rotation=180) # rotation=90 changed to 180
+    ax.set_title(NCIT_box[i],fontsize=7)
+    i = i + 1
+
+"""boxplot(fontsize=5)
+ax.set_xticklabels(['cnvcoverage','delcoverage','dupcoverage','death'],rotation=180) # rotation=90 changed to 180
+ax.set_title(NCIT[i],fontsize=7)"""
