@@ -21,13 +21,16 @@ combine relevant/interesting data into 1 file
 """
 
 def extract_id_from_csv(filename):
+    """
+    attempt at extractin ids from some csv files (should the same process for Survival and Gene .csv files).
+    :param filename: str of the filename to be scanned for ids
+    :return: list ids containing all the ids (of the lines) of the input file.
+    """
+    ids = []
 
     with open('sarcoma erbb2.csv') as erbb2:
         for i, line in enumerate(erbb2):
-            readlines()
-
-
-
+            ids = ids.append(list(line))
 
 """id0 = '5bab56c0727983b2e00aaa1b'
 id1 = '5bab56c0727983b2e00aaab7'

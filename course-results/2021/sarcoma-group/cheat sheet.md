@@ -1,4 +1,5 @@
 ### Functions to get gene data
+```python
 def transform_to_df(data):
     data = pd.DataFrame(data)
     data.columns = data.iloc[0]
@@ -28,4 +29,11 @@ def get_gene_data(cancer_type,gene_name):
     # print(len(ids),len(gene_data))
 
     return cancer, gene_data
+```
 
+
+
+get_gene_data('sarcoma erbb2.csv')
+get_gene_data('sarcoma rp53.csv')
+get_gene_data('sarcoma myc.csv')
+get_gene_data('sarcoma cdkn2a.csv')
