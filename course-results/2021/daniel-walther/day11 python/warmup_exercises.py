@@ -44,4 +44,4 @@ print('been there, done that.')
 #%% exercise 3 string handling
 
 
-#%% 
+#%%
