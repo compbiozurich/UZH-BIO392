@@ -67,3 +67,4 @@ while i < len(NCIT):
     
 plt.show()
 
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.bar.html
