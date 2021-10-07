@@ -45,7 +45,7 @@ while i < len(NCIT):
 
     ax=plt.subplot(2, 4, i+1)
     mean.boxplot(fontsize=5)
-    ax.set_xticklabels(['cnvcoverage','delcoverage','dupcoverage','death'],rotation=90)
+    ax.set_xticklabels(['cnvcoverage','delcoverage','dupcoverage'],rotation=180)
     ax.set_title(NCIT[i],fontsize=7)
 
 
