@@ -83,14 +83,29 @@ __My answers:__
 
 #### 1: Exercise:
 
-Liftover with UCSC Genome Browser
+Liftover with UCSC Genome Browser & Table Browser (in Genome Browser, click on gene, click on table schema, copy the 
 1. Down-lift: TP53 from hg38 to hg19
-  * [this isoform used](https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr17%3A7668421%2D7687490&hgsid=275821490_RcgzzhnB8lbtrSKY1u4qnfUaUZ8P)
-  * [get bed file here](https://genome.ucsc.edu/cgi-bin/hgTables)
-  * see files TP53-hg38.bed and TP53-hg19-downlift-...bed
+  * chrX:15,560,138-15,602,945 to TP53-hg38.bed
+  * down-lift to TP53-hg19-down-lifted.bed, 30 successful conversion, 0 failed
 
 2. Up-lift: TP53 from hg19 to hg38
+  * TP53-hg19-down-lifted.bed to TP53-hg38-re-up-lifted.bed, 0 failed
 
 3. Cross-species-lift: TP53 from human to mouse
+  * TP53-hg38.bed to TP53-mm39-cross-lifted.bed, 9 successful, 21 failed (0.1 remap base ratio minimum)
+  * failed records to TP53-mm39-cross-lifted-failed.bed
 
 4. Multi-step-lift: TP53 from hg38 to hg 18
+  * TP53-hg38.bed to TP53-hg19-multi1-down-lifted.bed (0 failed), to TP53-hg18-multi2-down-lifted (0 failed).
+
+#### 2: Exercise:
+
+Liftover with UCSC Genome Browser & Table Browser
+1. Liftover multiple positions with a BED file.
+  * TP53-hg38.bed and chr7:87,322,943-87,345,528 (TP53TG1-hg38.bed) to TP53(TG1)-hg19-poly-down-lifted.bed, 0 failed (42 successful), yields a bed file with records from multiple chromosomes (records independent of each other, even within a gene).
+2. Lift a larger range and interpret the result.
+  * Frankly, I will not do that, as it generates much data which I don't see the particular use of atm. But I expect to just find the corresponding region in the target genome assembly, with some longer sequences for an up-lift and shorter sequences for a down-lift (generally more data is added in making the next assembly).
+  * The bed file itself I wouldn't know how to interpret beyond point a) in a useful time frame (maybe find some additional/missing regions and go into detail why/what/where they are (not). Some reconstruction of dendrograms, e.g. between vertebrates would be interesting to play around with with genome data (I would choose a highly conserved region between species, e.g. the HOX genes. Hmm that sounds fun, tbh).
+3. Limitations of the liftover.
+  * Off the cuff idea: Liftovers yield successful and failed conversion records which creates an additional challenge of what do with the failed records. I guess many researchers don't always keep the failed records, e.g. for economic reasons, which can lead to losing important sequence data.
+  * I am sure there are many articles online on this topic, which I do not prioritise at the moment, to be frank.
