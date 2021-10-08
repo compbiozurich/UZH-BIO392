@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="014e3928-bd91-4263-8c82-7f7ea4ee60ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/sarcoma_MYC_dup.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_analysis_sarcoma.py" beforeDir="false" afterPath="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_analysis_sarcoma.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +115,8 @@
       <workItem from="1633607771079" duration="9431000" />
       <workItem from="1633624829391" duration="1068000" />
       <workItem from="1633633137631" duration="3753000" />
-      <workItem from="1633676267720" duration="1071000" />
+      <workItem from="1633676267720" duration="4492000" />
+      <workItem from="1633681932057" duration="3648000" />
     </task>
     <servers />
   </component>
@@ -131,5 +134,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/survival_analysis_sarcoma_py$survival_analysis_sarcoma.coverage" NAME="survival_analysis_sarcoma Coverage Results" MODIFIED="1633680565357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/course-results/2021/sarcoma-group" />
   </component>
 </project>
