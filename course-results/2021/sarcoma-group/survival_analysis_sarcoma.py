@@ -22,6 +22,7 @@ from lifelines import KaplanMeierFitter
 
 # Functions to get gene data (cheatsheet)
 
+
 def transform_to_df(data):
     """
     transform ... data format to pandas data frame format.
@@ -62,9 +63,18 @@ def get_gene_data(cancer_type, gene_name):
 
     return cancerdf, genedf, cancer  # added return variable 'cancer', a list version of the cancer gene CNV data set
 
+
+# df.column_name != whole string from the cell
+# now, all the rows with the column: Name and Value: "dog" will be deleted
+
+
+
 # calling the functions for saving data sets to usable variables here.
 sarcoma, tp53, tp53_list =  get_gene_data('sarcoma', 'tp53del')
     # survival set (pd.dataframe), cancer gene CNV set (pd.dataframe),
+
+    #for el in tp53_list:
+        #print(el[51])
 
 sarcomanum = sarcoma.apply(pd.to_numeric, errors='coerce').fillna(sarcoma)
     # changes format from pd.dataframe to some numeric format (which one? what changed, simply no column names?)
@@ -92,20 +102,79 @@ idea: is it an issue with the multi plot usage (plt.subplot())?
 
 NCIT_surv = sarcomanum['histologicalDiagnosis.label'].unique()
 
-i = 0
-while i < len(NCIT_surv):
+#sarcomanum = sarcomanum.dtypes
+## KM-plot works with: i=0, i=1, i=2, i=4, i=7
+i=0
+group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[0])
+kmf = KaplanMeierFitter()
+durations = group['info.followupMonths']  # cnvcoverage ("test for me") -> change to followup
+event_observed = group['info.death']
+#pd.to_numeric(durations, errors='raise', downcast=None)
+#pd.to_numeric(event_observed, errors='raise', downcast=None)
 
-    group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[i])
-    kmf = KaplanMeierFitter()
-    durations = group['info.cnvstatistics.cnvcoverage']  # cnvcoverage ("test for me") -> change to followup
-    event_observed = group['info.death']
 
-    kmf.fit(durations, event_observed, label=NCIT_surv[i])
-    kmf.plot(ci_show=False)
-
-    i=i+1
+kmf.fit(durations, event_observed, label=NCIT_surv[0])
+kmf.plot(ci_show=False)
 
 plt.show()
+
+
+i=1
+group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[1])
+kmf = KaplanMeierFitter()
+durations = group['info.followupMonths']  # cnvcoverage ("test for me") -> change to followup
+event_observed = group['info.death']
+#pd.to_numeric(durations, errors='raise', downcast=None)
+#pd.to_numeric(event_observed, errors='raise', downcast=None)
+
+
+kmf.fit(durations, event_observed, label=NCIT_surv[1])
+kmf.plot(ci_show=False)
+
+plt.show()
+
+i=2
+group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[2])
+kmf = KaplanMeierFitter()
+durations = group['info.followupMonths']  # cnvcoverage ("test for me") -> change to followup
+event_observed = group['info.death']
+#pd.to_numeric(durations, errors='raise', downcast=None)
+#pd.to_numeric(event_observed, errors='raise', downcast=None)
+
+
+kmf.fit(durations, event_observed, label=NCIT_surv[2])
+kmf.plot(ci_show=False)
+
+plt.show()
+
+i=4
+group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[4])
+kmf = KaplanMeierFitter()
+durations = group['info.followupMonths']  # cnvcoverage ("test for me") -> change to followup
+event_observed = group['info.death']
+#pd.to_numeric(durations, errors='raise', downcast=None)
+#pd.to_numeric(event_observed, errors='raise', downcast=None)
+
+
+kmf.fit(durations, event_observed, label=NCIT_surv[4])
+kmf.plot(ci_show=False)
+
+plt.show()
+
+i=7
+group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[7])
+kmf = KaplanMeierFitter()
+durations = group['info.followupMonths']  # cnvcoverage ("test for me") -> change to followup
+event_observed = group['info.death']
+#pd.to_numeric(durations, errors='raise', downcast=None)
+#pd.to_numeric(event_observed, errors='raise', downcast=None)
+
+
+kmf.fit(durations, event_observed, label=NCIT_surv[7])
+kmf.plot(ci_show=False)
+
+plt.show()
+
 
 
 #%% Barplot of CNV fraction (gene comparison)
@@ -125,11 +194,11 @@ while i < len(NCIT_box):
     mean = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_box[i])
     ax=plt.subplot(2, 4, i+1)
     mean.boxplot(fontsize=5)
-    ax.set_xticklabels(['cnvcoverage','delcoverage','dupcoverage','death'],rotation=180) # rotation=90 changed to 180
+    #ax.set_xticklabels(['cnvcoverage','delcoverage','dupcoverage'],rotation=180) # rotation=90 changed to 180
     ax.set_title(NCIT_box[i],fontsize=7)
     i = i + 1
 
-plt.show()
+#plt.show()
 
 """boxplot(fontsize=5)
 ax.set_xticklabels(['cnvcoverage','delcoverage','dupcoverage','death'],rotation=180) # rotation=90 changed to 180
