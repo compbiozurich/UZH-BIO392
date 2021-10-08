@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="014e3928-bd91-4263-8c82-7f7ea4ee60ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/kaplan_meier_plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/course-results/2021/sarcoma-group/kaplan_meier_plotting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_analysis_sarcoma.py" beforeDir="false" afterPath="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_analysis_sarcoma.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +58,9 @@
       <module name="UZH-BIO392" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/course-results/2021/sarcoma-group" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -112,6 +113,7 @@
       <workItem from="1633607771079" duration="9431000" />
       <workItem from="1633624829391" duration="1068000" />
       <workItem from="1633633137631" duration="3753000" />
+      <workItem from="1633676267720" duration="1071000" />
     </task>
     <servers />
   </component>
