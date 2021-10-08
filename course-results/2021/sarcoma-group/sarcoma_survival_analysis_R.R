@@ -11,11 +11,11 @@ library(survminer)
 library(lubridate)
 
 ## Load data
-survival <- read.csv("C:/Users/ann-k/Desktop/sarcoma.csv")
-tp53 <- read.csv("C:/Users/ann-k/Desktop/sarcoma_tp53del.csv")
-myc <- read.csv("C:/Users/ann-k/Desktop/sarcoma_MYC_dup.csv")
-erbb2 <- read.csv("C:/Users/ann-k/Desktop/sarcoma_erbb2dup.csv")
-cdkn2a <- read.csv("C:/Users/ann-k/Desktop/sarcoma_cdkn2adel.csv")
+survival <- read.csv("sarcoma.csv")
+tp53 <- read.csv("sarcoma_tp53del.csv")
+myc <- read.csv("sarcoma_mycdup.csv")
+erbb2 <- read.csv("sarcoma_erbb2dup.csv")
+cdkn2a <- read.csv("sarcoma_cdkn2adel.csv")
 
 ## Match data
 Id_surv <- survival %>%
