@@ -130,16 +130,16 @@ plt.show()
 
 NCIT_box = sarcomanum['histologicalDiagnosis.label'].unique()  # moved to previous chunk
 i = 0
-while i < len(NCIT_box):
-    mean = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_box[i])
-    ax = plt.subplot(2, 4, i+1)
-    mean.boxplot(fontsize=5)
 
-    ax.set_xticklabels(['cnvcoverage', 'delcoverage', 'dupcoverage', 'death'], rotation=180) # rotation=90 changed to 180
-    ax.set_title(NCIT_box[i],fontsize=7)
-    i = i + 1
+mean = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_box[i])
+ax = plt.subplot(1, 1, 1)
+mean.boxplot()
+
+ax.set_xticklabels(['cnvcoverage', 'delcoverage', 'dupcoverage', 'death']) # rotation=90 changed to 180
+ax.set_title(NCIT_box[i])
 
 plt.show()
+
 
 
 #%% Communication - spoken
