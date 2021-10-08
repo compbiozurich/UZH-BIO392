@@ -102,72 +102,26 @@ sarcomanum = sarcoma.apply(pd.to_numeric, errors='coerce').fillna(sarcoma)
 NCIT_surv = sarcomanum['histologicalDiagnosis.label'].unique()
 ## KM-plot works with: i=0, i=1, i=2, i=4, i=7 where i is index in NCIT_surv[i]
 
-i=0
-group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[0])
-kmf = KaplanMeierFitter()
-durations = group['info.followupMonths']  # cnvcoverage ("test for me") -> change to followup
-event_observed = group['info.death']
-#pd.to_numeric(durations, errors='raise', downcast=None)
-#pd.to_numeric(event_observed, errors='raise', downcast=None)
 
-kmf.fit(durations, event_observed, label=NCIT_surv[0])
-kmf.plot(ci_show=False)
+def plot_survival(i):
+    group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[i])
+    kmf = KaplanMeierFitter()
+    durations = group['info.followupMonths']  # cnvcoverage ("test for me") -> change to followup
+    event_observed = group['info.death']
 
-plt.show()
+    kmf.fit(durations, event_observed, label=NCIT_surv[i])
+    kmf.plot(ci_show=False)
 
 
-i=1
-group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[1])
-kmf = KaplanMeierFitter()
-durations = group['info.followupMonths']  # cnvcoverage ("test for me") -> change to followup
-event_observed = group['info.death']
-#pd.to_numeric(durations, errors='raise', downcast=None)
-#pd.to_numeric(event_observed, errors='raise', downcast=None)
-
-kmf.fit(durations, event_observed, label=NCIT_surv[1])
-kmf.plot(ci_show=False)
-
-plt.show()
-
-
-i=2
-group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[2])
-kmf = KaplanMeierFitter()
-durations = group['info.followupMonths']  # cnvcoverage ("test for me") -> change to followup
-event_observed = group['info.death']
-#pd.to_numeric(durations, errors='raise', downcast=None)
-#pd.to_numeric(event_observed, errors='raise', downcast=None)
-
-kmf.fit(durations, event_observed, label=NCIT_surv[2])
-kmf.plot(ci_show=False)
-
-plt.show()
-
-i=4
-group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[4])
-kmf = KaplanMeierFitter()
-durations = group['info.followupMonths']  # cnvcoverage ("test for me") -> change to followup
-event_observed = group['info.death']
-#pd.to_numeric(durations, errors='raise', downcast=None)
-#pd.to_numeric(event_observed, errors='raise', downcast=None)
-
-
-kmf.fit(durations, event_observed, label=NCIT_surv[4])
-kmf.plot(ci_show=False)
-
-plt.show()
-
-i=7
-group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT_surv[7])
-kmf = KaplanMeierFitter()
-durations = group['info.followupMonths']  # cnvcoverage ("test for me") -> change to followup
-event_observed = group['info.death']
-#pd.to_numeric(durations, errors='raise', downcast=None)
-#pd.to_numeric(event_observed, errors='raise', downcast=None)
-
-
-kmf.fit(durations, event_observed, label=NCIT_surv[7])
-kmf.plot(ci_show=False)
+# could make a loop out of this, but let's stop here.
+plot_survival(i=0)
+plot_survival(i=1)
+plot_survival(i=2)
+plot_survival(i=4)
+plot_survival(i=7)
+plt.xlabel('duration (Months)')
+plt.ylabel('survival (proportion)')
+plt.title('sarcoma survival, comparison of subtypes')
 
 plt.show()
 

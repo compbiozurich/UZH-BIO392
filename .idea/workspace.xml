@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="014e3928-bd91-4263-8c82-7f7ea4ee60ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/course-results/2021/sarcoma-group/boxplot_buggy_errorfree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_plot_sarcoma_locations.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/sarcoma_MYC_dup.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_analysis_sarcoma.py" beforeDir="false" afterPath="$PROJECT_DIR$/course-results/2021/sarcoma-group/survival_analysis_sarcoma.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +33,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/course-results/2021/sarcoma-group" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\popsicle cell\Documents\GitHub\UZH-BIO392\course-results\2021\sarcoma-group" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.survival_analysis_sarcoma">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -117,6 +124,8 @@
       <workItem from="1633633137631" duration="3753000" />
       <workItem from="1633676267720" duration="4492000" />
       <workItem from="1633681932057" duration="3648000" />
+      <workItem from="1633689111664" duration="4000" />
+      <workItem from="1633690074959" duration="2508000" />
     </task>
     <servers />
   </component>
