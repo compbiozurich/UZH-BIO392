@@ -1,8 +1,8 @@
 ## General questions about the topic of the course
 Understand the relationships between inherited and acquired genomevariants and their possible implications for understandingphenotypic human variation. What are problems encountered there, why do we think we need many more genomes, to be available for comparative analyses? Also, examplesof data typesbeyond genome data relevant for understanding genomic varition shouldbeprovided. Knowsome disease examples for whicha genomic contribution could be described.
 
-* Approximate size of human genome:
-* Size of largest human chromosome: 
+* Approximate size of human genome: 6.4 billion bp
+* Size of largest human chromosome: Chromosome 1 -> 248'956'422 bp (GRCh38)
 * Example(s) for sequencing "depth/coverage" in standard analysis scenarios, and the impact this has to the different genome file formats:
 * Dis(advantages) of WES & WGS:
 * What are "genome reference assemblies", and can you name (some of) them?
@@ -51,3 +51,6 @@ You should be able to list at least 2-3 core features (main use cases, type, cor
   * "Unbreakable"?
 * De-identification attacks
 * Genomic privacy, research, comparable risks (opinions)
+
+----------------------------------------------------------------
+File formats sorted by costs: SAM > BAM > FASTA > VCF
