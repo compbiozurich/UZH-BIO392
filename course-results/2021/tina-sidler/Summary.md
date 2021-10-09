@@ -1,4 +1,4 @@
-## 1 General questions about the topic of the course
+## General questions about the topic of the course
 Understand the relationships between inherited and acquired genomevariants and their possible implications for understandingphenotypic human variation. What are problems encountered there, why do we think we need many more genomes, to be available for comparative analyses? Also, examplesof data typesbeyond genome data relevant for understanding genomic varition shouldbeprovided. Knowsome disease examples for whicha genomic contribution could be described.
 
 * Approximate size of human genome:
