@@ -5,7 +5,10 @@ Understand the relationships between inherited and acquired genomevariants and t
 * Size of largest human chromosome: Chromosome 1 -> 248'956'422 bp (GRCh38)
 * Example(s) for sequencing "depth/coverage" in standard analysis scenarios, and the impact this has to the different genome file formats:
 * Dis(advantages) of WES & WGS:
-* What are "genome reference assemblies", and can you name (some of) them?
+  * WES: cheaper (makes it feasible to increase the number of samples to be sequenced, enabling large population based comparisons), less time-consuming. Omits regulatory regions, frequently requires PCR amplification
+  * WGS: more reliable sequence coverage, allows examination of SNVs, indels, SV and CNVs in coding and non-coding regions of the genome
+* What are "genome reference assemblies", and can you name (some of) them? A genome reference assembly is a digital nucleic acid sequencedatabase assembled as a representativeexample ofthe set of genes in 
+* 
 * Structuring of HGVS annotations (and possibly made up -example):
 * Basic understanding of cytogenetic banding annotation, and (approximate) spatial resolution of such annotations:
 * "1000 genomes" - what are they, and advantages vs. problems associated with using them in genetic workflows:
