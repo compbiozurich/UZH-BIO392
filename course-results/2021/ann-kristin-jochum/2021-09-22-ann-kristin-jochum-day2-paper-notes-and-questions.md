@@ -46,7 +46,7 @@
 ## *A global reference for human genetic variation* by The 1000 Genomes Project Consortium
 
 ### Notes
-* Goal of 1'000 Genomes Project: comprehensive description of common human genetic variants by applying WGS to a diverse set of individuals from multiple population
+* Goal of 1'000 Genomes Project: comprehensive description of common human genetic variants by applying WGS to a diverse set of individuals from multiple populations
 * 2'504 individuals from 26 populations (AFR, EAS, EUR, SAS, AMR), over 88 mio variants (84.7 mio SNPs, 3.6 mio short indels, 60'000 SV)
 * To control false discovery rate: variant quality score threshold was defined using high depth (>30x) PCR-free sequence data generated for one individual per population; for SVs, additional orthogonal methods were used for confirmation
   * SNP and indels: FDR < 5%
