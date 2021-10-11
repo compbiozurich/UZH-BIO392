@@ -1,4 +1,4 @@
-# Notes on the Articles regarding Genome Sequence Variation
+# Notes on the articles regarding Genome Sequence Variation
 
 ## Finding the Rare Pathogenic Variants in a Human Genome - James P. et al.
 This article is short and a nice read. It sums up the essential information on the topic of implementation and use of data gathered from large scale sequencing. It's all about the hunt for rare (or not rare) pathogenic variants in humans.
