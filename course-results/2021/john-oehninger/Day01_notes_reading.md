@@ -72,7 +72,13 @@ In the second wave of sequencing technology, many different approaches were disc
 
 
 ## Genome structural variation discovery and genotyping
+This article discusses the finding that our genome is altered rather as a result of structural variation (including copy number variation (CNV) than just single point mutations (SNPs).
 
+
+
+* With all the new sequencing methods, larger amounts of genetic data are being gathered than ever before. With more data at hand, more insights are enabled, which has lead to the discovery of smaller structural variants than seen before.
+
+A copy number variation (CNV) is when the number of copies of a particular gene varies from one individual to the next. Following the completion of the Human Genome Project, it became apparent that the genome experiences gains and losses of genetic material. The extent to which copy number variation contributes to human disease is not yet known. It has long been recognized that some cancers are associated with elevated copy numbers of particular genes.
 
 
 
