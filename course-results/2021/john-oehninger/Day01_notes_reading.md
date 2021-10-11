@@ -21,7 +21,19 @@ Here are some key notes from the artice:
 
 
 
-## The sequence of sequencers: The history of sequencing DNA
+## The sequence of sequencers: The history of sequencing DNA - James M. HEather & Benjamin Chain
+This article reflects on the evolution of the sequencing process, going through the generations of the methods that arose.
+
+* 1<sup>st</sup> generation DNA sequencing:
+
+
+* 2<sup>nd</sup> generation DNA sequencing:
+
+
+* 3<sup>rd</sup> generation DNA sequencing:
+
+
+
 
 
 
