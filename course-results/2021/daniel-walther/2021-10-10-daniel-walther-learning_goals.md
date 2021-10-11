@@ -11,16 +11,19 @@ This page lists the "core learning goals" in preparation for the exam at the end
 You should be able to demonstrate an understanding of the relationships between inherited and acquired genome variants and their possible implications for understanding phenotypic human variation. What are problems encountered there, and why do we think we need many more genomes to be available for comparative analyses? Also, examples of data types beyond genome data relevant for understanding genomic variation should be provided.  
 You should know some disease examples for which a genomic contribution could be described.
 
-=> _Sickle cell anemia (strong genomic contribution), breast cancer (BRCA1,2...), colorectal cancer (also some genomic contr. known?), Bluterkrankheit (brit. royals), ADHD?, etc._
+=> _breast cancer, cholorectal cancer (slide 5 day 2)._
+=> _Sickle cell anemia, Bluterkrankheit, ADHD ?, etc._
 
 ##### Some factlets:
 
-- approximate size of human genome 
+- approximate size of human genome
+  => _3.1 billion base pairs (3.1 \* 10^9)_
 - size of largest human chromosome
 - example(s) for sequencing "depth/coverage" in standard analysis scenarios, and the impact this has on the different genome file formats
   => _sequencing depth: e.g. great depth where sequence is duplicated, small depth where copy was deleted._
   => _sequencing coverage: the sequenced portion of a genome. e.g. the seq.ing coverage is better/greater in WGS (whole Genome sequencing) than in WES (whole Exome sequencing)._
 - (dis)advantages of WES & WGS (and what those acronyms stand for)
+  => _see slide 15 day 2_
   => _WGS: Whole Genome Sequencing_
     => _(dis)advantages_
   => _WES: Whole Exome Sequencing_
