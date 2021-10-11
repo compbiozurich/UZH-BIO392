@@ -53,10 +53,33 @@ In the second wave of sequencing technology, many different approaches were disc
 
 
 
-
 ## A global reference for human genetic variation
-
+* The 1000 Genomes Projects aim was to understant and catologue common human genetic variation by sequencing whole genomes of a diverse set of individuals from many pululations spread around the world.  They sampled 2504 individuals from 26 populations.
+* They characterized 88 million variants, 3.6 million short insertions/deletions and 60000 structrual variants.
+* Samples were collected geograohically from Africa, East Asia, Europe, South Asia and the Americas.
+* The project has contributed 80% of the 100 million variants described in the dbSNP cataloge. Especiall contributing to variation within South Asian and African populations.
+* To minimize false positives they introduced a variant quality score threshold to keep this rate below 5%.
+* A typical human genome differs at 4.1 - 5 million sites in comparison to the reference genome.
+* A typical genome contains an estimated 2100 - 2500 structural variants.
+* African ancestry populations have shown the largest number of variant sites, which is empirical evidence for the *out of Africa* model of the origins of humans.
+* The majority of variants discovered are rare, which is to be expected.
+* Systematic analysis of the data patterns infer information oh population history. Rare variants are typically restricted to closely related populations. 86& of variants were restricted to a single continental group.
+* Analysis of shared haplotypes suggests a median common ancestor at ~296 generations ago. Within a population the shared common ancester is estimated at around ~143 generations ago.
+* Population sizes of the ancestral populations have also been estimeted. They show a shared emographic history for all humans beyond ~150000 - 200000 years ago.
+* The 1000 Genomes Project sampled provide a rough and broad representation of human genetic variation.
+* This data will continue to contribute to analyses of human genome variation far into the future.
 
 
 
 ## Genome structural variation discovery and genotyping
+
+
+
+
+
+
+
+
+
+
+
