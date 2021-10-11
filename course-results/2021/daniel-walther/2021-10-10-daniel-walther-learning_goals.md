@@ -72,47 +72,76 @@ Some familiarity with selected genome & molecular knowledge resources, their pri
 
 You should be able to list at least 2-3 core features (main use cases, type, core strength, core weakness).
 
+- (reference genome)
+  => _a reference genome is a collection of contigs/scaffolds_
+  => _a contig is a stretch of DNA sequence encoded as A,G,C,T,N._
 - FASTA
+  => _use cases:_ unaligned sequences; reference genomes typically come in FASTA format;
+  => _type: text files (probably ASCII)_
+  => _core strength: practical for storing raw sequences_
+  => _core weakness: no quality measure for error prob. of nucleotides; not annotations besides scaffold (some ID, species, cell type, genome region)_ 
 - FASTQ
-  => _FASTQ = FASTA with quality measure for each base_
-- SAM/BAM/~~CRAM~~
-  => _...short alignment method? / binary alignment method?_
+  => _use cases:_ unaligned sequences; standard de facto for short read, high-throughput sequencing instruments (i.e. Solexa/Illumina), which return sequence and error rate assessment;
+  => _type: text files (probably ASCII)_
+  => _core strength: storing raw sequences from sequencing machine outputs, including quality measure for sequencing error rate/probability_
+  => _core weakness: different standards of quality encoding (Phred scores)_  
+- SAM/BAM/~~CRAM~~ (Sequence Alignment Map / Binary Alignment Map)
+  => _use cases: alignments (to (parts of) reference genomes); to map to known genomic sequences_
+  => _type: SAM text files; BAM binary format, binary & thus compressed version of SAM_
+  => _core strength: contains much mapping information & extracted/inferred metadata_
+  => _core weakness: much space needed for storage_  
 - BED
-  => _Browser Extensible Data?_
-  => _(+) reduces memory needed for storing genomic data (by referencing positions instead of containing the sequence itself)_
+  => _use cases:_ genomic ranges;
+  => _type:_
+  => _core strength: reduces space needed for storing genomic (alignment/aligned) data by replacing sequence with position mapping to reference genomes_
+  => _core weakness: rather rigid file structures, norms and conventions exist which make this format not flexible (could be used flexibly, e.g. other columns, but reusability suffers)_
+- (GFF/GTF)
+  => _use cases: gene annotation; e.g. can contain info. such as exon or intron, chromosome, nucleotide type, other info., etc._
+- (wiggle files, BEDgraphs)
+  => _use cases: genomic scores;_
 - VCF (more extensive understanding of file structure expected)
+  => _use cases:_ variants;
+  => _type:_
+  => _core strength:_
+  => _core weakness:_  
   => _Variant Call Format: for making the calling(?) of variants easier, faster, cheaper, more efficient \~_
+  => _[Understanding VCF format](https://www.ebi.ac.uk/training/online/courses/human-genetic-variation-introduction/variant-identification-and-analysis/understanding-vcf-format/ )_
 - ~~"segment files"~~
+  => I think segment files are used in functional genomics (studying epigenetics)
 
-### Protein representation of variants
+### Protein representation of variants ?
 
-_I think I missed another part of the course... Luckily I did 'Protein Biophysics' and can simulate protein binding behaviour._
+_exam relevant? / where was what mentioned?_
 
+Is it meant so, that: "Protein representation of variants with regard to...":
 - protein sizes
   => _generally measured in kiloDaltons (kD)_
 - resource(s) for 3D protein structures and other protein information resources
   => _Protein Data Bank (PDB) with associated file format .pdb_
 - types of genome variants with respect to their impact on protein composition
+  => _what do you mean? what is the learning goal?_
 - amino acid physicochemical properties (size, charge) and effect of variation due to amino acid properties
 - conservation state of a given AA and its relation to mutation frequency and functional importance
 
-### Tutorials
+### Tutorials ?
 
 - What is "liftover" being used for?
   => _To translate/transform between reference genome assemblies_
 - Linkage disequilibrium and population genetics
 	- What do you analyse with PLINK?
-	  => _Was PLINK mentioned even once in the course?_
+	  => _exam relevant?_
 	- Examples for filters/parameters used in linkage analysis
-	  => _what is linkage analysis? ...w00t?_
+	  => _exam relevant?_
 
-### Genomic privacy
+### Genomic privacy ?
+
+_exam relevant?_
 
 - genome "Beacons"
-  => _?_
+  =>
   - concept
   - "unbreakable"?
 - de-identification attacks
-  => _?_
+  =>
 - genomic privacy, research, comparable risks (opinions)
-  => _did we talk about this in the course at some point? (I would've missed it)._
+  =>
