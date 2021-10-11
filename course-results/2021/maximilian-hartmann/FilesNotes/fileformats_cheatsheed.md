@@ -9,17 +9,18 @@ Each Record starts is composed of:
 Header: it gives name and/or a unique identifier and maybe additional information
 Sequence: may be Nukleotides or Amino Acids and they may contain gaps or alignment character (just image the "" are not there ;-))
 
-> ">seq0"    
+```
+">seq0"    
 FQTWEEFSRAAEKLYLADPMKVRVVLKYRHVDGNLCIKVTDDLVCLVYRTDQAQDVKKIEKF   
-> ">seq1"   
+">seq1"   
 KYRTWEEFTRAAEKLYQADPMKVRVVLKYRHCDGNLCIKVTDDVVCLLYRTDQAQDVKKIEKFHSQLMRLME  
-> ">seq2"   
+">seq2"   
 EEYQTWEEFARAAEKLYLTDPMKVRVVLKYRHCDGNLCMKVTDDAVCLQYKTDQAQDVKKVEKLHGK   
-> ">seq3"   
+">seq3"   
 MYQVWEEFSRAVEKLYLTDPMKVRVVLKYRHCDGNLCIKVTDNSVCLQYKTDQAQDVK   
-> ">seq4"   
+">seq4"   
 EEFSRAVEKLYLTDPMKVRVVLKYRHCDGNLCIKVTDNSVVSYEMRLFGVQKDNFALEHSLL
-
+```
 
 ## FASTQ
 This format is for storing both a biological sequence and its corresponding quality score. This is the _de facto_ standard for storing the output of
@@ -32,11 +33,12 @@ Format:
 
 Example: 
 
-
-> @SEQ_ID   
-> GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT   
-> +   
-> !''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65    
+```
+@SEQ_ID   
+GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT   
++   
+!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65    
+```
 
 ## BED files
 This is used to store genomic regions as coordinates and associated annotations. They are presented in form of columns separated by spaces or tabs. (Developed by the Human Genome Project)
@@ -63,21 +65,26 @@ It consists of a minimum of 3 columns up to twelve.
 Coordinate system:  is zero based!! ==> chr7   0   1000 starts with the first nucleotide and chr7   1   1000 starts with the second
 
 example: BED3 (minimal)
->chr7       127471196       127472363   
->chr7    127472363    127473530   
->chr7    127473530    127474697   
 
-BED9: 
-> chr7    127471196    127472363    Pos1    0    +    127471196    127472363    255,0,0   
-> chr7    127472363    127473530    Pos2    0    +    127472363    127473530    255,0,0   
-> chr7    127473530    127474697    Pos3    0    +    127473530    127474697    255,0,0   
-> chr7    127474697    127475864    Pos4    0    +    127474697    127475864    255,0,0   
-> chr7    127475864    127477031    Neg1    0    -    127475864    127477031    0,0,255   
-> chr7    127477031    127478198    Neg2    0    -    127477031    127478198    0,0,255   
-> chr7    127478198    127479365    Neg3    0    -    127478198    127479365    0,0,255   
-> chr7    127479365    127480532    Pos5    0    +    127479365    127480532    255,0,0   
-> chr7    127480532    127481699    Neg4    0    -    127480532    127481699    0,0,255 
+```
+chr7       127471196       127472363   
+chr7    127472363    127473530   
+chr7    127473530    127474697   
+```
 
+BED9:
+
+```
+ chr7    127471196    127472363    Pos1    0    +    127471196    127472363    255,0,0   
+ chr7    127472363    127473530    Pos2    0    +    127472363    127473530    255,0,0   
+ chr7    127473530    127474697    Pos3    0    +    127473530    127474697    255,0,0   
+ chr7    127474697    127475864    Pos4    0    +    127474697    127475864    255,0,0   
+ chr7    127475864    127477031    Neg1    0    -    127475864    127477031    0,0,255   
+ chr7    127477031    127478198    Neg2    0    -    127477031    127478198    0,0,255   
+ chr7    127478198    127479365    Neg3    0    -    127478198    127479365    0,0,255   
+ chr7    127479365    127480532    Pos5    0    +    127479365    127480532    255,0,0   
+ chr7    127480532    127481699    Neg4    0    -    127480532    127481699    0,0,255 
+```
 
 ##GTF
 Gene transfer format. It is a format used to hold information about the gene structure. It is based on the general feature format GFF but contains
@@ -98,6 +105,16 @@ Structure: They have 9 fields per line.
 7 | strand | Single character that indicates the strand ("+" : 5' -> 3', "-": 3' -> 5', ".": undetermined)
 8 | phase | phase of CDS feature (?)
 9 | attributes | all other information. varies the most
+
+Example of GFF filformat
+```
+X	Ensembl	Repeat	2419108	2419128	42	.	.	hid=trf; hstart=1; hend=21
+X	Ensembl	Repeat	2419108	2419410	2502	-	.	hid=AluSx; hstart=1; hend=303
+X	Ensembl	Repeat	2419108	2419128	0	.	.	hid=dust; hstart=2419108; hend=2419128
+X	Ensembl	Pred.trans.	2416676	2418760	450.19	-	2	genscan=GENSCAN00000019335
+X	Ensembl	Variation	2413425	2413425	.	+	.	
+X	Ensembl	Variation	2413805	2413805	.	+	.
+```
 
 ## SAM/BAM
 SAM: Sequence alignment MAP. This format is for storing biological sequences aligned to a reference genome. This format supports long reads (up to 128 Mbp).
@@ -121,15 +138,18 @@ Here the mandatory fields
 
 
 Example:   
-> @HD VN:1.3  SO:coordinate   
-> @SQ SN:ref  LN:45   
-> @SQ SN:ref2 LN:40   
-> r001    163 ref 7   30  8M4I4M1D3M  =   37  39  TTAGATAAAGAGGATACTG *   XX:B:S,12561,2,20,112   
-> r002    0   ref 9   30  1S2I6M1P1I1P1I4M2I  *   0   0   AAAAGATAAGGGATAAA   *   
-> r003    0   ref 9   30  5H6M    *   0   0   AGCTAA  *   
-> r004    0   ref 16  30  6M14N1I5M   *   0   0   ATAGCTCTCAGC    *   
-> r003    16  ref 29  30  6H5M    *   0   0   TAGGC   *   
-> r001    83  ref 37  30  9M  =   7   -39 CAGCGCCAT   *   
+
+```
+@HD VN:1.3  SO:coordinate   
+@SQ SN:ref  LN:45   
+@SQ SN:ref2 LN:40   
+r001    163 ref 7   30  8M4I4M1D3M  =   37  39  TTAGATAAAGAGGATACTG *   XX:B:S,12561,2,20,112   
+r002    0   ref 9   30  1S2I6M1P1I1P1I4M2I  *   0   0   AAAAGATAAGGGATAAA   *   
+r003    0   ref 9   30  5H6M    *   0   0   AGCTAA  *   
+r004    0   ref 16  30  6M14N1I5M   *   0   0   ATAGCTCTCAGC    *   
+r003    16  ref 29  30  6H5M    *   0   0   TAGGC   *   
+r001    83  ref 37  30  9M  =   7   -39 CAGCGCCAT   *   
+```
 
 ## Variant Call Format
 It is a format of a text file used for storing gene sequence varaition. Much of the data in GFF is redundant because much of it will be shared. With the 
