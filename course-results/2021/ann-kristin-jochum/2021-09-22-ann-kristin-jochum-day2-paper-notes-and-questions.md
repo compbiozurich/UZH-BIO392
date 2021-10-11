@@ -13,8 +13,6 @@
 * Costs for WGS are falling, but substantial medical costs are generated also from the interpretation and the downstream actions
 * At the moment, evidence doesn't support WGS in healthy individuals
 
-### Questions
-
 ## *The sequence of sequencers: The history of sequencing DNA* by Heather and Chain
 
 ### Notes
@@ -63,7 +61,3 @@
 * 762'000 variants are rare (frequency < 0.5%) within global sample but much more common (frequency > 5%) in at least one population
 * Analysis of the small set of variants with large frequency differences between closely related populations can identify targets of recent localized adaption
 * **Advantages of 1'000 Genomes Project**: broad representation of human genetic variation; project incorporates multiple analysis strategies, callsets and variant types; project samples and data can be shared broadly
-
-### Questions
-
-
