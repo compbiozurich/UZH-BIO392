@@ -6,18 +6,27 @@ _source: [Core learning goals](https://github.com/compbiozurich/UZH-BIO392/blob/
 
 This page lists the "core learning goals" in preparation for the exam at the end of the course. These may not cover 100% of possible questions, but rather be considered representative.
 
-### General questions about the topic of the course
+### General questions about the topic of the course  
 
-You should be able to demonstrate an understanding of the relationships between inherited and acquired genome variants and their possible implications for understanding phenotypic human variation. What are problems encountered there, and why do we think we need many more genomes to be available for comparative analyses? Also, examples of data types beyond genome data relevant for understanding genomic variation should be provided.  
+
+You should be able to demonstrate an understanding of the relationships between inherited and acquired genome variants and their possible implications for understanding phenotypic human variation.
+What are problems encountered there, and why do we think we need many more genomes to be available for comparative analyses? 
+Also, examples of data types beyond genome data relevant for understanding genomic variation should be provided.
+
+=> _problems surrounding understanding phenotypic human variation(?)_
+=> _Biologists think more genomes are required, i.e. better coverage of the genomic make-up of human populations, because_
+=> _I assume 'genome data' refers to nucleotide sequence data types (e.g. FASTA and FASTQ), and "data types beyond" refers to formats like VCF and other annotation focused data types._  
+
 You should know some disease examples for which a genomic contribution could be described.
 
 => _breast cancer, cholorectal cancer (slide 5 day 2)._
-=> _Sickle cell anemia, Bluterkrankheit, ADHD ?, etc._
+=> _neurodevelopmental disorders, e.g. autism spectrum disorder (ASD), ADHD(?)_
+=> _sickle cell anemia, Bluterkrankheit, etc._
 
 ##### Some factlets:
 
 - approximate size of human genome
-  => _3.1 billion base pairs (3.1 \* 10^9)_
+  => _~3 billion base pairs (3 \* 10^9), typically ~5 million variants_
 - size of largest human chromosome
 - example(s) for sequencing "depth/coverage" in standard analysis scenarios, and the impact this has on the different genome file formats
   => _sequencing depth: e.g. great depth where sequence is duplicated, small depth where copy was deleted._
@@ -33,7 +42,7 @@ You should know some disease examples for which a genomic contribution could be 
   => _The format of a complete variant description is __"reference:description"___
   => _visit the 2nd link for a better understanding (well readable)._
 - Basic understanding of cytogenetic banding annotation, and (approximate) spatial resolution of such annotations
-  => _[Cytogenetic Banding Nomenclature](https://www.ncbi.nlm.nih.gov/Class/MLACourse/Modules/Genomes/map_cytogenetic_bands.html )_
+  => _[Cytogenetic Banding Nomenclature](https://www.ncbi.nlm.nih.gov/Class/MLACourse/Modules/Genomes/map_cytogenetic_bands.html ), e.g. 3p21.1: chromosome 3 > p-arm > band 2 > sub-band 1 > sub-sub-band 1; (so, region "two-one-one", not "twenty-one-point-one")_
   => _intuition for (approx.) spatial resolution not available atm._
 - "1000 genomes" - what are they, and advantages vs. problems associated with using them in genomics workflows
   => _see the paper on 1000 genomes (one of the human genome reference assemblies) - attempt to create a reference genome for humans, taking variation due to ethnicity (variation between populations) into account._

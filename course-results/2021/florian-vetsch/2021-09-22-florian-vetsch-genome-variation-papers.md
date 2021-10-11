@@ -43,6 +43,8 @@ applying whole-genome sequencing to a diverse set of individuals from multiple p
 completion of the project, having reconstructed the genomes of 2,504 individuals from 26 populations using a combina-
 tion of low-coverage whole-genome sequencing, deep exome sequencing, and dense microarray genotyping.  
 
+Ability to accurately capture structural variation remains more limited
+
 <br/>
 
 ### Genome structural variation discovery and genotyping
