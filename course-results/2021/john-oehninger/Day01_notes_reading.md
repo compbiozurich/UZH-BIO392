@@ -24,15 +24,31 @@ Here are some key notes from the artice:
 ## The sequence of sequencers: The history of sequencing DNA - James M. HEather & Benjamin Chain
 This article reflects on the evolution of the sequencing process, going through the generations of the methods that arose.
 
-* 1<sup>st</sup> generation DNA sequencing:
+### 1<sup>st</sup> generation DNA sequencing:<br>
+  * Initial sequencing effort were performed on single-stranded RNA bacteriophages.
+  * Fred Sanger and co. developed a technique based on detection of radiolabelled partial-digestion fragments.
+  * Alan Coulson and Sanger's "plus and minus" system was developed in 1975. It used DNA polymerase to synthesize from a primer, incorporating radiolabelled nucleotides, before performing a second polymerisation reaction. With this technique, the first DNA genome of a bacteriophage was sequenced.
+  * There were many different approaches, and each new one getting better results.
+  * Sanger sequencing became the most common technology used to sequence DNA for many many years, due to its robustness, accuracy and ease of use.
+  * First generation DNA sequencing produced reads roughly less than a kilobase long. This led to shotgun sequencing, where many different fragments are sequenced and then aligned.
 
 
-* 2<sup>nd</sup> generation DNA sequencing:
+### 2<sup>nd</sup> generation DNA sequencing:
+In the second wave of sequencing technology, many different approaches were discovered.
+ * Pyrosequencing technique: Can be performed using natural nucleotides and can be observed in real time. This was the first major successful commerical NGS technology.
+ * High throughput sequencing (HTS) machines were at the time: GS 20, GS FLX, Solexa
+ * Firms producing these technologies: 454, Illumina, Applied Biosystems
+ * Technology based on sequenc-by-ligation: DNA nanoballs
+ * Ion-Torrent was the first "post-light sequencing" technology, as it functioned with high precision pH measurements.
+ * Growth rate of sequencing technology has far exceeded Moore's law, unlike the microchip industry which follows this trend very well.
+ * The Illumina sequencing platform has been the most successful to the point of near monopoly and is therefore the greatest contributer to the 2<sup>nd</sup> generation of DNA sequencing.
 
 
-* 3<sup>rd</sup> generation DNA sequencing:
-
-
+### 3<sup>rd</sup> generation DNA sequencing:
+* They defined the criteria for third generation sequencing to be those capable of sequencing single molecules (SMS), negating the requirements for DNA amplification that is shared by all previous technologies.
+* First SMS technology developed by Stephen Quake and commercialized by Helicos BioSciences. The main difference being that it is capapble of sequencing without amplified DNA.
+* Most prominent technology (st the time the artice was written) was the single molecule real time (SMRT) platform by Pacific Biosciences.
+* The most promising technology though is nanopre sequencing
 
 
 
