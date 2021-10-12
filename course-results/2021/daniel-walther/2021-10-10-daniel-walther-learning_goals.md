@@ -190,15 +190,8 @@ Is it meant so, that: "Protein representation of variants with regard to...":
 
 - What is "liftover" being used for?
   => _To translate/transform between reference genome assemblies_
-- Linkage disequilibrium and population genetics
-	- What do you analyse with PLINK?
-	  => _exam relevant?_
-	- Examples for filters/parameters used in linkage analysis
-	  => _exam relevant?_
 
 ### Genomic privacy ?
-
-_exam relevant?_
 
 - genome "Beacons"
   =>
