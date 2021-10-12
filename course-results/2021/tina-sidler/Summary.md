@@ -11,6 +11,7 @@ Also, examples of data types beyond genome data relevant for understanding genom
 * Size of largest human chromosome: Chromosome 1 -> 248'956'422 bp (GRCh38)
 
 ## "Depth/coverage" (Example(s) for sequencing "depth/coverage" in standard analysis scenarios, and the impact this has to the different genome file formats) ❗
+* Sequencing depth: ratio of the total number of bases obtained by sequencing to the size of the genome or the average number of times each base is measured in the genome.
 * Depth increases with an increasing read length and/or an increasing number of reads and decreases with an increasing length of the haploid genome.
 * Breadth of coverage: percentage of target bases that have been sequenced for a given number of times
 * Hybrid sequencing: to overcome problems in genome assembly and in placing highly repetitive sequence in a genome
