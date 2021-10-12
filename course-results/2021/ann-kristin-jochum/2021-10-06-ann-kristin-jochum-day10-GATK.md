@@ -28,7 +28,7 @@ Source: https://app.terra.bio/#workspaces/bio392-2021/GATKTutorials-Somatic%20ne
 * *CalculateContamination* to get the fraction contamination, which is necessary downstream for filtering => be wary of calls with less than that number for the alternate allele fraction
 
 #### Apply filters with *FilterMutectCalls*
-* Uses the annotations within the callset and (if provided) the contamination table in filterung
+* Uses the annotations within the callset and (if provided) the contamination table in filtering
 * Produces a VCF callset and index; calls that are likely true positives get the PASS label in the FILTER field, and calls that are likely false positives are labeled with the reason for filtering in the FILTER field of the VCF
 
 ### Review calls with IGV (Integrative Genomics Viewer)
