@@ -1,19 +1,21 @@
-# General questions about the topic of the course
+# General questions about the topic of the course ❗
 Understand the relationships between inherited and acquired genome variants and their possible implications for understanding phenotypic human variation. What are problems encountered there, why do we think we need many more genomes, to be available for comparative analyses?
 * Relationship between inhertied and acquired genome variants:
 * 
 * Why we need more genomes for comparative analyses: to better represent human genetic diversity, 
+
 Also, examples of data types beyond genome data relevant for understanding genomic varition should be provided. Know some disease examples for which a genomic contribution could be described.
 * Disease with genomic contribution: Thalassemia, Cystic Fibrosis, Tay-Sachs disease, Sickle Cell Anemia, Huntington's Disease, etc...
 
 * Approximate size of human genome: 6.4 billion bp
 * Size of largest human chromosome: Chromosome 1 -> 248'956'422 bp (GRCh38)
 
-## "Depth/coverage" (Example(s) for sequencing "depth/coverage" in standard analysis scenarios, and the impact this has to the different genome file formats)
+## "Depth/coverage" (Example(s) for sequencing "depth/coverage" in standard analysis scenarios, and the impact this has to the different genome file formats) ❗
 * Depth increases with an increasing read length and/or an increasing number of reads and decreases with an increasing length of the haploid genome.
 * Breadth of coverage: percentage of target bases that have been sequenced for a given number of times
 * Hybrid sequencing: to overcome problems in genome assembly and in placing highly repetitive sequence in a genome
 * Depth of coverage is affected by the accuracy of genome alignment algorithms and by the uniqueness or the "mappability" of sequencing reads within a target genome.
+* Depth: ChiP-seq > RNA-seq > WES > WGS
 
 ## Dis(advantages) of WES & WGS:
 * Whole Exome Sequencing (WES):
@@ -66,7 +68,20 @@ Each chromosome arm is divided into regions, or cytogenetic bands. The cytogenet
   * Install can be run command-line, so specific versions can be stored and included into the analysis script
 
 ## General workflow steps from reads to variants
-❗
+1. Set the notebook up, get the files, start IGV (Integrative Genomics Viewer)
+2. Call somatic SNV & indels with Mutect2
+   * Get somatic short mutations on the tumor sample and matched nomral -> The matched normal excludes rare germline variation that is not captured by the germline resource and individual-specific artifacts
+   * Make a panel of normals (PoN) -> unfiltered Mutect2 callset generated
+3. Filter for confident somatic calls (want to find out, which mutations are likely real somatic muations)
+   * Estimate cross-sample contamination: Summarize read support for a set of number of known variant sites and then estimate contamination
+   * Filter using the annotations within the callset and (if provided) the contamination table to see if the calls are likely true positives or false positives
+4. Review calls with IGV: to get a good somatic callset, we need to compare callsets from different callers, manually review passing and fitler calls and (if necessary) filter additionaly
+   * Load results into IGV
+   * Set up IGV
+   * Navigate to the location of the genome where variants are called
+5. Annotate mutations with FUncotator: another approach to filtering mutation calls by the significance of their functional impact
+   * Find misssense mutations
+   * Find insertions and deletions
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -75,6 +90,8 @@ Some familiarity with selected genome & molecular knowledge resources, their pri
 
 ## ClinGen
 Can look up a gene and find the according disease to it or vice-versa. Tells us information about the genes name, location and product.
+Interpreted genome variants with disease association.
+Funded project (application/funding limited).
 * Authoritative central resource that defines the clinical relevance of genes and variants for use in precision medicine and research
 * Gene Disease Validity: Can variation in this gene cause disease?
 * Dosage Sensitivity: Does loss or gain of a copy of this gene or genomic region result in disease?
@@ -85,6 +102,8 @@ Can look up a gene and find the according disease to it or vice-versa. Tells us 
 
 ## ClinVar
 Can tell us for a disease which variants at which gene are relevant.
+Basis for curated variant.
+Internal NIH resource (dependent on political "goodwill").
 * Database of genomic variants and the interpretation of their relevance to disease.
 * Important in the growing data sharing movement within the clinical genetics community.
 * Critical resource for ClinGen -> Primary site for deposition and retrieval of variant data and annotations from individual submitters
@@ -126,7 +145,7 @@ Liftover is the conversion between genome assemblies by coordinate. This is need
 * Chain files serve as guides for positional remapping using lifover methods.
 
 ## Linkage disequilibrium and population genetics ❓
-  * What do you analyse with PLINK?
+* What do you analyse with PLINK: genotype/phenotype data: basic statistics, linkage disequilibrium (LD) calculations, identity by descent (IBD) and identity by state (IBS) matrix calculation, population stratification (like Principal component analysis), association analysis (like genome-wide association study), tests for epistasis
   * Examples for filters/parameters used in linkage analysis
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
