@@ -67,6 +67,10 @@ _look up the corresponding relevant genes / regions (first understand different 
   => _[HGVS nomenclature](https://varnomen.hgvs.org/) (Human Genome Variation Society). [HGVS simple](https://varnomen.hgvs.org/bg-material/simple/) language to describe changes in D/RNA, proteins ('variants') - the HGVS nomenclature standard._
   => _The format of a complete variant description is __"reference:description"___
   => _visit the 2nd link for a better understanding (well readable)._
+  => _[General varnomen recommendations](https://varnomen.hgvs.org/recommendations/general/ ) (good starting point)_
+  => _[Reference Sequences types](https://varnomen.hgvs.org/bg-material/refseq/ )_
+  => _[RefSeq](https://www.ncbi.nlm.nih.gov/refseq/) website_
+    => _GRCh38 in RefSeq is something like 'GCF_000001405.39', but unsure how UCSC data is encoded in RefSeq (no linke found on pages above)_
 
 - Basic understanding of cytogenetic banding annotation, and (approximate) spatial resolution of such annotations
   => _[Cytogenetic Banding Nomenclature](https://www.ncbi.nlm.nih.gov/Class/MLACourse/Modules/Genomes/map_cytogenetic_bands.html ), e.g. 3p21.1: chromosome 3 > p-arm > band 2 > sub-band 1 > sub-sub-band 1; (so, region "two-one-one", not "twenty-one-point-one")_
@@ -95,15 +99,22 @@ There can be some non-technical questions on e.g. best software practices (OpenS
 
 Some familiarity with selected genome & molecular knowledge resources, their primary goals and example use cases is expected.
 
-- ClinGen
-  => _resource for clinically relevant gene/genome annotation data? What's the diffference between ClinGen and ClinVar?_
+- [(ClinGen & ClinVar collaboration)](https://www.clinicalgenome.org/about/clingen-clinvar-collaboration/)
+  => _both provide resources to support genomic __interpretation__, so annotations are the focus_
 
-- ClinVar
-  => _resource for genomic variant annotation with clinical relevance/relation_
+- ClinGen (The Clinical Genome Resource), _a Program (as in project)_
+  => _aims to create an authoritative central resource that defines the clinical relevance of genes and variants for use in precision medicine and research._
+
+- [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/), _a Database_
+  => _is an archival database that aggregates information about genomic variation and its relationship to human health._
+  => _is funded by the Intramural Research Program of the NIH, National Library of Medicine._
+  => _adds value to submitted interpretations by standardising descriptions of variants, conditions and terms for clinical significance._
 
 - UCSC genome browser
+  => _A graphical interactive (in- and) online tool suite for finding genome regions (exons, genes, SNPs, InDels) and annotations. Download of data in associated file formats is also offered.
 	
 	- files used to represent features, and load them into custom tracks (BED, bedGraph, Wiggle, BAM, pgSNP...)
+      => _'tracks' are about annotations. Tracks are something like annotation channels
 	
 	- importance to select the right genome edition - Why?
 	  => _because the sequences' positions usually change somewhat between assemblies._
@@ -172,32 +183,47 @@ You should be able to list at least 2-3 core features (main use cases, type, cor
   - GenomicRanges 1-based
   - BLAST 1-based
 
-### Protein representation of variants ?
+### Protein representation of variants 
 
-_exam relevant? / where was what mentioned?_
+[RCSB(?) Protein Data Bank](https://www.rcsb.org/) for all things protein.
 
-Is it meant so, that: "Protein representation of variants with regard to...":
 - protein sizes
-  => _generally measured in kiloDaltons (kD)_
+  => _generally measured in kiloDaltons (kD), 1 Da is equal to the unified atomic mass unit (u). Numerically, the mass in g/mol is identical to the mass in Da, e.g.: Aspirin has an average molar mass of ~180 g/mol, meaning it has an average mass of ~180 Da._
+
 - resource(s) for 3D protein structures and other protein information resources
   => _Protein Data Bank (PDB) with associated file format .pdb_
-- types of genome variants with respect to their impact on protein composition
-  => _what do you mean? what is the learning goal?_
-- amino acid physicochemical properties (size, charge) and effect of variation due to amino acid properties
-- conservation state of a given AA and its relation to mutation frequency and functional importance
 
-### Tutorials ?
+- types of genome variants with respect to their impact on protein composition
+  => _what do you mean? what is the learning goal? "what does change in protein composition, when you change to another variant? where to look up this information?"_
+
+- amino acid physicochemical properties (size, charge) and effect of variation due to amino acid properties
+  => _some AAs are smaller or larger, some are charged +, some -, some are polar, some are none (except smaller or larger, of course)._
+  => _the effect of variation depends on what change in amino acid is caused. Some amino acids have similar physicochemical properties whereas others do not - e.g. some AAs are only seen in backbone turns of secondary structures, some AAs are usually on the surface or inside the protein depending on charge, etc._
+  => _if a variation causes a shift in reading frame, the structure of the resulting protein is almost certainly different and
+
+- conservation state of a given AA and its relation to mutation frequency and functional importance
+  => _?_
+
+### Tutorials
 
 - What is "liftover" being used for?
   => _To translate/transform between reference genome assemblies_
 
-### Genomic privacy ?
+### Genomic privacy
 
 - genome "Beacons"
-  =>
+  
   - concept
+    => _network / tool / protocol of genome (variant) repositories, with which you can query beacon supporting resources for specific variants. Just copying clinically annotated genomes from one country (or hospital) to another is hardly done/possible (currently). 'Beacons' provides a possibility to investigate a much bigger pool of genome data with relative good data privacy protection (it seemed to me, without further research)._
+	=> _especially useful for rare diseases (potentially associated with unusual genome variants)_
+  
   - "unbreakable"?
+    => _no, not at all. Massive, automated queries for known variants (of a known genome) could lead to statistically meaningful / evaluatable results, with which you could re-identify samples of resources with the known genome at hand._
+	  => _I am not sure, what a villain would (or even could) do with this information. This demonstrates some holes in the anonymisation of aggregated genome data, which I assume can be fixed with similar software algorithms that help against DoS attacks, or maybe with restricting accessible regions to the purpose of the query._
+
 - de-identification attacks
-  =>
+  => _confusing word... re-identification would have made more sense, intuitively_
+
 - genomic privacy, research, comparable risks (opinions)
-  =>
+  => _privacy of behavioural data such as social media usage statistics/metrics and content people post on facebook, for instance, pose a bigger threat to individuals and a bigger breach into private life than having one's genome publicly identified._
+  => _in a distopian or totalitarian (or socialistic (like nazis, ussr, ccp) for that matter) state/society, knowledge of one's genome would make a huge difference because of possible discriminatory policies. But in normal (Western, democratic) societies, genomic privacy breaches should not pose a big security threat - to the best of my knowledge._
