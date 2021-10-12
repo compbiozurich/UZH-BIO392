@@ -1,7 +1,7 @@
 # *A copy number variation map of the human genome* by Zarrei et al. (2015)
 
 ## Notes
-* Structural variation: largest component are copy number variations (CNVs), which increase or decrese the DNA content; typically defined as larger than 50 bp, smaller are insertions or deletions (indels)
+* Structural variation: largest component are copy number variations (CNVs), which increase or decrease the DNA content; typically defined as larger than 50 bp, smaller are insertions or deletions (indels)
 * Threshold over which the effect of a CNV may be associated with a disease is defined by clinicians and is arbitrary
 * *Database of Genomic Variants (DGV)*: created in 2004 as a comprehensive catalogue of human CNV and structural variation among "control" individuals => CNV map
 * Aim: create a CNV map of the human genme for variations that are not associated with adverse phenotypes
