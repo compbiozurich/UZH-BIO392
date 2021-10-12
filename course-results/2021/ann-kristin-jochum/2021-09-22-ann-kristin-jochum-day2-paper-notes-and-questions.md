@@ -7,13 +7,11 @@
 * An individual's genome contains millions of sites where his or her DNA differs from reference sequence (defined by international Genome Reference Consortium)
 * Clinical interpretation relies on control and population data sets, review of medical literature and patient's phenotype
 * Limitation when interpreting genomic findings in healthy individuals, since risk estimates where derived from studying patients presenting clinically, thus selecting for the most extreme cases
-* Biggest problem of genome sequencing of healthy individuals is unnecessary medical intervention due to fals-positive findings or overdiagnoses
+* Biggest problem of genome sequencing of healthy individuals is unnecessary medical intervention due to false-positive findings or overdiagnoses
 * To prevent this, gene-specific thresholds and a broad knowledge base from sequencing many healthy individuals is necessary
-* 1 to 2% of US population harbors genetic variant in well-studied genes with the potential to benefit from established preventive modalities if the elevated risk were known
+* 1 to 2% of US population harbors genetic variants in well-studied genes with the potential to benefit from established preventive modalities if the elevated risk were known
 * Costs for WGS are falling, but substantial medical costs are generated also from the interpretation and the downstream actions
 * At the moment, evidence doesn't support WGS in healthy individuals
-
-### Questions
 
 ## *The sequence of sequencers: The history of sequencing DNA* by Heather and Chain
 
@@ -22,7 +20,7 @@
   * Initial efforts: microbial rRNA or tRNA, or genomes of single-stranded RNA bacteriophages => only composition
   * Combining techniques that measure composition with selective ribonuclease treatments to produce fully and partially degraded RNA fragments => first whole nucleic acid sequence of alanine tRNA from *Saccharomyces cerevisiae*
   * Sanger and colleagues developed technique based on detection of radiolabelled partial-digestion fragments after two-dimensional fractionation
-  * Coulson and Sanger developed "plus and minus" system (DNA polymerase synthesizes from a primer with radiolabelled nucleotides, either with only a single type of nucleotide or with the other three
+  * Coulson and Sanger developed "plus and minus" system (DNA polymerase synthesizes from a primer with radiolabelled nucleotides, either with only a single type of nucleotide or with the other three)
   * Maxam and Walter developed a chemical cleavage technique (chemicals break chain at specific bases)
   * **Breakthrough in 1977**: Sanger's "chain-termination" or dideoxy technique => ddNTPs terminate synthesis at all possible lengths => electrophoresis
   * Length of reads from first-generation DNA sequencing machines: slightly less than one kilobase => instead "shotgun sequencing" and assembly into one sequence
@@ -46,7 +44,7 @@
 ## *A global reference for human genetic variation* by The 1000 Genomes Project Consortium
 
 ### Notes
-* Goal of 1'000 Genomes Project: comprehensive description of common human genetic variants by applying WGS to a diverse set of individuals from multiple population
+* Goal of 1'000 Genomes Project: comprehensive description of common human genetic variants by applying WGS to a diverse set of individuals from multiple populations
 * 2'504 individuals from 26 populations (AFR, EAS, EUR, SAS, AMR), over 88 mio variants (84.7 mio SNPs, 3.6 mio short indels, 60'000 SV)
 * To control false discovery rate: variant quality score threshold was defined using high depth (>30x) PCR-free sequence data generated for one individual per population; for SVs, additional orthogonal methods were used for confirmation
   * SNP and indels: FDR < 5%
@@ -63,7 +61,3 @@
 * 762'000 variants are rare (frequency < 0.5%) within global sample but much more common (frequency > 5%) in at least one population
 * Analysis of the small set of variants with large frequency differences between closely related populations can identify targets of recent localized adaption
 * **Advantages of 1'000 Genomes Project**: broad representation of human genetic variation; project incorporates multiple analysis strategies, callsets and variant types; project samples and data can be shared broadly
-
-### Questions
-
-

@@ -1,8 +1,9 @@
 # **Task: Estimate Storage Requirements for 1000 Genomes**
 
-Genome Storage Space & Cost required for 1000 Genomes for WEG (Whole Exome Sequencing) and WGS (Whole Genome Sequencing)
+Genome Storage Space & Cost required for 1000 Genomes for WES (Whole Exome Sequencing) and WGS (Whole Genome Sequencing)
 
 Whole Genome Size = ~ 3 billion base pairs
+
 Whole Exome Size = ~45 million base pairs (~1.5% of WGS)
 
 ## **General**

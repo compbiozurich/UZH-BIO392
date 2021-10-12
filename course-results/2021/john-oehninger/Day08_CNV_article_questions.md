@@ -1,3 +1,8 @@
+
+# First of all, what are copy number variations?
+A copy number variation (CNV) is when the number of copies of a particular gene varies from one individual to the next. Following the completion of the Human Genome Project, it became apparent that the genome experiences gains and losses of genetic material. The extent to which copy number variation contributes to human disease is not yet known. It has long been recognized that some cancers are associated with elevated copy numbers of particular genes.
+
+
 # A copy number variation map of the human genome
 
 ## Why do we need a CNV map on healthy individuals of various ethnicities?
