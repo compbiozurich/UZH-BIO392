@@ -21,6 +21,10 @@
 
 * 3 Billion Nucleotides (haplo)
 * 0.8 GB
+* longest chromosome: chr1
+ * 247 million bp, (8% of the whole genome)
+ * 3141 genes 
+ * 991 pseudogenes
 
 #### Data science tip:
 
