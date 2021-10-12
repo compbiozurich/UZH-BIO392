@@ -34,6 +34,8 @@ _epigenetics:_ In biology, epigenetics is the study of heritable phenotype chang
 
 _functional genomics:_ Functional genomics is a field of molecular biology that attempts to describe gene (and protein) functions and interactions.(wikipedia). In contrast to 'traditional' genomics where the nucleotide sequence is the goal.
 
+_contig sequence:_ 
+
 
 __meta-insights:__
 
