@@ -1,12 +1,19 @@
 # General questions about the topic of the course
-Understand the relationships between inherited and acquired genome variants and their possible implications for understanding phenotypic human variation. What are problems encountered there, why do we think we need many more genomes, to be available for comparative analyses? ❗
-Also, examples of data types beyond genome data relevant for understanding genomic varition shouldbeprovided. Know some disease examples for which a genomic contribution could be described. ❗
+Understand the relationships between inherited and acquired genome variants and their possible implications for understanding phenotypic human variation. What are problems encountered there, why do we think we need many more genomes, to be available for comparative analyses?
+* Relationship between inhertied and acquired genome variants:
+* 
+* Why we need more genomes for comparative analyses: to better represent human genetic diversity, 
+Also, examples of data types beyond genome data relevant for understanding genomic varition should be provided. Know some disease examples for which a genomic contribution could be described.
+* Disease with genomic contribution: Thalassemia, Cystic Fibrosis, Tay-Sachs disease, Sickle Cell Anemia, Huntington's Disease, etc...
 
 * Approximate size of human genome: 6.4 billion bp
 * Size of largest human chromosome: Chromosome 1 -> 248'956'422 bp (GRCh38)
 
 ## "Depth/coverage" (Example(s) for sequencing "depth/coverage" in standard analysis scenarios, and the impact this has to the different genome file formats)
-❗
+* Depth increases with an increasing read length and/or an increasing number of reads and decreases with an increasing length of the haploid genome.
+* Breadth of coverage: percentage of target bases that have been sequenced for a given number of times
+* Hybrid sequencing: to overcome problems in genome assembly and in placing highly repetitive sequence in a genome
+* Depth of coverage is affected by the accuracy of genome alignment algorithms and by the uniqueness or the "mappability" of sequencing reads within a target genome.
 
 ## Dis(advantages) of WES & WGS:
 * Whole Exome Sequencing (WES):
