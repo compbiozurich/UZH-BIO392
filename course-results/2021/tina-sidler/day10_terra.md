@@ -31,8 +31,13 @@
 
 ## Glossary
 PoN: fills a gap between the matched normal and the population resource. It is used to catch additional sites of noise in sequencing data, like mapping artifacts or other somewhat random but systematic artifacts of sequencing and data processing. The best is if the PoN is matched, but we would still prefer having an unmatched PoN than no PoN at all. This is because mapping artifacts and polymerase slippage errors occur pretty mch the same genomic loci for short read sequencing approaches.
+
 alt_count: count of reads that support the ALT allele in the germline resource
+
 allele_frequency: corresponds to that given in the germline resource
+
 other_alt_count: counts of reads that support all other alleles
+
 FILTER ID = PASS: calls are likely true positives
+
 FILTER ID = FAIL: calls are likely false positives
