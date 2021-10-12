@@ -86,7 +86,7 @@ BED9:
  chr7    127480532    127481699    Neg4    0    -    127480532    127481699    0,0,255 
 ```
 
-##GTF
+## GTF
 Gene transfer format. It is a format used to hold information about the gene structure. It is based on the general feature format GFF but contains
 additional conventions specific to gene information. Given a Sequence and a GTF file, one can check that the format is correct.
 GTF is identical to GFF version 2.
