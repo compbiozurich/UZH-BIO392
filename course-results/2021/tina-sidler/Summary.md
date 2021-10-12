@@ -1,6 +1,6 @@
 # General questions about the topic of the course ❗
 Understand the relationships between inherited and acquired genome variants and their possible implications for understanding phenotypic human variation. What are problems encountered there, why do we think we need many more genomes, to be available for comparative analyses?
-* Relationship between inhertied and acquired genome variants:
+* Relationship between inherited and acquired genome variants:
 * 
 * Why we need more genomes for comparative analyses: to better represent human genetic diversity, 
 
