@@ -8,7 +8,7 @@ This is an unordered compilation of terms I deemed worthwile to write a definiti
 
 __terminology:__
 
-_haplotypes:_
+_haplotypes:_ A haplotype (haploid genotype) is a group of alleles in an organism that are inherited together from a single parent. (wikipedia)
 
 _isoforms:_
 
