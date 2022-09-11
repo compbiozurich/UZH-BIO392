@@ -48,5 +48,4 @@ This page collects items for the course "reading list" (and beyond). Since the r
 
 #### Extended reading
 
-* Sophie Zaaijer - Rapid DNA identification (with nanopore sequencing) [PDF](https://internal.baudisgroup.org/pdf/2017-11-28___Zaaijer__Rapid_DNA_identification_elife-27798-v1.pdf) and [webpage](http://ddf.teamerlich.org) about the project; also with a [direct video link](https://vimeo.com/182592328)
 * Mark Gerstein ([Yale](http://Lectures.GersteinLab.org)): Lecture slides "Analyzing Personal Genomes: Prioritizing High-impact Rare & Somatic Variants"  [PDF](https://internal.baudisgroup.org/pdf/2016-03-29___Gerstein_Personal-Genomes-Prioritizing-High-impact-Variants__slides.pdf)
