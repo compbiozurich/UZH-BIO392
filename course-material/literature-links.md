@@ -1,6 +1,6 @@
 # UZH BIO392 - Literature
 
-This page collects items for the course "reading list" (and beyond). Since the repository is public, we're not able to provide direct downloads as part of the repository, but link here to the source material either at secure UZH locations or at the publishers' sites (with access then through the authentication system, then.).
+This page collects items for the course "reading list" (and beyond). Since the repository is public, we're not able to provide direct downloads as part of the repository, but link here to the source material either at secure UZH locations or at the publishers' sites (with access then through the authentication system, then.). You can access them with a SWITCHdrive account login.
 
 ## Recommended Reading
 
