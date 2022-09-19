@@ -7,7 +7,7 @@
 |Hemochromatosis|a disorder that causes the body to absorb too much iron from the diet|HJV|NM_213653.3:c.959G>T|
 |Thalassemia|		|		|		|
 |Haemophilia|		|		|		|
-|Cystic fibrosis|		|		|		|
+|Cystic Fibrosis|		|		|		|
 |Tay sachs disease|		|		|		|
 |Fragile X syndrome|		|		|		|
 |Huntington's disease|		|		|		|
