@@ -1,0 +1,11 @@
+import pandas as pd
+import csv
+df=pd.DataFrame({})
+with open('data.pgxseg', newline='') as segfile:
+    for line in segfile.readlines():
+        if '#' not in line:
+            with open('data.csv','a+') as f:
+                f.write(line)
+
+
+df = pd.read_csv('data.csv',sep='\t')
