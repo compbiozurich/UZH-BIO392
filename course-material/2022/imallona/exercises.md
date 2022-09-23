@@ -836,7 +836,10 @@ wc -l chr22_with_ERCC92.gtf
 How many exons are there?
 
 ```
-grep exon_number chr22_with_ERCC92.gtf | wc -l
+# grep exon_number chr22_with_ERCC92.gtf | wc -l
+grep -P "\texon\t" chr22_with_ERCC92.gtf  | wc -l
+# tip
+grep -P "\texon\t" chr22_with_ERCC92.gtf | cut -f3 | uniq -c
 ```
 
 </p>
