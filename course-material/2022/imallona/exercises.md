@@ -605,7 +605,7 @@ cd - ## to go back to the previous directory
 
 Add a nucleotide to the start and subtract a nucleotide from the end to all records, regardless of the strand, to the file `~/course/soft/bedtools2/test/intersect/a.bed`.
 
-Tip: use `awk`.
+Tip: using the relevant coordinates, modify the column's content using `awk`.
 
 <details><summary>
 Answer
@@ -618,13 +618,13 @@ Answer
 ## to go to the a.bed file directory
 cd ~/course/soft/bedtools2/test/intersect/
 
-awk -v OFS='\t' '{print $1,$2+1,$3+1,$4,$5,$6}' a.bed
+awk -v OFS='\t' '{print $1,$2+1,$3-1,$4,$5,$6}' a.bed
 
 cd - ## to go back to the previous directory
 
 ```
 
-Please notice this is not trivial at all, what happens if interested in doing that strand aware? are the add/subtract arithmetics dependent upon the strand? What if we get out of the chromosome sizes bounds? Extra task: browse https://bedtools.readthedocs.io/en/latest/content/tools/slop.html and https://bedtools.readthedocs.io/en/latest/content/tools/flank.html .
+Please notice this is not trivial at all, what happens if interested in doing that strand aware? are the add/subtract arithmetics dependent upon the strand? What if we get out of the chromosome sizes bounds? Extra task: browse https://bedtools.readthedocs.io/en/latest/content/tools/slop.html and https://bedtools.readthedocs.io/en/latest/content/tools/flank.html . Also, how would choices on 0/1 counting, closed/open interval encodings impact this task?
 </p>
 </details>
 
