@@ -23,7 +23,11 @@ Sequencing the nucleotides of exonic / protein-coding regions of an individual's
 - Advantages: Unambiguous, scalable, flexible, extra information can be added, millions of variants storable in one VCF file
 
 ## FASTA
--
+- A text-based format representing either nucleotide or protein sequences
+- Each distinct sequence begins with a line containing a header followed by additional description and in the following lines the sequence data.
+
+
+
 
 
 
