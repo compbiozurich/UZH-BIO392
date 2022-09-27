@@ -26,8 +26,22 @@ Sequencing the nucleotides of exonic / protein-coding regions of an individual's
 - A text-based format representing either nucleotide or protein sequences
 - Each distinct sequence begins with a line containing a header followed by additional description and in the following lines the sequence data.
 
+## FASTQ
+- 
 
+# Estimated storage and costs for 1000 genomes
 
+## Whole Genome Sequence 
+- Between 80 and 140 GB for a BAM file containing reads of a whole genome. The size is dependent on the coverage / No. of effective reads.
+- Therefore, 1000 genome samples take up about 150 TB, even 300 TB including Backups.
+
+[reference: storage of WGS](https://www.strand-ngs.com/support/ngs-data-storage-requirements)
+
+## Costs
+- As an example for genomes in a clinical context, there exist different storage posssibilities with different vendors (also cloud storage). Storage is paid per month or year. 
+- Estimated costs for storing a single genome (120 GB) in archival tiers is about 14$ over ten years, so for 1000 genomes about 14'000$. Storing data in non-archival tiers can cost up to 20-fold more than the archival tier.
+
+[reference: storage cost](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7276491/)
 
 
 
