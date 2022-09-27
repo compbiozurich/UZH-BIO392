@@ -1,6 +1,4 @@
-# michelle gull bio392
-
-## 2022-09-21 exercise day_02
+# 2022-09-21 exercise day_02
 
 #### similar:
 ```diff
