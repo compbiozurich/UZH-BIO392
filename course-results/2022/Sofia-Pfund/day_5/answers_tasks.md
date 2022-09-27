@@ -14,7 +14,7 @@ Terminology:
 * variant calling = variant detection
 
 ### File Formats
-🐃 * **FASTA**: unaligned sequences
+🐃 **FASTA**: unaligned sequences
   * text file
   * ID + sequence
   
@@ -27,7 +27,7 @@ CGGTATATCCTACATATGGCTTTCATATTGGTTTGGAGTTATTGGATTTTATATGAGTATTTTGATAAGA
 ACAGAATTGAGTATGAGTGGTTTAAAGATTATGACAATGGATACTCTTGAGATATACAATATGATGTTTT
 ```
 
-🐃 * **FASTQ**: unaligned sequences (:bangbang: short reads sequencing)
+🐃 **FASTQ**: unaligned sequences (:bangbang: short reads sequencing)
   * ID + sequence + separator + quality score
   * sequence quality is represented using Phred scores, which are logarithmically linked to error probabilities (of incorrect base call) (different encodings exist)
 ```
@@ -37,16 +37,16 @@ GGGTGATGGCCGCTGCCGATGGCGTCAAATCCCACC
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIII9IG9IC
 ```
 
-🐃 * **SAM (Sequence Alignment Map)**: alignments
+🐃 **SAM (Sequence Alignment Map)**: alignments
   * Idea: store where the reads (saved as FASTQ) map on the reference genome
   * Goal of sequence alignment: identify regions of similarity or the identity of a sequence
   * Local vs. Global aligment
   * human-readable text files
   
-🐃 * **BAM (Binary Alignment Map)**: alignments
+🐃 **BAM (Binary Alignment Map)**: alignments
   * binary and compressed equivalent of SAM
   
-🐃 * **BED (Browser Extensible Data)**: genomic ranges
+🐃 **BED (Browser Extensible Data)**: genomic ranges
   * BED3, BED6, BED12
   * tab-separated colummns: chromosome - start - end
 
@@ -58,14 +58,14 @@ chr22 2000 6000
     * 0-start vs. 1-start 
     * fully-open (4001-4999), fully-closed (4000-5000), half-open (4000-4999)
     
-🐃 * **BEDgraph**: genomic scores
+🐃 **BEDgraph**: genomic scores
   * BED3 + probability score (like a "BED4")
   
-🐃 * **Wiggle files**: genomic scores
+🐃 **Wiggle files**: genomic scores
 
-🐃 * **GFF (Genetic Feature Format) and GTF**: gene annotation
+🐃 **GFF (Genetic Feature Format) and GTF**: gene annotation
 
-🐃 * **VCF (Variant Call Format)**: variants
+🐃 **VCF (Variant Call Format)**: variants
   * Generic format for storing DNA polymorphism data such as SNPs, insertions, deletions and structural variants, together with rich annotations. 
   * Usually stored in a compressed manner and can be indexed for fast data retrieval of variants from a range of positions on the reference genome.  (Danecek et al 2011)
   * Tailored for storing information *across many samples*
