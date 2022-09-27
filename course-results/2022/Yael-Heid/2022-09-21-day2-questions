@@ -1,0 +1,37 @@
+Questions:
+What is CNV/CNA?
+-Copy Number Aberrations,are present in the majority of cancer types and exert functional impact in cancer development 
+
+How will you describe or introduce progenetix(scale,data source,cancer types etc)?
+-progenetx is a huge database and collection of cancer genome variation data and meta-data (pubicly accessible).
+-in 2001 established
+-It is a collection of different collections such as arrayMap aund TCGA, cBioPortal, NCBI, GEO, EMBL-EBI
+-has data about all known types of human cancer
+
+Describe NCIt, IOCD, UBERON codes, and their relationships
+-NCIt: is a dynamically developed hierarchical ontology, which enables layered data and transfer between classification systems and ressources. But this ongoing expansion is not very suited for primary sample annotations.
+-IOCD: Morphology and Topography coding systems with high specifity but no hierarchical concepts so it does not transform to modern ontologies. provides organ- and substructure-specific mapping rooted in traditional clinical and diagnostic aspects of a ‘tumor entity’ 
+-UBERON: a cross-species anatomical structural ontology system closely aligned with developmental processes. Its relationship structure allows integrative queries linking multiple databases (e.g. Gene Ontology and Protein Ontology) and description logic query within the same organism (linking related organs) and between model animals and humans. 
+they are different tools with different approaches and appearances but they can be combined.
+
+What are CNV segmentations and CNV frequencies, and how to use them?
+-CNVs are the copy number aberrations and their frequency is how often they occur and they can also be a specific segment that can have CNVs.
+
+What are APIs and how to use APIs in pregenetix?
+-API stands for Application Programming Interface and a set of commands, functions, protocols and objects which can be used to build a software.
+-in progenetix,the query interface for retrieval of sample specific data is built on top of a forwardlooking implementation of the GA4GH Beacon API
+for queries:
+-it has filter options for cancer type, tissue location, morphology, cell line or geographic location
+-The top panel of the result page shows a summary with the number of matched samples, variants, calls and the frequency of alleles containing the CNA 
+
+-you can change the format of the data files to download
+-it has links to the databases of dofferent regions (ex. UCSC)
+
+
+How does progenetix visualize CNA profiles?
+-with colourful bars and pictures (ex. geographic location on a map)
+-example: the gains and losses have different colours (yellow and blue)
+
+What do you think should be improved in progenetix?
+-a collection of data can never be too big - it can have more data
+-there could be data about other diseas, not just cancer
