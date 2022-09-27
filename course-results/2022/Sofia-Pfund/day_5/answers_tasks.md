@@ -11,7 +11,7 @@ Required: a reference genome.
 Wanted: automation of genomic sequence retrieval ▶️ need of standardizing data analysis ▶️ increase reproducibility ▶️ UNIX: efficient, scalable, portable, open
 
 #### File Formats
-* FASTA and FASTQ: unaligned sequences
+* FASTA: unaligned sequences
   * text file
   * ID + sequence
   
@@ -22,6 +22,16 @@ TACTGTGTAAATATCAAAAACAATTTAATTTCAAAATTTTTGAAATATGTTTTTTGTGTTGTGTTATAAA
 GTTTTTTTTCAAAATTATATATGTTTGCATTTGCTGGATATAGTTCGGTCTCTGCAAACCATAAAGTCAT
 CGGTATATCCTACATATGGCTTTCATATTGGTTTGGAGTTATTGGATTTTATATGAGTATTTTGATAAGA
 ACAGAATTGAGTATGAGTGGTTTAAAGATTATGACAATGGATACTCTTGAGATATACAATATGATGTTTT
+```
+
+* FASTQ: unaligned sequences (:bangbang: short reads sequencing)
+  * ID + sequence + separator + quality score
+  * sequence quality is represented using Phred scores, which are logarithmically linked to error probabilities (of incorrect base call) 
+```
+@SRR001666.1 071112_SLXA-EAS1_s_7:5:1:817:345 length=36
+GGGTGATGGCCGCTGCCGATGGCGTCAAATCCCACC
++
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIII9IG9IC
 ```
   
 * SAM and BAM: alignments
