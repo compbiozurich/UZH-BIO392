@@ -73,6 +73,8 @@ chr22 2000 6000
   * Tailored for storing information *across many samples*
   * VCF file consists of **two** main sections: (1) header section + (2) data section
   * VCF file has 8 (mandatory) columns: ```CHROM, POS, REF, ALT, QUAL, FILTER, INFO```
+
+![VCF Format](img/VCF-format.jpeg)
   
 
 WES & WGS 
