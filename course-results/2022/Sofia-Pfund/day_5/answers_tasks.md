@@ -1,6 +1,6 @@
 Deadline: Tue 2022-09-04
 
-### General Notes
+## General Notes
 
 Human genome: 3 billion nts
 
@@ -8,12 +8,14 @@ Idea: store genome information using file formats based in coordinates (chr, sta
 
 Required: a reference genome.
 
-Wanted: automation of genomic sequence retrieval ▶️ need of standardizing data analysis ▶️ increase reproducibility ▶️ UNIX: efficient, scalable, portable, open
+Wanted: 
+* automation of genomic sequence retrieval ▶️ need of standardizing data analysis
+* increase reproducibility ▶️ UNIX: efficient, scalable, portable, open
 
 Terminology:
 * variant calling = variant detection
 
-#### File Formats
+### File Formats
 * **FASTA**: unaligned sequences
   * text file
   * ID + sequence
@@ -36,13 +38,16 @@ GGGTGATGGCCGCTGCCGATGGCGTCAAATCCCACC
 +
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIII9IG9IC
 ```
+
 * **SAM (Sequence Alignment Map)**: alignments
   * Idea: store where the reads (saved as FASTQ) map on the reference genome
   * Goal of sequence alignment: identify regions of similarity or the identity of a sequence
   * Local vs. Global aligment
   * human-readable text files
+  
 * **BAM (Binary Alignment Map)**: alignments
   * binary and compressed equivalent of SAM
+  
 * **BED (Browser Extensible Data)**: genomic ranges
   * BED3, BED6, BED12
   * tab-separated colummns: chromosome - start - end
@@ -54,13 +59,18 @@ chr22 2000 6000
   * coordinate specification: 
     * 0-start vs. 1-start 
     * fully-open (4001-4999), fully-closed (4000-5000), half-open (4000-4999)
+    
 * **BEDgraph**: genomic scores
   * BED3 + probability score (like a "BED4")
+  
 * **Wiggle files**: genomic scores
-* **GFF and GTF**: gene annotation
+
+* **GFF (Genetic Feature Format) and GTF**: gene annotation
+
 * **VCF (Variant Call Format)**: variants
-  * 8 columns: CHROM, POS, REF, ALT, QUAL, FILTER, INFO
-  > Generic format for storing DNA polymorphism data such as SNPs, insertions, deletions and structural variants, together with rich annotations. VCF is usually stored in a compressed manner and can be indexed for fast data retrieval of variants from a range of positions on the reference genome. (Danecek et al 2011)
+  * Generic format for storing DNA polymorphism data such as SNPs, insertions, deletions and structural variants, together with rich annotations. 
+  * Usually stored in a compressed manner and can be indexed for fast data retrieval of variants from a range of positions on the reference genome.  (Danecek et al 2011)
+  * 8 columns: ```CHROM, POS, REF, ALT, QUAL, FILTER, INFO```
 
 WES & WGS 
 
@@ -70,10 +80,12 @@ Associated costs
 
 Familiarize with VCF format: specification in article collection
 
-### 1st task: Estimate Storage Requirements for 1000 Genomes
+## 1st task: Estimate Storage Requirements for 1000 Genomes
 * human genome: 3 billion nt
 
-### 2nd task: Reading up on Genome Technologies
+## 2nd task: Reading up on Genome Technologies
+
+Relevance for this course: one of the main uses of next-generation sequencing is to discover variation among large populations of related samples. 
 
 * General NGS technologies
 * count based vs. intensity based as principle
