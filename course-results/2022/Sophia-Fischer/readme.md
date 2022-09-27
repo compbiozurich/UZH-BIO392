@@ -1,3 +1,11 @@
+#WGS and WES
+
+##WGS (whole genome sequencing) \
+determine all nucleotides in an individual's DNA \
+includes coding, non-coding and mtDNA
+##WES (whole exon sequencing) \
+determine all exons in an individual's DNA \
+
 
 # file types overview
 FASTA (stores a variable number of sequence records, and for each record it stores the sequence itself, and a sequence ID) \
@@ -13,11 +21,7 @@ VCFs (variants, good for comparing to reference)
 # FASTQ
 ## phred
 how certain something is, different encoding depending on when it was sequenced
-important when using grep because the "at" is also a phred!!
-awk 'NR % 4 == 1' SP1.fq | head  # get header line
-awk 'NR % 4 == 2' SP1.fq | head  # get sequence line
-awk 'NR % 4 == 3' SP1.fq | head  # get comment line
-awk 'NR % 4 == 0' SP1.fq | head  # get quality line
+
 
 ## make fastq to fasta
 
