@@ -1,0 +1,12 @@
+Storage Requirements for 1000 Genomes
+
+Different file formats:
+  - SAM
+  - BAM
+  - VCF
+  - FASTA
+  - FASTQ
+  - BED
+  
+Cost factors:
+
