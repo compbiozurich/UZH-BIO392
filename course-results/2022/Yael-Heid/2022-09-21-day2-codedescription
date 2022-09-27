@@ -1,0 +1,19 @@
+Code Description exercise day2 yael heid
+
+
+
+Import packages that I need
+
+Get data from pgxseg file with every line as a string
+Get only the important lines
+Create a list for storing the splitted strings
+Split the data so I can have each line as a list with the elements being a datapoint
+
+Create lists of every column in my dataframe
+
+Extract and add the datapoints to it’s according column
+
+Join all the lists (each list being a column) and
+Make it to a dataframe
+
+Check if it did work

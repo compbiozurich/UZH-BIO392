@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+{%- seo -%}
+  <meta name="viewport" content="width=device-width">
+{%- for static_file in site.static_files -%}{% if static_file.path contains 'site-specific/favicon.ico' %}
+  <link rel="shortcut icon" href="{{ 'assets' | relative_url }}/img/site-specific/favicon.ico" type="image/x-icon" />
+{% endif %}{%- endfor -%}
+
+{%- comment -%}
+  * the base "style.css" file is loaded first
+  * after that, .css and .js files from the /assets/preload directory are loaded
+{%- endcomment -%}
+  <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
+{%- for static_file in site.static_files -%}
+	{%- if static_file.path contains '/preload/' -%}
+		{% if static_file.extname contains 'css' %}
+  <link rel="stylesheet" href="{{ static_file.path | relative_url }}">
+		{% elsif static_file.extname contains 'js' %}
+	<script src="{{ static_file.path | relative_url }}"></script>
+		{%- endif -%}
+	{%- endif -%}
+{%- endfor -%}
+
+</head>
+
+<body>
+
+<div id="headband">
+{%- for static_file in site.static_files -%}{%- if static_file.path contains 'site-specific/site-logo-topleft.png' -%}
+    <img src="{{ 'assets' | relative_url }}/img/site-specific/site-logo-topleft.png" id="logo_topleft" />
+{%- endif -%}{%- endfor -%}
+{%- for static_file in site.static_files -%}{%- if static_file.path contains 'site-specific/site-logo-topright.png' -%}
+    <img src="{{ 'assets' | relative_url }}/img/site-specific/site-logo-topright.png" id="logo_topright" />
+{%- endif -%}{%- endfor -%}
+</div>
+
+<div id="nav_r"> </div>
+
+<div class="container" style="margin-top: 20px">
+
+<header>
+
+  <div id="sitelogo">
+<a href="{{ '/' | relative_url }}">
+		<h2>{{ site.label }}</h2>
+  	<div style="font-size: 0.9em; margin-top: -10px; margin-bottom: 15px;">{{ site.tagline }}</div>
+</a>
+	</div>
+
+  <div id="catlinks">
+
+{%- comment -%}
+  * categories from _config.yaml
+  * those are contained in nav_cat_blocks
+{%- endcomment -%}
+
+{%- assign nav_itemno = 5 -%}
+{%- if site.navigation_max_items -%}
+  {%- assign nav_itemno = site.navigation_max_items -%}
+{%- endif -%}
+
+{%- for this_nav_cat_block in site.nav_cat_blocks -%}
+  {%- assign block_key = this_nav_cat_block[0] -%}
+  {%- assign block_label_type = this_nav_cat_block[1] | split: ','  -%}
+  {%- if block_label_type[1] == 'categories' -%}
+    {%- unless block_label_type[2] == 'hide' -%}
+
+  <h5>{{block_label_type[0]}}</h5>
+
+    {%- endunless -%}
+
+{%- comment -%}
+  * begin looping through categories
+  * categories with 0 posts are not listed (counting cat_posts)
+{%- endcomment -%}
+
+    {%- for this_category in site[block_key] -%}
+      {%- assign cat_label = this_category[1] -%}
+      {%- assign cat_key = this_category[0] -%}
+      {%- assign cat_page = cat_key | append: '.html' -%}
+      {%- assign cat_posts = site.documents | where: 'categories', cat_key | sort: 'date' | reverse -%}
+
+			{%- if cat_posts.size >= 1 -%}
+
+  <h4><a href="{{ 'categories' | relative_url }}/{{cat_page}}">{{ cat_label }}</a></h4>
+
+{%- comment -%}
+  * posts are listed if same category as current page
+  * this is only done if it is a temporally sorted category
+  * the "this_name" fix is for the category collection pages - e.g. /howto.md
+    which are identical in content (i.e. no "categories" in front matter) & only
+    differ in their name (=> category)
+{%- endcomment -%}
+
+				{%- if site.categories-date-sorted contains cat_key -%}
+					{%- assign this_name = page.name | split: "." -%}
+					{%- if page.categories contains cat_key or this_name[0] == cat_key -%}
+
+{%- comment -%}
+  * first featured posts
+  * those are subtracted from the nav_itemno count ...
+{%- endcomment -%}
+
+						{%- for post in cat_posts -%}{%- if post.tags contains '.featured' -%}
+							{%- assign post_link = post.url | relative_url -%}
+							{%- assign post_label = post.title -%}
+							{%- if post.excerpt_link contains 'http://' or post.excerpt_link contains 'https://' -%}
+								{%- assign post_link = post.excerpt_link -%}
+								{%- assign post_label = post_label | append: ' &#8599;' -%}
+							{%- endif -%}
+
+    <h4 class="sublink">
+      <a href="{{ post_link }}">{{ post_label }}</a>
+    </h4>
+							{%- assign nav_itemno = nav_itemno | minus: 1 -%}
+						{%- endif -%}{%- endfor -%}
+						{%- for post in cat_posts limit: nav_itemno -%}{%- unless post.tags contains '.featured' or post.tags contains '.prepend' or post.tags contains '.append' -%}
+
+{%- comment -%}
+  * others than the featured posts
+{%- endcomment -%}
+
+							{%- assign post_link = post.url | relative_url -%}
+							{%- assign post_label = post.title -%}
+							{%- if post.excerpt_link contains 'http://' or post.excerpt_link contains 'https://' -%}
+								{%- assign post_link = post.excerpt_link -%}
+								{%- assign post_label = post_label | append: ' &#8599;' -%}
+							{%- endif -%}
+    <h4 class="sublink">
+      <a href="{{ post_link }}">{{ post_label }}</a>
+    </h4>
+
+						{%- endunless -%}{%- endfor -%}
+
+{%- comment -%}
+  * link to the category collecting page, if more than nav_itemno
+{%- endcomment -%}
+
+						{%- if cat_posts.size > nav_itemno -%}
+
+    <h4 class="sublink" >
+      <a href="{{ 'categories' | relative_url }}/{{cat_page}}">all ...</a>
+    </h4>
+
+						{%- endif -%}
+					{%- endif -%}
+				{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+  </div>
+
+{%- comment -%}
+  * / categories from _config.yaml
+  * begin related_sites from _config.yml
+{%- endcomment -%}
+
+  <div id="outlinks">
+
+  {%- assign nav_cat_blocks_cat = block_label_type[1] -%}
+  {%- if site[nav_cat_blocks_cat] -%}
+    {%- unless nav_cat_blocks_cat == 'categories' -%}
+      {%- unless block_label_type[2] == 'hide' -%}
+
+  <h5>{{block_label_type[0]}}</h5>
+
+      {%- endunless -%}
+      {%- for this_link in site[nav_cat_blocks_cat] -%}
+        {%- assign link_label = this_link[0] -%}
+        {%- assign link_link = this_link[1] -%}
+          {%- unless site.site_domain_name == link_link -%}
+
+    <h4 class="sublink">
+      <a href="{{ link_link }}">{{ link_label }}</a>
+    </h4>
+
+        {%- endunless -%}
+      {%- endfor -%}
+    {%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}
+  * / related_sites from _config.yml
+  * / of nav_cat_blocks
+  * begin of tags
+{%- endcomment -%}
+
+	</div>
+
+  <div id="tagcloud">
+
+  <h5>Tags</h5>
+
+{%- assign tags = site.emptyArray -%}
+{%- for this_post in site.documents -%}
+  {%- if this_post.tags -%}
+    {%- assign tags = tags | concat: this_post.tags -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign tags_unique = site.cloud_tags | uniq | sort -%}
+
+{%- for tag in tags_unique -%}
+
+  {%- assign counter = 0 -%}
+  {%- for this_tag in tags -%}
+    {%- if this_tag == tag -%}
+      {%- assign counter = counter | plus: 1 -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- unless tag contains '.' or counter < 1 -%}
+
+    <div class="site-tag">
+      <a href="{{ '/tags' | relative_url }}/{{ tag }}.html" style="font-size: {{ counter | plus: 70 }}%">{{ tag | replace: "--", "::" | replace: "_", " " }}</a>
+    </div>
+
+  {%- endunless -%}
+{%- endfor -%}
+
+  </div>
+
+</header>
+
+{%- comment -%}
+  * / tags
+  * / header
+  * begin page content
+{%- endcomment -%}
+
+<section>
+
+{{ content }}
+
+{%- comment -%}
+  * after the page content, some links from definitions in the YAML front
+    matter of the file
+{%- endcomment -%}
+
+{%- if page.pdf_file_name or page.www_link or page.www_links_formatted -%}
+
+  <h4>Links</h4>
+
+    <ul>
+  {%- if page.pdf_file_name -%}
+    {%- for this_file in site.static_files -%}
+      {% if this_file.name == page.pdf_file_name %}
+        <li><a href="{{site.baseurl}}{{this_file.path}}" target="_blank">[PDF]</a>
+        {% if page.pdf_file_type %}
+   ({{ page.pdf_file_type }})
+        {% endif %}
+        </li>
+      {% endif %}
+    {%- endfor -%}
+  {%- endif -%}
+  {% if page.www_link %}
+        <li><a href="{{ page.www_link }}" target="_blank">[www]</a></li>
+  {% endif %}
+  {%- if page.www_links_formatted -%}
+    {% for this_link in page.www_links_formatted %}
+        <li>{{ this_link }}</li>
+    {% endfor %}
+  {%- endif -%}
+    </ul>
+{%- endif -%}
+
+{%- comment -%}
+  * date and author(s) based on front matter, if defined there
+  * formatted as github link if @author style
+{%- endcomment -%}
+
+{%- if page.date or page.author -%}
+
+  <div class="pagestamp">
+
+  {%- if page.author -%}
+    {%- assign page_authors = page.author -%}
+  {%- elsif page.authors -%}
+    {%- assign page_authors = page.authors -%}
+  {%- endif -%}
+
+  {%- if page_authors -%}
+    {%- for this_author in page_authors -%}
+      {%- if this_author contains "@" -%}
+        {% assign this_g_author = this_author | remove: "@" %}
+<a href="https://github.com/{{this_g_author}}/" target="_blank">{{this_author}}</a>&nbsp;
+      {%- else -%}
+        {% if page.author_link contains "http" %}
+<a href="{{page.author_link}}" target="_blank">{{this_author}}</a>&nbsp;
+        {% else %}
+{{this_author}}&nbsp;
+        {% endif %}
+      {%- endif -%}
+    {% endfor %}
+  {%- endif -%}
+  {%- if page.date -%}
+{{ page.date | date: "%Y-%m-%d" }}
+  </div>
+  {%- endif -%}
+{%- endif -%}
+</section>
+
+
+{%- comment -%}
+  * / page content
+  * begin footer
+{% endcomment %}
+
+<footer>
+
+{%- if page.name contains 'news' or page.categories contains 'news' or page.categories contains 'events' -%}
+  {% if site.tweetfeed contains 'twitter' %}
+  <div id="tweetfeed" style="display: block; margin-top: 25px;">
+ <a class="twitter-timeline" data-width="100%" data-height="200" data-theme="light"  data-chrome="noheader nofooter" href="{{site.tweetfeed}}"></a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  {% endif %}
+{%- endif -%}
+
+{%- for static_file in site.static_files -%}
+	{% if static_file.path contains 'site-specific/site-logo-main.png' %}
+  <a href="{{ site.site_parent_link }}">
+    <img style="margin-top:15px; margin-left: auto; margin-right: auto;" src="{{ 'assets' | relative_url }}/img/site-specific/site-logo-main.png" />
+  </a>
+	{% endif %}
+{%- endfor -%}
+
+</footer>
+
+{%- comment -%}
+  * / footer
+  * next </div> closes the page container
+{% endcomment %}
+
+</div>
+
+{%- comment -%}
+  * editing links with icons, for either Github or local path based editing
+  * no icons are shown for generated or list pages
+{%- endcomment -%}
+
+{%- unless page.path contains 'categories/' or page.path contains 'tags/' or page.path contains 'generated' -%}
+	{%- if site.github.repository_url contains '/' -%}
+    {%- assign github_link = site.github.repository_url | append: '/edit/master/' -%}
+    {%- if page.path contains '/' -%}
+      {%- assign github_link = github_link | append: site.collections_dir  | append: '/' -%}
+    {%- endif -%}
+  <a href="{{github_link}}{{page.path}}" style="text-decoration: none; color: #ccc;"><img src="{{ 'assets/img/icons8-edit-file-26.png' | relative_url }}" alt="Edit on Github..." id="pageediticn" /></a>
+	{%- elsif site.source_path contains '/' -%}
+
+<!-- Code from https://clipboardjs.com -->
+  <button  id="pageediticn" data-clipboard-text="open {{site.source_path}}/{{ page.path }}">
+    <img src="{{ 'assets/img/clippy.svg' | relative_url }}" width="15px" alt="Copy local path to clipboard for pasting into terminal - only works for site editors...">
+  </button>
+<script>
+  var clipboard = new ClipboardJS('#pageediticn');
+  clipboard.on('success', function(e) {
+      console.log(e);
+  });
+  clipboard.on('error', function(e) {
+      console.log(e);
+  });
+</script>
+<!-- / clipboardjs -->
+
+	{%- endif -%}
+{%- endunless -%}
+
+{%- comment -%}
+  * / editing
+{%- endcomment -%}
+
+{%- if site.google_analytics -%}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
+</script>
+{%- endif -%}
+
+</body>
+</html>
