@@ -70,7 +70,10 @@ chr22 2000 6000
 * **VCF (Variant Call Format)**: variants
   * Generic format for storing DNA polymorphism data such as SNPs, insertions, deletions and structural variants, together with rich annotations. 
   * Usually stored in a compressed manner and can be indexed for fast data retrieval of variants from a range of positions on the reference genome.  (Danecek et al 2011)
-  * 8 columns: ```CHROM, POS, REF, ALT, QUAL, FILTER, INFO```
+  * Tailored for storing information *across many samples*
+  * VCF file consists of **two** main sections: (1) header section + (2) data section
+  * VCF file has 8 (mandatory) columns: ```CHROM, POS, REF, ALT, QUAL, FILTER, INFO```
+  * 
 
 WES & WGS 
 
