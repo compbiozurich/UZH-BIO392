@@ -1,12 +1,13 @@
-#WGS and WES
+# WGS and WES
 
-##WGS (whole genome sequencing) \
+## WGS (whole genome sequencing) \
 determine all nucleotides in an individual's DNA \
 includes coding, non-coding and mtDNA
-##WES (whole exon sequencing) \
+## WES (whole exon sequencing) \
 determine all exons in an individual's DNA \
-
-
+# storage
+perfect genome (no overhead): ~715 MB \
+a single 30x BAM file => 100GB \
 # file types overview
 FASTA (stores a variable number of sequence records, and for each record it stores the sequence itself, and a sequence ID) \
 FASTQ (header, sequence, comment, quality) \
