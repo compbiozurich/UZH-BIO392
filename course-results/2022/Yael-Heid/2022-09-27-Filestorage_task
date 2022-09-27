@@ -1,12 +1,41 @@
 Storage Requirements for 1000 Genomes
 
 Different file formats:
-  - SAM
-  - BAM
-  - VCF
-  - FASTA
-  - FASTQ
-  - BED
+  - SAM (Alignments):
+    Sequence Alignment Map - human readable text files
+    
+  
+  - BAM:
+    Binary Alignment Map - the binary and compressed equivalent to SAM
+  
+  - VCF (variants)
+  
+  - FASTA (Unaligned sequences):
+    often used for reference Genomes
+    stretches of DNA sequences encoded with A, G, C, T, N (Bases)
+    > line contains name and the following lines contain the sequence
+    example:
+      >NC_009902.1 Babesia bovis T2Bo mitochondrion, complete genome
+      TTTAAAAAAGTGTTAAAAACTTTATACATTAAAAAATTTAAACAAGTGATCATGTATAAAGTACACTTGT
+      TACTGTGTAAATATCAAAAACAATTTAATTTCAAAATTTTTGAAATATGTTTTTTGTGTTGTGTTATAAA
+      ...
+      
+  - FASTQ :
+    is like FASTA but includes quality data as well (the line below the DNA sequence line)
+    the quality is represented using Phred score for every single Base - encoded in different single letters and singns 
+    these quality scores are logarithmically linked to error probabilities
+      - a score of 10 is 1 in 10 - Base call accuracy of 90%
+      - a score of 20 is 1 in 100 - Base call accuracy of 99%
+      - a score of 50 is 1 in 100'000 - Base call accuracy of 99.999%
+    
+    example:
+      @SRR001666.1 071112_SLXA-EAS1_s_7:5:1:817:345 length=36
+      GGGTGATGGCCGCTGCCGATGGCGTCAAATCCCACC
+      +
+      IIIIIIIIIIIIIIIIIIIIIIIIIIIIII9IG9IC
+  
+  - BED (Genomic ranges)
+
   
 Cost factors:
 
