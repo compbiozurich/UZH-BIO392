@@ -1,7 +1,6 @@
 Deadline: Tue 2022-09-04
 
-## General Notes
-
+### In general...
 * Human genome: 3 billion nts
 * Idea: store genome information using file formats based in coordinates (chr, start, end), and _not_ sequences.
 * Required: a reference genome.
@@ -13,7 +12,7 @@ Also wanted:
 Terminology:
 * variant calling = variant detection
 
-### File Formats
+## File Formats
 🐃 **FASTA**: unaligned sequences
   * text file
   * ID + sequence
@@ -75,7 +74,7 @@ chr22 2000 6000
 ![VCF Format](img/VCF-format.jpeg)
   
 
-### WES & WGS 
+## WES & WGS 
 
 ... continue here  ...
 
