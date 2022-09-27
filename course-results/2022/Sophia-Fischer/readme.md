@@ -8,6 +8,20 @@ determine all exons in an individual's DNA \
 # storage
 perfect genome (no overhead): ~715 MB \
 a single 30x BAM file => 100GB \
+
+
+Raw Reads\
+≈ 1 GB1) per WGS (approx. 1,000 samples per 1 TB HD; FASTQ format)
+needed for ENA submission (e.g., publication) and different assembly strategy; SeqSphere+ only knows file location if processed with pipeline, reads must be stored on a network drive to be accessible for all client computers. \
+
+Assembly with Reads \
+≈ 200 MB1) 2) per assembly (approx. 5,000 samples per 1 TB HD; ACE or BAM format)
+needed for reproducing all SeqSphere+ results achieved with auto-correction, manual edits, and/or when dealing with multi-copy genes; optional stored and managed by SeqSphere+ on the server (may be different HD than DB HD). \
+
+Assembly without Reads \
+≈ 1 MB per assembly (approx. 1,000,000 samples per 1 TB HD; FASTA format)
+needed for unique PCR signature extraction and for reproducing all SeqSphere+ results that does not involve auto-correction, manual edits, and/or deals with multi-copy genes; obligate stored and managed by SeqSphere+ on the server (always stored together with allelic profiles) \
+>https://www.ridom.de/u/WGS_Data_Types_&_Sizes_and_Runtimes.html
 # file types overview
 FASTA (stores a variable number of sequence records, and for each record it stores the sequence itself, and a sequence ID) \
 FASTQ (header, sequence, comment, quality) \
