@@ -53,6 +53,8 @@ This page collects items for the course "reading list" (and beyond). Since the r
     - 2017-05-08___Zehir_et_al.__MSKCC-IMPACT_Panel_Sequencing_more_than_10000_metastatic_cancer_patients__NatMed.pdf
 * Koboldt et al (2012): VarScan 2: Somatic mutation and copy number alteration discovery in cancer by exome sequencing
     - 2012-02-02___VarScan-2-Somatic-mutation-and-copy-number-alteration-discovery-in-cancer-by-exome-sequencing__Genome_Research.pdf
+* Wagner et al (2020): A harmonized meta-knowledgebase of clinical interpretations of somatic genomic variants in cancer
+    - 2020-04-03___Wagner-et-al.__A-Harmonized-Meta-Knowledgebase-of-Somatic-Cancer-Variants__Nature-Genetics.pdf
 
 #### Extended reading
 
