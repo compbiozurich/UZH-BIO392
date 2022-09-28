@@ -12,20 +12,25 @@ Paper link: https://www.nature.com/articles/nrg3871
 5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent map (stringency level 12) respectively? (The CNV map)
 6. Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively? (Properties of the CNV map)
 7. By your intuition, which kind of genes are more variable between protein-coding genes and non-coding genes? How about their 
-  findings in this paper? (Functional impact of CNV)
+  findings in this paper? \
+  -> non-coding genes are more variable, good to see in the figures 
 8. The authors generated a null CNV map and found genes for which at least 85% of theexons were homozygous deleted. 
-  What are the functions of these genes? And why did the authors say that they seem to be non-essential? (Homozygous deleted genes)
-9. If you are a medical doctor, how do you use this map as a tool to assess the clinicalimportance of a CNV? (Clinical application of the CNV map part in Discussion)
+  What are the functions of these genes? Why did the authors say that they seem to be non-essential? (Homozygous deleted genes)\
+  -> limited to 0.75% of the genome in the stringent map, most of the exons where deleted for the null map 
+9. If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV? (Clinical application  
+  of the CNV map part in Discussion) \
+  -> identify those CNVs that are associated with evolutionary fitness in the population, list of 935 medically relevant genes was created that have been shown to involve CNVs
 
+**Main** \
 copy number variations involve unbalanced rearrangements which increase or decrease the DNA content \
 CNVs size is defined larger than 50bps
-
 a trait can be adaptive or maladaptive in different environmental contexts \
 maladaptive CNVs have been associated with conditions such as autism, schizophrenia, Crohn's disease, rheumatoid arthritis, type 1 diabetes, obesity and numerous developmental diseases 
 
 high-resolution CNV maps have been constructed to study the impact of CNVs on complex human traits, including diseases \
 aim of this Analysis is to create a CNV map of the human genome for variations that are not associated with adverse phenotypes 
 
+**CNV discoveries** \
 microarrays and next-generation sequencing are the primary approaches used for CNV detection \
 with the advent of NGS technologies, new tools can detect CNVs from the data \
 array-based detection methods are suitable for studying quantitative variants \
@@ -59,6 +64,13 @@ exones are more variable than the genome average \
 exons of non-coding genes had the highest proportion of copy number variable sequence \
 exons associated with diseases or other fitness altering phenotypes are less variable \
 cancer related genes are under strong negative selection \
+exons in dominant genes showed no significant differences in variability compared with those in recessive genes \
+promoters are enriched with CNVRs \
+CpG islands were more variable than the genome background
+
+**Homozygous deleted genes** \
+we identified 107 human protein-coding genes (99 genes were from the stringent map), for which at least 85% of the exons were deleted in the null CNVRs \
+these genes would seem to be non-essential, could be missing from the genomes of healthy individuals
 
 
 
