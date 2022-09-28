@@ -21,15 +21,15 @@ Microarrays and next-generation sequencing (NGS) are the primary approaches used
 
 **Array-based methods**
 
-😄 Advantages: study quantitative variants (estimate total CNV content), deletions are easier to identify
+😄 Advantages: study quantitative variants (estimate total CNV content); deletions are easier to identify
 
-😞 Limitations: miss variants that are small, limited resolution capacity
+😞 Limitations: miss variants that are small; limited resolution capacity
 
 **Sequencing-based methods**
 
-😄 Advantages: smaller variants can be detected, high sensitivity
+😄 Advantages: smaller variants can be detected; high sensitivity
 
-😞 Limitations: lack of probes in regions of the genome that contain segmental duplications, biased towards deletions
+😞 Limitations: lack of probes in regions of the genome that contain segmental duplications; biased towards deletions
 
 ###  4. The authors used clustering method to combine data from different studies into merged CNVRs (Copy number variable regions). What are the two criteria for cluster filtering? And why did they do this filtering? (The CNV map)
 
