@@ -78,11 +78,16 @@ chr22 2000 6000
 
 ### WES (Whole Exome Sequencing)
 👉 determines exact order of nucleotides withing protein-coding regions (exomes)
+
 💰 wide variety of prices
+
 💾 captures 2% of human genome: ca. **6 MB** of data to store
+
 ### WGS (Whole Genome Sequencing)
 👉 determines exact full nucleotide order of a DNA sequence
+
 💰 more expensive but provides a more complete view than SNP genotyping: new discoveries can be made
+
 💾 captures 100% of human genome: ca. **3 GB** of data to store
 
 ## 1st task: Estimate Storage Requirements for 1000 Genomes
@@ -99,7 +104,7 @@ Relevance for this course: one of the main uses of next-generation sequencing is
 
 ### Molecular-cytogenetic techniques:
 * Cytogenetics = chromosomal analysis 
-* Idea: study structureal changes in chromosomes w/o knowledge about sequence alterations
+* Idea: study structural changes in chromosomes w/o knowledge about sequence alterations
 * **CGH (Comparative Genomic Hybridization)**:
   * identify regional genomic copy number variations (CNV/CNA)
   * based on in situ suppression hybridization of labeled genomic tumor and reference DNA
@@ -111,12 +116,12 @@ Relevance for this course: one of the main uses of next-generation sequencing is
   * based on in situ suppression hybridization of labeled genomic tumor and reference DNA against spotted or synthesized DNA clones or oligonucleotides
   * analysis of relative fluorescence ratio allows semi-quantitative copy number read-out
   * **direct** attribution of involved target genes through known sequence content
-
-* SNP Genotyping
-  * 
-* SKY, M-FISH
-* chromosomal CGH
-▶️ notes about usage (research, clinical, historical vs. current)
+* M-FISH:
+  > Multiplex in situ hybridization (M-FISH) is a 24-color karyotyping technique and is the method of choice for studying complex interchromosomal rearrangements.
 
 ### General NGS technologies
 * count based vs. intensity based as principle
+* Nanopore Sequencer: 
+  * 😄 can sequence very long reads
+  * 😄 identify DNA of known composition and for de-novo assembly for telomere/repeat regions
+  * 😞 fidelity not very high: not good to identify new SNPs and for disease diagnostics! 
