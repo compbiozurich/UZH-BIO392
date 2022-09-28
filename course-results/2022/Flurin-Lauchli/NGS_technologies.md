@@ -10,6 +10,7 @@ in contrast to sanger sequencing, NGS does not rely on primers.
 ### bandinng analysis
 - allows each chromosome to be identified by its characteristic banding pattern
 - in general, the dark bands have a lower G-C content than the interbands, where genes tend to be located
+- old-school technique which is widely used, but lacks resolution
 ![image](https://user-images.githubusercontent.com/103630748/192761390-0c969eaa-1ca0-4673-a901-520d9c8e64db.jpeg)
 typical bands of human X chromosome 
 *Chang-Hui Shen, in Diagnostic Molecular Biology, 2019*
@@ -30,13 +31,14 @@ typical bands of human X chromosome
 - hybridization-based technique originally developed to diagnose chromosomal aberrations associated with cancer, and genetic disease. SKY can be used to detect specific inter, and intra-chromosomal genomic rearrangements, and unambiguously determine both the total number, and individual identity of all chromosomes in a metaphase nucleus
 - each chromosome painted in a different color
 - based on the hybridization of collections of chromosome-specific FISH probes labeled with different fluorochromes or fluorochrome combinations
-https://www.cytotest.com/uploadfiles/image/2013-3//SKY01.jpg![image](https://user-images.githubusercontent.com/103630748/192775564-f534ff2a-0b20-496e-be19-1c485f756d73.png)
+<img width="594" alt="Screenshot 2022-09-28 at 14 28 05" src="https://user-images.githubusercontent.com/103630748/192778517-74120343-3f75-4ba0-a132-2fcd1b057064.png">
 *https://www.cytotest.com/sky.asp*
 
 
 ## multiplex in situ hybridization (M-FISH)
 - 24-color karyotyping technique
 - labeling of all chromosomes in the genome with finite numbers of spectrally distinct fluorophores in a combinatorial fashion, such that each homologous pair of chromosomes is uniquely labeled
+- "method of choice for studying complex interchromosomal rearrangements"
 
 
 ### M-FISH vs. SKY
