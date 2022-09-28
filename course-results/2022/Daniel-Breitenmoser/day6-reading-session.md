@@ -22,9 +22,9 @@ It was filtered because it ensured that structurally different CNV's were not me
 
 ### 5. What are the thresholds in stringency lvl1, lvl2 and lvl12 respectively?
 
-stringency lvl1: at least one subject and one study included all CNV's and CNVR's\
-stringency lvl2: at least two subjects and one study for each variant
-stringency lvl12: at least two subjects and two studies
+stringency lvl1: at least one subject and one study \
+stringency lvl2: at least two subjects and one study for each variant \
+stringency lvl12: at least two subjects and two studies \ 
 
 ### 6. Which percentage of the genome contributed to CNV in inclusive map and stringent map respectively?
 
