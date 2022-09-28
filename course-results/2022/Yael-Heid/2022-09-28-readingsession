@@ -1,0 +1,76 @@
+Questions from the reading session about the paper: A copy number variation map of the human genome
+
+
+1. Why is important to construct a CNV map on health individuals of various ethnicities?
+(Introduction) 
+-Clinical geneticists need to discriminate pathogenic or high-risk variants from benign variants in patients, and they do so with information 
+about CNVs found in apparently healthy individuals, which can include parents, siblings and population controls.
+-they need healthy individuals to compare the pathogenic variants to. this needs to be done in every ethnicities.
+
+
+2. What is the CNV size that the authors defined? (Box 1 mentioned in introduction)
+Noted: The CNV size definition is still under debate and may be different in other literature
+- they have included microscopic and submicroscopic variants from 50bp to 3Mb.
+
+
+3. What are the primary approaches used for CNV detection? 
+-Microarrays (with large-insert clones (known as bacterial artificial chromosomes (BACs)) and oligonucleotide arrays as well as comparative genomic hybridization and SNP-based arrays) 
+and next-generation sequencing (NGS) are the primary approaches used for CNV detection
+
+And what are the advantages and limitations of these technologies? (CNV discoveries) 
+-no single discovery strategy can capture the entire spectrum of structural variations in the genome and ascertainment depends largely on the platforms and algorithms used.
+-low resolution and overestimation of the breakpoints
+-missing many variants that are small
+-methods vary in their bility to detect deletions or duplications - inconsistency problems
+-the size distribution of variants called by different platforms varies
+-NGS call smaller variants and are biased towards the detection of deletions
+
+
+4. The authors used clustering method to combine data from different studies into merged 
+CNVRs (Copy number variable regions). What are the two criteria for cluster filtering? 
+And why did they do this filtering? (The CNV map) 
+-As CNVs called from different studies can estimate partially different CNV boundaries, they used a CNVR-clustering algorithm to identify sets of 
+variants in which every possible variant pair had at least 50% reciprocal overlap - ensured that structurally distinct CNVs were not merged at this stage
+-Clusters were then filtered on the basis of the number of distinct subjects that carry the variant and the number of distinct studies with at least one variant in the cluster
+-short: at leasts 50% reciprocal overlap and at least one varian in the cluster
+-Different platforms have different degrees of accuracy for determining the beginning and end of the variants
+Thus, the coordinates of variants detected by different methods may not be identical.
+-The filter based on the number of studies ensured the exclusion of potential study-specific artefacts
+
+
+5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent 
+map (stringency level 12) respectively? (The CNV map) 
+-stringency level 1: supported by at least one subject and one study
+-stringency level 2:  at least two subjects and one study for each variant 
+-stringency level 12:  at least two subjects and two studies
+
+
+6. Which percentage of the genome contributes to CNV in inclusive map and stringent map 
+respectively? (Properties of the CNV map) 
+-inclusive map: 9.5% (higher than stringent map - could be explained by the fact that more samples from a wider range of ethnic backgrounds were included)
+-stringent map: 4.8%
+
+
+7. By your intuition, which kind of genes are more variable between protein-coding genes and 
+non-coding genes? 
+-the ones that are not vital but an extra
+
+How about their findings in this paper? (Functional impact of CNV) 
+-exons of many of the constrained gene sets — particularly those associated with diseases (OMIM, ISCA and cancer) or other 
+fitness-altering phenotypes — were less variable than the genome average
+- cancer related genes were under strong negative selection
+-the least variable for both gains and losses were genes that were predicted by the genic intolerance score and the haploinsufficiency index
+
+
+8. The authors generated a null CNV map and found genes for which at least 85% of the 
+exons were homozygous deleted. What are the functions of these genes?
+- they are non-essential or are maybe related to late on-set phenotypic consequences that do not reduce fitness by much.
+
+And why did the authors say that they seem to be non-essential? (Homozygous deleted genes) 
+-because otherwise the deletion would decrease the fitness way more and thus healthy individuals would not have those deletions.
+
+
+9. If you are a medical doctor, how do you use this map as a tool to assess the clinical 
+importance of a CNV? (Clinical application of the CNV map part in Discussion)
+-see whether the CNV is found among the CNVRs of the CNV map
+-see whether the CNV overlaps with medically relevant genes
