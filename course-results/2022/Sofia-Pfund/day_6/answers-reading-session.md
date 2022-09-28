@@ -3,7 +3,7 @@
 Paper link: https://www.nature.com/articles/nrg3871
  
 **1. Why is important to construct a CNV map on healthy individuals of various ethnicities?
-(Introduction)
+(Introduction)**
 
 The DNA sequence along human chromosomes is contantly changing, and this process enables humans to evolve and adapt.
 A new trait can be adaptive or maladaptive in different enviromental contexts (e.g. pathogentic CNVs). 
@@ -17,7 +17,7 @@ Noted: The CNV size definition is still under debate and may be different in oth
 > **Copy number variation (CNV).** A genomic segment of at least 50 bp that differs in copy number based on the comparison of two or more genomes.
 
 **3. What are the primary approaches used for CNV detection? And what are the advantages
-and limitations of these technologies? (CNV discoveries)
+and limitations of these technologies? (CNV discoveries)**
 
 Microarrays and next-generation sequencing (NGS) are the primary approaches used for CNV detection.
 
@@ -35,24 +35,24 @@ Microarrays and next-generation sequencing (NGS) are the primary approaches used
 
 **4. The authors used clustering method to combine data from different studies into merged
 CNVRs (Copy number variable regions). What are the two criteria for cluster filtering? And
-why did they do this filtering? (The CNV map)
+why did they do this filtering? (The CNV map)**
 
 Clusters were then filtered on the basis of:
 1) the number of distinct subjects that carry the variant 👉 exclude singletons and avoid false-positives for variants that are present in large nr of subjects
 2) the number of distinct studies with at least one variant in the cluster 👉 exclude potential study-specific artefacts
 
 **5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent
-map (stringency level 12) respectively? (The CNV map)
+map (stringency level 12) respectively? (The CNV map)**
 
 **6. Which percentage of the genome contributes to CNV in inclusive map and stringent map
-respectively? (Properties of the CNV map)
+respectively? (Properties of the CNV map)**
 
 **7. By your intuition, which kind of genes are more variable between protein-coding genes and
-non-coding genes? How about their findings in this paper? (Functional impact of CNV)
+non-coding genes? How about their findings in this paper? (Functional impact of CNV)**
 
 **8. The authors generated a null CNV map and found genes for which at least 85% of the
 exons were homozygous deleted. What are the functions of these genes? And why did the
-authors say that they seem to be non-essential? (Homozygous deleted genes)
+authors say that they seem to be non-essential? (Homozygous deleted genes)**
 
 **9. If you are a medical doctor, how do you use this map as a tool to assess the clinical
-importance of a CNV? (Clinical application of the CNV map part in Discussion)
+importance of a CNV? (Clinical application of the CNV map part in Discussion)**
