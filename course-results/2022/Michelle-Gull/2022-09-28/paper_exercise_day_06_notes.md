@@ -56,7 +56,7 @@ Thresholds in stringent map (stringency level 12):
 
 <br>
 
-### 6. Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively? (Properties of the CNV map)
+### 6. Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively? 
 
 > 9.5% of the human genome contributes to CNV in the inclusive map (7.5% for losses and 3.9% for gains) 
 
@@ -64,8 +64,8 @@ Thresholds in stringent map (stringency level 12):
 
 <br>
 
-### 7. By your intuition, which kind of genes are more variable between protein-coding genes and non-coding genes? How about their findings in this paper? (Functional impact of CNV)
->
+### 7. By your intuition, which kind of genes are more variable between protein-coding genes and non-coding genes? How about their findings in this paper? 
+> By my intution non-coding genes are more variable. They found that the exons of non-coding genes had the highest proportion of copy number variable sequence, which is higher than the exons of protein-coding genes.
 
 <br>
 
