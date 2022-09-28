@@ -18,12 +18,12 @@ The authors used clustering method to combine data from different studies into m
 > The primary approaches used for CNV detection are Microarrays and next-generation sequencing (NGS).
 > The first studies to assay CNVs primarily used microarrays with bacterial artificial chromosomes (BACs) and oligonucleotide arrays. Subsequent microarrays have included both comparative genomic hybridization (CGH) and SNP-based arrays. During the past few years use of NGS technologies has been particularly widespread.
 > 
-array-based methods 
+Array-based methods:
 > advantages: suitable for studying quantitative variants, identifying deletions and duplications however methods vary in their ability to detect deletions or duplications (more duplications are missed by SNP-based array platforms than by array CGH). 
 
 > limitations: limited resolution capacity, inflated estimates of toatal CNV content due to low resolution and overestimatin of breakpoints, detection of small variants
 
-NGS 
+NGS:
 > advantages: detection of small variants, detection of deletions, high sensitivity and the ability to provide accurate sequence-level breakpoint resolution
 
 > limitations: detection of duplications
@@ -31,13 +31,13 @@ NGS
 <br>
 
 ### 4. What are the two criteria for cluster filtering? And why did they do this filtering? (The CNV map)
-1 criteria:
+criteria 1:
 > number of distinct subjects that carry the variant
 
-2. criteria:
+criteria 2:
 > number of distinct studies with at least one variant in the cluster
 
-reason for filtering
+Reason for filtering:
 > To ensure that structurally distinct CNVs were not merged during the estimation of CNV boundaries
 
 <br>
