@@ -13,7 +13,10 @@
 * **ENSEMBL**:
 
 ### Resources for genome variant data
-* NCBI:dbSNP, NCBI:dbVAR, NCBI:ClinVar, EMBL-EBI:EVA
+* NCBI:dbSNP
+* NCBI:dbVAR
+* NCBI:ClinVar
+* EMBL-EBI:EVA
 
 ### Resources for cancer genomics
 * COSMIC
