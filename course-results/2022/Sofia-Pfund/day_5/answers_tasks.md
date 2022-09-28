@@ -98,23 +98,25 @@ Note: currently 2500 genomes are stored for the project.
 Relevance for this course: one of the main uses of next-generation sequencing is to discover variation among large populations of related samples. 
 
 ### Molecular-cytogenetic techniques:
-Cytogenetics = chromosomal analysis 
-
-Idea: study structureal changes in chromosomes w/o knowledge about sequence alterations
-
+* Cytogenetics = chromosomal analysis 
+* Idea: study structureal changes in chromosomes w/o knowledge about sequence alterations
 * **CGH (Comparative Genomic Hybridization)**:
   * identify regional genomic copy number variations (CNV/CNA)
   * based on in situ suppression hybridization of labeled genomic tumor and reference DNA
     against a karyotypically normal metaphase chromosomes
   * analysis of relative fluorescence ratio allows semi-quantitative copy number read-out
   * **indirect** attribution of involved target genes through cytogenetic bands (megabase resolution)
+* **aCGH (array Comparative Genomic Hybridization)**: 
+  * identify genomic copy number variations (CNV/ CNA) **for given sequences (multi-kb to Mb)**
+  * based on in situ suppression hybridization of labeled genomic tumor and reference DNA against spotted or synthesized DNA clones or oligonucleotides
+  * analysis of relative fluorescence ratio allows semi-quantitative copy number read-out
+  * **direct** attribution of involved target genes through known sequence content
 
-  * banding analysis
-  * SNP, aCGH arrays
-  * SKY, M-FISH
-  * chromosomal CGH
+* SNP Genotyping
+  * 
+* SKY, M-FISH
+* chromosomal CGH
 ▶️ notes about usage (research, clinical, historical vs. current)
 
 ### General NGS technologies
-  * 
 * count based vs. intensity based as principle
