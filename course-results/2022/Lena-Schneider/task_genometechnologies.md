@@ -9,6 +9,9 @@ NGS includes Genome Sequencing, Exome Sequencing and Targeted Gene Panel.
 - Targeted Gene Panel: It only covers 10-500 genes. It allows high acuracy and rapid turnaround time. It is also the most cost-effective.
 
 ### count based vs. intensity based as principle
+- count based:
+- intensity based: 
+Intensity-based automatic image registration is an iterative process. 
 
 ### dig deeper for some (molecular)-cytogenetic techniques
 
