@@ -11,7 +11,7 @@ A new trait can be adaptive or maladaptive in different enviromental contexts (e
 **Wanted**: be able to discriminate pathogenic or high-risk variants from benign variants in patients by using information about CNVs found in healthy individuals. To give a complete representation of what the genotype of an healthy individual can be, need to include data from various ethnicities or choose the control population s.t. it makes the most sense for comparison with the sample of interest. 
 
 
-**2. What is the CNV size that the authors defined? (Box 1 mentioned in introduction)
+**2. What is the CNV size that the authors defined? (Box 1 mentioned in introduction)**
 Noted: The CNV size definition is still under debate and may be different in other literature
 
 > **Copy number variation (CNV).** A genomic segment of at least 50 bp that differs in copy number based on the comparison of two or more genomes.
@@ -22,11 +22,13 @@ and limitations of these technologies? (CNV discoveries)
 Microarrays and next-generation sequencing (NGS) are the primary approaches used for CNV detection.
 
 **Array-based methods**
+
 😄 Advantages: study quantitative variants (estimate total CNV content)
 
 😞 Limitations: miss variants that are small, limited resolution capacity
 
 **Sequencing-based methods**
+
 😄 Advantages: smaller variants can be detected, high sensitivity
 
 😞 Limitations: lack of probes in regions of the genome that contain segmental duplications
@@ -34,6 +36,10 @@ Microarrays and next-generation sequencing (NGS) are the primary approaches used
 **4. The authors used clustering method to combine data from different studies into merged
 CNVRs (Copy number variable regions). What are the two criteria for cluster filtering? And
 why did they do this filtering? (The CNV map)
+
+Clusters were then filtered on the basis of:
+1) the number of distinct subjects that carry the variant 👉 exclude singletons and avoid false-positives for variants that are present in large nr of subjects
+2) the number of distinct studies with at least one variant in the cluster 👉 exclude potential study-specific artefacts
 
 **5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent
 map (stringency level 12) respectively? (The CNV map)
