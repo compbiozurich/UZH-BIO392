@@ -26,7 +26,7 @@ Array-based methods:
 NGS:
 > advantages: detection of small variants, high sensitivity and the ability to provide accurate sequence-level breakpoint resolution
 
-> limitations: biased twowards deletions, detection of duplications
+> limitations: biased towards deletions, detection of duplications
 
 <br>
 
