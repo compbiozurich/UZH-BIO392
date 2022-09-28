@@ -17,3 +17,31 @@ Paper link: https://www.nature.com/articles/nrg3871
   What are the functions of these genes? And why did the authors say that they seem to be non-essential? (Homozygous deleted genes)
 9. If you are a medical doctor, how do you use this map as a tool to assess the clinical
 importance of a CNV? (Clinical application of the CNV map part in Discussion)
+
+copy number variations involve unbalanced rearrangements which increase or decrease the DNA content \
+CNVs size is defined larger than 50bps
+
+a trait can be adaptive or maladaptive in different environmental contexts \ 
+maladaptive CNVs have been associated with conditions such as autism, schizophrenia, Crohn's disease, rheumatoid arthritis, type 1 diabetes, obesity and numerous developmental diseases 
+
+high-resolution CNV maps have been constructed to study the impact of CNVs on complex human traits, including diseases \
+aim of this Analysis is to create a CNV map of the human genome for variations that are not associated with adverse phenotypes 
+
+microarrays and next-generation sequencing are the primary approaches used for CNV detection \
+with the advent of NGS technologies, new tools can detect CNVs from the data \
+array-based detection methods are suitable for studying quantitative variants \
+deletions are easier to identify \ 
+sequencing-based approaches have high sensitivity and the ability to provide accurate sequence-level breakpoint resolution, whereas array-based approaches have a limited resolution capacity \
+
+**The CNV map** \
+aim of the CNV map is to document the variability of the human genome in healthy individuals from various populations \
+sanger sequencing can detect CNV breakpoints with single-nucleotide resolution \
+CNVs from diffrent studies are used \ 
+
+
+
+
+
+
+
+
