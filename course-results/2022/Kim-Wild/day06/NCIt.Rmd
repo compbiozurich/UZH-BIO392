@@ -1,0 +1,33 @@
+---
+title: "BIO392-cnv-freq"
+author: "kim wild"
+date: ""
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Step 1: Install package
+
+```{r}
+
+if (!require(devtools)){install.packages("devtools")}
+
+if (!require(pgxRpi)){devtools::install_github("progenetix/pgxRpi")}
+
+library(pgxRpi)
+
+```
+
+## Step2: Search esophageal adenocarcinoma NCIt code
+
+## Step3: Access the CNV frequency data from samples with esophageal adenocarcinoma
+
+```{r}
+
+freq <- pgxLoader(type = "frequency", output = "pgxseg", filters = "NCIT:C9245", codematches = T)
+
+```
