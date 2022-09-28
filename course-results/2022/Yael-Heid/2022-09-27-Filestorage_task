@@ -3,14 +3,58 @@ Storage Requirements for 1000 Genomes
 Different file formats:
   - SAM (Alignments):
     Sequence Alignment Map - human readable text files
-    
+    is storing biological sequences aligned to a reference sequence
   
   - BAM:
     Binary Alignment Map - the binary and compressed equivalent to SAM
   
-  - VCF (variants)
-  
-  - FASTA (Unaligned sequences):
+  - VCF (variants):
+    Variant Call Format
+    for storing genomic variation data
+    stores the results of a single or multiple interpretations of genome sequencing datasets, in comparison to a reference genome
+    is like a Matrix, where the rows are the variants and the columns are the information of the variants as well as the samples where the variants were found (one row per sample)
+    columns are: CHROM (name of the sequence)
+                 POS (position of the variation)
+                 ID (identifier)
+                 REF (referenec base, the base on the reference sequence on this position)
+                 ALT (list of alternatibe alleles on this position)
+                 QUAL (quality score)
+                 FILTER (what filters the variation has passed)
+                 INFO (description of the variant, flexible and extensible)
+                 FORMAT (description of probes)
+                 SAMPLE (can be multiple columns, one for every sample that containss any variant)
+     
+     example:
+      ##fileformat=VCFv4.2
+      ##FILTER=<ID=PASS,Description="All filters passed">
+      ##samtoolsVersion=1.12+htslib-1.12
+      ##samtoolsCommand=samtools mpileup -d 250 -ugf Homo_sapiens.GRCh37.dna.primary_assembly.gz read.sorted.bam
+      ##reference=file:Homo_sapiens.GRCh37.dna.primary_assembly.gz
+      ##contig=<ID=1,length=249250621>
+      ##contig=<ID=10,length=135534747>
+      ##contig=<ID=11,length=135006516>
+      ##contig=<ID=12,length=133851895>
+      ##contig=<ID=13,length=115169878>
+      ##contig=<ID=14,length=107349540>
+      ##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+      ##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+      ##INFO=<ID=RPB,Number=1,Type=Float,Description="Mann-Whitney U test of Read Position Bias (bigger is better)">
+      ##INFO=<ID=MQB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality Bias (bigger is better)">
+      ##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+      ##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+      ##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+      ##bcftools_callVersion=1.12+htslib-1.12
+      ##bcftools_callCommand=call -vmO z -o 'variants.vcf.gz' 'read.pileup'; Date=Sun May 27 15:04:45 2021
+      #CHROM	POS	       ID	REF	ALT	QUAL	  FILTER	INFO	                                         FORMAT	read.sorted.bam
+       3	    10035634	 .	C	  T	  35.3302	.	      DP=16;VDB=0.907611;SGB=-0.636426;RPB=0.966012; GT:PL	0/1:68,0,85
+                                                    MQB=0.428703;BQB=0.0628765;MQ0F=0;AC=1;AN=2;
+                                                    DP4=7,0,7,0;MQ=49	GT:PL	0/1:68,0,85
+       3	    10035648	 .	G	  A	  43.0805	.	      DP=17;VDB=0.539658;SGB=-0.636426;RPB=0.887766; GT:PL	0/1:76,0,114
+                                                    MQB=0.621145;BQB=0.708895;MQ0F=0;AC=1;AN=2;
+                                                    DP4=10,0,7,0;MQ=54	                 
+      ...
+      
+- FASTA (Unaligned sequences):
     often used for reference Genomes
     stretches of DNA sequences encoded with A, G, C, T, N (Bases)
     > line contains name and the following lines contain the sequence
@@ -33,9 +77,30 @@ Different file formats:
       GGGTGATGGCCGCTGCCGATGGCGTCAAATCCCACC
       +
       IIIIIIIIIIIIIIIIIIIIIIIIIIIIII9IG9IC
+      ...
   
-  - BED (Genomic ranges)
+  - BED (Genomic ranges):
+    Browser Extensible Data
+    there are different types of the files for example BED3, BED6, BED12...
+    no sequences but only the information about where and how long the sequence is etc.
+    
+    exapmle:
+      BED3: chromosome, start, end
+          chr22 1000 5000
+          chr22 2000 6000
+          ...
+      
+      BED6: chromosome, start, end and name, score, strand
+          chr22 1000 5000 cloneA 960 +
+          chr22 2000 6000 cloneB 900 -
+          ...
+
+      BED12: chromosome, start, end, name, score, strand and thickStart, thickEnd, itemRgb, blockCount, blockSizes, blockStarts
+          chr22 1000 5000 cloneA 960 + 1000 5000 0 2 567,488, 0,3512
+          chr22 2000 6000 cloneB 900 - 2000 6000 0 2 433,399, 0,3601
+
 
   
 Cost factors:
-
+sequencing 1000 Genomes and store them is a big task. the requirements and costs are dependent on multiple factors as for the Coverage, the sequence depth and width as well as what part of the Genome gets stored (whole or just exons? etc.)
+and in what format. more information commonly needs more digits and thus more storage capacity, which comes with a higher cost. So choosing the right format to store the Genomes is crucial for the storage requirements and can vary the costs.
