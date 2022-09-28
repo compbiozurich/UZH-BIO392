@@ -19,8 +19,8 @@ The whole filtering process was done to ensure that the final CNVRs excluded fal
 
 
 ## 6. Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively? (Properties of the CNV map)
-inclusive map: 9.5% of the genome involved in losses and gains
-stringent map: totakl genomic variability was 4.8%
+- inclusive map: 9.5% of the genome involved in losses and gains
+- stringent map: totakl genomic variability was 4.8%
 Overall, they found CNVRs to be unevenly distributed in the genome and among chromosomes.
 
 ## 7. By your intuition, which kind of genes are more variable between protein-coding genes and non-coding genes? How about their findings in this paper?
