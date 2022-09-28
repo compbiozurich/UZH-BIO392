@@ -1,0 +1,84 @@
+---
+title: "BIO392-cnv-freq"
+author: "Yasmine Douar"
+date: "28.09.2022"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Step 1: Install package
+
+```{r}
+if (!require(devtools)){ install.packages('devtools')
+}
+
+if (!require(pgxRpi)){ devtools::install_github('progenetix/pgxRpi')
+}
+
+library(pgxRpi)
+```
+
+## Step2: Search esophageal adenocarcinoma NCIt code
+
+C4025
+
+## Step3: Access the CNV frequency data from samples with esophageal adenocarcinoma
+
+```{r}
+frequency <- pgxLoader(type = "frequency", output = "pgxseg", filters = "NCIT:C3058", codematches=T)
+```
+
+### The retreived data is an object contaning two slots `meta` and `data`.
+
+The `meta` slot looks like this:
+
+```{r}
+frequency$meta
+```
+
+The `data` slot includes two matrices.
+
+```{r}
+names(frequency$data)
+```
+
+The frequency matrix looks like this
+
+```{r}
+head(frequency$data$`NCIT:C3058`)
+```
+
+Dimension of this matrix
+
+```{r}
+```
+
+## Step4: Visualize data
+
+### By genome
+
+```{r,fig.width=12,fig.height=6}
+pgxFreqplot(frequency)
+```
+
+### By chromosome
+
+```{r,fig.width=12, fig.height=6}
+for (i in 1:24){
+  pgxFreqplot(frequency,chrom = i)
+}
+```
+
+## Step5: Analyse the data
+
+According the plot, we can see frequency gains on chromosome 7, 19 and 20 and frequency losses on chromosome 6, 10, 13 and 14.
+
+There is a literature where the findings are consistent with the majority of mine. Here is the [paper-link](https://www.nature.com/articles/modpathol2008150).
+
+A more detailed use case see this [link](https://htmlpreview.github.io/?https://github.com/progenetix/pgxRpi/blob/main/vignettes/Introduction_2_loadfrequency.html).
+
+------------------------------------------------------------------------
