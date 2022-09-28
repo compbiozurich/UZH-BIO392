@@ -1,10 +1,13 @@
 # Reading Session:  *A copy number variation map of the human genome*
+<img width="693" alt="Screen Shot 2022-09-28 at 13 58 40" src="https://user-images.githubusercontent.com/63153161/192773189-1abb832f-0200-46e9-970b-f49b99fc3bd0.png">
+
 ##### [Paper](https://github.com/compbiozurich/UZH-BIO392/files/9664305/nrg3871.pdf)
 
 ---
 
 ## Why is important to construct a CNV map on health individuals of various ethnicities? (Introduction)
 An updated CNV map of the human genomes is constructed and this map should help with the interpretation of of new CNV's for clinical and research applicaitons.
+  > A major challenge in the field is that there is a growing number of CNVs (known as ‘variants of unknown significance’) that are suspected to be involved in disease susceptibility but for which additional population-level data are required.
 
 ---
 
@@ -70,7 +73,3 @@ consequences that do not substantially reduce the fitness.
 ## If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV? (Clinical application of the CNV map part in Discussion)
 
 It id important if the CNV overlaps with genes that are relevant for certain diseases and that have a clinical relevance.
-
-
-
-
