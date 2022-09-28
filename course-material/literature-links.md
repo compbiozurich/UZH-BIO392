@@ -55,6 +55,8 @@ This page collects items for the course "reading list" (and beyond). Since the r
     - 2012-02-02___VarScan-2-Somatic-mutation-and-copy-number-alteration-discovery-in-cancer-by-exome-sequencing__Genome_Research.pdf
 * Wagner et al (2020): A harmonized meta-knowledgebase of clinical interpretations of somatic genomic variants in cancer
     - 2020-04-03___Wagner-et-al.__A-Harmonized-Meta-Knowledgebase-of-Somatic-Cancer-Variants__Nature-Genetics.pdf
+* Nurk et al. (2022): The complete sequence of a human genome
+    - 2022-04-01___Nurk-et-al__The-complete-sequence-of-a-human-genome__Science.pdf
 
 #### Extended reading
 
