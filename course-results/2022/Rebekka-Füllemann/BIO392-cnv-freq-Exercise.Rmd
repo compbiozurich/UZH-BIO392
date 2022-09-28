@@ -1,0 +1,44 @@
+
+---
+title: "BIO392-cnv-freq-Exercise"
+author: "Rebekka Füllemann"
+date: "2022-09-28"
+output:
+  pdf_document: default
+---
+
+```{r include=FALSE}
+library(pgxRpi)
+```
+
+```{r include=FALSE}
+freq <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C3058',
+                  codematches=T)
+```
+
+## Visualize data
+
+### By genome
+
+```{r}
+pgxFreqplot(freq)
+
+```
+
+
+### By chromosome
+
+```{r echo=FALSE, fig.height=6}
+pgxFreqplot(freq,chrom = 7)
+pgxFreqplot(freq,chrom = 9)
+pgxFreqplot(freq,chrom = 10)
+pgxFreqplot(freq,chrom = 13)
+pgxFreqplot(freq,chrom = 19)
+pgxFreqplot(freq,chrom = 20)
+pgxFreqplot(freq,chrom = 22)
+```
+
+## Step5: Analyse the data
+
+According the plot, we can see frequenct gains on chromosome 7p, 7q, 19p, (19q,) 20p, 20q 
+and frequenct losses on chromosome 9p,10p, 10q, 13q, 22q.
