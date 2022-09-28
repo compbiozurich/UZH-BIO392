@@ -37,7 +37,16 @@
 
 <br>
 
-## VICC paper (Wagner et al.)
-
+## A harmonized meta-knowledgebase of clinical interpretations of somatic genomic variants in cancer (Wagner et al.)
 ### notes about different genome resources and their primary use
 
+#### The Variant Interpretation for Cancer Consortium (VICC) 
+--> Analyzed harmonized data from the aggregated knowledgebases
+
+#### Cancer variant interpretation knowledgebases: 
+* the Cancer Genome Interpreter Cancer Biomarkers Database (CGI), 
+* Clinical Interpretation of Variants in Cancer (CIViC), 
+* Jackson Laboratory Clinical Knowledgebase (JAX-CKB), 
+* MolecularMatch (MMatch), 
+* OncoKB 
+* Precision Medicine Knowledgebase (PMKB) 
