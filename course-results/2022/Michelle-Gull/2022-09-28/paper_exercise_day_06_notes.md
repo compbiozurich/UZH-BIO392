@@ -2,15 +2,16 @@
 
 ## A copy number variation map of the human genome
 
-### 1. Why is important to construct a CNV map on health individuals of various ethnicities?
-(Introduction)
+### 1. Why is important to construct a CNV map on healthy individuals of various ethnicities? 
+The aim for clinical geneticists is to be able to discriminate pathogenic variants from benign variants in patients, but additional data of healthy individuals of various ethnicities are required due to the growing number of variants of unknown significance that are suspected to be involved in disease susceptibility. 
 
-### 2. What is the CNV size that the authors defined? (Box 1 mentioned in introduction)
-Noted: The CNV size definition is still under debate and may be different in other literature
+### 2. What is the CNV size that the authors defined? 
+> Noted: The CNV size definition is still under debate and may be different in other literature
+The authers defined the size to include microscopic and submicroscopic variants from 50 bp to 3 Mb. 
 
 ### 3. What are the primary approaches used for CNV detection? And what are the advantages and limitations of these technologies? (CNV discoveries)
-The authors used clustering method to combine data from different studies into merged
-CNVRs (Copy number variable regions). 
+The authors used clustering method to combine data from different studies into merged CNVRs (Copy number variable regions). 
+
 
 ### 4. What are the two criteria for cluster filtering? And why did they do this filtering? (The CNV map)
 
