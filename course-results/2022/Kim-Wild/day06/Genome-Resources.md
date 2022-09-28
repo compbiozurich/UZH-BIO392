@@ -19,9 +19,13 @@ visualize the protein sequence and the sequence variants \
 provides a table of transcripts and the according proteins encoded in this regions
 
 **ClinGen** \
-interpreted genome variants with disease association 
+interpreted genome variants with disease association \
+collects phenotypic and clinical information on variants across the genome 
 
-ClinVar
+ClinVar (an NCBI database/resource) is used as basis for curated variant <-> disease associations in ClinGen
 
-Progenetix 
+**Progenetix** \
+largest open resource for curated cancer genome profiles \
+majority of data from genomic arrays with ~50% overall from SNP platforms with original data re-processing \
+
 
