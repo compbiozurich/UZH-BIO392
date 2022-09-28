@@ -30,7 +30,7 @@ NGS:
 
 <br>
 
-### 4. What are the two criteria for cluster filtering? And why did they do this filtering? (The CNV map)
+### 4. What are the two criteria for cluster filtering? And why did they do this filtering? 
 criteria 1:
 > number of distinct subjects that carry the variant
 
@@ -38,12 +38,21 @@ criteria 2:
 > number of distinct studies with at least one variant in the cluster
 
 Reason for filtering:
-> To ensure that structurally distinct CNVs were not merged during the estimation of CNV boundaries
+> The filter based on the number of subjects excluded singletons, and variants that are supported by a larger number of subjects are less likely to be false positives. The filter based on the number of studies ensured the exclusion of potential study-specific artefacts
 
 <br>
 
-### 5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent map (stringency level 12) respectively? (The CNV map)
->
+### 5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent map (stringency level 12) respectively?
+> CNVRs that were recognized with higher stringency have support from a higher number of subjects and studies.
+
+Thresholds in stringency level 1:
+> at least one subject and one study for each variant
+
+Thresholds in inclusive map (stringency level 2):
+> at least two subjects and one study for each variant
+
+Thresholds in stringent map (stringency level 12):
+> at least two subjects and two studies
 
 <br>
 
