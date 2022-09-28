@@ -69,11 +69,11 @@ Thresholds in stringent map (stringency level 12):
 
 <br>
 
-### 8. The authors generated a null CNV map and found genes for which at least 85% of the exons were homozygous deleted. What are the functions of these genes? And why did the authors say that they seem to be non-essential? (Homozygous deleted genes)
+### 8. The authors generated a null CNV map and found genes for which at least 85% of the exons were homozygous deleted. What are the functions of these genes? And why did the authors say that they seem to be non-essential?
 > They seem to be non-essential genes, as the individuals lacking them still seem to be healthy. Their function may be redundant or they could be related to late-onset phenotypic consequences that don't substantially reduce the fitness. 
 
 <br>
 
-### 9. If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV? (Clinical application of the CNV map part in Discussion)
+### 9. If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV?
 > This map is useful as a tool in the investigation of CNVs for medical applications. To assess the clinical importance of a CNV found in a case subject, the criteria could include: whether it is found among the CNVRs of the CNV  map and whether it overlaps with medically relevant genes. There are no solid boundaries between what we recognize as traits and diseases, nor between variants that are classified as benign or neutral and variants that are classified as predisposing risk factors or disease- related. Genomic background, including ethnicity, can influence the thresholds.
 
