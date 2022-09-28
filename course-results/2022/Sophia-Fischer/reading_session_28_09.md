@@ -50,7 +50,7 @@ intuition: non-coding genes should be more variable because they are much more a
 paper: non-coding regions had highest proportion of CNVs (makes sense to me, see explanation above)
 
 # 8. The authors generated a null CNV map and found genes for which at least 85% of the exons were homozygous deleted. What are the functions of these genes? And why did the authors say that they seem to be non-essential? (Homozygous deleted genes)
-genes seam non-essential, redundant function or related to late-onset phenotypic consequences that do not reduce fitness
+genes seem non-essential, redundant function or related to late-onset phenotypic consequences that do not reduce fitness
 # 9. If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV? (Clinical application of the CNV map part in Discussion) 
 1. asses if the CNV is found among the CNVRs of map
 2. check whether it overlaps with medically relevant genes \
