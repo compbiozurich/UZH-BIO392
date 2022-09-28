@@ -44,11 +44,27 @@ Clusters were then filtered on the basis of:
 **5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent
 map (stringency level 12) respectively? (The CNV map)**
 
+General: CNV map
+> The aim of the CNV map is to document the variability of the human genome in healthy individuals from various populations. To capture the maximum extent of variability, we combined variants from different studies into a single map. Common variants would be detected in different individuals and ethnicities.
+
+* *map with stringency level 1*: the map is supported only by at least one subject and one study;
+* *inclusive map (stringengy level 2)*: at least two subjects and one study for each variant 
+* *stringent map (stringency level 12)*: at least two subjects and two studies
+
 **6. Which percentage of the genome contributes to CNV in inclusive map and stringent map
 respectively? (Properties of the CNV map)**
 
+* inclusive map: 9.5%
+* stringent map: 4.8%
+
 **7. By your intuition, which kind of genes are more variable between protein-coding genes and
 non-coding genes? How about their findings in this paper? (Functional impact of CNV)**
+
+*Idea*: different genomic elements are expected to be under different degrees of constraint for variation in copy number. 
+
+Intuitively, it would make more sense if variotion is mostly occurring in introns (non-coding sequences): no phenotypic outcome (avoid disease).
+
+In the study, they found that *"the exons of non-coding genes had the highest proportion of copy number variable sequence"*. They also found that *"long intergenic non-coding RNAs (lincRNAs) were enriched in CNVRs. Promoters were enriched in CNVRs (FIG. 3) compared with the entire genome"*.
 
 **8. The authors generated a null CNV map and found genes for which at least 85% of the
 exons were homozygous deleted. What are the functions of these genes? And why did the
