@@ -8,7 +8,7 @@ Paper link: https://www.nature.com/articles/nrg3871
   -> CNV size mentioned 4.8−9.5%
 3. What are the primary approaches used for CNV detection? And what are the advantages and limitations of these technologies? 
   (CNV discoveries) \
-  -> microarrays and NGS
+  -> microarrays and NGS (more information below)
 4. The authors used clustering method to combine data from different studies into merged CNVRs (Copy number variable regions). 
   What are the two criteria for cluster filtering? And why did they do this filtering? (The CNV map) \
   -> number of subjects that carry the variant, number of studies with variant in the cluster, filtering helps with false-positive results 
