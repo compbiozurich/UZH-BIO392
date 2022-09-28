@@ -30,7 +30,7 @@ Wagner et al (2020): A harmonized meta-knowledgebase of clinical interpretations
   * focus and phylogenetics, change and conservartion
   * human and vertabrates, even some invertabrates
   * genome, variation and consevation
-* Progenetix
+
 ### Genome Variant Data resources
 * NCBI:dbSNP
   * subdirectory of the NCBI for SNPs
