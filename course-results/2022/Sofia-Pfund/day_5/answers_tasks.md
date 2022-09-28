@@ -76,14 +76,22 @@ chr22 2000 6000
 
 ## WES & WGS 
 
-... continue here  ...
-
-Associated costs
-* Cost factors
-* Raw Storage costs 
+### WES (Whole Exome Sequencing)
+👉 determines exact order of nucleotides withing protein-coding regions (exomes)
+💰 wide variety of prices
+💾 captures 2% of human genome: ca. **6 MB** of data to store
+### WGS (Whole Genome Sequencing)
+👉 determines exact full nucleotide order of a DNA sequence
+💰 more expensive but provides a more complete view than SNP genotyping: new discoveries can be made
+💾 captures 100% of human genome: ca. **3 GB** of data to store
 
 ## 1st task: Estimate Storage Requirements for 1000 Genomes
-* human genome: 3 billion nt
+* human genome: 3 billion nt 👉 3 GB
+* perfect genome can be stored using ca. 715 MB
+* one 30x BAM file 👉 100 GB
+* to store 1000 genomes: 1000 * 715 MB = 715 GB = ca. **7** 30x BAM files
+
+Note: currently 2500 genomes are stored for the project.
 
 ## 2nd task: Reading up on Genome Technologies
 
