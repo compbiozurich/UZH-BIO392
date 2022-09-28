@@ -3,13 +3,13 @@
 ## hello github
 
 ### text
-*This text is italicized*
-~~this was a mistake~~
-**This text is _extremely_ important**
-***All this text is important***
-<sub>This is a subscript text</sub>
-<sup>This is a superscript text</sup>
-> Text that is a quote
+   *This text is italicized*
+    ~~this was a mistake~~
+    **This text is _extremely_ important**
+    ***All this text is important***
+    <sub>This is a subscript text</sub>
+    <sup>This is a superscript text</sup>
+    > Text that is a quote
 
 ### link
 [https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text]
