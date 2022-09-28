@@ -35,6 +35,28 @@ basepairing leads to release of a protone and ph diffrence get measured
 espacially in research and clinical genetic, microbiology and onkology 
 
 
-### (molecular)-cytogenetic techniques
+### (Molecular)-cytogenetic techniques
 
-**Banding analysis** 
+**Banding analysis** \
+used to identify chromosomal abnormalities (translocations) \
+unique pattern of light and dark bands are generated for each chromosome
+normal and abnormal chromosomes can get identified \
+for clinical and research purposes used 
+
+**SNP** \
+single nucleotide polymorphisms are single base mutations that are estabilhed in the genepoll of a population \ 
+if more than 1% doesn`t carry the same nucleotide at a specific position, dtermined as SNP \
+not necessarily seen in a distinct phenotype (disease) 
+
+**M-FISH** \
+Multiplex fluorescence in situ hybridization \ 
+24-color karyotyping technique \ 
+individual chromosomes are classified based on the fluor composition
+
+
+
+
+
+Resources \
+https://flexikon.doccheck.com/de/Next_Generation_Sequencing \
+https://pubmed.ncbi.nlm.nih.gov/20809305/
