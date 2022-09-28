@@ -13,9 +13,9 @@ The cluster filtering was one by using a CNVR-clustering algorithm with a filter
 The whole filtering process was done to ensure that the final CNVRs excluded false positives as well as study specific artefacts.
 
 ## 5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent map (stringency level 12) respectively?
-level 1: Supported by only one subject and one study (includes all CNV and CNVRs)
-level 2: Supported by at least two subjects and one study for each variant
-level 12: Supported by at least two subjects and two studies 
+- level 1: Supported by only one subject and one study (includes all CNV and CNVRs)
+- level 2: Supported by at least two subjects and one study for each variant
+- level 12: Supported by at least two subjects and two studies 
 
 
 ## 6. Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively? (Properties of the CNV map)
