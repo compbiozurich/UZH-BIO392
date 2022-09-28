@@ -6,7 +6,7 @@ Essentially, pathogenic CNVs continue to be described in differ- ent classes of 
 ## What is the CNV size that the authors defined? (Box 1 mentioned in introduction)
 Microscopic and submicroscopic variants from 50 bp to 3 Mb.
 
-(Noted: The CNV size definition is still under debate and may be different in other literature)
+*(Noted: The CNV size definition is still under debate and may be different in other literature)*
 
 ## What are the primary approaches used for CNV detection? 
 Microarrays and next-generation sequencing (NGS) are now the primary approaches used for CNV detection.
