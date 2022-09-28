@@ -24,9 +24,9 @@ Array-based methods:
 > limitations: limited resolution capacity, inflated estimates of toatal CNV content due to low resolution and overestimatin of breakpoints, detection of small variants
 
 NGS:
-> advantages: detection of small variants, detection of deletions, high sensitivity and the ability to provide accurate sequence-level breakpoint resolution
+> advantages: detection of small variants, high sensitivity and the ability to provide accurate sequence-level breakpoint resolution
 
-> limitations: detection of duplications
+> limitations: biased twowards deletions, detection of duplications
 
 <br>
 
