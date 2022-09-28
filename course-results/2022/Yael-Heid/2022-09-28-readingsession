@@ -36,6 +36,7 @@ variants in which every possible variant pair had at least 50% reciprocal overla
 -Different platforms have different degrees of accuracy for determining the beginning and end of the variants
 Thus, the coordinates of variants detected by different methods may not be identical.
 -The filter based on the number of studies ensured the exclusion of potential study-specific artefacts
+-all this filtering was done to merge the data from different studies
 
 
 5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent 
