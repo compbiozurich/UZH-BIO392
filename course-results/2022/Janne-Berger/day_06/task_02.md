@@ -31,3 +31,6 @@
 - non essential: they could be missing from the genomes of apparently healthy individuals
 - function: redundant, may be related to late-onset phenotypic consequences that do not substantially reduce the fitness
 ## If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV?
+- To assess the clinical importance of a CNV found in a case subject, the criteria could include:
+  - whether it is found among the CNVRs of the CNV map
+  - whether it overlaps with medically relevant genes
