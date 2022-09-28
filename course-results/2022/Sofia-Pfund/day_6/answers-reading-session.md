@@ -2,8 +2,7 @@
 
 Paper link: https://www.nature.com/articles/nrg3871
  
-### 1. Why is important to construct a CNV map on healthy individuals of various ethnicities?
-(Introduction)
+### 1. Why is important to construct a CNV map on healthy individuals of various ethnicities? (Introduction)
 
 The DNA sequence along human chromosomes is contantly changing, and this process enables humans to evolve and adapt.
 A new trait can be adaptive or maladaptive in different enviromental contexts (e.g. pathogentic CNVs). 
@@ -16,8 +15,7 @@ Noted: The CNV size definition is still under debate and may be different in oth
 
 > **Copy number variation (CNV).** A genomic segment of at least 50 bp that differs in copy number based on the comparison of two or more genomes.
 
-###  3. What are the primary approaches used for CNV detection? And what are the advantages
-and limitations of these technologies? (CNV discoveries)**
+###  3. What are the primary approaches used for CNV detection? And what are the advantages and limitations of these technologies? (CNV discoveries)
 
 Microarrays and next-generation sequencing (NGS) are the primary approaches used for CNV detection.
 
@@ -63,16 +61,18 @@ In the study, they found that *"the exons of non-coding genes had the highest pr
 
 ### 8. The authors generated a null CNV map and found genes for which at least 85% of the exons were homozygous deleted. What are the functions of these genes? And why did the authors say that they seem to be non-essential? (Homozygous deleted genes)
 
-They are human protein-coding genes. They would seem to be non-essential, as they could be missed from the gnomes of apparently healthy individuals - however, these genes have more gene family members, which is common among duplicate genes (redundant function: if a gene is missing, other gene available to exert the same or very similar function).
-
+They are human protein-coding genes. They would seem to be non-essential, as they can be missed in the genomes of apparently healthy individuals - however, these genes have more gene family members, which is common among duplicate genes (members of these gene families have redundant function: if a gene is missing, other gene available to exert the same or very similar function).
 
 ### 9. If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV? (Clinical application of the CNV map part in Discussion)
 
 Criteria to assess clinical importance of a CNV found in a patient:
 1) is CNV found among the CNVRs (copy nr variantion regions) of the CNV map?
-2) does the CNV overlap with medically relevant genes? (consult list of disease-associated 935 genes)
+2) does the CNV overlap with medically relevant genes? ( 👉 consult list of disease-associated 935 genes)
 
-*Example scenario*: a CNV found in a patient that overlaps with any of the disease-associated genes while not being found in the CNV map (it's not a common variant in the population of apparently healthy individuals) would suggests medical importance!
+**Example scenario**: a CNV found in a patient that overlaps with any of the disease-associated genes while *not* being found in the CNV map (it's not a common variant in the population of apparently healthy individuals) would suggests medical importance!
 
-Note: Comparisons between inclusive and stringent maps could allow consideration of conditional phenotypes, such as age-related phenotypes. The genes in which mutations cause late-onset are less conserved than those that are associ- ated with earlier-onset disorders (which have a greater effect on genetic fitness) and might be better filtered
+*Note*: comparisons between inclusive and stringent maps could allow consideration of conditional phenotypes, such as age-related phenotypes. The genes in which mutations cause late-onset are less conserved than those that are associ- ated with earlier-onset disorders (which have a greater effect on genetic fitness) and might be better filtered
 by the stringent map.
+
+### Remark
+The text in most answers is referencing to the original paper! :-)
