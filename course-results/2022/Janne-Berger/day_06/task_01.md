@@ -15,16 +15,16 @@
 - can download an annotated data and sequence of our gene of interest
 
 
-# Humane genome resources at NCBI
+## Humane genome resources at NCBI
 - an entry point for genome reference data and allows to look and visualize for different reference genomes
 - also connected to other NCBI resources 
 
-# Ensembl
+## Ensembl
 - genome browser for vertebrate genomes 
 - able to annotate genes, compute multiple alignments and collect disease data
 - provides a table of transcripts and the according proteins encoded in this regions
 - visualize the protein sequence and the sequence variants
 
-# Cosmic
+## Cosmic
 - resource for exploring the impact of somatic mutations in human cancer
 - provides nicely informations to the gene, the drug resistance associated with mutations on the gene and the distribution of mutations in the gene accross tissue types
