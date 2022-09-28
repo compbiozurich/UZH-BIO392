@@ -37,7 +37,9 @@ Non-coding genes are more variable. Varriations on protein-coding genes do more 
 
 ### 8. The authors generated a null CNV map and found genes for which at least 85% of the exons were homozygous deleted. What are the functions of these genes? And why did the authors say that they seem to be non-essential?
 >(Homozygous deleted genes)
+>The function of non-essential genes may be redundant, or they may be related to late-onset pheno- typic consequences that do not substantially reduce the fitness. 
 
+These genes seem to be non-essential, because they are missing in many apparently healthy individuals. If the genes were essential, the individuals who lack these genes would have to be affected in some way.
 
 
 ### 9. If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV?
