@@ -31,19 +31,36 @@ NGS
 <br>
 
 ### 4. What are the two criteria for cluster filtering? And why did they do this filtering? (The CNV map)
->
+1 criteria:
+> number of distinct subjects that carry the variant
+
+2. criteria:
+> number of distinct studies with at least one variant in the cluster
+
+reason for filtering
+> To ensure that structurally distinct CNVs were not merged during the estimation of CNV boundaries
+
+<br>
 
 ### 5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent map (stringency level 12) respectively? (The CNV map)
 >
 
+<br>
+
 ### 6. Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively? (Properties of the CNV map)
 >
+
+<br>
 
 ### 7. By your intuition, which kind of genes are more variable between protein-coding genes and non-coding genes? How about their findings in this paper? (Functional impact of CNV)
 >
 
+<br>
+
 ### 8. The authors generated a null CNV map and found genes for which at least 85% of the exons were homozygous deleted. What are the functions of these genes? And why did the authors say that they seem to be non-essential? (Homozygous deleted genes)
 >
 
-### 9. If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV? (Clinical application of the CNV map part in Discussion)
+<br>
 
+### 9. If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV? (Clinical application of the CNV map part in Discussion)
+>
