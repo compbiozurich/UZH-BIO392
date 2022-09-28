@@ -1,17 +1,24 @@
 
 Paper link: https://www.nature.com/articles/nrg3871
  
-1. Why is important to construct a CNV map on health individuals of various ethnicities?
-
+1. Why is important to construct a CNV map on health individuals of various ethnicities? \
+-> map should help with the interpretation of of new CNV's for clinical and research applicaitons
 2. What is the CNV size that the authors defined? (Box 1 mentioned in introduction)
-  Noted: The CNV size definition is still under debate and may be different in other literature
+  Noted: The CNV size definition is still under debate and may be different in other literature \
+  -> CNV size mentioned 4.8−9.5%
 3. What are the primary approaches used for CNV detection? And what are the advantages and limitations of these technologies? 
-  (CNV discoveries)
+  (CNV discoveries) \
+  -> microarrays and NGS
 4. The authors used clustering method to combine data from different studies into merged CNVRs (Copy number variable regions). 
-  What are the two criteria for cluster filtering? And why did they do this filtering? (The CNV map)
-5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent map (stringency level 12) respectively? (The CNV map)
-6. Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively? (Properties of the CNV map)
-7. By your intuition, which kind of genes are more variable between protein-coding genes and non-coding genes? How about their 
+  What are the two criteria for cluster filtering? And why did they do this filtering? (The CNV map) \
+  -> number of subjects that carry the variant, number of studies with variant in the cluster, filtering helps with false-positive results 
+5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent map (stringency level 12) respectively? (The CNV map) \
+  Stringency level 1: At least one subject and one study \
+  Inclusive map: At least two subjects and one study for each variant \
+  Stringent map: At least two subjects and two studies
+6. Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively? (Properties of the CNV map) \
+  -> inclusive map 9.5%, stringent map 4.8%
+8. By your intuition, which kind of genes are more variable between protein-coding genes and non-coding genes? How about their 
   findings in this paper? \
   -> non-coding genes are more variable, good to see in the figures 
 8. The authors generated a null CNV map and found genes for which at least 85% of theexons were homozygous deleted. 
