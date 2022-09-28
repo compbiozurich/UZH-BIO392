@@ -63,6 +63,7 @@ In the study, they found that *"the exons of non-coding genes had the highest pr
 
 ### 8. The authors generated a null CNV map and found genes for which at least 85% of the exons were homozygous deleted. What are the functions of these genes? And why did the authors say that they seem to be non-essential? (Homozygous deleted genes)
 
+They are human protein-coding genes. They would seem to be non-essential, as they could be missed from the gnomes of apparently healthy individuals - however, these genes have more gene family members, which is common among duplicate genes (redundant function: if a gene is missing, other gene available to exert the same or very similar function).
 
 
 ### 9. If you are a medical doctor, how do you use this map as a tool to assess the clinicalimportance of a CNV? (Clinical application of the CNV map part in Discussion)
