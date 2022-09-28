@@ -13,7 +13,7 @@
 
 <br>
 
-### 3. What are the primary approaches used for CNV detection? And what are the advantages and limitations of these technologies? (CNV discoveries)
+### 3. What are the primary approaches used for CNV detection? And what are the advantages and limitations of these technologies? 
 The authors used clustering method to combine data from different studies into merged CNVRs (Copy number variable regions). 
 > The primary approaches used for CNV detection are Microarrays and next-generation sequencing (NGS).
 > The first studies to assay CNVs primarily used microarrays with bacterial artificial chromosomes (BACs) and oligonucleotide arrays. Subsequent microarrays have included both comparative genomic hybridization (CGH) and SNP-based arrays. During the past few years use of NGS technologies has been particularly widespread.
@@ -42,7 +42,7 @@ Reason for filtering:
 
 <br>
 
-### 5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent map (stringency level 12) respectively?
+### 5. What are thresholds in stringency level 1, inclusive map, and stringent map respectively?
 > CNVRs that were recognized with higher stringency have support from a higher number of subjects and studies.
 
 Thresholds in stringency level 1:
@@ -57,7 +57,10 @@ Thresholds in stringent map (stringency level 12):
 <br>
 
 ### 6. Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively? (Properties of the CNV map)
->
+
+> 9.5% of the human genome contributes to CNV in the inclusive map (7.5% for losses and 3.9% for gains) 
+
+> 4.8% the human genome contributes to CNV in the stringent map (3.6% for losses and 2.3% for gains) 
 
 <br>
 
