@@ -55,7 +55,7 @@ General: CNV map
 
 *Idea*: different genomic elements are expected to be under different degrees of constraint for variation in copy number. 
 
-Intuitively, it would make more sense if variotion is mostly occurring in introns (non-coding sequences): no phenotypic outcome (avoid disease).
+Intuitively, it would make more sense if variation would mostly be occurring in introns (non-coding sequences) so that there is no phenotypic outcome ( 👉 avoid disease and side-effects).
 
 In the study, they found that *"the exons of non-coding genes had the highest proportion of copy number variable sequence"*. They also found that *"long intergenic non-coding RNAs (lincRNAs) were enriched in CNVRs. Promoters were enriched in CNVRs (FIG. 3) compared with the entire genome"*.
 
