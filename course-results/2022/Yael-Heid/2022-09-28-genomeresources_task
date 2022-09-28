@@ -12,6 +12,9 @@ dbVAR
 
 ClinVar
 - aggregates information about genomic variation and its relationship to human health
+-  freely accessible, public archive of reports of the relationships among human variations and phenotypes
+-  facilitates access to and communication about the relationships asserted between human variation and observed health status, and the history of that interpretation
+-  processes submissions reporting variants found in patient samples, assertions made regarding their clinical significance, information about the submitter, and other supporting data
 
 
 EMBL-EBI:
@@ -19,7 +22,10 @@ EVA
 - open-access database of all types of genetic variation data from all species
 
 Ensembl
-- portal for many things genomic
+- genome browser for vertebrate genomes that supports research in comparative genomics, evolution, sequence variation and transcriptional regulation
+- annotate genes, computes multiple alignments, predicts regulatory function and collects disease data.
+- Ensembl tools include BLAST, BLAT, BioMart and the Variant Effect Predictor (VEP) for all supported species
+
 
 
 ClinGen: clinical Genome Resource
@@ -37,12 +43,6 @@ Progenetix: open resource oncogenomic database
 Cancer Genome Interpreter (CGI):
 - Identifies potentially oncogenic alterations. (With BoostDM, a machine learning approach inspired in evolutionary biology and OncodriveMUT)
 - Flags genomic biomarkers of drug response with different levels of clinical relevance.
-
-
-ClinVar:
--  freely accessible, public archive of reports of the relationships among human variations and phenotypes
--  facilitates access to and communication about the relationships asserted between human variation and observed health status, and the history of that interpretation
--  processes submissions reporting variants found in patient samples, assertions made regarding their clinical significance, information about the submitter, and other supporting data
 
 
 The Human Gene Mutation Database (HGMD):
