@@ -52,10 +52,28 @@ BAM[^1] | 1'000 GB | 500 CHF |
 VCF[^3] | 1'250 GB | 625 CHF |
 FASTA[^3] | 200 GB | 100 CHF |
 
+## FASTA
+
+```
+>Sequence 1
+;some comment
+MTEITAAMVKELRESTGAGMMDCKNALSETNGDFDKAVQLLREKGLGKAAKKADRLAAEG
+LVSVKVSDDFTIAAMRPSYLSYEDLDMTFVENEYKALVAELEKENEERRRLKDPNKPEHK
+IPQFASRKQLSDAILKEAEEKIKEELKAQGKPEKIWDNIIPGKMNSFIADNSQLDSKLTL
+MGQFYVMDDKKTVEQVIAEKEKEFGGKIKIVEFICFEVGEGEVAAQL
+>Sequence 2
+;some comment a
+;some comment b
+SATVSEINSETDFVAKNDQFIALTKDTTAHIQSNSLQSVEELHSSTINGVKFEEYLKSQI
+ATIGENLVVRRFATLKAGANGVVNGYIHTNGRVGVVIAAACDSAEVASKSRDLLRQICMH
+```
+[^4]
+
 
 [^1]:https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2022/2022-09-27___Michael-Baudis__Genomic-Technologies-and-Genome-Editions___BIO392-HS22.pdf
 [^2]:https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/nichols/presentations/ohbm2014/imggen/Nho-ImgGen-WGSeqPractical.pdf
 [^3]:https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0
+[^4]:https://de.wikipedia.org/wiki/FASTA-Format#:~:text=Das%20FASTA%2DFormat%20ist%20ein,Ein%2DBuchstaben%2DCode%20dargestellt.
 
 
 
