@@ -1,0 +1,106 @@
+---
+title: "BIO392-cnv-freq"
+author: "Sofia Pfund"
+date: "2022-09-28"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Step 1: Install packages
+
+```{r}
+if (!require(devtools)){ install.packages('devtools')
+}
+```
+
+```{r}
+if (!require(pgxRpi)) { devtools::install_github('progenetix/pgxRpi')
+}
+
+library(pgxRpi)
+```
+
+## Step2: Search esophageal adenocarcinoma NCIt code: 
+
+## Step3: Access the CNV frequency data from samples with esophageal adenocarcinoma: C4025 (NCIt website)
+
+Need to add 'codematches' parameter so that only the specific match for the code is returned (don't return all of the child nodes as well).
+
+```{r}
+freq <- pgxLoader(type = 'frequency', output = 'pgxseg', filters = 'NCIT:C4025', codematches = TRUE)
+```
+
+### The retreived data is an object contaning two slots `meta` and `data`.
+
+The `meta` slot looks like this:
+
+```{r}
+freq$meta
+```
+
+The `data` slot includes two matrices.
+
+```{r}
+names(freq$data)
+```
+
+The frequency matrix looks like this
+
+```{r}
+head(freq$data$'NCIT:C4025')
+```
+
+Dimension of this matrix
+
+```{r}
+dim(freq$data$'NCIT:C4025')
+```
+
+## Step4: Visualize data
+
+### By genome
+
+```{r,fig.width=12,fig.height=6}
+pgxFreqplot(data = freq)
+```
+
+### By chromosome
+
+```{r,fig.width=12, fig.height=6}
+pgxFreqplot(data = freq, chrom = 20)
+```
+
+## Step5: Analyse the data
+
+According the plot, we can see frequenct gains on chromosome 7p, 8q, 20p,20q 
+and frequenct losses on chromosome 4p,4q, 5q, 9p, 17p, 18q, 21q.
+
+There is a literature where the findings are consistent with the majority of mine. Here is the [paper-link](https://www.nature.com/articles/modpathol2008150).
+
+A more detailed use case see this [link](https://htmlpreview.github.io/?https://github.com/progenetix/pgxRpi/blob/main/vignettes/Introduction_2_loadfrequency.html).
+
+## Exercise: check CNV frequecies of other tumor types.
+
+### Glioblastoma: NCIT:C3058
+
+```{r}
+freq_C3058 <- pgxLoader(type = 'frequency', output = 'pgxseg', filters = 'NCIT:C3058', codematches = TRUE)
+freq_C3058$meta
+```
+```{r}
+pgxFreqplot(data = freq_C3058)
+```
+
+
+In glioblastoma cancer patients there are increased number of copies of chromosome 7, chromosome 19 and chromosome 20 (compared to reference genome).
+In glioblastoma cancer patients there are fewer copies of chromosome 10 and chromosome 13 (compared to reference genome).
+
+```{r}
+pgxFreqplot(data = freq_C3058, chrom = 7)
+```
+```{r}
+
+```
