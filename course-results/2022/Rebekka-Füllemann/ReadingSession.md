@@ -1,44 +1,52 @@
 <!-- paper link: https://www.nature.com/articles/nrg3871 -->
-### Why is important to construct a CNV map on health individuals of various ethnicities?
+### 1. Why is important to construct a CNV map on health individuals of various ethnicities?
 >(Introduction)
 
+>Clinical geneticists need to dis- criminate pathogenic or high-risk variants from benign variants in patients, and they do so with information about CNVs found in apparently healthy individu- als, which can include parents, siblings and popula- tion controls.
 
-### What is the CNV size that the authors defined?
->(Box 1 mentioned in introduction)
-Noted: The CNV size definition is still under debate and may be different in other literature
+### 2. What is the CNV size that the authors defined?
+50 bp to 3Mb
 
 
-
-### What are the primary approaches used for CNV detection? And what are the advantages and limitations of these technologies?
+### 3. What are the primary approaches used for CNV detection? And what are the advantages and limitations of these technologies?
 >(CNV discoveries)
 
+Microarrays and next-generation sequencing (NGS)
+
+>NGS, call smaller variants and are biased towards the detection of deletions16,43. Sequencing-based approaches have both high sensitivity and the ability to provide accurate sequence-level breakpoint resolution, whereas array-based approaches have a limited resolu- tion capacity.
 
 
-### The authors used clustering method to combine data from different studies into merged CNVRs (Copy number variable regions). What are the two criteria for cluster filtering? And why did they do this filtering?
+### 4. The authors used clustering method to combine data from different studies into merged CNVRs (Copy number variable regions). What are the two criteria for cluster filtering? And why did they do this filtering?
 >(The CNV map)
 
+The criteria for cluster filtering are the number of distinct subjects that carry the variant and the number of distinct studies with at least one variant in the cluster.
 
+>The filter based on the number of subjects excluded singletons, and variants that are supported by a larger number of subjects are less likely to be false positives. The filter based on the number of studies ensured the exclu- sion of potential study-specific artefacts. 
 
-### What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent map (stringency level 12) respectively?
+### 5. What are thresholds in stringency level 1, inclusive map (stringency level 2), and stringent map (stringency level 12) respectively?
 >(The CNV map)
+#### level 1
+at least one subject and one study (every variant, including singletons)
+#### level 2
+at least two subjects and one study
+#### level 12
+at least two subjects and two studies
 
-
-
-### Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively?
+### 6. Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively?
 >(Properties of the CNV map)
 
 
 
-### By your intuition, which kind of genes are more variable between protein-coding genes and non-coding genes? How about their findings in this paper?
+### 7. By your intuition, which kind of genes are more variable between protein-coding genes and non-coding genes? How about their findings in this paper?
 >(Functional impact of CNV)
 
 
 
-### The authors generated a null CNV map and found genes for which at least 85% of the exons were homozygous deleted. What are the functions of these genes? And why did the authors say that they seem to be non-essential?
+### 8. The authors generated a null CNV map and found genes for which at least 85% of the exons were homozygous deleted. What are the functions of these genes? And why did the authors say that they seem to be non-essential?
 >(Homozygous deleted genes)
 
 
 
-### If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV?
+### 9. If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV?
 >(Clinical application of the CNV map part in Discussion)
 
