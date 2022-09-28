@@ -66,4 +66,13 @@ In the study, they found that *"the exons of non-coding genes had the highest pr
 They are human protein-coding genes. They would seem to be non-essential, as they could be missed from the gnomes of apparently healthy individuals - however, these genes have more gene family members, which is common among duplicate genes (redundant function: if a gene is missing, other gene available to exert the same or very similar function).
 
 
-### 9. If you are a medical doctor, how do you use this map as a tool to assess the clinicalimportance of a CNV? (Clinical application of the CNV map part in Discussion)
+### 9. If you are a medical doctor, how do you use this map as a tool to assess the clinical importance of a CNV? (Clinical application of the CNV map part in Discussion)
+
+Criteria to assess clinical importance of a CNV found in a patient:
+1) is CNV found among the CNVRs (copy nr variantion regions) of the CNV map?
+2) does the CNV overlap with medically relevant genes? (consult list of disease-associated 935 genes)
+
+*Example scenario*: a CNV found in a patient that overlaps with any of the disease-associated genes while not being found in the CNV map (it's not a common variant in the population of apparently healthy individuals) would suggests medical importance!
+
+Note: Comparisons between inclusive and stringent maps could allow consideration of conditional phenotypes, such as age-related phenotypes. The genes in which mutations cause late-onset are less conserved than those that are associ- ated with earlier-onset disorders (which have a greater effect on genetic fitness) and might be better filtered
+by the stringent map.
