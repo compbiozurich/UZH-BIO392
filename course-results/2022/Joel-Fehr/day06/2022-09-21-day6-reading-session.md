@@ -1,4 +1,5 @@
 # Reading Session:  *A copy number variation map of the human genome*
+
 <img width="693" alt="Screen Shot 2022-09-28 at 13 58 40" src="https://user-images.githubusercontent.com/63153161/192773189-1abb832f-0200-46e9-970b-f49b99fc3bd0.png">
 
 ##### [Paper](https://github.com/compbiozurich/UZH-BIO392/files/9664305/nrg3871.pdf)
