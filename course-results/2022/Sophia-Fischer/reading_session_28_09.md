@@ -42,7 +42,7 @@ at least two subjects and one study for each variant
 at least two subjects and two studies
 
 # 6. Which percentage of the genome contributes to CNV in inclusive map and stringent map respectively? (Properties of the CNV map)
-level 1: 1-1%-16.4% for gains, from 4.3%-19.2% for losses \
+level 1: 9.5% total, 1.1%-16.4% for gains, from 4.3%-19.2% for losses \
 level 2: 4.8% total, 3.6% for losses and 2.3% for gains) (50% less than level 1)
 
 # 7. By your intuition, which kind of genes are more variable between protein-coding genes and non-coding genes? How about their findings in this paper? (Functional impact of CNV)
