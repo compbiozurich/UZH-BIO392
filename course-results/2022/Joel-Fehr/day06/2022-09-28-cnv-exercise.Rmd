@@ -1,0 +1,40 @@
+---
+title: "2022-09-28-cnv-exercise.Rmd"
+output: pdf_document
+date: "2022-09-28"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# CNV frequency in Progenetix database
+## Invasive Breast Carcinoma (NCIT:C9245)
+
+### Install packages
+
+```{r}
+install.packages("devtools")
+devtools::install_github('progenetix/pgxRpi')
+library(pgxRpi)
+install.packages("markdown")
+```
+
+### Access the CNV frequency data (Invasive Breast Carcinoma (NCIT:C9245))
+
+```{r}
+freq <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C9245', codematches=TRUE)
+```
+
+### Visualize the data
+
+```{r,fig.width=12,fig.height=6}
+pgxFreqplot(freq)
+```
+
+```{r,fig.width=12,fig.height=6}
+for (i in 1:24) {
+  pgxFreqplot(freq, chrom= i)
+}
+
+```
