@@ -1,3 +1,5 @@
+**paper:**
+Zarrei, M., MacDonald, J., Merico, D. et al. A copy number variation map of the human genome. Nat Rev Genet 16, 172–183 (2015). https://doi.org/10.1038/nrg3871
 
 ## 1. Why is important to construct a CNV map on health individuals of various ethnicities?
 - because the CNV patterns differ among ethnicities. "normal" depends on the ethnological context.
