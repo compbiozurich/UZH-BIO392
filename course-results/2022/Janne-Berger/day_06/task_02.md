@@ -26,3 +26,6 @@
 - paper:  
   - exons of all genes were more variable than the genome average
   - exons of non-coding genes had the highest proportion of copy number variable sequence
+# The authors generated a null CNV map and found genes for which at least 85% of the exons were homozygous deleted. What are the functions of these genes? And why did the authors say that they seem to be non-essential?
+- non essential: they could be missing from the genomes of apparently healthy individuals
+- function: redundant, may be related to late-onset phenotypic consequences that do not substantially reduce the fitness
