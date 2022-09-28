@@ -1,2 +1,45 @@
 ### General NGS technologies
 
+3 types of NGS: Genome Sequencing, Exome Sequencing, Targeted Gene Panel
+
+![image](https://user-images.githubusercontent.com/113686985/192869940-463fcc51-51ae-49c1-aac3-2ae5fb24e3a3.png) [^1]
+
+They present various compromises between coverage, precision, speed and accuracy. 
+
+After the founding methond of genome sequencing (Sanger) there was a need for higher throughput technologies. Out of this need the seconds generation sequencing methods were created.  
+
+Second generation sequencing methods can be grouped into two major categories, sequencing by hybridization and sequencing by synthesis (SBS). \
+SBS methods were a further development of Sanger sequencing without the dideoxy terminators, in combination with repeated cycles of synthesis, imaging and methods to incorporate additional nucleotides in the growing chain. This allowed nucleotide incorporation to proceed normally while imaging the the nucleotides and the removing synthesis blocking molecules on the labeled nucelotides to allow incorporation of the next base in sequence. \
+Sequencing by hybdridization was developped using arrayed DNA oligonucleotides of knows sequence on filters that were hybridized to labeled fragments of the DNA to be sequenced. By repeatedly hybridizing and washing away the unwanted non-hybridized DNA it was possible to determine whether the hybridizing labeled fragments matched the sequence of the DNA probes on the filter.\
+The most famous 2nd generation sequencing technologies are Ion Torrent and Illumina technology. [^2]
+
+The 3rd gen sequencing methods aim to sequence long DNA molecules (30-50kb). The lead technology is Pacific Biosciences (PacBio) also referred to as Single Molecule Real Time sequencing (SMRT). In this technology there is an engineered DNA polymerase with bound DNA to be sequenced at the bottom of a small chamber. Imaging occurs at the bottom of this chamber when the DNA polymerase incorporates a nucleotide labaled with different phospho-linked fluorophores for detection.
+
+The 4th gen technologies are nanopore systems where long DNA molecules pass through small holes and measure the difference in current of the membrane of the pore.
+
+![image](https://user-images.githubusercontent.com/113686985/192876191-7fbb68bc-2775-4da4-8a17-bd490d76e086.png) [^3]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[^1]: https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2022/2022-09-27___Michael-Baudis__Genomic-Technologies-and-Genome-Editions___BIO392-HS22.pdf
+[^2]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6020069/
+[^3]: https://en.wikipedia.org/wiki/Nanopore_sequencing#/media/File:202001_nanopore_sequencing.svg
