@@ -8,7 +8,7 @@
 |Thalassemia|An inherited blood disorder characterized by a decreased synthesis of one of the polypeptide chains that form hemoglobin|HBB|NM_213653.4:c1006G>T|
 |Haemophilia|Hemophilia is a bleeding disorder that slows the blood clotting process|MCFD2|NM_001171506.2:c.*3591C>G|
 |Cystic Fibrosis|Cystic fibrosis (CF) is a multisystem disease affecting epithelia of the respiratory tract, exocrine pancreas, intestine, hepatobiliary system, and exocrine sweat glands|CFTR|NM_015102.5:c.3930_3939del|
-|Tay sachs disease|Acute infantile GM2 activator deficiency is a neurodegenerative disorder in which infants, who are generally normal at birth, have progressive weakness and slowing of developmental progress between ages four and 12 months|GM2A|NC_000005.10:g|
+|Tay sachs disease|Acute infantile GM2 activator deficiency is a neurodegenerative disorder in which infants, who are generally normal at birth, have progressive weakness and slowing of developmental progress between ages four and 12 months|GM2A|NC_000005.10:g.(?_151253197)_(151267660_?)del|
 |Fragile X syndrome|A rare genetic disease characterized by a variable clinical phenotype which includes similar features but is typically less severe than in affected males|ADGB-DT|NC_000006.11:g.146735206_147036914del301709|
 |Huntington's disease|Huntington disease (HD) is a progressive disorder of motor, cognitive, and psychiatric disturbances|HTT|NM_002111.8:c.52CAG[(36_39)]|
 
