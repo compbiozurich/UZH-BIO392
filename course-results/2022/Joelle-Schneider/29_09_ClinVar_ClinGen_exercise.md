@@ -18,12 +18,12 @@
 |Gene|Gene name|Chromosomal location|Gene product|Disease|Disease description|
 |----|---------|--------------------|------------|-------|-------------------|
 |CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|a genetic disorder characterized by the production of sweat with a high salt content and mucus secretions with an abnormal viscosity|		 |
-|CYBB|		    |		| 		|		|		 |
-|HJV|		    |		|		|		|		 |
-|CDKN2A|		|		|		|		|		 |
-|KRAS|		    |		|		|		|		 |
-|TP53|	    	|		|		|		|		 |
-|		|		|		|		|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
+|CYBB|cytochrome b-245 beta chain		    |Xp21.1-p11.4		| cytochrome b-245, beta chain (also known as p91-phox)		|		granulomatous disease, chronic, X-linked	|	a primary immunodeficiency characterized by onset of symptoms in the first months or years of life. Patients present with recurrent infections, lymphadenopathy, inflammatory bowel disease, granulomatous colitis, fever, skin infections, osteomyelitis, and/or abscesses.	 |
+|HJV|	hemojuvelin BMP co-receptor	    |	1q21.1	|	hemojuvelin BMP co-receptor	  	|	hemochromatosis type 2A	|	a disease in which too much iron builds up in the body. This is also called iron overload. Accumulation of iron in the organs is toxic and can cause organ damage.	 |
+|CDKN2A|	cyclin dependent kinase inhibitor 2A	|	9p21.3	|	p16(INK4A) and the p14(ARF)	|		melanoma-pancreatic cancer syndrome	|	an inherited cancer predisposition syndrome in which mutation carriers have an increased risk of developing malignant melanoma and/or pancreatic cancer	 |
+|KRAS|KRAS proto-oncogene, GTPase		    |	12p12.1	|	K-Ras that is part of a signaling pathway known as the RAS/MAPK pathway.	|	Noonan syndrome, cardiofaciocutaneous syndrome, Costello syndrome	|	Noonan syndrome, cardiofaciocutaneous syndrome, Costello syndrome	 |
+|TP53|	   tumor protein p53 	|	17p13.1	|	tumor protein p53 (or p53). This protein acts as a tumor suppressor	|	Li-Fraumeni syndrome 1, 	familial ovarian cancer	|	Li-Fraumeni syndrome (lee-FRAH-meh-nee) is a rare hereditary or genetic disorder that increases the risk you and your family members will develop cancer	 |
+|	FMR1	|	fragile X messenger ribonucleoprotein 1	|	Xq27.3	|	FMRP	|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
 
 
 
