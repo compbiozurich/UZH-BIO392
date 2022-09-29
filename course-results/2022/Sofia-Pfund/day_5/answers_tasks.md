@@ -13,7 +13,8 @@ Terminology:
 * variant calling = variant detection
 
 ## File Formats
-🐃 **FASTA**: unaligned sequences
+
+📄 **FASTA**: unaligned sequences
   * text file
   * ID + sequence
   
@@ -26,7 +27,7 @@ CGGTATATCCTACATATGGCTTTCATATTGGTTTGGAGTTATTGGATTTTATATGAGTATTTTGATAAGA
 ACAGAATTGAGTATGAGTGGTTTAAAGATTATGACAATGGATACTCTTGAGATATACAATATGATGTTTT
 ```
 
-🐃 **FASTQ**: unaligned sequences (:bangbang: short reads sequencing)
+📄 **FASTQ**: unaligned sequences (:bangbang: short reads sequencing)
   * ID + sequence + separator + quality score
   * sequence quality is represented using Phred scores, which are logarithmically linked to error probabilities (of incorrect base call) (different encodings exist)
 ```
@@ -36,16 +37,16 @@ GGGTGATGGCCGCTGCCGATGGCGTCAAATCCCACC
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIII9IG9IC
 ```
 
-🐃 **SAM (Sequence Alignment Map)**: alignments
+📄 **SAM (Sequence Alignment Map)**: alignments
   * Idea: store where the reads (saved as FASTQ) map on the reference genome
   * Goal of sequence alignment: identify regions of similarity or the identity of a sequence
   * Local vs. Global aligment
   * human-readable text files
   
-🐃 **BAM (Binary Alignment Map)**: alignments
+📄 **BAM (Binary Alignment Map)**: alignments
   * binary and compressed equivalent of SAM
   
-🐃 **BED (Browser Extensible Data)**: genomic ranges
+📄 **BED (Browser Extensible Data)**: genomic ranges
   * BED3, BED6, BED12
   * tab-separated colummns: chromosome - start - end
 
@@ -57,14 +58,14 @@ chr22 2000 6000
     * 0-start vs. 1-start 
     * fully-open (4001-4999), fully-closed (4000-5000), half-open (4000-4999)
     
-🐃 **BEDgraph**: genomic scores
+📄 **BEDgraph**: genomic scores
   * BED3 + probability score (like a "BED4")
   
-🐃 **Wiggle files**: genomic scores
+📄 **Wiggle files**: genomic scores
 
-🐃 **GFF (Genetic Feature Format) and GTF**: gene annotation
+📄 **GFF (Genetic Feature Format) and GTF**: gene annotation
 
-🐃 **VCF (Variant Call Format)**: variants
+📄 **VCF (Variant Call Format)**: variants
   * Generic format for storing DNA polymorphism data such as SNPs, insertions, deletions and structural variants, together with rich annotations. 
   * Usually stored in a compressed manner and can be indexed for fast data retrieval of variants from a range of positions on the reference genome.  (Danecek et al 2011)
   * Tailored for storing information *across many samples*
@@ -91,12 +92,30 @@ chr22 2000 6000
 💾 captures 100% of human genome: ca. **3 GB** of data to store
 
 ## 1st task: Estimate Storage Requirements for 1000 Genomes
-* human genome: 3 billion nt 👉 3 GB
-* perfect genome can be stored using ca. 715 MB
-* one 30x BAM file 👉 100 GB
-* to store 1000 genomes: 1000 * 715 MB = 715 GB = ca. **7** 30x BAM files
 
-Note: currently 2500 genomes are stored for the project.
+* 2 bits/base: `00, 01, 10, 11` for `TCGA`
+* 8 bits = 1 byte
+* $8 \cdot 10^6$ = 8000000 = 1 MB
+
+💾 **WGS storage**: 
+* size of human genome: $3 \cdot 10^9$ bases
+* required bits to encode 1 genome: $2 \cdot 3 \cdot 10^9$ = 6000000000 bits = 750 MB
+* 1000 genomes $\Rightarrow$ $750 \cdot 1000$ = 750 GB
+
+💾 **WES storage**:
+* size of human exome: $3 \cdot 10^7$ bases
+* required bits to encode 1 exome $2 \cdot 3 \cdot 10^7$ = 60000000 bits = 7.5 MB
+* 1000 exomes $\Rightarrow$ $7.5 \cdot 1000$ = 7.5 GB
+
+**Costs**:
+* 1 PB = ca. 500'000 CHF
+* 1 PB = 1'000'000 GB
+* 1 GB = ca. 0.5 CHF
+* 💰 **WGS** $\Rightarrow$ $750 \cdot 0.5$ = **375 CHF**
+* 💰 **WES** $\Rightarrow$ $7.5 \cdot 0.5$ = **3.75 CHF**
+
+Note: depending on the file format used to store the sequences, different costs!
+
 
 ## 2nd task: Reading up on Genome Technologies
 
@@ -120,6 +139,9 @@ Relevance for this course: one of the main uses of next-generation sequencing is
   > Multiplex in situ hybridization (M-FISH) is a 24-color karyotyping technique and is the method of choice for studying complex interchromosomal rearrangements.
 
 ### General NGS technologies
+* NGS = next generation sequencing 👉 much faster than than old technologies like Sanger sequencing
+* NGS steps: 1) DNA sample fragmentation, 2) library generation, 3) amplification 
+
 * count based vs. intensity based as principle
 * Nanopore Sequencer: 
   * 😄 can sequence very long reads
