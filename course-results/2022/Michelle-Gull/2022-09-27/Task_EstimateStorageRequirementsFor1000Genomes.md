@@ -2,7 +2,8 @@
 ## How much computer storage is required for 1000 Genomes?
 
 ## WES & WGS
-WGS: 1'000 whole genomes are 1/1'400 PB = 714.3 GB
+The size of a perfect genome is about 715 MB according to the slides of the course.
+WGS Estimation: 1'000 whole genomes are 1'000 * 715 MB = 715 GB
 
 ## Different file formats
 
