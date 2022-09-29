@@ -24,6 +24,14 @@ Variant Call Format
 
 
 ### FASTA
-(Unaligned sequences)
+The file contains a header and the unaligned sequence.
+
+```
+>sp|P01116|RASK_HUMAN GTPase KRas OS=Homo sapiens OX=9606 GN=KRAS PE=1 SV=1
+MTEYKLVVVG AGGVGKSALT IQLIQNHFVD EYDPTIEDSY RKQVVIDGET CLLDILDTAG
+QEEYSAMRDQ YMRTGEGFLC VFAINNTKSF EDIHHYREQI KRVKDSEDVP MVLVGNKCDL
+PSRTVDTKQA QDLARSYGIP FIETSAKTRQ RVEDAFYTLV REIRQYRLKK ISKEEKTPGC
+VKIKKCIIM
+```
 
 [^1]: [https://biodatamining.biomedcentral.com/articles/10.1186/1756-0381-6-13](https://biodatamining.biomedcentral.com/articles/10.1186/1756-0381-6-13)
