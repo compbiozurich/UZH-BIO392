@@ -11,9 +11,11 @@ First result: accession number = OP471813.1; max score = 6800; query cover = 100
 It covers the full sequence.
 
 * Is it DNA or RNA sequence?
-It's a DNA sequence.
+It's a RNA sequence.
 
 * Does it encode a (part of) protein? If yes, which protein? (Hint: use different blast type)
+
+find information by clicking on accession ID: surface glycoprotein, partial.
 
 ## Task 2: Use blast in Uniprot to search the unknown protein sequence
 
