@@ -6,7 +6,7 @@
 |-------|-------------------|----|--------|
 |Hemochromatosis|a disorder that causes the body to absorb too much iron from the diet|HJV|NM_213653.3:c.959G>T|
 |Thalassemia|An inherited blood disorder characterized by a decreased synthesis of one of the polypeptide chains that form hemoglobin. Anemia results from this abnormal hemoglobin formation.|HBB|NG_000007.3:g.71609_72227del|
-|Haemophilia|Hemophilia is usually an inherited bleeding disorder in which the blood does not clot properly. This can lead to spontaneous bleeding as well as bleeding following injuries or surgery.|NM_021870.2:c.902G>A|FGG|
+|Haemophilia|Hemophilia is usually an inherited bleeding disorder in which the blood does not clot properly. This can lead to spontaneous bleeding as well as bleeding following injuries or surgery.|FGG|NM_021870.2:c.902G>A|
 |Cystic Fibrosis|Cystic fibrosis (CF) is a multisystem disease affecting epithelia of the respiratory tract, exocrine pancreas, intestine, hepatobiliary system, and exocrine sweat glands.|CFTR|NM_000492.4:c.2T>C|
 |Tay sachs disease|Tay-Sachs disease is a rare genetic disorder passed from parents to child. It's caused by the absence of an enzyme that helps break down fatty substances. These fatty substances, called gangliosides, build up to toxic levels in the brain and spinal cord and affect the function of the nerve cells.|HEXA|NM_000520.6:c.1549dup|
 |Fragile X syndrome|Fragile X syndrome (FXS) is a genetic disorder caused by changes in a gene called Fragile X Messenger Ribonucleoprotein 1 (FMR1).  FMR1 usually makes a protein called FMRP that is needed for brain development. |FMR1|NM_002024.6:c.-129CGG|
