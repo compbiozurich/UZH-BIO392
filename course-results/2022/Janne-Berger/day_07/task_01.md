@@ -18,9 +18,9 @@
 |Gene|Gene name|Chromosomal location|Gene product|Disease|Disease description|
 |----|---------|--------------------|------------|-------|-------------------|
 |CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|a genetic disorder characterized by the production of sweat with a high salt content and mucus secretions with an abnormal viscosity|		 |
-|CYBB|		    |		| 		|		|		 |
-|HJV|		    |		|		|		|		 |
-|CDKN2A|		|		|		|		|		 |
+|CYBB|cytochrome b-245 beta chain|Xp21.1-p11.4| Critical component of the membrane-bound oxidase of phagocytes that generates superoxide|	Noonan syndrome|Noonan syndrome is a genetic disorder that prevents normal development in various parts of the body|
+|HJV|hemojuvelin BMP co-receptor|1q21.1|Acts as a bone morphogenetic protein (BMP) coreceptor|hemochromatosis type 2A|Hemochromatosis type 2 is a disease in which too much iron builds up in the body|
+|CDKN2A|cyclin dependent kinase inhibitor 2A|9p21.3|Acts as a negative regulator of the proliferation of normal cells by interacting strongly with CDK4 and CDK6|melanoma-pancreatic cancer syndrome|		 |
 |KRAS|		    |		|		|		|		 |
 |TP53|	    	|		|		|		|		 |
 |		|		|		|		|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
