@@ -17,11 +17,11 @@
 
 |Gene|Gene name|Chromosomal location|Gene product|Disease|Disease description|
 |----|---------|--------------------|------------|-------|-------------------|
-|CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|a genetic disorder characterized by the production of sweat with a high salt content and mucus secretions with an abnormal viscosity|		 |
-|CYBB|cytochrome b-245 beta chain|	Xp21.1-p11.4	|Critical component of the membrane-bound oxidase of phagocytes that generates superoxide.|	granulomatous disease|		 |
-|HJV|hemojuvelin BMP co-receptor|1q21.1|Through enhancement of bone morphogenetic protein signaling regulates hepcidin expression and regulates iron homeostasis |hemochromatosis type 2A|		 |
-|CDKN2A|cyclin dependent kinase inhibitor 2A|9p21.3|negative regulator of the proliferation of normal cells by interacting strongly with CDK4 and CDK6|melanoma-pancreatic cancer syndrome|		 |
-|KRAS|KRAS proto-oncogene, GTPase|12p12.1|Ras proteins bind GDP/GTP and possess intrinsic GTPase activity |Noonan syndrome|		 |
-|TP53|tumor protein p53|17p13.1|Acts as a tumor suppressor in many tumor types|Li-Fraumeni syndrome 1|		 |
+|CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|a genetic disorder characterized by the production of sweat with a high salt content and mucus secretions with an abnormal viscosity|
+|CYBB|cytochrome b-245 beta chain|	Xp21.1-p11.4	|Critical component of the membrane-bound oxidase of phagocytes that generates superoxide.|	granulomatous disease|a primary immunodeficiency disorder of phagocytes	|
+|HJV|hemojuvelin BMP co-receptor|1q21.1|Through enhancement of bone morphogenetic protein signaling regulates hepcidin expression and regulates iron homeostasis |hemochromatosis type 2A|characterized by onset of severe iron overload occurring typically in the first to third decades of life|
+|CDKN2A|cyclin dependent kinase inhibitor 2A|9p21.3|negative regulator of the proliferation of normal cells by interacting strongly with CDK4 and CDK6|melanoma-pancreatic cancer syndrome|inherited cancer predisposition syndrome in which mutation carriers have an increased risk of developing malignant melanoma and/or pancreatic cancer|
+|KRAS|KRAS proto-oncogene, GTPase|12p12.1|Ras proteins bind GDP/GTP and possess intrinsic GTPase activity |Noonan syndrome|characterized by characteristic facies, short stature, congenital heart defect, and developmental delay of variable degree|
+|TP53|tumor protein p53|17p13.1|Acts as a tumor suppressor in many tumor types|Li-Fraumeni syndrome 1|a cancer predisposition syndrome associated with high risks for a diverse spectrum of childhood- and adult-onset malignancies|
 |FMR1|fragile X messenger ribonucleoprotein 1|Xq27.3|Multifunctional polyribosome-associated RNA-binding protein|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
 
