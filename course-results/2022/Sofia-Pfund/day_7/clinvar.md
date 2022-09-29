@@ -12,8 +12,8 @@ HGVS format:
 |Haemophilia|	a disorder of blood clotting	|	SERPINC1	|		NM_000488.4(SERPINC1):c.1246G>T  |
 |Cystic Fibrosis| reduced renal concentrating ability, chronic tubulointerstitial nephritis, cystic renal disease, and progression to end-stage renal disease (ESRD) before age 30 years 	|	NPHP4	| NM_015102.5(NPHP4):c.*314T>G	|
 |Tay sachs disease| 	excessive accumulation of ganglioside GM2 and related glycolipids in the lysosomes, mainly of neuronal cells	|	GM2A	|	NC_000005.10:g.(?_151253197)_(151267660_?)	|
-|Fragile X syndrome|		|		|		|
-|Huntington's disease|		|		|		|
+|Fragile X syndrome|	impaired intellectual development, macroorchidism, and distinct facial features, including long face, large ears, and prominent jaw |	ADGB-DT, LOC114004398, GRM1, RAB32, ADGB	|	NC_000006.11:g.146735206_147036914del301709 |
+|Huntington's disease|	autosomal dominant progressive neurodegenerative disorder with a distinct phenotype characterized by chorea, dystonia, incoordination, cognitive decline, and behavioral difficulties	|	HTT, LOC109461479	|	NM_002111.8(HTT):c.52CAG[(36_39)]	|
 
 
 ### [Relational list using ClinGen](https://clinicalgenome.org/)
