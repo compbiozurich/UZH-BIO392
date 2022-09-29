@@ -8,10 +8,10 @@ HGVS format:
 |Disease|Disease description|Gene|Variants|
 |-------|-------------------|----|--------|
 |Hemochromatosis|a disorder that causes the body to absorb too much iron from the diet|HJV|NM_213653.3:c.959G>T|
-|Thalassemia|		|		|		|
-|Haemophilia|		|		|		|
-|Cystic Fibrosis|		|		|		|
-|Tay sachs disease|		|		|		|
+|Thalassemia|X-linked intellectual disability syndrome is an inherited disorder that affects many parts of the body. |	ATRX	|	NM_000157.4(GBA):c.695G>A	|
+|Haemophilia|	a disorder of blood clotting	|	SERPINC1	|		NM_000488.4(SERPINC1):c.1246G>T  |
+|Cystic Fibrosis| reduced renal concentrating ability, chronic tubulointerstitial nephritis, cystic renal disease, and progression to end-stage renal disease (ESRD) before age 30 years 	|	NPHP4	| NM_015102.5(NPHP4):c.*314T>G	|
+|Tay sachs disease| 	excessive accumulation of ganglioside GM2 and related glycolipids in the lysosomes, mainly of neuronal cells	|	GM2A	|	NC_000005.10:g.(?_151253197)_(151267660_?)	|
 |Fragile X syndrome|		|		|		|
 |Huntington's disease|		|		|		|
 
