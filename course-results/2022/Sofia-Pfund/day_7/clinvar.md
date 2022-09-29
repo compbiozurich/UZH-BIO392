@@ -18,13 +18,15 @@ HGVS format:
 
 ### [Relational list using ClinGen](https://clinicalgenome.org/)
 
+Database that focuses on genes instead of variants.
+
 |Gene|Gene name|Chromosomal location|Gene product|Disease|Disease description|
 |----|---------|--------------------|------------|-------|-------------------|
 |CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|a genetic disorder characterized by the production of sweat with a high salt content and mucus secretions with an abnormal viscosity|		 |
-|CYBB|		    |		| 		|		|		 |
-|HJV|		    |		|		|		|		 |
-|CDKN2A|		|		|		|		|		 |
-|KRAS|		    |		|		|		|		 |
-|TP53|	    	|		|		|		|		 |
-|		|		|		|		|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
+|CYBB|		cytochrome b-245 beta chain    |	Xp21.1-p11.4	| 	critical component of the membrane-bound oxidase of phagocytes that generates superoxide	|	granulomatous disease	|		white blood cells called phagocytes are unable to kill certain types of bacteria and fungi |
+|HJV|		 hemojuvelin BMP co-receptor   |	1q21.1	|	HAMP	|	hemochromatosis type 2A	|		 too much iron builds up in the body |
+|CDKN2A|	cyclin dependent kinase inhibitor 2A	|	9p21.3	|	?	|	melanoma	|	 cutaneous malignant cancer	 |
+|KRAS|		KRAS proto-oncogene, GTPase    |	12p12.1	|	?	|		Noonan syndrome |	unusual facial characteristics, short stature, heart defects, other physical problems and possible developmental delays	 |
+|TP53|	  tumor protein p53  	|		17p13.1 |		? |	Li-Fraumeni syndrome 1	|		increased risk to develop cancer |
+|	FMR1	|	fragile X messenger ribonucleoprotein 1	|	Xq27.3	|	mRNA	|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
 
