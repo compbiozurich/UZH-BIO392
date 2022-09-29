@@ -18,10 +18,10 @@
 |Gene|Gene name|Chromosomal location|Gene product|Disease|Disease description|
 |----|---------|--------------------|------------|-------|-------------------|
 |CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|a genetic disorder characterized by the production of sweat with a high salt content and mucus secretions with an abnormal viscosity|		 |
-|CYBB|	cytochrome b-245 beta chain	    |		| 		|		|		 |
-|HJV|		    |		|		|		|		 |
-|CDKN2A|		|		|		|		|		 |
-|KRAS|		    |		|		|		|		 |
-|TP53|	    	|		|		|		|		 |
-|		|		|		|		|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
+|CYBB|	cytochrome b-245 beta chain	    |	xp11.4	| Critical component of the membrane-bound oxidase of phagocytes that generates superoxide		|	Haploinsufficiency	|	X-linked chronic granulomatous disease (CGDX) is a primary immunodeficiency characterized by onset of symptoms in the first months or years of life.	 |
+|HJV|	hemojuvelin BMP co-receptor	    |	1q21.1	|	Acts as a bone morphogenetic protein (BMP) coreceptor	|	hemochromatosis type 2 	|	autosomal recessive inborn error of iron metabolism that leads to severe iron loading and organ failure before 30 years of age	 |
+|CDKN2A|cyclin dependent kinase inhibitor 2A		|	9p21.3	|	Acts as a negative regulator of the proliferation of normal cells by interacting strongly with CDK4 and CDK6. This inhibits their ability to interact with cyclins D and to phosphorylate the retinoblastoma protein	|	melanoma-pancreatic cancer syndrome	|	Melanoma-pancreatic cancer syndrome is an inherited cancer predisposition syndrome in which mutation carriers have an increased risk of developing malignant melanoma and/or pancreatic cancer	 |
+|KRAS|	KRAS proto-oncogene, GTPase	    |	12p12.1	|	Ras proteins bind GDP/GTP and possess intrinsic GTPase activity . Plays an important role in the regulation of cell proliferation . Plays a role in promoting oncogenic events by inducing transcriptional silencing of tumor suppressor genes (TSGs) in colorectal cancer (CRC) cells in a ZNF304-dependent manner	|Noonan syndrome		|	Noonan Syndrome (NS) is characterised by short stature, typical facial dysmorphism and congenital heart defects.	 |
+|TP53|	tumor protein p53    	|17p13.1		|	an inhibitor of cyclin-dependent kinases	|	Li-Fraumeni syndrome 1	|	rare hereditary or genetic disorder that increases the risk you and your family members will develop cancer	 |
+|	FMR1 	|	fragile X messenger ribonucleoprotein 1	|	Xq27.3	|	Multifunctional polyribosome-associated RNA-binding protein that plays a central role in neuronal development and synaptic plasticity through the regulation of alternative mRNA splicing, mRNA stability, mRNA dendritic transport and postsynaptic local protein synthesis of a subset of mRNAs	|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
 
