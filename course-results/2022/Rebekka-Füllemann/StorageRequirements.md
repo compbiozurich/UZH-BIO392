@@ -20,6 +20,7 @@ BAM (Binary Alignment Map) files are the binary (and compressed) equivalent to S
 
 ### VCF
 Variant Call Format
+![Image](https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2F1756-0381-6-13/MediaObjects/13040_2013_Article_92_Fig9_HTML.jpg?as=webp)[^1]
 
 
 ### FASTA
