@@ -1,0 +1,81 @@
+---
+title: "2022-09-28-CNV_freq"
+output:
+  word_document: default
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Step 1: Install package
+
+```{r}
+install.packages('devtools')
+
+library(devtools)
+
+devtools::install_github('progenetix/pgxRpi')
+
+library(pgxRpi)
+```
+
+## Step2: Search Lung Non-Small Cell Carcinoma NCIt code
+
+## Step3: Access the CNV frequency data from samples with esophageal adenocarcinoma
+
+```{r}
+freq <- pgxLoader(type='frequency', output='pgxseg',filters='NCIT:C2926', 
+codematches=T)
+
+```
+
+### The retreived data is an object contaning two slots `meta` and `data`.
+
+The `meta` slot looks like this:
+
+```{r}
+freq$meta
+```
+
+The `data` slot includes two matrices.
+
+```{r}
+names(freq$data)
+```
+
+The frequency matrix looks like this
+
+```{r}
+head(freq$data$`NCIT:C2926`)
+```
+
+Dimension of this matrix
+
+```{r}
+dim(freq$data$`NCIT:C2926`)
+```
+
+## Step4: Visualize data
+
+### By genome
+
+```{r,fig.width=12,fig.height=6}
+pgxFreqplot(freq)
+
+```
+
+### By chromosome
+
+```{r,fig.width=12, fig.height=6}
+pgxFreqplot(freq,chrom = 20)
+```
+
+## Step5: Analyse the data
+
+According the plot, we can see frequenct gains on chromosome 1q, 31, 5p, 7p, 7q, 8q, 4q, 7,q, 20q 
+and frequenct losses on chromosome 1p, 3p, 4q, 5q, 6q, 8p, 9p, 9q, 13q, 17p,18p,18q, 19p, 22p.
+
