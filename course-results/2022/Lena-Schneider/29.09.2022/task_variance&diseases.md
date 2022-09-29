@@ -15,8 +15,8 @@
 
 ### [Relational list using ClinGen](https://clinicalgenome.org/)
 
-|Gene|Gene name|Chromosomal location|Gene product|Disease|Disease description|
-|----|---------|--------------------|------------|-------|-------------------|
+|Gene|Gene name|Chromosomal location|Gene product|Disease|Disease description               |
+|----|---------|--------------------|----------|-------|----------------------------------|
 |CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|a genetic disorder characterized by the production of sweat with a high salt content and mucus secretions with an abnormal viscosity|		 |
 |CYBB|cytochrome b-245 beta chain|Xp21.1-p11.4|Critical component of the membrane-bound oxidase of phagocytes that generates superoxide. It is the terminal component of a respiratory chain that transfers single electrons from cytoplasmic NADPH across the plasma membrane to molecular oxygen on the exterior. Also functions as a voltage-gated proton channel that mediates the H(+) currents of resting phagocytes. It participates in the regulation of cellular pH and is blocked by zinc.|	granulomatous disease|Chronic granulomatous disease (CGD) is a genetic disorder in which white blood cells called phagocytes are unable to kill certain types of bacteria and fungi. People with CGD are highly susceptible to frequent and sometimes life-threatening bacterial and fungal infections.|
 |HJV|hemojuvelin BMP co-receptor|1q21.1|Acts as a bone morphogenetic protein (BMP) coreceptor (PubMed:18976966). Through enhancement of BMP signaling regulates hepcidin (HAMP) expression and regulates iron homeostasis|Acts as a bone morphogenetic protein (BMP) coreceptor (PubMed:18976966). Through enhancement of BMP signaling regulates hepcidin (HAMP) expression and regulates iron homeostasis|ne of the most common genetically-determined metabolic disorders. It leads to the over-absorption of iron, which can result in iron storage in the liver, skin, pancreas, heart, joints, pituitary gland, and testicles.|
