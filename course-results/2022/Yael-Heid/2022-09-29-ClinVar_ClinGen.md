@@ -5,7 +5,7 @@
 |Disease|Disease description|Gene|Variants|
 |-------|-------------------|----|--------|
 |Hemochromatosis|a disorder that causes the body to absorb too much iron from the diet|HJV|NM_213653.3:c.959G>T|
-|Thalassemia|		|		|	NM_213653.4(HJV):c.1006G>T	|
+|Thalassemia|		|HJV|	NM_213653.4(HJV):c.1006G>T	|
 |Haemophilia|		|		|		|
 |Cystic Fibrosis|		|		|		|
 |Tay sachs disease|		|		|		|
