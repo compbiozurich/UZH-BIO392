@@ -22,8 +22,7 @@
 |HJV|	hemojuvelin BMP co-receptor |	1q21.1	|	hemojuvelin BMP co-receptor	|	hemochromatosis type 2A	|	Hemochromatosis type 2 is a disease in which too much iron builds up in the body. This is also called iron overload. Accumulation of iron in the organs is toxic and can cause organ damage. While many organs can be affected, iron overload is especially likely to affect the liver, heart, and pancreas.	 |
 |CDKN2A|	cyclin dependent kinase inhibitor 2A	|	9p21.3	|	cyclin dependent kinase inhibitor 2A	|		 	melanoma, cutaneous malignant|	skin cancer	 |
 |KRAS|		 KRAS proto-oncogene, GTPase   |	12p12.1	|		KRAS proto-oncogene, GTPase|	Noonan syndrome	|	Noonan syndrome (NS) is a genetic disorder that may present with mildly unusual facial features, short height, congenital heart disease, bleeding problems,	 |
-|TP53|	 tumor protein p53   	|	17p13.1	|	tumor protein p53	|	 	Li-Fraumeni syndrome 1	|		Li-Fraumeni syndrome is a rare disorder that greatly increases the risk of developing several types of cancer, particularly in children and young adults.
- |
+|TP53|	 tumor protein p53   	|	17p13.1	|	tumor protein p53	|	 	Li-Fraumeni syndrome 1	|		Li-Fraumeni syndrome is a rare disorder that greatly increases the risk of developing several types of cancer, particularly in children and young adults.|
 |	FMR1	|fragile X messenger ribonucleoprotein 1		|	Xq27.3	|		fragile X messenger ribonucleoprotein 1|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
 
 
