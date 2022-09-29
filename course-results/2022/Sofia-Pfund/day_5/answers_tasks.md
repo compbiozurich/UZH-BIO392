@@ -82,14 +82,10 @@ chr22 2000 6000
 
 💰 wide variety of prices
 
-💾 captures 2% of human genome: ca. **6 MB** of data to store
-
 ### WGS (Whole Genome Sequencing)
 👉 determines exact full nucleotide order of a DNA sequence
 
 💰 more expensive but provides a more complete view than SNP genotyping: new discoveries can be made
-
-💾 captures 100% of human genome: ca. **3 GB** of data to store
 
 ## 1st task: Estimate Storage Requirements for 1000 Genomes
 
@@ -143,6 +139,7 @@ Relevance for this course: one of the main uses of next-generation sequencing is
 * NGS steps: 1) DNA sample fragmentation, 2) library generation, 3) amplification 
 
 * count based vs. intensity based as principle
+* Illumina Sequencing: detects single bases as they are incorporated into growing DNA strands.
 * Nanopore Sequencer: 
   * 😄 can sequence very long reads
   * 😄 identify DNA of known composition and for de-novo assembly for telomere/repeat regions
