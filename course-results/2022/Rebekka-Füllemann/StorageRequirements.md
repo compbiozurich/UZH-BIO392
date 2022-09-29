@@ -12,11 +12,11 @@ In the human genome only about 1% are exons. Therefore the storage of 1000 Exome
 ## File Formats
 
 ### SAM
-SAM (Sequence Alignment Map) 􏰁les are human-readable text files
+SAM (Sequence Alignment Map) files are human-readable text files
 
 
 ### BAM
-BAM (Binary Alignment Map) 􏰁les are their binary (and compressed) equivalent
+BAM (Binary Alignment Map) files are the binary (and compressed) equivalent to SAM
 
 ### VCF
 Variant Call Format
