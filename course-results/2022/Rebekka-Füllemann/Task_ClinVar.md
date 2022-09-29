@@ -5,12 +5,12 @@
 |Disease|Disease description|Gene|Variants|
 |-------|-------------------|----|--------|
 |Hemochromatosis|a disorder that causes the body to absorb too much iron from the diet|HJV|NM_213653.3:c.959G>T|
-|Thalassemia|An inherited blood disorder characterized by a decreased synthesis of one of the polypeptide chains that form hemoglobin|		|		|
-|Hemophilia|a bleeding disorder that slows the blood clotting process|		|		|
-|Cystic Fibrosis|CF) is a multisystem disease affecting epithelia of the respiratory tract, exocrine pancreas, intestine, hepatobiliary system, and exocrine sweat glands|		|		|
-|Tay sachs disease|a disease continuum based on the amount of residual beta-hexosaminidase A (HEX A) enzyme activity. |		|		|
-|Fragile X syndrome|rare genetic disease characterized by a variable clinical phenotype which includes similar features but is typically less severe than in affected males|		|		|
-|Huntington's disease|a progressive disorder of motor, cognitive, and psychiatric disturbances|		|		|
+|Thalassemia|An inherited blood disorder characterized by a decreased synthesis of one of the polypeptide chains that form hemoglobin|HBB|NM_000518.5:c.*113A>G|
+|Hemophilia|a bleeding disorder that slows the blood clotting process|VWF|NM_000552.5:c.7603C>T|
+|Cystic Fibrosis|a multisystem disease affecting epithelia of the respiratory tract, exocrine pancreas, intestine, hepatobiliary system, and exocrine sweat glands|NPHP4|NM_015102.5:c.3644+1G>T|
+|Tay sachs disease|a disease continuum based on the amount of residual beta-hexosaminidase A (HEX A) enzyme activity. |PCDH15|NM_001384140.1:c.733C>T |
+|Fragile X syndrome|rare genetic disease characterized by a variable clinical phenotype which includes similar features but is typically less severe than in affected males|FMR1|NM_002024.6:c.818A>G |
+|Huntington's disease|a progressive disorder of motor, cognitive, and psychiatric disturbances|HTT|NM_001388492.1:c.54GCA[40]|
 
 
 ### [Relational list using ClinGen](https://clinicalgenome.org/)
