@@ -5,12 +5,12 @@
 |Disease|Disease description|Gene|Variants|
 |-------|-------------------|----|--------|
 |Hemochromatosis|a disorder that causes the body to absorb too much iron from the diet|HJV|NM_213653.3:c.959G>T|
-|Thalassemia|		|		|		|
-|Haemophilia|		|		|		|
-|Cystic Fibrosis|		|		|		|
-|Tay sachs disease|		|		|		|
-|Fragile X syndrome|		|		|		|
-|Huntington's disease|		|		|		|
+|Thalassemia|An inherited blood disorder characterized by a decreased synthesis of one of the polypeptide chains that form hemoglobin|		|		|
+|Hemophilia|a bleeding disorder that slows the blood clotting process|		|		|
+|Cystic Fibrosis|CF) is a multisystem disease affecting epithelia of the respiratory tract, exocrine pancreas, intestine, hepatobiliary system, and exocrine sweat glands|		|		|
+|Tay sachs disease|a disease continuum based on the amount of residual beta-hexosaminidase A (HEX A) enzyme activity. |		|		|
+|Fragile X syndrome|rare genetic disease characterized by a variable clinical phenotype which includes similar features but is typically less severe than in affected males|		|		|
+|Huntington's disease|a progressive disorder of motor, cognitive, and psychiatric disturbances|		|		|
 
 
 ### [Relational list using ClinGen](https://clinicalgenome.org/)
