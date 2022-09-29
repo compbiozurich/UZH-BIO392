@@ -6,7 +6,6 @@ A virus: SARS-CoV-2/human/USA/948428/2020, complete genome
 * Pick one blast result. What is the accession number, max score, query cover and E value?
 
 First result: 
-
   - accession number = OP471813.1
   - max score = 6800
   - query cover = 100%
