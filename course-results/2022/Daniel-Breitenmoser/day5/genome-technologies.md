@@ -32,9 +32,16 @@ LCSH have 2 main interests:
 Thus, while aCGH is still very efficient at detection CNV's, the inclusion of SNP probes in arrays is desirable
 
 
+### SKY, M-FISH
 
+Spectral karyotype (SKY) is a karyotype in which the homologous pairs of chromosomes are manipulated in such a way that they have distinctive colors. The SKY technique makes it easier for scientists to detect chromosomal abnormalities, as compared with a conventional karyotype [^5]
 
+Multicolor FISH (M-FISH) assays are used for a precise assessment of complex chromosomal rearrangements. This technique uses all whole-chromosome painting probes in multiplex-FISH and spectral karyotyping. Thus, marker chromosomes, complex chromosomal rearrangements, and all numerical aberrations can be visualized simultaneously in a single hybridization experiment. [^6]
 
+### chromosomal CGH
+
+Comparative genomic hybridization (CGH) is a molecular cytogenetic method for analysing copy number variations (CNVs) relative to ploidy level in the DNA of a test sample compared to a reference sample, without the need for culturing cells.
+The aim of this technique is to quickly and efficiently compare two genomic DNA samples arising from two sources, which are most often closely related, because it is suspected that they contain differences in terms of either gains or losses of either whole chromosomes or subchromosomal regions (a portion of a whole chromosome). [^7]
 
 
 
@@ -52,3 +59,6 @@ Thus, while aCGH is still very efficient at detection CNV's, the inclusion of SN
 [^2]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6020069/
 [^3]: https://en.wikipedia.org/wiki/Nanopore_sequencing#/media/File:202001_nanopore_sequencing.svg
 [^4]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4044733/
+[^5]: https://www.genome.gov/genetics-glossary/Spectral-Karyotype
+[^6|: https://www.creative-bioarray.com/services/multicolor-fish-m-fish-analysis.htm
+[^7]: https://en.wikipedia.org/wiki/Comparative_genomic_hybridization
