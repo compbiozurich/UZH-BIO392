@@ -20,8 +20,16 @@ The 4th gen technologies are nanopore systems where long DNA molecules pass thro
 ![image](https://user-images.githubusercontent.com/113686985/192876191-7fbb68bc-2775-4da4-8a17-bd490d76e086.png) [^3]
 
 
+### SNP vs aCGH arrays
 
+SNP arrays and aCGH arrays both enable the detection of CNV's. But in SNP arrays, each probe is located at an SNP and can determine \
+the genotype of the corresponding SNP. Because of that, SNP arrays can detect long contiguous stretches of heterozygosity (LCSH) [^4]
 
+LCSH have 2 main interests:
+  1. they can detect uniparental isodisomies ( the inheritance of both homoogous copies of the same parent)
+  2. they can detect genetic identity by descent
+ 
+Thus, while aCGH is still very efficient at detection CNV's, the inclusion of SNP probes in arrays is desirable
 
 
 
@@ -43,3 +51,4 @@ The 4th gen technologies are nanopore systems where long DNA molecules pass thro
 [^1]: https://github.com/compbiozurich/UZH-BIO392/blob/master/course-material/2022/2022-09-27___Michael-Baudis__Genomic-Technologies-and-Genome-Editions___BIO392-HS22.pdf
 [^2]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6020069/
 [^3]: https://en.wikipedia.org/wiki/Nanopore_sequencing#/media/File:202001_nanopore_sequencing.svg
+[^4]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4044733/
