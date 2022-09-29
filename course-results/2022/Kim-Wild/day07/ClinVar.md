@@ -23,6 +23,6 @@
 |CDKN2A|cyclin dependent kinase inhibitor 2A|9p21.3|negative regulator|melanoma-pancreatic cancer syndrome|inherited cancer predisposition syndrome in which mutation carriers have an increased risk of developing malignant melanoma and/or pancreatic cancer|
 |KRAS|KRAS proto-oncogene, GTPase|12p12.1|Ras protein|Noonan syndrome|characterized by characteristic facies, short stature, congenital heart defect, and developmental delay of variable degree|
 |TP53|tumor protein p53|17p13.1|tumor suppressor|Li-Fraumeni syndrome 1|cancer predisposition syndrome associated with high risks for a diverse spectrum of childhood- and adult-onset malignancies|
-|FMR1|fragile X messenger ribonucleoprotein 1|Xq27.3|polyribosome-associated RNA-binding proteinFragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
+|FMR1|fragile X messenger ribonucleoprotein 1|Xq27.3|polyribosome-associated RNA-binding proteinFragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|A rare genetic disease characterized by a variable clinical phenotype which includes similar features but is typically less severe than in affected males|
 
 
