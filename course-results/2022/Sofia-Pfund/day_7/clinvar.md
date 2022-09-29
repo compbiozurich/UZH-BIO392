@@ -1,7 +1,7 @@
 ## Variants and diseases
 
 HGVS format:
-* `reference_sequence:variant_description` 👉 `NM_004006.2:c.4375C>T
+* `reference_sequence:variant_description` 👉 `NM_004006.2:c.4375C>T`
 
 ### [Relational list using ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)
 
