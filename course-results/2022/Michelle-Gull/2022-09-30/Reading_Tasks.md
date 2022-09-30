@@ -2,7 +2,6 @@
 ## STR background reading
 - Why is STR variation relevant to health and disease?
 > Short tandem repeats (STRs) are some of the fastest mutating loci in the genome. Recent studies have leveraged these catalogs to show that STRs play a widespread role in regulating gene expression and other molecular phenotypes. These analyses suggest that STRs are an underappreciated but rich reservoir of variation that likely make significant contributions to Mendelian diseases, complex traits, and cancer. <br>
-have yet been missing in clinical surroundings because they are not detecable by the standard analyising methods
 - What are some of the challenges in analysing STRs from NGS data?
 > STRs are challenging to genotype from NGS. First, short reads often do not span entire repeats, effectively reducing the number of informative reads. Second, STR variations present as large insertions or deletions that may be difficult to align to a reference genome, and thus introduce significant mapping bias toward shorter alleles. Finally, PCR amplification during library preparation often introduces “stutter” noise in the number of repeats at STRs.
 
