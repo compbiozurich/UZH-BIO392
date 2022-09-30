@@ -28,8 +28,11 @@
 Mendelian diseases, complex traits, and cancer
 
 **What are some of the challenges in analysing STRs from NGS data?**
+
 (1) short reads often do not span entire repeats, effectively reducing the number of informative reads. 
+
 (2) STR variations present as large insertions or deletions that may be difficult to align to a reference genome, and thus introduce significant mapping bias toward shorter alleles. 
+
 (3) PCR amplification during library preparation often introduces “stutter” noise in the number of repeats at STRs.
 
 (answers are taken from the paper https://doi.org/10.1016/j.gde.2017.01.012)
