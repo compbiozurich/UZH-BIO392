@@ -62,4 +62,4 @@ reliable TR annotation (Schaper et al., 2012).
 * it relies on a general statistical model incorporating multiple properties of paired-end reads into a single maximum likelihood framework capable of genotyping both normal length and expanded repeats
 * it can be applied to genotype TRs using high-coverage NGS and validate novel repeat expansions using orthogonal long read and capillary electrophoresis data
 
-(answers where taken from the paper)
+(answers were taken from the paper)
