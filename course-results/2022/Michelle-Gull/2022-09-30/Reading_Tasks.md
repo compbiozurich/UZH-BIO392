@@ -6,6 +6,12 @@ have yet been missing in clinical surroundings because they are not detecable by
 - What are some of the challenges in analysing STRs from NGS data?
 > STRs are challenging to genotype from NGS. First, short reads often do not span entire repeats, effectively reducing the number of informative reads. Second, STR variations present as large insertions or deletions that may be difficult to align to a reference genome, and thus introduce significant mapping bias toward shorter alleles. Finally, PCR amplification during library preparation often introduces “stutter” noise in the number of repeats at STRs.
 
+<br>
+
+-------
+
+<br>
+
 # Task 2
 ## Introduction to TRAL
 - Why should you use multiple tandem repeat detection algorithms to look for repeats in biological sequence?
