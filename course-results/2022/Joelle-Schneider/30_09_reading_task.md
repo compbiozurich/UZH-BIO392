@@ -10,5 +10,11 @@
 
 ## TRAL: tandem repeat annotation library
 # Why should you use multiple tandem repeat detection algorithms to look for repeats in biological sequence?
-- 
+- Because every alorithm has it's stengths and flaws as well as different STR regions in which they look into
+
 # What different functionalities does TRAL provide?
+- running and parsing of various detection outputs 
+- clustering of redundant outputs
+- statistical frameworks for filtering false positive annotations
+- tandem repeat annotation
+- refinement module based on circular profile hidden MArkov models
