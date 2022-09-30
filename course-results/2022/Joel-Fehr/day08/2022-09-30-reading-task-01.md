@@ -11,3 +11,5 @@
 ### What are some of the challenges in analysing STRs from NGS data?
 
 - STRs do often not conver entire repeats, reduces number of informative reads.
+- difficult to align to reference genome
+- induce "stutter" due to PCR amplification
