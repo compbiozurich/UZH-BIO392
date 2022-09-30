@@ -7,4 +7,5 @@ GangSTR outperforms alternative methods in both accuracy and speed.<br>
 GangSTR will likely enable discovery of novel disease-associated variants not currently accessible from NGS.
 
 - What types of information does GangSTR use for STR genotyping?
-> answer
+> GangSTR relies on a general statistical model incorporating multiple properties of paired-end reads into a single maximum likelihood framework capable of genotyping both normal length and expanded repeats.
+> GangSTR can be applied to genotype TRs using high-coverage NGS and validate novel repeat expansions using orthogonal long read and capillary electrophoresis data. 
