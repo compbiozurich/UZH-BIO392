@@ -3,11 +3,12 @@
 ## Overview NGS technologies
 Next-generation sequencing (NGS) is a massively parallel sequencing technology that offers ultra-high throughput, scalability, and speed. The technology is used to determine the order of nucleotides in entire genomes or targeted regions of DNA or RNA.
 > https://www.illumina.com/science/technology/next-generation-sequencing.html#:~:text=What%20is%20NGS%3F,regions%20of%20DNA%20or%20RNA.
-* Short-read vs. long-read sequencing
-  - Short reads are cheaper, can sequence fragmented DNA and show higher sequence fidelity than long reads.
-  - With long reads one can sequence also difficult regions such as repeat sequences. It is also very useful for de novo assemblies.
+## long-read sequencing (LRS)
+LRS has the capacity to sequence on average over 10 kb in one single read, thereby requiring less reads to cover the same gene
 
 Principle for all NGS technologies: Generating DNA fragments, adding specific adapters to fragments, creating a library, amplification and clustering of fragmented DNA, parallel sequencing of clusters and lastly analysing the genomic data.
+
+## short-read sequencing (SRS)
 
 ## Count based vs. intensity based
 * Read count based genotyping
