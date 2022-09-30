@@ -22,3 +22,11 @@ reliable TR annotation
 - Identify and filter overlapping annotations
 - Test and filter for statistical significance
 - Retrieve tandem repeat characteristics
+
+# Task 3: GangSTR background reading
+
+### What sets GangSTR apart from other STR genotyping tools?
+GangSTR is not limited by fragment or read length
+
+### What types of information does GangSTR use for STR genotyping?
+sequence alignments and a reference set of TRs
