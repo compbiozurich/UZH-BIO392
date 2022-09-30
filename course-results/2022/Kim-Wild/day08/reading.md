@@ -11,7 +11,8 @@ What are some of the challenges in analysing STRs from NGS data? \
 ## Task 2
 
 Why should you use multiple tandem repeat detection algorithms to look for repeats in biological sequence? \
--> to find TRs in the refrence genome 
+-> to find TRs in the refrence genome \
+-> the different algorightms create redundant or overlapping annotations, several statistical frameworks for filtering false positive annotations
 
 What different functionalities does TRAL provide?
 -> for de novo annotations, a scaffold for executing and parsing external TRD software is implemented \
