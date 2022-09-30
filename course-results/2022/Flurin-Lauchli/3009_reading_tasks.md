@@ -17,3 +17,16 @@
 
 - What different functionalities does TRAL provide?
 	- it does the whole evaluating-STRs-with-different-algorhithms for you
+	
+
+**paper: Profiling the Genome-Wide Landscape of Tandem Repeat Expansions**
+
+- What sets GangSTR apart from other STR genotyping tools?
+	- it can work with a variety of STR classes, while other methods only detect one
+
+- What types of information does GangSTR use for STR genotyping?
+	- 4 classes of paored-end reads:
+		- enclosing read pairs (‘E’) con- sist of at least one read that contains the entire TR plus non-repetitive flanking region
+		- spanning read pairs (‘S’) originate from a fragment that completely spans the TR, such that each read in the pair maps on either end of the repeat
+		- flanking read pairs (‘F’) contain a read that partially extends into the repetitive sequence of a read
+		- fully repetitive read pairs (‘FRR’) contain at least one read consisting entirely of the TR motif.
