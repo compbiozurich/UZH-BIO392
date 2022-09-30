@@ -40,6 +40,7 @@ Mendelian diseases, complex traits, and cancer
 
 ## Task 2 (Introduction to TRAL)
 **Why should you use multiple tandem repeat detection algorithms to look for repeats in biological sequence?**
+
 Currently available TRDs (tandem repeat detectors) do not provide exhaustive detections, and combining TRs from several TRDs is essential for
 reliable TR annotation (Schaper et al., 2012).
 
