@@ -50,3 +50,16 @@ reliable TR annotation (Schaper et al., 2012).
 3. Identify and filter overlapping annotations
 4. Test and filter for statistical significance
 5. Retrieve tandem repeat characteristics
+
+# Task 3
+
+**What sets GangSTR apart from other STR genotyping tools?**
+* novel algorithm for genome-wide genotyping of both short and expanded TRs
+* outperforms alternative methods in both accuracy and speed
+* will likely enable discovery of novel disease-associated variants not currently accessible from NGS
+
+**What types of information does GangSTR use for STR genotyping?**
+* it relies on a general statistical model incorporating multiple properties of paired-end reads into a single maximum likelihood framework capable of genotyping both normal length and expanded repeats
+* it can be applied to genotype TRs using high-coverage NGS and validate novel repeat expansions using orthogonal long read and capillary electrophoresis data
+
+(answers where taken from the paper)
