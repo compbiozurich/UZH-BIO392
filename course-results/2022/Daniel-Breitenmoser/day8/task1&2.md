@@ -22,9 +22,12 @@ Finally, PCR amplification during library preparation often introduces “stutte
 
 ### Why should you use multiple tandem repeat detection algorithms to look for repeats in biological sequence?
 
-the different algorightms create redundant or overlapping annotations, several statistical frameworks for filtering false positive annotations, 
-and importantly a tandem repeat annotation and refinement module based on circular profile hidden Markov models (cpHMMs).
-
+currently available TRDs do not provide exhaustive detections, and combining TRs from several TRDs is essential for reliable TR annotation.
+Therefore, a researcher interested in TRs needs to handle all of the following tasks: 
+- Executing and parsing results of several TRDs, despite no commonly accepted file format;
+- Validating TR predictions and clustering redundant or overlapping results;
+- Filtering out false positive TR predictions in a robust statistical framework;
+- Annotating known TRs homogenously across homologous sequences, and discerning variation among the TRs. 
 
 
 ### What different functionalities does TRAL provide?
