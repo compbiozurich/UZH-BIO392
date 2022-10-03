@@ -24,7 +24,7 @@ by 5′and 3′adapter ligation.
 
 ## Molecular-cytogenetic techniques:
 ### banding analysis
-Chromosome banding refers to alternating light and dark regions along the length of a chromosome, produced after staining with a dye. A band is defined as the part of a chromosome that is clearly distinguishable from its adjacent segments by appearing darker or lighter with the use of one or more banding techniques.
+Chromosome banding refers to alternating light and dark regions along the length of a chromosome, produced after staining with a dye. A band is defined as the part of a chromosome that is clearly distinguishable from its adjacent segments by appearing darker or lighter with the use of one or more banding techniques. The banding pattern can distinguish chromosomal abnormalities or structural rearrangements, such as translocations, deletions, insertions, and inversions.
 
 |Banding type|Staining|
 |-----|-----|
@@ -33,15 +33,5 @@ Chromosome banding refers to alternating light and dark regions along the length
 |Q-banding|Quinacrine (bands that fluoresce on exposure to UV ligh; patterns can be correlated with G-bands|
 |R-banding|Reverse Giemsa staining (Dark bands: Euchromation, Light bands: Heterochromatin)|
 |T-banding|Telomeres|
-
-
-
-### SNP, aCGH arrays
-### SKY, M-FISH
-### chromosomal CGH
-	
-  
-  ➡ notes about usage (research, clinical, historical vs. current)
-
 
 [^1]: https://thebiologynotes.com/wp-content/uploads/2022/07/Next-Generation-Sequencing-Illumina.jpg
