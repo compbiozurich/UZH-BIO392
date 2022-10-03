@@ -21,9 +21,21 @@ by 5′and 3′adapter ligation.
 4. Data Analysis
      -  During data analysis and alignment, the newly identified sequence reads are aligned to a reference genome.
 
-## count based vs. intensity based as principle
-## dig deeper for some (molecular)-cytogenetic techniques:
+
+## Molecular-cytogenetic techniques:
 ### banding analysis
+Chromosome banding refers to alternating light and dark regions along the length of a chromosome, produced after staining with a dye. A band is defined as the part of a chromosome that is clearly distinguishable from its adjacent segments by appearing darker or lighter with the use of one or more banding techniques.
+
+|Banding type|Staining|
+|-----|-----|
+|C-banding|Constitutive heterochromatin|
+|G-banding|Giemsa satin (Dark bands: Heterochromatin, Light bands: Euchromation)|
+|Q-banding|Quinacrine (bands that fluoresce on exposure to UV ligh; patterns can be correlated with G-bands|
+|R-banding|Reverse Giemsa staining (Dark bands: Euchromation, Light bands: Heterochromatin)|
+|T-banding|Telomeres|
+
+
+
 ### SNP, aCGH arrays
 ### SKY, M-FISH
 ### chromosomal CGH
