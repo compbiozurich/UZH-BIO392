@@ -13,7 +13,12 @@ In the human genome only about 1% are exons. Therefore the storage of 1000 Exome
 
 ### SAM
 SAM (Sequence Alignment Map) files are human-readable text files
-![Image](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2F1756-0381-6-13/MediaObjects/13040_2013_Article_92_Fig8_HTML.jpg?as=webp)[^1]
+
+<picture>
+	<img alt="SAM" src="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2F1756-0381-6-13/MediaObjects/13040_2013_Article_92_Fig8_HTML.jpg?as=webp" width=80% height=80%>
+</picture>
+
+[^1]
 
 ### BAM
 BAM (Binary Alignment Map) files are the binary (and compressed) equivalent to SAM
@@ -21,8 +26,11 @@ BAM (Binary Alignment Map) files are the binary (and compressed) equivalent to S
 ### VCF
 Variant Call Format
 
-![Image](https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2F1756-0381-6-13/MediaObjects/13040_2013_Article_92_Fig9_HTML.jpg?as=webp)[^1]
+<picture>
+	<img alt="VCF" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2F1756-0381-6-13/MediaObjects/13040_2013_Article_92_Fig9_HTML.jpg?as=webp" width=65% height=65%>
+</picture>
 
+[^1]
 
 ### FASTA
 The file contains a header and the unaligned sequence.
