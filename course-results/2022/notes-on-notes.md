@@ -4,7 +4,9 @@
 
 * use logical nesting - there should only be one `<h1>` (_i.e._ `# Title`) element
 * use newlines between headers and text, and around lists etc.
+* you can force line separation by adding 4xspace at the line's end - no `<br/>` necessary...
 * code blocks are nice & easy, with a triple backtick <code>```</code> before and after
+    - [edited example page](./Janne-Berger/day_05/storage.md)
 
 ## Cytogenetics, FISH, CGH ...
 
