@@ -37,18 +37,21 @@ espacially in research and clinical genetic, microbiology and onkology
 
 ### (Molecular)-cytogenetic techniques
 
-**Banding analysis** \
-used to identify chromosomal abnormalities (translocations) \
-unique pattern of light and dark bands are generated for each chromosome
-normal and abnormal chromosomes can get identified \
-for clinical and research purposes used 
+**Banding analysis**
 
-**SNP** \
-single nucleotide polymorphisms are single base mutations that are estabilhed in the genepoll of a population \ 
-if more than 1% doesn`t carry the same nucleotide at a specific position, dtermined as SNP \
-not necessarily seen in a distinct phenotype (disease) 
+* used to identify chromosomal abnormalities (translocations)
+* unique pattern of light and dark bands are generated for each chromosome
+* normal and abnormal chromosomes can get identified
+* for clinical and research purposes used 
 
-**M-FISH** \
+**SNP**
+
+* single nucleotide polymorphisms are single base mutations that are estabilhed in the genepool of a population
+* if more than 1% doesn`t carry the same nucleotide at a specific position, determined as SNP
+* not necessarily seen in a distinct phenotype (disease) 
+
+**M-FISH**
+
 Multiplex fluorescence in situ hybridization \ 
 24-color karyotyping technique \ 
 individual chromosomes are classified based on the fluor composition

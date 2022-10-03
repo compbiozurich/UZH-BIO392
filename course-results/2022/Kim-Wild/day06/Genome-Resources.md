@@ -25,7 +25,7 @@ collects phenotypic and clinical information on variants across the genome
 ClinVar (an NCBI database/resource) is used as basis for curated variant <-> disease associations in ClinGen
 
 **Progenetix** \
-largest open resource for curated cancer genome profiles \
+largest open resource for curated cancer genome CNV profiles \
 majority of data from genomic arrays with ~50% overall from SNP platforms with original data re-processing \
 
 

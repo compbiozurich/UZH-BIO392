@@ -24,6 +24,7 @@ typical bands of human X chromosome
 ### array-based comparative genomic hybridization (aCGH)
 - molecular cytogenetic technique that enables the genome-wide analysis of DNA copy numbers
 - Array CGH involves cohybridizing a test (patient) DNA sample and a control (reference) DNA sample, each differentially labeled with different colored fluorescent dyes (usually red and green, respectively), to a microarray slide containing thousands of DNA probes (oligos) that cover the entire human genome.
+
 ![Uploading Screenshot 2022-09-28 at 13.14.50.png…]()
 *DOI: 10.1186/1471-2105-10-80*
 
