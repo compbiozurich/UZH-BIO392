@@ -14,6 +14,8 @@ https://genome.ucsc.edu/
 
 ## Raw data:
 INSDC (spectrum of raw data reads, including DDBJ, EMBL-EBI and NCBI data)
+![image](https://user-images.githubusercontent.com/114056080/193547454-3cf69b88-6f2f-45ff-901f-d581860c3bea.png)
+
 GSA (first repository of the genome sequence data with international journal recognition in China)
 
 
@@ -24,6 +26,8 @@ GSA (first repository of the genome sequence data with international journal rec
 - human variations less than 50bp
 - SNPs
 -includes insertions and deletions, microsatellites, non-polymorphic variants
+![image](https://user-images.githubusercontent.com/114056080/193547663-80d97db2-542b-4674-b128-75623e75bdb5.png)
+
 ### bVar 
 -human variations greater than 50bp 
 -genomic structural variation
