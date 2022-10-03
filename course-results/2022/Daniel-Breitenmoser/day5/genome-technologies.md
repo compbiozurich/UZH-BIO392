@@ -19,7 +19,6 @@ The 4th gen technologies are nanopore systems where long DNA molecules pass thro
 
 ![image](https://user-images.githubusercontent.com/113686985/192876191-7fbb68bc-2775-4da4-8a17-bd490d76e086.png) [^3]
 
-
 ### SNP vs aCGH arrays
 
 SNP arrays and aCGH arrays both enable the detection of CNV's. But in SNP arrays, each probe is located at an SNP and can determine \
@@ -30,7 +29,6 @@ LCSH have 2 main interests:
   2. they can detect genetic identity by descent
  
 Thus, while aCGH is still very efficient at detection CNV's, the inclusion of SNP probes in arrays is desirable
-
 
 ### SKY, M-FISH
 

@@ -1,15 +1,21 @@
 # WGS 
+
 Advantages: <br>
 Coverage of all genes and also non-coding DNA  <br>
 Disadvantages:<br>
 Low acuracy, longest turnaround time, most expensive, depth 30 x<br>
+
 # WES
+
 Advantages:<br>
 At least entire exome, good acuracy, cost effective and higher depth<br>
 Disadvantages:<br>
 Still long turnaround time<br>
+
 # Different file formats
+
 ## FASTA
+
 1. Reference genome comes typically in fasta format
 2. ">" line contains the scaffold name
 3. Following lines contain the sequence (single line, 80 nt-column sized...)<br>

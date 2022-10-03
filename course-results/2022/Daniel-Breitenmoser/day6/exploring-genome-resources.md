@@ -1,4 +1,5 @@
 ### Primary deposition databases 
+
 Primary databases are highly organised, user-friendly gateways to
 the huge amount of biological data produced by researchers around the world
 
@@ -17,7 +18,7 @@ analysing primary data.
 ![derived databases](https://user-images.githubusercontent.com/113686985/193078440-d371f14b-fb02-40ce-aa0f-b6204fe949e2.JPG)
  [^2]
 
-### VICC paper (wagner et al (2020))
+### VICC paper (Wagner et al (2020))
 
 They aggregated cancer variant interpretations from six distinguished constituent knowledgebases: the Cancer Genome Interpreter Cancer Biomarkers Database (CGI), Clinical Interpretation of Variants in Cancer (CIViC), Jackson Laboratory Clinical Knowledgebase (JAX-CKB), MolecularMatch (MMatch), OncoKB and the Precision Medicine
 Knowledgebase (PMKB)
@@ -34,10 +35,6 @@ They harmonized these interpretations of the 6 databases and made them freely av
 - **Online Mendelian Inheritance in Man (OMIM)**: A database of  human genes and genetic disorders.
 - **MedGen**: A portal to information about medical genetics. MedGen includes term lists from multiple sources and organizes them into concept groupings and hierarchies.
 - **Database of Short Genetic Variations (dbSNP)**: Includes single nucleotide variations, microsatellites, and small-scale insertions and deletions. dbSNP contains population-specific frequency and genotype data, experimental conditions, molecular context, and mapping information for both neutral variations and clinical mutations.
-
-
-
-
 
 
 
