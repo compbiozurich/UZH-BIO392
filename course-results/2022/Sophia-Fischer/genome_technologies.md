@@ -55,6 +55,6 @@ Multicolor FISH (mFISH), also known as spectral karyotyping (SKY), and multiplex
 ### cCGH
   Chromosomal Comparative Genomic Hybridization is useful to analyse CNVs relative to ploidy level in the DNA, always compared to a reference gene. Widely used to compare genomes of healthy tissue to the ones of tumour tissue. 
 ![image](https://user-images.githubusercontent.com/114056080/193545257-a21c8c62-f5f3-44cf-af91-5f16806998d3.png)
-
-When the techniques are compared to each other, cCGH has an improved resolution over traditional G-banding and FISH. \
+An important advantage of CGH is that it does not require live samples \
+FISH provides very high resolution, better than most arrays. \
 Of particular interest to the application of SKY and M-FISH is its usefulness in cross-species banding.
