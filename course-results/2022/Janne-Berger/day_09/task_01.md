@@ -11,5 +11,5 @@
 - Covers vocabulary for clinical care, translational and basic research, and public information and administrative activities
 # Kaplan-Meier plot
 - Example: <br>
-- ![This is an image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.medcalc.org%2Fmanual%2Fkaplan-meier.php&psig=AOvVaw1lA_ixFpRDzInQmSeVpxfh&ust=1664972612011000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCJDvlr7IxvoCFQAAAAAdAAAAABAW)
+- ![This is an image](https://www.medcalc.org/manual/images/kaplan-meier-curves.png)
 # TNM codes &  some "translations"
