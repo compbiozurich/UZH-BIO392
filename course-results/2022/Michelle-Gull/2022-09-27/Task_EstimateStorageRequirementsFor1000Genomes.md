@@ -3,7 +3,7 @@
 
 ## WES & WGS
 The size of a perfect genome is about 715 MB according to the slides of the course.<br>
-WGS Estimation: 1'000 whole genomes are 1'000 * 715 MB = 715 GB
+WGS Estimation: 1'000 whole genomes are 1'000 * 715 MB = 715 GB<br>
 Cost to store 1 GB -> 0.5 CHF<br>
 
 ## Different file formats
