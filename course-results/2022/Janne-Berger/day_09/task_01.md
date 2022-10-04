@@ -21,3 +21,5 @@
 - **N** refers to the the number / location of nearby lymph nodes that have cancer infiltration
 - **M** refers to whether the cancer has metastasized
 - <img width="1227" alt="Screenshot 2022-10-04 at 14 37 23" src="https://user-images.githubusercontent.com/113997444/193821105-55d11da9-7b01-4bde-bbd5-472a93d5c939.png">
+- Examples:
+  - T2N1M0: Tumor is greater than 3 cm, Tumor has spread to nearby nodes on the same side of the body, No metastases are present
