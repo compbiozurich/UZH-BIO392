@@ -8,8 +8,8 @@
 - Widely used by cancer registries
 - currently in its third revision <br>
 <img width="877" alt="Screenshot 2022-10-04 at 14 29 49" src="https://user-images.githubusercontent.com/113997444/193819862-b34f6e23-6a48-46e3-9ff7-a9100ef850e8.png">
-## NCIt 
 
+## NCIt 
 - NCI Thesaurus (NCIt) provides reference terminology for many NCI and other systems
 - Covers vocabulary for clinical care, translational and basic research, and public information and administrative activities <br>
 <img width="1060" alt="Screenshot 2022-10-04 at 14 32 12" src="https://user-images.githubusercontent.com/113997444/193820209-a1fbf049-4456-4ac3-b639-1fe2a9b4a86e.png">
