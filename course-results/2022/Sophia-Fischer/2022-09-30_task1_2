@@ -1,0 +1,25 @@
+Why is STR variation relevant to health and disease? \
+STR expansions have been implicated in dozens of dis-orders The majority of repeat disorders identified so far follow
+autosomal dominant inheritance patterns that were readily identified using linkage analysis in pedigrees
+
+What are some of the challenges in analysing STRs from NGS data? \
+a) PCR amplification introduces “stutter” errors in the number of repeats. \
+(b) Local sequence alignment is challengiang at complex repeats. \
+(c) Long repeats cannot be spanned by short reads. \
+
+What different functionalities does TRAL provide? \
+
+- Annotate with sequence profile models 
+- Annotate with de novo tandem repeat detectors
+- Identify and filter overlapping annotations
+- Test and filter for statistical significance
+- Retrieve tandem repeat characteristics
+
+
+
+What sets GangSTR apart from other STR genotyping tools? \
+genome-wide genotyping of STRs and expanded TRs, enables discovery of novel disease-associated variants, angSTR relies on a general statistical model incorporating multiple prop- erties of paired-end reads into a single maximum like- lihood framework capable of genotyping both normal length and expanded repeats. 
+GangSTR is faster and more accurate than existing solutions at the time of paper written.
+What types of information does GangSTR use for STR genotyping? \
+GangSTR incorporates reads on repeat-enclosing reads, fragment length, coverage and targeted genotyping of expanded STRs into a single joint likelihood framework.
+GangSTR has many features for genotyping such as enclosing, FRR, Spanning, Off-target FRR, estimates, genome-wide and is not limited by fragment or read-length!
