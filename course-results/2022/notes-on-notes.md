@@ -11,6 +11,8 @@
 * code blocks are nice & easy, with a triple backtick <code>```</code> before and after
     - [edited example page](./Janne-Berger/day_05/storage.md)
 * always use ISO8601 `YYYY-MM-DD` format for ... anything (e.g. fila name starts)
+    - don't use 11.09.01 => 9/11? 1901-09-11? 2001-11-09?
+    - sorts logically as text!
     - see [schemablocks.org](https://schemablocks.org/standards-recommendations/#dates-times)
 
 ## Cytogenetics, FISH, CGH ...
