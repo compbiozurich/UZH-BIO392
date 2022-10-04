@@ -15,7 +15,7 @@
 - Example: <br>
 - ![This is an image](https://www.medcalc.org/manual/images/kaplan-meier-curves.png)
 # TNM codes &  some "translations"
-- Classification for Clinical Cancer Stage Parameters
+- Classification for Clinical Cancer Stage Parameters <br>
 - most widely used cancer staging system
 - **T** refers to the size and extent of the main tumor
 - **N** refers to the the number / location of nearby lymph nodes that have cancer infiltration
