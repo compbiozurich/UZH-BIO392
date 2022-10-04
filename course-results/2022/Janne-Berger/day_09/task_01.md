@@ -16,8 +16,8 @@
 
 # Kaplan-Meier plot
 - Example: <br>
-- ![This is an image](https://www.medcalc.org/manual/images/kaplan-meier-curves.png) <br>
-- 
+![This is an image](https://www.medcalc.org/manual/images/kaplan-meier-curves.png) <br>
+
 # TNM codes &  some "translations"
 - Classification for Clinical Cancer Stage Parameters <br>
 - most widely used cancer staging system
