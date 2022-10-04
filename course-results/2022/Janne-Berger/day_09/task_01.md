@@ -10,8 +10,10 @@
 ## NCIt
 - NCI Thesaurus (NCIt) provides reference terminology for many NCI and other systems
 - Covers vocabulary for clinical care, translational and basic research, and public information and administrative activities
+- <img width="1060" alt="Screenshot 2022-10-04 at 14 32 12" src="https://user-images.githubusercontent.com/113997444/193820209-a1fbf049-4456-4ac3-b639-1fe2a9b4a86e.png">
 # Kaplan-Meier plot
 - Example: <br>
 - ![This is an image](https://www.medcalc.org/manual/images/kaplan-meier-curves.png)
 # TNM codes &  some "translations"
+
 
