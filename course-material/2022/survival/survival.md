@@ -18,6 +18,8 @@
 **Plots**
 * Kaplan-Meier
 * Duplication/deletion per gene & tumor type
+* CNV distribution in different tumor types (violinplot)
+* Your ideas ...
 
 **Presentation**
 * Introduction slides - prognosis, background, genotypes
