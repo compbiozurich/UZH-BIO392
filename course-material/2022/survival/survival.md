@@ -28,3 +28,22 @@
 * Include summary/conclusions
 * Push slides with tumor group as a title to github course_results/2022/survival
 * List authors on title slide
+
+### Schedule
+
+**Day 1** 
+* Introduction
+* Division into groups
+* Familiarizing with datasets
+
+**Day 2**
+* Work
+* Work
+* Work
+
+**Day 3**
+
+* Finishing touches
+* Presenting
+
+
