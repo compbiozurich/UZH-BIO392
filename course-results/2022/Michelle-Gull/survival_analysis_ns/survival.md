@@ -5,7 +5,7 @@
 3) MYC+
 4) CDKN2A-
     
-** Malignancie assigned to Lena & Michelle: ** NCIT:C3268 Nervous system neoplasm
+**Malignancie assigned to Lena & Michelle:** NCIT:C3268 Nervous system neoplasm
 
 **Plots**
 * Kaplan-Meier
