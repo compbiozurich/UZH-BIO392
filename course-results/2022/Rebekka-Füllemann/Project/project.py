@@ -25,7 +25,7 @@ for i in range(len(genes)):
 			droplist.append(k)
 
 	data_dict[genes[i]] = merged_data.drop(droplist)
-	print(droplist)
+
 
 #print(data_dict["TP53"])
 #data_dict["TP53"].to_csv("TP53merged.csv")
@@ -41,11 +41,17 @@ for i in range(len(genes)):
 # historicalDiagnosis.id -> NCIt
 # sex
 
-data_dict["TP53"].insert(0, "test", 1)
+##### F=1 M=0
+
+#data_dict["TP53"].insert(0, "test", 1)
+
+#print(pd.get_dummies(data_dict["TP53"]["sex"])["F"])
+
+data_dict["TP53"]["sex_value"]= pd.get_dummies(data_dict["TP53"]["sex"])["F"]
 
 time = data_dict["TP53"]["info.followupMonths"]
 event = data_dict["TP53"]["info.death"]
-group = data_dict["TP53"]["test"]
+group = data_dict["TP53"]["sex_value"]
 results = km.fit(time, event, group)
 # Plot
 km.plot(results)
