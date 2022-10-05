@@ -56,6 +56,7 @@ fig.suptitle("Plotting Examples")
 plt.tight_layout()
 plt.show()
 
+NCIT = sarcomanum['histologicalDiagnosis.label'].unique()
 i=0
 while i < len(NCIT):
     group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT[i])
