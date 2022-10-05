@@ -4,21 +4,13 @@ import kaplanmeier as km
 import matplotlib.pyplot as plt
 
 
-######### matching ids #################### 
+######### matching ids ####################
 # read the sample datasets
 dataset = pd.read_csv("dataset.csv")
 group_info = pd.read_csv("group_info.csv")
 
 # match columns "sample_id" in dataset and columns "id" in group_info
-# dataset = pd.merge(dataset, group_info, left_on = "sample_id", right_on = "id")
-group_1 = group_info["group"]
-group_2 = []
-for sind, sid in enumerate(dataset["sample_id"]):
-    for ind, id in enumerate(group_info["id"]):
-        if sid == id:
-            group_2.append(group_1[ind])
-            continue
-dataset["group"] = group_2
+dataset = pd.merge(dataset, group_info, left_on = "sample_id", right_on = "id")
 
 ######### KM plot ########################
 # Compute Survival
@@ -63,4 +55,3 @@ ax[1, 1].set_title("violinplot_2")
 fig.suptitle("Plotting Examples")
 plt.tight_layout()
 plt.show()
-
