@@ -16,8 +16,8 @@ dataset = pd.merge(dataset, group_info, left_on = "sample_id", right_on = "id")
 # Compute Survival
 time = dataset["Time"]
 event = dataset["Censoring"]
-group = dataset["group"]
-results = km.fit(time, event, group)
+results = km.fit(time, event,'x')
+result = km.fit(time, ev)
 # Plot
 km.plot(results)
 plt.show()
@@ -54,4 +54,16 @@ ax[1, 1].set_title("violinplot_2")
 
 fig.suptitle("Plotting Examples")
 plt.tight_layout()
+plt.show()
+
+i=0
+while i < len(NCIT):
+    group = sarcomanum.groupby("histologicalDiagnosis.label").get_group(NCIT[i])
+    kmf = KaplanMeierFitter()
+    durations = group['info.cnvstatistics.cnvcoverage']
+    event_observed = group['info.death']
+    kmf.fit(durations, event_observed, label=NCIT[i])
+    kmf.plot(ci_show=False)
+    i=i+1
+
 plt.show()
