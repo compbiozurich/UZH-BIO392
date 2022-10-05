@@ -7,7 +7,7 @@ The ```fastq``` files are compressed to ```.gz``` files and this script is to un
 
 ---
 
-### 02_bowtie2_index.sh
+### 02_bowtie2_index.sh
 
 Before we can align the reads to the reference with bowtie2 we need to build bowtie2 indices for reference sequence. This is done with the command ```bowtie2-build```.
 
