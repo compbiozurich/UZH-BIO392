@@ -19,7 +19,9 @@
     * samtools view -bf 0x2 /APC_wt.bam  > APC_wtt.bam 
 * Go through the ‘check_GangSTR_output.ipynb’ notebook. Make sure to upload the notebook to the github repo once you’re done!
 * Were you able to solve/improve the outcome?    
-    * Yes.          
+    * Yes.   
+    <img width="538" alt="Screen Shot 2022-10-05 at 11 08 54" src="https://user-images.githubusercontent.com/114056296/194024218-46ca4d3d-f9dc-41d5-a590-879f2bc17661.png"> 
+       
 * Is bowtie2 a good aligner to use for genotyping STRs?
     * Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences. 
     * It is particularly good at aligning short reads to relatively long genomes. 
