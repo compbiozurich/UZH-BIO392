@@ -33,7 +33,7 @@
 `05_run_gangstr.sh`
 * tasks performed:
   * We run the GangSTR STR genotyping tool on both our alignments (wildtype and  mutated)
-* used tools: `GangSTR`, 
+* used tools: `GangSTR`
 * used file formats: `.bam`, `.fa`, `.tsv`
 
 ## Task 2
