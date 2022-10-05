@@ -17,7 +17,7 @@
 
 **Plots**
 * Kaplan-Meier
-* Duplication/deletion per gene & tumor type
+* Duplication/deletion of gene per tumor type
 * CNV distribution in different tumor types (violinplot)
 * Your ideas ...
 
