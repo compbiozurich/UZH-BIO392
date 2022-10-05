@@ -89,3 +89,54 @@ GangSTR --bam ../data/alignments/wildtype/APC_wt.bam \
 --out ../results/wildtype/wildtype
 
 ```
+
+## fixed_bam_run_gangstr.sh
+There are problematic alignments in the BAM files. This is fixed in the fixed_bam_run_gangstr.sh using samtools.
+
+``` samtools flagstats ../data/alignments/wildtype/APC_wt.bam``` shows that for the wildtype 50.05% are propperly paired and.   
+```samtools flagstats ../data/alignments/mutated/APC_mut.bam``` shows that for the mutant only 49.97% are propperly paired.
+
+```samtools flags```reveals that the flag for propper pairing is ```0x2``` 
+
+generate the proper paired bam files:
+
+```
+samtools view -b -f 0x2 ../data/alignments/wildtype/APC_wt.bam > ../data/alignments/wildtype/pp_APC_wt.bam
+samtools view -b -f 0x2 ../data/alignments/mutated/APC_mut.bam > ../data/alignments/mutated/pp_APC_mut.bam
+```
+
+and check if they are propperly paired:
+
+```
+samtools flagstats ../data/alignments/wildtype/pp_APC_wt.bam
+samtools flagstats ../data/alignments/mutated/pp_APC_mut.bam
+```
+now both files are 100.0% propperly paired.
+
+
+the fixed_bam_run_gangstr.sh script does generate the propperly paired bam files and then runs gangstr:
+```
+#!/bin/env/bash
+set -euo pipefail
+
+# generate propperly paired bam files
+samtools view -b -f 0x2 ../data/alignments/wildtype/APC_wt.bam > ../data/alignments/wildtype/pp_APC_wt.bam
+samtools index ../data/alignments/wildtype/pp_APC_wt.bam
+samtools view -b -f 0x2 ../data/alignments/mutated/APC_mut.bam > ../data/alignments/mutated/pp_APC_mut.bam
+samtools index ../data/alignments/mutated/pp_APC_mut.bam
+
+# We run the GangSTR STR genotyping tool on both our alignments (wildtype and  mutated)
+# GangSTR also needs the reference genome and a tab-separated file indicating where STR loci are located
+# in the reference genome.
+
+GangSTR --bam ../data/alignments/mutated/pp_APC_mut.bam \
+--ref ../data/reference/APC.fa \
+--regions ../data/repeats/APC_repeats.tsv \
+--out ../results/mutated/mutated
+
+GangSTR --bam ../data/alignments/wildtype/pp_APC_wt.bam \
+--ref ../data/reference/APC.fa \
+--regions ../data/repeats/APC_repeats.tsv \
+--out ../results/wildtype/wildtype
+
+```
