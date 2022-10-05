@@ -1,5 +1,5 @@
 # Scripts Overview
-* 01_unzip_reads.sh
+## 01_unzip_reads.sh
   - unzips all fastq files in ../data/reads/wildtype and ../data/reads/mutated.
 ```
 #!/bin/env/bash
@@ -10,7 +10,7 @@ gunzip ../data/reads/wildtype/*.fq.gz
 gunzip ../data/reads/mutated/*.fq.gz
 
 ```
-* 02_bowtie2_index.sh
+## 02_bowtie2_index.sh
   - builds bowtie2 indices for reference sequence.   
 (preparation for alignment)
 ```
@@ -24,7 +24,7 @@ bowtie2-build \
 ../data/reference/APC_idx
 ```
 
-* 03_alignment_bowtie2.sh	
+## 03_alignment_bowtie2.sh	
   - performs the alignment for the mutated reads against the reference sequence
  ```
  #!/bin/env/bash
@@ -52,7 +52,7 @@ mv tmp.sam ../data/alignments/mutated/APC_mut.sam
 
  ```
 
-* 04_process_alignment.sh	
+## 04_process_alignment.sh	
   - converts sam file to bam file
  ```
  #!/bin/env/bash
@@ -68,7 +68,7 @@ samtools view -b ../data/alignments/mutated/APC_mut.sam | samtools sort > ../dat
 samtools index ../data/alignments/mutated/APC_mut.bam
 ```
 
-* 05_run_gangstr.sh
+## 05_run_gangstr.sh
   - runs gangstr
 
 ```
