@@ -53,19 +53,18 @@ temp_storage = {
         "death": [],
         "follow_up": [],
         "CDKN2A": [],
-        "ERB2": [],
-        "myc": [],
+        "ERBB2": [],
+        "MYC": [],
         "TP53": [],
+        "other": [],
         "histologicalDiagnosis": [],
         "histologicalDiagnosisLabel": [],
-        "sex": []
         }
 
 for index in range(len(uro_df["individualId"])):
     temp_storage["ids"].append(uro_df["individualId"][index])
     temp_storage["death"].append(uro_df["info.death"][index])
     temp_storage["follow_up"].append(uro_df["info.followupMonths"][index])
-    temp_storage["sex"].append(uro_df["sex"][index])
     temp_storage["histologicalDiagnosis"].append(uro_df["histologicalDiagnosis.id"][index])
     temp_storage["histologicalDiagnosisLabel"].append(uro_df["histologicalDiagnosis.label"][index])
 
@@ -75,19 +74,24 @@ for index in range(len(uro_df["individualId"])):
         temp_storage["CDKN2A"].append(0)
 
     if uro_df["individualId"][index] in compare_ERB2:
-        temp_storage["ERB2"].append(1)
+        temp_storage["ERBB2"].append(1)
     else:
-        temp_storage["ERB2"].append(0)
+        temp_storage["ERBB2"].append(0)
 
     if uro_df["individualId"][index] in compare_myc:
-        temp_storage["myc"].append(1)
+        temp_storage["MYC"].append(1)
     else:
-        temp_storage["myc"].append(0)
+        temp_storage["MYC"].append(0)
 
     if uro_df["individualId"][index] in compare_TP53:
         temp_storage["TP53"].append(1)
     else:
         temp_storage["TP53"].append(0)
+
+    if uro_df["individualId"][index] not in compare_TP53 and uro_df["individualId"][index] not in compare_myc and uro_df["individualId"][index] not in compare_ERB2 and uro_df["individualId"][index] not in compare_CDKN2A:
+        temp_storage["other"].append(1)
+    else:
+        temp_storage["other"].append(0)
 
 final_data = pd.DataFrame.from_dict(temp_storage)
 final_data.to_csv('../uro_data/uro_final.csv', index=False)

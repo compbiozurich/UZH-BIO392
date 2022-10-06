@@ -23,7 +23,7 @@ for i in range(len(genes)):
 		if np.isnan(j):
 			droplist.append(k)
 	
-	merged_data.insert(0, "geneNR", i+1)
+	merged_data.insert(0, "gene", genes[i])
 	data_dict[genes[i]] = merged_data.drop(droplist)
 
 data_dict["all"]=pd.concat([data_dict["ERBB2"],data_dict["TP53"],data_dict["MYC"],data_dict["CDKN2A"]])
@@ -33,9 +33,35 @@ data_dict["all"]=pd.concat([data_dict["ERBB2"],data_dict["TP53"],data_dict["MYC"
 
 time = data_dict["all"]["info.followupMonths"]
 event = data_dict["all"]["info.death"]
-group = data_dict["all"]["geneNR"]
+group = data_dict["all"]["gene"]
 results = km.fit(time, event, group)
 
 # Plot
-km.plot(results)
+km.plot(results, title="Genes in Comparison")
+plt.show()
+
+
+#### grouped by NCIt (per gene) ####
+
+for gene in genes: 
+	
+	time = data_dict[gene]["info.followupMonths"]
+	event = data_dict[gene]["info.death"]
+	group = data_dict[gene]["histological_diagnosis_id"]
+	results = km.fit(time, event, group)
+
+	# Plot
+	km.plot(results, title=gene)
+	plt.show()
+
+
+#### grouped by NCIt (all genes) ####
+
+time = data_dict["all"]["info.followupMonths"]
+event = data_dict["all"]["info.death"]
+group = data_dict["all"]["histological_diagnosis_id"]
+results = km.fit(time, event, group)
+
+# Plot
+km.plot(results, title="all genes NCIt Comparison")
 plt.show()
