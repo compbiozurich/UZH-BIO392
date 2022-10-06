@@ -39,7 +39,7 @@ for gene in genes:
 	kmf.fit(time, event, label=gene)
 	
 	
-	ax = kmf.plot(ci_show=False)
+	ax = kmf.plot(ci_show=False, show_censors=True)
 
 ax.set(xlabel="Follow Up (Months)", ylabel="Survival", title="Genes in Comparison")
 plt.show()
@@ -59,7 +59,7 @@ for gene in genes:
 		time = group["info.followupMonths"]
 		event = group["info.death"]
 		results = kmf.fit(time, event, label=types[i])
-		ax=kmf.plot(ci_show=False) #title=gene
+		ax=kmf.plot(ci_show=False, show_censors=True)
 
 
 	ax.set(xlabel="Follow Up (Months)", ylabel="Survival", title=gene)
@@ -78,7 +78,7 @@ for i in range(len(NCIT)):
 	event = group["info.death"]
 
 	results = kmf.fit(time, event, label=NCIT[i])
-	ax=kmf.plot(ci_show=False) #title="all genes NCIt Comparison"
+	ax=kmf.plot(ci_show=False, show_censors=True)
 
 
 ax.set(xlabel="Follow Up (Months)", ylabel="Survival", title="all genes NCIt Comparison")
