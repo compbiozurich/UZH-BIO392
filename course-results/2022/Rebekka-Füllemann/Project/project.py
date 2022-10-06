@@ -37,5 +37,27 @@ group = data_dict["all"]["geneNR"]
 results = km.fit(time, event, group)
 
 # Plot
-km.plot(results)
+km.plot(results, title="Genes in Comparison")
 plt.show()
+
+
+#### grouped by NCIt ####
+
+for gene in genes: 
+	
+	data_dict[gene].insert(1,"type.id",0)
+
+	types=pd.get_dummies(data_dict[gene]["histological_diagnosis_id"])
+	
+	for i,t in enumerate(types.columns):
+		data_dict[gene]["type.id"] = data_dict[gene]["type.id"] + types[t]*(i+1)
+
+
+	time = data_dict[gene]["info.followupMonths"]
+	event = data_dict[gene]["info.death"]
+	group = data_dict[gene]["type.id"]
+	results = km.fit(time, event, group)
+
+	# Plot
+	km.plot(results, title=gene)
+	plt.show()
