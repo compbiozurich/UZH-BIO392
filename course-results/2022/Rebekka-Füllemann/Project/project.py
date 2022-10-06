@@ -2,9 +2,13 @@ import pandas as pd
 import numpy as np
 import kaplanmeier as km
 import matplotlib.pyplot as plt
+from lifelines import KaplanMeierFitter
 
+
+kmf = KaplanMeierFitter()
 
 genes = ["ERBB2", "TP53", "MYC", "CDKN2A"]
+NCIT = ['NCIT:C3493', 'NCIT:C3512', 'NCIT:C4038', 'NCIT:C4450', 'NCIT:C4917','NCIT:C5672', 'NCIT:C9133']
 data_dict = {}
 
 
@@ -29,39 +33,53 @@ for i in range(len(genes)):
 data_dict["all"]=pd.concat([data_dict["ERBB2"],data_dict["TP53"],data_dict["MYC"],data_dict["CDKN2A"]])
 
 
-#data_dict["TP53"]["sex_value"]= pd.get_dummies(data_dict["TP53"]["sex"])["F"]
+for gene in genes:
+	time = data_dict[gene]["info.followupMonths"]
+	event=data_dict[gene]["info.death"]
+	kmf.fit(time, event, label=gene)
+	
+	
+	ax = kmf.plot(ci_show=False)
 
-time = data_dict["all"]["info.followupMonths"]
-event = data_dict["all"]["info.death"]
-group = data_dict["all"]["gene"]
-results = km.fit(time, event, group)
-
-# Plot
-km.plot(results, title="Genes in Comparison")
+ax.set(xlabel="Follow Up (Months)", ylabel="Survival", title="Genes in Comparison")
 plt.show()
+
+
 
 
 #### grouped by NCIt (per gene) ####
 
 for gene in genes: 
-	
-	time = data_dict[gene]["info.followupMonths"]
-	event = data_dict[gene]["info.death"]
-	group = data_dict[gene]["histological_diagnosis_id"]
-	results = km.fit(time, event, group)
 
-	# Plot
-	km.plot(results, title=gene)
+	types = pd.get_dummies(data_dict[gene]["histological_diagnosis_id"]).columns
+	
+	for i in range(len(types)):
+		group = data_dict[gene].groupby("histological_diagnosis_id").get_group(types[i])
+
+		time = group["info.followupMonths"]
+		event = group["info.death"]
+		results = kmf.fit(time, event, label=types[i])
+		ax=kmf.plot(ci_show=False) #title=gene
+
+
+	ax.set(xlabel="Follow Up (Months)", ylabel="Survival", title=gene)
 	plt.show()
+
+
 
 
 #### grouped by NCIt (all genes) ####
 
-time = data_dict["all"]["info.followupMonths"]
-event = data_dict["all"]["info.death"]
-group = data_dict["all"]["histological_diagnosis_id"]
-results = km.fit(time, event, group)
 
-# Plot
-km.plot(results, title="all genes NCIt Comparison")
+for i in range(len(NCIT)):
+	group = data_dict["all"].groupby("histological_diagnosis_id").get_group(NCIT[i])
+
+	time = group["info.followupMonths"]
+	event = group["info.death"]
+
+	results = kmf.fit(time, event, label=NCIT[i])
+	ax=kmf.plot(ci_show=False) #title="all genes NCIt Comparison"
+
+
+ax.set(xlabel="Follow Up (Months)", ylabel="Survival", title="all genes NCIt Comparison")
 plt.show()
