@@ -23,7 +23,7 @@ for i in range(len(genes)):
 		if np.isnan(j):
 			droplist.append(k)
 	
-	merged_data.insert(0, "geneNR", i+1)
+	merged_data.insert(0, "gene", genes[i])
 	data_dict[genes[i]] = merged_data.drop(droplist)
 
 data_dict["all"]=pd.concat([data_dict["ERBB2"],data_dict["TP53"],data_dict["MYC"],data_dict["CDKN2A"]])
@@ -33,7 +33,7 @@ data_dict["all"]=pd.concat([data_dict["ERBB2"],data_dict["TP53"],data_dict["MYC"
 
 time = data_dict["all"]["info.followupMonths"]
 event = data_dict["all"]["info.death"]
-group = data_dict["all"]["geneNR"]
+group = data_dict["all"]["gene"]
 results = km.fit(time, event, group)
 
 # Plot
@@ -41,7 +41,7 @@ km.plot(results, title="Genes in Comparison")
 plt.show()
 
 
-#### grouped by NCIt ####
+#### grouped by NCIt (per gene) ####
 
 for gene in genes: 
 	
@@ -61,3 +61,39 @@ for gene in genes:
 	# Plot
 	km.plot(results, title=gene)
 	plt.show()
+
+
+#### grouped by NCIt (all genes) ####
+
+data_dict["all"].insert(1,"type.id",0)
+
+types=pd.get_dummies(data_dict["all"]["histological_diagnosis_id"])
+	
+for i,t in enumerate(types.columns):
+	data_dict["all"]["type.id"] = data_dict["all"]["type.id"] + types[t]*(i+1)
+
+print(types.columns)
+
+
+time = data_dict["all"]["info.followupMonths"]
+event = data_dict["all"]["info.death"]
+group = data_dict["all"]["type.id"]
+results = km.fit(time, event, group)
+
+# Plot
+km.plot(results, title="NCIt Comparison")
+plt.show()
+
+
+
+#### data_dict[xyz]
+
+# biosample_id
+
+# info.followupMonths
+# info.death
+
+# historicalDiagnosis.id -> NCIt
+# sex
+
+##### F=1 M=0
