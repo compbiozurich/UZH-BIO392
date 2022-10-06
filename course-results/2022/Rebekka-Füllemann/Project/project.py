@@ -9,6 +9,7 @@ kmf = KaplanMeierFitter()
 
 genes = ["ERBB2", "TP53", "MYC", "CDKN2A"]
 NCIT = ['NCIT:C3493', 'NCIT:C3512', 'NCIT:C4038', 'NCIT:C4450', 'NCIT:C4917','NCIT:C5672', 'NCIT:C9133']
+colorlist = ['tab:blue', 'tab:orange', 'tab:green', 'tab:red','tab:purple', 'tab:brown', 'tab:pink']
 data_dict = {}
 
 
@@ -53,13 +54,19 @@ for gene in genes:
 
 	types = pd.get_dummies(data_dict[gene]["histological_diagnosis_id"]).columns
 	
+	j=0
 	for i in range(len(types)):
 		group = data_dict[gene].groupby("histological_diagnosis_id").get_group(types[i])
+		
+		while types[i] != NCIT[j]:
+			j+=1		
 
 		time = group["info.followupMonths"]
 		event = group["info.death"]
 		results = kmf.fit(time, event, label=types[i])
-		ax=kmf.plot(ci_show=False, show_censors=True)
+		ax=kmf.plot(ci_show=False, show_censors=True, color=colorlist[j])
+		j+=1
+
 
 
 	ax.set(xlabel="Follow Up (Months)", ylabel="Survival", title=gene)
