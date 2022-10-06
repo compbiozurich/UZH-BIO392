@@ -3,6 +3,7 @@ import numpy as np
 import kaplanmeier as km
 import matplotlib.pyplot as plt
 from lifelines import KaplanMeierFitter
+import seaborn as sns
 
 ######### matching ids ####################
 # read the sample datasets
