@@ -8,6 +8,7 @@ genes = ["ERBB2", "TP53", "MYC", "CDKN2A"]
 data_dict = {}
 
 
+
 for i in range(len(genes)):
 
 	droplist= []
@@ -22,20 +23,37 @@ for i in range(len(genes)):
 	for k,j in enumerate(merged_data["info.followupMonths"]):
 		if np.isnan(j):
 			droplist.append(k)
-	
-	merged_data.insert(0, "geneNR", i+1)
+
 	data_dict[genes[i]] = merged_data.drop(droplist)
 
-data_dict["all"]=pd.concat([data_dict["ERBB2"],data_dict["TP53"],data_dict["MYC"],data_dict["CDKN2A"]])
+
+#print(data_dict["TP53"])
+#data_dict["TP53"].to_csv("TP53merged.csv")
 
 
-#data_dict["TP53"]["sex_value"]= pd.get_dummies(data_dict["TP53"]["sex"])["F"]
+#### data_dict[xyz]
 
-time = data_dict["all"]["info.followupMonths"]
-event = data_dict["all"]["info.death"]
-group = data_dict["all"]["geneNR"]
+# biosample_id
+
+# info.followupMonths
+# info.death
+
+# historicalDiagnosis.id -> NCIt
+# sex
+
+##### F=1 M=0
+
+#data_dict["TP53"].insert(0, "test", 1)
+
+#print(pd.get_dummies(data_dict["TP53"]["sex"])["F"])
+
+data_dict["TP53"]["sex_value"]= pd.get_dummies(data_dict["TP53"]["sex"])["F"]
+
+time = data_dict["TP53"]["info.followupMonths"]
+event = data_dict["TP53"]["info.death"]
+group = data_dict["TP53"]["sex_value"]
 results = km.fit(time, event, group)
-
 # Plot
 km.plot(results)
 plt.show()
+
