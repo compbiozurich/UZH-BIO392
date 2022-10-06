@@ -45,17 +45,9 @@ plt.show()
 
 for gene in genes: 
 	
-	data_dict[gene].insert(1,"type.id",0)
-
-	types=pd.get_dummies(data_dict[gene]["histological_diagnosis_id"])
-	
-	for i,t in enumerate(types.columns):
-		data_dict[gene]["type.id"] = data_dict[gene]["type.id"] + types[t]*(i+1)
-
-
 	time = data_dict[gene]["info.followupMonths"]
 	event = data_dict[gene]["info.death"]
-	group = data_dict[gene]["type.id"]
+	group = data_dict[gene]["histological_diagnosis_id"]
 	results = km.fit(time, event, group)
 
 	# Plot
@@ -65,35 +57,11 @@ for gene in genes:
 
 #### grouped by NCIt (all genes) ####
 
-data_dict["all"].insert(1,"type.id",0)
-
-types=pd.get_dummies(data_dict["all"]["histological_diagnosis_id"])
-	
-for i,t in enumerate(types.columns):
-	data_dict["all"]["type.id"] = data_dict["all"]["type.id"] + types[t]*(i+1)
-
-print(types.columns)
-
-
 time = data_dict["all"]["info.followupMonths"]
 event = data_dict["all"]["info.death"]
-group = data_dict["all"]["type.id"]
+group = data_dict["all"]["histological_diagnosis_id"]
 results = km.fit(time, event, group)
 
 # Plot
-km.plot(results, title="NCIt Comparison")
+km.plot(results, title="all genes NCIt Comparison")
 plt.show()
-
-
-
-#### data_dict[xyz]
-
-# biosample_id
-
-# info.followupMonths
-# info.death
-
-# historicalDiagnosis.id -> NCIt
-# sex
-
-##### F=1 M=0
