@@ -3,10 +3,6 @@ import numpy as np
 import kaplanmeier as km
 import matplotlib.pyplot as plt
 
-
-######### matching ids ####################
-# read the sample datasets
-
 # gene data
 tp_53_group_info = pd.read_csv("biosample-tp53.tsv", sep="\t")
 cdkn2a_group_info = pd.read_csv("biosample-CDKN2A.tsv", sep="\t")
@@ -20,32 +16,34 @@ dataset = pd.read_csv("lymphoma.csv")
 # => filter for rows where "biosample_id" matches the "id"
 tp53_dataset = pd.merge(dataset, tp_53_group_info, left_on = "id", right_on = "biosample_id")
 tp53_dataset["group"] = "tp53"
-#print(tp53_dataset)
 
 cdkn2a_dataset = pd.merge(dataset, cdkn2a_group_info, left_on = "id", right_on = "biosample_id")
 cdkn2a_dataset["group"] = "cdkn2a"
-#print(cdkn2a_dataset)
 
 myc_dataset = pd.merge(dataset, myc_group_info, left_on = "id", right_on = "biosample_id")
 myc_dataset["group"] = "myc"
-#print(myc_dataset)
+
 
 erbb2_dataset = pd.merge(dataset, erbb2_group_info, left_on = "id", right_on = "biosample_id")
 erbb2_dataset["group"] = "erbb2"
-#print(erbb2_dataset)
 
 whole_dataset = pd.concat([tp53_dataset, cdkn2a_dataset, myc_dataset, erbb2_dataset])
 #print(whole_dataset.shape)
 
-whole_dataset = whole_dataset[['info.followupMonths', 'info.death', 'group', 'histologicalDiagnosis.id', 'info.cnvstatistics.cnvfraction', 'sex']]
+# select features of interest:
+whole_dataset = whole_dataset[['info.followupMonths', 'info.death', 'group', 'histologicalDiagnosis.id',
+                                'info.cnvstatistics.cnvfraction', 'sex', 'pathologicalStage.label',
+                                'info.cnvstatistics.dupfraction',
+                                'info.cnvstatistics.delfraction']]
 
+# remove NaN:
 whole_dataset = whole_dataset.dropna()
-print("dataset information")
-#print("nr samples:", whole_dataset.shape[0])
-#print("nr features:", whole_dataset.shape[1])
+
+# get info about the dataset:
 whole_dataset.info()
 
-######### KM plot ########################
+######### KM plots ##############################################################
+
 # Compute Survival based on gene
 time = whole_dataset["info.followupMonths"]  # how much time has passed since the sample was collected
 event = whole_dataset["info.death"]
@@ -54,6 +52,8 @@ results = km.fit(time, event, group)
 # Plot
 km.plot(results)
 plt.show()
+
+################################################################################
 
 # Compute Survival based on sex
 time = whole_dataset["info.followupMonths"]  # how much time has passed since the sample was collected
@@ -64,10 +64,9 @@ results_2 = km.fit(time, event, sex)
 km.plot(results_2)
 plt.show()
 
+################################################################################
 
-######### more plots ####################
-
-# frequencies of CNVs for each gene of interest
+# Frequencies of CNVs samples for each gene of interest
 import seaborn as sns
 plt.figure(figsize=(8,5))
 sns.countplot(x='group', data=whole_dataset, palette='rainbow')
@@ -76,62 +75,92 @@ plt.xlabel("Gene")
 plt.ylabel("Count")
 plt.show()
 
-# CNV distribution in different tumor types (violinplot)
+################################################################################
+
+## CNV fraction by tumor stage: does CNV fraction increases by tumor stage?
+
+# sort the dataset by stage
+whole_dataset = whole_dataset.sort_values(['pathologicalStage.label'])
+
+# plot
 plt.figure(figsize=(20,6))
-sns.violinplot(x='histologicalDiagnosis.id',y="info.cnvstatistics.cnvfraction",data=whole_dataset, palette='rainbow')
-plt.title("Violin Plot of CNV fraction by Tumor Type")
-plt.xlabel("NCIT code of the Tumor")
-plt.show()
-
-# select only most common malignancies NCIT codes:
-
-print(whole_dataset['histologicalDiagnosis.id'].unique())
-# NCIT:C4663 - Splenic Marginal Zone Lymphoma
-# NCIT:C3163 - Chronic Lymphocytic Leukemia
-# NCIT:C3366 - Sezary Syndrome
-# NCIT:C27753 - Acute Myeloid Leukemia Not Otherwise Specified
-# NCIT:C4337 - Mantle Cell lymphoma
-# NCIT:C80280 Diffuse Large B-Cell Lymphoma, Not Otherwise Specified
-# NCIT:C8851 Diffuse Large B-Cell Lymphoma
-# NCIT:C3467 Primary Cutaneous T-Cell Non-Hodgkin Lymphoma
-# NCIT:C3720 Anaplastic Large Cell Lymphoma
-
-ncit_codes = ["NCIT:C3467", "NCIT:C3163", "NCIT:C8851", "NCIT:C4337"]
-filtered_data = whole_dataset[whole_dataset['histologicalDiagnosis.id'].isin(ncit_codes)]
-plt.figure(figsize=(20,6))
-sns.violinplot(x='histologicalDiagnosis.id',y="info.cnvstatistics.cnvfraction",data=filtered_data, palette='rainbow')
-plt.title("Violin Plot of CNV fraction by Tumor Type")
-plt.xlabel("NCIT code of the Tumor")
-plt.show()
-
-plt.figure(figsize=(20,6))
-sns.violinplot(x='histologicalDiagnosis.id',y="info.cnvstatistics.cnvfraction",data=tp53_dataset)
-plt.title("Violin Plot of CNV fraction by Tumor Type for the TP53 gene")
-plt.xlabel("NCIT code of the Tumor")
+sns.violinplot(x='pathologicalStage.label',y="info.cnvstatistics.cnvfraction", data=whole_dataset)
+plt.title("Violin Plot of CNV fraction based on Tumor Stage")
+plt.xlabel("Tumor stage")
 plt.ylabel("CNV fraction") # what fraction of the TP53 gene has CNV (statistics for all samples of a specific malignancy)
 plt.show()
 
-plt.figure(figsize=(20,6))
-sns.violinplot(x='histologicalDiagnosis.id',y="info.cnvstatistics.cnvfraction",data=cdkn2a_dataset)
-plt.title("Violin Plot of CNV fraction by Tumor Type for the CDKN2A gene")
-plt.xlabel("NCIT code of the Tumor")
+################################################################################
+
+# filter the data:
+ncit_codes = ["NCIT:C80280", "NCIT:C4340", "NCIT:C3246", "NCIT:C4337", "NCIT:C27753", "NCIT:C8851"]
+names = ["Diffuse Large B-Cell Lymphoma", "Peripheral T-Cell Lymphoma", "Mycosis Fungoides", "Mantle Cell Lymphoma", "Acute Myeloid Leukemia", "Diffuse Large B-Cell Lymphoma"]
+filtered_data = whole_dataset[whole_dataset['histologicalDiagnosis.id'].isin(ncit_codes)]
+
+def my_func(row):
+    if row['histologicalDiagnosis.id'] == "NCIT:C80280":
+        val = 'Diffuse Large B-Cell Lymphoma'
+    elif row['histologicalDiagnosis.id']  == "NCIT:C4340":
+        val = 'Peripheral T-Cell Lymphoma'
+    elif row['histologicalDiagnosis.id']  == "NCIT:C3246":
+        val = 'Mycosis Fungoides'
+    elif row['histologicalDiagnosis.id']  == "NCIT:C4337":
+        val = 'Mantle Cell Lymphoma'
+    elif row['histologicalDiagnosis.id']  == "NCIT:C27753":
+        val = 'Acute Myeloid Leukemia'
+    elif row['histologicalDiagnosis.id']  == "NCIT:C8851":
+        val = 'Diffuse Large B-Cell Lymphoma'
+    return val
+
+filtered_data['name'] = filtered_data.apply(my_func, axis=1)
+
+####################### Plotting ###############################################
+
+## KM-curve based on tumor type
+time = filtered_data["info.followupMonths"]  # how much time has passed since the sample was collected
+event = filtered_data["info.death"]
+tumor = filtered_data["name"]
+results_3 = km.fit(time, event, tumor)
+km.plot(results_3)
+plt.show()
+
+## CNV fraction by tumor type (violin plot)
+plt.figure(figsize=(15,6))
+sns.violinplot(x='name',y="info.cnvstatistics.cnvfraction", data=filtered_data, palette='rainbow')
+plt.title("Violin Plot of CNV fraction by Tumor Type")
+plt.xlabel("Tumor Type")
 plt.ylabel("CNV fraction")
 plt.show()
 
-plt.figure(figsize=(20,6))
-sns.violinplot(x='histologicalDiagnosis.id',y="info.cnvstatistics.cnvfraction",data=erbb2_dataset)
-plt.title("Violin Plot of CNV fraction by Tumor Type for the ERBB2 gene")
-plt.xlabel("NCIT code of the Tumor")
+## CNV fraction by gene (violin plot)
+plt.figure(figsize=(10,6))
+sns.violinplot(x='group',y="info.cnvstatistics.cnvfraction", data=filtered_data, palette='rainbow')
+plt.title("Violin Plot of CNV fraction vs. Mutated Gene")
+plt.xlabel("Mutated Gene")
 plt.ylabel("CNV fraction")
 plt.show()
 
-plt.figure(figsize=(20,6))
-sns.violinplot(x='histologicalDiagnosis.id',y="info.cnvstatistics.cnvfraction",data=myc_dataset)
-plt.title("Violin Plot of CNV fraction by Tumor Type for the MYC gene")
-plt.xlabel("NCIT code of the Tumor")
-plt.ylabel("CNV fraction")
+plt.figure(figsize=(10,6))
+sns.violinplot(x='group',y="info.cnvstatistics.dupfraction", data=filtered_data, palette='rainbow')
+plt.title("Violin Plot of CNV duplication fraction vs. Mutated Gene")
+plt.xlabel("Mutated Gene")
+plt.ylabel("CNV duplication fraction")
 plt.show()
 
+plt.figure(figsize=(10,6))
+sns.violinplot(x='group',y="info.cnvstatistics.delfraction", data=filtered_data, palette='rainbow')
+plt.title("Violin Plot of CNV deletion fraction vs. Mutated Gene")
+plt.xlabel("Mutated Gene")
+plt.ylabel("CNV deletion fraction")
+plt.show()
+
+###################### Additional Code #########################################
+
+#plt.figure(figsize=(20,6))
+#sns.violinplot(x='histologicalDiagnosis.id',y="info.cnvstatistics.cnvfraction",data=whole_dataset, palette='rainbow')
+#plt.title("Violin Plot of CNV fraction by Tumor Type")
+#plt.xlabel("NCIT code of the Tumor")
+#plt.show()
 
 #plt.figure(figsize=(10,6))
 #sns.violinplot(x='histologicalDiagnosis.id',y="info.cnvstatistics.cnvfraction",data=whole_dataset, hue='group', palette='rainbow')
