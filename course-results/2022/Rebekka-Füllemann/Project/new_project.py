@@ -50,34 +50,29 @@ plt.show()
 
 #### grouped by NCIt (per gene) ####
 
+for gene in genes: 
 
-
-types = pd.get_dummies(data_dict["all"]["histological_diagnosis_id"]).columns
-
+	types = pd.get_dummies(data_dict[gene]["histological_diagnosis_id"]).columns
 	
-#j=0
-for i in range(len(types)):
-	group_NCIt = data_dict["all"].groupby("histological_diagnosis_id").get_group(types[i])
-	genvar = pd.get_dummies(group_NCIt["gene"]).columns
+	j=0
+	for i in range(len(types)):
+		group = data_dict[gene].groupby("histological_diagnosis_id").get_group(types[i])
 
-	for g in range(len(genvar)):
-		
-		group = group_NCIt.groupby("gene").get_group(genvar[g])
-		print(f"NCIt per gene, NCIt: {types[i]}, gene: {genvar[g]}, nr: {len(group)}")
+		print(f"NCIt per gene, NCIt: {types[i]}, gene: {gene}, nr: {len(group)}")
 
-		#while types[i] != NCIT[j]:
-		#	j+=1		
+		while types[i] != NCIT[j]:
+			j+=1		
 
 		time = group["info.followupMonths"]
 		event = group["info.death"]
-		results = kmf.fit(time, event, label=genvar[g])
-		ax=kmf.plot(ci_show=False, show_censors=True) #, color=colorlist[j])
-	#j+=1
-	ax.set(xlabel="Follow Up (Months)", ylabel="Survival", title=types[i])
-	plt.show()
+		results = kmf.fit(time, event, label=types[i])
+		ax=kmf.plot(ci_show=False, show_censors=True, color=colorlist[j])
+		j+=1
+
 	print("")
 
-
+	ax.set(xlabel="Follow Up (Months)", ylabel="Survival", title=gene)
+	plt.show()
 
 
 print("")
