@@ -19,12 +19,17 @@ truly hierarchical ontology, empowers "logical OR" queries \
 
 
 ## TNM 
-Classification for Clinical Cancer Stage Parameters
+Classification for Clinical Cancer Stage Parameters \
+most widely used cancer staging system 
 
-most widely used cancer staging system \
 T = size and extent of the main tumor \
 N = number/location of nearby lymph nodes that have cancer infiltration \
-M = whether the cancer has metastasized \
+M = whether the cancer has metastasized 
+
 not used for leukemias or lymphomas \
 other disease specific staging systems may (co-) exist
 
+![image](https://user-images.githubusercontent.com/113769587/194703899-758c0973-fdc3-46e3-ad77-e1aa5447b1a4.png)
+
+**Example:** \
+T1N1M0: small tumor with regional lymph node involvement and no detected distant metastases
