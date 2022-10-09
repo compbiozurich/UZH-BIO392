@@ -55,6 +55,7 @@ respectively? (Properties of the CNV map)
 7. By your intuition, which kind of genes are more variable between protein-coding genes and 
 non-coding genes? 
 -the ones that are not vital but an extra
+-protein-non coding genes because variation does not influence fitness very much
 
 How about their findings in this paper? (Functional impact of CNV) 
 -exons of many of the constrained gene sets — particularly those associated with diseases (OMIM, ISCA and cancer) or other 
