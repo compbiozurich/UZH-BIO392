@@ -1,5 +1,5 @@
 ## WGS
-Sequencing nearly aöl of the 3 billion nucleotides of the DNA, including all regions such as protein-coding, non-coding telomeric regions.
+Sequencing nearly all of the 3 billion nucleotides of the DNA, including all regions such as protein-coding, non-coding and telomeric regions.
 
 ## WES
 Sequencing the nucleotides of exonic / protein-coding regions of an individual's genome
@@ -27,7 +27,7 @@ Sequencing the nucleotides of exonic / protein-coding regions of an individual's
 - Each distinct sequence begins with a line containing a header followed by additional description and in the following lines the sequence data.
 
 ## FASTQ
-- 
+- A Fasta file with quality scores for each base calling in the sequence
 
 # Estimated storage and costs for 1000 genomes
 
