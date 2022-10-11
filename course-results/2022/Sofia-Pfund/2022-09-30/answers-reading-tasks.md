@@ -51,7 +51,7 @@ reliable TR annotation (Schaper et al., 2012).
 4. Test and filter for statistical significance
 5. Retrieve tandem repeat characteristics
 
-# Task 3 (GangSTR reading)
+## Task 3 (GangSTR reading)
 
 **What sets GangSTR apart from other STR genotyping tools?**
 * novel algorithm for genome-wide genotyping of both short and expanded TRs
