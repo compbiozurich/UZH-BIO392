@@ -1,4 +1,4 @@
-## 1. Why is important to construct a CNV map on health individuals of various ethnicities?
+## 1. Why is it important to construct a CNV map on healthy individuals of various ethnicities?
 To distinct between high-risk or even pathological variants and benign variants.As CNVs have different frquencies of occurence it is crucial to have individuals from different ethnicities represented on CNV maps.
 
 
