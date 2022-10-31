@@ -1,8 +1,8 @@
 # 2022-09-21 paper exercise day_02
 
 * What is CNV/CNA? <br>
-  Copy number variants (CNA) refers to (germline) changes in number of gene copies in the genome of an individual. <br>
-  Copy number abberations (CNVs) refers to (somatic) changes resulting in deletion or amplification of large contiguous segments of the genome.
+  Copy number variants (CNV) refers to (germline) changes in number of gene copies in the genome of an individual. <br>
+  Copy number abberations (CNAs) refers to (somatic) changes resulting in deletion or amplification of large contiguous segments of the genome.
 
 
 * How will you describe or introduce progenetix (scale, data source, cancer types and so on)? <br>
