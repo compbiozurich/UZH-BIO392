@@ -31,7 +31,7 @@
 4. What are CNV segmentations and CNV frequencies, and how to use them?
     - The CNV segements represent the part of the genome which shows variation in number 
     - The frequency is used to describe how many of those CNV segements are found in one genome of e.g a tumor
-    - The user can perform a query with start and end position range with filter options for cancer type, tissue location, morphology, cell line or geo- graphic location
+    - The user can perform a query with start and end position range with filter options for cancer type, tissue location, morphology, cell line or geographic location
     
 ![](https://progenetix.org/img/9p-example-histogram.png)
     
