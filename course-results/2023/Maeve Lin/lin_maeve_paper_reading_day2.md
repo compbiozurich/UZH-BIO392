@@ -25,5 +25,9 @@ This is the interface that allows the users to give in queries and extract data.
 
 How does progenetix visualize CNA profiles?
 Can customize visualization
+-genome-wide CNA with the percentage of samples that have more CNs vs those that have fewer.
+-There is a table with the subsets using the definitions of ICD-O-3 and NCIt Ontology terms. 
+-Biosamples tab: Displays the information of all biosamples that matched the query. Description, classification, external identifiers. 
+-Biosamples Map: map of the world with the geographical locations of the matched biosamples
 
 What do you think should be improved in progenetix?
