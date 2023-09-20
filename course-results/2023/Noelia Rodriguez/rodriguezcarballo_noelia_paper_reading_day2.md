@@ -21,9 +21,10 @@ CNV frequencies are the frequency of
 
 
 # What are APIs and how to use APIs in progenetix?
-Application programming interface (API)
+Application programming interfaces (APIs) serve as an intermediary between different programms. In Progenetix the interface has a variety of options to search and filter the databases, like start and end position of CNAs, cancertype and location. The panel shows a summary of number of matches and variants and CNA frequencies. The results of the query can be returned in a document. The panel also provides CNA percentage of samples sorted by CN gain and loss, a list of subsets as defined by ICOD and NCIt oncoloy codes and a world map with the geographical information of the samples. Further details can be downloaded or data can be uploaded to the database. 
 
 # How does progenetix visualise CNA profiles?
 
 
-# What doyou think should be improved in progenetics?
+# What do you think should be improved in progenetics?
+As stated in the conclusion of the article, the continuous expansion of the database is crucial for its usage in the quickly evolving field that is biology. Methods to easily add data and quickly control the correctness of said data 
