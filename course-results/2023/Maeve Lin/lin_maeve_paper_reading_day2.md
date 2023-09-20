@@ -1,8 +1,8 @@
 # Literature questions on progenetix
 ## 1) What is CNV/CNA?
- CNV: copy number variation
- CNA: copy number aberration
- CNV/CNA are structural genome variations that are more frequent in cancers cells and are used to characterize molecular subtypes
+ * CNV: copy number variation
+ * CNA: copy number aberration
+ * CNV/CNA are structural genome variations that are more frequent in cancers cells and are used to characterize molecular subtypes
  
 ## 2) How will you describe or introduce progenetix?
 It is a resource that is accessible for free by the public. Its goal is to represent all different cancer profiles
