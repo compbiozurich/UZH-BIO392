@@ -17,7 +17,7 @@ How will you describe or introduce progenetix (scale, data source, cancer types 
 ## Question 3:
 Describe NCIt, ICOD, UBERON codes, and their relationships. 
 
-### They are all resources for helping to classify and identify specific cancer types.
+### They are all resources for helping to classify and identify specific cancer types with different focuses.
 
 NCIt is a ontology that empowers layered data aggregation and transfer between classification systems and resources
 
