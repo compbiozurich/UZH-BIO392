@@ -15,7 +15,7 @@ ArrayExpresss (4351 samples), cBioPortal (19'712 samples), TCGA (22'142 samples)
 ## 3) Describe NCIt, UBERON codes, and their relationships.
 * National Cancer Institute Thesaurus: describes different cancer types. It is a hierarchical ontology that is developed dynamically.
 * UBERON: An ontology system based on cross-species anatomical structures. It allows queries that link different databases, link different organs within the same organism and between model animals and humans. 
-* Progenetix connects ICD-O T (International Classification of Diseases in Oncology) codes to UBERON terms. This means we can make connections between cancer type and phenotype in different organisms and of different organs within one organism. 
+* Progenetix connects ICD-O T (International Classification of Diseases in Oncology) codes to UBERON terms. This means we can make connections between cancer type and phenotype in different organisms and of different organs within one organism. We get a link to the UBERON-code site and can see where the body part is from that we our queried CNV is from.
 
 ## 4) What are CNV segmentations and CNV frequencies, and how to use them?
 CNV frequencies tell us how frequent the alleles with the queried CNA are. This is a proxy for the frequency of a cancer type in the population. 
