@@ -51,7 +51,7 @@ What are APIs and how to use APIs in progenetix?
 ## Question 6:
 How does progenetix visualise CNA profiles?
 
--Progenetix provide you plenty of informations that also can be filtered, altough for visualisation is the genome-wide CNA displayed on the 'Result' page as a percentage of samples with yellow denoting CN gain and blue 
+- Progenetix provide you plenty of informations that also can be filtered, altough for visualisation is the genome-wide CNA displayed on the 'Result' page as a percentage of samples with yellow denoting CN gain and blue 
  denoting CN loss. 
 
 ## Question 7:
