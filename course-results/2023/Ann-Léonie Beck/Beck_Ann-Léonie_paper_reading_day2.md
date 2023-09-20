@@ -10,17 +10,36 @@ progenetix is publicly accessible
 the progenetix project organizes and presents individual cancer CNA profiles, as well as metadata from oncogenomic studies and data repositories.
 the goal is to make inegrative analyses spanning all diffrent cancer biologies possible and to provide a comprehensive representation of genomic variation profiles in cancer
 
-scale: 138663 (including 115357 tumor) copy number variation profiles
-data source: chromosomal comparative genomic hybridization (CGH), hunderds of publications reporting on genompe profiling experiments based on molecular cytogenetics (CGH, genomic arrarys) and sequencing (WGS or WES), complete incororation of arrayMap data collection, datasets from external resources and projects (eg. The Cancer Genome Atlas TCGA, cBioPortal) and recurrent collection and re-processing of array-based data from National Center for Biotechnology Information (NCBI)'s Gene Expression Omnibus (GEO) or European Molecular Biology Laboratory-European Bioinformatics Institute  (EMBL-EBI)'s ArrayExpress.
+scale: 
+No. of studies from various data resources (eg. GEO, ArrayExpress, cBioPortal, TCGA)  1939
+
+No. of samples from various data resources (eg. GEO, ArrayExpress, cBioPortal, TCGA)  138663
+Tumor                                                                                 115357
+Normal                                                                                23306
+
+Classifications from various data sources (eg. GEO, ArrayExpress, cBioPortal, TCGA)  
+ICD-O (Topography)                                                                    209
+ICD-O (Morphology)                                                                    491
+NCIt                                                                                  788
+Collections from various data sources (eg. GEO, ArrayExpress, cBioPortal, TCGA)
+Individuals                                                                          127549
+Biosamples                                                                           138663
+Callsets (se of variants from one genotyping experiment)                             138930
+Variants                                                                             10716093
+
+
+data source: 
+chromosomal comparative genomic hybridization (CGH), hunderds of publications reporting on genompe profiling experiments based on molecular cytogenetics (CGH, genomic arrarys) and sequencing (WGS or WES), complete incororation of arrayMap data collection, datasets from external resources and projects (eg. The Cancer Genome Atlas TCGA, cBioPortal) and recurrent collection and re-processing of array-based data from National Center for Biotechnology Information (NCBI)'s Gene Expression Omnibus (GEO) or European Molecular Biology Laboratory-European Bioinformatics Institute  (EMBL-EBI)'s ArrayExpress.
 
 Integration with projects of the Global alliance for Genomics and Health (GA4GH) and ELIXIR
 
-
-
-
+cancer loci:
+Hematopoietic and reticuloen- dothelial systems, Lymph nodes, Breast, Cerebellum,  Brain, NOS,Cerebrum, Liver, Stomach, Skin, Connective, subcutaneous and other soft tissues, Kidney, Colon, Ovary, Prostate gland, Lung and bronchus, Nervous system, NOS,Urinary bladder, Cervix uteri, Peripheral nerves incl.autonomous, Esophagus, Pancreas, Thyroid gland, Heart, mediastinum and pleura Bones, joints and articular cartilage, Spleen and others
 
 
 Question 3: Describe NCIt, ICOD, UBERON codes, and their relationships
+
+NCIt : NAtional Cancer Institute Thesaurus
 
 Question 4: What are CNV segmentations and CNV frequencies, and how to use them?
 
