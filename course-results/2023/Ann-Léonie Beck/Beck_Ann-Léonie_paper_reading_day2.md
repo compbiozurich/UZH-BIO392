@@ -39,7 +39,8 @@ Hematopoietic and reticuloen- dothelial systems, Lymph nodes, Breast, Cerebellum
 
 Question 3: Describe NCIt, ICOD, UBERON codes, and their relationships
 
-NCIt : NAtional Cancer Institute Thesaurus
+NCIt : National Cancer Institute Thesaurus
+ICOD: International Classification of Dieseases in Oncology
 
 Question 4: What are CNV segmentations and CNV frequencies, and how to use them?
 
