@@ -8,10 +8,12 @@ How will you describe or introduce progenetix?
 It is a resource that is accessible by the public. Its goal is to represent all different cancer profiles
 -scale: 138'663 (115'357 tumor) copy number variation profiles
 -data source: publications based on molecular cytogenetics and sequencing
+ArrayExpresss (3887 samples), cBioPortal (19'712 samples), TCGA, GEO
 -cancer types
 -which information does it provide: profiles and their metadata, services to work with the data
 
-Describe NClt, UBERON codes, and their relationships.
+Describe NCIt, UBERON codes, and their relationships.
+National Cancer Institute Thesaurus: describes different cancer types
 
 What are CNV segmentations and CNV frequencies, and how to use them?
 
