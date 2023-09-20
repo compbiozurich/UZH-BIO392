@@ -25,11 +25,12 @@ Application programming interface (GA4GH Beacon)
 This is the interface that allows the users to give in queries and extract data. The user can enter start and end position range, filter for cancer type, location in the tissue, morphology, cell line or geographic location. 
 
 6) How does progenetix visualize CNA profiles?
-Can customize visualization for specific chromosomal regions or according to studies. 
+The user can customize the visualization of the CNA profile e.g. for specific chromosomal regions or according to studies.
+The output is structured followingly:
 -genome-wide CNA with the percentage of samples that have more CNs vs those that have fewer.
 -There is a table with the subsets using the definitions of ICD-O-3 and NCIt Ontology terms. 
 -Biosamples tab: Displays the information of all biosamples that matched the query. Description, classification, external identifiers. 
 -Biosamples Map: map of the world with the geographical locations of the matched biosamples
 -variants tab: summarized format of the chromosome with its start and end position
 
-7) What do you think should be improved in progenetix?
+8) What do you think should be improved in progenetix?
