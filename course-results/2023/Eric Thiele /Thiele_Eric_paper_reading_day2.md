@@ -17,6 +17,8 @@ How will you describe or introduce progenetix (scale, data source, cancer types 
 ## Question 3:
 Describe NCIt, ICOD, UBERON codes, and their relationships. 
 
+-  While the combination of the ICD-O Morphology and Topog- raphy coding systems depicts diagnostic entities with high specificity, the current ICD-O is limited in its representation of hierarchical concepts and does not easily trans late to modern ontologies
+
 Question 4:
 What are CNV segmantations and CNV frequencies, and how to use them ?
 
