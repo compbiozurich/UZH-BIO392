@@ -11,9 +11,7 @@ What is CNV/CNA ?
 ## Question 2:
 How will you describe or introduce progenetix (scale, data source, cancer types and so on) ?
 
-- Progenetix is a data bank that is based on newer as also on older done projects (such as TCGA, cBioPortal and data collections that provides
-  information in relation to specific cancer profiles with the help
-  of CNA - profiles. It also simplifies handling with the datas and vizualisation for cancer specifications.
+- Progenetix is a data bank that includes about 138'663 CNV profiles and is based on newer as also on older done projects (GEO, TCGA, cBioPortal and more array based datas or collections) that provides information in relation to specific cancer profiles with the help of CNA - profiles. It also simplifies handling with the datas and vizualisation for cancer specification.
   
 
 ## Question 3:
