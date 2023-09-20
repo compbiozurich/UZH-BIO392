@@ -38,24 +38,28 @@ What are CNV segmantations and CNV frequencies, and how to use them ?
 - CNV segmentation can be used to identify CNVs associated with certain cancer types.
 - CNV frequencies tell us amore about the genetic diverity in a group or studied population.  
 
-##Question 5: 
+## Question 5: 
 What are APIs and how to use APIs in progenetix?
 
-Application Programming Interfaces help to handle different kinds of metadata and experimental outcomes to get a representable connection of physical source of the data and the logical genotyping information and adapts to
-various scenarios for data aggregation and analysis.
+- Application Programming Interfaces help to handle different kinds of metadata and experimental outcomes to get a representable connection of physical source of the data and the logical genotyping information and adapts
+  to various scenarios for data aggregation and analysis.
 
-Basicaly Progenetix resources provides an extensive collection of oncogenomic data with a focus on individual genome-wide CNA profiles and also includes genomic profiling experiments using in vitro models. APIs help to get requests of start and end position range with filter options for cancer type, tissue location, morphology, cell line or geographic location. There some additional features that can help to save time in working with Progenetix. 
+- Basicaly Progenetix resources provides an extensive collection of oncogenomic data with a focus on individual genome-wide CNA profiles and also includes genomic profiling experiments using in vitro models. APIs help to
+  get requests of start and end position range with filter options for cancer type, tissue location, morphology, cell line or geographic location. There some additional features that can help to save time in working with
+  Progenetix. 
 
-##Question 6:
+## Question 6:
 How does progenetix visualise CNA profiles?
 
-Progenetix provide you plenty of informations that also can be filtered, altough for visualisation is the genome-wide CNA displayed on the 'Result' page as a percentage of samples with yellow denoting CN gain and blue denoting CN loss. 
+-Progenetix provide you plenty of informations that also can be filtered, altough for visualisation is the genome-wide CNA displayed on the 'Result' page as a percentage of samples with yellow denoting CN gain and blue 
+ denoting CN loss. 
 
-##Question 7:
+## Question 7:
 What do you think should be improved in progenetix?
 
-It is difficult to say what should be improved without working experience with progenetix, but I could imagine that an increase in the amount of data with constant updates to the newest studies and latest findings could help for a better and more accurate work. 
+- It is difficult to say what should be improved without working experience with progenetix, but I could imagine that an increase in the amount of data with constant updates to the newest studies and latest findings could
+  help for a better and more accurate work. 
 
-Continuously maintain and expand a stable API for progenetix for the Inclusion of newer projects and data types. 
+- Continuously maintain and expand a stable API for progenetix for the Inclusion of newer projects and data types. 
 
-An on the other side ensure a safe environment in relationship to data privacy ans security to protect sensitive genomic informations. 
+- And on the other side ensure a safe environment in relationship to data privacy ans security to protect sensitive genomic informations. 
