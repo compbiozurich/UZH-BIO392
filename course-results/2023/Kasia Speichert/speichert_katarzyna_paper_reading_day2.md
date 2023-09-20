@@ -14,7 +14,8 @@ ICOD which stands for ‘International Classification of Diseases in Oncology’
 
 In contrast to ICDO which provides organ- and substructure-specific mapping, UBERON is the other anatomica structural ontology system which links multiple databases and describes logic query within the same organism and between model animals and humans. 
 
-## CNV segmentations and CNV frequencies
+## Ehat are CNV segmentations and CNV frequencies, and how to use them?
+
 
 ## What are APIs and how to use APIs in progenetix?
 APIs are application programming interfaces used by the user (the representation of the data). Currently the query interface is combined with the GA4GH Beacon API. 
