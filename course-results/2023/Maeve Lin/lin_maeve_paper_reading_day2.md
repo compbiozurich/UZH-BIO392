@@ -13,7 +13,9 @@ ArrayExpresss (3887 samples), cBioPortal (19'712 samples), TCGA, GEO
 -which information does it provide: profiles and their metadata, services to work with the data
 
 Describe NCIt, UBERON codes, and their relationships.
-National Cancer Institute Thesaurus: describes different cancer types
+National Cancer Institute Thesaurus: describes different cancer types, hierarchical ontology that is developed dynamically
+UBERON: ontology system based on cross-species anatomical structures. It allows queries that link different databases, link different organs within the same organism and between model animals and humans. 
+They connected ICD-O T (Interational Classification of Diseases in Oncology) codes to UBERON terms. 
 
 What are CNV segmentations and CNV frequencies, and how to use them?
 
