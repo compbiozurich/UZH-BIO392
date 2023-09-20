@@ -25,7 +25,7 @@
       - Is limited to hierarchical concepts and is hard to apply to modern ontologies
       - The combination of the ICD-O Morphology and Topography coding systems depicts diagnostic entities with high specificity
     - "ICD-O—NCIt" mappings allow us to take advantage of NCIt’s hierarchical structure for data retrieval, analysis and exchange
-    - UBERON allows cross-species anatomical structural ontology
+    - UBERON[^1] allows cross-species anatomical structural ontology
     - All existing ICD-O T codes have been mapped to UBERON terms
 
 4. What are CNV segmentations and CNV frequencies, and how to use them?
@@ -49,7 +49,8 @@
 7. What do you think should be improved in progenetix?
     - Collect more research data 
     - Connect data from all over the world
-
+   
+[^1]: Uber-anatomy ontology
 
 
 
