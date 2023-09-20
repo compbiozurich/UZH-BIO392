@@ -2,15 +2,15 @@
 ## 1) What is CNV/CNA?
  * CNV: copy number variation
  * CNA: copy number aberration
- * CNV/CNA are structural genome variations that are more frequent in cancers cells and are used to characterize molecular subtypes
+ * CNV/CNA are structural genome variations that are more frequent in cancers cells and are used to characterize different molecular subtypes of cancers.
  
 ## 2) How would you describe or introduce progenetix?
-It is a resource that is accessible for free by the public. Its goal is to represent all different cancer profiles
-* scale: 138'663 (115'357 tumor) copy number variation profiles
-* data source: publications based on molecular cytogenetics and sequencing
-ArrayExpresss (3887 samples), cBioPortal (19'712 samples), TCGA, GEO
+Progenetix is a free resource that is accessible by the public. Its goal is to collect different all different cancer profiles.
+* scale: 138'663 (of which 115'357 tumor) CNV profiles
+* data source: publications based on molecular cytogenetics and sequencing (collecting data from all different kinds of methods)
+ArrayExpresss (4351 samples), cBioPortal (19'712 samples), TCGA (22'142 samples), GEO (63'568 samples)
 * cancer types: Spanning all cancer types, e.g. breast, brain, liver, stomach, skin, kidney, ovary, prostate gland, esophagus, pancreas, heart, spleen, bones. 
-* which information does it provide: CNA profiles and their metadata, further services to work with the data, phenotypic information on the profiles
+* which information does the database provide: CNA profiles and their metadata, further services to work with the data, phenotypic information on the profiles
 
 ## 3) Describe NCIt, UBERON codes, and their relationships.
 * National Cancer Institute Thesaurus: describes different cancer types, hierarchical ontology that is developed dynamically
