@@ -1,10 +1,10 @@
-# Literature questions on progenetix
+# Cancer Genome Database Progenetix
 ## 1) What is CNV/CNA?
  * CNV: copy number variation
  * CNA: copy number aberration
  * CNV/CNA are structural genome variations that are more frequent in cancers cells and are used to characterize molecular subtypes
  
-## 2) How will you describe or introduce progenetix?
+## 2) How would you describe or introduce progenetix?
 It is a resource that is accessible for free by the public. Its goal is to represent all different cancer profiles
 * scale: 138'663 (115'357 tumor) copy number variation profiles
 * data source: publications based on molecular cytogenetics and sequencing
@@ -27,7 +27,7 @@ CNV frequencies tell us how frequent the alleles with the queried CNA are. This 
 ## 6) How does progenetix visualize CNA profiles?
 The user can customize the visualization of the CNA profile e.g. for specific chromosomal regions or according to studies.
 The output is structured followingly:
-* genome-wide CNA with the percentage of samples that have more CNs vs those that have fewer.
+* Genome-wide CNA with the percentage of samples that have more CNs vs those that have fewer.
 * There is a table with the subsets using the definitions of ICD-O-3 and NCIt Ontology terms. 
 * Biosamples tab: Displays the information of all biosamples that matched the query. Description, classification, external identifiers. 
 * Biosamples Map: map of the world with the geographical locations of the matched biosamples
