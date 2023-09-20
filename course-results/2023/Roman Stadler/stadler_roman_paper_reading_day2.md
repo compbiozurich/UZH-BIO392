@@ -1,4 +1,4 @@
-![](https://progenetix.org/img/progenetix-logo-black.png){width="30%"}
+![](https://progenetix.org/img/progenetix-logo-black.png)
 
 1.  What is CNV/CNA?
     - CNV stands for copy number variants
@@ -30,7 +30,7 @@
     - The CNV segements represent the part of the genome which shows variation in number 
     - The frequency is used to describe how many of those CNV segements are found in one genome of e.g a tumor
     
-![](https://progenetix.org/img/9p-example-histogram.png){width="50%"}
+![](https://progenetix.org/img/9p-example-histogram.png)
     
     
 5. What are APIs and how to use APIs in progenetix?
