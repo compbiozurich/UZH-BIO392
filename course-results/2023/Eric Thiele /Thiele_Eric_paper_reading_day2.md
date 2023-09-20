@@ -25,7 +25,9 @@ ICO-D is a classification system for diseases. ICD-O is limited in its represent
 
 UBERON
 
-While the ICD-O topography system provides organ- and substructure-specific mapping rooted in traditional clinical and diagnostic aspects of a ‘tumor entity’, ‘UBERON’ is a cross-species anatomical structural ontology system closely aligned with developmental processes (37). Its relationship structure allows integrative queries linking multiple databases (e.g. Gene Ontology (38) and Protein Ontology (39)) and description logic query within the same organism (linking related organs) and between model animals and humans.
+While the ICD-O is focused on a   organ- and substructure-specific way to clearify cancer formation as itself UBERON is more focused on cross species anatomical structure ontology and linking databases with protein ontology 
+
+
 
 Question 4:
 What are CNV segmantations and CNV frequencies, and how to use them ?
