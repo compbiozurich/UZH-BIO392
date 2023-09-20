@@ -17,8 +17,16 @@ How will you describe or introduce progenetix (scale, data source, cancer types 
 ## Question 3:
 Describe NCIt, ICOD, UBERON codes, and their relationships. 
 
-- They are all resources for helping to classify and identify specific cancer types.
-- NCIt is a ontology 
+### They are all resources for helping to classify and identify specific cancer types.
+
+NCIt is a ontology that empowers layered data aggregation and transfer between classification systems and resources
+
+ICO-D 
+the current ICD-O is limited in its represen- tation of hierarchical concepts and does not easily trans- late to modern ontologies.
+
+UBERON
+
+While the ICD-O topography system provides organ- and substructure-specific mapping rooted in traditional clinical and diagnostic aspects of a ‘tumor entity’, ‘UBERON’ is a cross-species anatomical structural ontology system closely aligned with developmental processes (37). Its relationship structure allows integrative queries linking multiple databases (e.g. Gene Ontology (38) and Protein Ontology (39)) and description logic query within the same organism (linking related organs) and between model animals and humans.
 
 Question 4:
 What are CNV segmantations and CNV frequencies, and how to use them ?
