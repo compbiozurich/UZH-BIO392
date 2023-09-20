@@ -5,9 +5,11 @@
  used to characterize molecular subtypes
  
 How will you describe or introduce progenetix?
+It is a resource that is accessible by the public. Its goal is to represent all different cancer profiles
 -scale: 138'663 (115'357 tumor) copy number variation profiles
 -data source
 -cancer types
+-which information does it provide: profiles and their metadata, services to work with the data
 
 Describe NClt, UBERON codes, and their relationships.
 
