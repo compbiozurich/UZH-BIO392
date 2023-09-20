@@ -21,8 +21,7 @@ Describe NCIt, ICOD, UBERON codes, and their relationships.
 
 NCIt is a developed bioinformatic ontology that helps to create structure and overview out of a data bank for cancer research.
 
-ICO-D 
-the current ICD-O is limited in its represen- tation of hierarchical concepts and does not easily trans- late to modern ontologies.
+ICO-D is a classification system for diseases. ICD-O is limited in its representation of hierarchical concepts. Translation to modern ontologies is complexer than for the others.
 
 UBERON
 
