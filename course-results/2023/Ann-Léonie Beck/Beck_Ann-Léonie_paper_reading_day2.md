@@ -39,12 +39,22 @@ Hematopoietic and reticuloen- dothelial systems, Lymph nodes, Breast, Cerebellum
 
 Question 3: Describe NCIt, ICOD, UBERON codes, and their relationships
 
-NCIt : National Cancer Institute Thesaurus
-ICOD: International Classification of Dieseases in Oncology
+NCIt : National Cancer Institute Thesaurus : dynamically developed hierarchical ontology, allows layered data aggregation and transfer between classification systems and resources, rarely used
+ICOD: International Classification of Dieseases in Oncology: high specifity, organ and substructre- specific mapping
+ICD-O--NCIt: data-driven generation of mappings, derieved NCIt codes were added to all samples. So that the hierarchical strucutre for data retrieval, analysis and exchange can be used. 
+UBERON : cross species anatomical structural ontology system closely aligned with developmental processe
+Existing ICD-O T codes were maped to UBERON terms. allows linking of related organs in the same organism or linking between model animals and humans
 
 Question 4: What are CNV segmentations and CNV frequencies, and how to use them?
 
+CNV frequencies: the frequency at which a copy number variation occurs in a given genomic region or gene across a set of samples or indiciduals. the frequency indicates how often a parrticular CNV is observed in a population or dataset. it indicates how "common" a specific copy number change is (eg. in a population or in different cancer types) -> how significant is a speficiv CNV in a  disease. 
+
+CNV segmentation: divides a genome into segments or regions based on the CNV observed in that genome. regions of a genome where copy number changes have occured can be identified by CNV segmentations.
+
+CNV fraction: the fraction of genome with a copy number alteration
+
 Question 5: What are APIs and how to use APIs in progenetix
+Application Programming Interfaces allows different software applications to communicate with each other 
 
 Question 6 : How does progenetix visualise CNA profiles?
 
