@@ -20,8 +20,10 @@ They connected ICD-O T (Interational Classification of Diseases in Oncology) cod
 What are CNV segmentations and CNV frequencies, and how to use them?
 
 What are APIs and how to use APIs in progenetix?
-Application programming interface (Beacon)
+Application programming interface (GA4GH Beacon)
+This is the interface that allows the users to give in queries and extract data. The user can enter start and end position range, filter for cancer type, location in the tissue, morphology, cell line or geographic location. 
 
 How does progenetix visualize CNA profiles?
+Can customize visualization
 
 What do you think should be improved in progenetix?
