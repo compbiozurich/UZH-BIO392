@@ -33,7 +33,7 @@ What are CNV segmantations and CNV frequencies, and how to use them ?
 
 - In CNV segmentation, the genome in which the copy number deviates from the standard diploid state is divided into segments with different copy numbers. Various algorithms are used to identify CNV segments in the genome based on databases.
 
--CNV frequencies represent the prevalence or occurrence of certain copy number variations within a population or data set and provide information about genetic diversity and population structure among individuals or groups.
+- CNV frequencies represent the prevalence or occurrence of certain copy number variations within a population or data set and provide information about genetic diversity and population structure among individuals or groups.
 
 - CNV segmentation can be used to identify CNVs associated with certain cancer types.
 - CNV frequencies tell us amore about the genetic diverity in a group or studied population.  
