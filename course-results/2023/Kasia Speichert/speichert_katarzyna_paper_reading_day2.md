@@ -21,7 +21,11 @@ APIs are application programming interfaces used by the user (the representation
 
 >The top panel of the result page shows a summary with the number of matched samples, variants, calls and the frequency of alleles containing the CNA. The ‘Phenopackets’ link returns a json document of biosamples with the phenopacket-formatted response. The ‘UCSC region’ links externally to a University of California Santa Cruz (UCSC) browser track providing an overview of the genomic elements which map to the region of the observed variants. Also, customized visualization is enabled in the linked page ‘visualization options’, e.g. for selected chromosomal regions and grouping by subsets or studies. The lower panel is organized in four sections: (i) the ‘Result’ tab shows the genome-wide CNA by the percentage of samples with yellow (+) as CN gain and blue (−) as CN loss. Below the CNA plot is a table showing the list of subsets as defined by ICD-O-3 and NCIt Ontology terms sorted by frequency of matched samples within that subset. (ii) the ‘Biosamples’ tab shows information of matched biosamples, i.e. description, classifications and external identifiers. The table can be downloaded in json or csv format. The further detail of the biosample can be accessed by clicking the biosample id. (iii) The ‘Biosamples Map’ tab shows a world map with the matched geological locations highlighted. (iv) the ‘Variants’ tab shows the variant ‘digest’ (concatenated format with chromosome, start and end position, and type of the CNA) and its corresponding biosample and callset. Likewise, the table can be downloaded in json or csv format.
 
+One can also just initially search for the publications title, author names or geographic location of the research center.
+
 ## How does progenetix visualise CNA profiles?
+
+The genome-wide CNA is visualised in the `Result`tab by the percentage of samples with yellow (+) as CN gain and blue (-) as CN loss. Below that there is a table which represents the list of subsets defined by ICD-O and NCIt Ontology terms sorted by frequency of matched samples within that subset. 
 
 ## What should be improved in progenetix?
 
