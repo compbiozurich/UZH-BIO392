@@ -5,7 +5,7 @@ CNA stands for copy number aberration. CNAs represent a type of nearly ubiquitou
 Although CNV (copy number variation) and CNA are often used interchangeably, there is a small difference, namely, the time of occurrence of these events: CNA refers to genomic aberrations due to somatic events (usually found in tumors) and CNV refers to variations due to germline events.
 <sub>Ha G, Shah S. Distinguishing somatic and germline copy number events in cancer patient DNA hybridized to whole-genome SNP genotyping arrays. Methods Mol Biol. 2013;973:355-72. doi: 10.1007/978-1-62703-281-0_22. PMID: 23412801.</sub>
 
-**Question 2:** How will you descrie or introduce progenetic  (scale, data source, cancer types and so on)?
+**Question 2:** How will you describe or introduce progenetic  (scale, data source, cancer types and so on)?
 
 Answer 2
 
