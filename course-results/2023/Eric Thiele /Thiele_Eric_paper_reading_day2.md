@@ -19,7 +19,7 @@ Describe NCIt, ICOD, UBERON codes, and their relationships.
 
 ### They are all resources for helping to classify and identify specific cancer types with different focuses.
 
-NCIt is a developed bioinformatic ontology that helps to create structure and overview out of a data bank for classification of cancer.
+NCIt is a developed bioinformatic ontology that helps to create structure and overview out of a data bank for cancer research.
 
 ICO-D 
 the current ICD-O is limited in its represen- tation of hierarchical concepts and does not easily trans- late to modern ontologies.
