@@ -4,6 +4,7 @@ for cancer development.
 
 ## Progenetix 
 
+The Progenetix project is a cancer genome data resource which represents individual cancer CNA profiles together with associated metada from a broad range of oncogenomic studies and data repositories. 
 >The Progenetix project, initiated in 2001, curates individual cancer CNA profiles and associated 
 >metadata from published oncogenomic studies and data repositories with the aim to empower integrative 
 >analyses spanning all different cancer biologies. During the last few years, the fields of genomics and 
@@ -14,10 +15,12 @@ for cancer development.
 >(including 115 357 tumor) copy number variation (CNV) profiles.
 
 
-Progenetix is a publicly accessible cancer genome data resource (progenetix.org) that aims to provide 
-a comprehensive representation of genomic variation profiles in cancer, through providing 
-sample-specific CNA profiles and associated metadata as well as services related to data annotation, 
-meta-analysis and visualization. Originally established in 2001 with a focus on data from chromosomal 
-Comparative Genomic Hybridization (CGH) studies (3), the resource has progressively incorporated data 
-from hundreds of publications reporting on genome profiling experiments based on molecular cytogenetics 
-(CGH, genomic arrays) and sequencing (whole-genome or whole-exome sequencing—WGS or WES). 
+>Progenetix is a publicly accessible cancer genome data resource (progenetix.org) that aims to provide 
+>a comprehensive representation of genomic variation profiles in cancer, through providing 
+>sample-specific CNA profiles and associated metadata as well as services related to data annotation, 
+>meta-analysis and visualization. Originally established in 2001 with a focus on data from chromosomal 
+>Comparative Genomic Hybridization (CGH) studies (3), the resource has progressively incorporated data 
+>from hundreds of publications reporting on genome profiling experiments based on molecular cytogenetics 
+>(CGH, genomic arrays) and sequencing (whole-genome or whole-exome sequencing—WGS or WES). 
+
+>The progenetix resource contains data of 834 different cancer types
