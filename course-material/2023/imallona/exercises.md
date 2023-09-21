@@ -17,6 +17,15 @@ export CPATH=`xcrun --show-sdk-path`/usr/include
 export CPATH=`xcrun --show-sdk-path`/usr/include
 ```
 
+If even this fails on our iMacs: use the pre-installed binaries at
+
+```
+/opt/local/bin/bedtools
+/opt/local/bin/vcftools
+```
+
+and create aliases accordingly, i.e. `alias bedtools='/opt/local/bin/bedtools'`.
+
 # Introduction
 
 Please run the tutorial at [SIB Course on UNIX](https://edu.sib.swiss/pluginfile.php/2878/mod_resource/content/4/couselab-html/content.html) first.
