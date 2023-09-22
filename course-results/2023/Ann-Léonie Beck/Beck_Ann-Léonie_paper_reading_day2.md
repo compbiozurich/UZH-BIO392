@@ -48,14 +48,15 @@ Existing ICD-O T codes were maped to UBERON terms. allows linking of related org
 
 ## Question 4: What are CNV segmentations and CNV frequencies, and how to use them?
 
-CNV frequencies: the frequency at which a copy number variation occurs in a given genomic region or gene across a set of samples or indiciduals. the frequency indicates how often a particular CNV is observed in a population or dataset. it indicates how "common" a specific copy number change is (eg. in a population or in different cancer types) -> how significant is a speficiv CNV in a  disease. 
+CNV frequencies: the frequency at which a copy number variation occurs in a given genomic region or gene across a set of samples or indiciduals. the frequency indicates how often a particular CNV is observed in a population or dataset. it indicates how "common" a specific copy number change is (eg. in a population or in different cancer types) -> how significant is a specific CNV in a  disease. 
 
 CNV segmentation: divides a genome into segments or regions based on the CNV observed in that genome. regions of a genome where copy number changes have occured can be identified by CNV segmentations.
 
 CNV fraction: the fraction of genome with a copy number alteration
 
 ## Question 5: What are APIs and how to use APIs in progenetix
-Application Programming Interfaces allows different software applications to communicate with each other 
+Application Programming Interfaces allows different software applications to communicate with each other. In progenetix Beacon is used as the API.
+The query interface is built on top of the API. Query types can for example be by city, id, geolatitude, geolongitude or geodistance
 
 ## Question 6 : How does progenetix visualise CNA profiles?
 
