@@ -1,4 +1,5 @@
 ## Question 1: What is CNV/CNA?
+
 CNA: copy number aberrations
   they represent a type of nearly ubiquitous and frequently extensive structural genome variations ( rewrite )!
 CNV : copy number variation
@@ -10,7 +11,7 @@ progenetix is publicly accessible
 the progenetix project organizes and presents individual cancer CNA profiles, as well as metadata from oncogenomic studies and data repositories.
 the goal is to make inegrative analyses spanning all diffrent cancer biologies possible and to provide a comprehensive representation of genomic variation profiles in cancer
 
-scale: 
+# scale: 
 No. of studies from various data resources (eg. GEO, ArrayExpress, cBioPortal, TCGA)  1939
 
 No. of samples from various data resources (eg. GEO, ArrayExpress, cBioPortal, TCGA)  138663
@@ -28,12 +29,12 @@ Callsets (se of variants from one genotyping experiment)                        
 Variants                                                                             10716093
 
 
-data source: 
+# data source: 
 chromosomal comparative genomic hybridization (CGH), hunderds of publications reporting on genompe profiling experiments based on molecular cytogenetics (CGH, genomic arrarys) and sequencing (WGS or WES), complete incororation of arrayMap data collection, datasets from external resources and projects (eg. The Cancer Genome Atlas TCGA, cBioPortal) and recurrent collection and re-processing of array-based data from National Center for Biotechnology Information (NCBI)'s Gene Expression Omnibus (GEO) or European Molecular Biology Laboratory-European Bioinformatics Institute  (EMBL-EBI)'s ArrayExpress.
 
 Integration with projects of the Global alliance for Genomics and Health (GA4GH) and ELIXIR
 
-cancer loci:
+# cancer loci:
 Hematopoietic and reticuloen- dothelial systems, Lymph nodes, Breast, Cerebellum,  Brain, NOS,Cerebrum, Liver, Stomach, Skin, Connective, subcutaneous and other soft tissues, Kidney, Colon, Ovary, Prostate gland, Lung and bronchus, Nervous system, NOS,Urinary bladder, Cervix uteri, Peripheral nerves incl.autonomous, Esophagus, Pancreas, Thyroid gland, Heart, mediastinum and pleura Bones, joints and articular cartilage, Spleen and others
 
 
