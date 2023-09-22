@@ -1255,10 +1255,6 @@ awk '{print $4}' hesc.chromHmm_nochr.bed | sort | uniq -c
 We're not evaluating this overrepresentation statistically, but how do we biologically interpret this? Random thoughts: selective pressure (do transposon integrations interrupt open reading frames, distort protein generation, and impair fitness? would a deletereous insertion give rise to an adult?); retrotransposition mechanisms (homology with prior retrotransposons/repetitive elements), etc.
 
 Also, numerically: are this calculations fair? We were counting BED records, but we didn't take into account the actual span (in nucleotides) of the different genomic compartments. How could we do that?
-## Extra exercises block 36
-
-Explore (not necessarily run) more usage examples with biological meaning using UNIX and BEDTools [http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/](http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/).
-
 
 ## Exercise 37 Sum up
 
