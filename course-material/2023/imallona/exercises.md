@@ -26,6 +26,13 @@ If even this fails on our iMacs: use the pre-installed binaries at
 
 and create aliases accordingly, i.e. `alias bedtools='/opt/local/bin/bedtools'`.
 
+Similarly, aliases when using renku could look like these:
+
+```
+alias bedtools='~/course/soft/bedtools2/bin/bedtools'
+alias vcftools='~/course/soft/vcftools_0.1.13/bin/vcftools'
+```
+
 # Introduction
 
 Please run the tutorial at [SIB Course on UNIX](https://edu.sib.swiss/pluginfile.php/2878/mod_resource/content/4/couselab-html/content.html) first.
@@ -1248,90 +1255,12 @@ awk '{print $4}' hesc.chromHmm_nochr.bed | sort | uniq -c
 We're not evaluating this overrepresentation statistically, but how do we biologically interpret this? Random thoughts: selective pressure (do transposon integrations interrupt open reading frames, distort protein generation, and impair fitness? would a deletereous insertion give rise to an adult?); retrotransposition mechanisms (homology with prior retrotransposons/repetitive elements), etc.
 
 Also, numerically: are this calculations fair? We were counting BED records, but we didn't take into account the actual span (in nucleotides) of the different genomic compartments. How could we do that?
-
 ## Extra exercises block 36
-
-If interested, you could play with other real genomic data using the [BEDtools tutorial](http://quinlanlab.org/tutorials/bedtools/bedtools.html) which explores the Maurano et al paper [Systematic Localization of Common Disease-Associated Variation in Regulatory DNA published in Science, 2012](https://www.ncbi.nlm.nih.gov/pubmed/22955828).
-
-Mind that the tutorial recommends creating a folder with `mkdir -p ~/workspace/monday/bedtools`: if you do so and move (`mv`) there, your path (the one you can get using `pwd`) won't be at the standard `~/course` we used till now.
-
-Remember that the bedtools binary can be aliased using ``alias bedtools='~/course/soft/bedtools2/bin/bedtools'``.
-
-Some of the puzzles include:
-
-* Count the number of exons and CpG islands
-
-<details><summary>
-Tip
-</summary>
-
-<p>
-
-```bash
-
-Count the number of lines using `wc -l exons.bed` etc.
-
-```
-
-</p>
-</details>
-
-* How many CpG islands overlap exons in the genome?
-
-
-<details><summary>
-Tip
-</summary>
-
-<p>
-
-
-Intersect and count
-
-```bash
-
-bedtools intersect -a cpg.bed -b exons.bed   | wc -l
-
-
-```
-
-</p>
-</details>
-
-* Create a BED file representing all of the intervals in the genome that are NOT exonic.
-
-<details><summary>
-Tip
-</summary>
-
-<p>
-
-Use intersect with the `-v` flag
-
-</p>
-</details>
-
-* What is the average distance from GWAS SNPs to the closest exon? 
-
-<details><summary>
-Tip
-</summary>
-
-<p>
-
-(Hint - have a look at the closest tool.)
-</p>
-</details>
-
-* What fraction of the GWAS SNPs are exonic?
-
-
-## Extra exercises block 37
 
 Explore (not necessarily run) more usage examples with biological meaning using UNIX and BEDTools [http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/](http://pedagogix-tagc.univ-mrs.fr/courses/jgb53d-bd-prog/practicals/03_bedtools/).
 
 
-## Exercise 38 Sum up
+## Exercise 37 Sum up
 
 Read an overview of all the file formats available at UCSC. You can upload some of the files you used during the course to the UCSC genome browser to see how do they look like. Anyway you can download, read, edit them using UNIX (i.e. `awk`, `grep` etc). And ask biological questions using bedtools/vcftools.
 
