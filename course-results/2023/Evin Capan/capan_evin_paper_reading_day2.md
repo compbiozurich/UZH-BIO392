@@ -37,9 +37,11 @@ Recently, Progenetix performed a data-driven generation of ICD-O—NCIt mappings
 
 **CNV frequencies** refer to the proportion of individuals in a population with a specific CNV at a particular genomic location. CNV frequencies are used to determing how common or rare a CNV is within a group of individuals or a specific population.
 
-## **What are APIs and how to use APIs in progenetix?**
+## **What are APIs and how to use APIs in Progenetix?**
 
-Answer 5
+**APIs (Application Programming Interfaces)** are sets of rules that enable communication and interaction among different software applications. They make it easier for developers to use certain features or access data from Progenetix (or another platform) without needing to understand the inner workings of its system.
+
+Progenetix' query interface is built on top of the GA4GH Beacon API. To perform a CNA query, users have the option to enter the start and end position range with filter options for cancer type, tissue location, morphology, cell line or geographic location.
 
 ## **How does progenetix visualise CNA profiles?**
 
