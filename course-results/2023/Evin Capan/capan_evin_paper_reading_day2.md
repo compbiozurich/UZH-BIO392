@@ -46,8 +46,8 @@ Progenetix' query interface is built on top of the GA4GH Beacon API. To perform 
 
 ## **How does progenetix visualise CNA profiles?**
 
-Progenetix shows the genome-wide CNA by the percentage of samples with yellow (+) as CN gain and blue (−) as CN loss. Below the CNA plot is a table showing the list of subsets as defined by ICD-O-3 and NCIt Ontology terms sorted by frequency of matched samples within that subset. There is a 'Biosamples' tab, which shows information of matched biosamples. Additionally, the 'Biosamples Map' tab shows a world map with the matched geological locations highlighted. And the 'Variants' tab shows the variant 'digest' (concatenated format with chromosome, start and end position, and type of the CNA) and its corresponding biosample and callset.
+Progenetix shows the genome-wide CNA in the 'Result' tab by the percentage of samples with yellow (+) as CN gain and blue (−) as CN loss. Below the CNA plot is a table showing the list of subsets as defined by ICD-O-3 and NCIt Ontology terms sorted by frequency of matched samples within that subset. There is a 'Biosamples' tab, which shows information of matched biosamples. Additionally, the 'Biosamples Map' tab shows a world map with the matched geological locations highlighted. And the 'Variants' tab shows the variant 'digest' (concatenated format with chromosome, start and end position, and type of the CNA) and its corresponding biosample and callset.
 
-## **What do you think should be improved in progenetix?**
+## **What do you think should be improved in Progenetix?**
 
-Answer 7
+As with any data resource, the more data there is, the better the resource is — so I think the amount of data could be improved. And maybe not only the data amount but also data diversity can be improved to have more of the world represented.
