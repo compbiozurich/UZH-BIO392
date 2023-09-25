@@ -33,7 +33,9 @@ Recently, Progenetix performed a data-driven generation of ICD-O—NCIt mappings
 
 ## **What are CNV segmentations and CNV frequencies, and how to use them?**
 
-Answer 4
+**CNV segmentation** is the division of the genome into segments based on variations in the number of copies of specific DNA sequences within those segments. CNV segmentation can be used to help analyze genetic variations (small gene changes or large chromosomal alterations), helping to understand the genetic basis of diseases.
+
+**CNV frequencies** refer to the proportion of individuals in a population with a specific CNV at a particular genomic location. CNV frequencies are used to determing how common or rare a CNV is within a group of individuals or a specific population.
 
 ## **What are APIs and how to use APIs in progenetix?**
 
