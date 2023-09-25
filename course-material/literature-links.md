@@ -1,6 +1,6 @@
 # UZH BIO392 - Literature
 
-This page collects items for the course "reading list" (and beyond). Since the repository is public, we're not able to provide direct downloads as part of the repository but you'll get a password for the [literature repository link](https://drive.switch.ch/index.php/s/qVnXSPf3pGdOfVw).
+This page collects items for the course "reading list" (and beyond). Since the repository is public, we're not able to provide direct downloads as part of the repository.
 
 ## Recommended Reading
 
