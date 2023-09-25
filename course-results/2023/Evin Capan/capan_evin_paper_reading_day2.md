@@ -23,7 +23,13 @@ There is a substantial amount of data to different cancer loci: from hematopoiet
 
 ## **Describe NCIt, ICOD, UBERON codes, and their relationships.**
 
-Answer 3
+**NCIt (National Cancer Institute Thesaurus):** NCIt is a dynamically developed hierarchical ontology, which empowers layered data aggregation and transfer between classification systems and resources.
+
+**ICD-O (International Classification of Diseases in Oncology):** The ICD-O has been used by Progenetix since its establishment for cancer sample classification. By combining its Morphology and Topography coding systems, diagnostic entities can be depicted with high (organ- and substructure-) specificity. The ICD-O is limited in its representation of hierarchal concepts.
+
+**UBERON (Uber-anatomy ontology):** UBERON is a cross-species anatomical structural ontology system closely aligned with developmental processes. Its relationship structure allows integrative queries linking multiple databases withing the same organism and between model animals and humans.
+
+Recently, Progenetix performed a data-driven generation of ICD-O—NCIt mappings and added the derived NCIt codes to all samples, taking advantage of NCIt’s hierarchical structure for data retrieval, analysis and exchange. Progenetix also mapped all existing ICD-O T codes to 'UBERON' terms.
 
 ## **What are CNV segmentations and CNV frequencies, and how to use them?**
 
