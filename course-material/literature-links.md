@@ -35,7 +35,7 @@ This page collects items for the course "reading list" (and beyond). Since the r
 * Shringarpure-and-Bustamante - Privacy Risks from Genomic Data-Sharing Beacons
     - 2015-10-29___Shringarpure-and-Bustamante__Privacy-Risks-from-Genomic-Data-Sharing-Beacons__American-Journal-of-Human-Genetics.pdf
 
-#### Literature review & Discussion Session
+### Literature review & Discussion Session
 
 * 1000 Genomes (2015): A global reference for human genetic variation
     - 2015-10-01___1000-Genomes-Consortium__A-global-reference-for-human-genetic-variation__Nature.pdf
@@ -58,7 +58,14 @@ This page collects items for the course "reading list" (and beyond). Since the r
 * Nurk et al. (2022): The complete sequence of a human genome
     - 2022-04-01___Nurk-et-al__The-complete-sequence-of-a-human-genome__Science.pdf
 
-#### Extended reading
+## Extended reading and other resources
 
 * Mark Gerstein ([Yale](http://Lectures.GersteinLab.org)): Lecture slides "Analyzing Personal Genomes: Prioritizing High-impact Rare & Somatic Variants" 
     - 2016-03-29___Gerstein_Personal-Genomes-Prioritizing-High-impact-Variants__slides.pdf
+* Harold Varmus: "Approaches to increased equity in the use of genomics"
+    - GA4GH 2023 keynote  ([Youtube video](https://www.youtube.com/watch?v=9mvDWybleFg))
+* Karen Miga: "The Human Pangenome Project"
+    - GA4GH 2024 keynote  ([Youtube video ](https://youtu.be/VlQ7vI3iGD4?t=124))
+* CRAM file format presentations
+    - [Youtube CRAM short videos](https://www.youtube.com/playlist?list=PLXa1b5-MwOAb2Im5OvydYCJ77tyH-_Qjm)
+
