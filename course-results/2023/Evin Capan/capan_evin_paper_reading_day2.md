@@ -12,13 +12,14 @@ Because of this, the comparative and meta-analysis of large genomic variant coll
 ## **How will you describe or introduce progenetix (scale, data source, cancer types and so on)?**
 
 Progenetix (progenetix.org) is a publicly accessible cancer genome data resource. It aims to provide a comprehensive representation of genomic variation profiles in cancer, through providing sample-specific CNA profiles and associated metadata as well as services related to data annotation, meta-analysis and visualization.
-After its establishment in 2001, the resource began progressively incorporating data from hundreds of publications reporting on genome profiling experiments based on molecular cytogenetics (genomic arrays, CGH) and sequencing (whole-genome or whole-exome sequencing — WGS or WES), resulting in the most comprehensive representation of cancer genome CNA profiling data with 138 663 (including 115 357 tumor) copy number variation (CNV) profiles.
 
-Since 2014, large quantities of data content has been added from various sources: from the previously separate arrayMap data collection, from external resources and projects such as The Cancer Genome Atlas (TCGA) or cBioPortal, as well as NCBI’s Gene Expression Omnibus (GEO) and EMBL-EBI’s ArrayExpress.
+After its establishment in 2001, the resource began progressively incorporating data from hundreds of publications reporting on genome profiling experiments based on different molecular-cytogenetics- and sequencing-based technologies, resulting in the most comprehensive representation of cancer genome CNA profiling data with 138 663 (including 115 357 tumor) copy number variation (CNV) profiles.
+
+Large quantities of data content have been continuously added from various sources: from the previously separate arrayMap data collection, from external resources and projects such as The Cancer Genome Atlas (TCGA) or cBioPortal, as well as NCBI’s Gene Expression Omnibus (GEO) and EMBL-EBI’s ArrayExpress.
 
 To maximize the qualitative homogeneity of the final CNA calls, Progenetix uses source files with the least amount of pre-processing and applies their in-house data processing pipeline.
 
-There is a significant amount of data to different cancer loci: from hematopoietic and reticuloendothelial systems to lymph nodes, breast, cerebellum, brain, cerebrum, liver, stomach, skin, etc.
+There is a substantial amount of data to different cancer loci: from hematopoietic and reticuloendothelial systems to lymph nodes, breast, cerebellum, brain, cerebrum, liver, stomach, skin, etc.
 
 ## **Describe NCIt, ICOD, UBERON codes, and their relationships.**
 
