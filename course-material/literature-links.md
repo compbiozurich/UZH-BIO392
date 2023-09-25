@@ -1,6 +1,6 @@
 # UZH BIO392 - Literature
 
-This page collects items for the course "reading list" (and beyond). Since the repository is public, we're not able to provide direct downloads as part of the repository.
+This page collects items for the course "reading list" (and beyond). The files for the articles can be found in the link you've received throgh the chat. Since the repository is public, we're not able to provide direct downloads as part of the repository but there are some links here to videos or other resources.
 
 ## Recommended Reading
 
