@@ -37,6 +37,8 @@ Chromosome, start coordinate, alignment quality and match descriptor string can 
 
 
 
+
+
 #  FASTA
 
 FASTA is used to represent nucleotide or protein sequences with a focus on similarities between the sequences. 
