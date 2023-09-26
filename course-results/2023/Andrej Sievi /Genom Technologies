@@ -1,0 +1,15 @@
+##How much computer storage is required for 1000 Genomes
+#There are diffrent File types to work with and advantages to illustrute Genomic Data.
+#
+Whole exome sequencing (WES)
+
+Whole genome sequencing (WGS)
+
+Sequence Alignment Map (SAM)
+
+Binary Alignment Map (BAM) 
+
+Variant Call Format (VCF)
+
+FASTA 
+
