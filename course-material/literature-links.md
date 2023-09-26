@@ -57,6 +57,9 @@ This page collects items for the course "reading list" (and beyond). The files f
     - 2020-04-03___Wagner-et-al.__A-Harmonized-Meta-Knowledgebase-of-Somatic-Cancer-Variants__Nature-Genetics.pdf
 * Nurk et al. (2022): The complete sequence of a human genome
     - 2022-04-01___Nurk-et-al__The-complete-sequence-of-a-human-genome__Science.pdf
+* Liao, Paten et al. (2023): A draft human pangenome reference
+    - 2023-05-11___Liao,-Paten-et-al.__A-draft-human-pangenome-reference__Nature.pdf
+
 
 ## Extended reading and other resources
 
