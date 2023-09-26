@@ -1,7 +1,7 @@
 
 #  Task: Estimate Storage Requirements for 1000 Genomes
 
-WGS also called "Whole genome sequencing" is the process, by which 
+- WGS also called "Whole genome sequencing" is the process, by which 
 you try to get the DNA nucleotide sequence of the whole genome, which includes the whole chromosomal DNA and mitochondria. 
 One of the first approaches was the capillary sequencing method. With this method, it was possible to nearly sequence the whole genome but 
 the problem was that it was too expensive and inefficient for commercial purposes. 
@@ -11,7 +11,7 @@ Methods for analyzing sequencing data are leading to a better understanding of d
 The costs for a WGS range from $1,000 to $5,000 per genome. 
 
 
-Whole exome sequencing, short WES is the process for the identification of coding regions of genes responsible for protein function. 
+- Whole exome sequencing, short WES is the process for the identification of coding regions of genes responsible for protein function. 
 The disadvantage here is there are no alterations seen in the introns, which could have an effect on the genome dynamic. 
 Overall the advantage is that mutations are detected faster and allow to characterize the specific diseases.
 The costs for a WES range from $500 to $2,000 per sample. 
