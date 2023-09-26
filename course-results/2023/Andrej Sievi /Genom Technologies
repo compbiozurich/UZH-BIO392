@@ -8,11 +8,24 @@
 5. Browser Visualisation
 
 Whole exome sequencing (WES):
+The Exon is the region on the Chromosom which encodes for the according Protein. 
+All Exon together are called Exom. WES Method is useful for identifing coding region of genes which affect protein function.
+But it does not show you Alteration in the Intron regions, which also influence the Genom dynamic.
+Mutations are detected faster and allow to characterise a specific disease. It is a commonly used Method
+in the Diagnostic and guides precise medicine.
+
+In 2015 the cost for a whole exom sequencing was about 1000$ - 5000$. Declining trend
+
+
+
+
 
 
 Whole genome sequencing (WGS)
 
 Sequence Alignment Map (SAM)
+
+
 
 Binary Alignment Map (BAM) 
 
