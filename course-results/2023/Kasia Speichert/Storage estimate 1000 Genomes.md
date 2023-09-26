@@ -20,6 +20,6 @@ For $1000$ genomes:
 
 We know from the lecture that the costs to store 1 PB is 500’000CHF which sum up to 0.5 CHF per 1 GB.
 
-Thus the cost to store 750 GB is 
+Thus the cost to store 750 GB is 375 CHF and to store 7.5 GB -> 3.75 CHF.
 
 
