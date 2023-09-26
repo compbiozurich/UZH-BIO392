@@ -1,20 +1,20 @@
-## General NGS technoloiges 
+# General NGS technoloiges 
 
-## Count based vs intensity based as principle
+# Count based vs intensity based as principle
 
-## Long and short read technologies
+# Long and short read technologies
 
-## Cytogenetic techniqes (usage, research, clinical, historical vs current)
+# Cytogenetic techniqes (usage, research, clinical, historical vs current)
 
-### Banding analysis
+## Banding analysis
 
-### SNP, aCGH arrays
+## SNP, aCGH arrays
 
-### Chromosomal CGH
+## Chromosomal CGH
 
-## "T2T" genome
+# "T2T" genome
 
-### what technologies enable this?
+## What technologies enable this?
 
 
 
