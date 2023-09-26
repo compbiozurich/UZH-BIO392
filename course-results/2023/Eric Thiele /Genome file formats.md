@@ -35,7 +35,7 @@ Chromosome, start coordinate, alignment quality and match descriptor string can 
 
 #  VCF
 
-In genomics and bioinformatics, the file format known as VCF, or Variant Call Format, is frequently used to describe genetic variations such as single nucleotide polymorphisms (SNPs), insertions, deletions, and structural variants that are found when analyzing DNA sequencing data. Most VCF files are saved in text format. To save space, you can opt to compress VCF files. The file's header contains information about the file's body. # is used to indicate that a line is a header. In the header, special keywords are indicated by the ## symbol. The body of the VCF is tab divided into 8 obligatory columns and an indefinite number of optional columns that can be used to record additional information about the samples.
+In genomics and bioinformatics, the file format known as VCF, or Variant Call Format, is frequently used to describe genetic variations such as single nucleotide polymorphisms (SNPs), insertions, deletions, and structural variants that are found when analyzing DNA sequencing data. Most VCF files are saved in text format. To save space, you can opt to compress VCF files. The file's header contains information about the file's body as metadata. # is used to indicate that a line is a header. In the header, special keywords are indicated by the ## symbol. The body of the VCF is tab divided into 8 obligatory columns and an indefinite number of optional columns that can be used to record additional information about the samples.
 
 
 
