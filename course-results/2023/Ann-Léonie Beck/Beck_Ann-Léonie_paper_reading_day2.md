@@ -55,7 +55,7 @@ CNV segmentation: divides a genome into segments or regions based on the CNV obs
 CNV fraction: the fraction of genome with a copy number alteration
 
 ## Question 5: What are APIs and how to use APIs in progenetix
-Application Programming Interfaces allows different software applications to communicate with each other. In progenetix Beacon is used as the API.
+Application Programming Interfaces allows different software applications to communicate with each other. The API grants access to a database. In progenetix Beacon is used as the API. progenetix provides a query interface, which makes access to the API easier. 
 The query interface is built on top of the API. Query types can for example be by city, id, geolatitude, geolongitude or geodistance
 
 ## Question 6 : How does progenetix visualise CNA profiles?
