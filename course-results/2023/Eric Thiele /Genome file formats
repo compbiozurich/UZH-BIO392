@@ -16,11 +16,10 @@ The disadvantage here is there are no alterations seen in the introns, which cou
 Overall the advantage is that mutations are detected faster and allow to characterize the specific diseases.
 The costs for a WES range from $500 to $2,000 per sample. 
 
-1. Reasoning for the use
-2. Archival purposes
-3. Browser visualisation
-4. Storage for 1000 Genomes 
-5. Associated Costs
+# SAM 
+
+SAM stands for "Sequence Alignment/Map". It is a text-based file format used in bioinformatics and genomics to store information
+about the alignment of a sequence to a reference genome. 
 
 # BAM (Binary Alignment Map) 
 
@@ -31,6 +30,8 @@ The header contains the sample name, sample length, and the alignment method. Me
 sequence, quality, alignment information and custom tags. 
 Chromosome, start coordinate, alignment quality and match descriptor string can be found under the read name. 
 
+# VCF
+
+# FASTA
 
 
-- FASTA
