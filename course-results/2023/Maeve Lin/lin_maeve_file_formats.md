@@ -32,17 +32,24 @@ It is the binary and compressed version of SAM.
 
 ### Data requirement
 30X file: 100GB
+40X Exome: 6GB (https://www.strand-ngs.com/support/ngs-data-storage-requirements) 
 
 ### Advantage and when to use
-Compressed, so it is smaller and faster to process. 
+Compressed, so it is smaller and faster to process. BAM files should be used for full archival purposes, because they contain the information of a whole genome but they are not too big, so storage is not that expensive. 
 
 
 ## VCF: Variant Call Format
 ### Data structure
 Only stores the variants of a sequence in comparison to a reference genome. 
+
+### Format
+* Header (#)
+* Body: tab-separated with eight mandatory columns
+
+
 ### Cost factors
 
 ### Raw storage costs
 
 ### Advantage and when to use
- 
+Use the VCF for storing called variants and for analyzing the data, because it only has the most necessary information. 
