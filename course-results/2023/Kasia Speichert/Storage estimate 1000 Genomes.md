@@ -32,25 +32,17 @@ Multipling by 1000 genomes => 200 000 GB = 100 000 CHF (WGS)
 
 ### VCF file[^1]
 
-WIth around 45 bytes per line and 3 mln variants in average human genome this results in 135 Megabytes which is 135 Gigabytes per 1000 genomes resulting in the total cost of 67.5 CHF (WGS)
+With around 45 bytes per line and 3 mln variants in average human genome this results in 135 Megabytes which is 135 Gigabytes per 1000 genomes resulting in the total cost of 67.5 CHF (WGS)
 
 
 ### SAM file (Sequence alignment map)
 
-* Header
-* Alignment section
 
-#### Costs
-* WEG: 500TB cost: ~250000CHF
-* WES: 7.5TB cost: ~3750CHF
 
 
 ### BAM file (binary version of sequence alignment map)
-Is the compressed binary version of a SAM file that is used to represent aligned sequences up to 128 Mb. They consist of a:
-* Header
-* Alignment section
-Costs
-* WEG: 100TB cost: ~50000CHF
+
+A single BAM file from 30x coverage is 100 GB large. For 1000 genomes it acccounts for 100 000 GB => 50 000 CHF (WGS)
 * WES: 1.5TB cost: ~750CHF
 
 
