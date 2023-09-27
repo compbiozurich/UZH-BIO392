@@ -4,8 +4,15 @@
 ### Primary use
 It is a tool to explore annotated breast cancer transcriptomic data (DNA microarrays and RNA-seq) of published data.
 It can be used to explore the expression of genes of interest in breast cancer. 
+The information that is available comprises characteristics, functions and role of genes that play a role in oncogenesis. 
+
+
+
 
 # Interpreted databases
+
+
+
 
 # VICC paper (search.cancervariants.org)
 Variant Interpretation for Cancer Consortium: It is a web interface that combines and interprets six different
