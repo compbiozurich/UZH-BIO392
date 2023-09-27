@@ -1,5 +1,5 @@
 ---
-title: "lin_maeve_cnv_freq"
+title: "CNV frequencies in tumor types"
 author: "Maeve Lin"
 date: "`r Sys.Date()`"
 output: html_document
@@ -11,11 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 # Tumor information
-Esophageal adenocarcinoma: choose a tumor type
-google it and give a brief explanation
+Ependymoma is a type of brain tumor that mostly occurs in children and young adults. It is slow growing and the most common ependymal neoplasm. It starts in the ependymal cells lining the brain ventricles and the spinal cord central canal. 
 
 
-the ncit code is C4025
+the NCIt code is C3017
 
 # Access the CNV frequency data
 
@@ -28,66 +27,64 @@ library(pgxRpi)
 
 ## Access data
 ```{r}
-freq <- pgxLoader(type = 'frequency', output = 'pgxfreq', filters = "NCIT:C4025") # add a second filter if you want to get data of two tumors
+freq <- pgxLoader(type = 'frequency', output = 'pgxfreq', filters = "NCIT:C3017") # add a second filter if you want to get data of two tumors
 ```
 
 the metadata information is
 ```{r}
 freq$meta
 ```
-progenetix has 865 samples for this tumor
+progenetix has 537 samples for this tumor
 
 
 the data looks like this
 ```{r}
-freq$data$`NCIT:C4025`[c(1:3),]
+freq$data$`NCIT:C3017`[c(1:3),]
 ```
-6 columns
-filter: identifier
-5th column: gain frequ
-6th: loss freq
-last: index (not important)
 
 
 # Visualization
 ```{r}
 pgxFreqplot(freq)
 ```
-query filter, tumor name, nr of samples
-the horizontal line is the whole genome
-yellow: duplication
-blue: deletion frequency
-get a feeling, what is the most dominant or special CNV in this tumor
-which chromosomes have frequent gain or loss
-the resolution is chromosome arm: the dashed line is the centromere
-left is p right is q-arm
-e.g. chr8: has more CNVs in the long arm
-
-in this tumor, I set a 25% cutoff value
-this is not fixed and based on the overall pattern
-if you have a good reason, you can set a different cutoff value
-you can set a different cutoff value for duplication and deletion
+have a closer look at chr 9, chr 22, chr 6, chr 7
+I choose a cutoff value of 20%. 
 
 
-look at only one chromosome = higher resolution
 ```{r}
-pgxFreqplot(freq, chrom = 8)
+pgxFreqplot(freq, chrom = 1)
 ```
+1q duplication slightly above cutoff
 
-look at multiple chromosomes
+
 ```{r}
-pgxFreqplot(freq, chrom = c(1,3,8))
+pgxFreqplot(freq, chrom = 7)
 ```
+duplications on chromosome 7 are slightly above 20%
+
+```{r}
+pgxFreqplot(freq, chrom = 6)
+```
+deletions on 6q
+
+```{r}
+pgxFreqplot(freq, chrom = 9)
+```
+Very frequent (>25%) duplications on all of chr9
+
+```{r}
+pgxFreqplot(freq, chrom =22)
+```
+Very frequent (>25%) deletions on 22q.
+
 
 # Analysis
 
-based on the cutoff value, the ones with most 
-frequent duplications are on: 7p, 8q, 20p, 20q
-and the most frequent deletions are on: 4, 5q, 9p, 18q, 21
-* now find associated literature on the tumor you're interested in
-* put the study in the documentation with [link](link)  
-* simple comparison: which gains did the study find, that we found as well
-this is only the basic requirements
+For the cutoff value of 20%, we have most frequent duplications on: 1q, all of 7 and all of chromosome 9. \
+and the most frequent deletions are on: 6q and 22q \
 
-more fancy: try to analyze why there are differences, e.g. the patient had a different state
-upload the rmd file but check to see whether it can be rendered
+If we compare this to the literature, one [study](https://academic.oup.com/neuro-oncology/advance-article/doi/10.1093/neuonc/noad096/7184179) on the subgroup of ependymoma tumors of the posterior fossa group A (PFA) found CNV gains on 1q and losses on 6q.
+
+Another [study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4712639/) found losses of 9p or the total length of chromosome 9.
+
+One [study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1866851/) also found losses on 22q.
