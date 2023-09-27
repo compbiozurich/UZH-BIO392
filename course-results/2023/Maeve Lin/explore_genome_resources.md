@@ -10,8 +10,10 @@ The information that is available comprises characteristics, functions and role 
 
 
 # Interpreted databases
-
-
+## [MSK's Precision Oncology Knowledge Base](https://www.oncokb.org/)
+### Primary use
+OncoKB is a knowledge base of somatic molecular alterations in tumors. The information stored in the KB can be used
+for predicting the drug response for the FDA, for making guidelines of the National Comprehensive Cancer Network (NCCN) and recommendations for specific diseases. 
 
 
 # VICC paper (search.cancervariants.org)
