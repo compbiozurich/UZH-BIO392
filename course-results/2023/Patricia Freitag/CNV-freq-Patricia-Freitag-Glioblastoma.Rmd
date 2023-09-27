@@ -1,0 +1,52 @@
+---
+title: "BIO392-Patricia-Freitag-CNV-freq"
+author: "Patricia Freitag"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Tumor information 
+
+Glioblastomas are a highly malignant form of brain cancer. They originate from abnormal growth of glial cells. 
+The NCIt Code is: C4025
+
+# Access the CNV frequency data
+
+## load library
+
+```{r}
+
+library(pgxRpi)
+
+```
+
+## access data 
+
+```{r}
+freq <- pgxLoader(type = "frequency", output = "pgxfreq", filters = "NCIT:C3058")
+```
+
+The metadata information is
+
+```{r}
+freq$meta
+```
+
+The data looks like this
+
+```{r}
+freq$data$"NCIT:C3058"[c(1:3),]
+```
+
+## Visualization
+
+```{r}
+pgxFreqplot(freq)
+```
+
+According to plot, there are frequent duplications on chromosome 7p,7q,19p,19q,20p and 20q and deletions on chromosomes 10p, 10q and 13q. The cutoff percentage choosen is 25%. 
+One [study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8108987/) detected CNA gains which were mainly located on Chromosome 7p and 7q and CNA losses located on Chromosome 10q. There are overlaps between these two finding: Gains on 7p and 7q, loss on 10q
