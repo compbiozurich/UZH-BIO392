@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Invasive breast carcinoma
 
-Invasive breast carcinoma is a type of breast cancer that has spread into surrounding breast tissue. The most common subtypes include invasive ductal carcinoma, invasive lobular carcinoma and inflammatory breast cancer.
+Invasive breast carcinoma is a type of breast cancer that has spread into surrounding breast tissue. The most common subtypes include invasive ductal carcinoma, invasive lobular carcinoma and inflammatory breast cancer.[^1]
 The NCIt code for invasive breast carcinoma is C9245.
 
 ## Access the CNV frequency data
@@ -68,4 +68,8 @@ Looking up a [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8026652/) on i
 
 Comparing these results to our data, every single one is clearly visible on our graph and would have been included in our interpretation as well if our criteria were chosen differently.
 Note that none of our stated loss regions (4, 9, 13q, 18 and X) are mentioned in the paper.
+
+
+
+[^1]: https://www.cancer.org/cancer/types/breast-cancer/about/types-of-breast-cancer/invasive-breast-cancer.html
 
