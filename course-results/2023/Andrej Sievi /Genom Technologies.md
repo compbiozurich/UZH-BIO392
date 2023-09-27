@@ -1,5 +1,5 @@
 # How much computer storage is required for 1000 Genomes
-# There are diffrent File types to work with and advantages to illustrute Genomic Data.
+## There are diffrent File types to work with and advantages to illustrute Genomic Data.
 
 ### - Whole exome sequencing (WES):
 The Exon is the region on the Chromosom which encodes for the according Protein. 
@@ -46,23 +46,9 @@ Nucleotides and amino acids are represented using single-letter codes.
 
 A genome has a size of 715 MB. 
 
-file format | storage | cost |
------------ | ----------- | ------------ 
-sequence only | $715$ GB | $357.5$ CHF | 
-FASTA | $20'000$ GB | $10'000$ CHF |
-SAM | $400'000$ GB | $200'000$ CHF | 
-BAM | $100'000$ GB | $50'000$ CHF | 
-VCF | $125'000$ GB | $62'500$ CHF | 
 
+the uncompressed FASTA file 158 GB 
 
-
-file format | storage | cost |
------------ | ----------- | ------------ 
-sequence only | $7.15$ GB | $3.57$ CHF | 
-FASTA | $200$ GB | $100$ CHF |
-SAM | $4'000$ GB | $2'000$ CHF |
-BAM | $1'000$ GB | $500$ CHF |
-VCF | $1'250$ GB | $625$ CHF |
 
 
 
