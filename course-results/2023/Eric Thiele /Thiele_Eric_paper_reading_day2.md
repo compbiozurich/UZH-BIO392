@@ -58,8 +58,11 @@ How does progenetix visualise CNA profiles?
 What do you think should be improved in progenetix?
 
 - It is difficult to say what should be improved without working experience with progenetix, but I could imagine that an increase in the amount of data with constant updates to the newest studies and latest findings could
-  help for a better and more accurate work. 
+  help for a better and more accurate work.
+
+- Boolean options to chain filters and thus allow to create diverse and nuanced search queries to get the desired results.
 
 - Continuously maintain and expand a stable API for progenetix for the Inclusion of newer projects and data types. 
 
-- And on the other side ensure a safe environment in relationship to data privacy ans security to protect sensitive genomic informations. 
+- And on the other side ensure a safe environment in relationship to data privacy ans security to protect sensitive genomic informations.
+
