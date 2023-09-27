@@ -8,7 +8,7 @@
 # NCBI dbSNP 
 
 - NCBI's dbSNP database is a comprehensive database that catalogues single nucleotide
-- polymorphisms (SNPs) and other small genetic variations in various organisms, with a
+  polymorphisms (SNPs) and other small genetic variations in various organisms, with a
   focus on humans.
 
 
@@ -25,6 +25,13 @@
   Features include inserts, deletions, duplications, inversions, translocations,
   and many other types of structural variation data. The genomic locations,
   breakpoints, size, and genetic context of these changes are all given in great detail.
-  
+
+
+# NCBI:ClinVar
+
+- includes a significant amount of information on genomic variations, including
+  copy number variations (CNVs), structural changes, insertions, deletions,
+  and single nucleotide variants (SNVs). It provides thorough details on the pathogenicity,
+  clinical interpretation, and related diseases or conditions for these variations.
 
 
