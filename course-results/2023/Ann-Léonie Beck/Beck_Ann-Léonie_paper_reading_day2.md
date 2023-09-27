@@ -59,5 +59,10 @@ Application Programming Interfaces allows different software applications to com
 The query interface is built on top of the API. Query types can for example be by city, id, geolatitude, geolongitude or geodistance
 
 ## Question 6 : How does progenetix visualise CNA profiles?
+-summary with number of matched samples, variants, calls, frquency of alleles containing the CNA
+-document of biosamples
+-link to University of California Santa Cruz browser: overview of genomic elements
+-customized visualization:
+  -selected chromosomal regions/ grouping by subsets or studies
 
 ## Question 7: What do you think shloud be imporved in progenetix
