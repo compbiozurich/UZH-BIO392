@@ -14,9 +14,8 @@
 
 # ExAC 
 
-- ExAC is a tool that compiles exome sequencing data from numerous individuals to create a
-  a comprehensive catalogue of genomic diversity.
-
+- ExAC is a tool that aggregates exome sequencing data from numerous individuals
+  to create a comprehensive catalogue of genomic diversity.
 
 # NCBI:dbVAR
 
@@ -41,5 +40,13 @@
   of species, including humans and model organisms, and making these data accessible.
   EVA provides detailed information on genomic locations, allele frequencies,
   and functional observations for these variants.
+
+
+# UCSC Genome Browser:
+
+- The UCSC Genomic Browser provides an interactive platform for viewing and
+  analyzing genomic sequences. It provides an intuitive user interface with
+  a variety of genome-related data tracks, such as gene structure and function, regulatory elements,
+  and comparative genomics information.
 
 
