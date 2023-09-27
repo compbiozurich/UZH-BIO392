@@ -1,6 +1,7 @@
 # WES & WGS
 
 WES: whole exome sequencing
+
 WGS: whole genome sequencing 
 
 WGS:
