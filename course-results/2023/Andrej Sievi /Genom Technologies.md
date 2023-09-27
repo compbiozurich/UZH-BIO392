@@ -22,6 +22,7 @@ In 2015 the cost for a whole exom sequencing was about 1000$ - 5000$. Declining 
 
 
 
+
 ## Sequence Alignment Map (SAM):
 This Method is used to store nucleotides sequences gained from Next generation sequencing.
 However it is a text based Format. Biological sequences are alignt to a reference.
@@ -30,7 +31,10 @@ SAM Files can be up to several 10 GB in size
 
 
 ## Binary Alignment Map (BAM):
-The Binary Alignment Map is a more condenst presentation of SAM
+The Binary Alignment Map is a more condenst presentation of SAM and is used to represent aligned sequences.
+BAM files contain a header section and an alignment section. The Alignment are indexed and it is its purpose to
+find overlapping DNA Strands very fast. 
+
 
 
 
