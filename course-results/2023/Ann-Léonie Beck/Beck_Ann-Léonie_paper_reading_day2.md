@@ -59,10 +59,24 @@ Application Programming Interfaces allows different software applications to com
 The query interface is built on top of the API. Query types can for example be by city, id, geolatitude, geolongitude or geodistance
 
 ## Question 6 : How does progenetix visualise CNA profiles?
--summary with number of matched samples, variants, calls, frquency of alleles containing the CNA
--document of biosamples
--link to University of California Santa Cruz browser: overview of genomic elements
--customized visualization:
-  -selected chromosomal regions/ grouping by subsets or studies
+
+- summary with number of matched samples, variants, calls, frequency of alleles containing the CNA
+- document of biosamples
+- link to University of California Santa Cruz browser: overview of genomic elements
+- customized visualization:
+  - Result tab: genome-wide CNA by the percentage of samples, table containing subsets with ICD-o-3 or NCIt Ontology terms sorted by frequency of matched samples within subset
+  - Biosamples tab: information of matched biosamples
+  - Biosamples map tab: world map with matched geological locations
+  - Variants tab: variant digest, biosample and callset
 
 ## Question 7: What do you think shloud be imporved in progenetix
+points listed in the paper:
+- cell line data access tool
+- enhancing clincial and diagnostic annotation
+- expanding cross-database refrences and the types of genomic variant data
+- active data sharing
+- integration through networked services and platforms
+
+
+
+
