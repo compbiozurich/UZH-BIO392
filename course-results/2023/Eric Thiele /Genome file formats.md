@@ -26,6 +26,11 @@ about the alignment of a sequence to a reference genome. The SAM file is divided
 The header section consists of the metadata and information about the reference genome, sequencing platform and other relevant details.
 The alignment section provides information about how the scans match the reference genome. SAM files are easily readable and can be opened and reviewed with a text editor. They are accessible for manual review, but less efficient for storing and transferring large amounts of sequencing data because they store alignment information in text format. 
 
+Storage for SAM is coverage-dependent. So if you work with 30x coverage you will need for 1000 genomes about:
+715MB * 30 = 21'450 MB 
+--> 21'450 /1024 = 20.95 GB
+
+
 
 # BAM (Binary Alignment Map) 
 
@@ -36,9 +41,11 @@ The header contains the sample name, sample length, and the alignment method. Me
 sequence, quality, alignment information and custom tags. 
 Chromosome, start coordinate, alignment quality and match descriptor string can be found under the read name. 
 
-#  VCF
+With a BAM file, you save about 30 % - 50% of the original SAM file. So for 1000 genomes, you need about:
+10.48 GB - 14.67 GB
 
-In genomics and bioinformatics, the file format known as VCF, or Variant Call Format, is frequently used to describe genetic variations such as single nucleotide polymorphisms (SNPs), insertions, deletions, and structural variants that are found when analyzing DNA sequencing data. Most VCF files are saved in text format. To save space, you can opt to compress VCF files. The file's header contains information about the file's body as metadata. # is used to indicate that a line is a header. In the header, special keywords are indicated by the ## symbol. The body of the VCF is tab divided into 8 obligatory columns and an indefinite number of optional columns that can be used to record additional information about the samples.
+#  VCF
+In genomics and bioinformatics, the file format known as VCF, or Variant Call Format, is frequently used to describe genetic variations such as single nucleotide polymorphisms (SNPs), insertions, deletions, and structural variants that are found when analyzing DNA sequencing data. Most VCF files are saved in text format. The file's header contains information about the file's body as metadata. # is used to indicate that a line is a header. In the header, special keywords are indicated by the ## symbol. The body of the VCF is tab divided into 8 obligatory columns and an indefinite number of optional columns that can be used to record additional information about the samples.
 
 
 
@@ -54,8 +61,8 @@ greatly depending on the specific content and can greatly affect their size. For
 short DNA primers or protein domains result in smaller files, 
 while whole genome sequences or large protein sequences can result in larger files.
 
-
-
+Fasta files are not really known for high compressions like BAM or FASTQ files but you can save approximately 20-30%. 
+So if you have a 715 MB Genome * 1000 = 715GB and you make a FASTA file you get about 500-572 GB. 
 
 
 
