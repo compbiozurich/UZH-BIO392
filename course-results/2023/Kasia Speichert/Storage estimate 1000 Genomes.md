@@ -1,6 +1,8 @@
 We need two bits per base to encode the whole genome ($00$, $01$, $10$, $11$)
 
 $8$ bits = $1$ byte
+$1$ kilobyte = $1024$ bits
+$1$ GB = $1024$ MB = $1048576$ kb = $1073741824$ bytes
 
 $8000000$ bits = $1$ Megabyte
 
@@ -23,3 +25,4 @@ We know from the lecture that the costs to store 1 PB is 500’000CHF which sum 
 Thus the cost to store 750 GB is 375 CHF and to store 7.5 GB -> 3.75 CHF.
 
 
+## For different file formats 
