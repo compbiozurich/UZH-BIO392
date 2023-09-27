@@ -3,3 +3,7 @@
 # Interpreted databases
 
 # VICC paper
+Variant Interpretation for Cancer Consortium: It is a web interface that combines and interprets six different
+knowledgebases. This is necessary because each knowledgebase is different in terms of content, structure and 
+literature. This leads to problems when trying to make inferences between patient cohorts and clinical
+significance. Hence, there is a need for sharing of data and making the different databases compatible. 
