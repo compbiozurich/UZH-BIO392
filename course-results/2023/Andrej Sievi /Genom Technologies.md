@@ -53,6 +53,26 @@ Is a fast way to access sequence Data.
 FASTA files can contain one or more sequences, each with its own header and sequence data.
 Nucleotides and amino acids are represented using single-letter codes.
 
+### Storage and cost for 1'000 genomes by file format
+
+file format | storage | cost |
+----------- | ----------- | ------------ 
+sequence only | $715$ GB | $357.5$ CHF | 
+FASTA | $20'000$ GB | $10'000$ CHF |
+SAM | $400'000$ GB | $200'000$ CHF | 
+BAM | $100'000$ GB | $50'000$ CHF | 
+VCF | $125'000$ GB | $62'500$ CHF | 
+
+
+
+file format | storage | cost |
+----------- | ----------- | ------------ 
+sequence only | $7.15$ GB | $3.57$ CHF | 
+FASTA | $200$ GB | $100$ CHF |
+SAM | $4'000$ GB | $2'000$ CHF |
+BAM | $1'000$ GB | $500$ CHF |
+VCF | $1'250$ GB | $625$ CHF |
+
 
 
 
