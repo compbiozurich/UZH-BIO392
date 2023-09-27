@@ -35,3 +35,11 @@
   clinical interpretation, and related diseases or conditions for these variations.
 
 
+# EMBL-EBI European Variation Archive (EVA):
+
+- EVA focuses on collecting and preserving data on genetic variations in a variety
+  of species, including humans and model organisms, and making these data accessible.
+  EVA provides detailed information on genomic locations, allele frequencies,
+  and functional observations for these variants.
+
+
