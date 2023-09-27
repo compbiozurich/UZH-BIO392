@@ -19,6 +19,8 @@ In 2015 the cost for a whole exom sequencing was about 1000$ - 5000$. Declining 
 
 
 ## Whole genome sequencing (WGS):
+The Goal in WGS is to store the whole human genom with its about 3,2 Billion basepairs. This tooks a long time and diffrent approaches to
+gather the first whole genom. Nowadays its possible to sequence the DNA Genom in several weeks.
 
 
 
@@ -50,4 +52,7 @@ Because the VCF stores a lot of Information is has accordigly high storage place
 Is a fast way to access sequence Data.
 FASTA files can contain one or more sequences, each with its own header and sequence data.
 Nucleotides and amino acids are represented using single-letter codes.
+
+
+
 
