@@ -6,14 +6,21 @@ It is a tool to explore annotated breast cancer transcriptomic data (DNA microar
 It can be used to explore the expression of genes of interest in breast cancer. 
 The information that is available comprises characteristics, functions and role of genes that play a role in oncogenesis. 
 
-
-
-
-# Interpreted databases
 ## [MSK's Precision Oncology Knowledge Base](https://www.oncokb.org/)
 ### Primary use
 OncoKB is a knowledge base of somatic molecular alterations in tumors. The information stored in the KB can be used
 for predicting the drug response for the FDA, for making guidelines of the National Comprehensive Cancer Network (NCCN) and recommendations for specific diseases. 
+
+
+# Interpreted databases
+## [Cancer Genome Interpreter](https://www.cancergenomeinterpreter.org/home)
+### Functions
+* Inteprets cancer genomes that have recently been sequenced
+* Annotates potential tumor variants that could act as drivers
+* Describes possible effects on treatment response
+
+### Primary Use
+Useful to find recent tumor genome sequences and their annotations, hence the role they possibly play in tumorigenesis and treatment (tumor suppressors and oncogenes). It provides a systematic approach to the interpretation of cancer genomes to standardize the different resources available in the field.
 
 
 # VICC paper (search.cancervariants.org)
