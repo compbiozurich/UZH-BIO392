@@ -44,6 +44,8 @@ Nucleotides and amino acids are represented using single-letter codes.
 
 ### Storage and cost for 1'000 genomes by file format
 
+A genome has a size of 715 MB. 
+
 file format | storage | cost |
 ----------- | ----------- | ------------ 
 sequence only | $715$ GB | $357.5$ CHF | 
