@@ -2,7 +2,7 @@
 
 # Interpreted databases
 
-# VICC paper
+# VICC paper (search.cancervariants.org)
 Variant Interpretation for Cancer Consortium: It is a web interface that combines and interprets six different
 knowledgebases. This is necessary because each knowledgebase is different in terms of content, structure and 
 literature. This leads to problems when trying to make inferences between patient cohorts and clinical
@@ -16,3 +16,6 @@ They combine data from following knowledgebases:
 * Precision Medicine Knowledgebase (PMKB)
 
 The standard and guidelines are based on the recommendations by AMP/ASCO/CAP.
+This collection of information can be used by experts that match therapy to the specific tumor type, for regulatory 
+processes of FDA genomic tests and for the identification of biomarkers of different diseases that deliminate future 
+areas of study. 
