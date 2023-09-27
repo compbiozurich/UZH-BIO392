@@ -50,3 +50,10 @@
   and comparative genomics information.
 
 
+# 1000 Genomes Project
+
+- The goal of the 1000 Genomes Project was to sequence the genomes of a large number of people
+  from different populations to create a comprehensive catalogue of human genetic variation.
+  It features such details as genetic variation, including single nucleotide polymorphisms
+  (SNPs) and structural variants.
+
