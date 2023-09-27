@@ -77,3 +77,4 @@ you now can say how many samples have a change at a certain locus.
 ## Question 7: What do you think should be improved in progenetix?
 
 Collecting more Data. And assemble it under the same server. 
+More specific and detailed filter function.
