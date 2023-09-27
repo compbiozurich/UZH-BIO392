@@ -1,6 +1,9 @@
 
 #  Task: Estimate Storage Requirements for 1000 Genomes
 
+
+A perfect genome (no overhead) takes about  ~715 MB
+
 - WGS also called "Whole genome sequencing" is the process, by which 
 you try to get the DNA nucleotide sequence of the whole genome, which includes the whole chromosomal DNA and mitochondria. 
 One of the first approaches was the capillary sequencing method. With this method, it was possible to nearly sequence the whole genome but 
@@ -50,6 +53,9 @@ the sequence data are usually in a single line. The type of biological sequences
 greatly depending on the specific content and can greatly affect their size. For example, small sequences such as
 short DNA primers or protein domains result in smaller files, 
 while whole genome sequences or large protein sequences can result in larger files.
+
+
+
 
 
 
