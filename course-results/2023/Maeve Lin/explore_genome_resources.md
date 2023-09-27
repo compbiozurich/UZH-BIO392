@@ -12,6 +12,7 @@ OncoKB is a knowledge base of somatic molecular alterations in tumors. The infor
 for predicting the drug response for the FDA, for making guidelines of the National Comprehensive Cancer Network (NCCN) and recommendations for specific diseases. 
 
 
+
 # Interpreted databases
 ## [Cancer Genome Interpreter](https://www.cancergenomeinterpreter.org/home)
 ### Functions
@@ -21,6 +22,10 @@ for predicting the drug response for the FDA, for making guidelines of the Natio
 
 ### Primary Use
 Useful to find recent tumor genome sequences and their annotations, hence the role they possibly play in tumorigenesis and treatment (tumor suppressors and oncogenes). It provides a systematic approach to the interpretation of cancer genomes to standardize the different resources available in the field.
+* Identification of known tumorigenic genomic alterations (i.e. point mutations, indels, CNA and gene fusions)
+* Assessment of variants that have an unclear significance
+* Annotation of tumor variants that are biomarkers of drug response.
+
 
 
 # VICC paper (search.cancervariants.org)
