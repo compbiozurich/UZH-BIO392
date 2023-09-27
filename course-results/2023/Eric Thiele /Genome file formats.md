@@ -47,7 +47,7 @@ With a BAM file, you save about 30 % - 50% of the original SAM file. So for 1000
 #  VCF
 In genomics and bioinformatics, the file format known as VCF, or Variant Call Format, is frequently used to describe genetic variations such as single nucleotide polymorphisms (SNPs), insertions, deletions, and structural variants that are found when analyzing DNA sequencing data. Most VCF files are saved in text format. The file's header contains information about the file's body as metadata. # is used to indicate that a line is a header. In the header, special keywords are indicated by the ## symbol. The body of the VCF is tab divided into 8 obligatory columns and an indefinite number of optional columns that can be used to record additional information about the samples.
 
-
+VCFs are normally rather large and are therefore usually handled in compressed form. One genome requires about 125 GB as a VCf file. So 1000 genomes require about 125'000 GB. 
 
 #  FASTA
 
