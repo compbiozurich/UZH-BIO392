@@ -20,6 +20,11 @@
 
 
 | Disease |  Disease description | Gene | Variants (HGVS) |
-| :---         |     :---:      |          ---: |         ---:  |
+| :---         |     :---      |          :---: |         :---:  |
 | Hemochromatosis   | A disorder that causes the body to absorb too much iron from the diet    |  HJV    | NM_213656.4:c.187C>T   |
+|Thalassemia    | Thalassaemia is a hereditary disease caused by an imbalance in the formation of the four amino acid chains in the haemoglobin      | ATRX       | NM_000489.6:c.6253C>T      |
+| git diff     | git diff       | git diff      | git diff      |
+| git diff     | git diff       | git diff      | git diff      |
+| git diff     | git diff       | git diff      | git diff      |
+| git diff     | git diff       | git diff      | git diff      |
 | git diff     | git diff       | git diff      | git diff      |
