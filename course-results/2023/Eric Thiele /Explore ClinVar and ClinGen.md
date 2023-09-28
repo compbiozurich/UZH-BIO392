@@ -22,5 +22,8 @@
 | CDKN2A         |     cyclin dependent kinase inhibitor 2A      |          9p21.3 |         Acts as a negative regulator of the proliferation of normal cells by interacting strongly with CDK4 and CDK6. This inhibits their ability to interact with cyclins D and to phosphorylate the retinoblastoma protein.  |          melonoma  |         ...  |
 | KRAS         |     :---      |          :--- |         :---  |          :--- |         :---  |
 | TP53          |     tumor protein p53      |          17p13.1 |         Acts as a tumor suppressor in many tumor types; induces growth arrest or apoptosis depending on the physiological circumstances and cell type.  |          Li-Fraumeni syndrome 1 |         ...  |
+| KRAS         |     :---      |          :--- |         :---  |          :--- |         :---  |
+
+
 | FMR1          |     fragile X messenger ribonucleoprotein 1     |          Xq27.3
  |         Multifunctional polyribosome-associated RNA-binding protein that plays a central role in neuronal development and synaptic plasticity through the regulation of alternative mRNA splicing, mRNA stability, mRNA dendritic transport and postsynaptic local protein synthesis of a subset of mRNA  |          Fragile X syndrome |         a genetic disorder characterized by mild-to-moderate intellectual disability  |
