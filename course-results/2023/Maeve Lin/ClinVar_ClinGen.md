@@ -6,7 +6,7 @@
 |-------|-------------------|----|--------|
 |Hemochromatosis|a disorder that causes the body to absorb too much iron from the diet|HJV|NM_213653.4:c.187C>T|
 |Thalassemia|an inherited mental retardation syndrome, X-linked (mainly occurs in XY-individuals)|GBA1, LOC106627981|NM_000157.4:c.695G>A|
-|Haemophilia|		|		|		|
+|Haemophilia|a disease with a deficiency in clotting factor VIII that leads to longer than normal bleeding after injury|F8|NM_000132.4:c.5302C>T|
 |Cystic Fibrosis|		|		|		|
 |Tay sachs disease|		|		|		|
 |Fragile X syndrome|		|		|		|
