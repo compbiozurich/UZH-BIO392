@@ -21,7 +21,7 @@
 |CYBB|cytochrome b-245 beta chain |Xp21.1-p11.4|voltage-gated proton channel, component of membrane-bound oxidase of phagocytes|granulomatous disease|a chronic, X-linked disease with impaired phagocytes leading to high susceptibility to bacterial and fungal infections|
 |HJV|hemojuvelin BMP co-receptor|1q21.1|bone morphogenetic protein coreceptor|hemochromatosis type 2A|severe iron overload leading to hypogonadism, cardiomyophathy, glucose intolerance and diabetes|
 |CDKN2A|cyclin dependent kinase inhibitor 2A|9p21.3|negative regulator of cell proliferation|melanoma-pancreatic cancer syndrome|an inherited cancer predisposition syndrome leading to a higher risk of the development of malignant melanoma and/or pancreating cancer|
-|KRAS|		    |		|		|		|		 |
+|KRAS|KRAS proto-oncogene, GTPase|12p12.1|Ras protein|Noonan syndrome|a syndrome including short stature, congenital heart defect and differing developmental delay|
 |TP53|	    	|		|		|		|		 |
 |	 |		    |		|		|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
 
