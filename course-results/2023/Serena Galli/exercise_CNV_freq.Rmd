@@ -1,0 +1,70 @@
+---
+title: "bio392_cnv_freq"
+author: "Serena Galli"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+#### Melanoma
+
+**Melanoma** (*NCIT code = C3224*) is a type of cancer that develops from the pigment-producing cells known as melanocytes. Melanomas typically occur in the skin, but may rarely occur in the mouth, intestines, or eye (so-called uveal melanoma). Risk factors for melanoma include excessive sun exposure, a history of sunburns, fair skin, a family history of melanoma, and having many moles or atypical moles. 
+
+
+#### Load the required libraries and access the data
+
+```{r}
+library(pgxRpi)
+freq <- pgxLoader(type='frequency', output='pgxfreq', filters= "NCIT:C3224")
+```
+
+The metadata information is 
+
+```{r}
+freq$meta
+```
+
+The actual data looks like this: 
+
+```{r}
+freq$data$`NCIT:C3224`[c(1:3),] #show first three rows
+```
+
+
+#### Visualize the CNV frequency pattern
+
+```{r}
+pgxFreqplot(freq) #yellow = gains, blue = losses
+```
+
+```{r}
+pgxFreqplot(freq, chrom=c(4,8, 17, 22)) #visualize 4 chromosomes in detail
+```
+
+
+#### Analysis: Which chromosomes display frequent gains or losses?
+Using a cut-off of 25%, the following gains and losses are detected:  
+gains: 1q, 6p, 7p, 7q, 8q, 17q (partially), 20p, 20q and 22p.  
+losses: 4q (borderline), 6q, 9p, 9q, 10p, 10q and 11q. 
+
+
+#### Comparison with a published paper
+
+In a [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1892437/) from 2003, a cohort of 186 melanocytic tumors encompassing both melanomas (n=132) and benign nevi (n=54) was studied. Amongst other things, they compared the presence of chromosomal aberrations, as assessed by CGH, between benign and malignant lesions and between different melanoma subtypes.  
+Again relying on a cut-off of 25%, following gains and losses can be observed in Figure 1A (acral and non-acral melanoma):  
+gains: 1q, 5p (acral melanoma), 6p, 7p, 7q, 8q (borderline), 17q , 20q (acral) and 22p.  
+losses: 6q, 9p, 9q, 10p, 10q and 11q (acral, borderline).  
+
+Following differences between the two ressources can be noted:  
+gains: 5p (only in the paper), 20p (only in the progenetix sample collection, present at a lower percentage in the paper), 22q (only in the progenetix sample collection) 
+losses: 4q (only in the progenetix sample collection, present at a lower percentage in the paper). 
+
+The gains and losses observed in the two datasets overlap quite well. In my view, the most notable difference regards the gain of 5p, which seems to be a specific feature of acral melanoma, which was analysed separately in the paper (22/132 were acral melanomas). In the progenetix melanoma collection, no 'acral melanoma' category exists but given the fact that acral melanomas account for around 1-3% of all melanomas, one can guess that this subtype is underrepresented in the progenetix resource and therefore the frequency of this subtype-specific gain lies below 25%. 
+
+
+
+
