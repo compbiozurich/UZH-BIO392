@@ -19,7 +19,7 @@
 |----|---------|--------------------|------------|-------|-------------------|
 |CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|a genetic disorder characterized by the production of sweat with a high salt content and mucus secretions with an abnormal viscosity|		 |
 |CYBB|cytochrome b-245 beta chain |Xp21.1-p11.4|voltage-gated proton channel, component of membrane-bound oxidase of phagocytes|granulomatous disease|a chronic, X-linked disease with impaired phagocytes leading to high susceptibility to bacterial and fungal infections|
-|HJV|		    |		|		|		|		 |
+|HJV|hemojuvelin BMP co-receptor|1q21.1|bone morphogenetic protein coreceptor|hemochromatosis type 2A|severe iron overload leading to hypogonadism, cardiomyophathy, glucose intolerance and diabetes|
 |CDKN2A|		|		|		|		|		 |
 |KRAS|		    |		|		|		|		 |
 |TP53|	    	|		|		|		|		 |
