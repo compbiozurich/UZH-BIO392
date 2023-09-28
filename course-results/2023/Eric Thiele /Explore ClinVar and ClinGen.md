@@ -12,7 +12,7 @@
 | Huntington's disease |...| PRNP | NM_000311.5:c.593T>C | 
 
 
-| First Header  | Second Header |
+| First Header | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
