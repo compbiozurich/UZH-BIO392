@@ -22,7 +22,7 @@
 |HJV|hemojuvelin BMP co-receptor|1q21.1|bone morphogenetic protein coreceptor|hemochromatosis type 2A|severe iron overload leading to hypogonadism, cardiomyophathy, glucose intolerance and diabetes|
 |CDKN2A|cyclin dependent kinase inhibitor 2A|9p21.3|negative regulator of cell proliferation|melanoma-pancreatic cancer syndrome|an inherited cancer predisposition syndrome leading to a higher risk of the development of malignant melanoma and/or pancreating cancer|
 |KRAS|KRAS proto-oncogene, GTPase|12p12.1|Ras protein|Noonan syndrome|a syndrome including short stature, congenital heart defect and differing developmental delay|
-|TP53|	    	|		|		|		|		 |
+|TP53|tumor protein p53|17p13.1|tumor suppressor|Li-Fraumeni syndrome 1|a cancer predisposition syndrome with higher risks for different malignancies such as breast cancer, CNS tumors or osteosarcomas|
 |	 |		    |		|		|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
 
 
