@@ -22,4 +22,6 @@ HJV | hemojuvelin BMP co-receptor | 1q21.1 | hemojuvelin | hemochromatosis type 
 CDKN2A | cyclin dependent kinase inhibitor 2A | 9p21.3 | cyclin-dependent kinase inhibitor | melanoma-pancreatic cancer syndrome | It is a control protein in the cell cycle. Misfunction leads to increased cell division
 leads to organ malformations in pancreas brain, esophagus, stomach, urinary bladder |
 KRAS | KRAS proto-oncogene, GTPase | 12p12.1 | K-Ras, that is part of a signaling pathway known as the RAS/MAPK pathway | noonan syndrome | Growth disorders, heart defect
-TP53 | 
+TP53 | tumor protein p53 | 17p13.1 | p53  | Li-Fraumeni syndrome 1 | a tumor suppressor in many tumor types preventing tumor development. a germline mutation of the tumor suppressor gene p53
+FMR1 | fragile X messenger ribonucleoprotein 1 | Xq27.3 | FMRP | Fragile X syndrom | a genetic disorder characterized by mild-to-moderate intellectueal disability |
+
