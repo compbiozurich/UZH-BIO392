@@ -6,7 +6,7 @@ author: "Roman Stadler"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, cache=T)
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, cache=F)
 ```
 
 ## R Setup
