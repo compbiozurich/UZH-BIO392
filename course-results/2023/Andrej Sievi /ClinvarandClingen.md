@@ -1,3 +1,5 @@
+## Clinvar 
+[URL][https://www.ncbi.nlm.nih.gov/clinvar/]
 
 
 Disease | Disease description | Gene | Variants (HGVS) |
@@ -10,3 +12,8 @@ Tay Sachs Disease | destruction of the nerv cells in the brain and spinal leads 
 Fragile X Syndrom | a genetic disease on the X chromosom leads to Neurons growth disorder. Patients have intelligence reduction. A part on the X chromosom is mutated which is essential for neurogenesis and neuronal plasticity. | COL1A1 | NM_000088.4:c.934C>T
 Huntington's Disease | Neurodegenerative Disease manifests itself through involuntary, uncoordinated movements increasing loss of muscle control from the age of 40 onwards | PRNP | NM_000311.5:c.593T>C
 
+## Clingen 
+
+Gene | Gene name | Chromosomal location | Gene prodcut | Disease | Disease description
+----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+CFTR | CF transmembrane conductance regulator | epithelial ion channel, transport of chloride ions across the cell membrane | cystic fibrosis | a genetic disorder chrachtericzed by the production of sweat with a igh salt content and mucus secretion with an abnormal viscosity | 
