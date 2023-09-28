@@ -22,4 +22,4 @@
 | CDKN2A         |     :---      |          :--- |         :---  |          :--- |         :---  |
 | KRAS         |     :---      |          :--- |         :---  |          :--- |         :---  |
 | TP53          |     :---      |          :--- |         :---  |          :--- |         :---  |
-| COL1A1          |     :---      |          :--- |         :---  |          :--- |         :---  |
+| COL1A1          |     :---      |          :--- |         :---  |          Fragile X syndrome |         a genetic disorder characterized by mild-to-moderate intellectual disability  |
