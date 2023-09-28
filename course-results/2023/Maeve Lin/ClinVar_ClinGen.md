@@ -9,8 +9,8 @@
 |Haemophilia|a disease with a deficiency in clotting factor VIII that leads to longer than normal bleeding after injury|F8|NM_000132.4:c.5302C>T|
 |Cystic Fibrosis|a disease affecting exocrine glands and leading to a build-up of mucus in the respiratory system|CFTR|NM_000492.4:c.662del|
 |Tay sachs disease|a progressive neurodegenerative disorder that leads to the death of neurons and is mostly fatal|HEXA|NM_000520.6:c.1385A>T|
-|Fragile X syndrome|a neurodevelopmental disorder that leads to developmental delay and intellectual delay|FMR1|NM_002024.6:c.433G>T|
-|Huntington's disease|		|		|		|
+|Fragile X syndrome|a neurodevelopmental disorder that leads to developmental delay and impaired intellectual development|FMR1|NM_002024.6:c.433G>T|
+|Huntington's disease|a progressive neurodegenerative disorder mostly starting at age 30-40 including jerking movements and later further motor difficulties|HTT|NM_001388492.1:c.4638C>G|
 
 
 ### Relational list using [ClinGen](https://clinicalgenome.org/)
