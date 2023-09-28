@@ -53,9 +53,3 @@
 * genome-wide screen data
 * high precision data
 
-### [dbSNP]()
-
-* short for "Database of Short Genetic Variations"
-* includes SNPs (single nucleotide variants) and small-scale insertions and deletions
-* population-specific data
-* neutral variations and clinical mutations
