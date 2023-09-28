@@ -16,7 +16,7 @@
 ### Relational list using [ClinGen](https://clinicalgenome.org/)
 
 |Gene|Gene name|Chromosomal location|Gene product|Disease|Disease description|
-|----|---------|--------------------|------------|-------|-------------------|
+|----|----------|--------------------|------------|-------|-------------------|
 |CFTR|CF transmembrane conductance regulator|7q31.2|epithelial ion channel, transport of chloride ions across the cell membrane|Cystic fibrosis|a genetic disorder characterized by the production of sweat with a high salt content and mucus secretions with an abnormal viscosity|		 |
 |CYBB|cytochrome b-245 beta chain|Xp21.1-p11.4|component of the membrane-bound oxidase of phagocytes|	chronic granulomatous disease|primary immunodeficiency disorder that affects the immune system's ability to fight certain bacterial and fungal infections	|
 |HJV|	hemojuvelin BMP co-receptor|1q21.1|bone morphogenetic protein (BMP) coreceptor|	hemochromatosis type 2A	|causes the body to absorb too much iron from the diet |
