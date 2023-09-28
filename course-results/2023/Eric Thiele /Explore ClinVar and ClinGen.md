@@ -19,7 +19,7 @@
 | Huntington's disease | Huntington's disease is a condition that damages nerve cells in the brain and can affect movement  and mental health| PRNP | NM_000311.5:c.593T>C | 
 
 
-| Left-aligned | Center-aligned | Right-aligned |  
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+| Disease |  Disease description | Gene | Variants (HGVS) |
+| :---         |     :---:      |          ---: |         ---:  |
+| Hemochromatosis   | A disorder that causes the body to absorb too much iron from the diet    |  HJV    | NM_213656.4:c.187C>T   |
+| git diff     | git diff       | git diff      | git diff      |
