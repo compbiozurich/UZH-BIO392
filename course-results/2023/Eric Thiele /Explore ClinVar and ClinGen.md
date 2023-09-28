@@ -17,7 +17,7 @@
 | Gene  |  Gene name | Chromosomal location | Gene product |    Disease |    Disease description  |
 | :---         |     :---      |          :--- |         :---  |          :--- |         :---  |
 | CFTR         |     CF transmembrane conductance regulator     |          7q31.2 |         epithlial ion channel. transport of chloride ions across the cell membrane  |          cystic fribrosis |         a genetic disorder characterized by the production of sweat with a high salt content and mucus secretions with an abnormal viscosity  |
-| CYBB         |     :---      |          :--- |         :---  |          :--- |         :---  |
+| CYBB         |     cytochrome b-245 beta chain      |          Xp21.1-p11.4 |         Critical component of the membrane-bound oxidase of phagocytes that generates superoxide. It is the terminal component of a respiratory chain that transfers single electrons from cytoplasmic NADPH across the plasma membrane to molecular oxygen on the exterior  |          granulomatous disease, chronic, X-linked |         ...  |
 | HJV         |     :---      |          :--- |         :---  |          :--- |         :---  |
 | CDKN2A         |     :---      |          :--- |         :---  |          :--- |         :---  |
 | KRAS         |     :---      |          :--- |         :---  |          :--- |         :---  |
