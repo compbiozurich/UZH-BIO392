@@ -20,8 +20,8 @@ Gene | Gene name | Chromosomal location | Gene prodcut | Disease | Disease descr
 CFTR | CF transmembrane conductance regulator | 7q31.2 | epithelial ion channel, transport of chloride ions across the cell membrane | cystic fibrosis | a genetic disorder chrachtericzed by the production of sweat with a igh salt content and mucus secretion with an abnormal viscosity | 
 CYBB |cytochrome b-245, beta chain | Xp21.1-p11.4 | cytochrome b-245, beta chain | granulomatous disease, chronic, X-linked | immunodeficiency which manifests itself after the first year of life. White blodd cells are unable to fight against bacterial and fungal intruders.
 HJV | hemojuvelin BMP co-receptor | 1q21.1 | hemojuvelin | hemochromatosis type 2A | Hemojuvelin is a protein that regulates the proper iron balance in the body. Misfunction leads to accumulation of iron. It is expressed in the heart, liver and muscles. 
-KRAS | KRAS proto-oncogene, GTPase | 12p12.1 | K-Ras, that is part of a signaling pathway known as the RAS/MAPK pathway | noonan syndrome | Growth disorders, heart defect
-TP53 | tumor protein p53 | 17p13.1 | p53  | Li-Fraumeni syndrome 1 | a tumor suppressor in many tumor types preventing tumor development. a germline mutation of the tumor suppressor gene p53
-FMR1 | fragile X messenger ribonucleoprotein 1 | Xq27.3 | FMRP | Fragile X syndrom | a genetic disorder characterized by mild-to-moderate intellectueal disability 
+KRAS | KRAS proto-oncogene, GTPase | 12p12.1 | K-Ras, that is part of a signaling pathway known as the RAS/MAPK pathway | noonan syndrome | Growth disorders, heart defect.
+TP53 | tumor protein p53 | 17p13.1 | p53  | Li-Fraumeni syndrome 1 | a tumor suppressor in many tumor types preventing tumor development. a germline mutation of the tumor suppressor gene p53.
+FMR1 | fragile X messenger ribonucleoprotein 1 | Xq27.3 | FMRP | Fragile X syndrom | a genetic disorder characterized by mild-to-moderate intellectueal disability. 
 CDKN2A | cyclin dependent kinase inhibitor 2A | 9p21.3 | cyclin-dependent kinase inhibitor | melanoma-pancreatic cancer syndrome | It is a control protein in the cell cycle. Misfunction leads to increased cell division leads to organ malformations in pancreas brain, esophagus, stomach, urinary bladder.
 
