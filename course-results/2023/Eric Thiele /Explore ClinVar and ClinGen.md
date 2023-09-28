@@ -10,3 +10,9 @@
 | Tay sachs disease | ... | HEXA | NM_000520.6:c.1385A>T | 
 | Fragile X syndrome|... | COL1A1 | NM_000088.4:c.934C>T | 
 | Huntington's disease |...| PRNP | NM_000311.5:c.593T>C | 
+
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
