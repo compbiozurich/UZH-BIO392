@@ -8,5 +8,10 @@ The National Center for Biotechnology Information ([NCBI](https://www.ncbi.nlm.n
 ## Genome Reference Consortium (GRC)
 The [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc) plays a crucial role in curating, enhancing, and updating reference genomes, focussing on the human genome. The GRC wants to provide the best representation of the human genome to meet basic and clinical research needs and to represent the genetic diversity of the human pangenome. The GRC also evaluated new models and sequences of the Telomere-to-Telomere Consortium and the Human Pangenome Reference Consortium.
 
-## Four
-4
+## UCSC Genome Browser
+The University of California, Santa Cruz ([UCSC](https://genome.ucsc.edu/)) Genome Browser is a widely used web-based tool that provides a visual interface for exploring and analyzing genomic data.
+
+## Mouse Genome Informatics (MGI)
+[MGI](https://www.informatics.jax.org/) serves as the global database for laboratory mice, providing integrated genetic, genomic, and biological data to support the investigation of human health and disease by providing a comprehensive resource for mouse-related research.
+
+##
