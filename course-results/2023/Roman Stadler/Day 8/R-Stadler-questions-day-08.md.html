@@ -464,15 +464,15 @@ STRs can also influence an individual’s response to drugs. Some STRs are
 located in or near genes that affect drug metabolism or drug target
 proteins. Some STRs have been used in non-invasive prenatal testing to
 detect genetic disorders in fetuses by analyzing maternal blood samples.
-Changes in the length of specific STRs associated with the disorder can
-be indicative of the condition.</p>
+Changes in the length of specific STRs are also associated with the
+disorder can be indicative of the condition.</p>
 </div>
 <div id="q7" class="section level3">
 <h3>Q7</h3>
 <p><strong>What are some of the challenges in analysing STRs from NGS
 data?</strong></p>
 <p>Because of the repetitive nature of STR reads, it makes it harder to
-determine how many repeats are there exactly when analysing the reads.
+determine how many repeats are there exactly when analyzing the reads.
 Moreover, because the number of repeats is very variable, it is hard to
 compare against a reference genome. Also, distinguishing between
 different STR loci with similar repeat motifs can be challenging.</p>
@@ -485,10 +485,7 @@ GangSTR model Then, answer Q6 and Q7.</p>
 <p><strong>What sets GangSTR apart from other STR genotyping
 tools?</strong></p>
 <p>GangSTR extracts information from paired-end reads into a unified
-model to estimate maximum likelihood TR lengths. Its core component is a
-maximum likelihood framework incorporating various sources of
-information from short paired-end reads into a single model that is
-applied separately to each TR in the genome. It uses four types of
+model to estimate maximum likelihood TR lengths. It uses four types of
 reads:</p>
 <ul>
 <li>enclosing read pairs <em>(‘E’)</em>: least one read that contains
@@ -500,13 +497,15 @@ repetitive sequence</li>
 <li>fully repetitive read pairs <em>(‘FRR’)</em>: at least one read
 consisting entirely of the TR motif</li>
 </ul>
+<p>GangSTR outperforms alternative methods in both accuracy and
+speed.</p>
 </div>
 <div id="q9" class="section level3">
 <h3>Q9</h3>
 <p><strong>What types of information does GangSTR use for STR
 genotyping?</strong></p>
-<p>GangSTR incorporates these variables in its joint likelihood
-framework:</p>
+<p>In addtion to the previously described types of reads, GangSTR
+incorporates these variables in its joint likelihood framework:</p>
 <ul>
 <li>fragment length</li>
 <li>coverage</li>

@@ -64,15 +64,16 @@ Then, answer Q4 and Q5.
 STRs exhibit mutation rates that are orders of magnitude higher than other types of variation, and thus contribute a large fraction of human genetic variation.
 STRs are predicted to contribute a higher number of de novo mutations per generation than any other type of variation.
 STRs are often highly multi-allelic, and thus may generate complex inheritance patterns not well captured by linkage or analysis of bi-allelic single nucleotide polymorphisms (SNPs).
-Genetic variation in STRs can also influence an individual's response to drugs. Some STRs are located in or near genes that affect drug metabolism or drug target proteins.
+Genetic variation in STRs can also influence an individual's response to drugs. 
+Some STRs are located in or near genes that affect drug metabolism or drug target proteins.
 Some STRs have been used in non-invasive prenatal testing to detect genetic disorders in fetuses by analyzing maternal blood samples. 
-Changes in the length of specific STRs associated with the disorder can be indicative of the condition.
+Changes in the length of specific STRs are also associated with the disorder can be indicative of the condition.
 
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
 
-Because of the repetitive nature of STR reads, it makes it harder to determine how many repeats are there exactly when analysing the reads.
+Because of the repetitive nature of STR reads, it makes it harder to determine how many repeats are there exactly when analyzing the reads.
 Moreover, because the number of repeats is very variable, it is hard to compare against a reference genome.
 Also, distinguishing between different STR loci with similar repeat motifs can be challenging.
 
@@ -87,7 +88,6 @@ Then, answer Q6 and Q7.
 **What sets GangSTR apart from other STR genotyping tools?**
 
 GangSTR extracts information from paired-end reads into a unified model to estimate maximum likelihood TR lengths. 
-Its core component is a maximum likelihood framework incorporating various sources of information from short paired-end reads into a single model that is applied separately to each TR in the genome.
 It uses four types of reads:
 
 - enclosing read pairs *(‘E’)*: least one read that contains the entire TR plus non-repetitive flanking region on either end
@@ -95,10 +95,12 @@ It uses four types of reads:
 - flanking read pairs *(‘F’)*: partially extends into the repetitive sequence 
 - fully repetitive read pairs *(‘FRR’)*: at least one read consisting entirely of the TR motif
 
+GangSTR outperforms alternative methods in both accuracy and speed.
+
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
 
-GangSTR incorporates these variables in its joint likelihood framework:
+In addtion to the previously described types of reads, GangSTR incorporates these variables in its joint likelihood framework:
 
 - fragment length
 - coverage
