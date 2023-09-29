@@ -5,8 +5,8 @@ The National Center for Biotechnology Information ([NCBI](https://www.ncbi.nlm.n
 ## Ensembl
 [Ensembl](https://www.ensembl.org/index.html) is a genomic browser specializing in vertebrate genomes, facilitating research in comparative genomics, evolutionary biology, sequence variations, and transcriptional regulation. It annotates genes, performs diverse alignments, predicts regulatory roles, and compiles disease-related information. Ensembl offers a suite of tools like BLAST, BLAT, BioMart, and the Variant Effect Predictor (VEP) applicable to all supported species. There are also sister Ensemble sites, namely Ensembl Bacteria, Ensembl Fungi, Ensemble Plants, Ensembl Protists and Ensembl Metazoa.
 
-## Three
-3
+## Genome Reference Consortium (GRC)
+The [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc) plays a crucial role in curating, enhancing, and updating reference genomes, focussing on the human genome. The GRC wants to provide the best representation of the human genome to meet basic and clinical research needs and to represent the genetic diversity of the human pangenome. The GRC also evaluated new models and sequences of the Telomere-to-Telomere Consortium and the Human Pangenome Reference Consortium.
 
 ## Four
 4
