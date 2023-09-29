@@ -71,4 +71,14 @@ Your answer here
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
-Your answer here
+* Input 
+  * Sequence alignments 
+  * Reference set of TRs 
+* Output 
+  * Estimated diploid repeat lengths 
+* Also takes into account 
+  * Fragment length 
+  * Coverage 
+  * Existence of partially enclosing reads 
+* Generally the information is from paired-end reads 
+* The tools puts it into a unified model to estimate the TR lengths using the maximum likelihood method 
