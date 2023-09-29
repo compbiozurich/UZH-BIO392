@@ -21,8 +21,12 @@ Because files containing sequences are very big and thus need to be compressed i
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
 *Hint: look at the [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
-Your answer here
-
++ *samtools sort:* sorts the records in SAM or BAM file based on the genomic coordinates. Sorted output can be saved in a new BAM file using the '-o' option
+  e.g. ```samtools sort input.bam -o sorted_ouput.bam```
++ *samtools view:* used to view the contents of SAM, BAM or CRAM files. It can also be used to convert between these different formats.
+  e.g. cnverting BAM to SAM: ```samtools view input.bam > output.sam```
++ *samtools index:* creates an index file for SAM, BAM, CRAM files. For SAM files it only works if they are BGZF compressed first. Allows quick access to specific regions of the alignment data without having to read the entire file.
+  e.g. indexing a BAM file: ```samtools index input.bam```
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*

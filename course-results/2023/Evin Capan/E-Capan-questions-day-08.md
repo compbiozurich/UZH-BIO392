@@ -48,11 +48,12 @@ First, read the following sections of [this review](https://www.sciencedirect.co
 * Abstract
 * Introduction``
 * Genotyping STRs from high-throughput sequencing data
-Then, answer Q4 and Q5.
+Then, answer Q6 and Q7.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
-Your answer here
+
+Because of their repetitive nature inducing slippage events during DNA replication, short tandem repeats (STRs) are one of the fastest mutating loci in the genome. STR-profiling from high-throughput sequencing data have revealed that STRs are highly multiallelic and may contribute more de novo mutations than any other variant class. These can play a significant role in regulating gene expression and other molecular phenotypes, contributing to Mendelian diseases, complex traits, and cancer.
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
@@ -62,7 +63,7 @@ Second, read the following sections of the [paper describing GangSTR](https://ac
 * Abstract
 * Introduction
 * Overview of the GangSTR model
-Then, answer Q6 and Q7.
+Then, answer Q8 and Q9.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**

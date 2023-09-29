@@ -81,8 +81,14 @@ Then, answer Q6 and Q7.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
-Your answer here
+
+GangSTR estimates TR lengths. Other methods rely on finding informatinve reads that enclose the whole repeating region. This leads to repeats spanning more than 70 bp to be almost impossible to genotype.
+Unlike other tools, GangSTR uses enclosing, spanning, FRR and flanking read pairs and not only a reduced selection of them. Additionaly it can work genome-wide and estimate the number of repeats. 
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
-Your answer here
+* sequence alignments
+* reference set of TRs
+* maximum likelihood framework
+
+Sequence alignments can be **enclosing**, containing the whole TR and non repetitive flanking region; **spanning**, originating from a fragment that spans the TR and mapping the ends of the repeat; **FRR**, consisting entirely of TR motif; or **flanking**, partially extendinginto the repetive sequence. 
