@@ -369,18 +369,27 @@ about the questions; so no copy/pasting!</p>
 <h3>Q1</h3>
 <p><strong>Does the sequence quality graph of your data look different
 from the examples shown in the slides? Are there any adapter sequences
-in the data? Why do you think this is?</strong> Your answer here</p>
+in the data? Why do you think this is?</strong>. They all look the same,
+in particular because they are artificially generated.<br />
+They all have perfect scores, also because of the artificial
+generation.<br />
+“Sequences flagged as poor quality: 0”</p>
 </div>
 <div id="q2" class="section level3">
 <h3>Q2</h3>
 <p><strong>Given the FastQC reports, does it make sense to perform
-adapter and/or quality-trimming on your data?</strong> Your answer
-here</p>
+adapter and/or quality-trimming on your data?</strong> No it does not,
+especially when we compare it to the examples on the slides, where there
+is a clear quality decrease at the beginning and the end of the
+read.</p>
 </div>
 <div id="q3" class="section level3">
 <h3>Q3</h3>
 <p><strong>Why are so many files in the bioinformatics pipeline
-compressed and indexed?</strong> Your answer here</p>
+compressed and indexed?</strong> Because the raw information is very
+storage intensive, compression saves disk space. Indexing makes it
+faster to look up locations and find positions when comparing with a
+reference genome for example.</p>
 </div>
 <div id="q4" class="section level3">
 <h3>Q4</h3>
