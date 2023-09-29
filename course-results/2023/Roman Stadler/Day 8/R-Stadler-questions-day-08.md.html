@@ -378,26 +378,40 @@ generation.<br />
 <div id="q2" class="section level3">
 <h3>Q2</h3>
 <p><strong>Given the FastQC reports, does it make sense to perform
-adapter and/or quality-trimming on your data?</strong> No it does not,
-especially when we compare it to the examples on the slides, where there
-is a clear quality decrease at the beginning and the end of the
-read.</p>
+adapter and/or quality-trimming on your data?</strong></p>
+<p>No it does not, especially when we compare it to the examples on the
+slides, where there is a clear quality decrease at the beginning and the
+end of the read.</p>
 </div>
 <div id="q3" class="section level3">
 <h3>Q3</h3>
 <p><strong>Why are so many files in the bioinformatics pipeline
-compressed and indexed?</strong> Because the raw information is very
-storage intensive, compression saves disk space. Indexing makes it
-faster to look up locations and find positions when comparing with a
-reference genome for example.</p>
+compressed and indexed?</strong></p>
+<p>Because the raw information is very storage intensive, compression
+saves disk space. Indexing makes it faster to look up locations and find
+positions when comparing with a reference genome for example.</p>
 </div>
 <div id="q4" class="section level3">
 <h3>Q4</h3>
 <p><strong>In the bash script that processes alignment files, you will
 see calls to samtools sort, samtools view, and samtools index (among
 others). Explain what these three programs do. Why do you think each
-program is needed?</strong> <em>Hint: look at the <a href="http://www.htslib.org/doc/samtools.html">Samtools manual</a></em>.
-Your answer here</p>
+program is needed?</strong> <em>Hint: look at the <a href="http://www.htslib.org/doc/samtools.html">Samtools
+manual</a></em>.</p>
+<p>01_alignment.sh aligns sequencing reads from three patients (listed
+in the <code>SAMPLES</code> array) to a reference genome using the
+<code>bwa-mem2</code> tool. Inside a loop, it constructs input file
+paths for both forward and reverse reads for each patient, aligns the
+reads to the reference genome, and saves the resulting alignment data in
+SAM format. The aligned SAM files are stored in the
+<code>../data/alignments</code> directory with filenames corresponding
+to each patient’s name.</p>
+<p>02_process_alignments.sh processes DNA sequencing data for a list of
+patients stored in the <code>SAMPLES</code> array. It adds read group
+information to SAM files, sorts and compresses them into BAM format, and
+indexes the resulting BAM files for random data access. Each patient’s
+data is processed in a loop, and the output BAM files are saved in the
+<code>../data/alignments</code> directory with corresponding names.</p>
 </div>
 <div id="q5" class="section level3">
 <h3>Q5</h3>

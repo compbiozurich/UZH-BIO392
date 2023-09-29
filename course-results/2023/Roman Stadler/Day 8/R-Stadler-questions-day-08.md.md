@@ -14,17 +14,24 @@ They all have perfect scores, also because of the artificial generation.
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
+
 No it does not, especially when we compare it to the examples on the slides, where there is a clear quality decrease at the beginning and the end of the read.  
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
+
 Because the raw information is very storage intensive, compression saves disk space.
 Indexing makes it faster to look up locations and find positions when comparing with a reference genome for example.
 
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
 *Hint: look at the [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
-Your answer here
+
+01_alignment.sh aligns sequencing reads from three patients (listed in the `SAMPLES` array) to a reference genome using the `bwa-mem2` tool. Inside a loop, it constructs input file paths for both forward and reverse reads for each patient, aligns the reads to the reference genome, and saves the resulting alignment data in SAM format. The aligned SAM files are stored in the `../data/alignments` directory with filenames corresponding to each patient's name.
+
+02_process_alignments.sh processes DNA sequencing data for a list of patients stored in the `SAMPLES` array. 
+It adds read group information to SAM files, sorts and compresses them into BAM format, and indexes the resulting BAM files for random data access. 
+Each patient's data is processed in a loop, and the output BAM files are saved in the `../data/alignments` directory with corresponding names.
 
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
