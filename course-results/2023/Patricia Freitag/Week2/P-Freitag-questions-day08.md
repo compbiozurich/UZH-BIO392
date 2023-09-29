@@ -54,9 +54,8 @@ GangSTR is faster and more accurate than similar genotyping tools (like STRetch,
 **What types of information does GangSTR use for STR genotyping?**
 
 As an input, GangSTR uses a reference set and sequence alignments and then creates an estimate of diploid repeat lengths. If the read is enclosing the repeat sequence on both ends by non-repetetive elements, then the number of repeats can simply be counted.There are four classes of paired-end reads: 
-enclosing read pairs (‘E’): provide direct information about the repeat number because the repeat is entirely contained within the reads.
-spanning read pairs (‘S’): valuable for estimating the length of the repeat region and originate from fragments that completely span the STR
-flanking read pairs (‘F’): contain a read that
-partially extends into the repetitive sequence of a read, although not fully enclosing the repeat, these reads can still provide insights into the repeat length.
-fully repetitive read pairs (‘FRR’): contain at least one read
++ enclosing read pairs (‘E’): provide direct information about the repeat number because the repeat is entirely contained within the reads.
++ spanning read pairs (‘S’): valuable for estimating the length of the repeat region and originate from fragments that completely span the STR
++ flanking read pairs (‘F’): contain a read that partially extends into the repetitive sequence of a read, although not fully enclosing the repeat, these reads can still provide insights into the repeat length.
++ fully repetitive read pairs (‘FRR’): contain at least one read
 consisting entirely of the TR motif
