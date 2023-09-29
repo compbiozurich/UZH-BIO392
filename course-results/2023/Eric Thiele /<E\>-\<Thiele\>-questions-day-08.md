@@ -59,33 +59,35 @@ First, read the following sections of [this review](https://www.sciencedirect.co
 * Abstract
 * Introduction``
 * Genotyping STRs from high-throughput sequencing data
-Then, answer Q4 and Q5.
+Then, answer Q6 and Q7.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
 
-Because STRs are often naturally repetitive, errors can occur during DNA replication that lead to frequent mutations in the number of repeats.  STRs therefore represent high mutation rates, much higher than other variations, and therefore STR expansions are often found together with many disorders. 
+Because STRs are so often naturally repetitive, errors can occur during DNA replication what leads to frequent mutations in the number of repeats and therefore represent high mutation rates, much higher than other variations, so STR expansions are often found together with many disorders. 
 
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
 
-One of the problems can occur when you have shorter segments because it is more difficult to match them to the reference genome due to the lack of information. Another problem is that errors can occur in PCR, i.e. there can be deletions or insertions that lead to further errors in the process, so you want to match with the reference genome, but this can lead to some discrepancies.  
+One of the problems can occur when you have very short segments, as it is more difficult to match them with the reference genome due to the lack of information/number of nucleotides. Another problem is that errors can occur in PCR, i.e. there can be deletions or insertions that lead to further errors in the process, so you want to match them with the reference genome, but this can lead to some discrepancies.  
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
 * Abstract
 * Introduction
 * Overview of the GangSTR model
-Then, answer Q6 and Q7.
+Then, answer Q8 and Q9.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
-Your answer here
+Most of the currently available tools have mostly concentrated on repeat-enclosing read.
+To determine maximum likelihood TR lengths, GangSTR gathers data from paired-end reads and fuse it into a single model.
+Several characteristics of paired-end short reads can provide information about the size of a repeating area.
+Researchers are using GangSTR in the future to try to discover new disease-associated variants that are currently not accessible with NGS.
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
-Your answer here
-
+A sequence alignment and a reference set of TRs are inputs for the GangSTR, which works via end-to-end method that provides an estimated repeat length. The most important part of this method is a maximum likelihood framework that combines different information from short paired-end reads into a single model and applies it separately to each TR in the genome.
 
 
 
