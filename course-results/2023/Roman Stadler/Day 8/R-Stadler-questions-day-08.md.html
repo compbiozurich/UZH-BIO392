@@ -505,9 +505,16 @@ consisting entirely of the TR motif</li>
 <h3>Q9</h3>
 <p><strong>What types of information does GangSTR use for STR
 genotyping?</strong></p>
-<p>GangSTR incorporates fragment length, coverage, and existence of
-partially enclosing reads of paired-end read alignments into a single
-joint likelihood framework.</p>
+<p>GangSTR incorporates these variables in its joint likelihood
+framework:</p>
+<ul>
+<li>fragment length</li>
+<li>coverage</li>
+<li>existence of partially enclosing reads</li>
+</ul>
+<p>The underlying genotype is then represented as a tuple
+<code>〈A, B〉</code>, where A and B are the repeat lengths of the two
+alleles of an individual.</p>
 </div>
 </div>
 </div>

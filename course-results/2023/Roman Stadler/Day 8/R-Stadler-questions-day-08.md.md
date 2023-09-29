@@ -98,4 +98,10 @@ It uses four types of reads:
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
 
-GangSTR incorporates fragment length, coverage, and existence of partially enclosing reads of paired-end read alignments into a single joint likelihood framework.
+GangSTR incorporates these variables in its joint likelihood framework:
+
+- fragment length
+- coverage
+- existence of partially enclosing reads
+
+The underlying genotype is then represented as a tuple `〈A, B〉`, where A and B are the repeat lengths of the two alleles of an individual. 
