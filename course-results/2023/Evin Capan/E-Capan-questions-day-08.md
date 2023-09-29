@@ -57,7 +57,11 @@ Because of their repetitive nature inducing slippage events during DNA replicati
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
-Your answer here
+
+* STRs are often filtered from sequencing pipelines due to their low quality calls.
+* Short reads often do not span entire repeats, effectively reducing the number of informative reads.
+* Tandem repeats variations present as large insertions or deletions that may be difficult to align to a reference genome, and thus introduce significant mapping bias toward shorter alleles.
+* PCR amplification during library preparation often introduces “stutter” noise in the number of repeats at STRs.
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
 * Abstract
