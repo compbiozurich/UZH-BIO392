@@ -52,11 +52,14 @@ Then, answer Q4 and Q5.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
-Your answer here
+Short tandem repeates are regions in the genome that have a really high mutation rate and therefore responsible for a big amount of variation (3% of the human genome are STRs). STRs seem to be important for regulating gene expression and other molecular phenotypes, thus they have a significant contribution on Mendelian diseases, complex traits and cancer
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
-Your answer here
+There are different aspects contributing the challenge of genotyping STRS from NGS:
+1) The reads are not long enough to span the entire span of the repeats, the reads are too short to beinoformative reads.
+2) The alignment to a reference genome is difficult because of STR variations present as large insertions or delitions.
+3) Analysing STRs with PCR amplification is hard because during library preparation often stutter noise is introduced. 
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
 * Abstract
@@ -66,8 +69,11 @@ Then, answer Q6 and Q7.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
-Your answer here
+GangSTR has different advantages over older methods. The major challenge is that expanded repeats are byond the read length of most NGS and therefore not profiled by older tools. The algorithm GangSTR  not only is useful for for genome-wide shgenotyping of short STRs but also for long ones. Additionally it is faster and more accurate than other STR genotyping tools. 
+
+
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
-Your answer here
+
+Gangster extracts from paired-end reads into a unified model to estimate maximum likelihood TR lengths.
