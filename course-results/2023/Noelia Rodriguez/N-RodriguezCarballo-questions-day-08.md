@@ -87,7 +87,6 @@ Unlike other tools, GangSTR uses enclosing, spanning, FRR and flanking read pair
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
-
 * sequence alignments
 * reference set of TRs
 * maximum likelihood framework
