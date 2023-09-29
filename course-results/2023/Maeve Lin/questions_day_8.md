@@ -8,15 +8,15 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?** \
-We don't see the bins with the different quality scores, because they are simulated data and all perfect, or at least they don't have a quality score. We only see a line at the top at 62.
+We don't see the bins with the different quality scores, because they are simulated data and all perfect, or at least they don't have a quality score. We only see a line at the top at 62. The graph showing the adapter content shows a line that is basically zero, hence we have no adapters. We have no adapters because we didn't need any to produce the sequences, as the data is machine-generated. 
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?** \
-No, we cannot trim any data that has all the same quality score. 
+No, we cannot trim any data that has no adapters and that has all the same and perfect quality score. 
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?** \
-Because the sequence files are very big and to be able to share them with other people, it's faster when their size is compressed. 
+Because the sequence files are very big, which makes storage expensive, and to be able to share them with other people, it's faster when their size is compressed. Indexing makes the accessing of the information in the files faster for the file-editing tools. 
 
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?** \
