@@ -71,7 +71,8 @@ Then, answer Q8 and Q9.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
-Your answer here
+
+GangSTR is capable of genotyping both normal length and expanded repeats and relies on a general statistical model incorporating multiple properties of paired-end reads into a single maximum likelihood framework. GangSTR also works faster and more accurate than other STR genotyping tools (e.g., exSTRa, STRetch and ExpansionHunter) on simulated and real datasets. exSTRA needs a control cohort and does not estimate repeat length, STRetch does not analyze short TRs and is limited to motifs up to 6bp and ExpansionHunter cannot produce accurate genotypes across a range of repeat lengths when both alleles are close to or longer than the sequencing fragment length. GangSTR can genotype a range of TR classes, does not need a control cohort, can analyze short TRs and produe accurate genotypes when both alleles are close to/longer than the sequencing fragment length.
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
