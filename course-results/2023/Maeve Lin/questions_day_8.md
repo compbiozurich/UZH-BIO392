@@ -44,7 +44,12 @@ Then, answer Q4 and Q5.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
-Your answer here
+* STRs are loci that mutate fast (because of slippages that occur at the repetitive elements) and often have multiple alleles
+* hence, they are important for de novo mutations and for gene expression regulation
+* this leads to a big pool of variation
+* the expansions often lead to diseases or disorders
+  * these are mostly inherited via an autosomal dominant pattern
+  * up to now the role of STRs in neurodevelopmental disorders is unclear
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
