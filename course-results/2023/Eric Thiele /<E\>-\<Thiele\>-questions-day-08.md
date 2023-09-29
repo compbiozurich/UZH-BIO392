@@ -41,7 +41,16 @@ These questions will not be graded separately, but may be considered when determ
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*
-Your answer here
+
+GangSTR handles BAM files and and takes repeats in the reference genome as an input and  will get you outputs in a VCF format containing genotypes for each locus.
+
+
+--ref stands for the Refererence genome (.fa)
+--region stands for the Target TR loci (regions) (.bed)
+--bam stands for Comma separated list of input BAM files
+--bam-samps <string>  you can also create a comma separated list of sample IDs for --bam
+
+
 
 ## Literature
 During the practical so far, you have generated variant calls from short read sequencing data using bioinformatics approaches. Now it's time to take a step back and do some background reading in order to prepare for the analysis and interpretation of the results next week. 
