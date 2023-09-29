@@ -76,4 +76,8 @@ GangSTR is capable of genotyping both normal length and expanded repeats and rel
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
-Your answer here
+
+* Enclosing class: Models *n* (number of repeat copies enclosed in the read) for different repeat lengths accounting for errors introduced during PCR.
+* Spanning class: Models Δ (observed fragment length for a read pair) or different repeat lengths: Longer repeats = shorter observed fragment lengths. Also calculates the mean actual fragment length.
+* Fully Repetitive Read (FRR) class: Models Ω (distance of the non-repetitive read from the repeat region) for different repeat lengths: Longer repeats = shorter observed Ω values.
+* Flanking class: Models *k* (number of copies extracted from the flanking read) for different repeat lengths.
