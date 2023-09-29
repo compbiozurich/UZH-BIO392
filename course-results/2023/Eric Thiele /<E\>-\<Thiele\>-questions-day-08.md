@@ -48,7 +48,7 @@ These questions will not be graded separately, but may be considered when determ
 --ref stands for the Refererence genome (.fa) \
 --region stands for the Target TR loci (regions) (.bed) \
 --bam stands for Comma separated list of input BAM files\
---bam-samps <string>  you can also create a comma separated list of sample IDs for --bam\
+--bam-samps <string>  you can also create a comma separated list of sample IDs for --bam \
 
 
 
@@ -63,7 +63,9 @@ Then, answer Q4 and Q5.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
-Your answer here
+
+Because STRs are often naturally repetitive, errors can occur during DNA replication that lead to frequent mutations in the number of repeats.  STRs therefore represent high mutation rates, much higher than other variations, and therefore STR expansions are often found together with many disorders. 
+
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
@@ -82,3 +84,8 @@ Your answer here
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
 Your answer here
+
+
+
+
+
