@@ -90,7 +90,8 @@ Then, answer Q6 and Q7.
 Table 1.
 
 Classes of read pairs and features used by existing tools for genotyping TRs from short reads
-Tool	Enclosing	FRR	Spanning	Off-target FRR	Estimates # rpts.	Genome-wide	Estimation limit
+|Tool|	|Enclosing|	|FRR|	|Spanning|	|Off-target FRR|	|Estimates # rpts.|	|Genome-wide|	|Estimation limit|
+|----|	|--------|	|---|	|--------|	|--------------|	|Estimates # rpts.|	|Genome-wide|	|Estimation limit|
 LobSTR (18) 	X 	 	 	 	X 	X 	< Read length 
 HipSTR (19) 	X 	 	 	 	X 	X 	< Read length 
 STRetch (26) 	 	X 	 	X 	X 	X 	Only reports expanded TRs 
