@@ -16,7 +16,7 @@ No, we cannot trim any data that has all the same quality score.
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
-Your answer here
+Because the sequence files are very big and to be able to share them with other people, it's faster when their size is compressed. 
 
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
