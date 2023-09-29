@@ -90,15 +90,16 @@ Then, answer Q6 and Q7.
 Table 1.
 
 Classes of read pairs and features used by existing tools for genotyping TRs from short reads
-|Tool|	|Enclosing|	|FRR|	|Spanning|	|Off-target FRR|	|Estimates # rpts.|	|Genome-wide|	|Estimation limit|
-|----|	|--------|	|---|	|--------|	|--------------|	|Estimates # rpts.|	|Genome-wide|	|Estimation limit|
-LobSTR (18) 	X 	 	 	 	X 	X 	< Read length 
-HipSTR (19) 	X 	 	 	 	X 	X 	< Read length 
-STRetch (26) 	 	X 	 	X 	X 	X 	Only reports expanded TRs 
-exSTRa (25) 	 	X 	 	X 	 	X 	Does not estimate TR length 
-Tredparse (27) 	X 	X 	X 	 	X 	 	< Fragment Length 
-ExpansionHunter (28) 	X 	X 	 	X 	X 	 	Poor performance when both alleles long 
-GangSTR 	X 	X 	X 	X 	X 	X 	Not limited by fragment or read length 
+|Tool|Enclosing|FRR|Spanning|Off-target FRR|Estimates # rpts.|Genome-wide|Estimation limit|
+|----|---------|---|--------|--------------|-----------------|-----------|----------------|
+|LobSTR (18)| 	X| 	 |||	 	 	X 	|X| 	< Read length |
+|HipSTR (19)| 	X 	| 	|| 	|X 	|X |	< Read length |
+|STRetch (26)| 	 	|X| 	| 	X| 	X |	X 	|Only reports expanded TRs |
+|exSTRa (25) |	 	|X 	 	||X 	 	||X 	|Does not estimate TR length |
+|Tredparse (27)| 	X 	|X 	|X|| 	 	X ||	 	< Fragment Length |
+|ExpansionHunter (28) |	X| 	X 	|| 	X| 	X 	|| 	Poor performance when both alleles long |
+|GangSTR| 	|X 	|X 	|X 	|X 	|X 	|X 	|Not limited by fragment or read length |
+
 
 
 ### Q9
