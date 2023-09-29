@@ -85,8 +85,17 @@ Then, answer Q6 and Q7.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
-Your answer here
+
+GangSTR extracts information from paired-end reads into a unified model to estimate maximum likelihood TR lengths. 
+Its core component is a maximum likelihood framework incorporating various sources of information from short paired-end reads into a single model that is applied separately to each TR in the genome.
+It uses four types of reads:
+
+- enclosing read pairs *(‘E’)*: least one read that contains the entire TR plus non-repetitive flanking region on either end
+- spanning read pairs *(‘S’)*: a fragment that completely spans the TR
+- flanking read pairs *(‘F’)*: partially extends into the repetitive sequence 
+- fully repetitive read pairs *(‘FRR’)*: at least one read consisting entirely of the TR motif
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
-Your answer here
+
+GangSTR incorporates fragment length, coverage, and existence of partially enclosing reads of paired-end read alignments into a single joint likelihood framework.
