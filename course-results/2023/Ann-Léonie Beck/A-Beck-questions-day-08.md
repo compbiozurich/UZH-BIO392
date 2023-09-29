@@ -36,7 +36,13 @@ samtools faidx: refrence sequence (FASTA format) will be indexed and makes new f
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*
-Your answer here
+
+GangSTR needs an input
+- bam file (--bam), containting short read alignements (sorted and indexed samtools)
+- refrence genome (--ref) (FASTA)
+- refrence set of target TR loci (--regions) (BED), faciliates the proccess, as the programm doesn't have to search them, while running
+
+GangSTR looks at TR's from a refrence genome and compares them to the sample. It looks how the TR's in refrence and sample vary. 
 
 ## Literature
 During the practical so far, you have generated variant calls from short read sequencing data using bioinformatics approaches. Now it's time to take a step back and do some background reading in order to prepare for the analysis and interpretation of the results next week. 
@@ -49,11 +55,25 @@ Then, answer Q4 and Q5.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
-Your answer here
+- fastest mutating loci in genome -> genetic variation
+- STR expansions are associated with disorders
+- STRs regulate gene expression:
+    - transcriptor factor binding seites
+    - spacing between regulatory elements
+    - DNA secondary structures (Z-DNA)
+    - DNA methylation and heterochromatinzation
+    - modulate alternative splicing -> affects RNA protein binding sites
+  - autosomal dominant inheritance
+  - multi allelic -> complexe inheritance patterns
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
-Your answer here
+- low quality calls
+- hard to detect
+- reduced inromatice reads
+- larg insertions or deletions -> hard to align to reference genom -> mapping bias
+- stutter noise from PCR
+- inconsitent alignements due to complexe repeats
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
 * Abstract
@@ -63,8 +83,26 @@ Then, answer Q6 and Q7.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
-Your answer here
+- faster
+- more accurate
+  Table from paper:
+  
+Table 1.
+
+Classes of read pairs and features used by existing tools for genotyping TRs from short reads
+Tool	Enclosing	FRR	Spanning	Off-target FRR	Estimates # rpts.	Genome-wide	Estimation limit
+LobSTR (18) 	X 	 	 	 	X 	X 	< Read length 
+HipSTR (19) 	X 	 	 	 	X 	X 	< Read length 
+STRetch (26) 	 	X 	 	X 	X 	X 	Only reports expanded TRs 
+exSTRa (25) 	 	X 	 	X 	 	X 	Does not estimate TR length 
+Tredparse (27) 	X 	X 	X 	 	X 	 	< Fragment Length 
+ExpansionHunter (28) 	X 	X 	 	X 	X 	 	Poor performance when both alleles long 
+GangSTR 	X 	X 	X 	X 	X 	X 	Not limited by fragment or read length 
+
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
-Your answer here
+- end to end method
+- input: sequence alignments & reference set of TRs
+- ouput: estimated diploid repeat lengths
+- maximum likelihood framework
