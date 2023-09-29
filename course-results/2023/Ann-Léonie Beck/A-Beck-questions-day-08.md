@@ -1,14 +1,12 @@
 
 # Questions BIO392 day 08
-These questions are designed to test your understanding of the sequence analysis practical and the accompanying literature. Please change the name of this file to \<First letter\>-\<Last name\>-questions-day-08.md, (e.g., M-Mustermann-questions-day-08.md), and upload it to your folder in the course GitHub.
-
-These questions will not be graded separately, but may be considered when determining your participation grade. The most important thing is not that you get everything right, but that you show that you thought about the questions; so no copy/pasting!
 
 ## Practical
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
-Yes, they look different. The practical data has perfect quality score across all bases. This implies that the data was already trimmed and/or filtered. There are no adapters present, as can be seen in the "Adapter Content"
+Yes, they look different. The practical data has perfect quality score across all bases. This could imply that the data was already trimmed and/or filtered. This is simulated data, which explains the perfect scores
+There are no adapters present, as can be seen in the "Adapter Content". The data was probably already adapter trimmed.
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
