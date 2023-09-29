@@ -8,11 +8,11 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
-Yes, the graph looks diffrent. The quality, reflected as a Phred score is much higher for the single nucleotides as in the graph of the slides. Under the ADAPTER CONTENT section you see that there are no adapters used.  
+- Yes, the graph looks diffrent. The quality, reflected as a Phred score is much higher for the single nucleotides as in the graph of the slides. Under the ADAPTER CONTENT section you see that there are no adapters used.  
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
-No, I would say it wouldn't make any sense to make a quality trim or adapter trim, cause the quality for the nucleotides are already very high. 
+- No, I would say it wouldn't make any sense to make a quality trim or adapter trim, cause the quality for the nucleotides are already very high. 
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
