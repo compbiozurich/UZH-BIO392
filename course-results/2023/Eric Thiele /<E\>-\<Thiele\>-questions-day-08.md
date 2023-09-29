@@ -34,8 +34,7 @@ These questions will not be graded separately, but may be considered when determ
 
 
 
-### Q5
-**Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
+### Q5 Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*
 
 - GangSTR handles BAM files and and takes repeats in the reference genome as an input and  will get you outputs in a VCF format containing genotypes for each locus.
