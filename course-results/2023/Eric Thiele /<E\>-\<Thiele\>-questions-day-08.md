@@ -8,20 +8,35 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
-Your answer here
+- Yes, the graph looks diffrent. The quality, reflected as a Phred score is much higher for the single nucleotides as in the graph of the slides. Under the ADAPTER CONTENT section you see that there are no adapters used.  
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
-Your answer here
+- No, I would say it wouldn't make any sense to make a quality trim or adapter trim, cause the quality for the nucleotides are already very high. 
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
-Your answer here
+
+- Basically, data compression can save a lot of memory, but it also makes the handling more convenient for the processing of the data.
+- Indexing make the work more efficient to get datas/informations of bigger datasets back. 
 
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
 *Hint: look at the [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
-Your answer here
+
+
+- samtools index:
+  handles SAM, BAM and CRAM files and is required when region arguments are used to specify specific regions of interest for samtools view and
+  related operations.
+
+- samtools view:
+  Given Datas in SAM, BAM or CRAM format will be converted to SAM files and you can provide area specifications to
+  limit the output for alignments that overlap the specified regions. 
+
+- samtools sort:
+  Alignments can be sorted by leftmost coordinates or for a specifc sequences if you use ' -n '. 
+
+
 
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
