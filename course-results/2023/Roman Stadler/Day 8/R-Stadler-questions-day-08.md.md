@@ -60,11 +60,22 @@ Then, answer Q4 and Q5.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
-Your answer here
+
+STRs exhibit mutation rates that are orders of magnitude higher than other types of variation, and thus contribute a large fraction of human genetic variation.
+STRs are predicted to contribute a higher number of de novo mutations per generation than any other type of variation.
+STRs are often highly multi-allelic, and thus may generate complex inheritance patterns not well captured by linkage or analysis of bi-allelic single nucleotide polymorphisms (SNPs).
+Genetic variation in STRs can also influence an individual's response to drugs. Some STRs are located in or near genes that affect drug metabolism or drug target proteins.
+Some STRs have been used in non-invasive prenatal testing to detect genetic disorders in fetuses by analyzing maternal blood samples. 
+Changes in the length of specific STRs associated with the disorder can be indicative of the condition.
+
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
-Your answer here
+
+Because of the repetitive nature of STR reads, it makes it harder to determine how many repeats are there exactly when analysing the reads.
+Moreover, because the number of repeats is very variable, it is hard to compare against a reference genome.
+Also, distinguishing between different STR loci with similar repeat motifs can be challenging.
+
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
 * Abstract
