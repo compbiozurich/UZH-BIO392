@@ -76,4 +76,4 @@ GangSTR has different advantages over older methods. The major challenge is that
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
 
-Gangster extracts from paired-end reads into a unified model to estimate maximum likelihood TR lengths.
+Gangster extracts information from paired-end reads into a  single maximum likelihood framework capable oog genotyping normal length and expanded repeats. 
