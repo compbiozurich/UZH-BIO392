@@ -9,7 +9,9 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
-Your answer here
+Our result from the plot is much more precise than the plot from the slide. Therefore the line sticks to the top which indicates a hgih accuracy. 
+Adapter Seqeuence are worse readable as the DNA nucelotide sequence, for this reason i assume that no adapter sequence are contained.
+
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
