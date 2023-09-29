@@ -91,3 +91,5 @@ Unlike other tools, GangSTR uses enclosing, spanning, FRR and flanking read pair
 * sequence alignments
 * reference set of TRs
 * maximum likelihood framework
+
+Sequence alignments can be **enclosing**, containing the whole TR and non repetitive flanking region; **spanning**, originating from a fragment that spans the TR and mapping the ends of the repeat; **FRR**, consisting entirely of TR motif; or **flanking**, partially extendinginto the repetive sequence. 
