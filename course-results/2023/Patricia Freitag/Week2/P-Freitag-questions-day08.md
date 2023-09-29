@@ -29,3 +29,34 @@ index: needed for fast random access
 --ref: the reference genome input is in FASTA format 
 --regions: the reference set of regions to genotype is a BED-like file 
 --out: the output will be a VCF file
+
+
+
+
+### Q6
+**Why is STR variation relevant to health and disease?**
+
+STRs are loci which mutate very fast and play an important role in regulation of gene expression. They have been linked to several diseases, including Fragile X Syndrome and SMA. 
+
+### Q7
+**What are some of the challenges in analysing STRs from NGS data?**
+
+The number of informative reads is relatively small, because the repeat region can be very long and thus cannot be properly aligned to the reference genome. 
+
+
+
+### Q8
+**What sets GangSTR apart from other STR genotyping tools?**
+
+GangSTR is faster and more accurate than similar genotyping tools (like STRetch, exSTRa or HipSTR). GangSTR can cover a broad spectrum of repetetive regions in the genome, while other tools, such as STRetch, can not analyze short tandem repeats
+
+### Q9
+**What types of information does GangSTR use for STR genotyping?**
+
+As an input, GangSTR uses a reference set and sequence alignments and then creates an estimate of diploid repeat lengths. If the read is enclosing the repeat sequence on both ends by non-repetetive elements, then the number of repeats can simply be counted.There are four classes of paired-end reads: 
+enclosing read pairs (‘E’): provide direct information about the repeat number because the repeat is entirely contained within the reads.
+spanning read pairs (‘S’): valuable for estimating the length of the repeat region and originate from fragments that completely span the STR
+flanking read pairs (‘F’): contain a read that
+partially extends into the repetitive sequence of a read, although not fully enclosing the repeat, these reads can still provide insights into the repeat length.
+fully repetitive read pairs (‘FRR’): contain at least one read
+consisting entirely of the TR motif
