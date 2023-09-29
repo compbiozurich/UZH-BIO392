@@ -53,7 +53,7 @@ Short tandem repeats mutate very frequently and thus contribute to a large fract
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
-As a first point, it is challenging to analyze STRs from NGS data, because short reads often do not span entire repeats and are thus not informative. Furthermore, it is difficult to map STRs to a reference genome as there can be great variation among STRs due to large insertions and deletions. Finally, analyzing STRs by PCR amplification often introduces “stutter” noise in the number of repeats.
+As a first point, it is challenging to analyze STRs from NGS data, because short reads often do not span entire repeats and are thus not informative. Expanded repeats are beyond the read length of most next-generation sequencing (NGS) datasets Furthermore, it is difficult to map STRs to a reference genome as there can be great variation among STRs due to large insertions and deletions. Finally, analyzing STRs by PCR amplification often introduces “stutter” noise in the number of repeats.
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
 * Abstract
@@ -63,8 +63,13 @@ Then, answer Q6 and Q7.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
-Your answer here
+A problem occurring when analyzing STRs with common STR genotyping tools is that expanded repeats are beyond the read length of most next-generation sequencing (NGS) datasets and are not profiled by existing genome-wide tools. GangSTR, on the other hand, can be used for genome-wide genotyping of both short and expanded TRs. GangSTR is both more accurate and fast compared to other STR genotyping tools. 
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
-Your answer here
+GangSTR extracts information from paired-end reads (from NGS data) into a single maximum likelihood framework capable of genotyping both normal length and expanded repeats. The genotype is then represented as a tuple 〈A, B〉, A and B being e repeat lengths of the two alleles of an individual. 
+There are four classes of paired-end reads: 
+1. enclosing read pairs (‘E’): consist of at least one read that contains the entire TR plus non-repetitive flanking region on both ends
+2. spanning read pairs (‘S’): originate from a fragment that completely spans the TR, such that each read maps on either end of the repeat
+3. flanking read pairs (‘F’): contain a read that partially extends into the repetitive sequence of a read
+4. fully repetitive read pairs (‘FRR’): contain at least one read consisting entirely of the TR motif
