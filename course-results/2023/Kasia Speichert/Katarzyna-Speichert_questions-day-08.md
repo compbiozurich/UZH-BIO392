@@ -8,25 +8,28 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
-Your answer here
+In comparison to slides the graph show only a constant line at the 62 quality score. There are only some Poly A adapter sequences. The reason fro this might be the facts that all reads come from a single gene.  
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
-Your answer here
+Since all quality scores are equal and there is only a single adapter with a low percentage it is not necessary to perform trimming on our data. 
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
-The files from genome sequencing take up huge storage resources and they need to be compressed in order to minimise this consuption. 
+The files from genome sequencing take up huge storage resources and they need to be compressed in order to minimise this consuption. Indexing enables a rapid access to the required locations of the files in the large data files. 
 
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
 *Hint: look at the [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
-Your answer here
+Samtools sort: is used to compress the data. Important to reduce the storage requirements. 
+Samtools index: is used to easily access the required file from a large data content thus saving a time.
+Samtools view: is used to convert one data format to another. 
+
 
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*
-Your answer here
+GangSTR requires the reference genome file (--ref), target TR loci (regions)(-- regions) and input BAM files of short read alignments (--bam).
 
 ## Literature
 During the practical so far, you have generated variant calls from short read sequencing data using bioinformatics approaches. Now it's time to take a step back and do some background reading in order to prepare for the analysis and interpretation of the results next week. 
