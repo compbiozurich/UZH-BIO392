@@ -69,7 +69,8 @@ Because STRs are often naturally repetitive, errors can occur during DNA replica
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
-Your answer here
+
+One of the problems can occur when you have shorter segments because it is more difficult to match them to the reference genome due to the lack of information. Another problem is that errors can occur in PCR, i.e. there can be deletions or insertions that lead to further errors in the process, so you want to match with the reference genome, but this can lead to some discrepancies.  
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
 * Abstract
