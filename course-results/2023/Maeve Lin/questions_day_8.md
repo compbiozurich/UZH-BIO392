@@ -29,7 +29,9 @@ Because the sequence files are very big and to be able to share them with other 
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.** \
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*
-Your answer here
+* --ref: which is the file containing the reference genome
+* --region: which is the region of the genome we want to look at, here the region with the repeats (target loci)
+* --bam: which is the file containing the alignments
 
 ## Literature
 During the practical so far, you have generated variant calls from short read sequencing data using bioinformatics approaches. Now it's time to take a step back and do some background reading in order to prepare for the analysis and interpretation of the results next week. 
