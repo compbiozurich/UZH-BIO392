@@ -30,7 +30,9 @@ Indexing makes sense for fast data retrival and analysis, optimizing processing 
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*
-Your answer here
+GangSTR takes aligned reads (BAM) and a set of repeats (tandem repeats) in the reference genome as input and outputs a VCF file containing genotypes for each locus.
+
+
 
 ## Literature
 During the practical so far, you have generated variant calls from short read sequencing data using bioinformatics approaches. Now it's time to take a step back and do some background reading in order to prepare for the analysis and interpretation of the results next week. 
