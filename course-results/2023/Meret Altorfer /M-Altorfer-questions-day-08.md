@@ -20,7 +20,12 @@ Indexing makes sense for fast data retrival and analysis, optimizing processing 
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
 *Hint: look at the [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
-Your answer here
+- samtools sort: sorts the records in a SAM file based on their genomic coordinates (by leftmost coordinates). The sorted output can be saced in a new BAM file usint the '-o' option.
+  e.g. ```samtools sort input.bam -o sorted_output.bam```
+- samtools view: used to view the content of a SAM, BAM , or CRAM files. It can also be used to convert between these different file formats.
+  e.g. convering BAM to SAM: ```samtools view input.bam > output.sam```
+- samtools index: creates an index file for a BAM, CRAM or SAM file. SAM files have to be BGZF compressed first. Indexing allows quick access to specific regions of the alignment data without having to read the entire file.
+  e.g indexing a BAM file: ```samtools index input.bam```
 
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
