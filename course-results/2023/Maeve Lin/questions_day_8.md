@@ -48,7 +48,11 @@ Your answer here
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
-Your answer here
+* NGS use short reads and these sometimes don’t even span one whole repeat
+** Not enough informative reads
+* The variation of the STRs can be so large that it’s impossible to align the repeats to the reference genome
+** Hence, only short alleles will be mapped and we think this is a representative sample of STRs
+* PCR produces stutter noise in the repeats 
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
 * Abstract
