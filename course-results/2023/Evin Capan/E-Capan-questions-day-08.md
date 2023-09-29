@@ -35,7 +35,11 @@ No, because none of the sequences in any of the patients were flagges as low qua
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*
 
-Your answer here
+Files needed for GangSTR to run:
+* Comma separated list of input BAM files, (via the "**--bam**" command line argument)
+* Refererence genome (.fa file), (via the "**--ref**" command line argument)
+* Target TR loci (regions) (.bed file), (via the "**--regions**" command line argument)
+* Output prefix, (via the "**--out**" command line argument)
 
 ## Literature
 During the practical so far, you have generated variant calls from short read sequencing data using bioinformatics approaches. Now it's time to take a step back and do some background reading in order to prepare for the analysis and interpretation of the results next week. 
