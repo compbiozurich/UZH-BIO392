@@ -21,7 +21,10 @@ Because the sequence files are very big and to be able to share them with other 
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
 *Hint: look at the [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
-Your answer here
+* samtools addreplacerg: adds or replaces read group tags; -r STRING lets you add a string to the header
+* samtools sort: it sorts the alignments, in our case according to coordinates (without specifying other flags)
+* samtools view --bam: we use this to compress the sam files to bam files
+* samtools index: indexes our files, so we can access them separately later
 
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
