@@ -2,8 +2,8 @@
 
 Primary deposition databases store raw, original biological sequences. It is basically the first place where data is stored, after it has been discovered. The data on these databases can then be used by other researchers for their own purposes. 
 
-## GenBank
-https://www.ncbi.nlm.nih.gov/genbank/
+## [GenBank](https://www.ncbi.nlm.nih.gov/genbank/)
+
 
 GenBank is a repository for DNA and RNA sequences. It is an open access database. The sequences are annotated and include information about genes, (non) coding regions and regulatory elements. It provides the nucleotide sequences for over 300'000 organisms. 
 
