@@ -69,7 +69,7 @@ Then, answer Q6 and Q7.
 **What sets GangSTR apart from other STR genotyping tools?**
 * It can analyze short and expanded tandem repeats 
 * And focuses on good quantification of repeat counts 
-* It is faster 
+* It is faster and more accurate
 * It takes more information into account than other tools 
 * It looks at the whole length of the reads that enclose one repeat (can be up to 100bp long) 
   * Others only go up to 70pb 
