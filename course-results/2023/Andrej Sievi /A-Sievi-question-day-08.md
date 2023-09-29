@@ -85,7 +85,9 @@ which is included in plenty of disorders.
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
-Your answer here
+When a PCR is carried out it is susceptible to deletion and insertions that leads to innacurate repetion of Nucleotides in STR.
+Short segments are much harder to match with the reference genom due to less information content. The probability of being inaccurate is therefore greater
+
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
 * Abstract
@@ -95,8 +97,17 @@ Then, answer Q6 and Q7.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
-Your answer here
+GangSTR fetch information from paired-end reads into a unified model to estimate maximum likelihood TR lengths.
+
+Four types are used:
+
+- enclosing class: copy number
+- spanning class: Fragment length
+- FRR class (fully repetitive): Distance to TR
+- Flanking class: Copy Number
+
+Scientists are expected to use this method to detect more diseases associated with STR
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
-Your answer here
+A sequence alignment and a reference set of TRs are inputs for the GangSTR, which works via end-to-end method that provides an estimated repeat length. The most important part of this method is a maximum likelihood framework that combines different information from short paired-end reads into a single model and applies it separately to each TR in the genome.
