@@ -7,19 +7,19 @@ These questions will not be graded separately, but may be considered when determ
 ## Practical
 
 ### Q1
-**Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
+**Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?** \
 We don't see the bins with the different quality scores, because they are simulated data and all perfect, or at least they don't have a quality score. We only see a line at the top at 62.
 
 ### Q2
-**Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
+**Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?** \
 No, we cannot trim any data that has all the same quality score. 
 
 ### Q3
-**Why are so many files in the bioinformatics pipeline compressed and indexed?**
+**Why are so many files in the bioinformatics pipeline compressed and indexed?** \
 Because the sequence files are very big and to be able to share them with other people, it's faster when their size is compressed. 
 
 ### Q4
-**In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
+**In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?** \
 *Hint: look at the [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
 * samtools addreplacerg: adds or replaces read group tags; -r STRING lets you add a string to the header
 * samtools sort: it sorts the alignments, in our case according to coordinates (without specifying other flags)
@@ -27,7 +27,7 @@ Because the sequence files are very big and to be able to share them with other 
 * samtools index: indexes our files, so we can access them separately later
 
 ### Q5
-**Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
+**Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.** \
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*
 Your answer here
 
