@@ -3,7 +3,8 @@ University of California, Santa Cruz
 - online access to a genomic sequence database and annotation data (wide variety of organisms)
 - tools for visualization, comparison, analysis, aligning sequences, uploding user data
 - possible to analyse public and user generated genomic data sets
-(10.1093/nar/gkq963)
+
+
 
 supported formats: 
 - GFF (tab-delimited)
@@ -32,7 +33,7 @@ supported formats:
 - broadPeak
 - narrowPeak
 - microarray (BED15)
-- 
+  
 (https://genome.ucsc.edu/goldenPath/help/customTrack.html)
 
 zero-based coordinate system
@@ -89,14 +90,14 @@ annotates genes, computes multiple alignments, predicts regulatory function, col
 
 BLAST, BLAT, BioMart, VEP
 
-https://www.ensembl.org/index.html
+(https://www.ensembl.org/index.html)
 
 one-based coordinate system
 
 (https://www.ensembl.org/Help/Faq?id=286)
 
 # COSMIC
-Catalogue of somatatic mutations in cancer
+Catalogue of somatic mutations in cancer
 
 used to explore the effect of somatic mutations in human cancer
 
@@ -108,8 +109,11 @@ resources: COSMIC database & Cell Lines Project
 
 
 # ClinGen
-"ClinGen is a National Institutes of Health (NIH)-funded resource dedicated to building a central resource that defines the clinical relevance of genes and variants for use in precision medicine and research."
-defines the clinical relevance of genes and variants
+- funded by National Institutes of Health (NIH)
+- defines clinical relevance of genes and variations
+- used for precision medicine and research
+
+
 
 (https://clinicalgenome.org/)
 
