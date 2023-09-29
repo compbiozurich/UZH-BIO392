@@ -6,7 +6,7 @@
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
 The sequence quality graph looks different from the examples on the slides. The sequences seem to be highly consistent along the reads, what we would not expect in data retrieved from a real experiment, 
-therefore we can conclude that the data is generated from a simulation. Due to the Adapter Content plot, we can conclude that there are no adaüter sequences, this could be because our data is simulated.
+therefore we could conclude that the data is generated from a simulation. Due to the Adapter Content plot, we can conclude that there are no adapter sequences, this could be because our data is simulated.
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
@@ -14,8 +14,7 @@ No it would not make sense to perform adapter a or qualitiy-trimming, because th
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
-Files containing sequences can are very big and need a lot of storage, therefore it makes sense to compress them in order to save storage space and transfer time . 
-Indexing makes sense for fast data retrival and analysis, optimizing processing speed and efficiency in computational tasks.
+Files containing sequences are very big and need a lot of storage, therefore it makes sense to compress them in order to save storage space and transfer time. Indexing makes sense for fast data retrival and analysis, optimizing processing speed and efficiency in computational tasks.
 
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
@@ -57,9 +56,9 @@ Short tandem repeates are regions in the genome that have a really high mutation
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
 There are different aspects contributing the challenge of genotyping STRS from NGS:
-1) The reads are not long enough to span the entire span of the repeats, the reads are too short to beinoformative reads.
-2) The alignment to a reference genome is difficult because of STR variations present as large insertions or delitions.
-3) Analysing STRs with PCR amplification is hard because during library preparation often stutter noise is introduced. 
+1) The reads are not long enough to span the entire span of the repeats, which means that the reads are too short to be inoformative reads.
+2) The alignment to a reference genome is difficult because of STR variations present as large insertions or deletions.
+3) Analysing STRs with PCR amplification is hard because during library preparation often 'stutter' noise is introduced. 
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
 * Abstract
@@ -69,11 +68,16 @@ Then, answer Q6 and Q7.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
-GangSTR has different advantages over older methods. The major challenge is that expanded repeats are byond the read length of most NGS and therefore not profiled by older tools. The algorithm GangSTR  not only is useful for for genome-wide shgenotyping of short STRs but also for long ones. Additionally it is faster and more accurate than other STR genotyping tools. 
+GangSTR has different advantages over older methods. The major challenge is that expanded repeats are byond the read length of most NGS and therefore not profiled by older tools. The algorithm GangSTR  not only is useful for for genome-wide genotyping of short STRs but also for long ones. Additionally it is faster and more accurate than other STR genotyping tools. 
 
 
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
 
-Gangster extracts information from paired-end reads into a  single maximum likelihood framework capable oog genotyping normal length and expanded repeats. 
+Gangster extracts information from paired-end read made with NGS into a  single maximum likelihood framework capable of genotyping normal length and expanded repeats. The genotype is then stored as a tuple 〈A, B〉, A and B being repeat lengths of the two alleles of an individual. There are four classes of paired-end reads:
+
+- enclosing read pairs (‘E’): consist of at least one read that contains the entire repetitive sequence plus non-repetitive flanking region on both ends
+- spanning read pairs (‘S’): originate from a fragment that completely spans the TR, such that each read maps on either end of the repeat
+- flanking read pairs (‘F’): contain a read that partially extends into the repetitive sequence of a read
+- fully repetitive read pairs (‘FRR’): contain at least one read consisting entirely of the TR motif
