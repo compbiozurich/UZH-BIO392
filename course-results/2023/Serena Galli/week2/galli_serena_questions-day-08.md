@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Questions BIO392 day 08
 
 These questions are designed to test your understanding of the sequence
