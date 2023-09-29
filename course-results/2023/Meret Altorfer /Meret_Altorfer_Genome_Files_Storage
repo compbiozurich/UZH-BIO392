@@ -1,0 +1,6 @@
+# Estimate Storage Requirements for 1000 Genomes
+
+## Storage/Costs for 1000 Genomes
+For each base (TCGA) only 2 bits of storage are needed, therefore a genome with 3 billion bases needs 6 billion bits (0.75GB) to be stored. Consequently, 
+1000 genomes need 1000*6’000’000’000b storage this is about 750GB.  (Slides)
+
