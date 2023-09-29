@@ -48,7 +48,7 @@ First, read the following sections of [this review](https://www.sciencedirect.co
 * Abstract
 * Introduction``
 * Genotyping STRs from high-throughput sequencing data
-Then, answer Q4 and Q5.
+Then, answer Q6 and Q7.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
@@ -63,7 +63,7 @@ Second, read the following sections of the [paper describing GangSTR](https://ac
 * Abstract
 * Introduction
 * Overview of the GangSTR model
-Then, answer Q6 and Q7.
+Then, answer Q8 and Q9.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
