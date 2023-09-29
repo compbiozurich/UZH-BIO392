@@ -85,6 +85,7 @@ Then, answer Q6 and Q7.
 **What sets GangSTR apart from other STR genotyping tools?**
 - faster
 - more accurate
+- NGS struggle with highly repetitive regions,  GangSTR overcomes that
   Table from paper:
   
 Table 1.
@@ -100,7 +101,8 @@ Classes of read pairs and features used by existing tools for genotyping TRs fro
 |ExpansionHunter (28) |	X| 	X 	|| 	X| 	X 	|| 	Poor performance when both alleles long |
 |GangSTR| 	|X 	|X 	|X 	|X 	|X 	|X 	|Not limited by fragment or read length |
 
-
+Above the differences between the tools can be seen. 
+GangSTR uses different classes of reads (can be seen in the table), where as other tools often only use enclosing reads, this is very limiting. Those reads are put into a likelihood model which then computes how "long" the TR must be.
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
