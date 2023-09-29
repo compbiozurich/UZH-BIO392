@@ -45,10 +45,10 @@ These questions will not be graded separately, but may be considered when determ
 - GangSTR handles BAM files and and takes repeats in the reference genome as an input and  will get you outputs in a VCF format containing genotypes for each locus.
 
 
---ref stands for the Refererence genome (.fa)
---region stands for the Target TR loci (regions) (.bed)
---bam stands for Comma separated list of input BAM files
---bam-samps <string>  you can also create a comma separated list of sample IDs for --bam
+--ref stands for the Refererence genome (.fa) \
+--region stands for the Target TR loci (regions) (.bed) \
+--bam stands for Comma separated list of input BAM files\
+--bam-samps <string>  you can also create a comma separated list of sample IDs for --bam\
 
 
 
