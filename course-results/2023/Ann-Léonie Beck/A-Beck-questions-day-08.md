@@ -5,24 +5,33 @@
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
+
 Yes, they look different. The practical data has perfect quality score across all bases. This could imply that the data was already trimmed and/or filtered. This is simulated data, which explains the perfect scores
+
 There are no adapters present, as can be seen in the "Adapter Content". The data was probably already adapter trimmed.
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
+
 Adapter trimming is not needed, because there already no adapters present. Quality trimming is also not nedded, as the whole data has perfect quality scores across al bases.
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
 Compressed: data storage problems, would be a waste of storage (and money) to have all data unzipped.
-Indexed: to make performance better, makes access to random locations in big data files easier. 
+
+Indexed: "annotations" -> makes access to random locations in big data files easier. 
+
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
+
 *Hint: look at the [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
 Samtools sort: sorts the alignements by a given option (different possibilities eg. by leftmost coordinates, by readname)
-samtools index: "Index coordinate-sorted BGZIP-compressed SAM, BAM or CRAM files for fast random access"
-samtools view: prints all alignments in the specified input alignment file(in SAM, BAM, or CRAM format) to standard output in SAM format (with no header). Output can be restricted to specific regions, but this needs coordinate sorted and indexed input files.
 
+samtools index: indexes the file
+
+samtools view: prints all alignments (from input file) to standard output (SAM file). Output can be restricted to specific regions, but this needs coordinate sorted and indexed input files.
+
+samtools faidx: refrence sequence (FASTA format) will be indexed and makes new file with .fai or  extracts subsequence (region must be specified) from indexed refrence sequence  and prints it to the standard output.
 
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
