@@ -64,10 +64,8 @@ Then, answer Q4 and Q5.
 STRs exhibit mutation rates that are orders of magnitude higher than other types of variation, and thus contribute a large fraction of human genetic variation.
 STRs are predicted to contribute a higher number of de novo mutations per generation than any other type of variation.
 STRs are often highly multi-allelic, and thus may generate complex inheritance patterns not well captured by linkage or analysis of bi-allelic single nucleotide polymorphisms (SNPs).
-Genetic variation in STRs can also influence an individual's response to drugs. 
-Some STRs are located in or near genes that affect drug metabolism or drug target proteins.
-Some STRs have been used in non-invasive prenatal testing to detect genetic disorders in fetuses by analyzing maternal blood samples. 
-Changes in the length of specific STRs are also associated with the disorder can be indicative of the condition.
+Genetic variation in STRs can also influence an individual's response to drugs, because they are located in or near genes that affect drug metabolism or drug target proteins.
+Finally, changes in the length of specific STRs are also associated with the disorder can be indicative of the condition.
 
 
 ### Q7
