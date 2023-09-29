@@ -19,6 +19,7 @@ WES:
 
 # SAM & BAM
 SAM stands for sequence alignment and map
+
 BAM stands for binary alignement and map
 
 SAM files: 
@@ -30,7 +31,8 @@ BAM files:
 - binary file format -> unreadable for humans
 - same info as SAM files
 - standard alignment file
-- smaller and more efficient for software comapred to SAM files -> ssaves time and reduces costs of computation and storage
+- smaller and more efficient for software comapred to SAM files -> saves time and reduces costs of computation and storage
+  
   (https://zymoresearch.eu/blogs/blog/what-are-sam-and-bam-files)
   (https://www.internationalgenome.org/category/cram/)
 
@@ -38,23 +40,27 @@ BAM files:
 
 # CRAM
 - compressed version of the BAM file
-- was designed to reduce the data volume -> less storage (40-50%) 
+- was designed to reduce the data volume -> less storage (40-50%)
+- 
 (https://www.internationalgenome.org/category/cram/)
 (https://www.sanger.ac.uk/tool/cram/)
 
 # VCF
 VCF stands for Variant Call Format
+
 Stores gene sequence variations
+
 - used by large scale variant mapping projects (eg. IGSR)
 - Stanard output of variant calling software (eg. GATK) and standard input for variant analysis tools (eg. VEP) or variant archives (eg. EVA)
 - unambiguous, scalable, flexible
 - extra info can be added to the info field
 - many millions of variants can be stored in a single VCF file
+  
 (https://www.ebi.ac.uk/training/online/courses/human-genetic-variation-introduction/variant-identification-and-analysis/understanding-vcf-format/)
 
 
 
+The NIH estimates that genomics research will generate between 2 and 40 exabytes of data within the next data (1 exabyte = 100'000'000 GB). The NHGRI provides over 125 million dollers per year. 
 
-The NIH estimates that genomics research will generate between 2 and 40 exabytes of data within the next data (1 exabyte = 100'000'000 GB). The NHGRI provides over 125 million dollers per year  
 https://www.genome.gov/about-genomics/fact-sheets/Genomic-Data-Science
 
