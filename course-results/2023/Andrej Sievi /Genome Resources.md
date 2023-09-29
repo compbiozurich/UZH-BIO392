@@ -14,10 +14,11 @@
 ## EMBL-EBI:EVA
 •
 ## Ensembl
-•
- single nucleotide polymorphisms (SNPs) and multiple small-scale variations including insertions/deletions, microsatellites, non-polymorphic variants
- genomic structural variation
-insertions, deletions, duplications, inversions, multinucleotide substitutions, mobile element insertions, translocations, complex chromosomal rearrangements
- aggregates information about genomic variation and its relationship to human health
- open-access database of all types of genetic variation data from all species
- portal for many things genomic...
+• gives access to annotated genomes for primarily vertebrate species using a genome browser.
+
+## UCSC Genome Browser:
+- University of California Santa Cruz provides a database to interactively visualize genomic data.
+  The Interface is userfriendly and has plenty of genom-related functions like:
+  - gene structure
+  - regulatory elements 
+  - comparative genomics information.
