@@ -16,7 +16,7 @@ Your answer here
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
-Your answer here
+The files from genome sequencing take up huge storage resources and they need to be compressed in order to minimise this consuption. 
 
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
