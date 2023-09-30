@@ -39,7 +39,20 @@
 - Information about how genomics is impacting medicine, including precision medicine initiatives, is available on the site
 - The primary use is to serve as an authoritative source of information related to genomics and genomic research
 
+[ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) 
 
+- ClinVar collects and curates data on genetic variants associated with various diseases and conditions, including pathogenicity, and relevance to human health
+- Provides valuable information for healthcare professionals to aid in making informed decisions about patient care
+- Aids in studies related to genetics, genomics, and the development of new therapies or diagnostic tools for genetic diseases
+- The primary use of ClinVar is to serve as a repository for information related to genetic variants and their clinical significance
+
+[ClinGen](https://clinicalgenome.org/) 
+
+- Systematically curating and evaluating the clinical significance of genes and genetic variants
+- Aggregates data related to genes and genetic variants from a variety of sources, including clinical laboratories, research studies, and literature
+- Plays a crucial role in standardizing the nomenclature and interpretation of genetic variants
+- ClinGen takes a broader gene-centric approach compared to ClinVar, emphasizing the clinical validity of genes and their associations with diseases
+- ClinGen is primarily focused on advancing the understanding of the clinical relevance of genes and genetic variants.
 
 
 
