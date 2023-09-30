@@ -21,7 +21,8 @@
 
 - ClinGen is a National Institutes of Health (NIH)-funded resource dedicated to building a central resource that defines the clinical relevance of genes and variants for use in precision medicine and research
 - Works to define the clinical relevance of genes by curating and assessing evidence for gene-disease associations
-- Provides guidelines and resources for the interpretation of genomic variants, particularly those identified in clinical genetic testing 
+- Provides guidelines and resources for the interpretation of genomic variants, particularly those identified in clinical genetic testing
+- ClinGen takes a broader gene-centric approach compared to ClinVar, emphasizing the clinical validity of genes and their associations with diseases
 - The primary use is to improve our understanding of the clinical relevance of genes and genomic variants in human health 
 
 [NCBI](https://www.ncbi.nlm.nih.gov/) 
@@ -45,19 +46,6 @@
 - Provides valuable information for healthcare professionals to aid in making informed decisions about patient care
 - Aids in studies related to genetics, genomics, and the development of new therapies or diagnostic tools for genetic diseases
 - The primary use of ClinVar is to serve as a repository for information related to genetic variants and their clinical significance
-
-[ClinGen](https://clinicalgenome.org/) 
-
-- Systematically curating and evaluating the clinical significance of genes and genetic variants
-- Aggregates data related to genes and genetic variants from a variety of sources, including clinical laboratories, research studies, and literature
-- Plays a crucial role in standardizing the nomenclature and interpretation of genetic variants
-- ClinGen takes a broader gene-centric approach compared to ClinVar, emphasizing the clinical validity of genes and their associations with diseases
-- ClinGen is primarily focused on advancing the understanding of the clinical relevance of genes and genetic variants.
-
-
-
-
-
 
 
 
