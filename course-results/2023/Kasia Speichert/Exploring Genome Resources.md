@@ -4,7 +4,7 @@
 2) Clinical Interpretation of Variants in Cancer (CIViC)
 3) Jackson Laboratory Clinical Knowledgebase (JAX-CKB)
 4) MolecularMatch (MMatch)
-5) ncoKB
+5) OncoKB
 6) Precision Medicine Knowledgebase (PMKB)
 
 Interoperability and automated aggregation are required to make a comprehensive approach to cancer precision medicine tractable and to establish consensus across knowledgebases.
