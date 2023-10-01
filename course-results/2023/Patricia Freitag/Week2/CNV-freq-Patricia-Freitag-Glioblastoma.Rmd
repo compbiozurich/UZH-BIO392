@@ -11,7 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Tumor information 
 
-Glioblastomas are a highly malignant form of brain cancer. They originate from abnormal growth of glial cells. 
+Glioblastomas represent one of the most aggressive forms of brain cancer. These tumors originate from the abnormal proliferation of glial cells, which play a critical role in supporting the nervous system's proper function. Glioblastomas are characterized by their rapid growth, invasive nature, and resistance to treatment. Due to their malignant behavior, they pose significant challenges in both diagnosis and therapy.
+
 The NCIt Code is: C4025
 
 # Access the CNV frequency data
@@ -48,5 +49,6 @@ freq$data$"NCIT:C3058"[c(1:3),]
 pgxFreqplot(freq)
 ```
 
-According to plot, there are frequent duplications on chromosome 7p,7q,19p,19q,20p and 20q and deletions on chromosomes 10p, 10q and 13q. The cutoff percentage choosen is 25%. 
+The generated plot reveals significant insights into the CNV patterns associated with glioblastomas. Notably, frequent duplications were observed on several chromosome regions, including 7p, 7q, 19p, 19q, 20p, and 20q. Simultaneously, deletions were observed on chromosomes 10p, 10q, and 13q. To provide a meaningful interpretation, a cutoff percentage of 25% was applied.
+
 One [study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8108987/) detected CNA gains which were mainly located on Chromosome 7p and 7q and CNA losses located on Chromosome 10q. There are overlaps between these two finding: Gains on 7p and 7q, loss on 10q
