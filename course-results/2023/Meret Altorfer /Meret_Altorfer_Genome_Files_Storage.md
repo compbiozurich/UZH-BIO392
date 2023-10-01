@@ -17,10 +17,15 @@ FASTA files are used for storing nucleotide or protein sequences. It is used for
 VCF files are used to store information about genetic variants identified in DNA or RNA sequencing data. SNPs, insertions, deletions and other genetic variations are stored in the file. They are used in variant calling pipelines to report the presence and characteristics of genetic variants, making them crucial for genetic research, disease association studies, and population genetics.(last week)
 
 ### Storage/Costs for 1000 Genomes
-For each base (TCGA) only 2 bits of storage are needed, therefore a genome with 3 billion bases needs 6 billion bits (0.75GB) to be stored. Consequently, 1000 genomes need 1000*6’000’000’000b storage this is about 750GB.  (Slides)
+For each base (TCGA) only 2 bits of storage are needed, therefore a genome with 3 billion bases needs 6 billion bits (0.75GB) to be stored. Consequently, 1000 genomes need 1000*6’000’000’000b storage this is about 750GB. 
+- 50 CHF per genome stored in a BAM format, therefore 50'000 CHF for 1000 genomes (Slides)
+- WGS vs. WES storage requirements 
+  <img width="1001" alt="Bildschirmfoto 2023-10-01 um 21 22 15" src="https://github.com/compbiozurich/UZH-BIO392/assets/145456627/d663e762-d96b-4943-82f6-1020fb0cefb7">
+
 
 
 ### Sources
 - https://sequencing.roche.com/us/en/article-listing/wes-wgs-custom.html#:~:text=Although%20whole%2Dgenome%20sequencing%20(WGS,time%20or%20resources%20are%20limited.
 - https://zymoresearch.eu/blogs/blog/what-are-sam-and-bam-files
+- https://www.strand-ngs.com/support/ngs-data-storage-requirements
 
