@@ -36,7 +36,7 @@ What are CNV segmantations and CNV frequencies, and how to use them ?
 - CNV frequencies represent the prevalence or occurrence of certain copy number variations within a population or data set and provide information about genetic diversity and population structure among individuals or groups.
 
 - CNV segmentation can be used to identify CNVs associated with certain cancer types.
-- CNV frequencies tell us amore about the genetic diverity in a group or studied population.  
+- CNV frequencies tell us more about the genetic diversity in a group or studied population.  
 
 ## Question 5: 
 What are APIs and how to use APIs in progenetix?
