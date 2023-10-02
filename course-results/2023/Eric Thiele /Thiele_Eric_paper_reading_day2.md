@@ -62,7 +62,7 @@ What do you think should be improved in progenetix?
 
 - Boolean options to chain filters and thus allow to create diverse and nuanced search queries to get the desired results.
 
-- Continuously maintain and expand a stable API for progenetix for the Inclusion of newer projects and data types. 
+- Continuously maintain and expand a stable API for progenetix for the inclusion of newer projects and data types. 
 
 - And on the other side ensure a safe environment in relationship to data privacy ans security to protect sensitive genomic informations.
 
