@@ -9,7 +9,7 @@
      clinical use
    - ICD-10 is used globally, making it easier to exchange health
      information and statistics between countries
-   - ICD-10 is a comprehensive system used for classifying
+   - ICD-10 is a  system used for classifying
      diseases and health conditions, not limited to cancer.
 
 
