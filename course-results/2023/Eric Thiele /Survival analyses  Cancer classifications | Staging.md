@@ -1,12 +1,17 @@
 # Survival analyses | Cancer classifications | Staging
 
 
+
 ## 1. International Classification of Diseases, 10th Edition
-# Use / Advantages
+# Use / Advantages  
+
    - ICD-10 provides a comprehensive and detailed coding system
      clinical use
    - ICD-10 is used globally, making it easier to exchange health
      information and statistics between countries
+   - ICD-10 is a comprehensive system used for classifying
+     diseases and health conditions, not limited to cancer.
+
 
      
 #Problems
@@ -31,6 +36,8 @@
  
 # Use / Advantages
 
+  - NCIt is a biomedical ontology and controlled vocabulary system developed by the
+    National Cancer Institute (NCI) specifically for cancer-related terminology and concepts
   - It plays a significant role in cancer research, clinical care, and data management.
   - It provides a common language for researchers
     to describe and categorize cancer-related information
