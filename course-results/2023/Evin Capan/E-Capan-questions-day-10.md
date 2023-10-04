@@ -20,7 +20,7 @@ To determine whether a sequencing sample contains a variant, one can compare the
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
 
-Your answer here
+.
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
