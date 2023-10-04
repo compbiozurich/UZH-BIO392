@@ -47,3 +47,7 @@ Plan:
   - Results
   - Conclusions
 * Discussion
+
+### Useful links
+https://towardsdatascience.com/matplotlib-tutorial-learn-basics-of-pythons-powerful-plotting-library-b5d1b8f67596
+https://seer.cancer.gov
