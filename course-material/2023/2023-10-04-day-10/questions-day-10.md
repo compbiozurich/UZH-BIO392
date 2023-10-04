@@ -13,7 +13,7 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q2
 **Using these four columns, how could you determine whether a sequencing sample contains a variant?**
-* Check the ALT column and see which base is noted there.  
+* Check the ALT column and see which nucleotide is noted there.  
 * To double-check you compare it with the base in the 	REF column.
 
 ### Q3
