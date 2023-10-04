@@ -24,7 +24,7 @@ Open the [IGV web app](https://igv.org/app/) in your browser of choice. For now,
 
 ![](images/IGV_empty_example.png)
 
-By default, the human reference genome 'GRCh38' is loaded in the viewer. However, we want to use our custom APC reference sequence. Click on the `Genome` button in the top left, and select `Local File...`. You will then be prompted to select a file to upload. Navigate to the `data/alignments/` folder, select `APC.fa` AND `APC.fa.fai` at the same time, and press `Open`, like so: 
+By default, the human reference genome 'GRCh38' is loaded in the viewer. However, we want to use our custom APC reference sequence. Click on the `Genome` button in the top left, and select `Local File...`. You will then be prompted to select a file to upload. Navigate to the `data/reference/` folder, select `APC.fa` AND `APC.fa.fai` at the same time, and press `Open`, like so: 
 
 ![](images/IGV_upload_reference.png)
 
