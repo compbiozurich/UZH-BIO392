@@ -30,12 +30,12 @@ the impact on the patient or even Disease
 colored pairs: too close or too far awar from each other
 
 
-
-
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-the change from a to agagagaga should have the most severe impact due to frameshift. 
+The change from a to agagagaga (Insertion) should have the most severe impact due to frameshift. It is part of encoding for a protein.
+Gene: APC regulator of WNT (signaling pathway)
+Class: somatic insertion 
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-Your answer here
+leads to large intestine cancer.
