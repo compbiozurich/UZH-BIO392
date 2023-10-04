@@ -43,7 +43,22 @@ Moreover, if there is a value in the reference and a dot in the alternative, thi
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
-Your answer here
+
+- Reference Sequence Track (APC.fa):
+  - represents the reference genome sequence.
+  - the custom APC reference sequence you loaded from the 'APC.fa' file
+
+- Variant Call Format (VCF) Track (merged_results.vcf):
+  - represents variations and differences in the APC gene and other regions of interest compared to the reference genome
+
+- Gene Annotation Track (APC.gtf.gz):
+  - The GTF (Gene Transfer Format) file track contains gene annotation information.
+  - provides details about the gene structure, including the location of transcripts, exons, introns, coding sequences, and other features within the APC gene
+  
+- Alignment Tracks (BAM files):
+  - the alignment tracks represent the alignment of sequencing reads to the reference genome
+  - each alignment track provides information about read coverage, read depth, and the alignment quality for the samples
+
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
