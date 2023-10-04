@@ -14,12 +14,15 @@ These questions will not be graded separately, but may be considered when determ
 ### Q2
 **Using these four columns, how could you determine whether a sequencing sample contains a variant?**
 First, we have to idetnify the chromosome and position (CHROM and POS) where we want to determine if a vriant is present in our sequencing sample. 
-Second,we look at the REF and the ALT columns. We can compare the allele(s) of the reference genome with our sequencing sample to identify variants. 
+Second,we look at the REF and the ALT columns. We can compare the allele(s) of the reference genome with our sequencing sample to identify variants.
+(When the bases in REF and ALT are not the same, there is a variant.)
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
-Your answer here
-
+- first track: reference genome sequence  (uploaded via the genome button) 
+- second track: VCF file, shows us where the alternate alleles are (light blue means there is a variant , grey means theres no difference between sampled sequence and reference sequence=
+- third track: GTF files shows the length of our gene of interest (APC Gene)  and where the Coding Sequences (CDS) are on this gene (marked blue)
+- forth track: BMA file shows number of reads and mapping quality (if coloured: bad quality)
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
 Your answer here
