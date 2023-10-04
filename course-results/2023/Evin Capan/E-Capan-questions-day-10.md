@@ -7,12 +7,15 @@ These questions will not be graded separately, but may be considered when determ
 ### Q1
 **What information do the CHROM, POS, REF, and ALT columns contain in a VCF file?**
 
-Your answer here
+* **CHROM** (= Chromosome): Information about the contig identifier or chromosome where the genetic variant is located in the genome.
+* **POS** (= Position): Information about the reference position (genomic position) where the genetic variant on the specified contig or chromosome (CHROM) is found. The 1st base has the position 1.
+* **REF** (= Reference Base(s)): Information about the DNA base (A,C,G,T,N case insensitive) found in the reference genome at the genomic position (given by CHROM & POS). Multiple bases are permitted.
+* **ALT** (= Alternate Base(s)): Information about the alternative DNA base (A,C,G,T,N case insensitive) found in the genome at the genomic position (given by CHROM & POS) compared to REF. '*' stands for a missing allele due to overlapping deletion and '.' for a missing value (no variant). Multiple bases are permitted her as well.
 
 ### Q2
 **Using these four columns, how could you determine whether a sequencing sample contains a variant?**
 
-Your answer here
+To determine whether a sequencing sample contains a variant, one can compare the 'REF' and the 'ALT' values. If they differ from each other, that means there is a variant. The 'ALT' can contain multiple bases, meaning there can be multiple variants at the same position ('CHROM' & 'POS').
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
