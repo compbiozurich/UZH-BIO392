@@ -43,6 +43,9 @@ than you know that there variants.
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
 
+I would expect that the  "chr5    137481         a   agagagaga  Patient 3 " - alteration have the most impact, 
+due to the fact that it is a frameshift mutation for coding protein. 
+
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-Your answer here
+Colorectal cancer
