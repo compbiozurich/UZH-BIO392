@@ -6,20 +6,25 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q1
 **What information do the CHROM, POS, REF, and ALT columns contain in a VCF file?**
+
 Your answer here
 
 ### Q2
 **Using these four columns, how could you determine whether a sequencing sample contains a variant?**
+
 Your answer here
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
+
 Your answer here
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
+
 Your answer here
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
+
 Your answer here
