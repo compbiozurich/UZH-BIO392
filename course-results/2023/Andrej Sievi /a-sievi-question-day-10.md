@@ -23,7 +23,12 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
-In the IGV we uploaded the genom reference.
+In the IGV we uploaded the genom reference, VCF file, annotations and our BAM file from the three patient. 
+With the alignment we can see the STR on the patients. The Variant Effect predictor tells us if the STR are located in the exon or intron nad further
+the impact on the patient or even Disease
+
+colored pairs: too close or too far awar from each other
+
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
