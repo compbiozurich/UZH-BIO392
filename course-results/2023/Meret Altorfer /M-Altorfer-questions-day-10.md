@@ -25,8 +25,10 @@ Second,we look at the REF and the ALT columns. We can compare the allele(s) of t
 - forth track: BMA file shows number of reads and mapping quality (if coloured: bad quality)
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-Your answer here
+Intron variants are the most common (40%) but don't have much influence. The most impact has the variant in the coding sequence (GAGAGAGA) because it leads to a frameshift, and therefore protein with another function (because of different amino acids or stop-codons)
+
+
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-Your answer here
+ The phenotype with this frame-shift mutation is associated with formation of tumors in the large intestine or in the stomach, (due to the fact that APC is a tumor-supressor gene).
