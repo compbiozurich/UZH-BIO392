@@ -10,10 +10,23 @@ pdf_file_name:
 links: []
 ---
 
-## Survival analysis
+Do it on python.
+generate 4 plots one of them kaplan meier. 
+TNM! CNV!. 
+compare the concogens and tumorsuppressor in the disease. 
+~10-12 min
+use keywords, not too much text. 
+Subtypes? childhood or adult, general prognosis. general stats. 
+plots should have axis labels, titles and units
+conclusion: most interesting topic, expectation, outcome. 
+
+
+## Survival analysis on breast cancer
 
 This day and the following day of the course we will be working with survival datasets. 
 Plan:
+
+NCIT:C291 : Breast Neoplasm
 
 * Introduction 
 * Form groups (2-3 people)
