@@ -17,7 +17,10 @@ If the base(s) in the 'REF' and 'ALT' field are not the same, the sequenced samp
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
-Your answer here
+- first track: our custom APC reference sequence (only reference genome uploaded via genome button)
+- second track: VCF file shows where the alternative alleles are (light blue means there is a variant, grey means theres no difference between sampled sequence and reference genome)
+- third track: GTF file shows the length of the gene (APC gene) and where Coding Sequences (CDS) are on the gene (marked below the gene)
+- fourth track: BAM file shows number of reads and mapping quality (if coloured: bad quality)
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
