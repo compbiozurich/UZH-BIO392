@@ -62,8 +62,11 @@ Moreover, if there is a value in the reference and a dot in the alternative, thi
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-Your answer here
+
+The allele GAGAGAGA at 	5:137490-112839979	since it leads to a frameshift mutation.
+The other one, A at 5:106714-112809198, only describes an intron variant.
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-Your answer here
+
+We can see, in an NCBI register entry NM_000038.6, that it is linked to Familial adenomatous polyposis 1 (FAP1), which is an inherited disorder characterized by cancer of the large intestine (colon) and rectum.
