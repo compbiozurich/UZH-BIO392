@@ -9,9 +9,9 @@ These questions will not be graded separately, but may be considered when determ
 * POS: On position it is displayed which position on CHROM we are looking at. 
 * REF: On referrence it is displayed which nucleotide at the place on CHROM occurs from the reference genom.  
 * ALT: ALT displays the alteration from the reference genom to our investigation genom.
-* At CHROM:chr5	106700	we have an alteration(duplication) to a	from aa.
-* And at  CHROM: chr5	137481 there is an alteration to a from agagagaga
-* A ‘.’ means there is no variant. 
+ At CHROM:chr5	106700	we have an alteration(duplication) to a	from aa.
+ And at  CHROM: chr5	137481 there is an alteration to a from agagagaga
+ A ‘.’ means there is no variant. 
   
 
 ### Q2
