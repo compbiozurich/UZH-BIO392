@@ -6,11 +6,14 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q1
 **What information do the CHROM, POS, REF, and ALT columns contain in a VCF file?**
-Your answer here
+- **CHROM**: reference chromosome where a variant is located
+- **POS**: position of the variant in the reference chromosome
+- **REF**: reference allele(s) at the given position on the reference chromosome
+- **ALT**: alternate allele(s) at the given position of the sequenced sample
 
 ### Q2
 **Using these four columns, how could you determine whether a sequencing sample contains a variant?**
-Your answer here
+If the base(s) in the 'REF' and 'ALT' field are not the same, the sequenced sample contains a variant.
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
