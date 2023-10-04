@@ -18,7 +18,10 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
-Your answer here
+* We have the tracks with the alignments of each patient. We see the different reads and their associated information when we click on them (read name, alignment start and map quality). At the top of each alignment we see a profile which could be the coverage of each base.
+* We also have one track that represents the gene, with information on the source and the location on the chromosome that we are at. 
+* Another one representing the transcript.
+* And the last one “merged_results.vcf” contains the variant information for each patient.  
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
