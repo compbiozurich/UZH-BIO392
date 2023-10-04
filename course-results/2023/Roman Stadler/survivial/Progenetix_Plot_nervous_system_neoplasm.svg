@@ -1,0 +1,945 @@
+<svg
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+version="1.1"
+id="genomeplot"
+width="1024px"
+height="231px"
+style="margin: auto; font-family: Helvetica, sans-serif;">
+<style type="text/css"><![CDATA[
+.plot-area {fill: #eef6ff; fill-opacity: 0.8;}
+  .title-left {text-anchor: end; fill: #000000; font-size: 7.8px;}
+  .label-y {text-anchor: end; fill: #666666; font-size: 8px;}
+  .gridline {stroke-width: 1px; stroke: #c0e3ee; opacity: 0.8 ; }
+  .footer-r {text-anchor: end; fill: #999999; font-size: 10px;}
+  .footer-l {text-anchor: start; fill: #999999; font-size: 10px;}
+]]></style>
+<rect x="0" y="0" width="1024" height="231" style="fill: #ffffff" />
+
+<linearGradient id="genomeplotgpos100" x1="0%" x2="0%" y1="0%" y2="80%" spreadMethod="reflect">
+  <stop offset="0%" stop-color="rgb(39,39,39)" />
+  <stop offset="100%" stop-color="rgb(0,0,0)" />
+</linearGradient>
+<linearGradient id="genomeplotgpos75" x1="0%" x2="0%" y1="0%" y2="80%" spreadMethod="reflect">
+  <stop offset="0%" stop-color="rgb(87,87,87)" />
+  <stop offset="100%" stop-color="rgb(39,39,39)" />
+</linearGradient>
+<linearGradient id="genomeplotgpos50" x1="0%" x2="0%" y1="0%" y2="80%" spreadMethod="reflect">
+  <stop offset="0%" stop-color="rgb(196,196,196)" />
+  <stop offset="100%" stop-color="rgb(111,111,111)" />
+</linearGradient>
+<linearGradient id="genomeplotgpos25" x1="0%" x2="0%" y1="0%" y2="80%" spreadMethod="reflect">
+  <stop offset="0%" stop-color="rgb(223,223,223)" />
+  <stop offset="100%" stop-color="rgb(196,196,196)" />
+</linearGradient>
+<linearGradient id="genomeplotgneg" x1="0%" x2="0%" y1="0%" y2="80%" spreadMethod="reflect">
+  <stop offset="0%" stop-color="white" />
+  <stop offset="100%" stop-color="rgb(223,223,223)" />
+</linearGradient>
+<linearGradient id="genomeplotgvar" x1="0%" x2="0%" y1="0%" y2="80%" spreadMethod="reflect">
+  <stop offset="0%" stop-color="rgb(196,196,196)" />
+  <stop offset="100%" stop-color="rgb(111,111,111)" />
+</linearGradient>
+<linearGradient id="genomeplotstalk" x1="0%" x2="0%" y1="0%" y2="80%" spreadMethod="reflect">
+  <stop offset="0%" stop-color="rgb(39,39,39)" />
+  <stop offset="100%" stop-color="rgb(0,0,0)" />
+</linearGradient>
+<linearGradient id="genomeplotacen" x1="0%" x2="0%" y1="0%" y2="80%" spreadMethod="reflect">
+  <stop offset="0%" stop-color="rgb(163,55,247)" />
+  <stop offset="100%" stop-color="rgb(138,43,226)" />
+</linearGradient>
+<text x="527.0" y="41" style="text-anchor: middle; font-size: 16px">Nervous System Neoplasm (NCIT:C3268)</text>
+<text x="93.14443333397304" y="73" style="text-anchor: middle; font-size: 10px">1</text>
+<text x="171.39710772733986" y="73" style="text-anchor: middle; font-size: 10px">2</text>
+<text x="241.88766095981916" y="73" style="text-anchor: middle; font-size: 10px">3</text>
+<text x="304.4141356094559" y="73" style="text-anchor: middle; font-size: 10px">4</text>
+<text x="364.3731018270049" y="73" style="text-anchor: middle; font-size: 10px">5</text>
+<text x="421.35833823516845" y="73" style="text-anchor: middle; font-size: 10px">6</text>
+<text x="474.9433322753907" y="73" style="text-anchor: middle; font-size: 10px">7</text>
+<text x="524.5956450613663" y="73" style="text-anchor: middle; font-size: 10px">8</text>
+<text x="571.0378627578689" y="73" style="text-anchor: middle; font-size: 10px">9</text>
+<text x="615.7424101509746" y="73" style="text-anchor: middle; font-size: 10px">10</text>
+<text x="659.9401001263193" y="73" style="text-anchor: middle; font-size: 10px">11</text>
+<text x="704.0577933521873" y="73" style="text-anchor: middle; font-size: 10px">12</text>
+<text x="745.0004724303587" y="73" style="text-anchor: middle; font-size: 10px">13</text>
+<text x="781.9240176934419" y="73" style="text-anchor: middle; font-size: 10px">14</text>
+<text x="816.9517838803079" y="73" style="text-anchor: middle; font-size: 10px">15</text>
+<text x="849.4199977503525" y="73" style="text-anchor: middle; font-size: 10px">16</text>
+<text x="879.0178771420143" y="73" style="text-anchor: middle; font-size: 10px">17</text>
+<text x="907.0889368445698" y="73" style="text-anchor: middle; font-size: 10px">18</text>
+<text x="931.384748837013" y="73" style="text-anchor: middle; font-size: 10px">19</text>
+<text x="953.2399442157583" y="73" style="text-anchor: middle; font-size: 10px">20</text>
+<text x="973.2706840954849" y="73" style="text-anchor: middle; font-size: 10px">21</text>
+<text x="991.2137310249396" y="73" style="text-anchor: middle; font-size: 10px">22</text>
+<rect x="55" y="77.4" width="0.7" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="55.7" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="56.6" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="57.2" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="57.8" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="58.8" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="59.9" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="61.2" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="62.2" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="63.5" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="64.2" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="64.9" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="65.5" y="76" width="1.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="67.1" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="68.4" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="69.2" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="70.4" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="72.0" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="72.9" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="73.6" y="76" width="2.4" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="76.0" y="76" width="0.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="76.2" y="76" width="4.6" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="80.9" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="81.9" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="83.0" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="83.9" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="85.4" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="86.2" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="87.7" y="76" width="1.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="89.1" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="90.4" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="90.9" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="91.9" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="92.3" y="78.8" width="0.5" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="92.8" y="78.8" width="0.5" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="93.3" y="76" width="5.5" height="14" style="fill: url(#genomeplotgvar); " />
+<rect x="98.9" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="100.2" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="101.1" y="76" width="1.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="102.5" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="103.0" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="103.8" y="76" width="0.4" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="104.2" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="105.7" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="106.2" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="107.4" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="108.0" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="109.0" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="110.3" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="111.9" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="113.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="114.4" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="115.9" y="76" width="2.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="118.5" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="119.7" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="120.7" y="76" width="2.9" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="123.6" y="76" width="0.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="123.8" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="124.5" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="125.6" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="126.9" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="127.4" y="77.4" width="2.2" height="11.2" style="fill: url(#genomeplotgpos75); " />
+<rect x="129.6" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="134.3" y="77.4" width="1.3" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="135.6" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="136.4" y="76" width="1.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="138.0" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="139.3" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="140.1" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="141.6" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="142.8" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="143.4" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="144.0" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="145.4" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="146.0" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="147.0" y="76" width="1.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="148.8" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="150.4" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="151.1" y="76" width="1.9" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="153.0" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="153.9" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="155.2" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="156.1" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="156.8" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="157.2" y="76" width="2.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="159.8" y="76" width="2.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="162.4" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="163.1" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="163.7" y="76" width="1.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="165.6" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="166.6" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="167.0" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="167.6" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="168.7" y="76" width="1.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="170.5" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="171.6" y="76" width="2.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="173.8" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="174.6" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="175.4" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="176.0" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="177.6" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="178.2" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="179.6" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="179.9" y="76" width="0.2" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="180.1" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="181.5" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="183.0" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="184.2" y="76" width="1.8" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="186.0" y="76" width="2.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="188.6" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="189.4" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="190.1" y="76" width="2.0" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="192.1" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="192.8" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="194.5" y="76" width="1.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="196.3" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="196.8" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="198.1" y="76" width="1.9" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="200.0" y="76" width="1.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="201.9" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="203.0" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="203.3" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="204.8" y="76" width="1.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="206.2" y="77.4" width="0.5" height="11.2" style="fill: url(#genomeplotgpos50); " />
+<rect x="206.7" y="76" width="1.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="211.5" y="77.4" width="0.9" height="11.2" style="fill: url(#genomeplotgpos50); " />
+<rect x="212.4" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="212.7" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="214.0" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="215.1" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="215.6" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="216.5" y="76" width="2.3" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="218.8" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="219.6" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="220.9" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="221.3" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="222.7" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="223.5" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="224.9" y="76" width="0.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="225.0" y="76" width="0.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="225.0" y="76" width="2.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="227.0" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="227.5" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="228.2" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="229.5" y="76" width="1.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="231.1" y="76" width="1.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="232.9" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="234.2" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="236.0" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="237.1" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="238.2" y="76" width="0.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="238.4" y="78.8" width="0.9" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="239.4" y="78.8" width="0.9" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="240.3" y="76" width="1.4" height="14" style="fill: url(#genomeplotgvar); " />
+<rect x="241.7" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="242.2" y="76" width="0.3" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="242.5" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="243.1" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="244.1" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="244.7" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="245.7" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="246.3" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="247.5" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="248.1" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="249.0" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="249.5" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="250.1" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="251.2" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="252.6" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="253.2" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="254.1" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="255.4" y="76" width="1.9" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="257.2" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="258.2" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="259.1" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="259.7" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="260.3" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="260.8" y="76" width="2.1" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="263.0" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="264.0" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="265.4" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="266.4" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="267.6" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="268.1" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="268.6" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="269.2" y="77.4" width="1.3" height="11.2" style="fill: url(#genomeplotgpos75); " />
+<rect x="270.5" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="275.3" y="77.4" width="1.4" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="276.6" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="277.1" y="76" width="1.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="278.7" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="279.9" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="280.7" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="281.8" y="76" width="2.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="283.8" y="76" width="2.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="286.2" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="287.9" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="288.9" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="290.0" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="290.6" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="291.1" y="76" width="2.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="293.2" y="76" width="2.1" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="295.3" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="296.5" y="76" width="1.8" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="298.3" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="299.2" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="300.2" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="300.8" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="301.6" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="302.0" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="303.7" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="304.1" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="305.3" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="305.9" y="76" width="2.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="308.0" y="76" width="2.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="310.0" y="76" width="2.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="312.0" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="312.9" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="314.5" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="315.1" y="76" width="2.6" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="317.7" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="318.4" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="320.0" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="320.5" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="321.3" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="322.6" y="76" width="1.9" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="324.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="325.4" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="327.1" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="327.7" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="329.0" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="329.4" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="331.1" y="77.4" width="1.2" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="332.3" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="336.6" y="77.4" width="1.3" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="337.9" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="338.5" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="339.6" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="341.2" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="342.2" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="343.7" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="344.1" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="345.4" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="346.9" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="348.3" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="349.6" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="350.7" y="78.8" width="0.8" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="351.5" y="78.8" width="0.8" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="352.3" y="76" width="2.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="354.8" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="356.0" y="76" width="0.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="356.1" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="357.2" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="357.7" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="359.2" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="360.3" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="361.7" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="362.1" y="76" width="2.9" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="365.1" y="76" width="1.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="366.9" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="368.2" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="368.8" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="370.3" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="370.9" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="371.4" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="372.1" y="76" width="1.9" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="374.0" y="76" width="1.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="375.8" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="376.8" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="378.5" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="379.5" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="381.0" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="382.6" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="383.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="384.5" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="385.7" y="76" width="2.6" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="388.3" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="389.7" y="77.4" width="1.2" height="11.2" style="fill: url(#genomeplotgpos25); " />
+<rect x="390.8" y="76" width="1.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="395.2" y="77.4" width="0.7" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="395.9" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="396.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="397.4" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="398.4" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="398.7" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="399.3" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="399.8" y="76" width="3.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="402.9" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="403.5" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="404.5" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="405.0" y="76" width="0.4" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="405.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="406.4" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="407.6" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="409.3" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="411.1" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="411.4" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="412.7" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="413.1" y="78.8" width="0.4" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="413.5" y="78.8" width="0.9" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="414.4" y="76" width="0.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="414.4" y="76" width="2.0" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="416.4" y="76" width="1.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="418.2" y="76" width="2.5" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="420.7" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="421.0" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="421.9" y="76" width="1.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="423.5" y="76" width="2.0" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="425.5" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="425.8" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="427.4" y="76" width="2.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="430.2" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="431.3" y="76" width="0.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="431.4" y="76" width="2.4" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="433.7" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="434.0" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="435.0" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="435.3" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="436.5" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="437.6" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="438.8" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="439.7" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="440.7" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="441.8" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="442.7" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="444.4" y="77.4" width="1.1" height="11.2" style="fill: url(#genomeplotgpos50); " />
+<rect x="445.5" y="76" width="2.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="450.5" y="77.4" width="0.9" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="451.4" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="451.9" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="452.7" y="76" width="2.0" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="454.7" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="455.6" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="456.9" y="76" width="1.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="458.3" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="459.1" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="459.4" y="76" width="1.9" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="461.2" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="461.9" y="76" width="1.9" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="463.8" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="464.4" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="465.5" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="466.0" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="467.0" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="468.3" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="468.9" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="469.6" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="471.2" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="472.8" y="76" width="1.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="474.4" y="76" width="2.7" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="477.1" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="477.6" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="478.6" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="479.1" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="480.7" y="76" width="1.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="482.5" y="76" width="0.2" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="482.7" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="483.6" y="76" width="2.2" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="485.8" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="486.6" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="487.7" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="488.6" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="489.6" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="490.2" y="76" width="0.4" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="490.6" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="491.3" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="493.0" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="494.5" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="495.9" y="76" width="1.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="497.4" y="77.4" width="0.7" height="11.2" style="fill: url(#genomeplotgpos25); " />
+<rect x="498.1" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="502.4" y="77.4" width="0.7" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="503.1" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="504.3" y="76" width="2.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="506.3" y="76" width="2.0" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="508.2" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="509.6" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="510.8" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="511.2" y="76" width="2.4" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="513.6" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="514.2" y="76" width="0.4" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="514.6" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="515.6" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="516.2" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="516.8" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="518.1" y="76" width="0.1" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="518.2" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="519.1" y="76" width="1.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="520.9" y="76" width="0.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="521.1" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="522.3" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="522.9" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="523.7" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="524.4" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="525.2" y="76" width="0.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="525.2" y="76" width="2.7" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="527.9" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="528.7" y="76" width="2.0" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="530.6" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="532.4" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="533.2" y="76" width="1.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="534.6" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="535.9" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="536.4" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="538.1" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="538.6" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="539.6" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="541.1" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="542.3" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="543.8" y="77.4" width="1.1" height="11.2" style="fill: url(#genomeplotgpos75); " />
+<rect x="544.9" y="76" width="1.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="549.8" y="77.4" width="0.7" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="550.5" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="551.2" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="552.6" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="554.2" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="554.9" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="555.5" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="555.9" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="557.7" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="558.4" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="560.0" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="561.0" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="561.4" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="561.8" y="76" width="0.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="562.1" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="562.8" y="78.8" width="0.2" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="563.0" y="78.8" width="0.8" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="563.8" y="76" width="4.9" height="14" style="fill: url(#genomeplotgvar); " />
+<rect x="568.7" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="569.8" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="571.1" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="571.7" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="573.3" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="573.9" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="574.8" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="575.7" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="576.7" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="577.2" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="577.8" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="578.6" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="579.4" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="580.4" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="582.1" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="583.1" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="584.2" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="585.0" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="586.5" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="587.6" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="588.9" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="589.9" y="76" width="0.2" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="590.0" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="590.6" y="77.4" width="0.4" height="11.2" style="fill: url(#genomeplotgpos25); " />
+<rect x="591.0" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="595.2" y="77.4" width="0.9" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="596.2" y="76" width="0.2" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="596.4" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="597.3" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="599.0" y="76" width="1.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="600.5" y="76" width="0.3" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="600.9" y="76" width="0.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="600.9" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="602.1" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="602.7" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="604.2" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="604.8" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="605.7" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="606.9" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="607.4" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="608.0" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="609.2" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="610.1" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="610.9" y="76" width="2.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="613.4" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="614.5" y="76" width="1.8" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="616.3" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="617.6" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="618.5" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="619.8" y="76" width="1.8" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="621.6" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="622.1" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="623.2" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="623.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="624.4" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="625.1" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="625.9" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="626.3" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="626.8" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="627.1" y="76" width="1.9" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="629.0" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="629.9" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="631.2" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="632.0" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="632.4" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="633.8" y="77.4" width="0.9" height="11.2" style="fill: url(#genomeplotgpos50); " />
+<rect x="634.7" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="639.2" y="77.4" width="0.9" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="640.1" y="76" width="2.7" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="642.8" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="643.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="644.4" y="76" width="1.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="646.0" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="647.3" y="76" width="0.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="647.6" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="648.7" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="650.4" y="76" width="2.1" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="652.5" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="654.2" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="654.9" y="78.8" width="0.7" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="655.6" y="78.8" width="0.7" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="656.3" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="657.7" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="658.2" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="658.7" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="659.5" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="660.3" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="660.8" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="662.4" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="663.0" y="76" width="2.6" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="665.6" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="666.4" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="667.7" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="669.1" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="670.6" y="76" width="0.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="670.8" y="76" width="2.3" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="673.1" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="673.8" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="674.4" y="76" width="2.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="676.4" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="677.2" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="678.4" y="77.4" width="0.9" height="11.2" style="fill: url(#genomeplotgpos50); " />
+<rect x="679.4" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="683.6" y="77.4" width="1.0" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="684.6" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="685.3" y="76" width="1.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="686.7" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="687.5" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="688.1" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="689.7" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="690.1" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="691.7" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="692.1" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="693.0" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="693.8" y="78.8" width="0.7" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="694.5" y="78.8" width="0.7" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="695.2" y="76" width="2.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="697.7" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="698.6" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="699.3" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="700.3" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="700.9" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="701.3" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="702.9" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="703.5" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="704.3" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="705.4" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="706.7" y="76" width="1.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="708.1" y="76" width="2.0" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="710.1" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="710.8" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="711.9" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="713.0" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="714.6" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="715.4" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="716.9" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="717.7" y="76" width="0.2" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="717.9" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="718.5" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="719.3" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="719.7" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="720.5" y="76" width="1.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="722.1" y="77.4" width="1.0" height="11.2" style="fill: url(#genomeplotgpos50); " />
+<rect x="723.1" y="76" width="1.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="727.5" y="77.4" width="1.4" height="11.2" style="fill: url(#genomeplotgvar); " />
+<rect x="728.9" y="80.2" width="1.7" height="5.6" style="fill: url(#genomeplotstalk); " />
+<rect x="730.6" y="76" width="2.0" height="14" style="fill: url(#genomeplotgvar); " />
+<rect x="732.5" y="78.8" width="0.4" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="732.9" y="78.8" width="0.4" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="733.3" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="734.4" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="735.1" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="735.8" y="76" width="0.3" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="736.1" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="737.2" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="737.7" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="738.2" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="739.6" y="76" width="1.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="741.1" y="76" width="0.2" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="741.3" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="741.8" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="742.9" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="744.2" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="745.6" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="746.4" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="747.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="748.3" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="749.8" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="750.4" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="751.0" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="751.5" y="76" width="2.6" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="754.2" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="754.9" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="756.4" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="757.4" y="76" width="0.4" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="757.7" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="758.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="759.4" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="760.1" y="77.4" width="1.0" height="11.2" style="fill: url(#genomeplotgpos100); " />
+<rect x="761.1" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="765.5" y="77.4" width="1.1" height="11.2" style="fill: url(#genomeplotgvar); " />
+<rect x="766.6" y="80.2" width="1.3" height="5.6" style="fill: url(#genomeplotstalk); " />
+<rect x="768.0" y="76" width="2.5" height="14" style="fill: url(#genomeplotgvar); " />
+<rect x="770.5" y="78.8" width="0.3" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="770.8" y="78.8" width="0.3" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="771.1" y="76" width="1.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="772.9" y="76" width="2.7" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="775.6" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="776.2" y="76" width="0.4" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="776.6" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="777.0" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="778.7" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="779.8" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="781.0" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="781.9" y="76" width="0.4" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="782.4" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="783.2" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="784.4" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="785.2" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="786.2" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="786.9" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="788.0" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="789.7" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="791.0" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="791.4" y="76" width="1.5" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="792.9" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="793.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="794.4" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="794.9" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="796.4" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="797.0" y="77.4" width="0.2" height="11.2" style="fill: url(#genomeplotgpos50); " />
+<rect x="797.2" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="801.3" y="77.4" width="1.3" height="11.2" style="fill: url(#genomeplotgvar); " />
+<rect x="802.6" y="80.2" width="1.7" height="5.6" style="fill: url(#genomeplotstalk); " />
+<rect x="804.3" y="76" width="2.4" height="14" style="fill: url(#genomeplotgvar); " />
+<rect x="806.7" y="78.8" width="0.5" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="807.1" y="78.8" width="0.5" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="807.6" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="809.1" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="809.8" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="810.5" y="76" width="0.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="810.8" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="811.6" y="76" width="2.0" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="813.5" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="814.3" y="76" width="0.2" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="814.6" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="815.0" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="816.4" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="817.4" y="76" width="1.9" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="819.3" y="76" width="0.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="819.4" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="820.8" y="76" width="1.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="821.8" y="76" width="0.0" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="821.9" y="76" width="0.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="821.9" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="823.5" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="824.3" y="76" width="0.4" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="824.7" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="825.2" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="826.3" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="827.3" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="828.4" y="76" width="1.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="830.1" y="77.4" width="1.3" height="11.2" style="fill: url(#genomeplotgpos50); " />
+<rect x="831.4" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="835.6" y="77.4" width="2.4" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="838.0" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="838.8" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="839.4" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="840.1" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="840.7" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="842.1" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="843.0" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="844.3" y="76" width="2.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="846.4" y="78.8" width="0.5" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="846.9" y="78.8" width="0.5" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="847.3" y="76" width="2.6" height="14" style="fill: url(#genomeplotgvar); " />
+<rect x="850.0" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="851.7" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="852.7" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="853.1" y="76" width="2.8" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="856.0" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="857.3" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="857.9" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="858.3" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="859.8" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="860.6" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="861.3" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="862.2" y="77.4" width="0.5" height="11.2" style="fill: url(#genomeplotgpos25); " />
+<rect x="862.8" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="866.3" y="77.4" width="1.0" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="867.3" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="868.3" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="869.6" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="871.2" y="76" width="2.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="873.2" y="78.8" width="0.7" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="874.0" y="78.8" width="0.7" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="874.7" y="76" width="1.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="876.5" y="76" width="1.9" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="878.5" y="76" width="0.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="878.6" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="879.4" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="880.6" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="881.4" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="882.2" y="76" width="2.3" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="884.5" y="76" width="0.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="884.7" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="885.6" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="886.1" y="76" width="0.5" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="886.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="887.4" y="76" width="1.2" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="888.6" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="889.8" y="77.4" width="0.1" height="11.2" style="fill: url(#genomeplotgpos25); " />
+<rect x="889.9" y="76" width="1.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="894.8" y="77.4" width="0.9" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="895.7" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="897.0" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="897.4" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="898.1" y="76" width="1.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="899.5" y="78.8" width="0.9" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="900.4" y="78.8" width="0.9" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="901.4" y="76" width="1.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="903.2" y="76" width="2.3" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="905.5" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="906.9" y="76" width="2.0" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="908.8" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="910.3" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="912.0" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="912.7" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="913.6" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="914.4" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="915.9" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="916.5" y="77.4" width="1.3" height="11.2" style="fill: url(#genomeplotgpos25); " />
+<rect x="917.9" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="922.4" y="77.4" width="2.1" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="924.5" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="926.3" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="926.6" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="927.3" y="76" width="1.2" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="928.5" y="76" width="1.3" height="14" style="fill: url(#genomeplotgvar); " />
+<rect x="929.8" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="930.4" y="78.8" width="0.6" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="931.0" y="76" width="1.2" height="14" style="fill: url(#genomeplotgvar); " />
+<rect x="932.2" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="933.2" y="76" width="0.8" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="934.0" y="76" width="0.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="934.1" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="935.5" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="936.1" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="937.0" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="938.0" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="938.7" y="77.4" width="0.8" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="939.5" y="76" width="0.9" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="943.4" y="77.4" width="1.6" height="11.2" style="fill: url(#genomeplotgneg); " />
+<rect x="944.9" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="946.2" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="947.0" y="76" width="1.8" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="948.9" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="949.9" y="76" width="0.3" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="950.2" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="951.2" y="78.8" width="0.7" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="952.0" y="78.8" width="0.7" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="952.7" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="953.6" y="76" width="0.7" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="954.3" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="955.3" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="956.6" y="76" width="0.1" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="956.7" y="76" width="1.3" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="958.0" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="959.1" y="76" width="1.6" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="960.6" y="76" width="0.4" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="961.1" y="77.4" width="0.6" height="11.2" style="fill: url(#genomeplotgpos50); " />
+<rect x="961.7" y="76" width="1.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="966.1" y="77.4" width="0.9" height="11.2" style="fill: url(#genomeplotgvar); " />
+<rect x="967.1" y="80.2" width="1.2" height="5.6" style="fill: url(#genomeplotstalk); " />
+<rect x="968.3" y="76" width="1.2" height="14" style="fill: url(#genomeplotgvar); " />
+<rect x="969.5" y="78.8" width="0.3" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="969.8" y="78.8" width="0.3" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="970.1" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="970.7" y="76" width="2.3" height="14" style="fill: url(#genomeplotgpos100); " />
+<rect x="973.0" y="76" width="0.9" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="973.9" y="76" width="1.4" height="14" style="fill: url(#genomeplotgpos75); " />
+<rect x="975.4" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="976.7" y="76" width="0.6" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="977.3" y="76" width="0.6" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="977.9" y="77.4" width="0.9" height="11.2" style="fill: url(#genomeplotgpos50); " />
+<rect x="978.7" y="76" width="1.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="983.4" y="77.4" width="1.3" height="11.2" style="fill: url(#genomeplotgvar); " />
+<rect x="984.7" y="80.2" width="1.6" height="5.6" style="fill: url(#genomeplotstalk); " />
+<rect x="986.3" y="76" width="1.3" height="14" style="fill: url(#genomeplotgvar); " />
+<rect x="987.6" y="78.8" width="0.4" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="988.0" y="78.8" width="0.7" height="8.4" style="fill: url(#genomeplotacen); " />
+<rect x="988.8" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="990.1" y="76" width="0.4" height="14" style="fill: url(#genomeplotgpos25); " />
+<rect x="990.5" y="76" width="0.7" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="991.2" y="76" width="1.1" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="992.4" y="76" width="0.8" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="993.2" y="76" width="1.7" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="994.8" y="76" width="1.0" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="995.9" y="76" width="1.0" height="14" style="fill: url(#genomeplotgpos50); " />
+<rect x="996.8" y="76" width="1.3" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="998.2" y="77.4" width="0.3" height="11.2" style="fill: url(#genomeplotgpos50); " />
+<rect x="998.5" y="76" width="0.5" height="14" style="fill: url(#genomeplotgneg); " />
+<rect x="55" y="93" width="944" height="100" class="plot-area" />
+<line x1="22"  y1="143.0"  x2="999"  y2="143.0" class="gridline" />
+<line x1="55" y1="155.5" x2="999" y2="155.5" class="gridline" />
+<text x="52" y="159.5" class="label-y">25%</text>
+<line x1="55" y1="130.5" x2="999" y2="130.5" class="gridline" />
+<text x="52" y="134.5" class="label-y">25%</text>
+<line x1="55" y1="168.0" x2="999" y2="168.0" class="gridline" />
+<text x="52" y="172.0" class="label-y">50%</text>
+<line x1="55" y1="118.0" x2="999" y2="118.0" class="gridline" />
+<text x="52" y="122.0" class="label-y">50%</text>
+<line x1="55" y1="180.5" x2="999" y2="180.5" class="gridline" />
+<text x="52" y="184.5" class="label-y">75%</text>
+<line x1="55" y1="105.5" x2="999" y2="105.5" class="gridline" />
+<text x="52" y="109.5" class="label-y">75%</text>
+<polygon points="55,143.0 55.0,140.5 55.1,138.8 55.4,138.5 55.7,138.2 56.0,138.1 56.3,139.1 56.7,139.0 57.0,139.0 57.3,139.0 57.6,139.1 57.9,139.0 58.2,138.7 58.5,138.8 58.8,138.7 59.1,138.9 59.4,138.9 59.7,138.6 60.0,138.0 60.3,138.9 60.6,139.0 60.9,138.8 61.3,138.7 61.6,138.9 61.9,138.9 62.2,138.8 62.5,138.8 62.8,139.0 63.1,138.9 63.4,138.9 63.7,138.8 64.0,139.1 64.3,138.9 64.6,138.7 64.9,138.7 65.2,138.9 65.5,138.8 65.8,138.9 66.2,138.9 66.5,138.8 66.8,139.0 67.1,138.7 67.4,138.7 67.7,138.9 68.0,138.9 68.3,138.9 68.6,138.9 68.9,138.9 69.2,139.0 69.5,139.0 69.8,139.4 70.1,139.4 70.4,138.7 70.8,139.2 71.1,138.9 71.4,139.0 71.7,138.9 72.0,139.5 72.3,139.3 72.6,139.3 72.9,139.1 73.2,139.6 73.5,139.4 73.8,139.4 74.1,139.5 74.4,139.2 74.7,139.3 75.0,139.4 75.3,139.5 75.7,139.4 76.0,139.7 76.3,139.7 76.6,139.5 76.9,137.5 77.2,139.5 77.5,139.6 77.8,139.4 78.1,139.2 78.4,139.3 78.7,139.4 79.0,139.6 79.3,139.7 79.6,139.7 79.9,139.6 80.3,139.5 80.6,139.4 80.9,139.4 81.2,139.7 81.5,139.6 81.8,139.6 82.1,139.6 82.4,139.6 82.7,139.6 83.0,139.7 83.3,139.5 83.6,139.6 83.9,139.4 84.2,139.6 84.5,139.5 84.8,139.6 85.2,139.5 85.5,139.4 85.8,139.4 86.1,139.4 86.4,139.6 86.7,139.3 87.0,139.6 87.3,138.9 87.6,139.5 87.9,139.3 88.2,138.9 88.5,138.3 88.8,138.8 89.1,139.1 89.4,139.2 89.7,139.3 90.1,139.2 90.4,139.2 90.7,139.3 91.0,139.3 91.3,139.2 91.6,138.4 91.9,138.9 92.2,138.9 92.5,139.0 92.8,138.1 93.1,138.1 93.4,138.1 93.7,138.1 94.0,138.1 94.3,138.1 98.0,138.1 98.3,138.1 98.6,137.7 98.9,137.3 99.2,137.3 99.6,137.2 99.9,137.0 100.2,136.5 100.5,136.4 100.8,135.7 101.1,135.6 101.4,135.3 101.7,134.0 102.0,135.1 102.3,134.8 102.6,134.7 102.9,135.0 103.2,135.4 103.5,135.1 103.8,135.6 104.2,135.5 104.5,135.2 104.8,135.5 105.1,135.6 105.4,135.8 105.7,135.9 106.0,135.7 106.3,135.8 106.6,135.6 106.9,135.7 107.2,135.9 107.5,135.7 107.8,135.7 108.1,135.8 108.4,135.7 108.7,135.7 109.1,135.7 109.4,135.7 109.7,135.8 110.0,135.6 110.3,135.6 110.6,135.6 110.9,135.8 111.2,135.6 111.5,135.6 111.8,135.6 112.1,135.6 112.4,135.6 112.7,135.7 113.0,135.8 113.3,135.8 113.7,135.7 114.0,135.6 114.3,135.5 114.6,135.5 114.9,135.6 115.2,135.4 115.5,135.4 115.8,135.4 116.1,135.1 116.4,135.1 116.7,134.9 117.0,134.6 117.3,134.3 117.6,133.9 117.9,134.9 118.2,135.0 118.6,135.1 118.9,135.5 119.2,135.5 119.5,135.8 119.8,135.5 120.1,135.5 120.4,135.7 120.7,135.3 121.0,135.6 121.3,135.6 121.6,135.8 121.9,135.7 122.2,135.7 122.5,135.8 122.8,135.9 123.2,135.8 123.5,135.8 123.8,135.6 124.1,135.4 124.4,135.6 124.7,135.3 125.0,135.6 125.3,135.6 125.6,135.6 125.9,135.6 126.2,135.6 126.5,135.7 126.8,135.5 127.1,135.8 127.4,135.6 127.7,135.6 128.1,136.0 128.4,136.0 128.7,135.9 129.0,135.7 129.3,135.6 129.6,135.6 129.9,135.9 130.2,135.6 130.5,136.3 130.8,138.8 131.1,138.9 131.3,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="55,143.0 55.0,146.6 55.1,148.8 55.4,149.8 55.7,152.9 56.0,153.0 56.3,153.1 56.7,153.5 57.0,153.4 57.3,153.7 57.6,153.2 57.9,153.6 58.2,152.9 58.5,152.2 58.8,152.3 59.1,151.9 59.4,151.6 59.7,152.0 60.0,152.4 60.3,151.5 60.6,151.6 60.9,151.7 61.3,151.9 61.6,151.9 61.9,151.8 62.2,152.1 62.5,152.5 62.8,152.5 63.1,152.4 63.4,152.0 63.7,151.8 64.0,150.9 64.3,151.4 64.6,151.3 64.9,151.4 65.2,150.6 65.5,151.5 65.8,151.2 66.2,151.1 66.5,150.7 66.8,150.7 67.1,150.7 67.4,150.6 67.7,150.2 68.0,150.3 68.3,150.3 68.6,150.8 68.9,150.8 69.2,150.8 69.5,150.3 69.8,150.0 70.1,150.3 70.4,151.3 70.8,150.7 71.1,150.9 71.4,150.4 71.7,150.6 72.0,149.7 72.3,149.7 72.6,149.6 72.9,149.7 73.2,149.5 73.5,149.7 73.8,150.4 74.1,150.1 74.4,149.9 74.7,149.9 75.0,149.7 75.3,150.0 75.7,150.1 76.0,149.8 76.3,150.0 76.6,150.2 76.9,151.7 77.2,150.0 77.5,150.0 77.8,150.1 78.1,150.2 78.4,149.9 78.7,150.3 79.0,150.2 79.3,150.0 79.6,150.0 79.9,150.0 80.3,150.0 80.6,150.0 80.9,150.1 81.2,149.6 81.5,149.7 81.8,149.6 82.1,149.9 82.4,149.7 82.7,149.8 83.0,150.3 83.3,150.2 83.6,149.9 83.9,149.6 84.2,149.5 84.5,149.5 84.8,149.3 85.2,149.3 85.5,149.4 85.8,149.5 86.1,149.4 86.4,149.2 86.7,149.9 87.0,149.1 87.3,149.6 87.6,149.5 87.9,149.4 88.2,149.5 88.5,150.7 88.8,149.6 89.1,150.6 89.4,149.2 89.7,148.8 90.1,148.8 90.4,148.7 90.7,148.5 91.0,148.8 91.3,148.5 91.6,148.5 91.9,146.3 92.2,146.4 92.5,146.0 92.8,145.8 93.1,144.9 93.7,144.9 94.0,144.9 94.3,144.9 96.2,144.9 96.5,144.9 96.8,144.9 97.4,144.9 97.7,144.9 98.0,144.9 98.3,145.0 98.6,145.0 98.9,145.8 99.2,144.8 99.6,144.8 99.9,145.0 100.2,145.4 100.5,145.0 100.8,145.9 101.1,145.8 101.4,145.4 101.7,147.0 102.0,145.4 102.3,145.4 102.6,145.3 102.9,145.2 103.2,144.6 103.5,144.9 103.8,144.5 104.2,144.9 104.5,144.8 104.8,144.7 105.1,144.4 105.4,144.3 105.7,144.4 106.0,144.4 106.3,144.5 106.6,145.3 106.9,144.6 107.2,144.6 107.5,144.6 107.8,144.6 108.1,144.6 108.4,144.8 108.7,144.6 109.1,144.5 109.4,144.6 109.7,145.0 110.0,144.7 110.3,144.5 110.6,144.6 110.9,144.5 111.2,144.6 111.5,144.7 111.8,144.7 112.1,144.7 112.4,145.1 112.7,144.9 113.0,144.9 113.3,144.9 113.7,144.9 114.0,145.0 114.3,144.9 114.6,145.4 114.9,144.8 115.2,146.2 115.5,145.0 115.8,145.6 116.1,145.3 116.4,144.7 116.7,144.8 117.0,144.9 117.3,144.9 117.6,144.8 117.9,144.7 118.2,145.3 118.6,144.8 118.9,144.8 119.2,145.5 119.5,144.9 119.8,145.0 120.1,145.0 120.4,144.9 120.7,145.1 121.0,144.7 121.3,144.6 121.6,144.7 121.9,144.6 122.2,144.8 122.5,144.8 122.8,145.2 123.2,145.1 123.5,145.3 123.8,145.2 124.1,145.6 124.4,145.5 124.7,145.4 125.0,145.1 125.3,145.6 125.6,145.2 125.9,145.5 126.2,145.2 126.5,145.1 126.8,145.5 127.1,145.4 127.4,145.5 127.7,145.2 128.1,145.2 128.4,145.0 128.7,145.0 129.0,145.3 129.3,145.0 129.6,145.2 129.9,145.0 130.2,145.2 130.5,145.1 130.8,144.5 131.1,145.0 131.3,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="134.3,143.0 134.3,137.0 134.6,137.1 134.9,137.2 135.2,137.0 135.5,137.1 135.8,137.2 136.1,137.3 136.4,137.2 136.7,136.9 137.0,136.9 137.3,136.8 137.6,136.9 137.9,136.7 138.2,137.1 138.5,136.9 138.9,136.0 139.2,135.5 139.5,136.8 139.8,137.2 140.1,137.2 140.4,136.9 140.7,137.5 141.0,137.6 141.3,137.3 141.6,137.4 141.9,137.4 142.2,137.4 142.5,137.3 142.8,137.5 143.1,137.4 143.5,137.7 143.8,137.7 144.1,137.9 144.4,138.1 144.7,138.0 145.0,138.2 145.3,137.9 145.6,137.8 145.9,138.0 146.2,138.0 146.5,138.1 146.8,137.8 147.1,137.8 147.4,138.1 147.7,138.3 148.0,138.3 148.4,138.2 148.7,138.0 149.0,138.5 149.3,138.6 149.6,138.4 149.9,138.6 150.2,138.0 150.5,138.6 150.8,138.5 151.1,138.6 151.4,138.8 151.7,138.9 152.0,138.9 152.3,139.0 152.6,138.8 153.0,139.0 153.3,139.1 153.6,139.0 153.9,139.0 154.2,139.0 154.5,139.1 154.8,139.2 155.1,139.0 155.4,139.2 155.7,139.1 156.0,139.1 156.3,139.4 156.6,139.3 156.9,139.1 157.2,139.2 157.5,139.5 157.9,139.4 158.2,139.5 158.5,139.3 158.8,139.3 159.1,139.5 159.4,139.5 159.7,139.5 160.0,139.3 160.3,139.1 160.6,139.2 160.9,139.4 161.2,139.2 161.5,139.4 161.8,139.6 162.1,139.5 162.5,139.8 162.8,139.8 163.1,139.9 163.4,139.8 163.7,139.6 164.0,139.5 164.3,139.7 164.6,139.6 164.9,139.6 165.2,139.5 165.5,139.5 165.8,139.6 166.1,139.6 166.4,139.5 166.7,139.5 167.0,139.7 167.4,139.7 167.7,139.7 168.0,139.6 168.3,139.7 168.6,139.5 168.9,139.4 169.2,139.4 169.5,139.8 169.8,139.9 170.1,139.8 170.4,139.6 170.7,139.2 171.0,139.3 171.3,139.2 171.6,139.6 171.9,139.9 172.3,139.9 172.6,140.0 172.9,139.7 173.2,139.4 173.5,139.3 173.8,139.6 174.1,139.6 174.4,139.6 174.7,139.6 175.0,139.7 175.3,139.7 175.6,139.7 175.9,139.4 176.2,139.6 176.5,139.5 176.9,139.4 177.2,139.4 177.5,139.4 177.8,139.4 178.1,139.4 178.4,139.3 178.7,139.4 179.0,139.0 179.3,139.5 179.6,139.6 179.9,139.6 180.2,139.7 180.5,139.6 180.8,139.4 181.1,139.3 181.4,139.4 181.8,139.4 182.1,139.5 182.4,139.5 182.7,139.4 183.0,139.3 183.3,139.4 183.6,139.4 183.9,139.1 184.2,139.5 184.5,139.4 184.8,139.4 185.1,139.5 185.4,139.6 185.7,139.5 186.0,139.4 186.4,139.5 186.7,139.2 187.0,139.4 187.3,139.6 187.6,139.4 187.9,139.2 188.2,139.0 188.5,139.5 188.8,139.4 189.1,139.7 189.4,139.7 189.7,139.6 190.0,139.4 190.3,139.5 190.6,139.6 190.9,139.7 191.3,139.6 191.6,139.5 191.9,139.5 192.2,139.4 192.5,139.4 192.8,139.3 193.1,139.4 193.4,139.6 193.7,139.6 194.0,139.6 194.3,139.8 194.6,139.4 194.9,139.5 195.2,139.7 195.5,139.4 195.9,139.4 196.2,139.3 196.5,139.3 196.8,139.4 197.1,139.5 197.4,139.5 197.7,139.4 198.0,139.3 198.3,139.5 198.6,139.3 198.9,139.5 199.2,139.4 199.5,139.4 199.8,139.4 200.1,139.5 200.4,139.3 200.8,139.3 201.1,139.1 201.4,138.9 201.7,139.6 202.0,139.7 202.3,139.5 202.6,139.5 202.9,139.5 203.2,139.6 203.5,139.5 203.8,139.2 204.1,139.5 204.4,139.6 204.7,139.3 205.0,139.3 205.4,139.1 205.7,138.9 206.0,138.7 206.3,138.7 206.6,138.6 206.9,138.6 207.2,138.2 207.5,138.5 207.8,138.3 208.1,138.1 208.4,139.9 208.5,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="134.3,143.0 134.3,144.8 134.6,144.8 134.9,144.9 135.2,145.2 135.5,145.9 135.8,145.2 136.1,145.2 136.4,145.3 136.7,145.2 137.0,145.4 137.3,145.6 137.6,145.3 137.9,145.2 138.2,145.1 138.5,145.3 138.9,145.1 139.2,145.1 139.5,144.9 139.8,145.5 140.1,145.0 140.4,145.3 140.7,144.9 141.0,144.9 141.3,145.4 141.6,145.8 141.9,145.6 142.2,145.6 142.5,145.5 142.8,145.2 143.1,145.2 143.5,144.9 143.8,145.2 144.1,145.3 144.4,145.0 144.7,146.5 145.0,145.9 145.3,145.4 145.6,145.2 145.9,145.4 146.2,145.3 146.5,144.9 146.8,145.2 147.1,145.3 147.4,145.3 147.7,145.2 148.0,145.0 148.4,145.0 148.7,145.3 149.0,145.3 149.3,145.2 149.6,145.2 149.9,145.2 150.2,145.8 150.5,145.3 150.8,145.3 151.1,145.4 151.4,145.1 151.7,145.2 152.0,145.0 152.3,144.9 152.6,145.5 153.0,145.7 153.3,145.5 153.6,144.9 153.9,145.0 154.2,145.3 154.5,145.1 154.8,145.1 155.1,145.2 155.4,145.2 155.7,145.5 156.0,145.3 156.3,144.8 156.6,145.1 156.9,145.2 157.2,145.3 157.5,145.1 157.9,145.2 158.2,145.0 158.5,145.1 158.8,145.1 159.1,145.1 159.4,145.0 159.7,145.0 160.0,145.3 160.3,145.4 160.6,145.2 160.9,145.1 161.2,145.1 161.5,145.0 161.8,145.0 162.1,144.9 162.5,144.9 162.8,144.8 163.1,144.9 163.4,144.9 163.7,145.1 164.0,145.4 164.3,145.0 164.6,145.1 164.9,145.0 165.2,145.3 165.5,145.1 165.8,144.9 166.1,144.8 166.4,145.0 166.7,145.6 167.0,145.0 167.4,145.0 167.7,144.9 168.0,144.9 168.3,144.9 168.6,145.1 168.9,145.2 169.2,145.1 169.5,144.9 169.8,145.1 170.1,145.0 170.4,145.0 170.7,145.1 171.0,145.0 171.3,145.0 171.6,145.3 171.9,145.0 172.3,145.0 172.6,144.9 172.9,145.0 173.2,145.5 173.5,145.7 173.8,145.0 174.1,145.3 174.4,145.0 174.7,145.1 175.0,145.1 175.3,145.3 175.6,145.5 175.9,146.6 176.2,145.2 176.5,145.1 176.9,145.2 177.2,145.6 177.5,145.8 177.8,145.4 178.1,145.3 178.4,145.4 178.7,145.3 179.0,146.4 179.3,145.3 179.6,145.3 179.9,145.3 180.2,145.3 180.5,145.5 180.8,145.4 181.1,145.4 181.4,145.5 181.8,145.4 182.1,145.4 182.4,145.5 182.7,145.4 183.0,145.7 183.3,145.3 183.6,145.3 183.9,145.3 184.2,145.3 184.5,145.3 184.8,145.3 185.1,145.3 185.4,145.2 185.7,145.2 186.0,145.5 186.4,145.5 186.7,145.5 187.0,145.4 187.3,145.2 187.6,145.3 187.9,145.2 188.2,145.3 188.5,145.2 188.8,145.4 189.1,145.7 189.4,145.4 189.7,145.4 190.0,145.5 190.3,145.6 190.6,145.6 190.9,145.4 191.3,145.5 191.6,145.5 191.9,145.6 192.2,145.5 192.5,145.4 192.8,145.4 193.1,145.5 193.4,145.4 193.7,145.4 194.0,145.5 194.3,145.4 194.6,145.8 194.9,145.9 195.2,145.3 195.5,145.7 195.9,146.1 196.2,146.4 196.5,146.5 196.8,145.8 197.1,145.6 197.4,145.9 197.7,146.1 198.0,146.1 198.3,145.4 198.6,145.6 198.9,145.7 199.2,146.0 199.5,145.7 199.8,145.8 200.1,145.7 200.4,145.6 200.8,145.5 201.1,146.1 201.4,146.1 201.7,145.4 202.0,145.4 202.3,145.6 202.6,145.9 202.9,145.8 203.2,145.9 203.5,145.9 203.8,146.1 204.1,146.0 204.4,146.1 204.7,146.4 205.0,146.7 205.4,146.8 205.7,146.7 206.0,146.3 206.3,146.2 206.6,146.4 206.9,146.3 207.2,146.3 207.5,146.2 207.8,146.5 208.1,146.8 208.4,145.6 208.5,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="211.5,143.0 211.5,140.3 211.8,140.6 212.1,140.3 212.4,140.0 212.7,140.0 213.0,140.1 213.3,140.4 213.6,140.3 213.9,139.5 214.2,139.2 214.5,139.5 214.8,139.8 215.2,139.5 215.5,139.5 215.8,139.7 216.1,139.9 216.4,140.1 216.7,140.4 217.0,140.4 217.3,140.5 217.6,140.4 217.9,140.5 218.2,140.6 218.5,140.4 218.8,140.0 219.1,140.3 219.4,140.5 219.7,140.4 220.1,140.4 220.4,140.5 220.7,140.4 221.0,140.3 221.3,140.1 221.6,140.4 221.9,140.6 222.2,140.5 222.5,140.2 222.8,140.3 223.1,140.2 223.4,140.3 223.7,140.5 224.0,140.6 224.3,140.3 224.7,140.3 225.0,140.5 225.3,140.4 225.6,140.0 225.9,140.1 226.2,140.0 226.5,139.5 226.8,139.9 227.1,140.2 227.4,139.8 227.7,140.1 228.0,140.5 228.3,140.7 228.6,140.7 228.9,140.5 229.2,140.5 229.6,140.8 229.9,140.9 230.2,140.9 230.5,140.8 230.8,140.7 231.1,140.8 231.4,140.7 231.7,140.9 232.0,140.9 232.3,139.4 232.6,140.5 232.9,140.6 233.2,140.3 233.5,140.7 233.8,140.6 234.2,140.8 234.5,140.7 234.8,140.8 235.1,140.8 235.4,140.8 235.7,140.8 236.0,140.9 236.3,140.8 236.6,140.8 236.9,140.8 237.2,140.7 237.5,140.6 237.8,140.6 238.1,140.6 238.4,140.7 238.7,140.8 239.1,140.9 239.4,140.9 239.7,141.0 240.0,140.8 240.3,140.6 240.6,140.6 240.9,140.5 241.2,140.4 241.5,140.2 241.8,140.5 242.1,140.4 242.4,140.6 242.7,140.6 243.0,140.5 243.3,140.5 243.7,140.5 244.0,140.4 244.3,140.3 244.6,140.5 244.9,140.4 245.2,140.2 245.5,140.3 245.8,140.2 246.1,140.4 246.4,140.2 246.7,140.1 247.0,140.3 247.3,140.2 247.6,140.0 247.9,140.0 248.2,140.1 248.6,140.2 248.9,140.1 249.2,140.0 249.5,139.7 249.8,139.7 250.1,139.5 250.4,139.5 250.7,139.6 251.0,139.5 251.3,139.4 251.6,139.9 251.9,140.0 252.2,140.0 252.5,140.0 252.8,139.7 253.1,140.0 253.5,139.7 253.8,139.7 254.1,139.6 254.4,139.4 254.7,139.7 255.0,140.1 255.3,139.9 255.6,139.8 255.9,139.9 256.2,139.7 256.5,139.7 256.8,139.3 257.1,139.7 257.4,139.7 257.7,139.8 258.1,139.9 258.4,139.9 258.7,140.0 259.0,139.8 259.3,139.9 259.6,139.8 259.9,139.8 260.2,139.6 260.5,139.8 260.8,139.6 261.1,137.5 261.4,137.6 261.7,139.3 262.0,139.5 262.3,139.4 262.6,139.6 263.0,139.3 263.3,139.2 263.6,139.5 263.9,139.4 264.2,139.4 264.5,139.4 264.8,139.4 265.1,139.3 265.4,139.3 265.7,139.0 266.0,139.0 266.3,138.9 266.6,138.9 266.9,137.5 267.2,138.6 267.6,138.5 267.9,138.5 268.2,138.5 268.5,138.6 268.8,138.6 269.1,138.8 269.4,139.2 269.7,139.3 270.0,139.4 270.3,139.4 270.6,137.3 270.9,139.0 271.2,139.1 271.5,139.4 271.8,139.6 272.1,140.7 272.3,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="211.5,143.0 211.5,148.1 211.8,148.9 212.1,149.0 212.4,148.8 212.7,148.9 213.0,148.8 213.3,149.1 213.6,148.8 213.9,148.7 214.2,149.2 214.5,149.2 214.8,148.6 215.2,149.3 215.5,148.7 215.8,148.6 216.1,148.8 216.4,148.9 216.7,148.5 217.0,148.6 217.3,148.7 217.6,149.1 217.9,148.7 218.2,148.7 218.5,148.8 218.8,148.9 219.1,148.7 219.4,148.7 219.7,149.0 220.1,148.8 220.4,148.8 220.7,149.8 221.0,148.9 221.3,149.3 221.6,149.3 221.9,149.0 222.2,148.9 222.5,149.4 222.8,148.8 223.1,149.0 223.4,148.9 223.7,148.8 224.0,149.0 224.3,149.1 224.7,149.0 225.0,149.0 225.3,149.2 225.6,149.9 225.9,150.5 226.2,150.3 226.5,150.4 226.8,150.1 227.1,149.7 227.4,149.6 227.7,149.7 228.0,148.9 228.3,148.8 228.6,149.1 228.9,149.5 229.2,149.4 229.6,148.8 229.9,148.6 230.2,148.4 230.5,148.3 230.8,148.4 231.1,148.2 231.4,148.6 231.7,148.3 232.0,148.2 232.3,148.9 232.6,148.4 232.9,148.1 233.2,148.3 233.5,148.3 233.8,148.5 234.2,148.1 234.5,148.8 234.8,148.1 235.1,148.0 235.4,148.1 235.7,148.1 236.0,148.1 236.3,148.1 236.6,148.1 236.9,148.0 237.2,148.2 237.5,148.0 237.8,148.1 238.1,148.1 238.4,148.1 238.7,148.4 239.1,148.1 239.4,147.8 239.7,147.6 240.0,147.8 240.3,148.0 240.6,148.3 240.9,148.0 241.2,148.1 241.5,148.0 241.8,148.8 242.1,148.1 242.4,148.1 242.7,148.1 243.0,148.3 243.3,148.1 243.7,148.1 244.0,148.0 244.3,148.4 244.6,148.0 244.9,148.4 245.2,148.2 245.5,148.1 245.8,148.1 246.1,147.9 246.4,148.0 246.7,148.1 247.0,148.1 247.3,148.1 247.6,148.2 247.9,147.9 248.2,148.0 248.6,148.0 248.9,147.8 249.2,147.8 249.5,148.0 249.8,148.0 250.1,148.1 250.4,147.9 250.7,148.6 251.0,148.2 251.3,148.8 251.6,147.9 251.9,148.0 252.2,147.8 252.5,147.6 252.8,147.8 253.1,148.2 253.5,148.1 253.8,148.2 254.1,148.0 254.4,148.0 254.7,148.1 255.0,148.0 255.3,147.6 255.6,147.7 255.9,147.8 256.2,147.9 256.5,147.8 256.8,147.9 257.1,147.8 257.4,147.8 257.7,147.8 258.1,147.7 258.4,147.7 258.7,147.6 259.0,147.7 259.3,147.7 259.6,147.6 259.9,147.7 260.2,147.7 260.5,147.5 260.8,147.6 261.1,148.8 261.4,148.3 261.7,147.7 262.0,147.6 262.3,147.6 262.6,147.3 263.0,147.5 263.3,147.8 263.6,147.5 263.9,147.4 264.2,147.4 264.5,147.3 264.8,147.4 265.1,147.3 265.4,147.5 265.7,147.9 266.0,147.3 266.3,147.7 266.6,147.3 266.9,147.4 267.2,147.7 267.6,147.9 267.9,148.0 268.2,148.2 268.5,148.7 268.8,148.2 269.1,147.8 269.4,148.2 269.7,148.0 270.0,148.0 270.3,148.2 270.6,148.6 270.9,148.3 271.2,149.2 271.5,148.8 271.8,148.4 272.1,146.8 272.3,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="275.3,143.0 275.3,137.2 275.6,137.5 275.9,137.9 276.2,137.7 276.5,137.7 276.8,137.8 277.1,137.7 277.4,137.9 277.7,138.0 278.0,137.8 278.3,137.2 278.6,139.9 278.9,140.0 279.3,140.0 279.6,140.2 279.9,139.7 280.2,139.9 280.5,140.0 280.8,140.0 281.1,140.2 281.4,140.2 281.7,140.1 282.0,140.2 282.3,140.1 282.6,140.0 282.9,139.8 283.2,139.8 283.5,139.9 283.9,139.9 284.2,139.9 284.5,139.9 284.8,139.9 285.1,140.0 285.4,140.0 285.7,139.9 286.0,139.9 286.3,139.9 286.6,139.8 286.9,139.9 287.2,139.8 287.5,139.8 287.8,139.6 288.1,139.8 288.4,140.2 288.8,140.0 289.1,140.2 289.4,140.1 289.7,140.0 290.0,139.7 290.3,140.3 290.6,140.4 290.9,140.1 291.2,139.3 291.5,138.2 291.8,137.8 292.1,138.9 292.4,139.3 292.7,139.3 293.0,139.8 293.3,139.9 293.7,140.0 294.0,139.9 294.3,140.0 294.6,139.9 294.9,140.0 295.2,140.0 295.5,140.1 295.8,140.3 296.1,138.2 296.4,139.9 296.7,140.1 297.0,140.2 297.3,140.4 297.6,140.1 297.9,140.1 298.3,140.0 298.6,140.0 298.9,140.0 299.2,140.3 299.5,140.1 299.8,140.2 300.1,140.0 300.4,140.0 300.7,140.1 301.0,140.3 301.3,140.2 301.6,140.2 301.9,140.2 302.2,140.1 302.5,140.1 302.8,140.2 303.2,140.3 303.5,140.3 303.8,140.2 304.1,140.2 304.4,140.1 304.7,140.3 305.0,140.3 305.3,140.2 305.6,140.1 305.9,140.3 306.2,140.4 306.5,140.2 306.8,140.2 307.1,140.1 307.4,140.2 307.8,140.3 308.1,140.2 308.4,140.2 308.7,140.1 309.0,140.2 309.3,140.2 309.6,140.0 309.9,140.0 310.2,139.8 310.5,140.0 310.8,140.1 311.1,140.1 311.4,139.9 311.7,140.1 312.0,140.0 312.3,140.1 312.7,139.9 313.0,140.1 313.3,140.0 313.6,140.1 313.9,140.1 314.2,140.0 314.5,140.1 314.8,140.1 315.1,140.1 315.4,140.1 315.7,139.9 316.0,139.9 316.3,140.0 316.6,139.9 316.9,139.9 317.3,139.9 317.6,139.8 317.9,139.9 318.2,140.0 318.5,140.1 318.8,140.2 319.1,140.1 319.4,140.2 319.7,140.2 320.0,140.2 320.3,140.2 320.6,140.2 320.9,140.2 321.2,139.9 321.5,140.0 321.8,140.0 322.2,140.0 322.5,139.9 322.8,140.0 323.1,140.2 323.4,140.3 323.7,140.1 324.0,140.2 324.3,140.0 324.6,140.1 324.9,140.2 325.2,140.1 325.5,140.2 325.8,140.1 326.1,140.4 326.4,140.3 326.8,140.0 327.1,140.2 327.4,140.2 327.7,139.1 328.0,140.1 328.3,140.0 328.6,140.0 328.9,140.1 329.2,140.1 329.5,140.1 329.8,140.3 330.1,140.3 330.4,140.3 330.7,140.2 331.0,139.9 331.3,139.7 331.7,139.9 332.0,139.8 332.3,139.9 332.6,139.9 332.9,140.2 333.2,139.7 333.5,141.3 333.6,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="275.3,143.0 275.3,147.5 275.6,148.4 275.9,148.3 276.2,148.2 276.5,148.3 276.8,147.9 277.1,148.0 277.4,147.9 277.7,147.9 278.0,148.5 278.3,150.8 278.6,148.4 278.9,148.4 279.3,148.1 279.6,148.0 279.9,147.9 280.2,148.0 280.5,148.3 280.8,148.2 281.1,148.0 281.4,148.0 281.7,148.0 282.0,148.0 282.3,148.1 282.6,148.0 282.9,148.4 283.2,148.2 283.5,148.1 283.9,148.1 284.2,148.2 284.5,148.1 284.8,148.2 285.1,148.2 285.4,148.2 285.7,149.0 286.0,148.2 286.3,148.1 286.6,148.3 286.9,148.4 287.2,148.8 287.5,148.7 287.8,148.1 288.1,148.2 288.4,147.8 288.8,147.9 289.1,147.8 289.4,147.7 289.7,147.7 290.0,147.7 290.3,147.4 290.6,147.2 290.9,147.2 291.2,147.4 291.5,147.3 291.8,147.6 292.1,147.5 292.4,148.0 292.7,148.4 293.0,147.7 293.3,147.8 293.7,147.9 294.0,148.4 294.3,148.4 294.6,148.8 294.9,148.3 295.2,148.4 295.5,148.4 295.8,148.5 296.1,149.8 296.4,149.3 296.7,148.9 297.0,148.7 297.3,148.3 297.6,148.4 297.9,148.4 298.3,148.5 298.6,148.3 298.9,148.5 299.2,148.4 299.5,148.5 299.8,148.4 300.1,148.3 300.4,148.5 300.7,148.5 301.0,148.3 301.3,148.2 301.6,148.4 301.9,148.5 302.2,148.4 302.5,148.6 302.8,148.3 303.2,148.3 303.5,148.3 303.8,148.3 304.1,148.2 304.4,148.3 304.7,148.1 305.0,148.2 305.3,148.3 305.6,148.3 305.9,148.2 306.2,148.1 306.5,148.2 306.8,148.3 307.1,148.2 307.4,148.2 307.8,148.2 308.1,148.4 308.4,148.2 308.7,148.3 309.0,148.3 309.3,148.3 309.6,148.5 309.9,148.3 310.2,149.2 310.5,148.4 310.8,148.4 311.1,148.3 311.4,148.4 311.7,148.3 312.0,148.4 312.3,148.5 312.7,148.3 313.0,148.3 313.3,148.5 313.6,148.5 313.9,148.5 314.2,148.7 314.5,148.6 314.8,148.7 315.1,148.7 315.4,148.7 315.7,148.8 316.0,148.9 316.3,148.9 316.6,148.9 316.9,148.9 317.3,149.2 317.6,148.8 317.9,148.8 318.2,148.4 318.5,148.4 318.8,148.5 319.1,148.6 319.4,148.4 319.7,148.4 320.0,148.4 320.3,148.6 320.6,148.6 320.9,148.5 321.2,148.8 321.5,148.8 321.8,148.6 322.2,148.6 322.5,148.7 322.8,148.7 323.1,148.6 323.4,148.6 323.7,148.7 324.0,148.6 324.3,149.0 324.6,148.8 324.9,148.9 325.2,148.9 325.5,148.9 325.8,149.1 326.1,148.8 326.4,148.9 326.8,149.0 327.1,148.9 327.4,149.0 327.7,149.2 328.0,149.1 328.3,149.0 328.6,149.0 328.9,149.0 329.2,149.0 329.5,149.1 329.8,149.0 330.1,149.0 330.4,149.1 330.7,149.2 331.0,149.3 331.3,149.2 331.7,149.2 332.0,149.1 332.3,149.1 332.6,149.2 332.9,148.5 333.2,148.9 333.5,145.7 333.6,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="336.6,143.0 336.6,137.9 336.8,137.5 337.1,137.9 337.4,138.1 337.7,138.7 338.0,138.6 338.3,138.4 338.6,138.6 338.9,138.4 339.3,138.7 339.6,138.5 339.9,138.6 340.2,138.9 340.5,138.9 340.8,138.6 341.1,138.7 341.4,138.6 341.7,138.6 342.0,138.8 342.3,138.9 342.6,139.0 342.9,138.9 343.2,139.0 343.5,139.1 343.9,139.1 344.2,139.1 344.5,139.0 344.8,139.0 345.1,139.0 345.4,138.9 345.7,139.0 346.0,138.6 346.3,138.7 346.6,139.1 346.9,138.9 347.2,138.9 347.5,138.8 347.8,138.9 348.1,139.0 348.4,138.8 348.8,139.0 349.1,139.0 349.4,139.2 349.7,138.7 350.0,139.1 350.3,139.1 350.6,139.3 350.9,139.6 351.2,139.7 351.5,139.7 351.8,139.2 352.1,139.3 352.4,139.3 352.7,139.1 353.0,139.3 353.4,139.1 353.7,139.2 354.0,138.9 354.3,138.0 354.6,139.3 354.9,139.2 355.2,139.3 355.5,139.3 355.8,139.4 356.1,139.3 356.4,139.3 356.7,139.4 357.0,139.3 357.3,139.3 357.6,139.1 357.9,139.4 358.3,139.2 358.6,139.1 358.9,139.1 359.2,139.2 359.5,139.3 359.8,139.1 360.1,139.0 360.4,139.1 360.7,139.0 361.0,139.0 361.3,139.1 361.6,139.0 361.9,138.9 362.2,139.1 362.5,139.2 362.9,139.2 363.2,139.0 363.5,139.1 363.8,139.1 364.1,139.0 364.4,139.0 364.7,139.1 365.0,139.0 365.3,139.3 365.6,139.0 365.9,139.0 366.2,139.1 366.5,139.2 366.8,139.3 367.1,139.2 367.4,139.3 367.8,139.1 368.1,139.0 368.4,138.9 368.7,139.0 369.0,139.0 369.3,138.8 369.6,138.9 369.9,139.1 370.2,139.2 370.5,139.1 370.8,139.1 371.1,139.0 371.4,139.3 371.7,138.9 372.0,139.1 372.3,139.3 372.7,139.3 373.0,139.3 373.3,139.2 373.6,139.2 373.9,138.9 374.2,139.0 374.5,139.3 374.8,139.3 375.1,139.0 375.4,139.1 375.7,139.3 376.0,139.2 376.3,139.1 376.6,139.0 376.9,138.6 377.3,138.7 377.6,138.5 377.9,138.5 378.2,138.9 378.5,138.9 378.8,138.8 379.1,138.7 379.4,138.7 379.7,138.8 380.0,138.9 380.3,139.3 380.6,139.3 380.9,139.4 381.2,139.2 381.5,139.3 381.8,138.9 382.2,138.8 382.5,138.7 382.8,138.8 383.1,139.2 383.4,139.6 383.7,139.2 384.0,139.1 384.3,139.4 384.6,139.3 384.9,139.2 385.2,139.3 385.5,139.2 385.8,139.5 386.1,139.4 386.4,139.2 386.8,139.5 387.1,139.5 387.4,139.4 387.7,139.3 388.0,138.8 388.3,139.0 388.6,138.7 388.9,138.6 389.2,138.5 389.5,138.5 389.8,138.6 390.1,138.6 390.4,138.3 390.7,138.3 391.0,138.1 391.3,138.5 391.7,138.2 392.0,139.7 392.2,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="336.6,143.0 336.6,146.3 336.8,147.0 337.1,146.1 337.4,146.0 337.7,145.6 338.0,145.5 338.3,145.7 338.6,145.5 338.9,145.8 339.3,145.4 339.6,145.6 339.9,145.4 340.2,145.4 340.5,146.2 340.8,145.5 341.1,145.7 341.4,146.3 341.7,146.5 342.0,146.1 342.3,145.9 342.6,146.0 342.9,146.3 343.2,146.1 343.5,146.2 343.9,146.2 344.2,146.0 344.5,146.1 344.8,146.1 345.1,146.1 345.4,146.0 345.7,145.9 346.0,146.4 346.3,146.1 346.6,145.7 346.9,145.3 347.2,145.2 347.5,145.7 347.8,145.4 348.1,144.9 348.4,145.1 348.8,145.2 349.1,145.2 349.4,144.9 349.7,145.3 350.0,145.1 350.3,145.2 350.6,146.6 350.9,145.3 351.2,145.3 351.5,145.3 351.8,145.5 352.1,145.3 352.4,145.2 352.7,145.4 353.0,145.2 353.4,145.4 353.7,147.4 354.0,145.6 354.3,146.1 354.6,145.2 354.9,145.3 355.2,145.2 355.5,145.4 355.8,145.4 356.1,145.4 356.4,145.4 356.7,145.3 357.0,145.3 357.3,145.5 357.6,146.2 357.9,146.0 358.3,146.0 358.6,145.3 358.9,145.3 359.2,145.6 359.5,145.3 359.8,145.7 360.1,145.5 360.4,145.3 360.7,145.5 361.0,145.7 361.3,145.4 361.6,145.6 361.9,145.5 362.2,145.5 362.5,145.5 362.9,145.5 363.2,145.7 363.5,145.4 363.8,145.4 364.1,145.5 364.4,145.6 364.7,145.5 365.0,145.5 365.3,145.4 365.6,145.6 365.9,145.4 366.2,145.7 366.5,145.6 366.8,145.6 367.1,145.6 367.4,145.6 367.8,145.5 368.1,145.7 368.4,145.8 368.7,145.8 369.0,145.7 369.3,145.6 369.6,145.4 369.9,145.4 370.2,146.1 370.5,145.5 370.8,145.7 371.1,145.9 371.4,145.5 371.7,145.6 372.0,145.6 372.3,145.5 372.7,145.6 373.0,145.6 373.3,145.6 373.6,145.6 373.9,145.6 374.2,145.5 374.5,145.4 374.8,145.5 375.1,146.2 375.4,146.0 375.7,145.5 376.0,145.7 376.3,145.8 376.6,146.1 376.9,146.1 377.3,146.0 377.6,146.4 377.9,146.4 378.2,145.9 378.5,146.1 378.8,146.4 379.1,146.3 379.4,146.5 379.7,146.4 380.0,146.1 380.3,145.8 380.6,145.9 380.9,145.9 381.2,145.9 381.5,145.7 381.8,146.0 382.2,146.0 382.5,146.1 382.8,146.1 383.1,146.1 383.4,145.8 383.7,146.4 384.0,146.5 384.3,146.3 384.6,146.3 384.9,146.3 385.2,146.0 385.5,146.5 385.8,146.2 386.1,146.1 386.4,146.3 386.8,146.1 387.1,146.2 387.4,146.4 387.7,146.3 388.0,146.5 388.3,146.1 388.6,146.1 388.9,146.5 389.2,146.6 389.5,146.7 389.8,146.5 390.1,146.6 390.4,147.1 390.7,147.0 391.0,147.3 391.3,147.0 391.7,147.5 392.0,146.4 392.2,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="395.2,143.0 395.2,137.8 395.4,138.2 395.7,138.6 396.0,138.3 396.4,138.5 396.7,138.6 397.0,138.7 397.3,138.6 397.6,138.7 397.9,138.9 398.2,138.6 398.5,138.7 398.8,138.9 399.1,138.6 399.4,138.7 399.7,138.7 400.0,138.7 400.3,138.8 400.6,138.6 400.9,138.9 401.3,138.9 401.6,138.9 401.9,138.7 402.2,138.7 402.5,138.5 402.8,138.8 403.1,137.9 403.4,138.4 403.7,138.4 404.0,138.2 404.3,136.8 404.6,137.2 404.9,136.0 405.2,137.3 405.5,138.0 405.9,138.3 406.2,138.2 406.5,138.2 406.8,138.4 407.1,138.5 407.4,138.3 407.7,137.9 408.0,138.3 408.3,138.0 408.6,138.3 408.9,138.6 409.2,138.9 409.5,138.9 409.8,139.1 410.1,139.1 410.4,139.1 410.8,139.3 411.1,138.8 411.4,138.9 411.7,139.1 412.0,139.2 412.3,139.3 412.6,139.3 412.9,139.5 413.2,139.6 413.5,139.5 413.8,139.5 414.1,139.7 414.4,139.6 414.7,139.7 415.0,139.7 415.4,139.7 415.7,139.7 416.0,139.7 416.3,139.7 416.6,139.6 416.9,139.6 417.2,139.8 417.5,139.5 417.8,139.8 418.1,139.7 418.4,139.8 418.7,139.8 419.0,139.6 419.3,139.8 419.6,139.8 419.9,139.9 420.3,139.9 420.6,139.7 420.9,139.8 421.2,139.6 421.5,139.9 421.8,139.7 422.1,139.9 422.4,139.8 422.7,139.6 423.0,139.6 423.3,139.6 423.6,139.5 423.9,139.5 424.2,139.6 424.5,139.4 424.9,139.6 425.2,139.6 425.5,139.4 425.8,139.5 426.1,139.7 426.4,139.7 426.7,138.8 427.0,139.8 427.3,139.6 427.6,139.6 427.9,139.6 428.2,139.6 428.5,139.7 428.8,139.6 429.1,139.3 429.4,139.5 429.8,139.7 430.1,139.7 430.4,139.8 430.7,139.6 431.0,139.6 431.3,139.6 431.6,139.8 431.9,139.9 432.2,139.8 432.5,139.7 432.8,139.7 433.1,139.6 433.4,139.6 433.7,139.6 434.0,139.6 434.4,139.8 434.7,139.8 435.0,139.7 435.3,139.8 435.6,139.7 435.9,139.7 436.2,139.7 436.5,139.5 436.8,139.9 437.1,139.8 437.4,139.6 437.7,139.7 438.0,139.9 438.3,139.9 438.6,139.8 438.9,139.6 439.3,139.7 439.6,139.9 439.9,139.7 440.2,139.8 440.5,139.5 440.8,139.3 441.1,139.3 441.4,139.6 441.7,139.7 442.0,139.6 442.3,139.9 442.6,139.6 442.9,139.8 443.2,139.5 443.5,139.5 443.8,139.5 444.2,139.3 444.5,139.5 444.8,139.6 445.1,139.4 445.4,139.6 445.7,139.4 446.0,138.8 446.3,139.0 446.6,139.1 446.9,139.3 447.2,138.9 447.5,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="395.2,143.0 395.2,148.2 395.4,147.2 395.7,147.0 396.0,147.3 396.4,147.1 396.7,147.1 397.0,147.4 397.3,147.4 397.6,147.5 397.9,147.1 398.2,147.5 398.5,147.2 398.8,147.0 399.1,147.1 399.4,147.3 399.7,147.3 400.0,147.0 400.3,147.4 400.6,147.6 400.9,147.2 401.3,147.0 401.6,147.1 401.9,147.3 402.2,147.4 402.5,147.5 402.8,147.2 403.1,148.1 403.4,147.9 403.7,147.8 404.0,147.9 404.3,149.7 404.6,149.1 404.9,149.5 405.2,147.9 405.5,147.2 405.9,146.9 406.2,146.9 406.5,146.8 406.8,146.5 407.1,146.6 407.4,146.6 407.7,147.2 408.0,147.3 408.3,147.3 408.6,147.0 408.9,146.7 409.2,146.7 409.5,146.7 409.8,146.8 410.1,147.0 410.4,146.9 410.8,146.7 411.1,146.9 411.4,146.7 411.7,147.4 412.0,146.8 412.3,146.6 412.6,146.7 412.9,147.0 413.2,146.8 413.5,147.2 413.8,147.5 414.1,147.4 414.4,147.8 414.7,148.5 415.0,148.1 415.4,148.7 415.7,148.0 416.0,147.8 416.3,147.9 416.6,148.0 416.9,148.0 417.2,148.1 417.5,148.9 417.8,148.9 418.1,148.3 418.4,148.9 418.7,148.4 419.0,150.1 419.3,148.4 419.6,148.8 419.9,148.4 420.3,148.4 420.6,148.4 420.9,148.4 421.2,148.5 421.5,148.5 421.8,148.7 422.1,148.5 422.4,148.8 422.7,148.8 423.0,148.6 423.3,148.7 423.6,149.1 423.9,148.8 424.2,148.8 424.5,149.0 424.9,148.7 425.2,148.8 425.5,148.9 425.8,148.9 426.1,149.0 426.4,148.9 426.7,149.8 427.0,148.9 427.3,149.1 427.6,149.5 427.9,149.2 428.2,149.1 428.5,149.1 428.8,149.4 429.1,149.5 429.4,149.1 429.8,149.1 430.1,149.2 430.4,149.3 430.7,149.4 431.0,149.4 431.3,149.3 431.6,149.2 431.9,149.3 432.2,149.3 432.5,149.3 432.8,149.2 433.1,149.2 433.4,149.2 433.7,149.4 434.0,149.3 434.4,149.1 434.7,149.1 435.0,149.2 435.3,149.2 435.6,149.3 435.9,149.2 436.2,149.9 436.5,149.4 436.8,149.4 437.1,149.6 437.4,149.8 437.7,149.6 438.0,149.5 438.3,149.4 438.6,149.4 438.9,149.4 439.3,149.4 439.6,149.3 439.9,149.4 440.2,149.3 440.5,149.5 440.8,149.7 441.1,149.7 441.4,149.5 441.7,149.5 442.0,149.5 442.3,149.7 442.6,149.9 442.9,149.3 443.2,149.4 443.5,149.5 443.8,149.4 444.2,149.5 444.5,149.5 444.8,150.4 445.1,149.7 445.4,149.4 445.7,150.3 446.0,149.5 446.3,149.4 446.6,149.4 446.9,149.3 447.2,149.5 447.5,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="450.5,143.0 450.5,136.9 450.6,130.4 450.9,126.5 451.2,126.6 451.5,126.9 451.8,126.8 452.1,126.8 452.4,126.3 452.7,126.3 453.0,126.5 453.3,126.7 453.6,126.7 453.9,126.5 454.2,126.3 454.5,126.2 454.8,127.0 455.2,126.9 455.5,126.3 455.8,126.6 456.1,126.7 456.4,126.4 456.7,126.3 457.0,126.6 457.3,126.4 457.6,126.2 457.9,126.4 458.2,126.4 458.5,126.3 458.8,126.0 459.1,126.5 459.4,126.4 459.8,126.3 460.1,126.4 460.4,126.4 460.7,126.5 461.0,126.6 461.3,126.5 461.6,126.5 461.9,126.4 462.2,126.5 462.5,126.5 462.8,126.6 463.1,126.7 463.4,126.6 463.7,126.3 464.0,126.5 464.3,126.5 464.7,126.8 465.0,126.7 465.3,127.3 465.6,127.2 465.9,126.8 466.2,127.0 466.5,126.8 466.8,126.9 467.1,125.2 467.4,125.2 467.7,127.1 468.0,127.3 468.3,128.0 468.6,128.0 468.9,128.0 469.3,127.8 469.6,127.2 469.9,127.0 470.2,126.9 470.5,126.6 470.8,126.6 471.1,126.5 471.4,126.6 471.7,126.3 472.0,126.1 472.3,126.4 472.6,126.4 472.9,126.1 473.2,126.2 473.5,126.1 473.8,125.6 474.2,125.1 474.5,125.0 474.8,125.5 475.1,125.3 475.4,125.4 475.7,125.4 476.0,125.4 476.3,125.4 476.6,125.4 476.9,125.3 477.2,125.2 477.5,125.2 477.8,125.3 478.1,125.0 478.4,124.9 478.8,124.8 479.1,125.0 479.4,125.0 479.7,125.1 480.0,125.2 480.3,124.8 480.6,125.4 480.9,125.4 481.2,125.4 481.5,125.5 481.8,125.3 482.1,125.3 482.4,125.5 482.7,125.3 483.0,125.1 483.3,124.9 483.7,124.8 484.0,124.9 484.3,125.0 484.6,125.0 484.9,125.0 485.2,125.1 485.5,125.1 485.8,125.0 486.1,124.6 486.4,124.8 486.7,124.9 487.0,125.1 487.3,125.0 487.6,124.8 487.9,124.9 488.3,124.9 488.6,125.0 488.9,125.1 489.2,124.6 489.5,124.6 489.8,124.7 490.1,124.8 490.4,124.8 490.7,124.9 491.0,125.0 491.3,125.0 491.6,124.9 491.9,124.9 492.2,124.9 492.5,124.8 492.8,125.0 493.2,124.8 493.5,124.8 493.8,124.8 494.1,124.6 494.4,124.8 494.7,125.0 495.0,125.3 495.3,125.3 495.6,125.2 495.9,124.7 496.2,124.5 496.5,124.3 496.8,124.3 497.1,124.5 497.4,124.7 497.8,124.5 498.1,124.4 498.4,124.3 498.7,124.5 499.0,124.4 499.3,136.4 499.4,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="450.5,143.0 450.5,143.6 450.6,145.1 450.9,145.5 451.2,145.6 451.5,145.6 451.8,145.8 452.1,145.8 452.4,145.6 452.7,145.0 453.0,144.7 453.3,144.5 453.6,144.6 453.9,144.9 454.2,144.8 454.5,144.6 454.8,144.5 455.2,144.6 455.5,144.7 455.8,144.4 456.1,144.4 456.4,144.4 456.7,144.4 457.0,144.2 457.3,144.6 457.6,144.6 457.9,144.3 458.2,144.1 458.5,144.4 458.8,144.2 459.1,144.0 459.4,144.2 459.8,144.2 460.1,144.1 460.4,144.1 460.7,144.1 461.0,144.1 461.3,144.0 461.6,144.1 461.9,144.2 462.2,144.2 462.5,144.4 462.8,144.4 463.1,144.1 463.4,144.2 463.7,144.6 464.0,144.6 464.3,144.5 464.7,144.1 465.0,144.3 465.3,144.3 465.6,144.3 465.9,145.2 466.2,144.6 466.5,144.5 466.8,144.4 467.1,144.4 467.4,145.3 467.7,145.3 468.0,145.2 468.3,144.8 468.6,144.8 468.9,144.8 469.3,144.9 469.6,145.4 469.9,145.0 470.2,144.9 470.5,145.4 470.8,145.1 471.1,145.4 471.4,145.1 471.7,145.2 472.0,146.4 472.3,145.1 472.6,145.1 472.9,145.3 473.2,145.3 473.5,145.3 473.8,146.3 474.2,144.6 474.5,144.2 474.8,144.0 475.1,144.1 475.4,144.1 475.7,144.1 476.0,144.1 476.3,144.1 476.6,144.1 476.9,144.1 477.2,144.3 477.5,144.1 477.8,144.1 478.1,144.1 478.4,144.3 478.8,144.4 479.1,144.3 479.4,144.2 479.7,144.1 480.0,144.2 480.3,145.2 480.6,145.2 480.9,145.2 481.2,145.3 481.5,145.3 481.8,145.1 482.1,144.6 482.4,144.5 482.7,144.6 483.0,144.4 483.3,144.2 483.7,144.4 484.0,145.8 484.3,144.3 484.6,144.2 484.9,144.2 485.2,144.2 485.5,144.2 485.8,144.2 486.1,144.4 486.4,144.2 486.7,144.3 487.0,144.3 487.3,144.3 487.6,144.5 487.9,144.3 488.3,144.4 488.6,144.4 488.9,144.3 489.2,145.1 489.5,144.4 489.8,144.6 490.1,144.6 490.4,144.5 490.7,144.3 491.0,144.0 491.3,144.1 491.6,144.7 491.9,144.3 492.2,144.2 492.5,144.5 492.8,144.4 493.2,144.6 493.5,144.9 493.8,145.2 494.1,144.7 494.4,145.0 494.7,144.6 495.0,144.2 495.3,144.2 495.6,144.4 495.9,144.5 496.2,144.5 496.5,144.5 496.8,144.4 497.1,144.7 497.4,144.2 497.8,144.9 498.1,144.4 498.4,144.5 498.7,144.6 499.0,144.5 499.3,143.6 499.4,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="502.4,143.0 502.4,141.0 502.4,138.2 502.7,138.6 503.0,139.0 503.3,139.2 503.6,139.3 504.0,139.0 504.3,138.7 504.6,138.3 504.9,139.0 505.2,139.3 505.5,139.2 505.8,138.7 506.1,138.8 506.4,139.2 506.7,139.4 507.0,139.6 507.3,139.3 507.6,139.3 507.9,139.4 508.2,139.5 508.5,139.6 508.9,139.1 509.2,139.0 509.5,139.1 509.8,139.5 510.1,139.6 510.4,139.5 510.7,139.5 511.0,139.5 511.3,139.7 511.6,139.5 511.9,139.7 512.2,139.6 512.5,139.6 512.8,139.8 513.1,139.8 513.5,139.8 513.8,139.2 514.1,139.3 514.4,138.7 514.7,139.5 515.0,139.3 515.3,139.4 515.6,139.8 515.9,140.0 516.2,139.7 516.5,139.5 516.8,139.2 517.1,139.3 517.4,139.5 517.7,139.6 518.0,139.5 518.4,139.3 518.7,139.3 519.0,139.2 519.3,139.0 519.6,139.1 519.9,139.2 520.2,139.0 520.5,139.2 520.8,139.2 521.1,139.1 521.4,139.2 521.7,139.2 522.0,139.2 522.3,139.0 522.6,139.0 523.0,139.1 523.3,139.3 523.6,138.7 523.9,139.1 524.2,139.1 524.5,138.9 524.8,138.9 525.1,138.9 525.4,138.9 525.7,138.9 526.0,138.9 526.3,138.8 526.6,138.7 526.9,138.8 527.2,138.7 527.5,138.9 527.9,138.9 528.2,138.9 528.5,138.8 528.8,138.7 529.1,138.7 529.4,138.8 529.7,138.4 530.0,138.6 530.3,138.6 530.6,138.6 530.9,138.4 531.2,138.2 531.5,138.3 531.8,138.4 532.1,138.1 532.4,138.2 532.8,138.2 533.1,138.3 533.4,138.2 533.7,138.1 534.0,138.2 534.3,138.1 534.6,138.1 534.9,138.1 535.2,138.1 535.5,138.1 535.8,137.9 536.1,138.0 536.4,138.1 536.7,138.1 537.0,138.1 537.4,138.0 537.7,137.9 538.0,137.7 538.3,137.5 538.6,137.7 538.9,137.7 539.2,137.8 539.5,137.7 539.8,137.4 540.1,137.4 540.4,137.4 540.7,137.5 541.0,137.4 541.3,136.9 541.6,137.3 541.9,137.3 542.3,137.6 542.6,137.5 542.9,137.3 543.2,137.4 543.5,137.4 543.8,137.4 544.1,137.9 544.4,137.7 544.7,137.5 545.0,137.1 545.3,136.8 545.6,137.2 545.9,137.0 546.2,137.3 546.5,137.2 546.8,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="502.4,143.0 502.4,145.5 502.4,149.8 502.7,148.8 503.0,148.7 503.3,149.5 503.6,148.8 504.0,149.0 504.3,149.3 504.6,149.3 504.9,148.8 505.2,148.3 505.5,148.5 505.8,148.7 506.1,149.3 506.4,148.7 506.7,148.9 507.0,148.6 507.3,148.6 507.6,148.3 507.9,148.2 508.2,148.1 508.5,148.0 508.9,148.4 509.2,148.5 509.5,148.5 509.8,149.0 510.1,148.3 510.4,148.2 510.7,148.3 511.0,148.2 511.3,148.3 511.6,148.3 511.9,147.8 512.2,148.1 512.5,148.1 512.8,147.7 513.1,147.7 513.5,147.6 513.8,148.2 514.1,148.5 514.4,149.0 514.7,148.1 515.0,147.7 515.3,147.9 515.6,147.6 515.9,147.4 516.2,147.3 516.5,147.4 516.8,147.5 517.1,147.4 517.4,147.3 517.7,147.1 518.0,147.1 518.4,147.3 518.7,147.4 519.0,147.6 519.3,147.7 519.6,147.5 519.9,147.2 520.2,147.3 520.5,147.2 520.8,147.2 521.1,147.3 521.4,147.3 521.7,147.3 522.0,147.3 522.3,147.5 522.6,147.7 523.0,147.5 523.3,147.2 523.6,147.8 523.9,147.5 524.2,147.5 524.5,147.5 524.8,147.7 525.1,147.5 525.4,147.6 525.7,147.6 526.0,147.6 526.3,147.7 526.6,147.9 526.9,147.7 527.2,147.5 527.5,147.5 527.9,147.5 528.2,147.5 528.5,147.6 528.8,147.5 529.1,147.6 529.4,147.5 529.7,147.6 530.0,147.3 530.3,147.2 530.6,147.3 530.9,147.3 531.2,147.7 531.5,147.5 531.8,147.3 532.1,147.7 532.4,147.3 532.8,147.3 533.1,147.3 533.4,147.4 533.7,147.6 534.0,147.4 534.3,147.4 534.6,147.3 534.9,147.3 535.2,147.4 535.5,147.4 535.8,147.5 536.1,147.5 536.4,148.6 536.7,147.6 537.0,147.7 537.4,147.9 537.7,147.6 538.0,147.6 538.3,147.4 538.6,147.6 538.9,147.8 539.2,147.6 539.5,147.4 539.8,147.5 540.1,147.4 540.4,147.4 540.7,147.4 541.0,147.4 541.3,147.8 541.6,147.4 541.9,147.3 542.3,147.1 542.6,147.1 542.9,147.3 543.2,147.3 543.5,147.2 543.8,147.3 544.1,147.5 544.4,147.4 544.7,147.3 545.0,147.7 545.3,148.0 545.6,147.7 545.9,147.8 546.2,147.9 546.5,147.6 546.8,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="549.8,143.0 549.8,138.1 550.1,138.7 550.4,139.1 550.8,139.2 551.1,138.9 551.4,138.9 551.7,139.2 552.0,139.4 552.3,139.2 552.6,139.3 552.9,139.1 553.2,139.3 553.5,139.1 553.8,139.2 554.1,139.1 554.4,139.2 554.7,139.3 555.0,139.3 555.3,139.5 555.7,139.3 556.0,139.5 556.3,139.5 556.6,139.4 556.9,139.6 557.2,139.6 557.5,139.5 557.8,139.4 558.1,139.0 558.4,139.2 558.7,139.2 559.0,139.2 559.3,139.2 559.6,138.7 559.9,138.8 560.3,138.8 560.6,138.7 560.9,138.8 561.2,138.8 561.5,138.9 561.8,139.3 562.1,139.4 562.4,139.3 562.7,139.4 563.0,139.5 563.3,139.5 563.6,139.6 563.9,139.6 564.2,139.7 565.2,139.7 565.5,139.4 565.8,139.7 567.9,139.7 568.2,139.6 568.5,139.5 568.8,139.6 569.1,139.6 569.4,139.5 569.8,139.7 570.1,139.7 570.4,139.7 570.7,139.1 571.0,138.9 571.3,139.1 571.6,139.2 571.9,138.8 572.2,138.7 572.5,138.8 572.8,138.9 573.1,138.8 573.4,138.8 573.7,138.7 574.0,138.9 574.3,138.9 574.7,138.7 575.0,138.7 575.3,138.8 575.6,138.4 575.9,138.6 576.2,138.8 576.5,138.6 576.8,138.5 577.1,138.3 577.4,138.5 577.7,138.5 578.0,138.4 578.3,138.3 578.6,138.4 578.9,137.9 579.3,138.5 579.6,138.4 579.9,138.3 580.2,138.4 580.5,138.4 580.8,138.5 581.1,138.5 581.4,138.7 581.7,138.4 582.0,138.5 582.3,138.5 582.6,138.4 582.9,138.4 583.2,138.4 583.5,138.4 583.8,138.4 584.2,138.3 584.5,138.1 584.8,137.9 585.1,138.4 585.4,138.4 585.7,138.3 586.0,138.4 586.3,138.1 586.6,138.1 586.9,137.8 587.2,137.9 587.5,137.7 587.8,137.8 588.1,137.6 588.4,137.6 588.8,137.4 589.1,137.3 589.4,137.1 589.7,137.1 590.0,137.2 590.3,137.1 590.6,137.0 590.9,137.0 591.2,137.1 591.5,136.2 591.8,138.0 592.1,138.6 592.2,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="549.8,143.0 549.8,152.4 550.1,151.6 550.4,151.6 550.8,151.6 551.1,152.0 551.4,152.3 551.7,152.7 552.0,151.8 552.3,151.9 552.6,152.0 552.9,152.1 553.2,152.2 553.5,152.4 553.8,152.1 554.1,152.2 554.4,152.6 554.7,152.4 555.0,152.8 555.3,153.2 555.7,153.9 556.0,154.0 556.3,156.2 556.6,156.5 556.9,154.1 557.2,153.2 557.5,152.8 557.8,152.6 558.1,152.9 558.4,152.4 558.7,151.8 559.0,151.3 559.3,151.2 559.6,151.3 559.9,150.3 560.3,150.0 560.6,149.6 560.9,149.8 561.2,149.6 561.5,148.5 561.8,147.9 562.1,147.6 562.4,147.6 562.7,147.6 563.0,147.3 563.3,147.4 563.6,147.3 563.9,147.3 564.2,147.3 565.2,147.3 565.5,147.4 565.8,147.0 567.9,147.0 568.2,147.1 568.5,147.6 568.8,147.1 569.1,147.3 569.4,147.5 569.8,147.0 570.1,147.1 570.4,147.1 570.7,147.7 571.0,147.7 571.3,147.5 571.6,147.6 571.9,147.7 572.2,147.7 572.5,147.5 572.8,147.6 573.1,147.4 573.4,147.4 573.7,147.5 574.0,147.3 574.3,147.3 574.7,147.3 575.0,147.3 575.3,147.2 575.6,147.3 575.9,147.2 576.2,147.2 576.5,147.4 576.8,147.6 577.1,147.4 577.4,147.5 577.7,147.3 578.0,147.2 578.3,147.3 578.6,147.4 578.9,147.4 579.3,147.3 579.6,147.3 579.9,147.5 580.2,147.5 580.5,147.7 580.8,147.8 581.1,147.9 581.4,148.1 581.7,148.0 582.0,147.8 582.3,147.5 582.6,147.8 582.9,147.4 583.2,147.5 583.5,147.6 583.8,147.7 584.2,147.8 584.5,147.7 584.8,147.8 585.1,147.6 585.4,147.5 585.7,147.6 586.0,147.6 586.3,147.5 586.6,147.4 586.9,147.5 587.2,147.5 587.5,147.7 587.8,147.8 588.1,148.1 588.4,147.8 588.8,148.1 589.1,148.2 589.4,148.3 589.7,148.5 590.0,148.3 590.3,148.1 590.6,148.1 590.9,147.8 591.2,148.2 591.5,148.0 591.8,147.1 592.1,147.1 592.2,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="595.2,143.0 595.2,140.2 595.5,140.2 595.8,140.5 596.1,140.3 596.4,140.6 596.7,140.3 597.0,140.4 597.3,140.5 597.6,140.1 597.9,140.7 598.2,140.7 598.6,140.3 598.9,140.4 599.2,140.4 599.5,140.5 599.8,140.5 600.1,140.6 600.4,140.6 600.7,140.7 601.0,140.9 601.3,140.9 601.6,140.7 601.9,140.4 602.2,140.8 602.5,140.9 602.8,140.8 603.1,140.8 603.5,140.8 603.8,140.8 604.1,140.9 604.4,140.8 604.7,140.9 605.0,141.0 605.3,141.1 605.6,141.2 605.9,141.0 606.2,141.2 606.5,141.3 606.8,141.1 607.1,141.7 607.4,141.7 607.7,141.8 608.1,141.4 608.4,140.9 608.7,141.2 609.0,141.2 609.3,141.0 609.6,141.3 609.9,141.2 610.2,141.2 610.5,140.9 610.8,141.4 611.1,141.4 611.4,141.4 611.7,141.5 612.0,141.5 612.3,141.3 612.6,141.4 613.0,141.3 613.3,141.5 613.6,141.5 613.9,141.6 614.2,141.5 614.5,141.4 614.8,141.6 615.1,141.5 615.4,141.6 615.7,141.4 616.0,141.2 616.3,140.9 616.6,141.0 616.9,141.0 617.2,141.2 617.6,141.5 617.9,141.4 618.2,141.4 618.5,141.6 618.8,141.2 619.1,141.1 619.4,140.9 619.7,140.9 620.0,141.7 620.3,141.7 620.6,141.8 620.9,141.5 621.2,141.6 621.5,141.5 621.8,141.5 622.1,141.4 622.5,141.6 622.8,141.9 623.1,141.7 623.4,141.7 623.7,141.6 624.0,141.9 624.3,141.7 624.6,141.6 624.9,141.5 625.2,141.7 625.5,141.5 625.8,141.5 626.1,141.3 626.4,141.1 626.7,141.3 627.1,141.4 627.4,141.7 627.7,141.8 628.0,141.8 628.3,141.8 628.6,141.8 628.9,141.7 629.2,141.6 629.5,141.7 629.8,141.7 630.1,141.6 630.4,141.8 630.7,141.6 631.0,141.6 631.3,141.5 631.6,141.2 632.0,141.6 632.3,141.6 632.6,141.4 632.9,141.4 633.2,141.3 633.5,141.4 633.8,141.4 634.1,141.4 634.4,141.3 634.7,141.1 635.0,141.3 635.3,141.2 635.6,140.9 635.9,140.5 636.2,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="595.2,143.0 595.2,153.2 595.5,156.0 595.8,155.8 596.1,155.7 596.4,155.7 596.7,156.2 597.0,156.1 597.3,155.5 597.6,156.3 597.9,156.0 598.2,155.9 598.6,156.4 598.9,156.5 599.2,156.4 599.5,156.1 599.8,156.2 600.1,156.0 600.4,155.9 600.7,156.5 601.0,156.2 601.3,156.0 601.6,156.1 601.9,156.0 602.2,155.9 602.5,155.9 602.8,155.9 603.1,155.9 603.5,156.1 603.8,156.0 604.1,155.9 604.4,156.0 604.7,155.9 605.0,155.8 605.3,155.7 605.6,156.0 605.9,156.2 606.2,155.8 606.5,155.8 606.8,156.1 607.1,155.0 607.4,155.2 607.7,155.2 608.1,156.0 608.4,156.2 608.7,155.8 609.0,156.1 609.3,156.0 609.6,155.9 609.9,156.1 610.2,156.1 610.5,156.9 610.8,156.9 611.1,156.8 611.4,156.9 611.7,156.8 612.0,156.9 612.3,157.1 612.6,157.0 613.0,157.0 613.3,156.2 613.6,156.1 613.9,156.2 614.2,157.3 614.5,156.9 614.8,157.0 615.1,157.6 615.4,157.5 615.7,157.9 616.0,157.9 616.3,158.1 616.6,157.4 616.9,157.6 617.2,157.6 617.6,157.5 617.9,157.7 618.2,157.8 618.5,158.1 618.8,157.3 619.1,157.1 619.4,157.4 619.7,157.9 620.0,157.8 620.3,158.0 620.6,157.9 620.9,157.8 621.2,157.6 621.5,158.0 621.8,158.4 622.1,158.5 622.5,158.4 622.8,158.0 623.1,158.3 623.4,158.5 623.7,158.6 624.0,158.2 624.3,158.3 624.6,158.4 624.9,158.5 625.2,158.4 625.5,158.7 625.8,158.6 626.1,158.8 626.4,158.8 626.7,158.9 627.1,158.6 627.4,158.5 627.7,158.5 628.0,158.5 628.3,158.6 628.6,158.6 628.9,158.5 629.2,158.6 629.5,158.6 629.8,158.4 630.1,158.6 630.4,158.6 630.7,158.8 631.0,158.7 631.3,158.8 631.6,159.0 632.0,158.8 632.3,158.8 632.6,159.0 632.9,158.6 633.2,158.7 633.5,158.9 633.8,158.8 634.1,158.8 634.4,158.8 634.7,158.7 635.0,158.8 635.3,158.8 635.6,159.0 635.9,156.0 636.2,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="639.2,143.0 639.2,140.3 639.4,139.4 639.7,139.1 640.0,139.7 640.3,140.1 640.6,139.7 640.9,139.8 641.2,140.3 641.5,140.3 641.8,140.2 642.1,140.3 642.4,140.2 642.7,140.2 643.0,140.3 643.3,140.5 643.7,140.4 644.0,140.6 644.3,140.4 644.6,140.2 644.9,140.1 645.2,140.4 645.5,140.4 645.8,140.7 646.1,140.5 646.4,140.6 646.7,140.6 647.0,140.7 647.3,140.6 647.6,140.5 647.9,140.7 648.3,140.5 648.6,140.4 648.9,140.1 649.2,140.0 649.5,140.2 649.8,140.1 650.1,140.4 650.4,140.3 650.7,140.6 651.0,140.6 651.3,140.7 651.6,140.6 651.9,140.6 652.2,140.5 652.5,140.2 652.8,140.0 653.2,140.0 653.5,140.0 653.8,140.2 654.1,140.5 654.4,140.5 654.7,140.8 655.0,140.9 655.3,140.8 655.6,140.9 655.9,140.3 656.2,140.0 656.5,140.3 656.8,140.1 657.1,140.3 657.4,140.0 657.8,139.4 658.1,139.3 658.4,139.2 658.7,138.8 659.0,138.8 659.3,138.8 659.6,138.7 659.9,138.5 660.2,138.6 660.5,138.7 660.8,139.2 661.1,139.4 661.4,139.5 661.7,139.5 662.0,139.7 662.3,139.7 662.7,139.7 663.0,139.9 663.3,139.8 663.6,140.2 663.9,140.4 664.2,140.3 664.5,140.3 664.8,140.3 665.1,140.4 665.4,140.4 665.7,140.3 666.0,140.5 666.3,140.4 666.6,140.4 666.9,140.5 667.3,140.5 667.6,140.5 667.9,140.4 668.2,140.2 668.5,140.3 668.8,140.4 669.1,140.5 669.4,140.5 669.7,140.5 670.0,140.5 670.3,140.4 670.6,140.3 670.9,140.1 671.2,140.4 671.5,140.2 671.8,140.2 672.2,140.3 672.5,140.4 672.8,140.6 673.1,140.4 673.4,140.2 673.7,140.0 674.0,139.9 674.3,140.0 674.6,140.0 674.9,139.8 675.2,139.6 675.5,139.4 675.8,139.6 676.1,139.9 676.4,140.0 676.8,140.0 677.1,139.9 677.4,139.8 677.7,139.7 678.0,139.6 678.3,139.9 678.6,139.5 678.9,139.7 679.2,139.6 679.5,139.7 679.8,139.8 680.1,139.5 680.4,140.0 680.6,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="639.2,143.0 639.2,148.3 639.4,150.7 639.7,151.4 640.0,151.1 640.3,151.2 640.6,151.3 640.9,151.2 641.2,150.4 641.5,150.5 641.8,150.7 642.1,150.6 642.4,150.1 642.7,149.9 643.0,149.7 643.3,149.9 643.7,149.9 644.0,149.6 644.3,150.4 644.6,150.2 644.9,150.6 645.2,149.5 645.5,150.1 645.8,149.9 646.1,149.9 646.4,149.8 646.7,149.9 647.0,149.8 647.3,149.8 647.6,149.7 647.9,149.6 648.3,149.7 648.6,149.6 648.9,149.9 649.2,149.8 649.5,149.5 649.8,149.6 650.1,149.3 650.4,149.7 650.7,149.6 651.0,149.5 651.3,149.6 651.6,149.5 651.9,149.4 652.2,149.7 652.5,149.4 652.8,149.0 653.2,149.7 653.5,150.1 653.8,150.3 654.1,149.8 654.4,149.8 654.7,149.1 655.0,148.8 655.3,148.8 655.6,148.5 655.9,149.1 656.2,149.4 656.5,148.3 656.8,148.6 657.1,148.2 657.4,148.5 657.8,149.1 658.1,148.9 658.4,149.4 658.7,149.3 659.0,149.3 659.3,149.0 659.6,149.1 659.9,149.3 660.2,149.1 660.5,149.2 660.8,149.1 661.1,149.6 661.4,149.5 661.7,149.6 662.0,149.5 662.3,149.4 662.7,150.1 663.0,149.9 663.3,149.9 663.6,149.9 663.9,150.1 664.2,150.0 664.5,149.7 664.8,149.8 665.1,150.0 665.4,150.0 665.7,150.1 666.0,149.9 666.3,150.1 666.6,150.0 666.9,150.0 667.3,149.9 667.6,149.9 667.9,150.0 668.2,150.1 668.5,150.0 668.8,150.2 669.1,150.2 669.4,150.2 669.7,150.3 670.0,150.5 670.3,150.4 670.6,150.5 670.9,150.2 671.2,150.4 671.5,150.4 671.8,150.5 672.2,151.2 672.5,150.7 672.8,150.5 673.1,150.5 673.4,150.7 673.7,150.6 674.0,150.6 674.3,150.5 674.6,150.3 674.9,150.8 675.2,150.9 675.5,151.0 675.8,150.9 676.1,150.3 676.4,150.4 676.8,150.4 677.1,150.5 677.4,150.5 677.7,150.4 678.0,150.3 678.3,150.4 678.6,150.3 678.9,150.3 679.2,150.2 679.5,150.1 679.8,149.9 680.1,150.1 680.4,148.8 680.6,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="683.6,143.0 683.6,137.2 683.8,136.8 684.1,136.9 684.4,136.6 684.7,136.4 685.0,137.0 685.3,137.0 685.6,137.0 685.9,137.2 686.2,137.5 686.5,137.7 686.9,138.2 687.2,138.2 687.5,138.0 687.8,138.6 688.1,138.4 688.4,138.4 688.7,138.5 689.0,138.4 689.3,138.2 689.6,138.5 689.9,138.5 690.2,138.3 690.5,138.6 690.8,138.5 691.1,138.2 691.5,138.4 691.8,138.7 692.1,138.9 692.4,139.0 692.7,138.9 693.0,138.4 693.3,138.6 693.6,138.7 693.9,139.1 694.2,139.4 694.5,139.8 694.8,139.7 695.1,139.4 695.4,139.4 695.7,139.2 696.0,139.4 696.4,139.4 696.7,139.3 697.0,139.4 697.3,139.2 697.6,138.9 697.9,139.1 698.2,139.0 698.5,138.7 698.8,138.6 699.1,138.6 699.4,138.5 699.7,138.4 700.0,138.7 700.3,138.6 700.6,138.0 701.0,138.1 701.3,136.7 701.6,138.4 701.9,138.8 702.2,139.0 702.5,138.9 702.8,139.1 703.1,139.0 703.4,139.0 703.7,138.9 704.0,138.8 704.3,138.6 704.6,138.2 704.9,138.7 705.2,138.6 705.5,138.9 705.9,139.1 706.2,139.0 706.5,139.1 706.8,139.1 707.1,138.9 707.4,138.9 707.7,139.1 708.0,139.2 708.3,139.1 708.6,139.0 708.9,139.2 709.2,139.1 709.5,139.2 709.8,139.2 710.1,139.1 710.5,139.2 710.8,139.2 711.1,139.1 711.4,139.0 711.7,139.1 712.0,139.3 712.3,139.1 712.6,139.2 712.9,139.4 713.2,138.9 713.5,139.0 713.8,139.1 714.1,139.2 714.4,139.3 714.7,139.0 715.0,138.9 715.4,138.5 715.7,138.5 716.0,138.4 716.3,138.6 716.6,138.4 716.9,138.3 717.2,138.2 717.5,138.3 717.8,137.8 718.1,137.7 718.4,137.6 718.7,138.0 719.0,138.0 719.3,138.1 719.6,137.9 720.0,137.9 720.3,137.5 720.6,137.7 720.9,137.6 721.2,137.5 721.5,137.4 721.8,137.4 722.1,137.7 722.4,137.7 722.7,137.8 723.0,137.6 723.3,137.7 723.6,137.4 723.9,137.2 724.2,139.2 724.5,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="683.6,143.0 683.6,145.2 683.8,146.5 684.1,145.4 684.4,145.4 684.7,145.2 685.0,145.2 685.3,146.1 685.6,146.0 685.9,146.5 686.2,147.3 686.5,147.6 686.9,146.9 687.2,146.3 687.5,146.9 687.8,145.8 688.1,145.8 688.4,145.7 688.7,145.6 689.0,146.7 689.3,145.9 689.6,145.7 689.9,145.3 690.2,145.3 690.5,145.1 690.8,145.1 691.1,145.2 691.5,145.1 691.8,145.2 692.1,145.3 692.4,145.2 692.7,145.3 693.0,146.4 693.3,147.2 693.6,147.8 693.9,146.2 694.2,146.1 694.5,145.9 694.8,146.0 695.1,146.2 695.4,145.7 695.7,145.9 696.0,145.8 696.4,145.9 696.7,145.8 697.0,145.9 697.3,145.8 697.6,147.1 697.9,146.0 698.2,146.6 698.5,146.8 698.8,146.9 699.1,146.7 699.4,146.1 699.7,146.5 700.0,146.6 700.3,146.2 700.6,146.6 701.0,146.4 701.3,146.6 701.6,145.9 701.9,145.9 702.2,145.7 702.5,145.6 702.8,145.5 703.1,146.0 703.4,146.1 703.7,145.6 704.0,145.8 704.3,146.0 704.6,145.8 704.9,145.9 705.2,145.7 705.5,145.8 705.9,145.8 706.2,145.7 706.5,145.7 706.8,145.7 707.1,146.0 707.4,146.4 707.7,145.9 708.0,146.0 708.3,145.9 708.6,146.1 708.9,146.0 709.2,146.1 709.5,146.0 709.8,145.9 710.1,146.1 710.5,146.0 710.8,145.8 711.1,146.0 711.4,146.0 711.7,145.9 712.0,146.0 712.3,146.1 712.6,147.1 712.9,146.4 713.2,146.4 713.5,146.2 713.8,146.2 714.1,145.7 714.4,145.8 714.7,146.0 715.0,145.5 715.4,145.7 715.7,145.4 716.0,145.5 716.3,145.4 716.6,145.9 716.9,146.2 717.2,146.4 717.5,146.6 717.8,146.3 718.1,146.3 718.4,146.3 718.7,146.2 719.0,145.9 719.3,145.7 719.6,146.1 720.0,145.9 720.3,146.4 720.6,146.6 720.9,146.6 721.2,146.6 721.5,146.7 721.8,146.1 722.1,145.7 722.4,145.6 722.7,145.5 723.0,145.7 723.3,145.6 723.6,146.1 723.9,147.1 724.2,145.4 724.5,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="727.5,143.0 727.5,142.5 727.7,142.5 732.0,142.5 732.3,142.3 732.6,142.3 732.9,141.5 733.2,140.4 733.5,140.1 733.8,140.1 734.1,140.0 734.4,140.1 734.7,140.0 735.0,140.0 735.4,140.2 735.7,140.0 736.0,140.1 736.3,140.3 736.6,140.3 736.9,140.4 737.2,140.2 737.5,140.4 737.8,140.4 738.1,140.5 738.4,140.3 738.7,140.3 739.0,140.3 739.3,140.3 739.6,140.3 739.9,140.4 740.3,140.2 740.6,140.3 740.9,140.4 741.2,140.3 741.5,140.3 741.8,140.4 742.1,140.3 742.4,140.2 742.7,140.1 743.0,140.2 743.3,139.8 743.6,139.7 743.9,139.9 744.2,140.1 744.5,140.1 744.9,139.9 745.2,140.1 745.5,140.1 745.8,140.1 746.1,139.8 746.4,139.8 746.7,139.8 747.0,139.8 747.3,139.8 747.6,139.8 747.9,139.8 748.2,139.7 748.5,139.7 748.8,139.8 749.1,139.6 749.4,139.6 749.8,139.9 750.1,139.8 750.4,139.8 750.7,139.8 751.0,139.8 751.3,139.5 751.6,139.7 751.9,139.5 752.2,139.5 752.5,139.6 752.8,139.5 753.1,139.5 753.4,139.5 753.7,139.5 754.0,139.3 754.4,139.5 754.7,139.4 755.0,139.3 755.3,139.2 755.6,139.4 755.9,139.3 756.2,139.3 756.5,139.4 756.8,139.4 757.1,139.3 757.4,139.3 757.7,139.2 758.0,139.3 758.3,139.0 758.6,139.3 758.9,139.3 759.3,139.3 759.6,139.4 759.9,139.2 760.2,139.2 760.5,139.0 760.8,138.4 761.1,138.2 761.4,138.9 761.7,138.6 762.0,138.7 762.3,139.2 762.5,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="727.5,143.0 727.5,143.4 732.0,143.4 732.3,143.9 732.6,143.9 732.9,146.4 733.2,149.0 733.5,150.7 733.8,150.8 734.1,150.4 734.4,150.6 734.7,150.3 735.0,150.4 735.4,150.5 735.7,150.6 736.0,151.3 736.3,150.7 736.6,150.5 736.9,150.6 737.2,151.6 737.5,150.8 737.8,150.8 738.1,150.9 738.4,150.9 738.7,151.8 739.0,151.6 739.3,151.5 739.6,151.8 739.9,151.6 740.3,151.7 740.6,151.5 740.9,151.9 741.2,151.9 741.5,151.8 741.8,152.0 742.1,152.2 742.4,152.7 742.7,152.3 743.0,152.1 743.3,152.4 743.6,152.8 743.9,152.7 744.2,152.6 744.5,152.6 744.9,153.1 745.2,152.4 745.5,152.3 745.8,152.2 746.1,152.5 746.4,152.5 746.7,152.4 747.0,152.3 747.3,152.3 747.6,152.3 747.9,152.2 748.2,152.3 748.5,152.1 748.8,152.0 749.1,152.0 749.4,153.0 749.8,152.0 750.1,151.7 750.4,151.6 750.7,151.6 751.0,151.4 751.3,151.6 751.6,151.2 751.9,151.5 752.2,151.4 752.5,151.5 752.8,151.4 753.1,151.3 753.4,151.3 753.7,151.2 754.0,151.2 754.4,151.2 754.7,151.2 755.0,151.2 755.3,151.0 755.6,150.8 755.9,150.9 756.2,150.9 756.5,150.9 756.8,150.7 757.1,150.6 757.4,150.7 757.7,150.5 758.0,150.6 758.3,150.6 758.6,150.2 758.9,150.3 759.3,150.3 759.6,150.1 759.9,150.0 760.2,150.1 760.5,150.2 760.8,150.0 761.1,149.9 761.4,148.4 761.7,148.6 762.0,148.7 762.3,148.2 762.5,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="765.5,143.0 765.5,142.8 768.3,142.8 768.6,142.8 769.9,142.8 770.2,142.6 770.5,142.6 770.8,142.5 771.1,141.4 771.4,138.9 771.7,140.5 772.0,139.6 772.3,139.7 772.6,139.9 772.9,140.1 773.2,140.3 773.6,140.5 773.9,140.5 774.2,140.6 774.5,140.6 774.8,140.5 775.1,140.3 775.4,140.2 775.7,140.2 776.0,140.4 776.3,140.2 776.6,140.4 776.9,140.6 777.2,140.7 777.5,140.7 777.8,140.7 778.1,140.7 778.5,140.7 778.8,140.7 779.1,140.7 779.4,140.6 779.7,140.8 780.0,140.7 780.3,140.8 780.6,140.7 780.9,140.6 781.2,140.6 781.5,140.8 781.8,140.6 782.1,140.7 782.4,140.6 782.7,140.4 783.1,140.9 783.4,140.8 783.7,140.8 784.0,140.8 784.3,140.6 784.6,140.6 784.9,140.6 785.2,140.5 785.5,140.6 785.8,140.7 786.1,140.7 786.4,140.4 786.7,140.5 787.0,140.7 787.3,140.7 787.6,140.2 788.0,139.8 788.3,140.2 788.6,140.2 788.9,140.1 789.2,139.9 789.5,140.0 789.8,140.8 790.1,140.7 790.4,140.6 790.7,140.7 791.0,140.8 791.3,140.8 791.6,140.8 791.9,140.7 792.2,140.6 792.6,140.1 792.9,140.2 793.2,140.2 793.5,140.0 793.8,139.9 794.1,139.7 794.4,139.4 794.7,139.7 795.0,139.8 795.3,139.9 795.6,139.6 795.9,139.6 796.2,139.3 796.5,139.5 796.8,139.6 797.1,139.4 797.5,138.9 797.8,138.5 798.1,138.5 798.3,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="765.5,143.0 765.5,143.5 769.9,143.5 770.2,143.8 770.5,143.8 770.8,144.5 771.1,146.8 771.4,151.5 771.7,149.9 772.0,150.2 772.3,150.1 772.6,150.3 772.9,150.4 773.2,150.4 773.6,150.2 773.9,150.1 774.2,150.0 774.5,150.1 774.8,150.4 775.1,150.4 775.4,150.0 775.7,150.3 776.0,150.8 776.3,150.8 776.6,150.2 776.9,150.4 777.2,150.6 777.5,151.1 777.8,150.7 778.1,150.3 778.5,150.4 778.8,150.3 779.1,150.3 779.4,150.4 779.7,150.3 780.0,150.4 780.3,150.4 780.6,150.5 780.9,150.6 781.2,150.2 781.5,150.2 781.8,150.5 782.1,150.5 782.4,150.7 782.7,150.4 783.1,150.5 783.4,150.6 783.7,150.5 784.0,150.7 784.3,150.8 784.6,150.9 784.9,151.2 785.2,151.4 785.5,151.3 785.8,150.9 786.1,150.9 786.4,151.1 786.7,151.0 787.0,150.8 787.3,150.9 787.6,152.0 788.0,152.7 788.3,151.8 788.6,151.4 788.9,151.3 789.2,151.6 789.5,151.3 789.8,151.1 790.1,151.0 790.4,151.6 790.7,151.0 791.0,151.0 791.3,151.1 791.6,151.2 791.9,151.2 792.2,151.2 792.6,151.1 792.9,150.8 793.2,150.8 793.5,150.9 793.8,150.9 794.1,150.8 794.4,150.7 794.7,150.5 795.0,150.5 795.3,150.5 795.6,150.6 795.9,150.7 796.2,151.0 796.5,151.2 796.8,151.2 797.1,151.2 797.5,150.9 797.8,151.4 798.1,149.8 798.3,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="801.3,143.0 801.3,142.7 801.6,142.7 806.2,142.7 806.5,142.5 806.8,142.2 807.1,140.9 807.5,138.5 807.8,140.0 808.1,139.6 808.4,140.5 808.7,140.7 809.0,140.4 809.3,140.4 809.6,140.4 809.9,140.6 810.2,140.5 810.5,140.3 810.8,140.4 811.1,140.5 811.4,140.7 811.7,140.5 812.1,140.6 812.4,140.5 812.7,140.5 813.0,140.8 813.3,140.4 813.6,140.3 813.9,140.4 814.2,140.3 814.5,140.3 814.8,140.4 815.1,140.2 815.4,140.3 815.7,140.3 816.0,140.6 816.3,140.7 816.6,140.3 817.0,140.2 817.3,140.3 817.6,140.3 817.9,140.4 818.2,140.5 818.5,140.4 818.8,140.1 819.1,140.1 819.4,140.3 819.7,140.3 820.0,140.1 820.3,140.1 820.6,140.1 820.9,140.1 821.2,139.6 821.5,139.8 821.9,139.8 822.2,139.9 822.5,140.0 822.8,139.9 823.1,140.0 823.4,140.0 823.7,139.7 824.0,139.4 824.3,140.0 824.6,139.7 824.9,139.7 825.2,139.8 825.5,139.9 825.8,139.9 826.1,139.9 826.5,139.9 826.8,140.0 827.1,139.9 827.4,139.8 827.7,139.8 828.0,139.9 828.3,139.7 828.6,139.9 828.9,139.6 829.2,139.7 829.5,139.5 829.8,139.7 830.1,139.9 830.4,140.1 830.7,140.0 831.0,139.8 831.4,139.6 831.7,139.7 832.0,140.0 832.3,140.7 832.6,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="801.3,143.0 801.3,143.3 801.6,143.3 806.2,143.3 806.5,143.6 806.8,144.4 807.1,147.6 807.5,149.1 807.8,147.4 808.1,148.2 808.4,147.2 808.7,147.3 809.0,147.5 809.3,147.7 809.6,147.5 809.9,147.3 810.2,147.3 810.5,148.1 810.8,147.6 811.1,148.1 811.4,148.2 811.7,148.9 812.1,148.4 812.4,148.6 812.7,148.2 813.0,148.1 813.3,148.3 813.6,148.8 813.9,148.8 814.2,148.7 814.5,148.7 814.8,148.7 815.1,148.7 815.4,148.1 815.7,147.9 816.0,147.7 816.3,147.6 816.6,148.2 817.0,147.8 817.3,147.8 817.6,147.9 817.9,147.9 818.2,147.7 818.5,147.7 818.8,147.7 819.1,147.8 819.4,147.8 819.7,147.3 820.0,147.5 820.3,147.4 820.6,147.2 820.9,147.4 821.2,147.4 821.5,147.3 821.9,147.3 822.2,147.0 822.5,146.9 822.8,147.0 823.1,147.2 823.4,147.1 823.7,147.0 824.0,147.3 824.3,147.2 824.6,148.3 824.9,147.2 825.2,146.9 825.5,147.1 825.8,147.0 826.1,147.0 826.5,147.1 826.8,147.1 827.1,147.1 827.4,147.1 827.7,147.2 828.0,147.1 828.3,147.3 828.6,147.4 828.9,147.6 829.2,147.6 829.5,148.3 829.8,147.2 830.1,146.9 830.4,146.9 830.7,146.9 831.0,146.9 831.4,146.9 831.7,146.7 832.0,146.1 832.3,145.7 832.6,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="835.6,143.0 835.6,138.0 835.8,137.8 836.1,138.0 836.4,138.3 836.7,138.7 837.0,139.0 837.4,139.6 837.7,139.7 838.0,139.5 838.3,139.4 838.6,139.3 838.9,139.2 839.2,139.4 839.5,139.7 839.8,139.6 840.1,139.7 840.4,139.8 840.7,140.0 841.0,140.0 841.3,139.7 841.6,139.7 842.0,139.8 842.3,139.9 842.6,139.6 842.9,139.9 843.2,139.8 843.5,139.9 843.8,139.7 844.1,139.5 844.4,139.3 844.7,139.3 845.0,139.2 845.3,139.2 845.6,139.4 845.9,139.6 846.2,139.4 846.5,140.1 846.9,140.1 847.2,140.1 847.5,140.3 847.8,140.3 848.1,140.3 849.0,140.3 849.3,140.2 849.6,140.0 849.9,139.9 850.2,139.6 850.5,139.6 850.8,139.6 851.1,139.7 851.5,139.7 851.8,139.8 852.1,139.9 852.4,139.6 852.7,139.6 853.0,139.5 853.3,139.4 853.6,139.6 853.9,140.1 854.2,140.2 854.5,140.2 854.8,140.1 855.1,140.1 855.4,139.9 855.7,139.6 856.0,139.6 856.4,139.6 856.7,139.7 857.0,139.7 857.3,139.6 857.6,140.0 857.9,140.0 858.2,140.1 858.5,140.1 858.8,139.6 859.1,139.8 859.4,139.7 859.7,139.8 860.0,139.9 860.3,139.7 860.6,139.5 861.0,139.4 861.3,139.0 861.6,138.8 861.9,138.9 862.2,138.7 862.5,138.8 862.8,139.0 863.1,141.0 863.3,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="835.6,143.0 835.6,148.4 835.8,148.6 836.1,148.6 836.4,148.6 836.7,148.6 837.0,148.4 837.4,147.6 837.7,147.6 838.0,147.8 838.3,147.8 838.6,148.0 838.9,148.1 839.2,148.1 839.5,147.7 839.8,148.0 840.1,148.3 840.4,148.1 840.7,147.5 841.0,147.6 841.3,147.9 841.6,148.6 842.0,148.2 842.3,148.2 842.6,148.3 842.9,148.1 843.2,148.2 843.5,148.0 843.8,148.4 844.1,148.3 844.4,148.4 844.7,148.3 845.0,148.3 845.3,148.1 845.6,148.0 845.9,148.0 846.2,147.8 846.5,147.5 846.9,147.3 847.2,147.7 847.5,147.5 847.8,147.6 848.1,147.6 849.0,147.6 849.3,147.8 849.6,148.2 849.9,148.2 850.2,148.2 850.5,148.2 850.8,148.4 851.1,148.4 851.5,148.8 851.8,148.7 852.1,148.8 852.4,150.1 852.7,149.3 853.0,149.2 853.3,149.4 853.6,149.8 853.9,149.2 854.2,149.0 854.5,148.9 854.8,149.0 855.1,149.1 855.4,149.4 855.7,150.1 856.0,150.1 856.4,150.5 856.7,150.5 857.0,150.4 857.3,149.9 857.6,150.1 857.9,149.8 858.2,150.2 858.5,150.1 858.8,150.3 859.1,149.8 859.4,150.5 859.7,150.0 860.0,149.9 860.3,150.4 860.6,150.6 861.0,150.3 861.3,150.2 861.6,150.3 861.9,150.5 862.2,150.1 862.5,150.3 862.8,149.4 863.1,146.9 863.3,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="866.3,143.0 866.3,141.4 866.3,136.4 866.6,136.8 866.9,136.8 867.2,137.2 867.5,137.2 867.8,137.3 868.1,136.9 868.4,136.3 868.7,137.0 869.0,137.4 869.4,137.4 869.7,137.5 870.0,137.4 870.3,137.3 870.6,137.3 870.9,136.8 871.2,136.9 871.5,136.7 871.8,135.8 872.1,134.8 872.4,135.2 872.7,135.0 873.0,134.4 873.3,134.4 873.6,134.5 874.0,134.5 874.3,134.1 874.6,133.7 874.9,133.3 875.2,133.4 875.5,133.2 875.8,132.9 876.1,132.7 876.4,132.9 876.7,132.7 877.0,132.2 877.3,131.8 877.6,132.1 877.9,131.9 878.2,131.5 878.5,130.9 878.9,130.3 879.2,130.6 879.5,130.6 879.8,130.5 880.1,129.5 880.4,128.6 880.7,129.9 881.0,130.1 881.3,129.9 881.6,129.7 881.9,129.5 882.2,129.9 882.5,129.9 882.8,130.0 883.1,129.8 883.5,129.4 883.8,129.5 884.1,129.5 884.4,129.7 884.7,129.5 885.0,129.5 885.3,129.6 885.6,129.5 885.9,129.5 886.2,129.4 886.5,129.2 886.8,129.4 887.1,129.0 887.4,129.1 887.7,129.1 888.0,129.0 888.4,128.2 888.7,128.8 889.0,128.7 889.3,128.8 889.6,128.7 889.9,129.0 890.2,129.1 890.5,133.7 890.8,133.6 891.1,133.8 891.4,134.9 891.7,142.6 891.8,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="866.3,143.0 866.3,145.1 866.3,151.4 866.6,151.4 866.9,151.3 867.2,151.4 867.5,151.4 867.8,151.3 868.1,151.5 868.4,152.0 868.7,151.5 869.0,151.3 869.4,151.2 869.7,150.4 870.0,150.4 870.3,150.4 870.6,150.2 870.9,150.8 871.2,150.5 871.5,150.2 871.8,150.8 872.1,148.9 872.4,147.8 872.7,147.6 873.0,147.0 873.3,145.9 873.6,145.9 874.0,145.9 874.3,146.2 874.6,146.2 874.9,146.4 875.2,146.4 875.5,147.0 875.8,147.6 876.1,147.1 876.4,146.5 876.7,146.8 877.0,147.0 877.3,146.8 877.6,146.8 877.9,146.7 878.2,146.7 878.5,146.8 878.9,148.6 879.2,146.7 879.5,147.1 879.8,146.4 880.1,146.7 880.4,146.8 880.7,145.9 881.0,145.9 881.3,145.7 881.6,145.6 881.9,145.9 882.2,145.5 882.5,145.7 882.8,145.3 883.1,145.3 883.5,145.5 883.8,145.5 884.1,145.7 884.4,145.7 884.7,145.8 885.0,145.8 885.3,145.5 885.6,145.8 885.9,145.5 886.2,145.5 886.5,145.3 886.8,145.2 887.1,145.5 887.4,145.2 887.7,145.1 888.0,145.2 888.4,145.6 888.7,145.5 889.0,145.7 889.3,146.2 889.6,146.3 889.9,145.9 890.2,145.9 890.5,145.1 890.8,145.2 891.1,145.1 891.4,145.2 891.7,143.1 891.8,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="894.8,143.0 894.8,138.0 894.9,137.3 895.2,138.0 895.5,137.6 895.8,137.8 896.2,138.0 896.5,137.9 896.8,137.9 897.1,137.9 897.4,137.8 897.7,137.6 898.0,137.7 898.3,137.6 898.6,137.7 898.9,137.8 899.2,138.2 899.5,138.3 899.8,138.2 900.1,138.2 900.4,138.3 900.7,138.3 901.1,138.1 901.4,138.0 901.7,137.8 902.0,137.8 902.3,137.8 902.6,137.7 902.9,137.7 903.2,137.7 903.5,137.7 903.8,137.8 904.1,137.8 904.4,137.8 904.7,137.5 905.0,137.5 905.3,137.7 905.7,137.7 906.0,137.5 906.3,137.4 906.6,137.6 906.9,137.8 907.2,137.6 907.5,137.7 907.8,137.7 908.1,137.7 908.4,137.6 908.7,137.5 909.0,137.6 909.3,137.6 909.6,137.6 909.9,137.8 910.2,137.7 910.6,137.8 910.9,137.7 911.2,138.0 911.5,137.9 911.8,137.7 912.1,137.7 912.4,137.7 912.7,137.5 913.0,137.7 913.3,137.9 913.6,137.8 913.9,137.9 914.2,137.6 914.5,137.6 914.8,137.4 915.2,137.8 915.5,137.6 915.8,137.4 916.1,137.5 916.4,137.4 916.7,137.5 917.0,137.2 917.3,137.1 917.6,137.0 917.9,136.8 918.2,138.8 918.5,139.4 918.8,139.4 919.1,139.9 919.4,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="894.8,143.0 894.8,146.6 894.9,147.7 895.2,147.3 895.5,147.5 895.8,147.3 896.2,147.4 896.5,146.9 896.8,147.1 897.1,146.8 897.4,146.9 897.7,147.0 898.0,146.7 898.3,147.1 898.6,147.0 898.9,146.9 899.2,146.7 899.5,146.3 899.8,146.3 900.1,146.2 900.4,146.2 900.7,146.2 901.1,146.4 901.4,146.5 901.7,146.8 902.0,146.8 902.3,146.8 902.6,146.8 902.9,146.8 903.2,146.9 903.5,146.9 903.8,147.1 904.1,146.8 904.4,147.1 904.7,147.0 905.0,147.0 905.3,146.7 905.7,146.9 906.0,147.0 906.3,147.2 906.6,147.1 906.9,147.1 907.2,147.6 907.5,147.4 907.8,147.2 908.1,147.3 908.4,147.2 908.7,147.4 909.0,147.0 909.3,147.4 909.6,147.2 909.9,147.2 910.2,147.4 910.6,147.4 910.9,147.4 911.2,147.4 911.5,147.3 911.8,147.3 912.1,147.3 912.4,147.6 912.7,147.8 913.0,147.9 913.3,147.6 913.6,147.8 913.9,147.8 914.2,147.8 914.5,147.8 914.8,148.7 915.2,147.7 915.5,147.8 915.8,148.1 916.1,147.7 916.4,147.7 916.7,147.7 917.0,147.8 917.3,147.8 917.6,147.5 917.9,147.8 918.2,146.5 918.5,145.5 918.8,145.5 919.1,145.1 919.4,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="922.4,143.0 922.4,140.3 922.5,136.1 922.8,133.3 923.1,133.7 923.4,134.1 923.7,134.2 924.0,134.3 924.3,134.3 924.6,134.4 924.9,134.4 925.2,134.2 925.5,134.1 925.8,134.4 926.1,134.0 926.4,134.2 926.8,134.2 927.1,134.1 927.4,134.4 927.7,134.2 928.0,134.0 928.3,134.6 928.6,135.3 928.9,135.4 929.2,135.5 929.5,135.4 929.8,135.9 930.1,136.0 930.4,136.0 930.7,135.4 931.0,135.3 931.4,135.4 931.7,135.4 932.0,135.6 932.3,135.7 932.6,135.5 932.9,135.3 933.2,135.5 933.5,135.5 933.8,135.6 934.1,135.6 934.4,135.9 934.7,135.7 935.0,135.9 935.3,135.7 935.6,135.9 935.9,136.0 936.3,136.0 936.6,136.2 936.9,136.5 937.2,136.4 937.5,136.3 937.8,136.2 938.1,136.1 938.4,136.4 938.7,136.2 939.0,136.2 939.3,136.3 939.6,136.2 939.9,136.4 940.2,137.2 940.4,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="922.4,143.0 922.4,144.9 922.5,147.5 922.8,148.0 923.1,148.0 923.4,147.9 923.7,147.9 924.0,148.0 924.3,148.2 924.6,148.0 924.9,148.3 925.2,147.9 925.5,147.8 925.8,147.6 926.1,147.8 926.4,147.6 926.8,147.8 927.1,147.6 927.4,147.4 927.7,147.5 928.0,147.3 928.3,147.3 928.6,147.3 928.9,146.7 929.2,146.4 929.5,146.6 929.8,146.4 930.1,146.1 930.4,146.2 930.7,147.5 931.0,148.2 931.4,148.6 931.7,148.5 932.0,148.6 932.3,149.2 932.6,149.4 932.9,149.5 933.2,149.9 933.5,149.8 933.8,149.9 934.1,150.0 934.4,150.1 934.7,150.6 935.0,151.1 935.3,151.2 935.6,151.0 935.9,150.9 936.3,151.1 936.6,151.1 936.9,151.1 937.2,151.1 937.5,151.2 937.8,151.5 938.1,151.7 938.4,151.4 938.7,151.5 939.0,151.4 939.3,151.4 939.6,150.8 939.9,150.8 940.2,149.2 940.4,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="943.4,143.0 943.4,140.7 943.4,135.6 943.7,133.9 944.0,135.6 944.3,135.7 944.6,135.8 944.9,135.8 945.2,136.1 945.5,136.3 945.8,136.2 946.2,136.2 946.5,136.1 946.8,136.3 947.1,136.3 947.4,136.1 947.7,136.4 948.0,136.2 948.3,136.0 948.6,135.7 948.9,135.8 949.2,135.9 949.5,136.1 949.8,135.9 950.1,135.8 950.4,135.7 950.8,135.6 951.1,135.8 951.4,135.8 951.7,136.2 952.0,136.2 952.3,136.0 952.6,135.9 952.9,135.0 953.2,134.9 953.5,135.3 953.8,135.3 954.1,135.3 954.4,135.2 954.7,135.1 955.0,135.2 955.3,135.4 955.7,135.5 956.0,135.2 956.3,135.6 956.6,135.3 956.9,135.3 957.2,135.2 957.5,135.2 957.8,135.4 958.1,135.5 958.4,135.3 958.7,135.2 959.0,135.3 959.3,135.4 959.6,135.4 959.9,135.3 960.3,135.2 960.6,134.6 960.9,134.7 961.2,134.5 961.5,134.6 961.8,134.5 962.1,134.5 962.4,135.5 962.7,137.1 963.0,138.5 963.1,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="943.4,143.0 943.4,145.0 943.4,146.8 943.7,147.8 944.0,146.4 944.3,146.4 944.6,146.5 944.9,146.5 945.2,146.1 945.5,145.8 945.8,145.7 946.2,145.7 946.5,145.7 946.8,145.7 947.1,145.7 947.4,145.9 947.7,146.1 948.0,145.9 948.3,145.9 948.6,146.1 948.9,145.8 949.2,145.6 949.5,145.5 949.8,145.6 950.1,145.6 950.4,145.6 950.8,145.6 951.1,145.9 951.4,146.1 951.7,145.9 952.0,145.9 952.3,146.0 952.6,145.9 952.9,146.1 953.2,146.0 953.5,146.1 953.8,146.1 954.1,146.5 954.4,145.9 954.7,145.9 955.0,145.3 955.3,145.3 955.7,145.1 956.0,145.3 956.3,145.1 956.6,145.6 956.9,145.5 957.2,145.5 957.5,145.6 957.8,145.7 958.1,145.5 958.4,145.6 958.7,145.7 959.0,146.0 959.3,145.7 959.6,146.1 959.9,145.5 960.3,145.4 960.6,145.9 960.9,145.1 961.2,145.2 961.5,145.2 961.8,145.3 962.1,145.4 962.4,145.4 962.7,144.9 963.0,144.6 963.1,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="966.1,143.0 966.1,142.8 966.4,142.8 968.3,142.8 968.6,142.7 968.9,142.5 969.2,141.5 969.5,141.5 969.8,141.3 970.1,140.2 970.4,140.1 970.7,139.9 971.0,139.4 971.3,139.3 971.6,139.4 971.9,139.6 972.2,139.6 972.5,139.5 972.9,139.5 973.2,139.6 973.5,139.6 973.8,139.5 974.1,139.5 974.4,139.6 974.7,139.6 975.0,139.5 975.3,139.2 975.6,139.1 975.9,139.2 976.2,139.1 976.5,139.1 976.8,139.2 977.1,139.2 977.5,139.0 977.8,139.2 978.1,139.1 978.4,139.2 978.7,138.9 979.0,138.8 979.3,138.3 979.6,138.7 979.9,139.0 980.2,138.6 980.4,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="966.1,143.0 966.1,143.3 966.4,143.4 966.7,143.4 967.0,143.4 967.6,143.4 968.0,143.4 968.3,143.4 968.6,143.4 968.9,143.9 969.2,145.5 969.5,145.5 969.8,145.7 970.1,146.7 970.4,146.7 970.7,146.5 971.0,147.2 971.3,147.3 971.6,147.3 971.9,147.1 972.2,147.1 972.5,147.3 972.9,147.2 973.2,147.2 973.5,147.1 973.8,147.1 974.1,147.2 974.4,147.0 974.7,147.0 975.0,147.0 975.3,147.2 975.6,147.3 975.9,147.0 976.2,147.2 976.5,147.2 976.8,147.4 977.1,147.5 977.5,147.4 977.8,147.2 978.1,147.5 978.4,147.2 978.7,147.3 979.0,147.4 979.3,147.8 979.6,147.7 979.9,146.6 980.2,146.6 980.4,143.0" fill="#33A0FF" stroke-width="0px" />
+<polygon points="983.4,143.0 983.4,142.4 983.7,142.5 985.0,142.5 985.3,142.5 986.5,142.5 986.8,142.3 987.1,142.3 987.4,142.3 987.7,142.1 988.0,140.6 988.3,139.4 988.6,139.1 988.9,138.8 989.2,138.2 989.6,138.0 989.9,138.2 990.2,137.7 990.5,138.4 990.8,138.7 991.1,138.5 991.4,138.9 991.7,139.2 992.0,138.9 992.3,139.1 992.6,139.0 992.9,139.0 993.2,139.0 993.5,139.1 993.8,139.2 994.2,138.9 994.5,138.7 994.8,138.6 995.1,138.6 995.4,138.7 995.7,138.8 996.0,138.8 996.3,138.6 996.6,138.7 996.9,138.5 997.2,138.4 997.5,138.3 997.8,138.4 998.1,138.4 998.4,139.0 998.7,140.1 999.0,143.0" fill="#FFC633" stroke-width="0px" />
+<polygon points="983.4,143.0 983.4,143.7 983.7,143.6 984.0,143.6 984.3,143.5 985.0,143.5 985.3,143.6 986.5,143.6 986.8,144.2 987.1,144.2 987.4,144.2 987.7,144.9 988.0,146.8 988.3,148.9 988.6,149.1 988.9,149.1 989.2,150.6 989.6,150.6 989.9,150.6 990.2,151.0 990.5,151.4 990.8,150.8 991.1,151.2 991.4,150.7 991.7,150.7 992.0,151.5 992.3,151.4 992.6,151.6 992.9,151.6 993.2,151.6 993.5,151.4 993.8,151.4 994.2,151.3 994.5,151.3 994.8,151.8 995.1,152.4 995.4,152.0 995.7,152.4 996.0,152.4 996.3,152.1 996.6,152.0 996.9,152.1 997.2,151.9 997.5,151.9 997.8,151.7 998.1,151.9 998.4,149.1 998.7,147.1 999.0,143.0" fill="#33A0FF" stroke-width="0px" />
+<text x="999" y="206" class="footer-r">&#169; CC-BY 2001 - 2023 progenetix.org</text>
+</svg>
+
