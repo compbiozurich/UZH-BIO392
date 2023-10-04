@@ -24,8 +24,8 @@ If the base(s) in the 'REF' and 'ALT' field are not the same, the sequenced samp
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-Your answer here
+Intron variants are the most prevalent (40%) but don't have much influence. The most impact has the variant in the coding sequence (GAGAGAGA) as it leads to a frameshift mutation and thus leads to different amino acids and stop of translation.
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-Your answer here
+The phenotype with this frameshift variant is involved in the formation of large intestine tumours.
