@@ -42,7 +42,6 @@ than you know that there variants.
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-Your answer here
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
