@@ -23,7 +23,7 @@ To determine whether a sequencing sample contains a variant, one can compare the
 * **1st track:** Shows reference sequence, the different nucleotides are each a different colour.
 * **2nd track:** Shows the different sequence regions (exons, introns, coding sequence (CDS), untranslated regions, etc.)
 * **3rd track:** Shows the read coverage of the sequence regions.
-* **4th track:** Shows the alignment track (how the reads are aligned).
+* **4th track:** Shows the alignment track (how the sequences/reads are aligned).
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
