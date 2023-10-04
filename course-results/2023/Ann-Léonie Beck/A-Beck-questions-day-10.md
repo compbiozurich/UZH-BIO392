@@ -27,7 +27,7 @@ information about the reads of the three patients (eg. alignment start, quality 
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-Your answer here
+the agagagaga variant is worse because
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
