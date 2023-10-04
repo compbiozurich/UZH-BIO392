@@ -39,4 +39,11 @@ Plan:
 
 ### Tasks
 
-* TBA
+* Analyze your datasets 
+* Generate 4 plots (1 Kaplan Meier)
+* Presentation
+  - Introduction
+  - Aims
+  - Results
+  - Conclusions
+* Discussion
