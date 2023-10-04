@@ -25,8 +25,8 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-Your answer here
+I expect the longer STR variant (agagagaga) to have most impact because it leads to a frameshift mutation in an exon.  
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-Your answer here
+The phenotype that is associated with this variant is a tumor in the large intestine or in the stomach.  
