@@ -22,7 +22,23 @@ than you know that there variants.
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
-Your answer here
+
+1. Reference
+   Is the reference genome.
+   
+3. VCF
+   There are 3 bands (blue, cyan, grey).
+   The blue one is the alignment that matches to the reference.
+   The cyan one is the band that shows variations with the alternative genotype.
+   The grey one shows also an alternative sample but with the same genotype wih the reference.
+   
+5. GTF
+   GTF-file is presented as longer blue bands.
+   The longer band shows the genes and the shorter bands stands for exons, transcripts, UTR's or CDS's.
+   
+7. BAM
+   The BAM is presented as short grey bars, which simply shows the alignments.
+   Looking at the red bars you see sample - readings that are too short together and the blue are too far apart. 
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
