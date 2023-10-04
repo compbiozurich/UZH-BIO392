@@ -25,7 +25,7 @@ We would have to refer to the 'ALT' column and see if the listed bases vary from
 
 reference genome: Is the reference with which we compare the sequences. 
 
-merged_results.vcf:
+merged_results.vcf: This contains a summary of the STRs in the sequences.
 
 APC_canonical_relative_coordinates.gtf.gz: This adds the annotations of the genome.
 
