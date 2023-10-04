@@ -398,13 +398,29 @@ allele(s).</li>
 specified position.</li>
 <li>can contain multiple alternate alleles separated by commas if there
 are multiple variants</li>
+<li>Each allele in this list must be one of:
+<ul>
+<li>a non-empty String of bases (A,C,G,T,N)</li>
+<li>the ’*’ symbol (allele missing due to overlapping deletion)</li>
+<li>the MISSING value ‘.’ (no variant)</li>
+<li>an angle-bracketed ID String (“<ID>”)</li>
+</ul></li>
 </ul></li>
 </ul>
 </div>
 <div id="q2" class="section level3">
 <h3>Q2</h3>
 <p><strong>Using these four columns, how could you determine whether a
-sequencing sample contains a variant?</strong> Your answer here</p>
+sequencing sample contains a variant?</strong></p>
+<p>First we would need to identify the locus that we are searching for
+using the chromosmoe and position columns. Then, the reference- and
+alternative allele columns can indicate if a variant is present. If the
+reference allele matches the sample, then there won’t be an entry, and
+thus we don’t have a variant. If, however, we have an entry, we can look
+at the reference and alternative allele columns to see how our sample is
+different. Moreover, if there is a value in the reference and a dot in
+the alternative, this means that there is either the absence of a
+variant or uncertainty in the variant calling process.</p>
 </div>
 <div id="q3" class="section level3">
 <h3>Q3</h3>

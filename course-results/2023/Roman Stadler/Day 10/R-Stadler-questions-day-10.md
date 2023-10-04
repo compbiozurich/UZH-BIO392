@@ -25,10 +25,21 @@ These questions will not be graded separately, but may be considered when determ
 - ALT (Alternate alleles):
   - contains the alternate alleles or variant alleles observed at the specified position.
   - can contain multiple alternate alleles separated by commas if there are multiple variants
+  - Each allele in this list must be one of: 
+    - a non-empty String of bases (A,C,G,T,N)
+    - the ‘*’ symbol (allele missing due to overlapping deletion)
+    - the MISSING value ‘.’ (no variant)
+    - an angle-bracketed ID String (“<ID>”)
 
 ### Q2
 **Using these four columns, how could you determine whether a sequencing sample contains a variant?**
-Your answer here
+
+First we would need to identify the locus that we are searching for using the chromosmoe and position columns.
+Then, the reference- and alternative allele columns can indicate if a variant is present.
+If the reference allele matches the sample, then there won't be an entry, and thus we don't have a variant.
+If, however, we have an entry, we can look at the reference and alternative allele columns to see how our sample is different. 
+Moreover, if there is a value in the reference and a dot in the alternative, this means that there is either the absence of a variant or uncertainty in the variant calling process.
+
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
