@@ -28,9 +28,9 @@ To determine whether a sequencing sample contains a variant, one can compare the
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
 
-Your answer here
+Out of the two STR variants identified, the 2nd variant (chr. 5, pos. 137481, ref. a, alt. agagagaga, patient_3) will have the most impact because the 1st STR variant is an intron meaning it won't be expressed or operative in the final RNA product. The 2nd STR variant is a frameshift variant causing a completely different translation from the original (reference). The polypeptide that will created will most likely be either be abnormally short or abnormally long and probably not functional.
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
 
-Your answer here
+The variant is in the APC gene (regulator of WNT signaling pathway). APC encodes a tumor suppressor protein that acts as an antagonist of the Wnt signaling pathway and it is also involved in other processes such as cell migration, transcriptional activation, adhesion, and apoptosis. Mutations/defects in the APC gene cause (according to [this study](https://pubmed.ncbi.nlm.nih.gov/10470088/#:~:text=APC%20is%20often%20cited%20as,also%20have%20two%20APC%20mutations.)) familial adenomatous polyposis (FAP), which can lead to colorectal adenomas.
