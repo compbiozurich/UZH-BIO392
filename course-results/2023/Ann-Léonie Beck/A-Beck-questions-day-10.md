@@ -17,6 +17,7 @@ ALT: stands for alternate base (or bases). variants are listed here( . stands fo
 
 ### Q2
 **Using these four columns, how could you determine whether a sequencing sample contains a variant?**
+
 if under ALT a base is listed, the sample contains a variant. 
 
 ### Q3
