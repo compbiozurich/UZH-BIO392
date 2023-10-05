@@ -22,13 +22,20 @@ if under ALT a base is listed, the sample contains a variant.
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
 
-the coordinates
-information about the reads of the three patients (eg. alignment start, quality ...)
+-  APC refrence sequence
+-  VCF file -> variants
+-  GTF file: gene length, location of exons, coding sequences and transcript
+-  BAM file: number of reads, mapping quality
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-the agagagaga variant is worse because
+
+the agagagaga variant is worse because it is an exon variant, where as the aa variant is an intron variant
+the agagagaga variant is a frame shift variant
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-Your answer here
+
+large intestine tumour, neoplasm of the large intestine
+
+
