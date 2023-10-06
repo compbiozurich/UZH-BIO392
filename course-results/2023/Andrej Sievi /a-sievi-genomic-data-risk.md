@@ -26,6 +26,7 @@ Opportunities are also given in the health insurance industry. In the analyzed g
 ### --- Humans playing God - Intervention
 
 ### --- Data Security
+Where is light there is also shadow. The most critical point about the genomic Data is to assure the privacy and Datasecurity
 
 ###  --- Opinion 
 
