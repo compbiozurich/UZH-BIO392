@@ -17,4 +17,5 @@ From a very dystopian viewpoint, this all being driven by capitalism, rich peopl
 
 Briefly said, my view regarding the possibilities of using genomic data is rather pessimistic. Although I'm currently convinced that humanity won't achieve to use the new resources for the good only, I am looking forward to see how the new techniques can influence lives for the better.
 
+Reference: "Polygenic screening of embryos is here, but is it ethical?" - Philip Ball, The Guardian 10.12.21
 
