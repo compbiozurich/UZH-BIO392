@@ -8,13 +8,18 @@ people are willing to donate their DNA codes and participate in genom studies. T
 increasing health and take action at early stage, it also entails social risks. It presents the big question: Security or freedom? 
 
 ### --- Forensic convict perpetrator ---
-With the powerful statistic in processing genomic Data, it is possible to built a face of a possible suspect just from a DNA. 
+With the powerful statistic in processing genomic Data, it is possible to built a face of a suspect just from a DNA. 
+This technologie would support the forensic investigation enormously, however not every country allow this method
+due to historical cases in which the DNA samples at the crime scene could not have been distinguished certainly. 
+Also identical twins have to be considered, which share 100% of the same DNA of their siblings. But profiling:
+Determining the sex, the eye colour, the skin complexion, geopraphic origin and other specific characterstic are nowadays
+commonly used in switzerland to search for criminals. 
+However, the so-called "forensic DNA phenotyping" is also causing some controversy.
+Some scientists are skeptical of the technology's accuracy, particularly with regard to its capacity to reproduce facial images. Others claim that employing these methods increase the use of racial profiling by law enforcement and violation on privacy. 
+
+### --- Health Insuracnce and Surveillance
 
 
 
 
 
-The MinION device, a USB compatible handheld DNA sequencer, has become available in the
-last few years. Its size, speed and portability could enable many new uses for DNA sequencing. currently DNA readings from the MinION are not accurate enough to be
-used to reliably confirm the identity of human cells used in research. hus far, re-identification required an intersection of 91—195 SNPs from the MinION sketch and
-reference SNP file to reach a match probability of 99.9%.
