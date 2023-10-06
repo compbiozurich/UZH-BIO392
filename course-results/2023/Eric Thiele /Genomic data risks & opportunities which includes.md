@@ -8,7 +8,8 @@ The core idea is to create a phenotype from a single DNA nucleotide along the le
 However, displaying the phenotype is only one part of what is involved. It also involves among other areas,
 identifying illness development risks, criminology-related investigation possibilities or hereditary backgrounds. 
 
-
+With the analysis of the genome and the subsequent detection of SNPs and CNVs, there is a good chance that the risk
+of developing specific diseases may be determined. 
 
 Personally, I am of the opinion that G2P holds great promise for both the broad representation of the phenotype
 based on nucleotide sequences and the identification of people. 
