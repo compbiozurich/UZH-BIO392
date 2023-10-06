@@ -7,5 +7,8 @@ When it comes to my own genomic data, my opinion is complex. I personally wouldn
 
 Submitting my genome data for research purposes is a different thing. If the lab collecting the data could somehow ensure that the data can only be accessed in an encoded manner and noone can back-track it to myself, I would agree.
 
-Seen from a dystopian point of view, I can easily imagine a future world where genetic determinism rules the job industry as well as healthcare systems. A world in which, driven by capitalism, parents create their babies by design, given they can pay the price. The gap between rich and poor has only become wider
+But can we make every decision on this topic freely? And will it stay that way? Let's take polygenic screening of embryos as an example:
+The easier it gets to determine PRS's (polygenic risk scores) pre-natally, the more insurance companies will want to use this to save costs. Imagine a case in which insurancy companies won't cover the hospital bills of your disabled child due to you knowing the risk. That is, by your decision to carry on with the pregnancy, you basically decided to cover the costs yourself. Which also would mean that poor families basically have no free choice in this case.
+
+
 
