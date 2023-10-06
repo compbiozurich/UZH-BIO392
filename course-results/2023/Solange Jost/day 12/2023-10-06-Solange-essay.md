@@ -10,5 +10,9 @@ Submitting my genome data for research purposes is a different thing. If the lab
 But can we make every decision on this topic freely? And will it stay that way? Let's take polygenic screening of embryos as an example:
 The easier it gets to determine PRS's (polygenic risk scores) pre-natally, the more insurance companies will want to use this to save costs. Imagine a case in which insurancy companies won't cover the hospital bills of your disabled child due to you knowing the risk. That is, by your decision to carry on with the pregnancy, you basically decided to cover the costs yourself. Which also would mean that poor families basically have no free choice in this case.
 
+The biggest concern I have about all of this is that we are making decisions based purely on risk. We can never predict a childs healthstate with complete accuracy. Having a genetic predisposition never means that someone will develop a certain disease. 
+
+Stepping away from disease trait screening, there are already possibilities to screen for traits like height and intelligence level. While the results are not too promising yet, I am sure there will be much progress in this field in the future. I can easily imagine a world in which we have understood the human genome to an extent where we will know more reliable PRS's for both appearances and other traits.
+This all being driven by capitalism, rich people will be able to "model" their children while poor families won't and there will be even more differences between the two.
 
 
