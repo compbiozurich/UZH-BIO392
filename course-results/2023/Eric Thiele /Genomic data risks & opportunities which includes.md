@@ -8,16 +8,19 @@ The core idea is to create a phenotype from a single DNA nucleotide along the le
 However, displaying the phenotype is only one part of what is involved. It also involves among other areas,
 identifying illness development risks, criminology-related investigation possibilities or hereditary backgrounds. 
 
+
+
 Personally, I am of the opinion that G2P holds great promise for both the broad representation of the phenotype
 based on nucleotide sequences and the identification of people. 
 As stated in the New York Times article "I've Just Seen a (DNA-Generated) Face," computer programs that can depict faces
 only based on genetic sequences are currently quite advanced. I'm still considering the relationship between epigenetics
-and lifestyle. Since these can greatly affect phenotypic, it is nearly impossible to accurately describe the effective face.
-Despite all of this, it is already possible to create a fairly accurate facial profile that is also instructive in terms of criminology. 
+and lifestyle. Since these can greatly affect phenotypic, it is nearly impossible to describe the effective face accurately.
+Despite all of this, it is already possible to create a fairly accurate facial profile that is instructive in criminology. 
 
+On the other hand, it also poses a serious risk to privacy, even though one could view it as a double-edged sword. 
+For instance, if the focus is on personalized medicine, which theorizes that one can prescribe specific medications
+for each patient based on the analysis of their genetic data and the development of individualized, optimal treatment,
+this will have a significant positive impact on the treatment of disease, but will also require a significant intrusion into their personal data.
+On the other hand, one must be able to commit to a very high level of confidentiality, ensuring that one deals with these data
+responsibly and that they are stored in a secure manner to prevent hacking. 
 
-
-- Versicherungen 
-
-- Epigenetic, Lifestyle spricht dem entgegen 
-- Krimminalität, grosse Hilfe aber kann gut vorstellen dass man über andere legalere Wege auch sehr 
