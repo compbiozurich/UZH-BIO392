@@ -8,8 +8,12 @@ The core idea is to create a phenotype from a single DNA nucleotide along the le
 However, displaying the phenotype is only one part of what is involved. It also involves among other areas,
 identifying illness development risks, criminology-related investigation possibilities or hereditary backgrounds. 
 
-With the analysis of the genome and the subsequent detection of SNPs and CNVs, there is a good chance that the risk
-of developing specific diseases may be determined. 
+With the analysis of the genome and the subsequent detection of SNPs and CNVs, there is a good chance that the risk 
+of developing specific diseases may be determined. However, advancement in this area may also bring about some changes.
+If one assumes that somebody can predict with a high degree of certainty if someone would develop a specific disease at a given age,
+the ethical and philosophical question of whether one would want to know this information arises. 
+Apart from that, I can envision that there might be changes in the insurance policy field.
+That either leads to different policies or, in the worst case, results in patients being redirected by insurance companies. 
 
 Personally, I am of the opinion that G2P holds great promise for both the broad representation of the phenotype
 based on nucleotide sequences and the identification of people. 
@@ -25,3 +29,8 @@ this will have a significant positive impact on the treatment of disease, but wi
 On the other hand, one must be able to commit to a very high level of confidentiality, ensuring that one deals with these data
 responsibly and that they are stored in a secure manner to prevent hacking. 
 
+
+The risk and potential associated with genetic data are, consequently two sides of the same coin. As we unravel the genetic
+code and its possibilities, it is undoubtedly our responsibility to make sure that we do so with care, understanding,
+and with a strict dedication to the welfare and dignity of every person. By achieving this challenging balance,
+we may make the most of genomics' potential while respecting the core values of ethics and respect for human rights in the age of genomics.
