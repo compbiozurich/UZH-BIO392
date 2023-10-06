@@ -8,6 +8,15 @@ The core idea is to create a phenotype from a single DNA nucleotide along the le
 However, displaying the phenotype is only one part of what is involved. It also involves among other areas,
 identifying illness development risks, criminology-related investigation possibilities or hereditary backgrounds. 
 
+Personally, I am of the opinion that G2P holds great promise for both the broad representation of the phenotype
+based on nucleotide sequences and the identification of people. 
+As stated in the New York Times article "I've Just Seen a (DNA-Generated) Face," computer programs that can depict faces
+only based on genetic sequences are currently quite advanced. I'm still considering the relationship between epigenetics
+and lifestyle. Since these can greatly affect phenotypic, it is nearly impossible to accurately describe the effective face.
+Despite all of this, it is already possible to create a fairly accurate facial profile that is also instructive in terms of criminology. 
+
+
+
 - Versicherungen 
 
 - Epigenetic, Lifestyle spricht dem entgegen 
