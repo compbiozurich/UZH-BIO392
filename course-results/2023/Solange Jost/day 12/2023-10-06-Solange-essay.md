@@ -15,4 +15,6 @@ The biggest concern I have about all of this is that we are making decisions bas
 Stepping away from disease trait screening, there are already possibilities to screen for traits like height and intelligence level. While the results are not too promising yet, I am sure there will be much progress in this field in the future. I can easily imagine a world in which we have understood the human genome to an extent where we will know more reliable PRS's for both appearances and other traits.
 This all being driven by capitalism, rich people will be able to "model" their children while poor families won't and there will be even more differences between the two.
 
+Briefly said, my view regarding the possibilities of using genomic data is rather pessimistic. Although I'm currently convinced that humanity won't achieve to use the new resources for the good only, I am looking forward to see how the new techniques can influence lives for the better.
+
 
