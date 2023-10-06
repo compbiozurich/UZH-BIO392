@@ -17,16 +17,19 @@ commonly used in switzerland to search for criminals.
 However, the so-called "forensic DNA phenotyping" is also causing some controversy.
 Some scientists are skeptical of the technology's accuracy, particularly with regard to its capacity to reproduce facial images. Others claim that employing these methods increase the use of racial profiling by law enforcement and violation on privacy. 
 
-### --- Health Insuracnce and Surveillance
-Opportunities are also given in the health insurance industry. In the analyzed genom, are informations stored about the probability of getting certain diseases(e.x.: cancer, alzheimer, parkinsons etc.) . The health condition could now be classified into several status and the monthly health insurance premium would align with it. Healther people or carrier of less tendency gens would therefore pay less than people with higher risk of having a disease. 
+### --- Health Insuracnce & Surveillance
+
+Opportunities are also given in the health insurance industry. In the analyzed genom, are informations stored about the probability of getting certain diseases(e.x.: cancer, alzheimer, parkinsons etc.). The health condition could now be classified into several status and the monthly health insurance premium would align with it. Healther people or carrier of less tendency gens would therefore pay less than people with higher risk of having a disease. This injustice with the distribution of genes should be borne by the general public.
+
+### --- Humans playing God - Intervention
+
+### --- Data Security
+
+###  --- Opinion 
 
 
 
 
-
-
-
-The health status could now align with the monthly health insurance premium. Healthier people would pay more than those who are sick or have a tendency to be sick. 
 
 
 
