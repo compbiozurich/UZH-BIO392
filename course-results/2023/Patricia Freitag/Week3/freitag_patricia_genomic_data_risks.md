@@ -31,4 +31,6 @@ Advances in data analytics and the availability of other publicly accessible inf
 
 ## Own stance
 
+I think the possibilites we currently have in regards to genomic data are amazing. I am torn between the chances and risks these new technologies provide. On the one side, it is reassuring to know, that in the future personalized treatments could allow for better survival rates and I would love to . However, I personally would not want to know which diseases I'm at an elevated risk for. 
+
 ## An example 
