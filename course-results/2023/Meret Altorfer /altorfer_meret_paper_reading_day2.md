@@ -5,15 +5,12 @@ Structural genome aberrations which are present in the majority of cancer types 
 - **copy number variation (CNV)**:
 CNVs refer to structural variations in the DNA of an organism where a segment of the genome has been duplicated (gained) or deleted (lost) compared to a reference genome with normal genomic content.
 
-
-
-
 ## How will you describe or introduce progenetix (scale, datasource, cancer types and so on)
-- curates individual cancer CNA profiles and associated metadata from published ocogenmoic studies => empower integrative analyses
-- the most comprehensive representation of cancer genome CNA profiling data with 138663 including 115357 tumor copy number variation profiles
-- publicly accessible cancer genome data resource=> aims to provide a cimopehensive representation of genomic variation profiles in cancer, sample-specific CNA profiles and associated metadata, data annotation, meta-analysis and visualization
-- incooperation genomic arrays and sequencing
-- genomic prifiling data => from a large number of studies, which are based on different molecular ytogenetics and squencing based technologies
+Progenetix is a open accessible cancer genome data resource, that has the goal to provide a representation of genomic variation in cancer. The data is produced by a variety oncogenomic studies which are based on different molecular cytogenetics and squencing based technologies. Leading to a cancer genome CNA data including more than 138663 profiles including 115357 tumor copy number varaition profiles. The Progenetix database specializes in cataloging CNVs. Users can search for specific genes, genomic regions, or cancer types to access relevant data and studies within the Progenetix database.Furthermore, it offers tools for visualizing and analyzing the CNV data. For example it is possible to visualize cancer samples (of a distinct cancer type) and their chromosomal regions with their copy number gains (yellow) and copy number deletions (blue). 
+
+
+
+
 - Our current model treats the most prevalent copy number as the baseline and derives the rel- ative copy number gain and loss per sample based on the assumption that the relative gene dosage imbalance exerts pathophysiological effects in cancer biology.
 - cancer samples in Progenetix have been annotated with an ACIt code --0->788 ductubct NCIt terms => with reference to the NcIt coding system
 - visualisation options, chromosomal regions, CNA by the precentage of samples with + yellow and - as CN loss
