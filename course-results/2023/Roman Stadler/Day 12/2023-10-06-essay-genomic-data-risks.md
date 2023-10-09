@@ -23,7 +23,7 @@ This future envisions genetic profiles readily available to companies and govern
 Such a future would bear a striking resemblance to George Orwell's dystopian vision, and the idea of selecting certain traits and calling some traits more favourable than - or superior to others - has already appeared in the mid-20th century and hopefully this notion will not reappear anytime soon especially because diversity is such an important asset.
 
 In conclusion, the use of genomic profiles in various facets of society, e.g. from crime solving to potential future applications, presents a double-edged sword.
-While the technology offers benefits, such as advancing our understanding of genetic conditions, it also carries ethical and privacy concerns.
+While the technology offers benefits, such as advancing our understanding of genetic conditions, collaboration around the world, and frankly a true advancement in understanding the genetic makeup of the human body, it also carries ethical and privacy concerns.
 The fine line between the responsible use of genomic data and its potential misuse is becoming more and more challenging to discern. 
 Only through a thoughtful approach can we strike a balance between technological progress and safeguarding our fundamental values and principles.
 
@@ -32,6 +32,11 @@ Only through a thoughtful approach can we strike a balance between technological
 [^1]: [Daily Beast, 2022, Cops Might Already Have Your DNA, Without Your Consent](https://www.thedailybeast.com/cops-might-already-have-your-dna-without-your-consent)
 
 [^2]: Kozlov, Max. "The controversial embryo tests that promise a better baby." Nature 609.7928 (2022): 668-671. [DOI: 10.1038/d41586-022-02961-9](https://doi.org/10.1038/d41586-022-02961-9)
+
+
+
+
+
 
 
 
