@@ -1,8 +1,11 @@
 # Paper Reading: Progenetix
 ## What is CNV/CNA?
-- **copy number aberrations (CNAs)** => ubiquitous and frequnetly extensive structural genome baraitions, present in the majority of cancter types=> functional imoact in cancer development
-- **copy number variation (CNV)**
-- 
+- **copy number aberrations (CNAs)**: 
+Structural genome aberrations which are present in the majority of cancer types and have a functional impact in cancer   development. So CNAs typically refer to copy number changes (deletion or insertions of large genomic regions) that are considered abnormal or aberrant and are often associated with cancer.
+- **copy number variation (CNV)**:
+CNVs refer to structural variations in the DNA of an organism where a segment of the genome has been duplicated (gained) or deleted (lost) compared to a reference genome with normal genomic content.
+
+
 
 
 ## How will you describe or introduce progenetix (scale, datasource, cancer types and so on)
