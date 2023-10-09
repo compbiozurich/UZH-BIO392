@@ -24,9 +24,10 @@ Progenetix is a open accessible cancer genome data resource, that has the goal t
 
 ## What are APIs and how to use APIs in progenetix?
 - API stands for Application Programming Interface. It is a set of rules and protocols that allows different software applications to communicate and interact with each other, enabling them to share data and functionality. In the context of databases it  provides a way for developers to send queries, retrieve data, and perform various database operations programmatically [Wikipedia](https://en.wikipedia.org/wiki/API)
-- Beacon application programming interface (API) is  the API in Progenetix. The query interface for retrieving sample-specific data within Progenetix is  enabeld by the GA4 Beacon API, incorporating features from the upcoming version 2 of this standard. It is used to perform a CNA query with start and end position and filter options for cancer type, tissue location, morphology, cell line or geographic location.
+- Beacon application programming interface (API) is  used in Progenetix. The query interface for retrieving sample-specific data within Progenetix is  enabeld by the GA4 Beacon API, incorporating features from the upcoming version 2 of this standard. It is used to perform a CNA query with start and end position and filter options for cancer type, tissue location, morphology, cell line or geographic location.
 
 ## How does progenetix visualise CNA profiles?
+There are various visualisation options on the Progenetix.
 ## What do you thinkg should be improved in progenetix?
 - user interface
 - technically the query interface for retrieval of sample specific data is built on top of a forwardlooking implementation of the GA4 Beacon API with features from the upcomin version 2 of this standard
