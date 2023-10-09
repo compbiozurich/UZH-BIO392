@@ -21,6 +21,11 @@ Progenetix is a open accessible cancer genome data resource, that has the goal t
 
 
 ## What are CNV segmentations and CNV frequencies, and how to use them?
+- **CNV segmentation**: CNV segmentations refer to the division of a genome into segments based on copy number variations. It is used to identify genomic regions that exhibit alterations in copy numbers (compared to a reference genome).
+- **CNV frequencies**: Occurence (frequency) of specific CNVs within a population or a collection of samples. It quantifies how often a particular CNV is observed in a group of samples. Can be used to determine if a CNV is frequent or rather rare. 
+
+
+
 
 ## What are APIs and how to use APIs in progenetix?
 - API stands for Application Programming Interface. It is a set of rules and protocols that allows different software applications to communicate and interact with each other, enabling them to share data and functionality. In the context of databases it  provides a way for developers to send queries, retrieve data, and perform various database operations programmatically [Wikipedia](https://en.wikipedia.org/wiki/API)
@@ -30,11 +35,9 @@ Progenetix is a open accessible cancer genome data resource, that has the goal t
 **Chromosome CNA visualisation**: This visualization shows the distribution of CNAs across different chromosomes. Amplifications and deletions are usually represented using different colors eg. yellow and blue. And there is also the option to zoom in on certain chromosomes for viszualizing CNAs at a specific chromosomal location (e.g. q and p arms)
 <img width="982" alt="Bildschirmfoto 2023-10-09 um 15 50 49" src="https://github.com/compbiozurich/UZH-BIO392/assets/145456627/0fde5d41-1001-4764-add1-598194ba0477">
 
-## What do you thinkg should be improved in progenetix?
-- user interface
-- technically the query interface for retrieval of sample specific data is built on top of a forwardlooking implementation of the GA4 Beacon API with features from the upcomin version 2 of this standard
-- info.progenetix.org
-
+## What do you think should be improved in progenetix?
+- Generally to make the interface more userfriendly, it would be useful to have tutorial how to use the website (for example with videos)
+- make sure that there is as much as possible data available
 
 
 
