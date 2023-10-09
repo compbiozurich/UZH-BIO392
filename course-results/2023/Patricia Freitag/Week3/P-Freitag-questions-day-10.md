@@ -22,17 +22,21 @@ You could compare the REF and ALT columns. If they are different, this could pos
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
 
-Reference genome: 
++ Reference genome: In a FASTA file, contains the reference genome 
 
-annotation in GTF 
++ VCF: track highlights variances and distinctions within the APC gene and other regions of significance when compared to the reference genome
 
-VCF: potential variants are shown here
++ Gene Annotation: in GTF file, provides information about the locations of genes and their structural features (exons, introns, coding regions, etc.) 
+
++ Alignment: in BAM files, the sequences we wanna compare to the reference 
+
+
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
 
 The GA expansion probably has more impact than the A insertion, since the GA leads to a frameshift variant while the A leads to an intron variant. Since introns are spliced, 
-a mutation in this region does not have a considerable impact. 
+a mutation in this region does not have a considerable impact, while a frameshift mutation can have drastic effects, such as completely different amino acid codons or early stop codons which will result in an impaired gene product. 
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
