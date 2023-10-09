@@ -30,7 +30,7 @@ On the other hand, it also poses a serious risk to privacy, even though one coul
 For instance, if the focus is on personalized medicine, which theorizes that one can prescribe specific medications
 for each patient based on the analysis of their genetic data and the development of individualized, optimal treatment,
 this will have a significant positive impact on the treatment of disease, but will also require a significant intrusion into their personal data.
-On the other hand, one must be able to commit to a very high level of confidentiality, ensuring that one deals with these data
+Additionaly, one must be able to commit to a very high level of confidentiality, ensuring that one deals with these data
 responsibly and that they are stored in a secure manner to prevent hacking. 
 
 The risk and potential associated with genetic data are, consequently two sides of the same coin. As we unravel the genetic
