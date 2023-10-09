@@ -36,8 +36,8 @@ Progenetix is a open accessible cancer genome data resource, that has the goal t
 <img width="982" alt="Bildschirmfoto 2023-10-09 um 15 50 49" src="https://github.com/compbiozurich/UZH-BIO392/assets/145456627/0fde5d41-1001-4764-add1-598194ba0477">
 
 ## What do you think should be improved in progenetix?
-- Generally to make the interface more userfriendly, it would be useful to have tutorial how to use the website (for example with videos)
-- make sure that there is as much as possible data available
+- Generally to make the interface more userfriendly, it would be useful to have tutorial how to use the website (for example with videos). The [Info Progenetix] (https://info.progenetix.org) is helpful but not that understandable and detailed for new users.
+- Ensure that there is as much as possible data available.
 
 
 
