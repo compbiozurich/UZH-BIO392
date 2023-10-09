@@ -27,7 +27,10 @@ Progenetix is a open accessible cancer genome data resource, that has the goal t
 - Beacon application programming interface (API) is  used in Progenetix. The query interface for retrieving sample-specific data within Progenetix is  enabeld by the GA4 Beacon API, incorporating features from the upcoming version 2 of this standard. It is used to perform a CNA query with start and end position and filter options for cancer type, tissue location, morphology, cell line or geographic location.
 
 ## How does progenetix visualise CNA profiles?
-There are various visualisation options on the Progenetix.
+- **Chromosome CNA visualisation**: This visualization shows the distribution of CNAs across different chromosomes. Amplifications and deletions are usually represented using different colors eg. yellow and blue.
+- **Heatmap**: In this representation, each row represents a specific genomic region, and columns represent different samples or patients. The intensity of the color at each intersection the frequency of CNAs. This method is useful to identify patterns across multiple samples.
+- **Scatterplot**: can be used to show the relationship between CNAs in different genomic regions (compare the CNA of a gene of interest to another gene).
+
 ## What do you thinkg should be improved in progenetix?
 - user interface
 - technically the query interface for retrieval of sample specific data is built on top of a forwardlooking implementation of the GA4 Beacon API with features from the upcomin version 2 of this standard
