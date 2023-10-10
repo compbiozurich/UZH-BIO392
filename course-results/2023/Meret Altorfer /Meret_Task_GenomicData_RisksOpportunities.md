@@ -1,5 +1,3 @@
-# Genomic Data Risks and Opportunities
-## The Controversial Embryo Tests that Promise Healthier Baby
 
 # Genomic Data Risks and Opportunities
 ## The Controversial Embryo Tests that Promise Healthier Baby
@@ -11,7 +9,11 @@ A prime example of DNA information utilization is in screening embryos generated
 Furthermore, there are other concerns from bioethicists due to the attept of selecting disease and disabilities out of the human gene pool. Genetic variation is one of the most important concepts in evolution and  with the selection of embryos this variation could be lost, leading probably to major issues.   Another key aspect of embryo selection involves situations where the selection criteria go beyond disease-related traits. Factors like intelligence, height, eye color, and more may also play a central role in the selection process. On top of that also ethical problems occur  for example the increase  of the stigma around some conditions, especially those affecting mental health.  For some individuals with mental health disorders, their diagnosis is a more significant aspect of their identity than it might be for those with conditions like cancer or heart disease. Consequently, selecting against embryos with a risk of mental health conditions could exacerbate the associated stigma. Generally, Pre-implantation Genetic Testing for Polygenic Traits (PGT-P) might result in parents seeking an "perfect baby" instead of embracing a child as they are.
 
 
-In my opinion embryo screening is 
+In my opinion embryo screening has two sides. On one hand I think it offers many possibilities for example embryos can be tested for a specific genetic defect, for a specific structural chromosomal disorder or embryos can also be tested for spontaneously occurring numerical chromosomal disorders. Especially most of the embryos with a numerical chromosomal disorder have mostly a very low survival rate, therefore it could be beneficial to not implant them. However, the approach of PGT-P goes further and in my point of you this is not desirable. Because the technology lacks significant diagnostic capability for polygenic diseases and raises concerns about discrimination against individuals with mental health issues, as well as the risk of non-acceptance of imperfections, it leads to a complex ethical dilemmas. 
+
+
+
+
 
 
 
