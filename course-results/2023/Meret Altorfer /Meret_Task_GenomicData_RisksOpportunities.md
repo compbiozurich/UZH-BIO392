@@ -1,4 +1,5 @@
 # Genomic Data Risks and Opportunities
+## The Controversial Embryo Tests that Promise Healthier Baby
 Not finish yet!
 - - a comment about your own stance regardint the use of your genome data for healthcare/lifestyle, purposes (would you?, where/when, limitations?
 - - an example (e.g.w/reference to an article or slide that influenced or mirrrors your opinion
