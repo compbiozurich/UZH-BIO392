@@ -17,4 +17,5 @@ Different tools to use:
 National Institutes of Health (NIH)-funded resource dedicated to building a central resource that defines the clinical relevance of genes and variants for use in precision medicine and research. Search query for a specific gene (e.g. MYC) and its association with a disease. Provides curated knowledge to ClinVar.
 
 ## ClinVar
+A database of genomic variants and the interpretation of their relevance to disease.
 ClinVar is a NCBI resource of reports of the relationships among human variations and phenotypes. 
