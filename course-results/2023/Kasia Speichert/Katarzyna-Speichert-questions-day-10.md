@@ -18,7 +18,7 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
-<br> For each bam file we observe **reference genome** track to which the sequences are alligned; merged **.vcf results** with metadata and variant data for each patient, **APC_canonical_relative_coordinates**: tell where the transcript, exons, and coding sequences of the APC gene are located, and the **sequence alignment tracks** which present the whole genome alignment of the patient genome to the reference genome. 
+<br> We have the following tracks:  **reference genome** to which the sequences are alligned; **.vcf results** with metadata and variant data for each patient which compare any variants of the APC gene to the reference genome, **APC_canonical_relative_coordinates**: tell where the transcript, exons, and coding sequences of the APC gene are located, and the **sequence alignment tracks** which present the whole genome alignment of the patient genome to the reference genome. 
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
