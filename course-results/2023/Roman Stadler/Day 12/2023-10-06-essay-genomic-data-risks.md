@@ -24,7 +24,7 @@ Such a future would bear a striking resemblance to George Orwell's dystopian vis
 
 In conclusion, the use of genomic profiles in various facets of society, e.g. from crime solving to potential future applications, presents a double-edged sword.
 While the technology offers benefits, such as advancing our understanding of genetic conditions, collaboration around the world, and frankly a true advancement in understanding the genetic makeup of the human body, it also carries ethical and privacy concerns.
-The fine line between the responsible use of genomic data and its potential misuse is becoming more and more challenging to discern. 
+In my personal opinoin, the fine line between the responsible use of genomic data and its potential misuse is becoming more and more challenging to discern. 
 Only through a thoughtful approach can we strike a balance between technological progress and safeguarding our fundamental values and principles.
 
 
