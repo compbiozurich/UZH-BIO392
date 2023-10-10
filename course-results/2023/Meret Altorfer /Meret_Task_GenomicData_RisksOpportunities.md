@@ -1,5 +1,8 @@
 # Genomic Data Risks and Opportunities
 ## The Controversial Embryo Tests that Promise Healthier Baby
+
+In April 2003 the [Human Genome Project](https://www.genome.gov/human-genome-project#:~:text=Launched%20in%20October%201990%20and,improved%20the%20practice%20of%20medicine) generated the first sequence of the human genome) The Human Genome Project (HGP) is one of the greatest scientific feats in history. The project was a voyage of biological discovery led by an international group of researchers looking to comprehensively study all of the DNA (known as a genome) of a select set of organisms. Launched in October 1990 and completed in April 2003, the Human Genome Project’s signature accomplishment – generating the first sequence of the human genome – provided fundamental information about the human blueprint, which has since accelerated the study of human biology and improved the practice of medicine.
+
 Not finish yet!
 - - a comment about your own stance regardint the use of your genome data for healthcare/lifestyle, purposes (would you?, where/when, limitations?
 - - an example (e.g.w/reference to an article or slide that influenced or mirrrors your opinion
