@@ -8,7 +8,7 @@ These questions will not be graded separately, but may be considered when determ
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
-<br> In comparison to slides the graph show only a constant line at the 62 quality score. There are only some Poly A adapter sequences. The reason fro this might be the facts that all reads come from a single gene.  
+<br> In comparison to slides the graph show only a constant line at the 62 quality score. There are only some Poly A adapter sequences. The reason for this might be the facts that all reads come from a single gene and were simulated.  
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
