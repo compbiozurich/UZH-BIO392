@@ -10,8 +10,6 @@ Genetic discrimination is another critical issue, referring to the unfair treatm
 
 The question of who owns genetic data is complex, it is often not clear whether it belongs to individuals, research institutions, or healthcare providers. Balancing the interests of all parties while safeguarding individual rights and privacy is important in data ownership in genomics.
 
-## Opportunities 
-
 One of the most promising opportunities stemming from genomic data lies in the realm of healthcare. Personalized medicine has the potential to revolutionize treatment and diagnosis. Early detection and risk assessment of diseases can be enhanced through genomics. While it is crucial to provide this data for personalized treatment, there is a debate regarding the necessity of knowing one's risk factors for certain diseases, as this knowledge can sometimes cause more harm than good, psychologically speaking.
 
 Some monogenic inherited diseases can be prevented if you get genetic screening done. Genomic data can identify whether an individual carries genetic mutations
