@@ -13,7 +13,7 @@ This page collects items for the course "reading list" (and beyond). The files f
 * Schattner (2009): Genomics made easier
     - 2009-03-01___Schattner__Genomics-made-easier__Genomics.pdf
 * Gao, Huang & Baudis (2018): segment_liftover : a Python tool to convert segments between genome assemblies.
-    - [Link](https://info.baudisgroup.org/publications/2018-03-14-segment_liftover/)
+    - [Link](https://baudisgroup.org/publications/2018-03-14-segment_liftover/)
 * 1000 Genomes
     - 2015-10-01___1000-Genomes-Consortium__A%20global-reference-for-human-genetic-variation__Nature.pdf
 * Evans et al: Finding the Rare Pathogenic Variants in a Human Genome
