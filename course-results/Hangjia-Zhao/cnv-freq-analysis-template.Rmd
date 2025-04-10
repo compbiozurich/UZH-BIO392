@@ -56,6 +56,8 @@ mcols(freq)
 pgxFreqplot(freq)
 ```
 
+### By chromosome
+
 ```{r, fig.width=12, fig.height=6}
 pgxFreqplot(freq,chrom = c(8, 20), layout = c(2,1))
 ```
