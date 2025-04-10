@@ -1,0 +1,81 @@
+---
+title: "D04 R Exercise"
+author: "BaBurri"
+date: "2023-05-07"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. Load the Data
+
+```{r , include=TRUE}
+library("datasets")
+
+```
+
+## 2. Explore the Data
+
+#### Display the dataset
+```{r , include=TRUE}
+# Combine the first 3 and last 3 rows of the iris dataset
+iris_subset <- rbind(head(iris, 3), tail(iris, 3))
+
+# Display the result
+print(iris_subset)
+```
+
+#### Data type of this dataset
+```{r , include=TRUE}
+class(iris)
+```
+
+#### Display the first 6 rows of the dataset
+```{r , include=TRUE}
+head(iris)
+```
+
+#### Summary of the dataset (mean, min, max, etc.)
+```{r , include=TRUE}
+summary(iris)
+```
+
+#### Structure of the dataset (data types, number of rows/columns) 
+```{r , include=TRUE}
+str(iris)
+```
+
+## 3. Assign Variables
+
+#### Assign petal width and petal length to variables "x" and "y"  
+```{r 3. Assign Variables, include=TRUE}
+x <- iris$Petal.Width
+y <- iris$Petal.Length
+```
+
+## 4. Visualization
+
+#### Scatter-plot to display the relationship between petal width and petal length
+
+
+```{r , fig.width=5, fig.height=5, include=TRUE}
+plot(iris$Petal.Length, iris$Petal.Width, pch = 20,
+     main = "Petal Length vs. Petal Width",
+     xlab = "Petal Length",
+     ylab = "Petal Width")
+
+```
+
+#### Box-plot to display Sepal Length for different species  
+
+```{r , fig.width=5, fig.height=5, include=TRUE}
+boxplot(Sepal.Length ~ Species, data = iris,
+        main = "Sepal Length by Species",
+        xlab = "Species",
+        ylab = "Sepal Length")
+
+```
