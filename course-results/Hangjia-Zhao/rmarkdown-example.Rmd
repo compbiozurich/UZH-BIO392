@@ -1,0 +1,93 @@
+---
+title: "RMarkdown toy example"
+author: "Hangjia Zhao"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Documentation
+
+This is an **example** of R Markdown document. More details see the [documentation](http://rmarkdown.rstudio.com).
+
+Simple dot points:
+
+* Point 1
+* Point 2
+* Point 3
+
+and numeric dot points:
+
+1. Number 1
+2. Number 2
+3. Number 3
+
+and nested dot points:
+
+* A
+    * A.1
+    * A.2
+* B
+    * B.1
+    * B.2
+
+To denote a word as code or special parameters, use \` \`, such as `plot`.
+
+## Code and results
+
+### Load library
+
+```{r}
+library(datasets)
+```
+
+### Show the data
+
+```{r}
+head(iris)
+```
+
+### Plots
+
+#### simple
+
+```{r}
+x <- c(1,2,3)
+y <- c(2,4,6)
+plot(x,y)
+```
+
+#### change figure size
+
+```{r , fig.width=3, fig.height=3}
+plot(x,y)
+```
+
+## R Code chunk features
+
+When `echo` is set to false
+
+```{r echo=FALSE}
+5+5
+```
+
+When `eval` is set to false
+
+```{r eval=FALSE}
+5+5
+```
+
+Name a chunk
+
+```{r, echo=FALSE}
+Sys.sleep(10)
+```
+
+```{r special-chunk, echo=FALSE}
+Sys.sleep(10)
+```
+
+
