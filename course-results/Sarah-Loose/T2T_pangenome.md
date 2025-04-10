@@ -1,5 +1,5 @@
 
-#T2T-Sequencing and Pangenomes
+# T2T-Sequencing and Pangenomes
 
 For previous Full Genome Assembly, short, fragmented methods like shotgun sequencing were used, or like in the GRC project, </br>
 bacterial artificial chromosomes (BAC). These methods, while giving, for their time, unparalleled insights into the human genome, <br>
