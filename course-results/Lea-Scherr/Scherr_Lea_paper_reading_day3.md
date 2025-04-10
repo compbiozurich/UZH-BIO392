@@ -7,7 +7,6 @@
 - **CNA** stands for copy number abberations
     - They are somatic changes to chromosome structure that result in gain or loss in copies of sections of DNA.
     - So structural genome variations in copy number that have arisen in somatic tissue and are nearly ubiquitous in cancer.
-
 - Both can arise from deletions, insertions, or duplications resulting in chromosomal aberrations and aneuploidy.
 - They help researchers disentangle molecular mechanisms of tumorigenesis and identify & characterise molecular subtypes of cancer.
 
@@ -16,7 +15,6 @@
 - It provides:
     - an overview of mutation data in cancer, through providing sample-specific CNA profiles and associated metadata,
     - services related to data annotation, meta-analysis and visualisation.
-
 - It incorporates data from CGH (Comparative Genomic Hybridisation), that was focused on molecular cytogenetics, with WGS/WES, that were more focused on whole-genome/whole-exome sequencing. \
 Recently it introduced also data from the Gene Expression Omnibus (GEO), which was used to the majority for deposition of data.\
 Other resources include ArrayExpress, cBioPortal and TCGA.
@@ -34,7 +32,6 @@ Other resources include ArrayExpress, cBioPortal and TCGA.
     - It is limited to hierarchical concepts and is hard to apply to modern ontologies.
     - The combination of the ICD-O Morphology and Topography coding systems depicts diagnostic entities with high specificity.
 - Progenetix performed *"ICD-O—NCIt"* mappings that allow us, by adding the derived NCIt codes, to take advantage of NCIt’s hierarchical structure for data retrieval, analysis and exchange.
-
 - **UBERON** = cross-species anatomical structural ontology system
     - It is closely aligned with developmental processes. 
     - It allows integrative queries linking multiple databases. 
@@ -63,6 +60,7 @@ Divide the genome into 1Mb-size bins and then count the occurrences of gain/loss
 ## 7. What do you think should be improved in progenetix?
 - Increase the amount of data with constant updates from new studies.
 - Connect data from all over the world and prioritise the validity of the data.
+- Always keep in mind to create a simple and accessible website, that can be used intuitively.
    
 ## References
 [Paper: The Progenetix oncogenomic resource in 2021](https://academic.oup.com/database/article/doi/10.1093/database/baab043/6323245)
