@@ -13,7 +13,7 @@ Unless otherwise specified, all information is derived from the paper of the [Hu
 
 ## Pangenome and T2T 
 
-### T2T Revolution
+### T2T revolution
 
 In 2022, the Telomere-to-Telomere (T2T) Consortium published the first complete human genome, including heterochromatic regions that account for approximately 8% of the genome. This assembly is called T2T-CHM13 and includes nearly 200 million additional base pairs (3.055 Gbp in total) compared to the GRCh38 reference genome, released by the Genome Reference Consortium (GRC) in 2013. GRCh38 relied on bacterial artificial chromosome (BAC) cloning, which is not well-suited for sequencing heterochromatin, centromeres, telomeres, and repetitive regions, resulting in missing regions and a genome-wide deletion bias typical of partial assemblies. To overcome these challenges, the T2T Consortium used long-read sequencing technologies, such as Oxford Nanopore and PacBio HiFi, to assemble the genome from a homozygous [CHM13hTERT female human cell line](https://www.cellosaurus.org/CVCL_VU12) which represents a functionally haploid genome. Reanalysis of the 1000 Genomes Project (1KG) sequences using T2T-CHM13 revealed more copy number variants (CNVs) than GRCh38 and identified approximately 3.7 million additional single-nucleotide polymorphisms (SNPs).
 
