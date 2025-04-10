@@ -1,7 +1,7 @@
 # BIO392 Assignment Day 3
 
 **Reference**  
-Huang Q, Carrio-Cordo P, Gao B, Paloots R, Baudis M. *The Progenetix oncogenomic resource in 2021*. Database (Oxford). 2021 Jul 17;2021:baab043. doi: 10.1093/database/baab043. PMID: 34272855; PMCID: PMC8285936.
+Huang Q, Carrio-Cordo P, Gao B, Paloots R, Baudis M. **The Progenetix oncogenomic resource in 2021**. *Database (Oxford).* 2021 Jul 17;2021:baab043. doi: 10.1093/database/baab043. PMID: 34272855; PMCID: PMC8285936.
 
 ## 1. What is CNV/CNA?
 
