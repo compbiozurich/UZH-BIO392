@@ -28,8 +28,8 @@ Searched in Curated genes
 |HJV|Hemojuvelin BMP co-receptor|1q21.1|Bone morphogenetic protein (BMP) coreceptor|Hemochromatosis type 2A|Failure to properly regulate hepcidinlevels in blood|
 |CDKN2A|Cyclin dependent kinase inhibitor 2A|9p21.3|Negative regulator of the proliferation of normal cells|Melanoma|Cancer originating in melanocytes|
 |KRAS|KRAS proto-oncogene|12p12.1|Ras proteins bind GDP/GTP and possess intrinsic GTPase activity, regulate cell proliferation|Noonan Syndrome|Genetic defect resulting in unusual physiological development|
-|TP53|Tumor protein p53|17p13.1| Multifunctional transcription factor, acts as a tumor suppressor in many tumor types|Li-Fraumeni syndrome|Inheritable higher susceptibility to cancer|
-|FMR1|Fragile X messenger ribonucleoprotein 1|Xq27.3| Multifunctional polyribosome-associated RNA-binding protein, acts as an mRNA regulator|fragile X syndrome|Genetic disorder characterized by mild-to-moderate intellectual disability|
+|TP53|Tumor protein p53|17p13.1| Multifunctional transcription factor, acts as a tumor suppressor in many tumor types|Li-Fraumeni syndrome|Inheritable increased susceptibility to cancer|
+|FMR1|Fragile X messenger ribonucleoprotein 1|Xq27.3| Multifunctional polyribosome-associated RNA-binding protein, acts as an mRNA regulator|Fragile X syndrome|Genetic disorder characterized by mild-to-moderate intellectual disability|
 
 
 
