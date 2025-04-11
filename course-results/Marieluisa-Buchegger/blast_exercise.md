@@ -1,21 +1,22 @@
 # Exercise 😃
 *Severe acute respiratory syndrome coronavirus 2 isolate SARS-CoV-2/human/USA/NJ-NYGC-NJ-BioR-411-Ampliseq/2020, complete genome*
 ## 1. Use blast in NCBI to search the unknown nucleotide sequence 
- • Which organism does this sequence belong to? Human\
+ • Which organism does this sequence belong to? Virus\
  • Pick one blast result. What is the accession number, max score, query cover and E value? \
     - Accession number: LR877818.1 \
     - max score: 6929 \
     - query cover: 100% \
     - E value: 0.0 \
  • Which region does this sequence cover the subject sequence? (The answer could be different which depends on the accession that you choose) \
- • Is it DNA or RNA sequence? RNA \
+ 21584 - 25335
+ • Is it DNA or RNA sequence? DNA \
  • Does it encode a (part of) protein? If yes, which protein? (Hint: use different blast type)
-Yes, a Spike glycoprotein 
+Yes, a surface Spike glycoprotein 
 
 ## 2. Use blast in Uniprot to search the unknown protein sequence
  • Select the most possible one among manually reviewed entries. \
  What is its Uniprot ID? P01116\
-• What protein does this sequence come from? Ras protein\
+• What protein does this sequence come from? Ras protein (GTPase KRas)\
 • Which organism does this sequence belong to?  Homo Sapiens (Human)\
 • What is the function of this protein?\
 GTPase KRas, Ras proteins bind GDP/GTP and possess intrinsic GTPase activity. Plays an important role in the regulation of cell proliferation.
