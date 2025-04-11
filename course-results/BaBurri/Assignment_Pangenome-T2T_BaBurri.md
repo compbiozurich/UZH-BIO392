@@ -20,7 +20,7 @@ In 2022, the Telomere-to-Telomere (T2T) Consortium published the first complete 
 ### T2T is not a reference genome
 
 In contrast to GRCh38, T2T-CHM13 is not a classical reference genome because it originates from a single individual's cell line.
-Reference genomes like GRCh38 are mosaics of sequences from multiple individuals to better represent intraspecific diversity.
+Reference genomes like GRCh38 are **mosaics of sequences from multiple individuals** to better represent intraspecific diversity.
 While T2T-CHM13 enables more accurate read alignments and improved variant detection in repetitive regions it lacks the diversity representation of a true reference. To address this issue, the Human Pangenome Reference Consortium (HPRC) aimed to assemble genomes of multiple individuals with diverse population backgrounds in order to create a mosaic pangenome.
 
 ### The pangenome is a graph of many T2T assemblies
