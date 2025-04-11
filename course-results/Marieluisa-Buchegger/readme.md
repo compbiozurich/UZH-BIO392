@@ -4,3 +4,4 @@ The Graded Exercises are the following:
 - Day 3 Progenetix
 - cnv_frq_anaylsis.Rmd
 - File Formats
+- clinvar_clingen.md
