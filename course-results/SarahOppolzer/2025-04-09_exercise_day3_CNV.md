@@ -16,7 +16,11 @@
  * CNV frequencies are the percentages of samples in a population that have CNVs in genomic regions.
  * CNV segmentations: 
 
- * enome-wide scans of copy number alterations may be obtained with array-based comparative genomic hybridization (aCGH), SNP arrays and high-throughput sequencing (HTS). After proper normalization and transformation of the raw signal intensities obtained from such technologies, the next step is usually to perform segmentation to identify regions of constant copy number. Many segmentation algorithms are designed to analyse samples individually (see, e.g., [3–
+ * enome-wide scans of copy number alterations may be obtained with array-based comparative genomic hybridization (aCGH), SNP arrays and high-throughput sequencing (HTS). After proper normalization and transformation of the raw signal intensities obtained from such technologies, the next step is usually to perform segmentation to identify regions of constant copy number. Many segmentation algorithms are designed to analyse samples individually (see, e.g., [3– (Nilsen, G., Liestøl, K., Van Loo, P. et al. Copynumber: Efficient algorithms for single- and multi-track copy number segmentation. BMC Genomics 13, 591 (2012). https://doi.org/10.1186/1471-2164-13-591)
+
+t's used to detect copy number variations (CNVs) that can be associated with genetic diseases, adaptive evolution, and gene expression. 
+
+
 
 - #### What are APIs and how to use APIs in progenetix?
   “Databases can be accessed through Application Programming Interfaces - APIs. They are a set of routines, protocols, and tools that
