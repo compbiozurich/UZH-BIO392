@@ -20,7 +20,7 @@ Yes, a Spike glycoprotein
 • What is the function of this protein?\
 GTPase KRas, Ras proteins bind GDP/GTP and possess intrinsic GTPase activity. Plays an important role in the regulation of cell proliferation.
  • What is the variant associated with acute myeloid leukemia (AML) in this protein?\
- VAR_034601 -->G > GG\
+ VAR_034601 -->G > GG 
 ## 3. If you have more time, play around to feel the difference of blast service from different databases 
 For example,
  • Use Blast in NCBI to query the protein sequence --> same result \
