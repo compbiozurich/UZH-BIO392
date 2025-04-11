@@ -5,13 +5,14 @@
 |Disease|Disease description|Gene|Variants（HGVS)|
 |-------|-------------------|----|--------|
 |Hemochromatosis|a disorder that causes the body to absorb too much iron from the diet|HJV|NM_213653.4:c.187C>T|
-|Thalassemia|		|		|		|
-|Haemophilia|		|		|		|
-|Cystic Fibrosis|		|		|		|
-|Tay sachs disease|		|		|		|
-|Fragile X syndrome|		|		|		|
-|Huntington's disease|		|		|		|
+|Thalassemia|a blood disorder that causes anemia	|ATRX		|NM_000489.6:c.134-2A>G|
+|Haemophilia|a disorder where the ability of blood to clot is severely reduced	|F8		|NM_000132.4:c.670+1G>A		|
+|Cystic Fibrosis|a disease that causes thick, sticky mucus	|CFTR		|NM_000492.4:c.1891dup	|
+|Tay sachs disease|a disease caused by the absence of an enzyme that breaks down fatty substances, that then build up toxic levels that affect the nervous system		|HEXA		|NM_000520.6:c.72G>A		|
+|Fragile X syndrome|a genetic condition causing developmental problems		|FMR1		|NM_002024.6:c.413G>A		|
+|Huntington's disease|a disease were the brain nerve cells decay over time		|HTT		|NM_001388492.1:c.6250G>A		|
 
+The information was found via google (descriptions) and over ClinVar with the filters "Pathogenic" (expect: Fragile X syndrome and Huntington), "Multiple submitters" and "sort by relevance"
 
 ### Relational list using [ClinGen](https://clinicalgenome.org/)
 
