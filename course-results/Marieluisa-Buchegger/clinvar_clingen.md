@@ -2,7 +2,7 @@
 
 ### Relational list using [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)
 Filtering Criteria: Sort by Relevance, Germline Classification: Pathogenic, Review Status: Multiple Submitters
-Exception: Fragile X Syndrome & Huntington's Disease --> not pathogenic classification
+Exception: Fragile X Syndrome & Huntington's Disease - not pathogenic classification
 |Disease|Disease description|Gene|Variants（HGVS)|
 |-------|-------------------|----|--------|
 |Hemochromatosis|a disorder that causes the body to absorb too much iron from the diet|TFR2|NM_003227.4:c.2093_2096del|
