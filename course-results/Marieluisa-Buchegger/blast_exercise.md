@@ -10,7 +10,7 @@
  • Which region does this sequence cover the subject sequence? (The answer could be different which depends on the accession that you choose) \
  • Is it DNA or RNA sequence? RNA \
  • Does it encode a (part of) protein? If yes, which protein? (Hint: use different blast type)
-Yes, a Spike glycoprotein \
+Yes, a Spike glycoprotein 
 
 ## 2. Use blast in Uniprot to search the unknown protein sequence
  • Select the most possible one among manually reviewed entries. \
