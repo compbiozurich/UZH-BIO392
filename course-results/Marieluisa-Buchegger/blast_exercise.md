@@ -3,17 +3,18 @@
 ## 1. Use blast in NCBI to search the unknown nucleotide sequence \
  • Which organism does this sequence belong to? Human\
  • Pick one blast result. What is the accession number, max score, query cover and E value? \
- - Accession number: PV005664.1 \
- - max score: 6929 \
- - query cover: 100% \
- - E value: 0.0 \
+    - Accession number: PV005664.1 
+    - max score: 6929 
+    - query cover: 100% 
+    - E value: 0.0 
  • Which region does this sequence cover the subject sequence? (The answer could be different which depends on the accession that you choose) \
  • Is it DNA or RNA sequence? RNA \
  • Does it encode a (part of) protein? If yes, which protein? (Hint: use different blast type)
 Yes, a Spike glycoprotein \
 
 ## 2. Use blast in Uniprot to search the unknown protein sequence
- • Select the most possible one among manually reviewed entries. What is its Uniprot ID? P01116\
+ • Select the most possible one among manually reviewed entries. \
+ What is its Uniprot ID? P01116\
 • What protein does this sequence come from? Ras protein\
 • Which organism does this sequence belong to?  Homo Sapiens (Human)\
 • What is the function of this protein?\
