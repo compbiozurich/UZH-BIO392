@@ -1,14 +1,12 @@
 # Exercise
 *Severe acute respiratory syndrome coronavirus 2 isolate SARS-CoV-2/human/USA/NJ-NYGC-NJ-BioR-411-Ampliseq/2020, complete genome*
 ## 1. Use blast in NCBI to search the unknown nucleotide sequence \
- • Which organism does this sequence belong to? \
- Human
- 
+ • Which organism does this sequence belong to? Human\
  • Pick one blast result. What is the accession number, max score, query cover and E value? \
- Accession number: PV005664.1 \
- max score: 6929 \
- query cover: 100% \
- E value: 0.0 \
+ - Accession number: PV005664.1 \
+ - max score: 6929 \
+ - query cover: 100% \
+ - E value: 0.0 \
  • Which region does this sequence cover the subject sequence? (The answer could be different which depends on the accession that you choose) \
  • Is it DNA or RNA sequence? RNA \
  • Does it encode a (part of) protein? If yes, which protein? (Hint: use different blast type)
