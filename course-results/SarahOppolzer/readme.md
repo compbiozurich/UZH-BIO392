@@ -1,4 +1,4 @@
-### This is my folder where I will upload my hand ins.
+### This is my folder, where I will upload my hand ins.
 
 What to hand in so far:
 - Pangenomes - done
