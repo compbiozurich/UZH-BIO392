@@ -18,6 +18,7 @@ Filters: Pathogenic, multiple submitters, sorted by relevance.
 
 
 ### Relational list using [ClinGen](https://clinicalgenome.org/)
+Searched in Curated genes
 
 |Gene|Gene name|Chromosomal Location|Gene Product|Disease|Disease Description|
 |----|---------|--------------------|------------|-------|--------------------|
