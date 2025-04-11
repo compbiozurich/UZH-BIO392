@@ -1,4 +1,4 @@
-# Exercise
+# Exercise 😃
 *Severe acute respiratory syndrome coronavirus 2 isolate SARS-CoV-2/human/USA/NJ-NYGC-NJ-BioR-411-Ampliseq/2020, complete genome*
 ## 1. Use blast in NCBI to search the unknown nucleotide sequence 
  • Which organism does this sequence belong to? Human\
