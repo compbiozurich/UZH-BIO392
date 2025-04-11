@@ -1,4 +1,4 @@
-#BLAST Exercise
+# BLAST Exercise
 
 1. Use blast in NCBI to search the unknown nucleotide sequence
 - Which organism does this sequence belong to?
