@@ -8,8 +8,7 @@
 |Thalassemia|inherited microcytic, hemolytic anemias characterized by defective hemoglobin synthesis|ATRX|NM_000489.6:c.134-2A>G|
 |Haemophilia|common hereditary bleeding disorders caused by deficiencies of either clotting factor VIII or IX|F8|NM_000132.4:c.670+1G>A|
 |Cystic Fibrosis|inherited disease of the exocrine glands affecting primarily the gastrointestinal and respiratory systems|CFTR|NM_000492.4:c.1891dup|
-|Tay sachs disease|sphingolipidoses, inherited disorders of metabolism, caused by hexosaminidase deficiency that causes severe neurologic symptoms and early death|HEXA|
-NM_000520.6:c.72G>A|
+|Tay sachs disease|sphingolipidoses, inherited disorders of metabolism, caused by hexosaminidase deficiency that causes severe neurologic symptoms and early death|HEXA|NM_000520.6:c.72G>A|
 |Fragile X syndrome|a genetic abnormality on the X chromosome that leads to intellectual disability and behavioral disorders|MED12|NM_005120.3:c.3020A>G|
 |Huntington's disease|an autosomal dominant disorder characterized by chorea, neuropsychiatric symptoms, and progressive cognitive deterioration, usually beginning during middle age|PRNP|NM_000311.5:c.392G>T|
 
