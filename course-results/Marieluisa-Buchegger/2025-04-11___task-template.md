@@ -4,8 +4,8 @@
 
 |Disease|Disease description|Gene|Variants（HGVS)|
 |-------|-------------------|----|--------|
-|Hemochromatosis|a disorder that causes the body to absorb too much iron from the diet|HJV|NM_213653.4:c.187C>T|
-|Thalassemia|		|		|		|
+|Hemochromatosis|a disorder that causes the body to absorb too much iron from the diet|TFR2|NM_003227.4:c.2093_2096del|
+|Thalassemia|a genetic blood disorder characterized by reduced hemoglobin production, leading to anemia|TFR2|NM_000489.6:c.134-2A>G|
 |Haemophilia|		|		|		|
 |Cystic Fibrosis|		|		|		|
 |Tay sachs disease|		|		|		|
