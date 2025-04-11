@@ -2,7 +2,12 @@
 
 ### Relational list using [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)
 
-My filters: Germline, pathologic and with multiple submitters. (one exeption: fragile X syndrome was searched without the pathogenic filter) Then take the first listed when sorted by relevance.
+The filters I used: 
+- Germline
+- pathologic, with one exeption: fragile X syndrome was searched for without the pathogenic filter
+- multiple submitters
+
+Then I took the first listed when sorted by relevance.
 
 |Disease|Disease description|Gene|Variants（HGVS)|
 |-------|-------------------|----|--------|
@@ -27,3 +32,6 @@ My filters: Germline, pathologic and with multiple submitters. (one exeption: fr
 |TP53|tumor protein p53|17p13.1|a tumor suppressor gene, i.e., its activity stops the formation of tumors|Li-Fraumeni syndrome|a rare disorder that greatly increases the risk of developing several types of cancer, particularly in children and young adults|
 |FMR1|fragile X messenger ribonucleoprotein 1|Xq27.3|a widely expressed RNA binding protein involved in several steps of mRNA metabolism|Fragile X syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|
 ---
+
+### References
+Most of my information on genes and diseases came from [Medline](https://medlineplus.gov/?_gl=1*1bw27xt*_ga*NzY4MjE1NDMxLjE3NDQzNzEyNjU.*_ga_7147EPK006*MTc0NDM3MTI2NC4xLjEuMTc0NDM3MTcxNC4wLjAuMA..*_ga_P1FPTH9PL4*MTc0NDM3MTI2NS4xLjEuMTc0NDM3MTcxNC4wLjAuMA..).
