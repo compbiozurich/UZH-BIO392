@@ -1,6 +1,6 @@
 # 1. Use blast in NCBI to search the unknown nucleotide sequence
 ## a) Which organism does this sequence belong to?
-human, USA
+coronavirus
 
 ## b) Pick one blast result. What is the accession number, max score, query cover and E value?
 - accession number: PV005664.1
