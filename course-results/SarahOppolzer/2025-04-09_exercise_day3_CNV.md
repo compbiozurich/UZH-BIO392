@@ -13,8 +13,8 @@
   * UBERON:  is an anatomy ontology for cross-species and classifies according to traditional anatomical criteria, closely aligned with developmental processes. It includes other taxon-specific anatomical ontologies and therefore allows the integration of phenotype, functional and expression data. The Terminology contains anatomical terms in NCIt, that are mapped to equvalent terms in meaning in UBERON. Therefore UBERON and NCIt are closely related. Lately, all existing ICD-O T codes have ben mapped to UBEROn terms, which also relates them closely. (see [UBERON terminology files] (https://evs.nci.nih.gov/ftp1/UBERON/About.html) and Huang *et. al.*)
 
 - #### What are CNV segmentations and CNV frequencies, and how to use them?
-
-  
+ * CNV frequencies are the percentages of samples in a population that have CNVs in genomic regions.
+ * CNV segmentations
 
 - #### What are APIs and how to use APIs in progenetix?
   “Databases can be accessed through Application Programming Interfaces - APIs. They are a set of routines, protocols, and tools that
