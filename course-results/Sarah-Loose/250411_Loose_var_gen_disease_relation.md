@@ -13,7 +13,7 @@ Filters: Pathogenic, multiple submitters, sorted by relevance.
 |Haemophilia|Abnormal blood clotting causes prolonged bleeding post-injuries|F8|NM_000132.4:c.5961dup|
 |Cysitc Fibrosis|Gene defect causes mostly impaired mucus clearing leading to  extreme susceptibility to bacterial infections|CFTR|NM_000492.4:c.1891dup|
 |Tay Sachs Disease|inherited disease, causes fattty acid build-up|Hex A|NM_000520.6:c.72G>A |
-|Fragile X Syndrome|a genetic disorder characterized by mild-to-moderate intellectual disabilityFMR1|NM_002024.6:c.104+3_104+6del |
+|Fragile X Syndrome|a genetic disorder characterized by mild-to-moderate intellectual disability|FMR1|NM_002024.6:c.104+3_104+6del |
 |Huntington´s Disease|Huntington disease (HD) is a progressive disorder of motor, cognitive, and psychiatric disturbances|PRNP|NM_000311.5:c.392G>T |
 
 
