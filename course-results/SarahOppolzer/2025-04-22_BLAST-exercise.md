@@ -6,8 +6,7 @@
   Accession number: LR877818.1, Max Score: 6929, query cover: 100%, E value: 0.0
   
 - Which region does this sequence cover the subject sequence? (The answer could be different which depends on
-the accession that you choose)
-
+the accession that you choose) 21584 - 25335
 
 - Is it DNA or RNA sequence?
   DNA
