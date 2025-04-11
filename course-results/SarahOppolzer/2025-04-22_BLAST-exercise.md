@@ -16,11 +16,11 @@ the accession that you choose)
   unkknown nuclotide sequence
 
 ## Use blast in Uniprot to search the unknown protein sequence
-- Select the most possible one among manually reviewed entries. What is its Uniprot ID? 
-- What protein does this sequence come from?
-- Which organism does this sequence belong to? Humann
-- What is the function of this protein?
-- What is the variant associated with acute myeloid leukemia (AML) in this protein?
+- Select the most possible one among manually reviewed entries. What is its Uniprot ID? P01116 
+- What protein does this sequence come from? Ras
+- Which organism does this sequence belong to? Human
+- What is the function of this protein? Ras proteins bind GDP/GTP and possess intrinsic GTPase activity, plays an important role in the regulation of cell proliferation and in promoting oncogenic events by inducing transcriptional silencing of tumor suppressor genes (TSGs) in colorectal cancer (CRC) cells in a ZNF304-dependent manner.
+- What is the variant associated with acute myeloid leukemia (AML) in this protein? VAR_034601
 
 
 ## If you have more time, play around to feel the difference of blast service from different databases
