@@ -145,15 +145,15 @@ The table below annotates all found CNVs of this analysis based on the results f
 **Discussion**
 
 This analysis found three chromosomal locations of copy number variation 
-that are not associated to  breast cancer subtypes based on the 
+that are not associated to  breast cancer subtypes based on the referenced
 [study](https://pmc.ncbi.nlm.nih.gov/articles/PMC3224104/). This mismatch 
 could be explained by the strict 25% threshold that was used in this analysis. When we 
 investigate the degree of copy number variation for the duplications on 
-11q, 16p and 2q, we can see that the 25% threshold for duplication was only slightly exceeded.
+11q, 16p and 20q, we can see that the 25% threshold for duplication was only slightly exceeded.
 This mismatch suggests that the strict threshold does not mirror the clinical phenotype of CNVs.
 By applying the 25% threshold, this analysis was able to select chromosomes with CNVs that
 are potentially associated to breast cancer. This result suggest that we can use the 25% threshold
-for preliminary selection of potential candidates which can get evaluated afterwards by referring
-to studies that assessed the frequency of CNVs in patients with certain disease.  
+for preliminary selection of potential chromosomal candidates which can get evaluated afterwards 
+by referring to studies that assessed the frequency of CNVs in cancer patients.
 
 
