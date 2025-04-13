@@ -4,7 +4,7 @@
 -	Suitability evaluation of four different genomic file formats for storing called variants, archiving genomic data, 
 and visualizing results in genome browsers.
 - One page size estimates for four different genomic file formats.
-- Cost estimates for storing common sizes of different genomic file formats. 
+- Cost estimates for storing common sizes of four different genomic file formats. 
 
 ### Assumption for size estimates
 - One A4 Word page can hold 3'000 bytes plain text.
