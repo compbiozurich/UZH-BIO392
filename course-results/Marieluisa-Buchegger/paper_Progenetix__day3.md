@@ -1,5 +1,5 @@
 ## What is CNV/CNA? 
-*Copy Number Variations/Copy Number aberrations*: specific sequence repeats in the genome that vary between individuals. It is a form of structural variation and can be important in cancer development and progression. Sections of DNA can be duplicated or deleted. 
+*Copy Number Variations/Copy Number Aberrations*: specific sequence repeats in the genome that vary between individuals. It is a form of structural variation and can be important in cancer development and progression. Sections of DNA can be duplicated or deleted. 
 ## How will you describe or introduce Progenetix (scale, data source, cancer types and so on)?
 *Progenetix* is a derived database that focuses on CNVs and provides mutation data related to cancer. The individual sample data is curated from different sources, with the majority coming from genomic arrays from SNP platforms, as well as from CGH experiments and whole genome/exome sequencing (WGS/WES) studies. As of now, the database includes **156,871 samples** across **906 distinct cancer types**. This open resource offers key features such as local CNV aberrations, as 
 well as CNV cancer profiles and annotated references to research articles about cancer genome screening experiments.
