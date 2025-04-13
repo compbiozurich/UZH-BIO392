@@ -104,7 +104,7 @@ FASTA provides a reference sequence track in genome browsers, but does not direc
 
 ## **Summary of monthly storage costs**
 
-**Monthly storage costs sizes for different genomic file formats**
+**Monthly storage costs for common sizes of different genomic file formats**
 
 | **Format** | **Size Estimate**      | **Scale**                        | **Total Size**         | **Estimated Monthly Cost**  |
 |------------|------------------------|----------------------------------|------------------------|-----------------------------|
