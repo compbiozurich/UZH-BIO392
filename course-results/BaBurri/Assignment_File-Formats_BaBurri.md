@@ -4,10 +4,10 @@
 -	Suitability evaluation of four different genomic file formats for storing called variants, archiving genomic data, 
 and visualizing results in genome browsers.
 - One page size estimates for four different genomic file formats.
-- Cost estimates for storing common sizes of four different genomic file formats. 
+- Cost estimates for storing common scales of four different genomic file formats. 
 
 ### Assumption for size estimates
-- One A4 Word page can hold 3'000 bytes plain text.
+- One A4 Word page holds 3'000 bytes plain text.
 
 ### Assumptions for cost estimates
 - Storage costs: $0.15 per GB per month on [Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/)
@@ -98,13 +98,13 @@ FASTA provides a reference sequence track in genome browsers, but does not direc
 |------------|--------------------------|-------------------------------------|
 | **VCF**    | 136 bytes per variant    | ~22 variants per page               |
 | **BED**    | 69 bytes per region      | ~43 regions per page                |
-| **BAM**    | 0.5 bytes per base       | ~6,000 bases per page               |
-| **FASTA**  | 1 byte per base          | ~3,000 bases per page               |
+| **BAM**    | 0.5 bytes per base       | ~6'000 bases per page               |
+| **FASTA**  | 1 byte per base          | ~3'000 bases per page               |
 
 
 ## **Summary of monthly storage costs**
 
-**Monthly storage costs for common sizes of different genomic file formats**
+**Monthly storage costs for common scales of different genomic file formats**
 
 | **Format** | **Size Estimate**      | **Scale**                        | **Total Size**         | **Estimated Monthly Cost**  |
 |------------|------------------------|----------------------------------|------------------------|-----------------------------|
