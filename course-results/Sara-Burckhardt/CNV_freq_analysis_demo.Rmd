@@ -1,0 +1,83 @@
+---
+title: "CNV_freq_analysis_demo"
+author: "Sara Burckhardt"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Install packages
+
+```{r eval=FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(version = "3.20")
+
+BiocManager::install(c("pgxRpi", "GenomicRanges"))
+```
+
+## Load packags
+```{r}
+library(pgxRpi)
+library(GenomicRanges)
+```
+
+## Disease description 
+I'd like to study cervical carcinoma. In Progenetix, the corresponding NCIT code is: "NCIT:C9039". 
+
+Cervical carcinoma is a quite common cancer in females. It arises from the epithelial tissue on the cervix. These cells can start to proliferate and a malignant tumor can develop. The main cause of cervical cancer is an infection with human papillomaviruses (HPV). The virus can then trigger a precancerous stage. (Information from [USZ](https://www.usz.ch/en/disease/cervical-cancer/))
+
+I chose this cancer because I know someone that had this cancer and I was interested to see where CNVs occur in this type of cancer and what their frequency is.  
+
+
+## Access CNV frequency data from samples with esophageal adenocarcinoma 
+
+```{r}
+freq <- pgxLoader(type="cnv_frequency",filters="NCIT:C9039")
+```
+
+### To access the CNV frequency data from this object
+```{r}
+freq[["NCIT:C9039"]]
+```
+
+
+### To get metadata, use `mcol` function: 
+```{r}
+mcols(freq)
+```
+We have a sample number of 1167. 
+
+## Visualize the frequency data 
+### By genome
+```{r, fig.width=12, fig.height=6}
+pgxFreqplot(freq)
+```
+
+```{r, fig.width=12, fig.height=7}
+pgxFreqplot(freq, chrom = c(3, 4, 11), layout = c(3,1))
+```
+
+## Analysis 
+
+According to the plot (by genome), using a threshold of 25% for duplication and deletion: 1q, 3q, 5p, 20q are frequently duplicated while 3p, 4p, 11q are frequently deleted. 
+(p = short arm, q = long arm)
+
+Compared to another literature ([link](https://www.nature.com/articles/6690635)), they detected similar frequent gains and losses:
+"Recurrent losses of heterozygosity (LOH) have been detected in chromosome regions 3p14–22, 4p16, 5p15, 6p21–22, 11q23, 17p13.3 without effect on p53, 18q12–22 and 19q13, all of them suggesting the alteration of putative tumour suppressor genes not yet identified. Recurrent amplification has been mapped to 3q+ arm, with the common region in 3q24–28 in 90% of invasive carcinomas."
+
+Same as in the frequency pattern they state the duplication in 3q. They don't state other amplifications, this could be due to that the study is a bit older and the frequencies in 1q, 5p, 20q are only slightly over 25%.  
+
+For the deletions/losses 3p, 4p and 11q occur in both the literature and the frequency pattern. It seems as if they have taken a lower threshold for the losses, because for the other stated losses there is an increased frequency, although not over the set threshold of 25% (17p, 18q), in other cases as for the 5p, 6p and 19q the percentage of loss is quite low (lower than for the other chromosome arm). 
+These differences are probably also due to the age of the literature, where in the mean time more CNVs could be detected that made the pattern more accurate and decreased the impact of single CNVs. 
+
+Where we have clear overlap is for the 3q, 3p and 4p, so in these one can be sure to have frequent losses/gains. 
+
+
+
+
+
+
