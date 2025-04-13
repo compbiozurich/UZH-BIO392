@@ -1,6 +1,6 @@
 # **Asssignment by Basil Burri**
 
-### Task of this assignment
+### Tasks addressed in this assignment
 -	Suitability evaluation of four different genomic file formats for storing called variants, archiving genomic data, 
 and visualizing results in genome browsers.
 - One page size estimates for four different genomic file formats.
