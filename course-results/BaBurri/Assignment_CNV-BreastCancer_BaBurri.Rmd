@@ -1,0 +1,159 @@
+---
+title: "CNV in Breast Cancer"
+author: "Assignment by Basil Burri"
+date: "2025-04-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### **Background and aim of this analysis**
+
+Malignant tumor of breast, also referred to as Malignant Breast Neoplasm, is the
+most common global malignancy and the leading cause of cancer deaths in women
+[(Katsura et al., 2022)](https://pubmed.ncbi.nlm.nih.gov/35243878/). Copy 
+Number Variants (CNVs) contribute significantly to breast cancer susceptibility 
+in humans [(Walker et al., 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4996380/).
+Therefore, this analysis wants to investigate the CNV frequency across the all
+chromosomes from breast cancer patients available under the NCIT reference 
+"NCIT:C9335" in [Progenetix](https://progenetix.org/subset/?id=NCIT:C9335&datasetIds=progenetix).
+
+
+### **Preliminary requirements**
+
+#### Install packages
+
+For the analysis, the `pgxRpi` and `GenomicRanges` libraries from 
+the `BiocManager` package are required.
+
+BiocManager will ask, whether it should update all your packages.
+**Do not update them all. Enter _none_ into the console and press enter.**
+
+```{r eval=TRUE, message=FALSE, warning=FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(version = "3.20", update = FALSE, ask = FALSE)
+BiocManager::install(c("pgxRpi", "GenomicRanges"))
+```
+
+#### Load required libraries
+```{r eval=TRUE, message=FALSE, warning=FALSE}
+library(pgxRpi)
+library(GenomicRanges)
+```
+
+
+### **Access to CNV data from Progenetix**
+
+#### CNV frequency data from samples with Malignant Breast Neoplasm
+
+Access CNV frequency data from samples with Malignant Breast Neoplasm by using 
+the NCIT identifier. `pgxLoader` will access the CNV frequency data of the identifier 
+from the [Progenetix](https://progenetix.org/subset/?id=NCIT:C9335&datasetIds=progenetix)
+database and assign it to the object.
+
+```{r results=TRUE}
+freq <- pgxLoader(type = "cnv_frequency", filter = "NCIT:C9335")
+class(freq)
+```
+
+#### CNV frequency data from created object
+
+```{r results=FALSE}
+freq[["NCIT:C9335"]]
+```
+
+#### Show meta data
+
+Use the `mcols` function to show the meta data.
+
+```{r }
+mcols(freq)
+```
+
+
+### **Analysis of CNV data**
+
+#### CNV frequency for the whole genome
+
+Identify chromosomes which have duplications and/or deletions based on the 25% 
+CNV threshold and could therefore be potential candidates for breast cancer associated CNVs.
+
+**Potential candidates**
+
+| CNV Type           | Chromosomal Arms           |
+|--------------------|----------------------------|
+| Duplication (Gain) | 1, 8, 11, 16, 17, 20       |
+| Deletion (Loss)    | 8, 11, 13, 16, 17, 22      |
+
+
+
+```{r fig.width=22, fig.height=6}
+pgxFreqplot(freq)
+```
+
+### CNV frequency for selected chromosomes
+
+Assess the CNV location on the chromosomes which are potential candidates 
+for breast cancer associated CNVs.
+
+```{r fig.width=15, fig.height=6}
+pgxFreqplot(freq, chrom=c(1, 8, 11, 13, 16, 17, 20, 22), layout = c(2, 4))
+
+```
+
+### Results
+
+
+**Findings**
+
+Assessed arms on the chromosomes (p: small, q: long) where the duplications 
+and/or deletions are located based on th 25% CNV threshold.
+
+| CNV Type           | Chromosomal Arms                 |
+|--------------------|----------------------------------|
+| Duplication (Gain) | 1q, 8q, 11q, 16p, 17q, 20q       |
+| Deletion (Loss)    | 8p, 11q, 13q, 16q, 17p, 22q      |
+
+
+
+**Comparison to literature**
+
+A [Genome-wide Copy Number Alteration study](https://pmc.ncbi.nlm.nih.gov/articles/PMC3224104/) 
+lists the most frequent (frequency >40% in patients) Copy Number Alterations (CNAs) for various breast cancer subtypes.
+The table below annotates all found CNVs of this analysis based on the results from the study.
+
+| Chromosomal Arm | CNV Type           | Subtypes with High Frequency (>40%)                      |
+|-----------------|--------------------|----------------------------------------------------------|
+| 1q              | Duplication        | ER-positive, ER-negative, HER2-positive, Triple Negative |
+| 8q              | Duplication        | ER-positive, ER-negative, HER2-positive, Triple Negative |
+| 11q             | Duplication        | None                                                     |
+| 16p             | Duplication        | None                                                     |
+| 17q             | Duplication        | HER2-positive                                            |
+| 20q             | Duplication        | None                                                     |
+| 8p              | Deletion           | ER-positive, ER-negative, HER2-positive, Triple Negative |
+| 11q             | Deletion           | ER-positive, ER-negative, HER2-positive, Triple Negative |
+| 13q             | Deletion           | Triple Negative                                          |
+| 16q             | Deletion           | ER-positive, ER-negative, HER2-positive, Triple Negative |
+| 17p             | Deletion           | HER2-positive                                            |
+| 22q             | Deletion           | ER-negative, HER2-positive                               | 
+
+
+
+**Discussion**
+
+This analysis found three chromosomal locations of copy number variation 
+that are not associated to  breast cancer subtypes based on the 
+[study](https://pmc.ncbi.nlm.nih.gov/articles/PMC3224104/). This mismatch 
+could be explained by the strict 25% threshold that was used in this analysis. When we 
+investigate the degree of copy number variation for the duplications on 
+11q, 16p and 2q, we can see that the 25% threshold for duplication was only slightly exceeded.
+This mismatch suggests that the strict threshold does not mirror the clinical phenotype of CNVs.
+By applying the 25% threshold, this analysis was able to select chromosomes with CNVs that
+are potentially associated to breast cancer. This result suggest that we can use the 25% threshold
+for preliminary selection of potential candidates which can get evaluated afterwards by referring
+to studies that assessed the frequency of CNVs in patients with certain disease.  
+
+
