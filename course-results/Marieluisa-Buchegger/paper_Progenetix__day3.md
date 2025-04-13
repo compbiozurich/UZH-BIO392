@@ -32,7 +32,7 @@ Beacon+ API is for structured genomic queries, whereas Services API is for utili
 - Including transcriptomic and methylation data could improve the interpretation of CNVs and help connect findings to epigenetic mechanisms.
 - Constantly increasing the representation of samples from diverse ancestral and geographic backgrounds would enhance the datasets' inclusivity.
 - It might also be beneficial to establish a relationship between NCIt and UBERON, as many NCIt cancer types include anatomical references that could be mapped to UBERON terms (e.g., breast carcinoma → mammary gland). But connecting NCIt to ICD-O and ICD-O to UBERON might be sufficient enough.
-- In addition, leveraging UBERON to create a body-wide anatomical map—visually highlighting CNV gains and losses across different organs—could be an interesting way to explore cancer-related alterations visually.
+- In addition, leveraging UBERON to create a body-wide anatomical map to visually highlight CNV gains and losses across different organs, could be an interesting way to explore cancer-related alterations visually.
   
 ### Source for all the answers to the questions:
 Qingyao Huang, Paula Carrio-Cordo, Bo Gao, Rahel Paloots, Michael Baudis, The Progenetix oncogenomic resource in 2021, Database, Volume 2021, 2021, baab043, <https://doi.org/10.1093/database/baab043> \
