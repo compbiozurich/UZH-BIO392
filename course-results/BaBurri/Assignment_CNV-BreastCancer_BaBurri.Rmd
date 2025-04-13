@@ -107,7 +107,7 @@ pgxFreqplot(freq, chrom=c(1, 8, 11, 13, 16, 17, 20, 22), layout = c(2, 4))
 ### Results
 
 
-**Identyfied chromosomal locations of CNVs**
+**Identified chromosomal locations of CNVs**
 
 Assessed arms on the chromosomes (p: small, q: long) where the duplications 
 and/or deletions are located based on th 25% CNV threshold.
