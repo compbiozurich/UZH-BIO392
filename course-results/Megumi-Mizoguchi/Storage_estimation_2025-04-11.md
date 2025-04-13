@@ -38,9 +38,9 @@ This report explains how much storage is needed for sequencing data from 1000 hu
 ## Storage and Cost Estimates
 The human genome can be encoded with 2 bits per base, so the theoretical minimum size is ~715 MB per genome. However, real files are larger due to extra information and formatting.
 
-In 2021, 1 petabyte (PB) of raw storage cost around 35,000 CHF. Storing 1000 genomes in BAM format (about 100 TB total) would cost roughly 50,000 CHF in hardware alone. Full infrastructure (backups, data centers, staff, etc.) can increase costs by 5–14 times, depending on setup.
+In 2021, 1 petabyte (PB) of raw storage cost around 35,000 CHF. Storing 1000 genomes in BAM format (about 100 TB total) would cost ~50,000 CHF in hardware alone. Full infrastructure (backups, data centers, staff, etc.) can increase costs by 5–14 times, depending on setup.
 
-| Format    | Size per Genome | 1000 Genomes  | Est. Hardware Cost     | Est. Full Infra Cost       |
+| Format    | Size per Genome | 1000 Genomes  | Hardware Cost     | Full Infra Cost       |
 |-----------|------------------|----------------|--------------------------|------------------------------|
 | **SAM**   | ~150 GB           | ~150 TB        | CHF 50,000–70,000        | CHF 300,000–700,000          |
 | **BAM**   | ~100 GB           | ~100 TB        | CHF 35,000–50,000        | CHF 200,000–500,000          |
