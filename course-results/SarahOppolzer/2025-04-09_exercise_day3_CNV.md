@@ -13,26 +13,24 @@
   * UBERON:  is an anatomy ontology for cross-species and classifies according to traditional anatomical criteria, closely aligned with developmental processes. It includes other taxon-specific anatomical ontologies and therefore allows the integration of phenotype, functional and expression data. The Terminology contains anatomical terms in NCIt, that are mapped to equvalent terms in meaning in UBERON. Therefore UBERON and NCIt are closely related. Lately, all existing ICD-O T codes have ben mapped to UBEROn terms, which also relates them closely. (see [UBERON terminology files] (https://evs.nci.nih.gov/ftp1/UBERON/About.html) and Huang *et. al.*)
 
 - #### What are CNV segmentations and CNV frequencies, and how to use them?
- * CNV frequencies are the percentages of samples in a population that have CNVs in genomic regions.
- * CNV segmentations: 
-
- * enome-wide scans of copy number alterations may be obtained with array-based comparative genomic hybridization (aCGH), SNP arrays and high-throughput sequencing (HTS). After proper normalization and transformation of the raw signal intensities obtained from such technologies, the next step is usually to perform segmentation to identify regions of constant copy number. Many segmentation algorithms are designed to analyse samples individually (see, e.g., [3– (Nilsen, G., Liestøl, K., Van Loo, P. et al. Copynumber: Efficient algorithms for single- and multi-track copy number segmentation. BMC Genomics 13, 591 (2012). https://doi.org/10.1186/1471-2164-13-591)
-
-t's used to detect copy number variations (CNVs) that can be associated with genetic diseases, adaptive evolution, and gene expression. 
-
-
+   * CNV frequencies are the percentages of samples in a population that have CNVs in genomic regions. With the CNV frequencies, the distribution of CNVs across different populations can be analyzed and patterns of variation and maybe associations with phenotypic traits can identified (see Ionita-Laza *et. al.*).
+   * CNV segmentations: CNV segments can be defined as partial regions of a CNV and they enable   comparisons of CNVs between populations of interest. The CNV segments can be genotyped and the genotype frequency can be calculated. Application of CNV segment analysis has contributed to the identification of multiple regions and genes that may play roles in diseases, body traits, and breed differentiation (see Zhou *et. al.*).
 
 - #### What are APIs and how to use APIs in progenetix?
   “Databases can be accessed through Application Programming Interfaces - APIs. They are a set of routines, protocols, and tools that
   specifies how software components interact, to exchange data and processing capabilities. Web APIs provide a machine readable response
   to queries over HTTP. Bioinformatic applications frequently make use of web APIs for data retrieval or genome browser APIs for data display"
   (see lecture 1 BIO 390)
+  In Progenetix, some different APIs are implemented to facilitate access to the database. 
 
 - #### How does progenetix visualize CNA profiles?
-
--  #### What do you think should be iproved in progenetix?
-
+  When using Progenetix to, for example, look at one specific cancer type's CNVs, you find Histograms, showing the frequencies of Copy Number Gains and Copy Number Losses for the 22 autosomes.
+  
+-  #### What do you think should be improved in progenetix?
+  * Maybe from include more data on rare type cancers, the research on those diseases would benefit. However, since those are rare, I assume there is not that much data accessible. 
   
 full text article references:
 Zarrei, M., MacDonald, J., Merico, D. et al. A copy number variation map of the human genome. Nat Rev Genet 16, 172–183 (2015). https://doi.org/10.1038/nrg3871
 Qingyao Huang, Paula Carrio-Cordo, Bo Gao, Rahel Paloots, Michael Baudis, The Progenetix oncogenomic resource in 2021, Database, Volume 2021, 2021, baab043, https://doi.org/10.1093/database/baab043
+Ionita-Laza I, Laird NM, Raby BA, Weiss ST, Lange C. On the frequency of copy number variants. Bioinformatics. 2008 Oct 15;24(20):2350-5. doi: 10.1093/bioinformatics/btn421. Epub 2008 Aug 8. PMID: 18689430; PMCID: PMC2562008.
+Zhou, Y., Bickhart, D.M., Liu, G.E. (2018). Statistical Detection of Genome Differences Based on CNV Segments. In: Bickhart, D. (eds) Copy Number Variants. Methods in Molecular Biology, vol 1833. Humana Press, New York, NY. https://doi.org/10.1007/978-1-4939-8666-8_3
