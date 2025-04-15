@@ -38,7 +38,8 @@ For each SNP, answer the following:
 2. Intronic
 3. C/G/T(forward strand)
 4. NA
-5. 
+5. ![image](https://github.com/user-attachments/assets/95e3210d-7263-4bfe-89a8-ff0665caed2a)
+
 
 
 
