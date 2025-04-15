@@ -44,7 +44,7 @@ For each SNP, answer the following:
    Here I focus on Clopidogrel active metabolite levels because it is well known the relation of SNPs in CYP2C19 to Clopidogrel effectiveness.
    |Variant and risk allele |p-value |Effect size (beta)|
    |--------|---------|---------|
-   |rs7915414-A |3 x 10^(-14)|6.01 unit decrease|
+   |rs7915414-A |3 × 10⁻¹⁴|6.01 unit decrease|
     
 
     [Study: GCST004264](https://www.ebi.ac.uk/gwas/studies/GCST004264)
