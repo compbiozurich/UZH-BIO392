@@ -11,7 +11,7 @@ Below is a list of curated SNPs for exploration:
 | 1       | rs7903146   | *TCF7L2*       | Type 2 Diabetes      |
 | 2       | rs1426654   | *SLC24A5*      | Skin Pigmentation    |
 | 3       | rs429358    | *APOE*         | Alzheimer's Disease  |
-| 4       | rs334       | *HBB*          | Sickle Cell Anemia   |
+| 4       | rs334       | *HBB*          | Sickle Cell (abnormal red cells)   |
 | 5       | rs12913832  | *HERC2*        | Eye Color            |
 
 ---
