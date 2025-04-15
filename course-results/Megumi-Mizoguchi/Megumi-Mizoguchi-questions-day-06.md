@@ -48,6 +48,7 @@ For each SNP, answer the following:
     
 
     [Study: GCST004264](https://www.ebi.ac.uk/gwas/studies/GCST004264)
+   
    [Backman, et al. **Genome-wide analysis of clopidogrel active metabolite levels identifies novel variants that influence antiplatelet response.** *Pharmacogenet Genomics.* 2017](https://journals.lww.com/jpharmacogenetics/fulltext/2017/04000/genome_wide_analysis_of_clopidogrel_active.5.aspx)
 
    The study is on clopidogrel, a drug used to reduce atherothrombotic events in patients with acute coronary syndromes. It highlights that up to 40% of patients do not benefit adequately from clopidogrel therapy, and a GWAS was conducted to identify genetic variants affecting clopidogrel metabolism, focusing on circulating active metabolite levels in 513 individuals, finding significant associations with variants on chromosomes 3p25 and 17q11, and a locus near the CYP2C9-CYP2C18-CYP2C19 gene cluster was notably associated with active metabolite concentration.
