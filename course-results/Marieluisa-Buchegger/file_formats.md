@@ -29,11 +29,11 @@
   - Security, Access control: encryption and private access
     
 ## File format purposes
-- VCF: storage of genome variants &rarr store variant results, as well as good archival use and display of annotated variants \
-- SAM: text-based alignment &rarr store mapping information for sequences only temporarily, not used as a storage format as it is much more bigger than BAM, not - ideal for browser visualization \
-- BAM:  Binary version of SAM, compressed &rarr for storage, archival purposes and browser visualization \
-- FASTA:  storing and exchanging sequence data &rarr reference data storage, archival use and browser visualization of references \
-- FASTQ:contains raw sequencing reads + quality stores of the nucleotides &rarr archival use, too raw for browsers \
+- VCF: storage of genome variants &rarr store variant results, as well as good archival use and display of annotated variants 
+- SAM: text-based alignment &rarr store mapping information for sequences only temporarily, not used as a storage format as it is much more bigger than BAM, not - ideal for browser visualization 
+- BAM:  Binary version of SAM, compressed &rarr for storage, archival purposes and browser visualization 
+- FASTA:  storing and exchanging sequence data &rarr reference data storage, archival use and browser visualization of references 
+- FASTQ:contains raw sequencing reads + quality stores of the nucleotides &rarr archival use, too raw for browsers 
  
 ## Sources:  
 File sizes: <https://3billion.io/blog/big-data-among-big-data-genome-data> \
