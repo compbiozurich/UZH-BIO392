@@ -1,6 +1,4 @@
 # BIO392 - Exercise
-These questions are designed to test your understanding of the course. Please change the name of this file to \<First name\>-\<Last name\>-questions-day-06.md, and upload it to your folder in the course GitHub.
-
 ## 🧬 SNP Exploration 
 Below is a list of curated SNPs for exploration: 
 
