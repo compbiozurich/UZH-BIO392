@@ -19,7 +19,7 @@ For each SNP, answer the following:
 | 4       | rs334       | *HBB*          | Sickle Cell Anemia   |11:5227002 |Missense variant |T A/C/G |NA |
 | 5       | rs12913832  | *HERC2*        | Eye Color            |15:28120472 |Intron variant |G A/C |NA |
 
-5. What is the allele frequency of this SNP in different populations (e.g., AFR, EUR, EAS)? What differences do you observe? You may include figures (e.g., allele frequency charts from Ensembl) to illustrate your observations.
+**5. What is the allele frequency of this SNP in different populations (e.g., AFR, EUR, EAS)? What differences do you observe? You may include figures (e.g., allele frequency charts from Ensembl) to illustrate your observations.**
     1. rs7903146
         ~70% has C allele and ~30% has T allele, and among EAS (East Asian), 98% of the population has C allele and only 2% has T allele. [Population genetics of rs7903146](https://www.ensembl.org/Homo_sapiens/Variation/Population?db=core;r=10:112998090-112999090;v=rs7903146;vdb=variation;vf=654566937)
     
@@ -36,7 +36,7 @@ For each SNP, answer the following:
         ~80% of the all populations has the allele A and the mainority (~20%) has G. In AFR and EAS population, the majority (>95%) has allele A, in AMR and SAS the majority (80 and 93% respectively) has A allale and in EUR 100% is A allele. [Population genetics of rs12913832](https://oct2024.archive.ensembl.org/Homo_sapiens/Variation/Population?db=core;v=rs12913832;vdb=variation)
 
 
-6. Choose one GWAS study involving the SNP and describe the associated trait or disease, including the reported p-value, effect size (OR or beta), publication details, predicted functional consequences, and include a link to the study from the GWAS Catalog.
+**6. Choose one GWAS study involving the SNP and describe the associated trait or disease, including the reported p-value, effect size (OR or beta), publication details, predicted functional consequences, and include a link to the study from the GWAS Catalog.**
    
     SNP in CYP2C19 gene (cytochrome P450 family 2 subfamily C member 19) [Gene: CYP2C19](https://www.ebi.ac.uk/gwas/genes/CYP2C19)
 
