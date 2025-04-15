@@ -24,7 +24,7 @@ The role that STR mutations play in cancer is an area of active investigation. F
 
 ## Setting up  
 
-To get started, download the `project-day-08.tar.gz` archive from the course GitHub. Save it to a directory of your choice, and unzip it (either by double clicking it in the Finder, or by running `tar -xvzf project-day-08.tar.gz` from the command line). Navigate to the `project-day-08` folder in a terminal and set up the conda environment as follows:  
+To get started, download the `project-day-07.zip` archive from the course GitHub. Save it to a directory of your choice, and unzip it. Navigate to the `project-day-07` folder in a terminal and set up the conda environment as follows:  
 
 ```sh
 conda env create -f environment.yaml
@@ -50,7 +50,7 @@ This will open the fastq program. Click on `File`, `Open...` and open all the se
 
 ## Short read alignment and processing
 
-Navigate to the folder `project-day-08/scripts/` in your terminal. Here, you will find several numbered bash scripts to run the bioinformatics workflow for this project. The first script `00_index_reference.sh` will generate several indices of the reference genome, which we will need to efficiently perform downstream analyses such as alignment and variant calling. Run the script from your terminal: `./00_index_reference.sh`, confirm that index files appear next to the reference sequence in `data/reference`, and **answer Q3**.
+Navigate to the folder `project-day-07/scripts/` in your terminal. Here, you will find several numbered bash scripts to run the bioinformatics workflow for this project. The first script `00_index_reference.sh` will generate several indices of the reference genome, which we will need to efficiently perform downstream analyses such as alignment and variant calling. Run the script from your terminal: `./00_index_reference.sh`, confirm that index files appear next to the reference sequence in `data/reference`, and **answer Q3**.
 
 **Important: make sure you are in the `scripts/` directory when running the scripts, otherwise they will not work properly**
 
