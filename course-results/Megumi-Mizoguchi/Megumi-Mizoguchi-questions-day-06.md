@@ -20,6 +20,7 @@ For each SNP, answer the following:
 | 5       | rs12913832  | *HERC2*        | Eye Color            |15:28120472 |Intron variant |G A/C |NA |
 
 **5. What is the allele frequency of this SNP in different populations (e.g., AFR, EUR, EAS)? What differences do you observe? You may include figures (e.g., allele frequency charts from Ensembl) to illustrate your observations.**
+
     1. rs7903146
         ~70% has C allele and ~30% has T allele, and among EAS (East Asian), 98% of the population has C allele and only 2% has T allele. [Population genetics of rs7903146](https://www.ensembl.org/Homo_sapiens/Variation/Population?db=core;r=10:112998090-112999090;v=rs7903146;vdb=variation;vf=654566937)
     
