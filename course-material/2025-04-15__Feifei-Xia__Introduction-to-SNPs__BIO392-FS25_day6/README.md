@@ -22,7 +22,7 @@ Please investigate each of SNP using the following databases:
 - **Ensembl Variant Browser**: https://www.ensembl.org
   
 ## 📌 **Tip**
-- Use the LocusZoom and population frequency features in Ensembl to explore regulatory impact and population distribution!
+- Use the LocusZoom in GWAS Catalog and population frequency features in Ensembl to explore regulatory impact and population distribution!
 - Refer to this link for guidance on the GWAS Catalog, https://www.ebi.ac.uk/training/online/courses/gwas-catalogue-exploring-snp-trait-associations/
 
 ## 🔍 Tasks
