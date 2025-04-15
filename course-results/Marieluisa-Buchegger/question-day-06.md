@@ -38,7 +38,8 @@ For each SNP, answer the following:
 2. Intronic
 3. C/G/T(forward strand)
 4. NA
-5. ![image](https://github.com/user-attachments/assets/95e3210d-7263-4bfe-89a8-ff0665caed2a)
+5. C is the most frequent allele. However, in European and Southasian populations the T occurs in ~30% of the sub-population ![image](https://github.com/user-attachments/assets/95e3210d-7263-4bfe-89a8-ff0665caed2a)
+6. This study is about trying differen electronic medical record systems to genetically identify Type 2 Diabetes.  <https://www.ebi.ac.uk/gwas/studies/GCST001326>
 
 
 
