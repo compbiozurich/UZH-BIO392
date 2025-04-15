@@ -13,7 +13,7 @@ For each SNP, answer the following:
   
 | SNP (rsID)   | Chromosome and position | Variant Type | Reference/ alternate allels| MAF | 
 | ------------ | ----------------------- | -------------| -------------------------- | --- | 
-| rs7903146    | 10q25.2, 10:112998590 fw |intron variant| C/G/T(forward strand)    |0.40| 
+| rs7903146    | Chromosome 10:112998590 fw |intron variant| C/G/T(forward strand)    |0.40| 
 | rs1426654    | Chromosome 15:48134287 fw| missense variant|A/G/T, Ancestral: G    |0.50|
 | rs429358     | Chromosome 19:44908684 fw|missense variant |T/C, Ancestral: C      |0.38|
 | rs334        | Chromosome 11:5227002 fw | missense variant |T/A/C/G               |0.14|
