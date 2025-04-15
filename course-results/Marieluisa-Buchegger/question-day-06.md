@@ -34,6 +34,24 @@ For each SNP, answer the following:
 6. Choose one GWAS study involving the SNP and describe the associated trait or disease, including the reported p-value, effect size (OR or beta), publication details, predicted functional consequences, and include a link to the study from the GWAS Catalog.
 
 ### SNP 1
+### **SNP 1**
+
+| Attribute                   | Value                                                                 |
+|----------------------------|------------------------------------------------------------------------|
+| **Cytogenetic Region**     | 10q25.2                                                                |
+| **Location**               | 10:112998590                                                           |
+| **Variant Type**           | Intronic                                                               |
+| **Alleles**                | C/G/T                                                                  |
+| **Minor Allele Frequency** | 0.40                                                                   |
+| **Population Notes**       | C is most frequent. T ~30% in European and South Asian populations.    |
+|                            | ![image](https://github.com/user-attachments/assets/95e3210d-7263-4bfe-89a8-ff0665caed2a) |
+| **Study Info**             | Study on EMRs for Type 2 Diabetes detection using rs7903146-T          |
+| **p-value**                | 2 × 10⁻¹⁵                                                              |
+| **Odds Ratio (OR)**        | 1.46                                                                   |
+| **Predictive Value**       | 98% / 100% PPV                                                         |
+| **Journal**                | *J AM Med Inform Assoc*                                                |
+| **Publication Date**       | 2011-11-19                                                             |
+| **Study Link**             | [Link](https://www.ebi.ac.uk/gwas/studies/GCST001326) 
 1. Cytogenetic Region: 10q25.2, Location: 10:112998590 
 2. Intronic
 3. C/G/T
