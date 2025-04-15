@@ -32,7 +32,7 @@ For each SNP, answer the following:
 2. What is the variant type? (e.g., intronic, missense)
 3. What are the reference and alternate alleles?
 4. What is the minor allele frequency (MAF)?
-5. What is the allele frequency of this SNP in different populations (e.g., AFR, EUR, EAS)? What differences do you observe?
+5. What is the allele frequency of this SNP in different populations (e.g., AFR, EUR, EAS)? What differences do you observe? You may include figures (e.g., allele frequency charts from Ensembl) to illustrate your observations.
 6. Choose one GWAS study involving the SNP and describe the associated trait or disease, including the reported p-value, effect size (OR or beta), publication details, predicted functional consequences, and include a link to the study from the GWAS Catalog.
 
 
