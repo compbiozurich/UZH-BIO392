@@ -33,6 +33,12 @@ For each SNP, answer the following:
 5. What is the allele frequency of this SNP in different populations (e.g., AFR, EUR, EAS)? What differences do you observe? You may include figures (e.g., allele frequency charts from Ensembl) to illustrate your observations.
 6. Choose one GWAS study involving the SNP and describe the associated trait or disease, including the reported p-value, effect size (OR or beta), publication details, predicted functional consequences, and include a link to the study from the GWAS Catalog.
 
+### SNP 1
+1. 10q25.2
+2. Intronic
+3. C/G/T(forward strand)
+4. NA
+5. 
 
 
 
