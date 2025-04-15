@@ -35,6 +35,34 @@ For each SNP, answer the following:
 * Choose one GWAS study involving the SNP and describe the associated trait or disease, 
 including the reported p-value, effect size (OR or beta), publication details, predicted functional consequences, and include a link to the study from the GWAS Catalog.
 
+**Title:**
+Use of diverse electronic medical record systems to identify genetic risk for type 2 diabetes within a genome-wide association study.
+
+**Authors:**
+Kho AN, Hayes MG Orcid profile, Rasmussen-Torvik L, Pacheco JA Orcid profile, Thompson WK, Armstrong LL, Denny JC Orcid profile, Peissig PL, Miller AW, Wei WQ, Bielinski SJ, Chute CG, Leibson CL, Jarvik GP, Crosslin DR, Carlson CS, Newton KM, Wolf WA, Chisholm RL, Lowe WL
+
+
+**PubMed ID:** 22101970
+
+[Pubmed Link](https://pubmed.ncbi.nlm.nih.gov/22101970/)
+
+
+**Trait/ Disease:** Type 2 diabetes, Diabetis Mellitus
+
+**P-value:** 2 x 10-15
+
+**Study Accession:** GCST001326
+ [GAWS Link](https://www.ebi.ac.uk/gwas/studies/GCST001326)
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+## Ignore below, this is from ensemble
 [Study Link](https://europepmc.org/article/PMC/10921165) </br>
 Ramos-Lopez O. Genotype-based precision nutrition strategies for the prediction and clinical management of type 2 diabetes mellitus. World Journal of Diabetes. 2024 Feb;15(2):142-153. DOI: 10.4239/wjd.v15.i2.142. PMID: 38464367; PMCID: PMC10921165. 
 
