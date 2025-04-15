@@ -37,6 +37,7 @@ For each SNP, answer the following:
 
 
 6. Choose one GWAS study involving the SNP and describe the associated trait or disease, including the reported p-value, effect size (OR or beta), publication details, predicted functional consequences, and include a link to the study from the GWAS Catalog.
+   
     SNP in CYP2C19 gene (cytochrome P450 family 2 subfamily C member 19) [Gene: CYP2C19](https://www.ebi.ac.uk/gwas/genes/CYP2C19)
     Reported traits: Clopidogrel active metabolite levels, Acenocoumarol maintenance dosage, etc. Here I focus on Clopidogrel active metabolite levels because it is well known the relation of SNPs in CYP2C19 to Clopidogrel effectiveness.
     Variant and risk allele: rs7915414-A	
