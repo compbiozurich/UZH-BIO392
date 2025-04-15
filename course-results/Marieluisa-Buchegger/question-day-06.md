@@ -33,7 +33,7 @@ For each SNP, answer the following:
 5. What is the allele frequency of this SNP in different populations (e.g., AFR, EUR, EAS)? What differences do you observe? You may include figures (e.g., allele frequency charts from Ensembl) to illustrate your observations.
 6. Choose one GWAS study involving the SNP and describe the associated trait or disease, including the reported p-value, effect size (OR or beta), publication details, predicted functional consequences, and include a link to the study from the GWAS Catalog.
 
-### **SNP 1** | 1       | rs7903146   | *TCF7L2*       | Type 2 Diabetes      |
+### **SNP 1**  rs7903146 
 
 | Attribute                   | Value                                                                 |
 |----------------------------|------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ For each SNP, answer the following:
 | **Study Link on GWAS catalog**             | [Link](https://www.ebi.ac.uk/gwas/studies/GCST001326)   |
 
 
-### **SNP 2**
+### **SNP 2** rs1426654
 
 | Attribute                   | Value                                                                 |
 |----------------------------|------------------------------------------------------------------------|
@@ -73,7 +73,7 @@ For each SNP, answer the following:
 | **Study Link**             | [Link](https://www.ebi.ac.uk/gwas/studies/GCST005188)
 
 
-### **SNP 3**
+### **SNP 3** rs429358
 
 | Attribute                   | Value                                                                 |
 |----------------------------|------------------------------------------------------------------------|
@@ -94,7 +94,7 @@ For each SNP, answer the following:
 | **Study Link**             | [Link](https://www.ebi.ac.uk/gwas/studies/GCST009020)                  |
 
 
-### **SNP 4**
+### **SNP 4** rs334
 
 | Attribute                   | Value                                                                 |
 |----------------------------|------------------------------------------------------------------------|
@@ -115,7 +115,7 @@ For each SNP, answer the following:
 
 
 
-### **SNP 5**
+### **SNP 5** rs12913832
 
 | Attribute                   | Value                                                                 |
 |----------------------------|------------------------------------------------------------------------|
