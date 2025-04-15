@@ -10,24 +10,29 @@ Whole genome sequencing - WGS - and whole exome sequencing - WES - are two of th
 compression" for genomic annotations which rely on the notion of "assessed variant in a population". It is complex to interpret, but there is no replacement in sight (but new versions) (see BIO 390, lecture 1). It was initially introduced by the 1000 Genomes Project to store the most prevalent types of genomic sequence variation, such as SNPs and small INDELS, enriched by annotations. VCF file is text file and contains meta-information (header) lines and data lines.
 
 - FASTA: FASTA format is a text based format and has been standard format for nucleotide sequence since the first generation sequencing. For next-generation sequencing, it is the standard format for reference genome sequences used by mapping/alignment software tools. A FASTA file starts with a header line followed by lines of sequence. The header line begins with a “>” sign for sequence identifier and may contain optional descriptive information. Sequence lines consist of characters representing nucleotide bases in the sequence and are usually no more than 80 characters per line, but there are  no limitation for total number of lines. Same as sequence in FASTQ files, each nucleotide base is encoded as a single character (one of A, T, G, C, and N if undetermined, with case insensitive). FASTA format can be used to display sequence of a single gene, a single chromosome, or multiple ones.
-- 
-### How much computer storage is required for 1000 Genomes
+(see Zhang H.)
 
-|File Type|WES|WGS|
+### How much computer storage is required for the different file formats?
+
+|File Type|WES (100x)|WGS (30x)|
 |-------|-------------------|----|
-|SAM|||
-|BAM|||
-|VCF|||
-|FASTA|||
+|SAM|	13GB|	180GB|
+|BAM|8GB|100GB|
+|VCF|	0.1GB|1GB|
+
+(see [source] (https://3billion.io/blog/big-data-among-big-data-genome-data)
+
+### Cost factors
+- Cost estimates for a single WES test ranged from $555 to $5,169
+- Cost estimates for a single WGS test ranged from $1,906 to $24,810
+
+So as discussed before, WES is cheaper than WGS, since we only sequence parts and not the whole genome. 
 
 
-*
-- Associated costs
-- Cost factors
 - Raw Storage costs
-- Familiarize with VCF format
 
-➡specification in article collection
+
+
 
 Please provide 1-page size estimates and reasoning for the use of the different file types 
 (i.e. which would you use for storing called variants, which for full archival purposes, browser
