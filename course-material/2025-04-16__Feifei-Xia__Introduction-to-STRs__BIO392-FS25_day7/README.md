@@ -2,7 +2,7 @@
 
 In this exercise, your goal is to identify the STR locus with the highest number of unique allele lengths across samples from the 1000 Genomes Project.
 
-## Import STRs 
+### Import STRs 
 
 The database [WebSTR](https://webstr.ucsd.edu/) provides programmatic access to the data using a RESTful API, documentation on endpoints is available on the main page: https://webstr-api.lsfm.zhaw.ch/docs. Use the following code to retrieve STRs near the **APC** gene:
 
@@ -15,24 +15,24 @@ df_repeats = pd.DataFrame.from_records(resp.json())
 ```
 This will return STRs from both panels `ensembleTR` and `gangstr_crc_hg38`. 
 
-## Filter STRs
+### Filter STRs
 
 - Panel selection: Choose the panel relevant to your analysis.
 - Repeat unit size: Keep only STRs with period = 1, as these are generally more polymorphic.
 
-## Retrieve Allele Frequencies
+### Retrieve Allele Frequencies
 
 For the filtered STRs, use the following endpoint to retrieve allele frequencies:
 ```
 https://webstr-api.lsfm.zhaw.ch/allfreqs/
 ```
-## Find the Most Polymorphic STR
+### Find the Most Polymorphic STR
 
 - Count the number of unique allele lengths for each STR.
 - Identify the STR locus with the highest number of alleles.
 - Report the following information for this STR locus: Chromosome, start, end positions
 
-## Visualize Allele Frequencies
+### Visualize Allele Frequencies
 
 - Create a bar plot to visualize the allele frequency distribution:
 - Go to [WebSTR](https://webstr.ucsd.edu/), search using the chromosome and coordinates of the STR locus you found and check if the allele frequency distribution matches what you retrieved via the API
