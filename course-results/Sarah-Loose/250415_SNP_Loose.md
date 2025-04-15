@@ -45,4 +45,17 @@ Globally, type 2 diabetes mellitus (T2DM) is one of the most common metabolic di
 
 ### From: GENETIC POLYMORPHISMS AS BIOMARKERS OF GLYCEMIC RESPONSES TO DIETARY ADVICE
 
-Also, obese individuals who were homozygous for the T-risk allele of the transcription factor 7 like 2 (TCF7L2) rs7903146 polymorphism and consumed a high-fat (40%-45% E) diet, underwent smaller reductions in HOMA-estimated insulin resistance (HOMA-IR)[44].
+Also, obese individuals who were homozygous for the T-risk allele of the transcription factor 7 like 2 (TCF7L2) rs7903146 polymorphism and consumed a high-fat (40%-45% E) diet, underwent smaller reductions in HOMA-estimated insulin resistance (HOMA-IR)[^44].
+
+### From cited study in review:
+Transcription factor 7-like 2 (TCF7L2) rs7903146 associates with type 2 diabetes and may operate via impaired glucagon-like peptide 1 secretion, which is stimulated more by fat than by carbohydrate ingestion.
+
+### Design: 
+European, obese participants (n = 771) were randomly assigned to receive an HF or an LF diet. Body weight, fat mass (FM), fat-free mass (FFM), waist circumference (WC), resting energy expenditure (REE), fasting fat oxidation in percentage of REE (FatOx), homeostasis model assessed insulin release (HOMA-β), and HOMA–insulin resistance (HOMA-IR) were determined at baseline and after the intervention; 739 individuals were genotyped for rs7903146.
+### Results: 
+Average weight loss was 6.9 kg with the LF and 6.6 kg with the HF (difference between diets, NS) diet.
+Among individuals who were **homozygous for the T-risk allele**, those in the **HF diet group** experienced **smaller weight losses** (Δweight) (2.6 kg; **P = 0.009; n = 622**), **smaller ΔFFM (1.6 kg; P = 0.027; n = 609)**, **smaller ΔWC (3.3 cm; P = 0.010; n = 608)**, and a **smaller ΔHOMA-IR (1.3 units; P = 0.004; n = 615)** than did the LF diet group. 
+For C allele carriers, there were no differences between the HF and LF diet groups. For the HF diet group, each additional T allele was associated with a reduced loss of FM (0.67 kg; P = 0.019; n = 609). 
+**TCF7L2 rs7903146 was not associated with ΔREE, ΔFatOx, ΔHOMA-β, or dropout.**
+
+[^44]: https://www.sciencedirect.com/science/article/pii/S0002916523016428?via%3Dihub
