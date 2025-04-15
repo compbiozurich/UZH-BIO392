@@ -3,5 +3,5 @@ The Graded Exercises are the following:
 - pangenome.md
 - paper_Progenetix_day3.md
 - cnv_frq_anaylsis.Rmd
-- File Formats (not ready yet)
+- file_formats.md
 - clinvar_clingen.md
