@@ -4,5 +4,5 @@ What to hand in so far:
 - Pangenomes - done
 - CVN, progenetix day 3 - done
 - Glioblastoma code - done
-- File formats (2 parts) - still to do
+- File formats (2 parts) - in work
 - ClinVar, ClinGen - done
