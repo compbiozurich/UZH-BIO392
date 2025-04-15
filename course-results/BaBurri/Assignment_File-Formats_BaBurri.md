@@ -1,20 +1,37 @@
-# **Asssignment by Basil Burri**
+# **Assignment by Basil Burri**
 
 ### Tasks addressed in this assignment
 -	Suitability evaluation of four different genomic file formats for storing called variants, archiving genomic data, 
 and visualizing results in genome browsers.
 - One page size estimates for four different genomic file formats.
-- Cost estimates for storing common scales of four different genomic file formats. 
+- Cost estimates for storing common scales of four different genomic file formats.
 
-### Assumption for size estimates
+### Chosen file formats
+- VCF, BED, BAM, FASTA
+- **SAM was not included as I already have chosen its binary version BAM!**
+
+### Assumption for the estimates
 - One A4 Word page holds 3'000 bytes plain text.
-
-### Assumptions for cost estimates
 - Storage costs: $0.15 per GB per month on [Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/)
-- 1 GB = 1'073'741'824 bytes
+- 1 GB = 1'000'000'000 bytes
 
+### WES vs. WGS
 
-## **VCF (Variant Call Format)**
+**WES (Whole Exome Sequencing)**
+- **Definition:** Whole Exome Sequencing (WES) focuses on sequencing the protein-coding regions (exome) of the genome. Although the exome makes up less than 2% of the genome, it contains about 85% of known disease-related variants. [(Reference)](https://emea.illumina.com/techniques/sequencing/dna-sequencing/targeted-resequencing/exome-sequencing.html)
+-  ~30 million bases per genome
+-  ~20'000 variants per genome [(Reference)](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-9-227)
+
+**WGS (Whole Genome Sequencing)**
+- **Definition:** Whole Genome Sequencing (WGS) sequences the entire genome, including both coding and non-coding regions. [(Reference)](https://emea.illumina.com/techniques/sequencing/dna-sequencing/whole-genome-sequencing.html)
+- ~3.2 billion bases per genome
+- ~5 million variants per genome [(Reference)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10823711/)
+
+---
+
+## **Evaluation of suitability** 
+
+### **VCF (Variant Call Format)**
 
 **Overview**
 |                   |                                                                                                           |
@@ -33,8 +50,7 @@ all information is based on comparison to a reference, requiring a [liftover](ht
 However, being text-based, VCF files require indexing for querying, which can make them less efficient compared to binary VCF formats like [BCF]( https://evomics.org/vcf-and-bcf/) (Binary Variant Call Format).
 
 
-
-## **BED (Browser Extensible Data)**
+### **BED (Browser Extensible Data)**
 
 **Overview**
 |                   |                                                                                                           |
@@ -53,15 +69,14 @@ for rendering intervals. Genome browsers like IGV and UCSC can load BED files an
 highlighting specific regions of the genome.
 
 
-
-## **BAM (Binary Alignment Map)**
+### **BAM (Binary Alignment Map)**
 
 **Overview**
 |                   |                                                                                                           |
 |-------------------|-----------------------------------------------------------------------------------------------------------|
 | **Description**   | Binary format for storing aligned sequencing reads, including base calls, quality, and mapping details.   |
 | **Best Use**      | Archival purposes                                                                                         |
-| **Size**          | 0.5 bytes per base. Size estimate was obtained by reading forums on [biostars.org](https:www.biostars.orgp/8901/#8903).                                                                                           |
+| **Size**          | 0.5 bytes per base for compressed formats like CRAM. Size estimate was obtained by reading forums on [biostars.org](https://www.biostars.org/p/8901/#8903).                                                                          |
 
 **Evaluation**
 
@@ -72,8 +87,7 @@ For visualization, BAM is suitable for visualization of reads in browsers like I
 for variant visualization compared to BED.
 
 
-
-## **FASTA**
+### **FASTA**
 
 **Overview**
 |                   |                                                                                                           |
@@ -85,36 +99,67 @@ for variant visualization compared to BED.
 **Evaluation**
 
 In a FASTA file, approximately 3'000 bases can fit per page, with an estimated storage size of 1 byte per base. 
-FASTA is not used for variant storage. It is used as a format for reference genomes and raw or assembled sequences. 
-While FASTA is most commonly used to store reference genomes like [GRCh38](https://ftp.ensembl.org/pub/release-113/fasta/homo_sapiens/dna/), it is also used to archive assembled contigs from sequencing experiments. In visualization, 
-FASTA provides a reference sequence track in genome browsers, but does not directly display variants or annotations.
+FASTA is not suitable for storing variant data, as it only holds raw sequences without annotations. It is used as a format for reference genomes and raw or assembled sequences. While FASTA is most commonly used to store reference genomes like [GRCh38](https://ftp.ensembl.org/pub/release-113/fasta/homo_sapiens/dna/), it is also used to archive assembled contigs from sequencing experiments. In visualization, FASTA provides the reference sequence used in genome browsers, but it cannot display variant positions or annotations directly.
 
+---
+
+## **Summary of size estimates for 1'000 genomes**
+
+**Total size estimates for 1'000 Genomes (WGS and WES) in different genomic file formats**
+
+| **Format** | **Type** | **Variants/Reads/Bases per Genome** | **Size per Variant/Read/Base** | **Size per Genome** | **Total for 1'000 Genomes** |
+|------------|----------|-------------------------------------|--------------------------------|---------------------|-----------------------------|
+| **VCF**    | WGS      | 5M variants                         | 136 bytes                      | 680 MB              | 680 GB                      |
+|            | WES      | 20k variants                        | 136 bytes                      | 2.72 MB             | 2.72 GB                     |
+| **BED**    | WGS      | 5M regions                          | 69 bytes                       | 345 MB              | 345 GB                      |
+|            | WES      | 20k regions                         | 69 bytes                       | 1.38 MB             | 1.38 GB                     |
+| **BAM**    | WGS      | 3.2B bases                          | 0.5 bytes                      | 1.6 GB              | 1'600 GB                    |
+|            | WES      | 30M bases                           | 0.5 bytes                      | 15 MB               | 15 GB                       |
+| **FASTA**  | WGS      | 3.2B bases                          | 1 byte                         | 3.2 GB              | 3'200 GB                    |
+|            | WES      | 30M bases                           | 1 byte                         | 30 MB               | 30 GB                       |
+
+_Note:_ Size per Genome = Variants/Reads/Bases per Genome × Size per Variant/Read/Base  
+
+_Note:_ Total for 1'000 Genomes = Size per Genome × 1'000
+
+_Note:_ CRAM is a more compressed binary alternative to BAM. 0.5 bytes/base were used as a general estimate for both.
+
+---
 
 ## **Summary of size estimates for one page**
 
-**One page size estimates for different genomic file formats**
+**Page estimates for 1'000 Genomes (WGS and WES) in different genomic file formats**
 
-| **Format** | **Size Estimate**        | **Variants/Regions/Size per Page**  |
-|------------|--------------------------|-------------------------------------|
-| **VCF**    | 136 bytes per variant    | ~22 variants per page               |
-| **BED**    | 69 bytes per region      | ~43 regions per page                |
-| **BAM**    | 0.5 bytes per base       | ~6'000 bases per page               |
-| **FASTA**  | 1 byte per base          | ~3'000 bases per page               |
+| **Format** | **Size Estimate per Variant/Read/Base** | **Variants/Reads/Bases per Page** | **Pages per Genome** |
+|------------|-----------------------------------------|-----------------------------------|----------------------|
+| **VCF**    | 136 bytes per variant                   | ~22 variants per page             | WGS: 227'273         |
+|            |                                         |                                   | WES: 909             |
+| **BED**    | 69 bytes per region                     | ~43 regions per page              | WGS: 116'279         |
+|            |                                         |                                   | WES: 465             |
+| **BAM**    | 0.5 bytes per base                      | ~6'000 bases per page             | WGS: 533'333         |
+|            |                                         |                                   | WES: 5'000           |
+| **FASTA**  | 1 byte per base                         | ~3'000 bases per page             | WGS: 1'066'667       |
+|            |                                         |                                   | WES: 10'000          |
 
+_Note:_ Variants/Reads/Bases per Page = 3'000 bytes / Size Estimate per Variant/Read/Base  
+
+_Note:_ Pages per Genome = Variants/Reads/Bases per Genome / Variants/Reads/Bases per Page
+
+---
 
 ## **Summary of monthly storage costs**
 
-**Monthly storage costs for common scales of different genomic file formats**
+**Monthly storage costs for 1'000 Genomes (WGS and WES) in different genomic file formats**
 
-| **Format** | **Size Estimate**      | **Scale**                        | **Total Size**         | **Estimated Monthly Cost**  |
-|------------|------------------------|----------------------------------|------------------------|-----------------------------|
-| **VCF**    | 136 bytes per variant  | 1'000'000 variants               | 129.7 MB               | **\$0.0181**                |
-| **BED**    | 69 bytes per region    | 1'000'000 regions                | 65.8 MB                | **\$0.0092**                |
-| **BAM**    | 0.5 bytes per base     | 30 million bases (human exome)   | 14.3 MB                | **\$0.0020**                |
-| **FASTA**  | 1 byte per base        | 3.2 billion bases (human genome) | 3.2 GB                 | **\$0.4800**                |
+| **Format** | **Type** | **Total Size** | **Monthly Cost ($0.15/GB)** |
+|------------|----------|----------------|-----------------------------|
+| **VCF**    | WGS      | 680 GB         | $102.00                     |
+|            | WES      | 2.72 GB        | $0.41                       |
+| **BED**    | WGS      | 345 GB         | $51.75                      |
+|            | WES      | 1.38 GB        | $0.21                       |
+| **BAM**    | WGS      | 1'600 GB       | $240.00                     |
+|            | WES      | 15 GB          | $2.25                       |
+| **FASTA**  | WGS      | 3'200 GB       | $480.00                     |
+|            | WES      | 30 GB          | $4.50                       |
 
-Note: Cost = (Total Size in GB) × $0.15 per month
-
-
-
-
+_Note:_ Monthly Cost = Total Size in GB × $0.15
