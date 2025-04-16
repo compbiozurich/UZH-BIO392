@@ -1,31 +1,37 @@
 # STR Exercise
 
 ### Q1
-**Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
+**Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?** 
+
 Since it is just simulated data, we did not recieva a sequence quality graph and therefore can't answer this question. 
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
+
 Same as Q1, we cannot really answer this question with our simulated data. However, theoretically, if our qualtiy scores go below orange, so in the red coloured area, we shoudl trim them. This ensures reasonable quality. 
 
 ### Q3
-**Why are so many files in the bioinformatics pipeline compressed and indexed?**
+**Why are so many files in the bioinformatics pipeline compressed and indexed?**  
 - Compression: to save storage space -> when we compress, we need less disk space
 - Indexing: to faster retrive information without having to read the entire file. 
 
 ### Q4
-**In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
-*Hint: look at the [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
-- samtools sort: it sorts the alginments in a BAM/CAM/CRAM files. By default, it is sorting by the leftmost coordinate, but it can also srot be a specific tag, read name or minimiser. It is needed for indexing and more efficient access to specific regions is possible when the BAM files are sorted. Additionally, it is imporving compression ,which of course saves disk space and it is the standard Format, that most tools use.
-- samtools view: it views and converts SAM/BAM/CRAM files
-- samtools index: 
+**In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?** 
 
-### Q5
-**Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
+- samtools sort: it sorts the alginments in a BAM/CAM/CRAM files. By default, it is sorting by the leftmost coordinate, but it can also srot be a specific tag, read name or minimiser. It is needed for indexing and more efficient access to specific regions is possible when the BAM files are sorted. Additionally, it is imporving compression ,which of course saves disk space and it is the standard Format, that most tools use.
+- samtools view: it views and converts SAM/BAM/CRAM files. By default, it outputs alignments in the SAM format. Additionaly, one can add filters for specific alignments to be shown, change the output format and specify the output name. ONe can also look at specific regions, for example only at chromosome 1 or a specific range at chromosome 5. It requires an indexed and coordinate-sorted CRAM/BAM file. It is obviously needed for viewing, but also for filtering reads and to convert SAM files to BAM files (which are much smaller and therefore faster to process). 
+- samtools index: indexes SAM/BAM/CRAM files. It enables fast danrom acces, for example to a specific genomic region (with samtools view). It workes with compressed (BAM/CRAM/SAM.GZ) and sorted files and creates .bam.bai, .bam.csi or .cram.crai files. In short, this commands allows you to quickly jump to genomic regions of your interest.
+- 
+*source: [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
+
+### Q5 
+**Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.** 
+
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*
 Your answer here
 
 ## Literature
+
 During the practical so far, you have generated variant calls from short read sequencing data using bioinformatics approaches. Now it's time to take a step back and do some background reading in order to prepare for the analysis and interpretation of the results next week. 
 
 First, read the following sections of [this review](https://www.sciencedirect.com/science/article/pii/S0959437X16301538):
@@ -35,7 +41,8 @@ First, read the following sections of [this review](https://www.sciencedirect.co
 Then, answer Q4 and Q5.
 
 ### Q6
-**Why is STR variation relevant to health and disease?**
+**Why is STR variation relevant to health and disease?** 
+
 STR expansion has been implicated with dozens of disorders. This is becasue STR
 
 As a result, STRs exhibit mutation rates
@@ -80,7 +87,8 @@ S
 
 
 ### Q7
-**What are some of the challenges in analysing STRs from NGS data?**
+**What are some of the challenges in analysing STRs from NGS data?** 
+
 Your answer here
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
@@ -90,9 +98,11 @@ Second, read the following sections of the [paper describing GangSTR](https://ac
 Then, answer Q6 and Q7.
 
 ### Q8
-**What sets GangSTR apart from other STR genotyping tools?**
+**What sets GangSTR apart from other STR genotyping tools?** 
+
 Your answer here
 
 ### Q9
-**What types of information does GangSTR use for STR genotyping?**
+**What types of information does GangSTR use for STR genotyping?** 
+
 Your answer here
