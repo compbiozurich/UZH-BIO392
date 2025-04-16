@@ -56,7 +56,7 @@ But in real life we need to consider coverage, which influences BAM file size. A
 
 **Ideally** -->  0.8GB * 1000 * $0.15  = **120$ per month**
 
-**Realistically** --> 150Gb * 1000 * $0.15 = **up to 22’500$ per month**
+**Realistically** --> 150GB * 1000 * $0.15 = **up to 22’500$ per month**
 
   * Cost assumption: $ 0.15 per GB see [Microsoft Storage Pricing](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/)
 
