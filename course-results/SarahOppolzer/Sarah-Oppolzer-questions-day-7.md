@@ -2,11 +2,11 @@
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
-Since it is just simulated data, we did not recieva a sequence quality graph and therefore can't answer thisquestion. 
+Since it is just simulated data, we did not recieva a sequence quality graph and therefore can't answer this question. 
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
-Your answer here
+Same as Q1, we cannot really answer this question with our simulated data. However, theoretically, if our qualtiy scores go below orange, so in the red coloured area, we shoudl trim them. This ensures reasonable quality. 
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
@@ -34,7 +34,7 @@ Then, answer Q4 and Q5.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
-
+STR expansion has been implicated with dozens of disorders. This is becasue STR
 
 As a result, STRs exhibit mutation rates
 that are orders of magnitude higher than other types of
