@@ -1,7 +1,8 @@
 
 # BIO392-day-07 Questions 
-These questions are designed to test your understanding of the sequence analysis practical and the accompanying literature. Please change the name of this file to \<First letter\>-\<Last name\>-questions-day-07.md, and upload it to your folder in the course GitHub.
+These questions are designed to test your understanding of the sequence analysis practical and the accompanying literature. Please change the name of this file to \<First letter\>-\<Last name\>-questions-day-07.md, and upload it to your folder in the course GitHub. Please submit before 13:00 on 29th April. <br>
 These questions will be graded. The most important thing is not that you get everything right, but that you show that you thought about the questions; so no copy/pasting!
+
 
 ## Practical
 
