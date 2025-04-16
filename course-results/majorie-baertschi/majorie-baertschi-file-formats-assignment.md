@@ -37,7 +37,7 @@ For the cost estimates below (storage of 1000 genomes) I used the size of the wh
 
 **BED:**  When working with regions (not sequences) and to visualize these regions
 
-**FASTA:** To store (reference) sequences and or raw reads from sequencer
+**FASTA:** To store (reference-) sequences and or raw reads from sequencer
 
 **VCF:** To store and analyze human genome variants
 
