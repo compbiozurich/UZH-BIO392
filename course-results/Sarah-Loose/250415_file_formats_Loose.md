@@ -27,15 +27,6 @@ Generally, one needs to find a balance between data compression and retaining in
 This concerns WGS more than WES, since in WES a minor fraction of the genome is actually used when only the coding regions are considered.
 
 
-### Approximate Storage for 1 genome
-|                                       | WGS    | WES   | *E. coli* | notes           |
-| ------------------------------------- | ------ | ----- | --------- | --------------- |
-| Fasta<br>(for 8-bit ASCII)            | 3,2 GB | 50 MB | 4.6 MB    | for 1 byte / bp |
-| BAM<br>(30x read depth)               | x~100 GB| x~20 GB|           | same, with header etc.|
-| SAM<br>(30x read depth)               |        |       |           |                 |
-| VCF<br>depends on no. <br>of variants |        |       |           | varies with no. of variants and compression type (gizp)|
-| BED                                   |        |       |           |                 |
-|                                       |        |       |           |                 |
 
 [According to this](https://3billion.io/blog/big-data-among-big-data-genome-data)
 |Type (Mean depth)|FASTQ	| BAM	| VCF |	SUM|
@@ -62,6 +53,20 @@ WGS (30x)	        |80GB	  |100GB|1GB  |180GB|
 - Level of Data Security
 - Used Storage Space (SSD, HDD)
 - Tiers of data (eg. hot: easily accessible on high-performance SSDs, cold: archival, cheaper)
+
+
+
+
+#IGNORE BELOW
+### Approximate Storage for 1 genome
+|                                       | WGS    | WES   | *E. coli* | notes           |
+| ------------------------------------- | ------ | ----- | --------- | --------------- |
+| Fasta<br>(for 8-bit ASCII)            | 3,2 GB | 50 MB | 4.6 MB    | for 1 byte / bp |
+| BAM<br>(30x read depth)               | x~100 GB| x~20 GB|           | same, with header etc.|
+| SAM<br>(30x read depth)               |        |       |           |                 |
+| VCF<br>depends on no. <br>of variants |        |       |           | varies with no. of variants and compression type (gizp)|
+| BED                                   |        |       |           |                 |
+|                                       |        |       |           |                 |
 - back-ups
 
 
