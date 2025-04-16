@@ -7,11 +7,13 @@ These questions will be graded. The most important thing is not that you get eve
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
-Your answer here
+
+This question can not be answered because these are simulated data and the "per base sequence quality" is the same for all 6 reads. This was discussed in class. 
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
-Your answer here
+
+This question can not be answered because these are simulated data and the "per base sequence quality" is the same for all 6 reads. This was discussed in class. 
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
