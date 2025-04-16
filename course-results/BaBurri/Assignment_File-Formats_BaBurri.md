@@ -151,15 +151,15 @@ _Note:_ Pages per Genome = Variants/Reads/Bases per Genome / Variants/Reads/Base
 
 **Monthly storage costs for 1'000 Genomes (WGS and WES) in different genomic file formats**
 
-| **Format** | **Type** | **Total Size** | **Monthly Cost ($0.15/GB)** |
-|------------|----------|----------------|-----------------------------|
-| **VCF**    | WGS      | 680 GB         | $102.00                     |
-|            | WES      | 2.72 GB        | $0.41                       |
-| **BED**    | WGS      | 345 GB         | $51.75                      |
-|            | WES      | 1.38 GB        | $0.21                       |
-| **BAM**    | WGS      | 1'600 GB       | $240.00                     |
-|            | WES      | 15 GB          | $2.25                       |
-| **FASTA**  | WGS      | 3'200 GB       | $480.00                     |
-|            | WES      | 30 GB          | $4.50                       |
+| **Format** | **Type** | **Total Size for 1'000 Genomes** | **Monthly Cost ($0.15/GB)** |
+|------------|----------|----------------------------------|-----------------------------|
+| **VCF**    | WGS      | 680 GB                           | $102.00                     |
+|            | WES      | 2.72 GB                          | $0.41                       |
+| **BED**    | WGS      | 345 GB                           | $51.75                      |
+|            | WES      | 1.38 GB                          | $0.21                       |
+| **BAM**    | WGS      | 1'600 GB                         | $240.00                     |
+|            | WES      | 15 GB                            | $2.25                       |
+| **FASTA**  | WGS      | 3'200 GB                         | $480.00                     |
+|            | WES      | 30 GB                            | $4.50                       |
 
 _Note:_ Monthly Cost = Total Size in GB × $0.15
