@@ -10,7 +10,8 @@ Your answer here
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
-Your answer here
+- Compression: to save storage space -> when we compress, we need less disk space
+- Indexing: to faster retrive information without having to read the entire file. 
 
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
