@@ -16,7 +16,7 @@ Computer storage for 1000 genomes?
 
 # When to use different file types?
 
-## storing called variants (2)
+## storing called variants
 **Use VCF (Variant Call Format):**
 - textbased standard file format for storing variants data
 - Many millions of variants can be stored in a single VCF file
