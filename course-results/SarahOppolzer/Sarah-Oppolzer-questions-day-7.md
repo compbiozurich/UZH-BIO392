@@ -2,7 +2,7 @@
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
-Your answer here
+Since it is just simulated data, we did not recieva a sequence quality graph and therefore can't answer thisquestion. 
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
@@ -34,7 +34,48 @@ Then, answer Q4 and Q5.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
-Your answer here
+
+
+As a result, STRs exhibit mutation rates
+that are orders of magnitude higher than other types of
+variation [2], and thus contribute a large fraction of human
+genetic variation.
+A role for STRs in human disease was established over
+two decades ago, with independent discoveries of trinu-
+cleotide expansions resulting in Fragile X Syndrome [3,4]
+and spinal and bulbar muscular atrophy [5]. Since then,
+STR expansions have been implicated in dozens of dis-
+orders [6]. Further work has shown that these expansions
+www.sciencedirect.com induce a variety of pathogenic effects (Figure 1), includ-
+ing polyglutamine aggregation [6], hypermethylation [7],
+RNA toxicity [8], and repeat associated non-ATG (RAN)
+translation [9]. Smaller pathogenic repeats have also been
+shown to affect RNA splicing (cystic fibrosis [10]) or
+regulate gene expression (progressive myoclonus epi-
+lepsy [11] and Gilbert syndrome [12]). Many of these
+mechanisms are present across multiple loci, indicating
+that they likely represent genome-wide phenomena.
+The majority of repeat disorders identified so far follow
+autosomal dominant inheritance patterns that were read-
+ily identified using linkage analysis in pedigrees. How-
+ever, STRs may contribute to a variety of inheritance
+modes not amenable to traditional linkage techniques.
+For instance, STRs are predicted to contribute a higher
+number of de novo mutations per generation than any
+other type of variation [13], but the role of de novo STRs in
+spontaneous conditions such as autism and neurodeve-
+lopmental disorders has so far not been interrogated.
+Furthermore, STRs are often highly multi-allelic, and
+thus may generate complex inheritance patterns not well
+captured by linkage or analysis of bi-allelic single nucle-
+otide polymorphisms (SNPs).
+Despite the clear implication of STRs in disease, they
+have been notably missing from medical sequencing
+studies. Next-generation sequencing (NGS) has the
+potential to profile more than a million STRs, but geno-
+typing STRs from NGS has proven challenging. Thus,
+S
+
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
