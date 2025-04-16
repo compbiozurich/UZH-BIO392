@@ -20,26 +20,25 @@ compression" for genomic annotations which rely on the notion of "assessed varia
 |BAM|8GB|100GB|
 |VCF|	0.1GB|1GB|
 
-(see [source] (https://3billion.io/blog/big-data-among-big-data-genome-data)
 
-### Cost factors
+### What are the different file formats typically used for: 
+
+FASTA: is essentially for storing  and exchanging sequence data
+SAM: stores text based mapping information. It can be compressed to BAM, which is a binary version of SAM and is more compressed and therefore better suitable for storing the data
+VCF: is good to store genome variant, including annotations
+
+### Cost factors
 - Cost estimates for a single WES test ranged from $555 to $5,169
 - Cost estimates for a single WGS test ranged from $1,906 to $24,810
 
-So as discussed before, WES is cheaper than WGS, since we only sequence parts and not the whole genome. 
+So, as discussed before, WES is cheaper than WGS, since we only sequence parts and not the whole genome. 
+
+Regarding the storage of the different file formats, it was hard to find specific information. Obviously, soting BAM fiels is cheaper than SAM files, since they are more compressed and therefore are the more suitable candidate for data storage. 
 
 
 - Raw Storage costs
 
 
-
-
-Please provide 1-page size estimates and reasoning for the use of the different file types 
-(i.e. which would you use for storing called variants, which for full archival purposes, browser
-visualisation), for 3-5 formats.
-
-summarize the file formats, how are storage costs influenced, some estimations for exampe ahuman 
-genome, what to use best for what
-
 sources: 
 Zhang H. Overview of Sequence Data Formats. Methods Mol Biol. 2016;1418:3-17. doi: 10.1007/978-1-4939-3578-9_1. PMID: 27008007.
+[required storage] (https://3billion.io/blog/big-data-among-big-data-genome-data)
