@@ -37,6 +37,17 @@ This concerns WGS more than WES, since in WES a minor fraction of the genome is 
 | BED                                   |        |       |           |                 |
 |                                       |        |       |           |                 |
 
+[According to this](https://3billion.io/blog/big-data-among-big-data-genome-data)
+|Type (Mean depth)|FASTQ	| BAM	| VCF |	SUM|
+|-----------------|-------|-----|-----|----|
+WES (100x)	      |5GB	  | 8GB	|0.1GB|13GB|
+WGS (30x)	        |80GB	  |100GB|1GB  |180GB|
+
+|Provider	|Service name	|Price	|Price per one WGS sample|
+|--------|-------------|---------|----------------------|
+|AWS	    |S3 Standard	|$0.025/GB	|$4.5               |  
+|Google cloud	|Cloud storage|$0.023/GB|	$4.14           |      
+|Microsoft Azure	|Premium	|$0.15/GB	|$27.0            |
 
 ### Raw storage prices
 - [Proton](https://proton.me/de/drive/pricing) 1 TB = ~15 CHF/month
