@@ -1,17 +1,16 @@
-
-# BIO392-day-07 Questions 
-These questions are designed to test your understanding of the sequence analysis practical and the accompanying literature. Please change the name of this file to \<First letter\>-\<Last name\>-questions-day-07.md, and upload it to your folder in the course GitHub.
-These questions will be graded. The most important thing is not that you get everything right, but that you show that you thought about the questions; so no copy/pasting!
-
 ## Practical
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
-Your answer here
+They look very different from the ones we saw in the slides. The 'per base sequence quality' boxplot looks uniform. We don't have real quality scores. This is the case because we have simulated data. Simulated data is sometimes used in tutorials and teaching. Or to test pipelines etc. and see how your code works.
+Normally quality scores give us information about how confident the sequencer was about calling a specific base. When we have simulated data we don't have actual base calling, therefore phred quality scores are just fixed or pre-defined.
+
+We don't see any adapter sequences being present. This makes sense when we consider that it is simulated data we look at. Adapters are important for real sequencing, but are not real biologic sequences. So ideally they shouldn't end up in the final data. Sometimes this can happen when we have real sequencing data, then we would see adapter sequences in the FastQC data. When we have simulated data, we don't see adapters as we have simulators that model an "idealized sequencing process".
+
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
-Your answer here
+No because we don't have bad quality scores. Trimming is done to remove adapters or low-quality bases, which does not make sense in our case, as we have simulated data. Normally in the 'per base sequence quality' boxplot when we would see the quality score dropping into the red area, we would trim.
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
@@ -34,7 +33,7 @@ First, read the following sections of [this review](https://www.sciencedirect.co
 * Abstract
 * Introduction``
 * Genotyping STRs from high-throughput sequencing data
-Then, answer Q4 and Q5.
+Then, answer Q6 and Q7.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
@@ -48,7 +47,7 @@ Second, read the following sections of the [paper describing GangSTR](https://ac
 * Abstract
 * Introduction
 * Overview of the GangSTR model
-Then, answer Q6 and Q7.
+Then, answer Q8 and Q9.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
