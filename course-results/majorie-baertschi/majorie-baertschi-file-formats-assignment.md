@@ -49,7 +49,7 @@ Of the 5 mentioned file formats, in my opinion it makes most sense to store a ge
 
 Ideally, we would have 3.2 * 10^9 bases multiplied by 2 bits -->  6.4 billion bits --> **0.8 GigaBytes per genome**
 
-But in real life we need to consider coverage, which influences BAM file size. According to this site [Guide to Storage and Computation Requirements]( https://www.strand-ngs.com/support/ngs-data-storage-requirements) we can come up to ~ **150 GigaBytes per genome**, when we take a coverage of 35x to 40x and read lengths of 75 bases or longer.
+But in real life we need to consider coverage, which influences BAM file size. According to this site ([Guide to Storage and Computation Requirements]( https://www.strand-ngs.com/support/ngs-data-storage-requirements)) we can come up to ~ **150 GigaBytes per genome**, when we take a coverage of 35x to 40x and read lengths of 75 bases or longer.
 
 
 ### Costs for 1000 genomes per month (storage only):
