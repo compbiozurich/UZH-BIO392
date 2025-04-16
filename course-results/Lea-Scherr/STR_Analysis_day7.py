@@ -11,6 +11,7 @@ Created on Wed Apr 16 09:14:40 2025
 import requests 
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 resp = requests.get('https://webstr-api.lsfm.zhaw.ch/repeats/?gene_names=APC')
 df_repeats = pd.DataFrame.from_records(resp.json())
@@ -80,12 +81,4 @@ print(f"Chromosome: {chrom}, Start: {start}, End: {end}")
 max_repeat = combined_df.loc[combined_df['repeat_id'] == repeat_id_mx]
 
 # Step 7: Plot allele frequency distribution
-plt.figure(figsize=(10, 6))
-plt.bar(max_repeat['n_effective'].astype(int), max_repeat['frequency'], color='skyblue')
-plt.xlabel('Allele Length')
-plt.ylabel('Frequency')
-plt.title(f'Allele Frequency Distribution for STR: {repeat_id_mx}')
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.grid(axis='y')
-plt.show()
+sns.barplot(data = max_repeat, x = 'n_effective', y = 'frequency', hue = 'population')
