@@ -14,11 +14,11 @@ compression" for genomic annotations which rely on the notion of "assessed varia
 
 ### How much computer storage is required for the different file formats?
 
-|File Type|WES (100x)|WGS (30x)|
-|-------|-------------------|----|
-|SAM|	13GB|	180GB|
-|BAM|8GB|100GB|
-|VCF|	0.1GB|1GB|
+|File Type|WES (100x)|WGS (30x)|for 1000 Genomes
+|-------|-------------------|----|----|
+|SAM|	13 GB|	180 GB| 180 TB |
+|BAM|8 GB|100 GB|100 TB|
+|VCF|	0.1 GB|1 GB|1 TB|
 
 
 ### What are the different file formats typically used for: 
@@ -28,17 +28,21 @@ SAM: stores text based mapping information. It can be compressed to BAM, which i
 VCF: is good to store genome variant, including annotations
 
 ### Cost factors
+This ofcourse differs for different institutions and countries. 
 - Cost estimates for a single WES test ranged from $555 to $5,169
 - Cost estimates for a single WGS test ranged from $1,906 to $24,810
 
+At the Helath 2030 Genome Center in Switzerland the costs are: 
+WES, ~ 40 mio clusters, 2 x 100bp reads (~ 70x coverage)	 460 CHF / sample
+WGS, ~ 375 mio clusters, 2 x 150bp reads (~ 30x coverage)	 905 CHF / sample
+
 So, as discussed before, WES is cheaper than WGS, since we only sequence parts and not the whole genome. 
 
-Regarding the storage of the different file formats, it was hard to find specific information. Obviously, soting BAM fiels is cheaper than SAM files, since they are more compressed and therefore are the more suitable candidate for data storage. 
+Regarding the storage of the different file formats, it was hard to find specific information. Obviously, soting BAM fiels is cheaper than SAM files, since they are more compressed and therefore are the more suitable candidate for data storage. As far as I know, CRAM is a BAM file, but even more compressed, therefore it must be cheaper to store too. Since FASTA is only raw sequencing data, without any alignments, mapping and information like quality scores, it is way cheaper than SAM, BAM and CRAM files. Also VCF files are qay smaller than BAM, SAM and CRAM files, since they dont contain whole genomes +  additional information, but only the variant information. This makes it also cheaper to store. 
 
-
-- Raw Storage costs
-
-
-sources: 
+Sources: 
 Zhang H. Overview of Sequence Data Formats. Methods Mol Biol. 2016;1418:3-17. doi: 10.1007/978-1-4939-3578-9_1. PMID: 27008007.
 [required storage] (https://3billion.io/blog/big-data-among-big-data-genome-data)
+[Helath 2030 Genome Center] (https://www.health2030genome.ch/service-fees)
+Muir, P., Li, S., Lou, S. et al. The real cost of sequencing: scaling computation to keep pace with data generation. Genome Biol 17, 53 (2016). https://doi.org/10.1186/s13059-016-0917-0
+https://aws.amazon.com/de/blogs/industries/store-omics-data-cost-effectively-at-any-scale-with-aws-healthomics/
