@@ -27,7 +27,7 @@ For the cost estimates below (storage of 1000 genomes) I used the size of the wh
 
 **FASTA/FASTQ:** FASTA is a simple and widely supported format to represent biological sequences. It includes a sequence name, an optional description (for example metadata or sequencing details) and the sequence itself. The sequences are formatted in plain text and therefore readable. Raw reads from a sequencer are often in the FASTA format. FASTQ is similar to FASTA, but already with quality scores included.
 
-**VCF:** VCF stands for Variant Call Format. It is a standard file format for storing DNA variation data, including SNPs, insertions, deletions, and structural variants, together with annotations and metadata. There is a header (metadata etc.) and a body. Each line of the body describes variants present in the sampled population at one genomic position or region. 
+**VCF:** VCF stands for Variant Call Format. It is a standard file format for storing DNA variation data, including SNPs, insertions, deletions and structural variants, together with annotations and metadata. There is a header (metadata etc.) and a body. Each line of the body describes variants present in the sampled population at one genomic position or region. 
 
 
 ## When to use which one?
@@ -43,7 +43,7 @@ For the cost estimates below (storage of 1000 genomes) I used the size of the wh
 
 
 ## Cost estimates for storing 1000 genomes:
-Of the 5 mentioned file formats, in my opinion it makes most sense to store a genome in a **BAM file**, because a binary format needs less storage and can be used to store aligned reads.
+Of the 5 mentioned file formats, in my opinion it makes most sense to store a genome in a **BAM file**, because a binary format needs less storage and the BAM format is suitable to store aligned reads.
 
 2 bits are enough to encode A, C, G, T. Therefore I made the calculations with 2 bits per base.
 
