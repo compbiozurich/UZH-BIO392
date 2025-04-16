@@ -5,8 +5,8 @@
 * Sequencing only the protein-coding regions (1-2% of the hole genome) 
 * Advantages:
   * Most genetic variants associated with human diseases are found
-  * Can be used for early discovery of genetic diseases or variants and mutations in eg. cancer tissue
-  * Much smaller and so also cheaper
+  * Can be used for early discovery of genetic diseases or variants and mutations in cancer tissue
+  * Much less data and so also cheaper
 * Disadvantages:
   * One can miss important variants outside of the exome (eg. regulatory regions), misses structural variants/large insertions/deletions
 
@@ -19,7 +19,7 @@
   * More false positive results (especially low-frequency variants) 
 
 The Choice depends on the question: 
-* WES: should be sufficient when focus on disease-causing variants or for large population comparisons (less complex)
+* WES: should be sufficient when focusing on disease-causing variants or for large population comparisons (less complex)
 * WGS: For individual genetic makeup, broader question or diseases linked to non-coding regions 
 
 [Source](https://www.novogene.com/eu-en/resources/blog/wgs-vs-wes-which-genetic-sequencing-method-is-right-for-you/)
@@ -35,6 +35,41 @@ The Choice depends on the question:
 * 82 GB = BAM File Size, 	 	104 GB = Strand NGS Size (+overhead) 	-> ca. *150GB*
 * With backups/ … -> 1000 genomes = *46TB* (one genome minus backup = 150GB)
 
-
 [Source](https://www.strand-ngs.com/support/ngs-data-storage-requirements) 
+
+## Different File Formats
+what to use for call variance, browse edition, storing full archival purposes 
+#### SAM: Sequence Alignment Map 
+*	Use: 
+*	Size:
+
+#### BAM: binary version of Sequence Alignment/Map (SAM)
+*	Aligned sequences or simple format with only chromosome nr % start-end 
+*	Use: 
+*	Size:
+ 
+#### CRAM: compressed version of BAM 
+*	with multiple optimization and differential access options
+*	Use: 
+*	Size:
+
+#### VCF: Variant Call Format 
+*	most important, most mind recking -> in comparison to a reference genome 
+*	standard format for file-based storage of human genome variants
+*	-> output of a genome exp., multiple samples, efficient, but not for rare variants 
+*	Text file
+*	Use: n
+*	Size:
+
+#### FASTA
+* linear annotation of Nucl. / aa; text, not optimised for size -> exact sequence
+* Unaligned sequences
+*	Use: 
+*	Size:
+
+
+
+### Storage
+How much does this cost? 
+
 
