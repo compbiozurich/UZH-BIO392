@@ -43,6 +43,7 @@ This concerns WGS more than WES, since in WES a minor fraction of the genome is 
 WES (100x)	      |5GB	  | 8GB	|0.1GB|13GB|
 WGS (30x)	        |80GB	  |100GB|1GB  |180GB|
 
+-> so 1000 WES genomes with 100x cooverage need 13 TB, 1000 WGS with 30x coverage need 180 TB.
 |Provider	|Service name	|Price	|Price per one WGS sample|
 |--------|-------------|---------|----------------------|
 |AWS	    |S3 Standard	|$0.025/GB	|$4.5               |  
