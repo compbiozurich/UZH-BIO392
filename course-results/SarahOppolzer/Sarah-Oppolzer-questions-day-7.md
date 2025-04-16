@@ -16,7 +16,8 @@ Same as Q1, we cannot really answer this question with our simulated data. Howev
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
 *Hint: look at the [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
-Your answer here
+- samtools sort: it sorts the alginments in a BAM file. By default, it is sorting by the leftmost coordinate, but it can also srot be a specific tag, read name or minimiser. It is needed for indexing and more efficient access to specific regions is possible when the BAM files are sorted. Additionally, it is imporving compression ,which of course saves disk space and it is the standard Format, that most tools use.
+
 
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
