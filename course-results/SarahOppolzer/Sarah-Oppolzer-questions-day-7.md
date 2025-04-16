@@ -21,14 +21,19 @@ Same as Q1, we cannot really answer this question with our simulated data. Howev
 - samtools sort: it sorts the alginments in a BAM/CAM/CRAM files. By default, it is sorting by the leftmost coordinate, but it can also srot be a specific tag, read name or minimiser. It is needed for indexing and more efficient access to specific regions is possible when the BAM files are sorted. Additionally, it is imporving compression ,which of course saves disk space and it is the standard Format, that most tools use.
 - samtools view: it views and converts SAM/BAM/CRAM files. By default, it outputs alignments in the SAM format. Additionaly, one can add filters for specific alignments to be shown, change the output format and specify the output name. ONe can also look at specific regions, for example only at chromosome 1 or a specific range at chromosome 5. It requires an indexed and coordinate-sorted CRAM/BAM file. It is obviously needed for viewing, but also for filtering reads and to convert SAM files to BAM files (which are much smaller and therefore faster to process). 
 - samtools index: indexes SAM/BAM/CRAM files. It enables fast danrom acces, for example to a specific genomic region (with samtools view). It workes with compressed (BAM/CRAM/SAM.GZ) and sorted files and creates .bam.bai, .bam.csi or .cram.crai files. In short, this commands allows you to quickly jump to genomic regions of your interest.
-- 
+  
 *source: [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
 
 ### Q5 
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.** 
 
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*
-Your answer here
+
+The parameters in GangSTR are: 
+- bam <file.bam,[file2.bam]> Comma separated list of input BAM files
+- ref Refererence genome (.fa)
+- regions Target TR loci (regions) (.bed)
+- out Output prefix
 
 ## Literature
 
