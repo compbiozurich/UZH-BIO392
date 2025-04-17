@@ -45,7 +45,7 @@ Please investigate each of SNP using the following databases:
 
 ![Allele frequency in different populations](image-1.png)
 
-*GWAS study:* https://pmc.ncbi.nlm.nih.gov/articles/PMC3442244/
+*GWAS study:* <https://pmc.ncbi.nlm.nih.gov/articles/PMC3442244/>
 
 *Description of the trait/disease:* The study focuses on Type 2 Diabetes Mellitus (T2DM), a chronic metabolic disorder characterized by insulin resistance and impaired insulin secretion, leading to elevated blood glucose levels.​
 
@@ -64,7 +64,7 @@ Please investigate each of SNP using the following databases:
 
 ![Allele frequency in different populations](image.png)
 
-*GWAS study:* https://www.sciencedirect.com/science/article/pii/S0092867417313247?via%3Dihub
+*GWAS study:* <https://www.sciencedirect.com/science/article/pii/S0092867417313247?via%3Dihub>
 
 *Description of the trait/disease:* The study investigates skin pigmentation, a highly variable human trait influenced by multiple genetic factors. Specifically, it examines the role of the rs1426654 SNP in the SLC24A5 gene, which has been associated with lighter skin pigmentation in various populations.​
 
@@ -83,7 +83,7 @@ Please investigate each of SNP using the following databases:
 
 ![Allele frequency in different populations](image-2.png)
 
-*GWAS study:* https://www.sciencedirect.com/science/article/pii/S1552526019351179?via%3Dihub
+*GWAS study:* <https://www.sciencedirect.com/science/article/pii/S1552526019351179?via%3Dihub>
 
 *Description of the trait/disease:* 
 
