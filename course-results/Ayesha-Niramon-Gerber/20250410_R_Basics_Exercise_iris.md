@@ -13,7 +13,7 @@ Goal: Practice loading data and creating simple visualizations
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# 1. Load the Data
+## Load the Data
 
 ### Load the `datasets` package (it's built into R, so no need to install it)
 
@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library('datasets')
 ```
 
-# 2. Explore the Data
+## Explore the Data
 
 The `iris` dataset is a built-in R dataset with measurements of different flower species
 
@@ -60,7 +60,7 @@ HINT: Use the `str()` function
 str(iris)
 ```
 
-# 3. Assign Variables
+## Assign Variables
 
 ### Assign petal width and petal length to variables `x` and `y`
 
@@ -69,19 +69,19 @@ x <- iris$Petal.Width
 y <- iris$Petal.Length
 ```
 
-# 4. Visualization
+## Visualization
 
 ```{r}
 library(ggplot2)
 ```
 
-## 4a. Create a scatter plot to display the relationship between petal width and petal length
+### Create a scatter plot to display the relationship between petal width and petal length
 
 ```{r}
 scatterplot <- plot(x,y, xlab = "Petal Width", ylab = "Petal Length", main = "Scatterplot Petal Width x Length")
 ```
 
-## 4b. Create a box plot to display Sepal Length for different species
+### Create a box plot to display Sepal Length for different species
 
 ```{r}
 boxplot <- boxplot(x,y,xlab = "Petal Width", ylab = "Petal Length", main = "Boxplot Petal Width x Length")
