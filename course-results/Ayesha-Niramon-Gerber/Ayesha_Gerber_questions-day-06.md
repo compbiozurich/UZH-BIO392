@@ -45,7 +45,7 @@ Please investigate each of SNP using the following databases:
 
 [Allele frequency in different populations](image-1.png)
 
-[*GWAS study:*](https://pmc.ncbi.nlm.nih.gov/articles/PMC3442244/)
+[*GWAS study: Large-scale association analysis provides insights into the genetic architecture and pathophysiology of type 2 diabetes*](https://pmc.ncbi.nlm.nih.gov/articles/PMC3442244/)
 
 *Description of the trait/disease:* The study focuses on Type 2 Diabetes Mellitus (T2DM), a chronic metabolic disorder characterized by insulin resistance and impaired insulin secretion, leading to elevated blood glucose levels.​
 
@@ -64,7 +64,7 @@ Please investigate each of SNP using the following databases:
 
 [Allele frequency in different populations](image.png)
 
-[*GWAS study:*](https://www.sciencedirect.com/science/article/pii/S0092867417313247?via%3Dihub)
+[*GWAS study: An Unexpectedly Complex Architecture for Skin Pigmentation in Africans*](https://www.sciencedirect.com/science/article/pii/S0092867417313247?via%3Dihub)
 
 *Description of the trait/disease:* The study investigates skin pigmentation, a highly variable human trait influenced by multiple genetic factors. Specifically, it examines the role of the rs1426654 SNP in the SLC24A5 gene, which has been associated with lighter skin pigmentation in various populations.​
 
@@ -83,17 +83,6 @@ Please investigate each of SNP using the following databases:
 
 ![Allele frequency in different populations](image-2.png)
 
-[*GWAS study:*](https://www.sciencedirect.com/science/article/pii/S1552526019351179?via%3Dihub)
-
-*Description of the trait/disease:* 
-
-*reported p-value:* 2 x 10-303
-
-*effect size (OR or beta):* 3.21
-
-*publication details:* The study was published in the journal Alzheimer’s & Dementia on August 28, 2019.
-
-*predicted functional consequences:* The SNP rs429358 results in a missense mutation in the APOE gene, leading to an amino acid substitution that helps define the APOE ε4 allele. This variant alters the structure and function of the ApoE protein, influencing its binding to lipids and receptors. Functionally, this change is associated with increased accumulation of amyloid-β plaques in the brain, a pathological hallmark of Alzheimer’s disease.
 
 # 4. rs334
 | number | SNP (rsID) | Gene / Region | Notable Trait / Use | Chromosome and Position | variant type     | reference & alternate alleles|MAF |
