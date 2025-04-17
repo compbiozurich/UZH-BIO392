@@ -1,5 +1,3 @@
-
-
 # Exercise
 R Basics Exercise Script
 Goal: Practice loading data and creating simple visualizations
