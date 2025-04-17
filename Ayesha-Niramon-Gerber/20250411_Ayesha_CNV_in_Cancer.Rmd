@@ -1,0 +1,77 @@
+---
+title: "CNV in Invasive Breast Carcinoma"
+author: "Ayesha Gerber"
+date: "2025-04-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Install Packages
+
+```{r, eval=FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(version = "3.20")
+
+BiocManager::install(c("pgxRpi", "GenomicRanges"))
+```
+
+## Load packages
+
+```{r, warnigs = FALSE, message=FALSE}
+library(pgxRpi)
+library(GenomicRanges)
+```
+
+## Disease description
+
+I'd like to study Malignant Breast Neoplasm/Breast cancer. In Progenetix, the corresponding NCIt code is "NCIT:C9335". Breast cancer is a disease in which certain cells in the breast become abnormal and multiply uncontrollably to form a tumor.
+
+Source: <https://www.ncbi.nlm.nih.gov/medgen/651>
+
+## Access CNV frequency data from samples with Malignant Breast Neoplasm
+
+```{r }
+freq <- pgxLoader(type = "cnv_frequency", filters = "NCIT:C9335")
+```
+
+To access the CNV frequency data from this object
+
+```{r }
+freq[["NCIT:C9335"]] 
+```
+
+To get metadata, use `mcols` function:
+
+```{r }
+mcols(freq)
+```
+
+## Visualize the frequency data
+
+### By genome
+
+```{r, fig.width=12, fig.height=6}
+pgxFreqplot(freq)
+```
+
+### By chromosome
+
+```{r, fig.width=12, fig.height=12}
+pgxFreqplot(freq,chrom = c(1,8,11,13,16,17), layout = c(6,1))
+```
+
+## Analysis
+
+According to the plot, using a threshold 25% for duplication and deletion. 1q, 8q, 16p, 17q, 20q are frequently duplicated, 8p, 11q, 13q, 16q, 17p are frequently deleted.
+
+Compared to those two literature:
+
+([link](https://pmc.ncbi.nlm.nih.gov/articles/PMC7397461/)), they detected frequent gains of 1q, 8q, and 20q and losses of 8p, 16q, 17p
+
+([link](https://www.sciencedirect.com/science/article/pii/S1471491424001205)), they detected frequent gains of 1q and 8q and losses of 8p, 13q, 16q, and 17p.
+
+My Analysis matches the literature for the most cases. 1q, 8q and 20q has frequently detected gains and 8p, 13q, 16q and 17p losses. 16p and 17q gains were not found in the literature. Reasons for the differences could be the arbitrary threshold of 25%. Both CNV reach barley the threshold. 11q loss is also not found in the literature. I couldn't find reasons to explain that.

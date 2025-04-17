@@ -1,0 +1,180 @@
+---
+title: "CNV Frequency Analysis"
+author: "Lea Scherr"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: journal
+    highlight: tango
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Install the packages
+First I installed the packages needed for this analysis using the code from [1]. 
+
+```{r eval = FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packagens("BiocManager")
+BiocManager::install(version = "3.20")
+
+BiocManager::install(c("pgxRpi", "GenomicRanges"))
+```
+
+
+## Load the packages
+Second I loaded the packages required.  
+
+```{r, warning = FALSE, message = FALSE}
+library(pgxRpi)
+library(GenomicRanges)
+```
+
+
+## Disease description: Melanoma 
+[2]
+
+I'd like to study **Melanoma**. In [Progenetix](https://progenetix.org/subsets/NCIT-subsets/), the corresponding NCIt code is "NCIT:C3224".
+
+> Melanoma is a type of cancer that starts in cells called melanocytes. These are found in the skin, the layer of tissue lining some parts of your body (mucous membrane) and the eye.
+
+#### Risk
+The risk of developing melanoma skin cancer depends on many factors, for example exposure of the skin to ultraviolet light or the skin type. 
+
+#### Symptoms
+If one can observe changes to a freckle, mole or just a normal patch of skin, this can be a symptom. Those changes are normally analysed by dermatologists who can analyse the state of the skin/potential melanoma. 
+
+#### Stages
+The stages tell you how deep the melanoma has grown into your skin and if it has metastasised elsewhere. 
+
+#### Treatment & Survival
+Surgery, cancer drugs and sometimes radiotherapy are most commonly used as therapies, but the decision to use which one, depends on the stage of the cancer.\
+The survival for melanoma cancer is again dependent on many factors, like the stage of it at the time of discovery, your general health and the form of treatment.
+
+
+## Access CNV frequency data from samples with melanoma
+
+Use the `pgxLoader` function to access the progenetix database and use the filter by the NCIt code to get only the CNV frequency of the cancer we are interested in.\
+Load this result into a variable, I called it `freq`.\
+To access the CNV frequency data, use `freq[["NCIT:C3224"]]`.
+
+```{r}
+freq <- pgxLoader(type = "cnv_frequency", filters = "NCIT:C3224")
+freq[["NCIT:C3224"]]
+```
+
+To get the metadata, use the `mcols` function:
+
+```{r}
+mcols(freq)
+```
+This tells us, that there are 3575 samples available in the Progenetix database for melanoma skin cancer. 
+
+
+## Visualise the frequency data
+
+Now I want to visualise the data I have just extracted. Using the `pgxFreqplot` function from the previously loaded `pgxRpi` package, I can plot the CNV frequencies along the genome.\ 
+Duplications can be seen in yellow and deletions in blue. 
+
+### The whole genome
+
+```{r, fig.width = 12, fig.height=6}
+pgxFreqplot(freq)
+```
+
+Looking at this frequency plot, you can see the whole genome, going from chromosome 1 to X and Y with their respective CNV frequencies, either gains or losses. \
+Considering the plot I obtained, I will take a threshold of 25% for both duplications and deletions to be significant.\
+This leads me to be interested in: 
+
+|Category|Chromosomes|
+|:-------|:----------|
+|Gains|1, 6, 7, 8, 20|
+|Losses|6, 9, 10, 11|
+
+### Duplications
+The following plots show chromosomes 1, 6, 7, 8, and 20 in a closer view to better analyse the gains in their respective arms. 
+
+```{r, fig.width = 8, fig.height=12}
+pgxFreqplot(freq, chrom = c(1, 6, 7, 8, 20), layout = c(5,1))
+```
+
+Analysing these more detailed plots, I conclude the following: 
+
+|Chromosome|Analysis|
+|:---|:-------------|
+|1|The long arm, **1q**, shows gains.|
+|6|The short arm, **6p**, shows gains.|
+|7|Both arms show gains. This could either show to a gain in **7p** and/or **7q** or in the addition of a **whole new chromosome 7**.|
+|8|The long arm, **8q**, shows gains.|
+|20|Both arms show gains. This could either show to a gain in **20p** and/or **20q** or in the addition of a **whole new chromosome 20**.|
+
+### Deletions
+The following plots show chromosomes 6, 9, 10 and 11 in a closer view to better analyse the losses in their respective arms. 
+
+```{r, fig.width = 8, fig.height=11}
+pgxFreqplot(freq, chrom = c(6, 9, 10, 11), layout = c(4,1))
+```
+
+Analysing these more detailed plots, I conclude the following: 
+
+|Chromosome|Analysis|
+|:---|:-------------|
+|6|The long arm, **6q**, shows losses.|
+|9|Both arms show losses. This could either show to a loss in **9p** and/or **9q** or in the addition of a **whole new chromosome 9**.|
+|10|Both arms show losses. This could either show to a loss in **10p** and/or **10q** or in the addition of a **whole new chromosome 10**.|
+|11|The long arm, **11q**, shows losses.|
+
+## Analysis of the CNV frequencies
+
+According to the plot, using a threshold 25% for duplication and deletion, 1q, 6p, 8q and on both arms of chromosomes 7 and 20 are frequently duplicated, 6q, 11q and on both arms of chromosomes 9 and 10 are frequently deleted. 
+
+### Comparison to existing literature
+
+#### Genome-wide copy number variations as molecular diagnostic tool for cutaneous intermediate melanocytic lesions: a systematic review and individual patient data meta-analysis
+Compared to another literature [3], they say:
+
+> Gains and losses frequently seen in melanoma, such as gain of 1q, 6p, and 7q and loss of 6q and 9p, were uncommon in intermediate lesions.
+
+In this paper they totally mentioned:
+
+|Category |Chromosome (region) |
+| :------- | :---- |
+|Losses|3p, 6q, 9p, 9q|
+|Gains|1q, 6p, 7q, 8q|
+|Chromosomal loss|Chrs. 3, Chrs. 7|
+|Chromosomal gain|Chrs. 8|
+
+The chromosomal aberrations resulted in aneuploidies. 
+
+##### Discussion
+For the most part, the paper and my analysis match. However, the paper does not exclusively mention the duplications on chromosome 20 and deletion on 11q and chromosome 10. Though the gain of the entire 20th chromosome and 10p was noted in a table.
+
+They also included loss of 3p and whole chromosomal loss of chromosomes 3 and 7. I did not mention these aberrations, since they were not unambiguously visible to me.
+
+I could not find reasoning for this difference in analysis.
+
+
+#### DNA copy number changes correlate with clinical behavior in melanocytic neoplasms: proposal of an algorithmic approach
+Compared to this literature [4], they mention:
+
+> [...] there was at least one specific alteration that is frequently encountered in melanomas (homozygous deletion of 9p (spanning the CDKN2A gene), loss of 6q (including the MYB gene), or gains involving 8q24 (MYC) or 6p25 (RREB1). \
+[...] deletion involving chromosome 1q22-q23.1. \
+[...] isolated loss centered on 3p21 locus [...]. \
+[...] homozygous losses of 9p21 (CDKN2A) or gains involving 11q13 (CCND1), 8q24 (MYC) or 6p25 (RREB1) loci.
+
+This literature also included a table (Table 4) that summarised the different significant CNVs for multiple ambiguous neoplasms. 
+
+I would conclude, comparing their table to my results, that it is similar in findings. In this paper they also mention the loss on chromosome 11q and in the table they also found gain of chromosomes 7 and 20 and loss of chromosome 10.
+
+Just like the previous paper, they mention loss of 3p, which I have not included, because the percentage of CNVs I saw on the whole genome plot did not reach my threshold. 
+
+## References
+[1] [Bioconductor Website](https://www.bioconductor.org/install/)\
+[2] [Information on Melanoma](https://www.cancerresearchuk.org/about-cancer/melanoma)\
+[3] Ebbelaar CF, Jansen AML, Bloem LT, Blokx WAM. Genome-wide copy number variations as molecular diagnostic tool for cutaneous intermediate melanocytic lesions: a systematic review and individual patient data meta-analysis. Virchows Arch. 2021 Oct;479(4):773-783. doi: 10.1007/s00428-021-03095-5. Epub 2021 Apr 13. PMID: 33851238; PMCID: PMC8516778. [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC8516778/)\
+[4] Ahmed K. Alomari, Jayson R. Miedema, Michael D. Carter, Paul W. Harms, Lori Lowe, Alison B. Durham, Douglas R. Fullen, Rajiv M. Patel, Alexandra C. Hristov, May P. Chan, Min Wang, Aleodor A. Andea, DNA copy number changes correlate with clinical behavior in melanocytic neoplasms: proposal of an algorithmic approach, Modern Pathology, Volume 33, Issue 7, 2020, Pages 1307-1317, ISSN 0893-3952, https://doi.org/10.1038/s41379-020-0499-y. [Link](https://www.sciencedirect.com/science/article/pii/S0893395222008146)
+

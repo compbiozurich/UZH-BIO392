@@ -1,0 +1,151 @@
+---
+title: "cnv-freq-analysis"
+author: "Sandrin Hunkeler"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: journal
+    highlight: tango
+    toc: true
+    toc_depth: 4
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+### 1) Packages
+
+#### 1.1) Install packages
+
+```{r eval=FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(version = "3.20")
+
+BiocManager::install(c("pgxRpi", "GenomicRanges"))
+```
+
+#### 1.2) Load packages
+
+```{r, warning=FALSE, message=FALSE}
+library(pgxRpi)
+library(GenomicRanges)
+```
+
+
+### 3) Dataset
+
+#### 3.1) Background
+
+According to [1], glioblastoma (NCIT:C3058) is a common and aggressive type of brain cancer. It’s difficult to treat, and most patients live only 15 to 22 months after diagnosis. Even with surgery, radiation, and chemotherapy, the outcomes are still poor, and treatment often affects quality of life.
+
+
+#### 3.2) Download
+
+Progenetix [2] provides the following information for Glioblastoma:
+
+- 4900 total samples associated with glioblastoma
+- 4816 samples are a direct match to the NCIT:C3058 code
+- 4919 CNV profiles are available for analysis
+
+
+```{r}
+freq <- pgxLoader(type="cnv_frequency", filters="NCIT:C3058")
+```
+
+
+#### 3.3) Data Preview
+
+```{r}
+freq[["NCIT:C3058"]]
+```
+
+#### 3.4) Metadata
+
+```{r}
+mcols(freq)
+```
+### 4) Visualizations
+
+
+
+#### 4.1) CNVs by Genome
+
+Based on the genome-wide CNV frequency plot, chromosomes 7, 9, 10, 13, 19, 20, and 22 show the most significant copy number alterations across the 4919 glioblastoma samples. In the plot, yellow regions indicate copy number gains, and blue regions indicate copy number losses. Only sample frequencies above 25% were analized to reduce noise.
+
+
+| Chromosome | CNV Type | Arm (approx.)  | Notes                                                                 |
+|------------|----------|----------------|-----------------------------------------------------------------------|
+| 7          | Gain     | p and q        | High-level gain across entire chromosome, affecting both arms         |
+| 9          | Loss     | p              | Sharp deletion peak on 9p                                             |
+| 10         | Loss     | p and q        | Deletion across both arms, slightly more on 10q                       |
+| 13         | Loss     | q              | Loss peaking in the middle of 13q                              |
+| 19         | Gain     | p and q        | Gain on both arms, but only 19p exceeds 0.25 threshold                |
+| 20         | Gain     | q              | Gain on 20q, slightly above 0.25, similar to 19p                      |
+| 22         | Loss     | q              | Loss just above the 0.25 threshold on 22q                             |
+
+
+```{r, fig.width=10, fig.height=3}
+pgxFreqplot(freq)
+```
+
+#### 4.2) CNVs by Chromosome
+
+
+Focusing on the most significant frequencies, chromosomes 7, 9 and 11 are analyzed in more detail.
+
+
+##### 4.2.1) Chromosome 7
+
+Chromosome 7 shows a consistent and strong gain along the entire length, with frequencies above 50% across both arms. A sharp peak of the amplitude is visible near the centromer of p7. Losses are uniformly rare accross the whole chromosome.
+
+
+```{r, fig.width=10, fig.height=3}
+pgxFreqplot(freq,chrom = c(7))
+```
+
+
+##### 4.2.2) Chromosome 9
+
+Chromosome 9 shows strong losses in the p9 arm, where the frequency reaches over 50% in the middle of p9. The q arm shows only mild CNV activity, although gains are slightly higher on q9 than on p9.
+
+
+```{r, fig.width=10, fig.height=3}
+pgxFreqplot(freq,chrom = c(9))
+```
+
+##### 4.2.3) Chromosome 11
+
+Chromosome 11 displays moderate but constant losses across both arms, with loss frequencies peaking just above 10%. Gains are generally low and remain below the 10% mark.
+
+
+
+```{r, fig.width=10, fig.height=3}
+pgxFreqplot(freq,chrom = c(11))
+```
+
+
+
+
+## 5) Discussion
+
+Both [1] and [3] analyzed copy number variations (CNVs) to identify biomarkers for glioblastoma. Study [1] highlighted the co-deletion of 1p and 19q as strong indicators, though these alterations were not above the .25 threshold in my dataset. In contrast, [3] reported a frequent loss on chromosome 9p21, found in approximately 55% of samples, which closely matches large deletions on 9p in my analysis.
+
+Additionally, [3] identified gains at the EGFR locus on chromosome 7p as a characteristic marker for glioblastoma. This observation can be found very similarly in my results, which also show a consistent and high-frequency gain across chromosome 7p.
+
+Overall, my findings align closely with [3] regarding high-frequency CNVs on 9p and 7p, while the co-deletions on 1p and 19q reported by [1] were not found in my frequency-based analysis.
+
+
+
+## I) References
+
+[1] Buchwald, Z.S., Tian, S., Rossi, M. et al. Genomic copy number variation correlates with survival outcomes in WHO grade IV glioma. Scientific Reports 10, 7355 (2020). https://doi.org/10.1038/s41598-020-63789-9
+
+[2] Progenetix - Oncology CNV Resource. https://progenetix.org/
+
+
+[3] The Cancer Genome Atlas Research Network. * genomic characterization defines human glioblastoma genes and core pathways. Nature 455, 1061–1068 (2008). https://doi.org/10.1038/nature07385
+
+

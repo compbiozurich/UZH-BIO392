@@ -1,0 +1,120 @@
+---
+title: "CNV_Frequency_Analysis_Loose"
+author: "Sarah Loose"
+date: "2025-04-10"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Link to Progenetix Package on Git
+[Progenetix Link](https://github.com/progenetix/pgxRpi)
+
+### Libraries
+```{r, warnigs = FALSE,message=FALSE,Libraries}
+rm(list=ls())
+#install.packages("BiocManager")
+library(BiocManager)
+library(pgxRpi)
+library(SummarizedExperiment) 
+library(GenomicRanges)
+```
+
+### Diesease Descripton: Cutaneous Melanoma
+**Cutaneous Melanoma** is a subtype of skin cancer that originates in Melanocytes. 
+It is mainly caused by UV light, therefore often preventable by avoiding 
+unprotected exposure. 
+However, in general Melanomas can develop in any part of 
+the body. In Progenetix we find Cutaneous Melanoma listed as **NCIT:C3510**. </br>
+Listed are:
+
+* 2378 samples
+
+* 2232 direct NCIT:C3510 code matches
+
+* 2559 CNV analyses
+
+### CNV Frequency Analysis and Visualization
+```{r, warnings= FALSE}
+#retrieve cnv frequency (can be more than one NCIT)
+# gets stored into GRanges List with Granges Objects
+freq<- pgxLoader(type="cnv_frequency",
+                         filters=c("NCIT:C3510"))
+
+#access the CNV frequency data from this object
+freq[["NCIT:C3510"]]
+
+#to get the metadata, use `mcols' function:
+mcols(freq)
+
+
+```
+
+### Visualize CNV frequency data 
+```{r, warnings= FALSE, fig.width = 12, fig.height = 6}
+
+pgxFreqplot(freq) 
+
+```
+
+
+### CNV frequency on specific chromosomes
+```{r, warnings= FALSE, fig.width = 12, fig.height = 6}
+
+pgxFreqplot(freq, filters='NCIT:C3510',chrom=c(7,9, 10), layout = c(3,1)) 
+
+```
+
+
+### Literature Comparison
+According to the plot, using an arbitrary threshold of 25%, Chromosomes 1,6,7,8,17, 20, and 22 show frequent gains. </br>
+Chromosomes 6,9, and 10 show frequent losses.
+
+*Compared to established literature, is this to be expected?* </br>
+
+**Literature:**
+
+- [Link NCBI Search Tool](https://www.ncbi.nlm.nih.gov/gene) 
+
+- [Link Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC8193952/) 
+
+- [Link Table](https://pmc.ncbi.nlm.nih.gov/articles/PMC8193952/table/T1/) 
+
+**Common genomic mutation locations in Cutaneous Melanoma**
+
+| Gene Name  | Chromosomal Locus |
+|------------|-------------------|
+| BRAF       | 7q34              |
+| NRAS       | 1p13.2            |
+| RAC1       | 7p22.1            |
+| KIT        | 4q12              |
+| TERTprom   | 5p15.33           |
+| MAP2K1     | 15q22.31          |
+| MAP2K2     | 19p13.3           |
+| GNAQ       | 9q21.2            |
+| GNA11      | 9p13.3            |
+| IDH1       | 2q33.3            |
+| ERBB2      | 17q21             |
+| ERBB4      | 2q34              |
+| KRAS       | 12p12.1           |
+| SF3B1      | 2q33.1            |
+| NF1        | 17q11.2           |
+| PTEN       | 10q23             |
+| TP53       | 17p13.1           |
+| RASA2      | 3q23              |
+| CDKN2A     | 9p21              |
+| CDK4       | 12q14.1           |
+
+
+This review does not explicitly show methods or analysis pipelines, 
+but our rudimentary CNV frequency analysis with an arbitrary 25% threshold 
+frequency overlaps largely with these findings. 
+Especially in the more prominent regions like on Chromosome 1, 7, 9, and 10. </br>
+As an example: on Chromosome 7, the BRAF gene is found, which is one of the most common cancer-causing genes in melanoma. 
+
+
+

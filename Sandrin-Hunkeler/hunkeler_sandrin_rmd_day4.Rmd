@@ -1,0 +1,133 @@
+---
+title: "Day IV - First Steps with R-Markdown"
+author: "Sandrin Hunkeler"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: journal
+    highlight: tango
+    toc: true
+    toc_depth: 4
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+
+### 1) Dataset
+
+#### 1.1) Load Dataset
+We begin by loading the built-in datasets package, which contains several classic data sets including iris.
+
+```{r }
+library(datasets)
+```
+
+
+
+#### 1.2) Display whole Dataset
+
+The `iris` dataset is a built-in R dataset with measurements of different flower species.
+
+
+```{r eval=FALSE}
+iris 
+```
+
+
+#### 1.3) Display Data Type
+What is the data type of the `iris` dataset?
+
+```{r}
+class(iris)
+```
+
+
+#### 1.4) Display Data Type of Columns
+What is the data type of the `iris` dataset?
+
+```{r}
+sapply(iris, class)
+```
+  
+#### 1.5) List First Few Rows
+Display the first six rows of the dataset.
+
+
+```{r}
+head(iris)
+```
+
+
+#### 1.6) Summary of Dataset
+Get a summary of the dataset (mean, min, max, etc.)  
+
+```{r}
+summary(iris)
+```
+
+
+#### 1.7) Structure of Dataset
+
+Get the structure of the dataset (data types, number of rows/columns) 
+
+```{r}
+str(iris)
+```
+
+
+### 2) Transformation
+
+#### 2.1) Assign Row Values to Variable
+
+Assign petal width and petal length to variables `x` and `y`  
+
+```{r}
+x <- iris$Petal.Width
+y <- iris$Petal.Length
+```
+
+
+
+### 3) Visualization
+#### 3.1) Scatter Plot
+
+Create a scatter plot to display the relationship between petal width and petal length  
+```{r}
+plot(x, y,
+     main = "Petal Length vs. Petal Width",
+     xlab = "Petal Width (cm)",
+     ylab = "Petal Length (cm)",
+     pch = 19,
+     col = rgb(0.8, 0.1, 0.1, 0.6),
+     cex = 1.5,
+     xlim = range(x) + c(-0.1, 0.1),
+     ylim = range(y) + c(-0.5, 0.5),
+     las = 1,
+     bty = "l")
+grid(col = "gray80", lty = "dotted")
+
+```
+
+
+#### 3.2) Box Plot
+Create a box plot to display Sepal Length for different species  
+
+```{r}
+boxplot(Sepal.Length ~ Species,
+        data = iris,
+        main = "Distribution of Sepal Length by Species",
+        xlab = "Species",
+        ylab = "Sepal Length (cm)",
+        col = c("#66c2a5", "#fc8d62", "#8da0cb"),
+        border = "gray40",
+        notch = TRUE,
+        frame = FALSE,
+        las = 1)
+grid(nx = NA, ny = NULL, col = "gray90", lty = "dotted")
+
+```
+
+
+
