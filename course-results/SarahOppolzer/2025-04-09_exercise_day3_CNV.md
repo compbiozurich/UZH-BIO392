@@ -1,4 +1,3 @@
-#### Sarah Opolzer - 09.04.2025 - BIO 392
 # Day 3 - exercise
 
 - #### What is CNV/CNA?
