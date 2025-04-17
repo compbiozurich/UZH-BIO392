@@ -30,7 +30,7 @@ Symptoms depend on where the tumor is located in the brain. They can include:
 -Changes in mood, personality, or behavior
 -Because glioblastomas grow quickly, symptoms tend to appear suddenly and should prompt -medical evaluation.
 
-source: [USZ] (https://www.usz.ch/en/disease/glioblastoma/)
+source: [USZ](https://www.usz.ch/en/disease/glioblastoma/)
 ### Lets start to code
 
 Clear R's brain
@@ -52,7 +52,7 @@ library(pgxRpi)
 library(GenomicRanges)
 ```
 
-My Glioblastoma data is on the [progenetic website] (https://progenetix.org/subset/?id=NCIT:C3058&datasetIds=progenetix).
+My Glioblastoma data is on the [progenetic website](https://progenetix.org/subset/?id=NCIT:C3058&datasetIds=progenetix).
 The NCIt code is "NCIT:C3058". 
 
 Access CNV frequency data from samples with Glioblastoma adn store results in variable
