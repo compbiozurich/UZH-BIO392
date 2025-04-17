@@ -43,9 +43,9 @@ Please investigate each of SNP using the following databases:
 |--------|------------|---------------|---------------------|-------------------------|------------------|------------------------------|----|
 | 1      | rs7903146  | *TCF7L2*      | Type 2 Diabetes     |  10:112998590 |intron variant |C/G/T Ancestral: T|0.40|
 
-![Allele frequency in different populations](image-1.png)
+[Allele frequency in different populations](image-1.png)
 
-*GWAS study:* <https://pmc.ncbi.nlm.nih.gov/articles/PMC3442244/>
+[*GWAS study:*](https://pmc.ncbi.nlm.nih.gov/articles/PMC3442244/)
 
 *Description of the trait/disease:* The study focuses on Type 2 Diabetes Mellitus (T2DM), a chronic metabolic disorder characterized by insulin resistance and impaired insulin secretion, leading to elevated blood glucose levels.​
 
@@ -62,9 +62,9 @@ Please investigate each of SNP using the following databases:
 |--------|------------|---------------|---------------------|-------------------------|------------------|------------------------------|----|
 | 2      | rs1426654  | *SLC24A5*     | Skin Pigmentation   |  15:48120990-48142672   |  missense variant|  A/G/T Ancestral: G          |0.50|
 
-![Allele frequency in different populations](image.png)
+[Allele frequency in different populations](image.png)
 
-*GWAS study:* <https://www.sciencedirect.com/science/article/pii/S0092867417313247?via%3Dihub>
+[*GWAS study:*](https://www.sciencedirect.com/science/article/pii/S0092867417313247?via%3Dihub)
 
 *Description of the trait/disease:* The study investigates skin pigmentation, a highly variable human trait influenced by multiple genetic factors. Specifically, it examines the role of the rs1426654 SNP in the SLC24A5 gene, which has been associated with lighter skin pigmentation in various populations.​
 
@@ -83,7 +83,7 @@ Please investigate each of SNP using the following databases:
 
 ![Allele frequency in different populations](image-2.png)
 
-*GWAS study:* <https://www.sciencedirect.com/science/article/pii/S1552526019351179?via%3Dihub>
+[*GWAS study:*](https://www.sciencedirect.com/science/article/pii/S1552526019351179?via%3Dihub)
 
 *Description of the trait/disease:* 
 
@@ -101,14 +101,14 @@ Please investigate each of SNP using the following databases:
 | 4      | rs334  | *HBB*     | Sickle Cell Anemia    |  11:5227002  |Missense variant| T/A/C/G  |0.14|
 
 
-![Allele frequency in different populations](image-3.png)
+[Allele frequency in different populations](image-3.png)
 
 # 5. rs12913832
 | number | SNP (rsID) | Gene / Region | Notable Trait / Use | Chromosome and Position | variant type     | reference & alternate alleles|MAF |
 |--------|------------|---------------|---------------------|-------------------------|------------------|------------------------------|----|
 | 5      | rs12913832  | *HERC2*     | Eye Color       |  15:28120472  |Intron variant| A/C/G |NA|
 
-![Allele frequency in different populations](image-4.png)
+[Allele frequency in different populations](image-4.png)
 
 
 
