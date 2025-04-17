@@ -1,4 +1,4 @@
-## Day II - Gene Disease Relation
+# Day II - Gene Disease Relation
 #### Sandrin Hunkeler  (MSc. in Informatics)
 
 ___
