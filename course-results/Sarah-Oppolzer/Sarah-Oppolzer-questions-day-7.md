@@ -85,14 +85,12 @@ Then, answer Q6 and Q7.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?** 
-
-Your answer here
+NGS is the gold standard for diagnostic sequencing, since it is chep and achieves a high throughput. However, the NGS pipelines struggled eiwth highly repetitive reions in the genome, and they therefore are often filtered as a result. In detail, repeats longer than ~70bp are difficult or even impossible to genotype, because there is an insuffivient number of enclodes reads. Also, pother used platforms are facing difficulties: in a recent genome-wide analysis conducted with HipSTR, more than 150,000 STRs were filtered, although they included known pathogenic TR expansions. SRTetch, on the other hand, can perform genome-wide exoansion identification, but is not able to analyze short TRs. Tredparse can not estimate repeat lenghts longer than the seqeuncing fragment lenght, and ExpansionHunter stops producing accurate genotypes when both alleles are close to or longer than the seqeuncing read lenthy. Additionally, those two platforms - Tredparse and ExpansionHunter - have not been designed fro genome wide scales. GansgSTR on the other hand, has proven to be faster and to provide more accurate results compared to the existing solutions. This was tested on real and simulated datasets, with different kinds of allele lengths. Most existing tools have mainly focused on repeat-enclosing reads. GangSTR on the other hand, incorperates other pieces of information, like fragment length, coverage and the existence partially enclosing reads. All those features are functions of repeat number. GangSTR incorperates those other informative aspects into a single joint likelihood framework.  
 
 ---
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?** 
-
-Your answer here
+I answered this already in Question 8, in Detail: Most existing tools have mainly focused on repeat-enclosing reads. GangSTR on the other hand, incorperates other pieces of information, like fragment length, coverage and the existence partially enclosing reads. All those features are functions of repeat number. GangSTR incorperates those other informative aspects into a single joint likelihood framework.  
 
 ---
