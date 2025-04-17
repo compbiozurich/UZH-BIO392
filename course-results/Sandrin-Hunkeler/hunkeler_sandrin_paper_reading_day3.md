@@ -1,4 +1,4 @@
-## Day III – Progenetix 
+# Day III – Progenetix 
 #### Sandrin Hunkeler  (MSc. in Informatics)
 
 
