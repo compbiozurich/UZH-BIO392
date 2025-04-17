@@ -43,7 +43,7 @@ Please investigate each of SNP using the following databases:
 |--------|------------|---------------|---------------------|-------------------------|------------------|------------------------------|----|
 | 1      | rs7903146  | *TCF7L2*      | Type 2 Diabetes     |  10:112998590 |intron variant |C/G/T Ancestral: T|0.40|
 
-[Allele frequency in different populations](image-1.png)
+![Allele frequency in different populations](image-1.png)
 
 [*GWAS study: Large-scale association analysis provides insights into the genetic architecture and pathophysiology of type 2 diabetes*](https://pmc.ncbi.nlm.nih.gov/articles/PMC3442244/)
 
@@ -90,14 +90,14 @@ Please investigate each of SNP using the following databases:
 | 4      | rs334  | *HBB*     | Sickle Cell Anemia    |  11:5227002  |Missense variant| T/A/C/G  |0.14|
 
 
-[Allele frequency in different populations](image-3.png)
+![Allele frequency in different populations](image-3.png)
 
 # 5. rs12913832
 | number | SNP (rsID) | Gene / Region | Notable Trait / Use | Chromosome and Position | variant type     | reference & alternate alleles|MAF |
 |--------|------------|---------------|---------------------|-------------------------|------------------|------------------------------|----|
 | 5      | rs12913832  | *HERC2*     | Eye Color       |  15:28120472  |Intron variant| A/C/G |NA|
 
-[Allele frequency in different populations](image-4.png)
+![Allele frequency in different populations](image-4.png)
 
 
 
