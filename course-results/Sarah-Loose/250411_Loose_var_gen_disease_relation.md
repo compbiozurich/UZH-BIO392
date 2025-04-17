@@ -1,6 +1,6 @@
 
 
-## Variants and diseases
+# Variants and diseases
 
 
 
