@@ -6,7 +6,7 @@ Size of WES and WGS genome data of one person.
 |WES (100x)	      |   5GB|  8GB|0.1GB| 13GB|
 |WGS (30x)        |  80GB|100GB|  1GB|180GB|
 
-Source: https://3billion.io/blog/big-data-among-big-data-genome-data
+Source: <https://3billion.io/blog/big-data-among-big-data-genome-data>
 
 Computer storage for 1000 genomes? 
 - For WES :  13GB x 1000 =  13000GB =  13TB
