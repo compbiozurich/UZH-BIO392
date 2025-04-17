@@ -1,4 +1,4 @@
-# 1. Use blast in NCBI to search the unknown nucleotide sequence
+# Use blast in NCBI to search the unknown nucleotide sequence
 ## a) Which organism does this sequence belong to?
 coronavirus
 
@@ -20,7 +20,7 @@ DNA
 surface glycoprotein, partial
 
 
-# 2. Use blast in Uniprot to search the unknown protein sequence
+# Use blast in Uniprot to search the unknown protein sequence
 ## a) Select the most possible one among manually reviewed entries. What is its Uniprot ID?
 P01116
 
