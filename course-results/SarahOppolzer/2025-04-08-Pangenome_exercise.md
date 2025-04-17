@@ -1,4 +1,3 @@
-####  Sarah Oppolzer - 2025-04-08 - BIO 392
 # The human reference genome, T2T and Pangenomes
 
 - The human reference genome, that has been used since 2001 represents mosaics of individual haplotypes that contain a representative 
