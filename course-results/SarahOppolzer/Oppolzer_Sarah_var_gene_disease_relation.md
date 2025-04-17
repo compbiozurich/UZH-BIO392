@@ -1,4 +1,4 @@
-## Variants and diseases
+# Variants and diseases
 
 ### Relational list using [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)
 
