@@ -7,7 +7,7 @@ When Sequencing data is retrieved, on each position there is a likelihood estima
 
 ### SAM and BAM
 These Sequences can then be aligned and mapped to a reference. The mapping can be stored in mainly two different format types. 
-A more outdated format is the **SAM** (Sequence alignment and map) file, a human-accessible text file (ASCII encoded) that uses massive amount of storage.
+A more outdated format is the [**SAM**](https://samtools.github.io/hts-specs/SAMv1.pdf) (Sequence alignment and map) file, a human-accessible text file (ASCII encoded) that uses massive amount of storage.
 SAM files have been mainly replaced by **BAM** (Binary alignment/ map) files, that uses compressed data with Indices. Here, in binary-encoded files, a single base can be described by only 2 bits per base. However, these file types contain elements with variable lengths (CIGAR, Header, flags). A BAM file can be reduced in size compared to a SAM file up to ~50%. [The file can represent aligned sequences up to 128 Mb](https://support.illumina.com/help/BS_App_RNASeq_Alignment_OLH_1000000006112/Content/Source/Informatics/BAM-Format.htm) so file size can differ here.
 
 ### CRAM
@@ -72,7 +72,7 @@ WGS (30x)	        |80GB	  |100GB|1GB  |180GB|
 
 ### More Sources
 [File Types](https://www.ga4gh.org/our-products/#{%22product%22:{%22related_work_streams%22:%22Large-Scale%20Genomics%20(LSG)%20Work%20Stream%22}}) </br>
-[2] BIO694 Slides, FGCZ, May 2023  </br>
+BIO694 Slides, FGCZ, May 2023  </br>
 [CRAM 1](https://ena-docs.readthedocs.io/en/latest/retrieval/programmatic-access.html#cram-format#)  </br>
 [CRAM 2](https://www.ga4gh.org/news_item/cram-compression-for-genomics/)  </br>
 [BED](http://genome.cse.ucsc.edu/FAQ/FAQformat.html#format1)
