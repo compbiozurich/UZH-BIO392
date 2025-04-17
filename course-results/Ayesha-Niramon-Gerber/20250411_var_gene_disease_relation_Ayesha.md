@@ -1,6 +1,6 @@
-## Variants and diseases
+# Variants and diseases
 
-### Relational list using [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)
+## Relational list using [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)
 
 |Disease|Disease description|Gene|Variants（HGVS)|
 |-------|-------------------|----|--------|
@@ -13,7 +13,7 @@
 |Huntington's disease|Inherited disorder that causes neurons, in parts of the brain,to gradually break down and die, resulting in motor, cognitive, and psychiatric disturbances.|HTT|NM_001388492.1:c.54GCA[30]|
 
 
-### Relational list using [ClinGen](https://clinicalgenome.org/)
+## Relational list using [ClinGen](https://clinicalgenome.org/)
 
 |Gene|Gene name|Chromosomal location|Gene product|Disease|Disease description|
 |----|---------|--------------------|------------|-------|-------------------|
