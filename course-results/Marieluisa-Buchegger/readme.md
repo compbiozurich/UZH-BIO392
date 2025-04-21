@@ -5,3 +5,5 @@ The Graded Exercises are the following:
 - cnv_frq_anaylsis.Rmd
 - file_formats.md
 - clinvar_clingen.md
+- question_day_07.md
+
