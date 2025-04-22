@@ -19,9 +19,7 @@ This is an ongoing project, as can be seen, in the past 7 years the cancer loci-
 ## NCIt, ICOD-3 and UBERON
 
 All 3 are ontologies.
-
 NCIt (National Cancer Institute Thesaurus) classifies and describes Cancer types. It is constructed by text mining and expert curation for annotation of medical data.
-
 International Classification of Disease in Ontoltogy 3rd Edition
 (ICD-O-3) for cancer sample classification. Prevalent annotation method with shortcomings. Struggles to represent hierarchichal concepts
 
