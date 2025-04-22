@@ -32,7 +32,7 @@ Uberon is an anatomical ontology that allows for linking of several databases.
 The represented classes reach across species and focuses on structural anatomical despriptions. This can be connected to ICD-O-T codes so that the cancer types could me mapped to anatomical regions.
 
 
-## What are cnv segmentations and CNV frequencies and how to use them?
+## What are Cnv segmentations and CNV frequencies and how to use them?
 
 In the process of CNV analysis segmentation is useful for a comprehensive overview of variations.
 Here, they determined allele-specific copy number abberations by comparing allele data from SNP-arrays using the B-allele-frequency (BAF). This enables detection of Loss of heterozygosity (LOH) events on the chromosomes in respective regions.
@@ -43,8 +43,6 @@ CNV frequency would describe then how often this variation occurs across several
 ## What is an API and how is it used in Progenetix
 
 An API (Appplication Programming Interface) is a set of commands, functions, protocols and objects that programmers can use to create a software or to interact with external systems.[^1] 
-
-
 In Progenetix  one can query for information on CNV frequencies derived from an extensive, well-annotated and standartized database . It is highly relevant in cancer genomics and enables filtering based on selected categories.
 It is based on the Beacon v2 API created by the Global Alliance for Genomics and Health (GA4GH) that creates a federated framework to inquire extensive information on genomic studies.!
 
