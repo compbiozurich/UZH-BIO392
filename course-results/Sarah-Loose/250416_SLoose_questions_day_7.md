@@ -2,19 +2,41 @@
 
 ### Q1
 
-Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is? Your answer here
+Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is? 
+For all patients we have a forward and reverese sequenced fastq file. For all 3 patients the data is the same here.
+We are dealing with simulated sequence data so the quality scores per base are uniformly ideal and we can´t see a boxplots with a quality estimation. 
+
+<img width="695" alt="grafik" src="https://github.com/user-attachments/assets/e8546183-8b23-498f-b4b8-05821ba78346" />
+
+<img width="400" height = "400" alt="grafik" src="https://github.com/user-attachments/assets/bc5b85a1-d7d7-4d2a-9ec5-f2bba157dbdc" />
+
+
 
 ### Q2
 
-Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data? Your answer here
+Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data? 
+
+No, since our read quality does not decrease towards any end in our simulated data. Additionaly, If we navigate to the "Adapter Content" tab, we see no adapter sequences occuring, only minimal poly-A content towards the end of the sequences, which should be fine.
+
+<img width="700" alt="grafik" src="https://github.com/user-attachments/assets/128c4857-6ea2-4709-937a-bbef03055df3" />
 
 ### Q3
 
-Why are so many files in the bioinformatics pipeline compressed and indexed? Your answer here
+Why are so many files in the bioinformatics pipeline compressed and indexed? 
+
+We are dealing with immense amounts of data here. Indexed and compressed or binary files can be more easily and quickly navigated, transferred or accessed. 
+Indexing allows for easier and faster workflows, since it provides a focus on a target region of interest, which can directly be queried.
+Compressed formats are helpful for long-term data storage, reducing cost and environmental impact greatly.
+
 
 ### Q4
 
-In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed? Hint: look at the Samtools manual. Your answer here
+In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). 
+Explain what these three programs do.
+Why do you think each program is needed? 
+Hint: look at the Samtools manual. Your answer here
+
+
 
 ### Q5
 
