@@ -104,8 +104,8 @@ GangSTR stands out from other tools because it is designed for genome-wide genot
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
 GangSTR uses four classes of paired-end read data:
-- Enclosing reads (E) – reads that span the entire repeat with flanking regions.
-- Spanning reads (S) – pairs where reads map to either side of the repeat.
-- Flanking reads (F) – reads that partially extend into the repeat.
-- Fully Repetitive Reads (FRR) – reads composed entirely of the repeat motif.
+- Enclosing reads (E): reads that span the entire repeat with flanking regions.
+- Spanning reads (S): pairs where reads map to either side of the repeat.
+- Flanking reads (F): reads that partially extend into the repeat.
+- Fully Repetitive Reads (FRR): reads composed entirely of the repeat motif.
 For each class, GangSTR models specific characteristics such as repeat count, observed fragment length, distance from the repeat region, and number of observed copies, integrating this data into a maximum likelihood model to estimate the diploid genotype.
