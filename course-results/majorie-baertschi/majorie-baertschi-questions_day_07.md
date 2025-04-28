@@ -2,6 +2,7 @@
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
+
 They look very different from the ones we saw in the slides. The 'per base sequence quality' boxplot looks uniform. We don't have real quality scores. This is the case because we have simulated data. Simulated data is sometimes used in tutorials and teaching. Or to test pipelines etc. and see how your code works.
 Normally quality scores give us information about how confident the sequencer was about calling a specific base. When we have simulated data we don't have actual base calling, therefore phred quality scores are just fixed or pre-defined.
 
@@ -10,16 +11,31 @@ We don't see any adapter sequences being present. This makes sense when we consi
 
 ### Q2
 **Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?**
+
 No because we don't have bad quality scores. Trimming is done to remove adapters or low-quality bases, which does not make sense in our case, as we have simulated data. Normally in the 'per base sequence quality' boxplot when we would see the quality score dropping into the red area, we would trim.
 
 ### Q3
 **Why are so many files in the bioinformatics pipeline compressed and indexed?**
-Your answer here
+
+Compressed: Many files are compressed as it is much more efficient. Compressed files are smaller, leading to lower storage costs. Sequencing data coming directly from the sequencer (FASTA files...) or alignment files (SAM...) for example are very large, plus they are time and cost effcient, considering storage for example. Therefore it makes sense to compress them, as many programs are able to directly use the compressed files and do not need to decompress them first.
+
+Indexed: It makes sense to index files, as sequence or alignment files are rather large. When we index these large files it helps us to access a specific region of interest in the genome much faster. When we want to look at a certain position on a chromosome, to see whether we have some kind of copy number variation for example, indices help us to find these positions we want to analyse. 
 
 ### Q4
 **In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). Explain what these three programs do. Why do you think each program is needed?**
 *Hint: look at the [Samtools manual](http://www.htslib.org/doc/samtools.html)*.
-Your answer here
+
+**samtools sort**: When samtools sort is used (without further options), all our alignments are sorted by their leftmost coordinate, which could be for example the position on the chromosome. Different sorting options can be applied, the alignments are then for example sorted by read names or by minimiser (when reads are unmapped). A sort order header is added and the sorted output can be stored in a BAM file or CRAM file for example.
+
+This tool is important, because it enables further downstream analysis. If we want to index it later and then call variants or visalize data for example, it is important that the alignments are sorted first.
+
+**samtools view**: When no further options are applied, this tool prints all alignments in the file that you specify as input file. If you only want to have a specific region printed you add the region after the filename input; chr12 or chr12:200 for example. Then we only get alignments of chromosome 12 printed or in the second example the region on chromosome 12 beginning at base position 200. More than one region can be specified. To access these specific regions the input file needs to be sorted (by default) and indexed. 
+
+This tool is important, because it allows us to see specific regions, that can be directly printed on the screen. Often we only want to analyze one part of the genome, therefore this tool is great to specify these regions and further analyze them. The tool can also be used for file format conversion.
+
+**samtools index**: This tool indexes SAM, BAM or CRAM files. SAM files first need to be BGZF compressed for the indexing to work. 
+
+This tool is important because it allows fast access. It's also important when later a tool is used that requires indices. For example when we use samtools view (as explained above) and we want to specify a region. This only works if we have an indexed file.
 
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
