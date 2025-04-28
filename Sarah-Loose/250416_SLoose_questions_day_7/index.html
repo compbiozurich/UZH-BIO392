@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Questions Day 7: Varant Calling Analysis Pipeline, STR and GangSTR - BIO392</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">BIO392</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">BIO392 Course Results</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Ayesha Niramon Gerber</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250409_Pangenome_paper_Ayesha/" class="dropdown-item">Answers Human Pangenome Reference</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250410_Progenetix_paper_Ayesha/" class="dropdown-item">Answers to Progenetix Text</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250410_R_Basics_Exercise_iris/" class="dropdown-item">R Basics Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250411_BLAST_Ayesha/" class="dropdown-item">Use blast in NCBI to search the unknown nucleotide sequence</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250411_EstimateStorageRequirementsFor1000Genomes/" class="dropdown-item">How much computer storage is required for 1000 genomes?</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250411_var_gene_disease_relation_Ayesha/" class="dropdown-item">Variants and diseases</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/Ayesha-Gerber-questions-day-07/" class="dropdown-item">BIO392-day-07 Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/Ayesha_Gerber_questions-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Basil Burri</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Basil-Burri/Assignment_ClinGen-ClinVar_BaBurri/" class="dropdown-item">Asssignment by Basil Burri</a>
+</li>
+                                    
+<li>
+    <a href="../../Basil-Burri/Assignment_File-Formats_BaBurri/" class="dropdown-item">Assignment by Basil Burri</a>
+</li>
+                                    
+<li>
+    <a href="../../Basil-Burri/Assignment_Pangenome-T2T_BaBurri/" class="dropdown-item">Asssignment by Basil Burri</a>
+</li>
+                                    
+<li>
+    <a href="../../Basil-Burri/B-Burri-questions-day-07/" class="dropdown-item">Assignment by Basil Burri</a>
+</li>
+                                    
+<li>
+    <a href="../../Basil-Burri/Basil-Burri-Questions-Day-06/" class="dropdown-item">Exercise by Basil Burri</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Lea Scherr</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Lea-Scherr/Lea-Scherr-questions-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Lea-Scherr/Scherr_Lea_file_types_day5/" class="dropdown-item">Scherr Lea file types day5</a>
+</li>
+                                    
+<li>
+    <a href="../../Lea-Scherr/Scherr_Lea_paper_reading_day2/" class="dropdown-item">Exercise 8.3.25 - Pangenome</a>
+</li>
+                                    
+<li>
+    <a href="../../Lea-Scherr/Scherr_Lea_paper_reading_day3/" class="dropdown-item">The Progenetix Oncogenomic Resource</a>
+</li>
+                                    
+<li>
+    <a href="../../Lea-Scherr/Scherr_Lea_var_gene_disease_relation/" class="dropdown-item">Scherr Lea var gene disease relation</a>
+</li>
+                                    
+<li>
+    <a href="../../Lea-Scherr/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Marieluisa Buchegger</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/RMarkdown-exercise/" class="dropdown-item">R Basics Exercise Script by Marieluisa Buchegger</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/blast_exercise/" class="dropdown-item">Exercise 😃</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/clinvar_clingen/" class="dropdown-item">Clinvar clingen</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/cnv_paper/" class="dropdown-item">Notes on CNV Paper</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/file_formats/" class="dropdown-item">Task: Estimate Storage Requirements for 1000 Genomes</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/pangenome/" class="dropdown-item">Pangenome Task</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/paper_Progenetix__day3/" class="dropdown-item">paper Progenetix  day3</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/question-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/questions_day_07/" class="dropdown-item">BIO392-day-07 Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Megumi Mizoguchi</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/BLAST_exercise_2025-04-11/" class="dropdown-item">BLAST Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/CNV_Map_Review_20250410/" class="dropdown-item">CNV Map Paper Q&amp;A</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/M-Mizoguchi_questions_day_07/" class="dropdown-item">BIO392-day-07 Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/Megumi-Mizoguchi-questions-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/Mizoguchi_Megumi_paper_reading_day3/" class="dropdown-item">BIO392 Assignment Day 3</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/Pangenome_reference_202504_Megumi-Mizoguchi/" class="dropdown-item">Homework: 2025.04.08</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/Storage_estimation_2025-04-11/" class="dropdown-item">Task: Estimate Storage Requirements for 1000 Genomes</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/Task_ClinVar_ClinGen_2025-04-11/" class="dropdown-item">Task ClinVar ClinGen 2025 04 11</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sandrin Hunkeler</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Sandrin-Hunkeler/" class="dropdown-item">Index</a>
+</li>
+                                    
+<li>
+    <a href="../../Sandrin-Hunkeler/hunkeler_sandrin_file_types_day5/" class="dropdown-item">Day V - File formats and their costs</a>
+</li>
+                                    
+<li>
+    <a href="../../Sandrin-Hunkeler/hunkeler_sandrin_paper_reading_day2/" class="dropdown-item">Day II - Telomere-to-Telomere (T2T) Genome Project</a>
+</li>
+                                    
+<li>
+    <a href="../../Sandrin-Hunkeler/hunkeler_sandrin_paper_reading_day3/" class="dropdown-item">Day III – Progenetix</a>
+</li>
+                                    
+<li>
+    <a href="../../Sandrin-Hunkeler/hunkeler_sandrin_question_day_07/" class="dropdown-item">Day VII – STR</a>
+</li>
+                                    
+<li>
+    <a href="../../Sandrin-Hunkeler/hunkeler_sandrin_var_gene_disease_relation.md/" class="dropdown-item">Day II - Gene Disease Relation</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sara Burckhardt</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/S-burckhardt-questions_day_07/" class="dropdown-item">BIO392-day-07 Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/burckhardt_sara_file-formats_day5/" class="dropdown-item">Task 4: File Formats</a>
+</li>
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/burckhardt_sara_pangenome_day1/" class="dropdown-item">A draft human pangenome reference – the major outcomes and improvements</a>
+</li>
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/burckhardt_sara_paper_reading_day3/" class="dropdown-item">The Progenetix oncogenomic resource in 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/burckhardt_sara_var_gene_disease_relation/" class="dropdown-item">Variants and diseases</a>
+</li>
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/sara-burckhardt-questions-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sarah Loose</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../250410_pangenome_Loose/" class="dropdown-item">T2T-Sequencing and Pangenomes</a>
+</li>
+                                    
+<li>
+    <a href="../250410_progenetix_paper/" class="dropdown-item">The Progenetix oncogenomic resource in 2021</a>
+</li>
+                                    
+<li>
+    <a href="../250411_Blast_exercise/" class="dropdown-item">250411 Blast exercise</a>
+</li>
+                                    
+<li>
+    <a href="../250411_Loose_var_gen_disease_relation/" class="dropdown-item">Variants and diseases</a>
+</li>
+                                    
+<li>
+    <a href="../250415_SNP_Loose/" class="dropdown-item">SNP Understanding Question</a>
+</li>
+                                    
+<li>
+    <a href="../250415_file_formats_Loose/" class="dropdown-item">File formats</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Questions Day 7: Varant Calling Analysis Pipeline, STR and GangSTR</a>
+</li>
+                                    
+<li>
+    <a href="../readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sarah Oppolzer</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2024-04-14-exercise_CNV_patterns/" class="dropdown-item">Exercise CNVs with a progenetix file</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-08-Pangenome_exercise/" class="dropdown-item">The human reference genome, T2T and Pangenomes</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-09_exercise_day3_CNV/" class="dropdown-item">Day 3 - exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-10-R_exercise/" class="dropdown-item">Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-13-File_formats/" class="dropdown-item">Estimate Storage Requirements for 1000 Genomes</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-16-Exploring_Genome_Resources/" class="dropdown-item">Exploring Genome Resources</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-22_BLAST-exercise/" class="dropdown-item">2025 04 22 BLAST exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/Sarah-Oppolzer-questions-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/Sarah-Oppolzer-questions-day-7/" class="dropdown-item">STR Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/Sarah_Oppolzer_var_gene_disease_relation/" class="dropdown-item">Variants and diseases</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Majorie baertschi</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../majorie-baertschi/majorie-baertschi-file-formats-assignment/" class="dropdown-item">File Formats</a>
+</li>
+                                    
+<li>
+    <a href="../../majorie-baertschi/majorie-baertschi-pangenome-assignment-day2/" class="dropdown-item">A draft human pangenome reference</a>
+</li>
+                                    
+<li>
+    <a href="../../majorie-baertschi/majorie-baertschi-questions-day-06/" class="dropdown-item">Majorie baertschi questions day 06</a>
+</li>
+                                    
+<li>
+    <a href="../../majorie-baertschi/majorie-baertschi-questions_day_07/" class="dropdown-item">Majorie baertschi questions day 07</a>
+</li>
+                                    
+<li>
+    <a href="../../majorie-baertschi/majorie-baertschi-var-gene-disease-relation/" class="dropdown-item">Majorie baertschi var gene disease relation</a>
+</li>
+                                    
+<li>
+    <a href="../../majorie-baertschi/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../250415_file_formats_Loose/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../readme/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#questions-day-7-varant-calling-analysis-pipeline-str-and-gangstr" class="nav-link">Questions Day 7: Varant Calling Analysis Pipeline, STR and GangSTR</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#q1" class="nav-link">Q1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#q2" class="nav-link">Q2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#q3" class="nav-link">Q3</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#q4" class="nav-link">Q4</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#q5" class="nav-link">Q5</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#literature" class="nav-link">Literature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#q6" class="nav-link">Q6</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#q7" class="nav-link">Q7</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="questions-day-7-varant-calling-analysis-pipeline-str-and-gangstr">Questions Day 7: Varant Calling Analysis Pipeline, STR and GangSTR</h1>
+<h2 id="q1">Q1</h2>
+<p><strong>Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?</strong> </p>
+<p>For all patients we have a forward and reverese sequenced fastq file. For all 3 patients the data is the same here.
+We are dealing with simulated sequence data so the quality scores per base are uniformly ideal and we can´t see a boxplots with a quality estimation. </p>
+<p><img width="400" height= "150" alt="grafik" src="https://github.com/user-attachments/assets/e8546183-8b23-498f-b4b8-05821ba78346" /></p>
+<p><img width="400" height = "400" alt="grafik" src="https://github.com/user-attachments/assets/bc5b85a1-d7d7-4d2a-9ec5-f2bba157dbdc" /></p>
+<h2 id="q2">Q2</h2>
+<p><strong>Given the FastQC reports, does it make sense to perform adapter and/or quality-trimming on your data?</strong></p>
+<p>No, since our read quality does not decrease towards any end in our simulated data. Additionaly, If we navigate to the "Adapter Content" tab, we see no adapter sequences occuring, only minimal poly-A content towards the end of the sequences, which should be fine.</p>
+<p><img width="500" height = "400" alt="grafik" src="https://github.com/user-attachments/assets/128c4857-6ea2-4709-937a-bbef03055df3" /></p>
+<h2 id="q3">Q3</h2>
+<p><strong>Why are so many files in the bioinformatics pipeline compressed and indexed?</strong></p>
+<p>We are dealing with immense amounts of data here. Indexed and compressed or binary files can be more easily and quickly navigated, transferred or accessed. 
+Indexing allows for easier and faster workflows, since it provides a focus on a target region of interest, which can directly be queried.
+Compressed formats are helpful for long-term data storage, reducing cost and environmental impact greatly.</p>
+<h2 id="q4">Q4</h2>
+<p><strong>In the bash script that processes alignment files, you will see calls to samtools sort, samtools view, and samtools index (among others). 
+Explain what these three programs do. Why do you think each program is needed? 
+Hint: look at the Samtools manual.</strong></p>
+<pre><code class="language-python">set -euo pipefail
+
+SAMPLES=(&quot;patient_1&quot; &quot;patient_2&quot; &quot;patient_3&quot;)
+for SAMPLE in ${SAMPLES[@]}; 
+do
+    ALIGNMENT=$(find ../data/alignments/${SAMPLE}.sam -type f);
+
+    # Read group information is added to the alignments. 
+    # Not strictly correct but we need to add something or GangSTR will complain later.
+    samtools addreplacerg \
+        -r ID:sim20230830_${SAMPLE} -r SM:${SAMPLE} -r PL:wgsim -r PU:NA -r LB:NA  &quot;${ALIGNMENT}&quot; | \
+    # The alignments are coordinate sorted
+    samtools sort | \
+    # The alignments are compressed
+    samtools view \
+        --bam &gt; \
+        ../data/alignments/${SAMPLE}.bam;
+
+    # The alignments are indexed to allow for random data access
+    samtools index \
+        ../data/alignments/${SAMPLE}.bam;
+done
+</code></pre>
+<h3 id="samtools-sort"><a href="http://www.htslib.org/doc/samtools-sort.html">samtools sort</a></h3>
+<p>This sorts SAM, BAM and CRAM files. More specifically, it sorts alignments by left-most coordinates. This makes it faster to process the file downstream.</p>
+<h3 id="samtools-view"><a href="http://www.htslib.org/doc/samtools-view.html">samtools view</a></h3>
+<p>This converts and views SAM, BAM and CRAM files. In our case we converted a humam-readable, text-based SAM file into a binary, indexed and compressed BAM file.</p>
+<h3 id="samtools-index"><a href="http://www.htslib.org/doc/samtools-index.html">samtools index</a></h3>
+<p>This indexes SAM, BAM and CRAM files. As can be seen in the script, the created indices allow for fast random data access in specified regions of interest.</p>
+<h2 id="q5">Q5</h2>
+<p><strong>Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via 
+the --ref, --region, and --bam command line arguments. 
+Hint: look at the <a href="https://github.com/gymreklab/gangstr">GangSTR manual</a>.</strong></p>
+<p>GangSTR is used to identify short tandem repeats (<strong>STR</strong>) in a genome based on short reads (obtained by e.g. NGS). 
+<strong>Input data:</strong> BAM files (aligned reads)
+The above mentioned commands are used to run GangSTR with default parameters.</p>
+<pre><code>GangSTR --bam file.bam 
+        --ref ref.fa 
+        --regions regions.bed 
+        --out outprefix 
+</code></pre>
+<p><strong>--ref:</strong> this specifies the reference genome that will be used (<strong>fasta</strong> file) to align the repeat regions to.
+<strong>--region:</strong> this specifies the tandem repeat target loci, e.g. our regions of interest on a certain chromosome by inputting a <strong>.bed</strong> file.
+<strong>--bam:</strong> this enables us to feed the program several <strong>.bam</strong> files containing aligned reads to a reference genome. The files can be listed comma-seperated.</p>
+<h2 id="literature">Literature</h2>
+<p>During the practical so far, you have generated variant calls from short read sequencing data using bioinformatics approaches. 
+Now it's time to take a step back and do some background reading in order to prepare for the analysis and interpretation of the results next week.</p>
+<p>First, read the following sections of this review:
+- Abstract
+- Introduction
+- Genotyping STRs from high-throughput sequencing data. Then, answer Q6 and Q7.</p>
+<h2 id="q6">Q6</h2>
+<p><strong>Why is STR variation relevant to health and disease?</strong></p>
+<p>Short Tandem Repeats (<strong>STR</strong>) are mutation hotspots due to their repetitive nature, especially for <em>de-novo</em> mutations and especially for indels.
+We can differentiate between STR expansion or deletion, where STR expansions mostly pathogenic (f.ex.: fragile x Syndrome).</p>
+<p>These seemingly non-coding DNA pieces are anything but useless though. They can play a role in Transcriptionfactor binding, regulatory element spacing, DNA hypermethylation or heterochromatinization, may hinder regular splicing or can lead to the formation of Toxic RNA and Protein aggregates.</p>
+<p>Examples of pathogenic effects can include polyglutamine aggregation, intronic GGGGCC repeat, which plays a role in ALS pathogenicity, and many more, as can be seen in the figure fron the paper.</p>
+<p><img width="684" alt="grafik" src="https://github.com/user-attachments/assets/da0634e4-9d0d-4e06-b530-080d41e1d666" /> [^1]</p>
+<h2 id="q7">Q7</h2>
+<p><strong>What are some of the challenges in analysing STRs from NGS data?</strong></p>
+<p>Common challenges in STR analysis from NGS data include that short read sequencing cannot cover longer repeats. Furthermore, large indels are difficult to accurately align to a reference genome, so shorter alleles are disproportionate mapped and thus overrepresented. Additionally, in PCR-based approaches, during library preparation, the number of STRs gets misrepresented
+This can be overcome by bioinformatic products like lobSTR. There, mapping bias is overcome by using an entropy-based metric to detect repetitive reads and aligns only the non-repetitive regions to the reference genome. A model of STR stutter errors, which are introduced by PCR-absed approaches, then determine the maximum likelihood genotype at each locus[^1].</p>
+<p>Second, read the following sections of the paper describing GangSTR:
+- Abstract
+- Introduction
+- Overview of the GangSTR model .Then, answer Q8 and Q9.</p>
+<h3 id="q8">Q8</h3>
+<p><strong>What sets GangSTR apart from other STR genotyping tools?</strong></p>
+<p>GangSTR enables genome-wide analysis of TR from NGS data. This application overcomes previous challenges by using a general statistical model that forms a maximum-likelihood model from the properties of the short paired-end reads from the NGS data. This works for genotyping of normal length and expanded repeats. GangSTR is furthermore more accurate and faster than previous methods.
+This tool is not limited to reads shorter than 70 bp or motif repeat lengths of no more than 6 bp like STRetch or HipSTR, which previously was disadvantageous for identifying expanded repeats which play a role in pathogenic trait development.</p>
+<p>It is and end-to-end method, that doesn´t only rely on enclosing reads, but that works  by using sequence alignments and a reference set of TRs to construct an estimation of diploid repeat lengths. Ist data source are, as mentioned above, properties of short paired-end reads, from which a maximum likelihood model is constructed that then is applied to every TR genomewide.</p>
+<p>This enables one to identify length of a repetitive region, by counting the repeats between enclosing reads. Additionally, information like coverage, frame length and presence of partially enclosing reads is used to construct two types of probability. They constucted 4 classes for their reads, <strong>E</strong> for enclosing, <strong>S</strong> for spanning reads (they cover the entire repeat length), <strong>F</strong> for flanking read pairs and <strong>FRR</strong> for fully repetitive read pairs.</p>
+<p>Then 2 types of probability are computed: class probability, if the read pair of a certain class can be observed based on the. True genotype and read probability  for predicting read pair properties[^2].</p>
+<h3 id="q9">Q9</h3>
+<p><strong>What types of information does GangSTR use for STR genotyping?</strong>
+- short paired-end read data from NGS (coverage, frame length, content of enclosing reads)
+- Read classification (class: E, S, F, FRR and read probability)</p>
+<p>[^1]: <a href="https://doi.org/10.1016/j.gde.2017.01.012">A genomic view of short tandem repeats</a>
+[^2]: <a href="https://doi.org/10.1093/nar/gkz501">Profiling the genome-wide landscape of tandem repeat expansions</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

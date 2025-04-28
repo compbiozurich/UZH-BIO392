@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Day II - Telomere-to-Telomere (T2T) Genome Project - BIO392</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">BIO392</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">BIO392 Course Results</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Ayesha Niramon Gerber</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250409_Pangenome_paper_Ayesha/" class="dropdown-item">Answers Human Pangenome Reference</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250410_Progenetix_paper_Ayesha/" class="dropdown-item">Answers to Progenetix Text</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250410_R_Basics_Exercise_iris/" class="dropdown-item">R Basics Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250411_BLAST_Ayesha/" class="dropdown-item">Use blast in NCBI to search the unknown nucleotide sequence</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250411_EstimateStorageRequirementsFor1000Genomes/" class="dropdown-item">How much computer storage is required for 1000 genomes?</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/20250411_var_gene_disease_relation_Ayesha/" class="dropdown-item">Variants and diseases</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/Ayesha-Gerber-questions-day-07/" class="dropdown-item">BIO392-day-07 Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/Ayesha_Gerber_questions-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Ayesha-Niramon-Gerber/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Basil Burri</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Basil-Burri/Assignment_ClinGen-ClinVar_BaBurri/" class="dropdown-item">Asssignment by Basil Burri</a>
+</li>
+                                    
+<li>
+    <a href="../../Basil-Burri/Assignment_File-Formats_BaBurri/" class="dropdown-item">Assignment by Basil Burri</a>
+</li>
+                                    
+<li>
+    <a href="../../Basil-Burri/Assignment_Pangenome-T2T_BaBurri/" class="dropdown-item">Asssignment by Basil Burri</a>
+</li>
+                                    
+<li>
+    <a href="../../Basil-Burri/B-Burri-questions-day-07/" class="dropdown-item">Assignment by Basil Burri</a>
+</li>
+                                    
+<li>
+    <a href="../../Basil-Burri/Basil-Burri-Questions-Day-06/" class="dropdown-item">Exercise by Basil Burri</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Lea Scherr</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Lea-Scherr/Lea-Scherr-questions-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Lea-Scherr/Scherr_Lea_file_types_day5/" class="dropdown-item">Scherr Lea file types day5</a>
+</li>
+                                    
+<li>
+    <a href="../../Lea-Scherr/Scherr_Lea_paper_reading_day2/" class="dropdown-item">Exercise 8.3.25 - Pangenome</a>
+</li>
+                                    
+<li>
+    <a href="../../Lea-Scherr/Scherr_Lea_paper_reading_day3/" class="dropdown-item">The Progenetix Oncogenomic Resource</a>
+</li>
+                                    
+<li>
+    <a href="../../Lea-Scherr/Scherr_Lea_var_gene_disease_relation/" class="dropdown-item">Scherr Lea var gene disease relation</a>
+</li>
+                                    
+<li>
+    <a href="../../Lea-Scherr/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Marieluisa Buchegger</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/RMarkdown-exercise/" class="dropdown-item">R Basics Exercise Script by Marieluisa Buchegger</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/blast_exercise/" class="dropdown-item">Exercise 😃</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/clinvar_clingen/" class="dropdown-item">Clinvar clingen</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/cnv_paper/" class="dropdown-item">Notes on CNV Paper</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/file_formats/" class="dropdown-item">Task: Estimate Storage Requirements for 1000 Genomes</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/pangenome/" class="dropdown-item">Pangenome Task</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/paper_Progenetix__day3/" class="dropdown-item">paper Progenetix  day3</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/question-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/questions_day_07/" class="dropdown-item">BIO392-day-07 Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../Marieluisa-Buchegger/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Megumi Mizoguchi</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/BLAST_exercise_2025-04-11/" class="dropdown-item">BLAST Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/CNV_Map_Review_20250410/" class="dropdown-item">CNV Map Paper Q&amp;A</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/M-Mizoguchi_questions_day_07/" class="dropdown-item">BIO392-day-07 Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/Megumi-Mizoguchi-questions-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/Mizoguchi_Megumi_paper_reading_day3/" class="dropdown-item">BIO392 Assignment Day 3</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/Pangenome_reference_202504_Megumi-Mizoguchi/" class="dropdown-item">Homework: 2025.04.08</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/Storage_estimation_2025-04-11/" class="dropdown-item">Task: Estimate Storage Requirements for 1000 Genomes</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/Task_ClinVar_ClinGen_2025-04-11/" class="dropdown-item">Task ClinVar ClinGen 2025 04 11</a>
+</li>
+                                    
+<li>
+    <a href="../../Megumi-Mizoguchi/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sandrin Hunkeler</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Index</a>
+</li>
+                                    
+<li>
+    <a href="../hunkeler_sandrin_file_types_day5/" class="dropdown-item">Day V - File formats and their costs</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Day II - Telomere-to-Telomere (T2T) Genome Project</a>
+</li>
+                                    
+<li>
+    <a href="../hunkeler_sandrin_paper_reading_day3/" class="dropdown-item">Day III – Progenetix</a>
+</li>
+                                    
+<li>
+    <a href="../hunkeler_sandrin_question_day_07/" class="dropdown-item">Day VII – STR</a>
+</li>
+                                    
+<li>
+    <a href="../hunkeler_sandrin_var_gene_disease_relation.md/" class="dropdown-item">Day II - Gene Disease Relation</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sara Burckhardt</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/S-burckhardt-questions_day_07/" class="dropdown-item">BIO392-day-07 Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/burckhardt_sara_file-formats_day5/" class="dropdown-item">Task 4: File Formats</a>
+</li>
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/burckhardt_sara_pangenome_day1/" class="dropdown-item">A draft human pangenome reference – the major outcomes and improvements</a>
+</li>
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/burckhardt_sara_paper_reading_day3/" class="dropdown-item">The Progenetix oncogenomic resource in 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/burckhardt_sara_var_gene_disease_relation/" class="dropdown-item">Variants and diseases</a>
+</li>
+                                    
+<li>
+    <a href="../../Sara-Burckhardt/sara-burckhardt-questions-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sarah Loose</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Sarah-Loose/250410_pangenome_Loose/" class="dropdown-item">T2T-Sequencing and Pangenomes</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Loose/250410_progenetix_paper/" class="dropdown-item">The Progenetix oncogenomic resource in 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Loose/250411_Blast_exercise/" class="dropdown-item">250411 Blast exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Loose/250411_Loose_var_gen_disease_relation/" class="dropdown-item">Variants and diseases</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Loose/250415_SNP_Loose/" class="dropdown-item">SNP Understanding Question</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Loose/250415_file_formats_Loose/" class="dropdown-item">File formats</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Loose/250416_SLoose_questions_day_7/" class="dropdown-item">Questions Day 7: Varant Calling Analysis Pipeline, STR and GangSTR</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Loose/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sarah Oppolzer</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2024-04-14-exercise_CNV_patterns/" class="dropdown-item">Exercise CNVs with a progenetix file</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-08-Pangenome_exercise/" class="dropdown-item">The human reference genome, T2T and Pangenomes</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-09_exercise_day3_CNV/" class="dropdown-item">Day 3 - exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-10-R_exercise/" class="dropdown-item">Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-13-File_formats/" class="dropdown-item">Estimate Storage Requirements for 1000 Genomes</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-16-Exploring_Genome_Resources/" class="dropdown-item">Exploring Genome Resources</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/2025-04-22_BLAST-exercise/" class="dropdown-item">2025 04 22 BLAST exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/Sarah-Oppolzer-questions-day-06/" class="dropdown-item">BIO392 - Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/Sarah-Oppolzer-questions-day-7/" class="dropdown-item">STR Exercise</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/Sarah_Oppolzer_var_gene_disease_relation/" class="dropdown-item">Variants and diseases</a>
+</li>
+                                    
+<li>
+    <a href="../../Sarah-Oppolzer/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Majorie baertschi</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../majorie-baertschi/majorie-baertschi-file-formats-assignment/" class="dropdown-item">File Formats</a>
+</li>
+                                    
+<li>
+    <a href="../../majorie-baertschi/majorie-baertschi-pangenome-assignment-day2/" class="dropdown-item">A draft human pangenome reference</a>
+</li>
+                                    
+<li>
+    <a href="../../majorie-baertschi/majorie-baertschi-questions-day-06/" class="dropdown-item">Majorie baertschi questions day 06</a>
+</li>
+                                    
+<li>
+    <a href="../../majorie-baertschi/majorie-baertschi-questions_day_07/" class="dropdown-item">Majorie baertschi questions day 07</a>
+</li>
+                                    
+<li>
+    <a href="../../majorie-baertschi/majorie-baertschi-var-gene-disease-relation/" class="dropdown-item">Majorie baertschi var gene disease relation</a>
+</li>
+                                    
+<li>
+    <a href="../../majorie-baertschi/readme/" class="dropdown-item">Readme</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../hunkeler_sandrin_file_types_day5/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../hunkeler_sandrin_paper_reading_day3/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#day-ii-telomere-to-telomere-t2t-genome-project" class="nav-link">Day II - Telomere-to-Telomere (T2T) Genome Project</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="day-ii-telomere-to-telomere-t2t-genome-project">Day II - Telomere-to-Telomere (T2T) Genome Project</h1>
+<h4 id="sandrin-hunkeler-msc-in-informatics">Sandrin Hunkeler  (MSc. in Informatics)</h4>
+<hr />
+<h3 id="1-why-its-interesting">1. Why It's Interesting</h3>
+<h4 id="genome-reference-consortium-grc">Genome Reference Consortium (GRC)</h4>
+<p>Since its initial release in 2000, the Genome Reference Consortium (GRC) has not achieved a complete model of the human genome. Its assembly, based on sequenced bacterial artificial chromosomes (BACs), is incomplete for repetitive sequences. The GRCh38 reference assembly contains approximately 151 Mbp of missing sequences over the genome, especially in pericentromeric and subtelomeric regions, heterochromatin, segmental duplications, ampliconic gene arrays, and ribosomal DNA (rDNA) arrays. All of which are highly relevant for fundamental cellular processes.</p>
+<h4 id="contribution">Contribution</h4>
+<p>The newly introduced T2T-CHM13 reference assembly completes the final 8% of the human genome, including all centromeric regions and the entire short arms of the five acrocentric chromosomes. It was created using the complementary strengths of PacBio's HiFi and Oxford's Nanopore ultra-long reads. The T2T-CHM13 assembly is the first complete human genome sequence without any gaps resulting in a telomere-to-telomere across all 22 autosomes and chromosome X. It contains 3,054,815,472 bp of nuclear DNA and a 16,569 bp mitochondrial genome. In comparison to GRCh38, it discovered 238 Mbp of additional sequence, 182 Mbp of which does not align with GRCh38 over ≥1 Mbp intervals.</p>
+<p>The assembly resolves the full structure of all centromeric satellite arrays, recent segmental duplications, 219 full-length rDNA units, and the entire short arms of acrocentric chromosomes, which were previously represented as &gt;150 Mbp of placeholder or synthetic sequence in GRCh38. In addition, it includes 1,956 new gene predictions (99 assumed to be protein coding). Compared to the 8% of unresolved genome regions of GRCh38, T2T-CHM13 only consists of 0.3% potentially missing due to errors.</p>
+<hr />
+<h3 id="2-what-makes-the-t2t-approach-different">2. What Makes the T2T Approach Different</h3>
+<h4 id="pacbio-and-oxford-nanopore">PacBio and Oxford Nanopore</h4>
+<p>PacBio’s long, multi-kilobase single reads were helpful at resolving large gaps in the GRCh38 assembly. Oxford Nanopore's ultra-long reads, exceeding 100 kbp, enabled the first complete assembly of a human centromere (ChrY) and an entire chromosome (ChrX). However, the relatively high error rates (&gt;5%) of both technologies made it difficult to assemble long repeat arrays. PacBio’s latest circular consensus sequencing, known as "HiFi", was introduced as a game changer providing reads up to 20 kbp in length with an error rate of 0.1%.</p>
+<h4 id="chm13htert">CHM13hTERT</h4>
+<p>GRCh38 was created from multiple individuals which resulted in a mosaic of haplotypes rather than a single consistent diploid genome. In contrast, T2T assemble the CHM13hTERT cell line which was later analyzed to be, with the exception of a few thousand variants and a megabase-scale deletion, nearly homozygous. Most CHM genomes originate from the loss of the maternal DNA and duplication of the paternal parts and are homozygous with a 46,XX karyotype. </p>
+<h4 id="graph-walk">Graph Walk</h4>
+<p>The HiFi reads were converted into a bidirected string graph, where nodes are assembled sequences with a very low error rate and edges are overlaps between them. The nodes themselves were compressed and corrected for simple sequence repeats. In contrast to previous assembly algorithms, the graph walk for T2T was based only on exact overlaps instead of involving stochastic or heuristic models. Assembly of rRNA, which occur in multiples of 45 kbp repeats within short arms of acrocentric chromosomes, was achieved using Bruijn graph algorithm before being corrected by HiFi reads. </p>
+<hr />
+<h3 id="3-future-benefits-of-t2t-for-genome-analysis">3. Future Benefits of T2T for Genome Analysis</h3>
+<p>The T2T-CHM13 assembly is a significantly more complete, representative, and accurate reference than GRCh38. Especially for variation that lies within the most repetitive regions of the genome. Disease research focusing on <em>Copy Number Variations</em> (CNVs) gains new insights from the resolved 151 Mbp artificial regions of GRC38. Furthermore, aligning long-read sequences will be easier with the new quality gold standard. This provides the <em>Human Pangenome Reference Consortium</em> (HPRC) with a new toolset to create a diverse collection of reference genomes, overcoming the limitations of a single model. Its achievements also are a pathway for precisely sequencing the ChrY using HiFi technique and automate the assembly of diploid genomes.</p>
+<hr />
+<h3 id="references">References</h3>
+<p>[1]
+https://pubmed.ncbi.nlm.nih.gov/35357919/<br />
+@article{article,<br />
+author = {Nurk, Sergey and Koren, Sergey and Rhie, Arang and Rautiainen, Mikko and Bzikadze, Andrey and Mikheenko, Alla and Vollger, Mitchell and Altemose, Nicolas and Uralsky, Lev and Gershman, Ariel and Aganezov, Sergey and Hoyt, Savannah and Diekhans, Mark and Logsdon, Glennis and Alonge, Michael and Antonarakis, Stylianos and Borchers, Matthew and Bouffard, Gerry and Brooks, Shelise and Phillippy, Adam},<br />
+year = {2022},<br />
+month = {04},<br />
+pages = {44-53},<br />
+title = {The complete sequence of a human genome},<br />
+volume = {376},<br />
+journal = {Science (New York, N.Y.)},<br />
+doi = {10.1126/science.abj6987}<br />
+}</p>
+<p>[2] 
+https://www.researchgate.net/publication/370656164_A_draft_human_pangenome_reference<br />
+@article{article,<br />
+author = {Liao, Wen-Wei and Asri, Mobin and Ebler, Jana and Doerr, Daniel and Haukness, Marina and Hickey, Glenn and Lu, Shuangjia and Lucas, Julian and Monlong, Jean and Abel, Haley and Buonaiuto, Silvia and Chang, Xian and Cheng, Haoyu and Chu, Justin and Colonna, Vincenza and Eizenga, Jordan and Feng, Xiaowen and Fischer, Christian and Paten, Benedict},<br />
+year = {2023},<br />
+month = {05},<br />
+pages = {312-324},<br />
+title = {A draft human pangenome reference},<br />
+volume = {617},<br />
+journal = {Nature},<br />
+doi = {10.1038/s41586-023-05896-x}<br />
+}</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

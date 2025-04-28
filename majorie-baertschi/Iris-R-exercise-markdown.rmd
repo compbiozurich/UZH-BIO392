@@ -1,0 +1,70 @@
+---
+title: "R-exercise-iris"
+author: "Majorie Bärtschi"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Iris exercise
+
+**Goal: Practice loading data and creating simple visualizations**
+
+## 1. Load the data
+
+```{r}
+library(datasets)
+```
+
+## 2. explore the data
+
+### 2.1 Display the data
+
+```{r}
+iris
+```
+
+### 2.2 Display the first 6 rows of the dataset 
+
+```{r}
+head(iris)
+```
+
+### 2.3 Get a summary of the dataset (mean, min, max, etc.)
+
+```{r}
+summary(iris)
+```
+
+### 2.4 Get the structure of the dataset (data types, number of rows/columns)  
+
+```{r}
+str(iris)
+```
+
+## 3. Assign variables
+
+```{r}
+x <- iris$Petal.Width
+y <- iris$Petal.Length
+```
+
+
+## 4. Visualisation
+
+### 4.1 Scatter Plot
+
+```{r}
+plot(x, y, main = "Relationship between petal width and length", xlab = "Petal Width", ylab = "Petal Length", pch = 19, col = "pink")
+
+```
+
+### 4.2 Boxplot
+
+```{r}
+boxplot(Sepal.Length ~ Species, data = iris, col="lightblue")
+```
+
