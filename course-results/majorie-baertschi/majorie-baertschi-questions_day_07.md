@@ -1,4 +1,4 @@
-## Practical
+## Practical STR
 
 ### Q1
 **Does the sequence quality graph of your data look different from the examples shown in the slides? Are there any adapter sequences in the data? Why do you think this is?**
@@ -31,7 +31,7 @@ This tool is important, because it enables further downstream analysis. If we wa
 
 **samtools view**: When no further options are applied, this tool prints all alignments in the file that you specify as input file. If you only want to have a specific region printed you add the region after the filename input; chr12 or chr12:200 for example. Then we only get alignments of chromosome 12 printed or in the second example the region on chromosome 12 beginning at base position 200. More than one region can be specified. To access these specific regions the input file needs to be sorted (by default) and indexed. 
 
-This tool is important, because it allows us to see specific regions, that can be directly printed on the screen. Often we only want to analyze one part of the genome, therefore this tool is great to specify these regions and further analyze them. The tool can also be used for file format conversion.
+This tool is important, because it allows us to see specific regions, that can be directly printed on the screen. Often we only want to analyze one part of the genome, therefore this tool is great to specify these regions and further analyze them. The tool is also very important because it can be used for file format conversion. It converts SAM/BAM/CRAM files. This is important because certain tools for example specifically require BAM files.
 
 **samtools index**: This tool indexes SAM, BAM or CRAM files. SAM files first need to be BGZF compressed for the indexing to work. 
 
