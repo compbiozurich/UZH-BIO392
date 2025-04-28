@@ -40,7 +40,29 @@ This tool is important because it allows fast access. It's also important when l
 ### Q5
 **Explain what files are needed for GangSTR to run. Specifically: explain what information is provided to GangSTR via the --ref, --region, and --bam command line arguments.**
 *Hint: look at the [GangSTR manual](https://github.com/gymreklab/gangstr).*
-Your answer here
+
+**What files are needed?**
+
+--bam <file.bam,[file2.bam]>
+  * These are the input files. They are BAM files and comma separated. They also need to be indexed and sorted.
+    In these input files the sequences are stored which we want to analyze and compare to a reference genome.
+    
+--ref Refererence genome (.fa) 
+  * To compare our sequence(s) to a reference genome, we have to give GangSTR a FASTA file which contains the
+    reference genome, which was already used to align the reads in the BAM file.
+  
+--regions Target TR loci (regions) (.bed) 
+  * GangSTR needs a reference set of known Tandem Repeat regions to perform the genoptyping. It is a BED-like file,
+    containing 5 columns: Name of the chromosome on which the STR is located, start position of STR, end position
+    of STR, motif length and repeat motif.
+
+**Output of GangSTR**
+
+--out Output prefix
+  * The output that GangSTR produces are VCF file. In this variant call format we can call the STRs and see
+    them listed per locus. With that we can then see for each patient (in our example) on which chromosomes
+    there are STRs, what the repeat motif is and how often the repeat is present on each of the two homologous chromosomes.
+
 
 ## Literature
 During the practical so far, you have generated variant calls from short read sequencing data using bioinformatics approaches. Now it's time to take a step back and do some background reading in order to prepare for the analysis and interpretation of the results next week. 
