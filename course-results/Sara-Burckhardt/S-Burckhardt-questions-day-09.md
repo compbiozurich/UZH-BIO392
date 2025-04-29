@@ -26,6 +26,10 @@ These questions will be graded. The most important thing is not that you get eve
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
 Your answer here
 
+$ awk 'BEGIN {OFS="\t"} /^#/ {print; next} {if ($1=="chr5") {$1="5"; $2=$2+112702498; split($8, info, ";"); for(i in info) {if(info[i]~/^END=/) {split(info[i], end, "="); end[2]=end[2]+112702498; info[i]="END="end[2]}} $8=""; for(i=1; i in info; i++) {$8=$8 info[i]; if(i<length(info)) $8=$8";"} } print}' merged_results.vcf > merged_results_GRCh38.vcf
+
+
+
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
 Your answer here
