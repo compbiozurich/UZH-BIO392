@@ -46,7 +46,7 @@ Nonsense-mediated decay (NMD) is a surveillance pathway that recognizes and degr
 The other variant falls within an intron, making it less likely to affect protein function unless it disrupts splicing or regulatory elements.
 
 Sources: \
-<https://www.ensembl.org/Homo_sapiens/Tools/VEP/Results?tl=EJTwUWdceMoxAJtI-11001158>
+<https://www.ensembl.org/Homo_sapiens/Tools/VEP/Results?tl=EJTwUWdceMoxAJtI-11001158> \
 BCH 252: RNA and Proteins, Lecture 6: mRNA Degradation, Nonsense Mediated DEcay, Prof. Dr. Martin Jinek
 
 ### Q5
