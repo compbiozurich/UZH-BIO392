@@ -7,4 +7,5 @@ What to hand in so far (for grading)
 - File formats (2 parts) - done
 - ClinVar, ClinGen - done
 - day 7 questions - done
+- questions day 9 - done
 
