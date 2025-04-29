@@ -7,5 +7,4 @@ The Graded Exercises are the following:
 - clinvar_clingen.md
 - questions_day_07.md
 - questions_day_09.md
-- 
-
+  
