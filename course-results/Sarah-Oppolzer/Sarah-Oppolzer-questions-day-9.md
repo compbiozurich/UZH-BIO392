@@ -32,6 +32,12 @@ These questions will be graded. The most important thing is not that you get eve
 * Another one representing the transcript.
 * And the last one “merged_results.vcf” contains the variant information for each patient.  
 
+When looking at page, at the top we see the transcript. When zooming in completely, i get the exact seqeunce.
+Below that we see the merged_results.vcf file. We have 4 rows, I think the upper one is the reference. When there is no variant, the box is grey, otherwise we see turquoise spots for our two Variants. When clicking on them I see the exact location and the Reference and the Alternative Sequence and which Patient it is from.
+Below that we see the gene track, that gives us the Source (HAVANA, in our case) and when we click on it the exact location.
+Lastly, on the bottom we see tha reads of each patient. Grey ones are well algined, read bases show mismatches and paired-end-reads are marked blue. When clicking on the reads we get information about the mapping quality and the exact location of the read. On top of all the reads we can see the coverage. 
+
+
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
 Your answer here
