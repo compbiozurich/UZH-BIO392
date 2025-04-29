@@ -5,21 +5,31 @@ These questions will be graded. The most important thing is not that you get eve
 
 ### Q1
 **What information do the CHROM, POS, REF, and ALT columns contain in a VCF file?**
-* CHROM: Which chromosome are we on? It is identified via the reference genome. 
-* POS: Which position contains a variant? 
-* REF: What is the nucleotide in the reference genome? A ‘.’ means there is no variant.  
-* ALT: What is the alternate allele of our sequence at this position? 
+* CHROM: Which chromosome are we on? It is identified via the reference genome.
+  * We are on chromosome 5.
+* POS: Which position contains a variant?
+  * For example the position 106700 contains a variant. 
+* REF: What is the nucleotide in the reference genome? A ‘.’ means there is no variant.
+  * The nucleotide in the reference genome at this position is "a". 
+* ALT: What is the alternate allele of our sequence at this position?
+  * For this specific position there is an alternate allele: "aa" 
 
 ### Q2
 **Using these four columns, how could you determine whether a sequencing sample contains a variant?**
-* Check the ALT column and see which nucleotide is noted there.  
-* To double-check you compare it with the base in the 	REF column.
+* Check the ALT column and see which nucleotide is noted there.
+  *  For position 137481: agagagaga
+* To double-check you compare it with the base in the REF column.
+  * Base in the REF column: "a" 
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
 * We have the tracks with the alignments of each patient. We see the different reads and their associated information when we click on them (read name, alignment start and map quality). At the top of each alignment we see a profile which could be the coverage of each base.
+  * bases that don't match the reference are highlighed/marked
+  * Pairs with larger than expected insert size are colored red
+  * the bam files of the patients 
 * We also have one track that represents the gene, with information on the source and the location on the chromosome that we are at. 
 * Another one representing the transcript.
+  * shows the bases in different colours 
 * And the last one “merged_results.vcf” contains the variant information for each patient.  
 
 ### Q4
