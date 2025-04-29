@@ -75,11 +75,21 @@ Then, answer Q6 and Q7.
 
 ### Q6
 **Why is STR variation relevant to health and disease?**
-Your answer here
+
+STRs play an important role in the cause of genetic disorders (Fragile X Syndrome for example) and Mendelian diseases. Furthermore they can directly modify gene function and expression and they can affect RNA splicing (cystic fibrosis), which can also be relevant in disease development. But how? STRs can for example function as transcrition factor binding site or they can modulate DNA methylation and heterochromatinzation. These are just some mechanisms of action that are known or proposed.
+
+STRs also play a role in cancer biology. STRs can lead to Microsatellite Instability, when DNA mismatch repair (MMR) system fails. Microsatellites are per se error-prone during replication because they are so repetitive and slippage of the polymerase can occurr. When errors happen and the Mismatch Repair system is deficient, errors can't be corrected and mutations accumulate, which can lead to cancer development.
+
+It is also important to say that healthy individuals have thousands of STRs present in their genome as well. STRs are not necessarily disease-related.
+
 
 ### Q7
 **What are some of the challenges in analysing STRs from NGS data?**
-Your answer here
+
+One of the key difficulties is that short reads from NGS are sometimes unable to span the whole repeat region of STRs. Expanded STRs can be longer than 100 or 150 basepairs, which makes it difficult when only having short reads. Another problem is that often they are filtered out from sequencing pipelines due to
+their low quality calls, because we have a reduced number of informative reads. 
+All in all we can say the challenge are mapping biases, which  make genotyping difficult.
+
 
 Second, read the following sections of the [paper describing GangSTR](https://academic.oup.com/nar/article/47/15/e90/5518310):
 * Abstract
@@ -89,7 +99,8 @@ Then, answer Q8 and Q9.
 
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
-Your answer here
+
+GangSTR is a novel tool for genome-wide genotyping of STRs, but it is also able to genotype expanded TRs, which is new. It is more accurate and it is faster than previous tools. what is different is, that they include paired-end reads, but also information about fragment length, coverage and existence of partially enclosing reads and combines them into a single joint likelihood framework. 
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
