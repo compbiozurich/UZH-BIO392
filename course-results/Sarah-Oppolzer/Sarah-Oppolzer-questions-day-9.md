@@ -44,4 +44,5 @@ I think the secod variant I identified (position 137481) is biologically more im
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-Your answer here
+I was reading about this variant (at the APC gene) on ClinGen. There, it is stated that the affected gene is a Tumor supressor. It is known to promote rapid degradation of CTNNB1 and participates in Wnt signaling as a negative regulator. Its activity is dependant on its phosphorilation state. APC also activates the GEF activity of SPATA13 and ARHGEF4 and is required for MMP9 up-regulation. Also, it was found to be associated with microtubues and actin filaments.
+The variant is associated with classic or attenuated familial adenomatous polyposis and gastric adenocarcinoma and proximal polyposis of the stomach. These are both ereditary diseases that result in cancer. (source: [ClinGen](https://search.clinicalgenome.org/kb/genes/HGNC:583))
