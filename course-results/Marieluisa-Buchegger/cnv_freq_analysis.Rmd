@@ -1,0 +1,71 @@
+---
+title: "CNV Frequency Analysis in Cancer"
+author: "Marieluisa Buchegger"
+date: "2025-04-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Install packages and Load libraries
+
+```{r eval =FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(version = "3.20")
+
+BiocManager::install(c("pgxRpi", "GenomicRanges"))
+
+```
+
+## Load Packages
+```{r }
+library(pgxRpi)
+library(GenomicRanges)
+```
+
+## CNV Frequency Analysis in GLlioblastoma
+
+I'd like to study Glioblastoma .In Progenetix, the corresponding NCIt code is "NCIT:C3058".
+Glioblastoma is one of most frequent malignant brain tumors. It is a highly agrressive cancer that can lead to death withinin a short time if left untreated. Even with treatment, glioblastoma often recurs and is associated with a poor prognosis. Research indicates that genetic alterations play a key role in the development of glioblastoma.
+Source: link[(https://my.clevelandclinic.org/health/diseases/17032-glioblastoma)]
+
+## Access CNV frequency data from samples with glioblastoma
+```{r}
+freq <- pgxLoader(type ="cnv_frequency", filters = "NCIT:C3058")
+
+```
+
+To access the CNV frequency data from this object:
+```{r}
+freq[["NCIT:C3058"]]
+```
+
+To get the metadata, use 'mcols' function:
+```{r}
+mcols(freq)
+```
+
+Visualize the frequency data - By entire genome
+```{r, fig.width= 12, fig.height = 6}
+pgxFreqplot(freq)
+```
+Visualize the frequency data - By Chromosome
+```{r, fig.width= 12, fig.height = 6}
+pgxFreqplot(freq, chrom = c(7, 9, 10, 13, 20), layout = c(3, 2))
+```
+
+
+## Frquency Analysis
+According to the plot, using a threshold of 25% for duplication and deletion. 7p, 7q, 19p, and 20q are frequently duplicated, 9p, 10p, 10q, and 13q are frequently deleted.
+
+A previous study by Crespo et al. (2010) ([link (https://doi.org/10.1186/1753-6561-4-S2-P53)]) analyzed copy number gains and losses in a group of 35 glioblastoma cases utilizing SNP arrays. They reported gains in chromosome 7 in 97% of cases, deletions in chromosome 9 in 60%, and deletions in chromosome 10 in 83%. While my CNV frequency analysis reveals a similar pattern across these chromosomes, the specific percentages differ quite a bit (Chromosome 7: ~50% gains, Chromosome 9: ~30% losses, Chromosome 10: ~50% losses)
+
+This may be attributed to the broader data sources used by the Progenetix database, which includes data from SNP arrays, array CGH, as well as whole-genome and whole-exome sequencing studies. This paper also only includes 35 cases, whereas our data has over 4000 samples. Including more diverse platforms and more samples could lead to a more heterogeneous dataset, potentially lowering the overall frequencies for certain events.
+
+Additionally, in my analysis, chromosomes 19p and 20q showed gains, and 13q showed losses—these just surpassed my chosen threshold. It is possible that Crespo et al. applied a higher cutoff for reporting CNVs, which may explain why these alterations were not mentioned in their results.
+
+

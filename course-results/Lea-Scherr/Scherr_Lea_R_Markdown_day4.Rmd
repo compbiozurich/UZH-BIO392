@@ -1,0 +1,84 @@
+---
+title: "R Markdown Day 4"
+author: "Lea Scherr"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: readable
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Basics Exercise Script
+
+## 1. Load the data
+First I loaded the `datasets` package using the `library()` function.
+
+```{r}
+library(datasets)
+```
+
+## 2. Explore the data
+We are using the dataset `iris` in this exercise.
+
+What is the data type of this dataset?
+```{r class-of-dataset}
+class(iris)
+```
+
+Display the first 6 rows of the dataset, to familiarise myself with it.
+```{r header}
+head(iris)
+```
+
+Get a summary of the dataset (mean, min, max, etc.)
+```{r summary-table}
+summary(iris)
+```
+
+Get the structure of the dataset (data types, number of rows/columns)
+```{r structure}
+str(iris)
+```
+
+## 3. Assign the variables
+Assign petal width and petal length to variables `x` and `y`.
+
+```{r assign-variables}
+x <- iris$Petal.Width
+y <- iris$Petal.Length
+```
+
+## 4. Visualisation
+### Part a) 
+
+Create a scatter plot to display the relationship between petal width and petal length.
+
+```{r scatterplot, fig.width = 4, fig.height = 4}
+plot(x, y, col = "darkgreen", 
+     xlab = "Petal Width", 
+     ylab = "Petal Length")
+```
+
+### Part b)
+
+Create a box plot to display Sepal Length for different species.
+
+The function `boxplot` is built like this:  `boxplot(Value ~ Group, data = data)`
+
+```{r boxplot, fig.width = 4, fig.height = 4}
+boxplot(Sepal.Length ~ Species, data = iris, 
+        xlab = "Species", 
+        ylab = "Sepal Length")
+```
+
+
+
+
+
+
+
+

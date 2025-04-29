@@ -1,0 +1,78 @@
+---
+title: "R-exercise_20250410"
+author: "Megumi"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Basics Exercise Script
+Goal: Practice loading data and creating simple visualizations
+
+### 1. Load the Data
+Load the `datasets` package (it's built into R, so no need to install it)
+
+```{r}
+library(datasets)
+```
+
+### 2. Explore the Data
+The `iris` dataset is a built-in R dataset with measurements of different flower species
+
+Display the dataset
+```{r}
+iris 
+```
+<br>
+What is the data type of this dataset?
+```{r}
+class(iris) 
+```
+<br>
+Display the first 6 rows of the dataset  
+```{r}
+head(iris)
+```
+<br>
+Get a summary of the dataset (mean, min, max, etc.) 
+```{r}
+summary(iris)
+```
+<br>
+Get the structure of the dataset (data types, number of rows/columns)  
+```{r}
+str(iris)
+```
+<br>
+### 3. Assign Variables
+Assign petal width and petal length to variables `x` and `y`  
+```{r}
+x <- iris$Petal.Width
+y <- iris$Petal.Length
+```
+<br>
+### 4. Visualization
+#### 4a. Create a scatter plot to display the relationship between petal width and petal length
+```{r}
+plot(x, y, 
+     main = "Petal Width vs Petal Length", 
+     xlab = "Petal Width", 
+     ylab = "Petal Length", 
+     col = "blue", 
+     pch = 19)
+```
+<br>
+#### 4b. Create a box plot to display Sepal Length for different species  
+```{r}
+boxplot(Sepal.Length ~ Species, 
+        data = iris, 
+        main = "Sepal Length by Species", 
+        xlab = "Species", 
+        ylab = "Sepal Length", 
+        col = c("lightgreen", "lightblue", "lightpink"))
+```
+
+
