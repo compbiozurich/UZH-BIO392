@@ -8,11 +8,11 @@ These questions will be graded. The most important thing is not that you get eve
 * CHROM: Which chromosome are we on? It is identified via the reference genome. 
 <p>chromosome 5</p> 
 * POS: Which position contains a variant? 
-- 106700 & 137481
+<p> 106700 & 137481 </p> 
 * REF: What is the nucleotide in the reference genome? A ‘.’ means there is no variant.  
--  a
+<p>  a </p> 
 * ALT: What is the alternate allele of our sequence at this position? 
--  aa & agagagaga
+<p>  aa & agagagaga </p> 
 
 ### Q2
 **Using these four columns, how could you determine whether a sequencing sample contains a variant?**
@@ -22,20 +22,18 @@ These questions will be graded. The most important thing is not that you get eve
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
 * patient_1-3.bam: 
-- We have the tracks with the alignments of each patient . We see the different reads and their associated information when we click on them (read name, alignment start and map quality). At the top of each alignment we see a profile which could be the coverage of each base.
+<p> We have the tracks with the alignments of each patient . We see the different reads and their associated information when we click on them (read name, alignment start and map quality). At the top of each alignment we see a profile which could be the coverage of each base.</p> 
 * APC_canonical_relative_coordinates.gtf.gz: 
-- We also have one track that represents the gene, with information on the source and the location on the chromosome that we are at. 
+<p> We also have one track that represents the gene, with information on the source and the location on the chromosome that we are at.</p> 
 * APC.fa:
-- Another one representing the transcript.
+<p> Another one representing the transcript. </p> 
 * merged_results.vcf:
-- Contains the variant information for each patient.  
+<p> Contains the variant information for each patient. </p> 
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-
-The chr5 112839979 a agagagaga variant has more impact than the chr5 112809198 a aa variant. The agagagaga variant leads often to frameshifts, which has in most castes negative effects on protein coding. The aa variant has mostly effect on introns, which are mostly harmless (usually they are getting spliced out).
+<p> The chr5 112839979 a agagagaga variant has more impact than the chr5 112809198 a aa variant. The agagagaga variant leads often to frameshifts, which has in most castes negative effects on protein coding. The aa variant has mostly effect on introns, which are mostly harmless (usually they are getting spliced out). </p> 
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-
-A variant in the APC gene, which is a regulator of the WNT signalling pathway, can lead to colorectal and stomach neoplasms.
+<p> A variant in the APC gene, which is a regulator of the WNT signalling pathway, can lead to colorectal and stomach neoplasms. </p> 
