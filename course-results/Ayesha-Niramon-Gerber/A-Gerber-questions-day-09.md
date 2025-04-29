@@ -36,4 +36,4 @@ These questions will be graded. The most important thing is not that you get eve
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-<p> A variant in the APC gene, which is a regulator of the WNT signalling pathway, can lead to colorectal and stomach neoplasms. </p> 
+<p> A agagagaga variant in the APC gene, which is a regulator of the WNT signalling pathway, can lead to colorectal and stomach neoplasms. </p> 
