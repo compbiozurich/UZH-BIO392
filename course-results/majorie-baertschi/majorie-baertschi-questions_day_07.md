@@ -100,8 +100,9 @@ Then, answer Q8 and Q9.
 ### Q8
 **What sets GangSTR apart from other STR genotyping tools?**
 
-GangSTR is a novel tool for genome-wide genotyping of STRs, but it is also able to genotype expanded TRs, which is new. It is more accurate and it is faster than previous tools. what is different is, that they include paired-end reads, but also information about fragment length, coverage and existence of partially enclosing reads and combines them into a single joint likelihood framework. 
+GangSTR is a novel tool for genome-wide genotyping of STRs, but it is also able to genotype expanded TRs, which is new. It is more accurate and it is faster than previous tools. What is different is, that they include paired-end reads, but also information about fragment length, coverage and existence of partially enclosing reads and combine them into a single joint likelihood framework. 
 
 ### Q9
 **What types of information does GangSTR use for STR genotyping?**
-Your answer here
+
+GangSTR takes sequence alignments and a reference set of TRs as input. For genotyping GangSTR uses information of enclosing reads, flanking reads, fully repetitive reads and spanning reads. Then GangSTR combines all this information with probability models and chooses the most likely repeat lengths for both alleles.
