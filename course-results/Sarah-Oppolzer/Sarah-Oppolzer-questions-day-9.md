@@ -9,8 +9,8 @@ These questions will be graded. The most important thing is not that you get eve
   Chromosome 5
   
 * POS: Which position contains a variant?
-  1. position 5:106700 
-  2. position 5:137481
+  1. position 5 : 106700 
+  2. position 5 : 137481
 * REF: What is the nucleotide in the reference genome? A ‘.’ means there is no variant.
   1. a
   2. a
@@ -23,7 +23,7 @@ These questions will be graded. The most important thing is not that you get eve
 * Check the ALT column and see which nucleotide is noted there. 
 * To double-check you compare it with the base in the 	REF column.
 
-  When looking at the "[4]ALT" column and see a ' . ' it means that there is no variant. Whenever we see a sequence, it means that this is the sequence alternative to our reference sequence and therefore a variant. Additionally, at the "patient + number" column we see 0/0 for no variant and 1/1 for a variant and therefore now which exact patient has a variant at the specific spot. 
+  When looking at the "[4]ALT" column and see a ' . ' it means that there is no variant. Whenever we see a sequence, it means that this is the sequence alternative to our reference sequence and therefore a variant. Additionally, at the "patient + number" column we see 0/0 for no variant and 1/1 for a homozygous variant and therefore now which exact patient has a variant at the specific spot. 0/1 or 1/0 indicates a heterozygous variant. 
 
 ### Q3
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
