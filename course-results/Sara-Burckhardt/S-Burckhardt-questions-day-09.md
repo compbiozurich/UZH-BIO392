@@ -34,13 +34,12 @@ These questions will be graded. The most important thing is not that you get eve
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-* Probably the one with more impact it the STR variant with the ... because there are much more information to it and it is a frame shift 
-
-
+* I expect the one with the "GAGAGAGA" allel to have more impact, because there are much more information (exon, protein position, amino acid, ...) to it and it is mostly a frame shift mutation, where the impact is mostly harsher than with other types of mutation.
 
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-* when clicking on the ... then one can choose phenotype data and there for the COSV99967314 there are 2 phenotypes associated withthis variant:
+* when clicking on the "existing variant" then one can choose phenotype data and there for the [COSV99967314](https://www.ensembl.org/Homo_sapiens/Variation/Phenotype?db=core;r=5:112839480-112840479;source=COSMIC;tl=lfb9h8SvpTtuX45r-11001354;v=COSV99967314;vdb=variation;vf=1186386468) there are 2 phenotypes associated with this variant:
  * Large intestine tumor (colorectal neoplasm, neoplasm of the large intestine)
- * Stomach tumor (Neoplasm of the stomach, stomach neoplasm) 
+ * Stomach tumor (Neoplasm of the stomach, stomach neoplasm)
+* for the COSV57362825 variant there is only one phenotype associated, the large intestine tumor. 
