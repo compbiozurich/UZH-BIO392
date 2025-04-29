@@ -29,7 +29,7 @@ These questions will be graded. The most important thing is not that you get eve
 **After loading all the files into IGV, there should be four different kind of tracks. Briefly explain what type of information each track contains**
 * We have the tracks with the alignments of each patient. We see the different reads and their associated information when we click on them (read name, alignment start and map quality). At the top of each alignment we see a profile which could be the coverage of each base.
 * We also have one track that represents the gene, with information on the source and the location on the chromosome that we are at. 
-* Another one representing the transcript.
+* Another one representing the sequence (transcript?).
 * And the last one “merged_results.vcf” contains the variant information for each patient.  
 
 When looking at page, at the top we see the transcript. When zooming in completely, i get the exact seqeunce.
@@ -40,7 +40,7 @@ Lastly, on the bottom we see tha reads of each patient. Grey ones are well algin
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-Your answer here
+I think the secod variant I identified (position 137481) is biologically more impactful. I came to this conclusion, because the first variant seems to be an intron variant, while the second ones often cause frameshift mutations. 
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
