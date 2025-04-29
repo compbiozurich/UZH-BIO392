@@ -34,12 +34,13 @@ These questions will be graded. The most important thing is not that you get eve
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
-Your answer here
+* Probably the one with more impact it the STR variant with the ... because there are much more information to it and it is a frame shift 
 
-$ awk 'BEGIN {OFS="\t"} /^#/ {print; next} {if ($1=="chr5") {$1="5"; $2=$2+112702498; split($8, info, ";"); for(i in info) {if(info[i]~/^END=/) {split(info[i], end, "="); end[2]=end[2]+112702498; info[i]="END="end[2]}} $8=""; for(i=1; i in info; i++) {$8=$8 info[i]; if(i<length(info)) $8=$8";"} } print}' merged_results.vcf > merged_results_GRCh38.vcf
 
 
 
 ### Q5
 **What phenotype or disease do you expect this variant to be involved with?**
-Your answer here
+* when clicking on the ... then one can choose phenotype data and there for the COSV99967314 there are 2 phenotypes associated withthis variant:
+ * Large intestine tumor (colorectal neoplasm, neoplasm of the large intestine)
+ * Stomach tumor (Neoplasm of the stomach, stomach neoplasm) 
