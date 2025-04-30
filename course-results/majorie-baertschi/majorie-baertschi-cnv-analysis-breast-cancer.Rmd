@@ -1,0 +1,67 @@
+---
+title: "Breast Cancer CNV-analysis"
+author: "Majorie Bärtschi"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Install packages
+```{r eval=FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(version = "3.20")
+
+BiocManager::install(c("pgxRpi", "GenomicRanges"))
+
+```
+## Load packages
+```{r}
+library(pgxRpi)
+library(GenomicRanges)
+```
+
+## Disease description: Invasive Breast Carcinoma
+
+On the ([Progentix](https://www.progenetix.org/subset/?id=NCIT:C9245&datasetIds=progenetix)) website Invasive breast carcinoma is listed with the code NCIT:C9245 (NCI thesaurus code). Breast cancer is a malignancy that predominently affects women. The most common form of invasive breast cancer is the Invasive ductal carcinoma (IDC), where the cancer starts in the  milk ducts, but spreads to other parts of the breast and/or lymphnodes and throughout the body. Some mutations are known to increase the risk for breast cancer, two of them being BRCA1 and BRCA2. 
+
+
+## Access 
+```{r}
+freq <- pgxLoader(type="cnv_frequency", filters="NCIT:C9245")
+freq
+```
+
+```{r}
+freq[["NCIT:C9245"]]
+```
+
+to get metadata use `mcols` function
+
+```{r}
+mcols(freq)
+```
+
+## Visualize the frequency data
+
+### By entire genome
+
+```{r, fig.width=12, fig.height=6}
+pgxFreqplot(freq)
+```
+
+```{r, fig.width=12, fig.height=6}
+pgxFreqplot(freq, chrom= c(1, 8), layout = c(2, 1))
+```
+
+
+## Analysis
+
+According to the plot, using a threshold of 25% for duplication and deletion, 1q, 8q are frequently duplicated, 16p, 17q and 20q are as well duplicated to some extent. 8p, 9p, 11q, 13q, 16q, 17p, 18p, 18q and 22q on the other hand are frequently deleted, 1p, 6q as well to some extent.
+
+This literature about ([copy number variations in breast cancer](https://doi.org/10.1016/j.molmed.2024.04.017)), can confirm our findings as they identified the most frequent CNAs in Breast Cancer to be losses of 8p, 13q, 16q, and 17p and gains of 1q and 8q.
+
+Understanding these copy number variations can be important when it comes to clinical practice, as they might help to classify different subtypes of breast cancer, which might be susceptible to different treatment options.
