@@ -33,7 +33,7 @@ On the ([Progenetix](https://www.progenetix.org/subset/?id=NCIT:C9245&datasetIds
 ## Access 
 ```{r}
 freq <- pgxLoader(type="cnv_frequency", filters="NCIT:C9245")
-freq
+class(freq)
 ```
 
 ```{r}
