@@ -18,6 +18,7 @@ BiocManager::install(version = "3.20")
 BiocManager::install(c("pgxRpi", "GenomicRanges"))
 
 ```
+
 ## Load packages
 ```{r}
 library(pgxRpi)
@@ -52,6 +53,7 @@ mcols(freq)
 ```{r, fig.width=12, fig.height=6}
 pgxFreqplot(freq)
 ```
+### By chromosomes
 
 ```{r, fig.width=12, fig.height=6}
 pgxFreqplot(freq, chrom= c(1, 8), layout = c(2, 1))
