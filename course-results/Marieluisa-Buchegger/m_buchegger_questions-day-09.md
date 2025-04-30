@@ -35,7 +35,9 @@ These questions will be graded. The most important thing is not that you get eve
 - *Patient tracks*: Each patient shows the aligned reads from the corresponding BAM file. When it's grey, this means it aligns with the reference genome. The first line of the track that spans the whole chromosome with different levels is the coverage track, so how many reads cover each base.
 - *Gene track*: shows us where the gene (in this case canonical APC from the WNT signaling pathway) is located within that chromosome.
 - *Variant track*: has 4 different "rows" one for the reference, and the other three for the patients. This displays the different STRs in dark blue, and most importantly the variants we're interested in in turquoise. The variant then shows us the genotype and zygosity.
-- *Transcript track*: transcript reference strand. Usually in IGV, there's a transcript track that shows the exons in dark blue boxes along the reference genome. However, in this case I couldn't find the transcript track, so only the reference sequence and the other three tracks.
+- *Transcript track*:shows multiple exons in dark blue boxes along the the whole gene, separated from each other.
+
+  You can see that the GAGAGAGA variant is within an exon, the other variant AA is not.
 
 ### Q4
 **Based on the VEP output, which of the STR variants you identified do you expect to have the most impact? Why?**
