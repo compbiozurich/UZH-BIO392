@@ -1,4 +1,4 @@
-## Day II - Telomere-to-Telomere (T2T) Genome Project
+# Day II - Telomere-to-Telomere (T2T) Genome Project
 #### Sandrin Hunkeler  (MSc. in Informatics)
 
 

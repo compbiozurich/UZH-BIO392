@@ -1,4 +1,4 @@
-## Day V - File formats and their costs
+# Day V - File formats and their costs
 #### Sandrin Hunkeler  (MSc. in Informatics)
 
 ___

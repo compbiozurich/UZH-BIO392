@@ -6,4 +6,6 @@ What to hand in so far (for grading)
 - Glioblastoma code - done
 - File formats (2 parts) - done
 - ClinVar, ClinGen - done
-- day 7 questions - in work
+- day 7 questions - done
+- questions day 9 - done
+
