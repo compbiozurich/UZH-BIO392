@@ -1,0 +1,331 @@
+---
+title: "Survival analysis in Bladder Cancer"
+author: "Sarah Oppolzer and Luisa Buchegger"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+Blockkurs Project
+
+Lets install Packages etc. 
+```{r}
+# Install packages if needed
+rm(list=ls())
+install.packages(c("knitr", "dplyr", "survival", "ggplot2", "here", "tibble"))
+library(knitr)
+library(dplyr)
+library(survival)
+library(ggplot2)
+library(tibble)
+install.packages("devtools")
+devtools::install_github("zabore/ezfun")
+ezfun::set_ccf_palette("contrast")
+
+install.packages(c("lubridate", "ggsurvfit", "gtsummary", "tidycmprsk"))
+library(lubridate)
+library(ggsurvfit)
+library(gtsummary)
+library(tidycmprsk)
+
+devtools::install_github("zabore/condsurv")
+library(condsurv)
+library(tidyverse)
+install.packages("cardx")
+library(survival)
+library(gtsummary)
+library(survminer)
+```
+
+Take the data from: https://www.cbioportal.org/study/clinicalData?id=blca_tcga_gdc (Bladder Urothelial Carcinoma )
+then follow tutorial: https://www.emilyzabor.com/survival-analysis-in-r.html
+```{r}
+dd <- read.delim("~/Desktop/MSc/FS_25/Molecular_Sequence_Variations/Presentation/blca_tcga_gdc_clinical_data.tsv") 
+colnames(dd)
+str(dd)
+```
+
+Select the relevant colums and encode categorical variables (dead: 0, alive: 1, mann: 0, frau: 1)
+ALso, we change Months to days!
+```{r}
+dd_rel <- select(dd,sampleId,VITAL_STATUS,OS_MONTHS,SEX,AGE,SMOKING_PACK_YEARS, MUTATION_COUNT)
+
+dd<- dd%>%
+  mutate(VITAL_STATUS = ifelse(VITAL_STATUS == "Dead", 1, 0))
+
+dd_rel <- dd_rel%>%
+  mutate(VITAL_STATUS = ifelse(VITAL_STATUS == "Dead", 1, 0))
+
+dd_rel <- dd_rel%>%
+  mutate(SEX = ifelse(SEX == "Male", 0, 1))
+
+dd_rel <- dd_rel %>%
+  mutate(SMOKING_PACK_YEARS = ifelse(is.na(SMOKING_PACK_YEARS), 0, 1))
+
+dd_rel$OS_DAYS <- dd_rel$OS_MONTHS * 30.44
+```
+
+KAPLAN MEIER SURVIVAL CURVE
+lets make the Kaplan Meier survival curve
+```{r}
+Surv(dd_rel$OS_MONTHS, dd_rel$VITAL_STATUS)[1:10]
+
+#install.packages("ggsurvfit")
+s1 <- survfit(Surv(OS_MONTHS, VITAL_STATUS) ~ 1, data = dd_rel)
+str(s1)
+
+survfit2(Surv(OS_MONTHS, VITAL_STATUS) ~ 1, data = dd_rel) %>% 
+  ggsurvfit() +
+  labs(
+    x = "Months",
+    y = "Overall survival probability")+
+  add_confidence_interval()+
+  add_risktable()
+```
+
+Estimating x-year survival -> for one year survival probability
+```{r}
+summary(survfit(Surv(OS_MONTHS, VITAL_STATUS)  ~ 1, data = dd_rel), times =12)
+```
+
+Table for 1 year survival
+```{r}
+survfit(Surv(OS_MONTHS, VITAL_STATUS) ~ 1, data = dd_rel) %>% 
+  tbl_survfit(
+    times = 12,
+    label_header = "**1-year survival (95% CI)**"
+  )
+```
+
+
+Median survival
+```{r}
+survfit(Surv(OS_MONTHS, VITAL_STATUS) ~ 1, data = dd_rel) %>% 
+  tbl_survfit(
+    probs = 0.5,
+    label_header = "**Median survival (95% CI)**"
+  )
+```
+
+Comparing survival times between sexes
+```{r}
+survdiff(Surv(OS_MONTHS, VITAL_STATUS) ~ SEX, data = dd_rel)
+```
+No significant difference between women and men!
+
+COX PROPORTIONAL HAZARDS MODEL 
+Basic COX regression model
+```{r}
+
+# Fit model with a group variable
+cox_model <- coxph(Surv(OS_DAYS, VITAL_STATUS) ~ 1, data = dd_rel)
+ 
+# Create survival curves
+surv_fit <- survfit(cox_model)
+ 
+# Plot
+ggsurvplot(surv_fit, data = dd_rel, conf.int = TRUE)
+#ggsurvplot(surv_fit, data = filtered, conf.int = TRUE, risk.table = TRUE)
+ 
+```
+
+COX Regression for sex
+```{r}
+coxph(Surv(OS_MONTHS, VITAL_STATUS) ~ SEX, data = dd_rel)
+```
+HR: higher then 1: first group higher risk that the event happens. for each year: 4%
+
+COX Model for age
+```{r}
+
+cox_model <- coxph(Surv(OS_MONTHS, VITAL_STATUS) ~ AGE, data = dd_rel) 
+
+```
+
+MIltivariable COX Regression Model - For 2 age groups and Sex
+```{r}
+cox_model2 <- coxph(Surv(OS_MONTHS, VITAL_STATUS) ~ AGE+SEX, data = dd_rel)
+
+
+# Create a new data frame with hypothetical values or groupings
+newdata <- expand.grid(
+  AGE = c(40, 70),
+  SEX = c("0", "1"))  # Assuming "0" = female, "1" = male
+# Predict and plot
+ggsurvplot(survfit(cox_model2, newdata = newdata), 
+           data = dd_rel, 
+           conf.int = TRUE,
+           legend.title = "Profile",
+           legend.labs = c("Female, 40", "Female, 70", "Male,40", "Male, 70"),
+           xlab = "Time (months)",
+           ylab = "Survival probability")
+```
+Now with age classes
+```{r}
+dd_rel$OS_DAYS <- dd_rel$OS_MONTHS * 30.44
+dd_rel$AGE_GROUP <- cut(dd_rel$AGE,
+                        breaks = c(0, 60, 100), 
+                        labels = c("0-60", "60-100"),
+                        right = FALSE)
+
+cox_model3 <- coxph(Surv(OS_DAYS, VITAL_STATUS) ~ AGE_GROUP, data = dd_rel)
+
+newdata2 <- expand.grid(
+  AGE_GROUP = c("0-60", "60-100"))
+
+ggsurvplot(
+  survfit(cox_model3, newdata = newdata2),
+  data = dd_rel,
+  conf.int = TRUE,
+  legend.title = "Profile",
+  legend.labs = c("0-60", "60-100"),
+  xlab = "Time (days)",
+  ylab = "Survival probability"
+)
+```
+Look at Ages distribution 
+
+```{r}
+library(ggplot2)
+ggplot(dd, aes(x=AGE))+
+  geom_histogram()
+```
+```{r}
+survdiff(Surv(OS_MONTHS, VITAL_STATUS) ~ AGE_GROUP, data = dd_rel)
+```
+Survival rate between young and older people is significant. 
+
+SMOKING COX REGRESSION
+```{r}
+dd_rel$OS_DAYS <- dd_rel$OS_MONTHS * 30.44
+
+cox_model4 <- coxph(Surv(OS_DAYS, VITAL_STATUS) ~ SMOKING_PACK_YEARS, data = dd_rel)
+
+newdata4 <- data.frame(SMOKING_PACK_YEARS = c(0, 1))
+
+ggsurvplot(
+  survfit(cox_model4, newdata = newdata4),
+  data = dd_rel,
+  conf.int = TRUE,
+  legend.title = "Smoking Status",
+  legend.labs = c("Non-smoker", "Smoker"),
+  xlab = "Time (days)",
+  ylab = "Survival probability"
+)
+```
+```{r}
+survdiff(Surv(OS_MONTHS, VITAL_STATUS) ~ SMOKING_PACK_YEARS, data = dd_rel)
+```
+We notice somethign werid: in our data, smoking does not seem to be a risk facto for bladder cancer?? Literature says differently
+
+Lets try classes
+```{r}
+summary(dd$SMOKING_PACK_YEARS)
+
+dd$OS_DAYS <- dd$OS_MONTHS * 30.44
+
+dd$SMOKING_CUT<- cut(dd$SMOKING_PACK_YEARS,
+                      breaks = c(0, 30, 100),  # Defining the ranges
+                      labels = c("0-30", "30-100"),  # Naming the categories
+                      right = FALSE)  # Including 0 but not 25 in the first category
+
+cox_model5 <- coxph(Surv(OS_DAYS, VITAL_STATUS) ~ SMOKING_CUT, data = dd)
+
+# Prepare newdata for plotting
+newdata5 <- expand.grid(SMOKING_CUT = c("0-30", "30-100"))
+
+# Plot
+ggsurvplot(
+  survfit(cox_model5, newdata = newdata5),
+  data = dd,
+  conf.int = TRUE,
+  legend.title = "Smoking Category",
+  legend.labs = c("0-30 pack years", "30-100 pack years"),
+  xlab = "Time (days)",
+  ylab = "Survival probability"
+)
+```
+signifikant? (viel rauchen)
+```{r}
+survdiff(Surv(OS_MONTHS, VITAL_STATUS) ~ SMOKING_CUT, data = dd)
+```
+```{r}
+ggplot(dd, aes(x= OS_MONTHS, y= SMOKING_PACK_YEARS))+
+  geom_point()
+```
+Still no significant difference: no reliable smoking data in our data set (manny missing values that might be smokers too)
+
+MUTATIONAL LOAD
+```{r}
+dd_rel$OS_DAYS <- dd_rel$OS_MONTHS * 30.44
+dd_rel$MUTATION_COUNT <- cut(dd_rel$MUTATION_COUNT,
+                        breaks = c(0, 144, 1500), 
+                        labels = c("0-144", "144-1500"),
+                        right = FALSE)
+
+cox_model6 <- coxph(Surv(OS_DAYS, VITAL_STATUS) ~ MUTATION_COUNT, data = dd_rel)
+
+newdata6 <- expand.grid(
+  MUTATION_COUNT = c("0-144", "144-1500"))
+
+ggsurvplot(
+  survfit(cox_model6, newdata = newdata6),
+  data = dd_rel,
+  conf.int = TRUE,
+  legend.title = "Profile",
+  legend.labs = c("0-144", "144-1500"),
+  xlab = "Time (days)",
+  ylab = "Survival probability"
+)
+```
+Distribution Mutational Load
+```{r}
+ggplot(dd, aes(x=MUTATION_COUNT))+
+  geom_histogram()
+summary(dd$MUTATION_COUNT)
+```
+```{r}
+survdiff(Surv(OS_MONTHS, VITAL_STATUS) ~ MUTATION_COUNT, data = dd_rel)
+```
+Significant difference in Survival for different mutational loads
+
+Lets look at stages
+```{r}
+unique(dd$PATH_STAGE)
+library(dplyr)
+
+dd <- dd %>%
+  filter(!is.na(PATH_STAGE) & PATH_STAGE != "" & PATH_STAGE != "NA")
+```
+
+Lets make a COX analysis of that
+```{r}
+dd$OS_DAYS <- dd$OS_MONTHS * 30.44
+
+cox_model7 <- coxph(Surv(OS_DAYS, VITAL_STATUS) ~ PATH_STAGE, data = dd)
+
+newdata7 <- data.frame(PATH_STAGE = c("Stage I", "Stage II", "Stage III", "Stage IV"))
+
+
+ggsurvplot(
+  survfit(cox_model7, newdata = newdata7),
+  data = dd,
+  conf.int = TRUE,
+  legend.title = "Stage Number:",
+  legend.labs = c("Stage I", "Stage II", "Stage III", "Stage IV"),
+  xlab = "Time (days)",
+  ylab = "Survival probability"
+)
+```
+Lets try it in a Kaplan Meyer curve
+```{r}
+survfit2(Surv(OS_MONTHS, VITAL_STATUS) ~ PATH_STAGE, data = dd) %>% 
+  ggsurvfit() +
+  labs(
+    x = "Months",
+    y = "Overall survival probability"
+  ) +
+  add_confidence_interval() +
+  add_risktable()
+
+```
+We see, that stage is a good predictor for risk factor. Interesting difference in Kaplan Meier and Cox: Cox predicts values, Kaplan jsut shows the ones that exist (see blue and yellow line in the Kaplan Meier Plot ending early!)
