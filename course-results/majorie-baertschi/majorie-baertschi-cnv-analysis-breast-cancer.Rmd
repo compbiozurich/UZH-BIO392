@@ -26,7 +26,7 @@ library(GenomicRanges)
 
 ## Disease description: Invasive Breast Carcinoma
 
-On the ([Progenetix](https://www.progenetix.org/subset/?id=NCIT:C9245&datasetIds=progenetix)) website, Invasive breast carcinoma is listed with the code NCIT:C9245 (NCI thesaurus code). Breast cancer is a malignancy that predominently affects women. The most common form of invasive breast cancer is the Invasive ductal carcinoma (IDC), where the cancer starts in the  milk ducts, but spreads to other parts of the breast and/or lymphnodes and throughout the body. Some mutations are known to increase the risk for breast cancer, two of them being BRCA1 and BRCA2. 
+On the ([Progenetix](https://www.progenetix.org/subset/?id=NCIT:C9245&datasetIds=progenetix)) website, Invasive breast carcinoma is listed with the code NCIT:C9245 (NCI thesaurus code). Breast cancer is a malignancy that predominently affects women. The most common form of invasive breast cancer is the Invasive ductal carcinoma (IDC), where the cancer starts in the  milk ducts, but spreads to other parts of the breast and/or lymphnodes and throughout the body. Some mutations are known to increase the risk for breast cancer, two of them being BRCA1 and BRCA2. ([Gallas et al. 2025](https://pubmed.ncbi.nlm.nih.gov/39806949/))
 
 
 ## Access 
