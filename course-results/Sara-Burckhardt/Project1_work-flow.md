@@ -63,7 +63,8 @@ Principal components (chatgpt)
 -	Plotting PC1 vs. PC2 can reveal:	Population structure, Admixture, Outliers or batch effects
 
 
-The tables of the eigenvec file was then merged with a csv file that containes the population and Superpopulation for the IDs 
+The tables of the eigenvec file was then merged with a csv file that containes the population and Superpopulation for the IDs. 
+For some Samples there where no corresponding populations, these were not excluded but displayed with/under NA.
 According to this the plot could be coloured with the Superpopulations. 
 
 
@@ -80,5 +81,4 @@ Before admixture: had to filter by minor allel frequency due to a high variance 
 -	The .Q file output from an ADMIXTURE run contains the ancestry proportions for each individual across the K inferred populations. (Chatgpt)
 -	In ADMIXTURE, the clusters are not predefined groups — instead, they are statistical patterns of genetic variation inferred directly from your data.
 -	You need external knowledge (like sample metadata or PCA) to label or interpret the clusters biologically.!!!!
-
 
