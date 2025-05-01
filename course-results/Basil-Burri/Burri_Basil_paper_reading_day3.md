@@ -49,7 +49,7 @@
 - By using e.g. ``pgxLoader(type="cnv_frequency", output ="pgxfreq", filters=c("NCIT:C3058"))`` in R one can retrieve the CNV frequency for Glioblastoma over the total number of samples in the Progenetix database. [Documentation from Hangjia Zhao](https://www.bioconductor.org/packages/release/bioc/vignettes/pgxRpi/inst/doc/Introduction_3_access_cnv_frequency.html)
 
 ## 5. What are APIs and how to use APIs in Progenetix?
-   - **Definition** An API (Application Programming Interface) is a structured set of protocols, endpoints, and data formats that enables communication between software applications. APIs facilitate request-response, connecting client-side programs to servers or external services for data retrieval, functionality integration, or system interoperability. [Source](https://www.talend.com/resources/what-is-an-api/)
+   - **Definition:** An API (Application Programming Interface) is a structured set of protocols, endpoints, and data formats that enables communication between software applications. APIs facilitate request-response, connecting client-side programs to servers or external services for data retrieval, functionality integration, or system interoperability. [Source](https://www.talend.com/resources/what-is-an-api/)
 
    - **APIs in Progenetix:** Progenetix uses the GA4GH Beacon API (with features from version v2) for querying CNA data. Users can access sample-specific CNA profiles via API endpoints. Queries can filter for cancer type, genomic region or geography. The API response is in Phenopackets json format. [GA4GH Beacon project](https://genomebeacons.org/)
 
