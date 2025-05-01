@@ -78,7 +78,7 @@ ggplot(result, aes(x = PC9, y = PC10, color = as.factor(Superpopulation))) +
   theme_classic()
 ```
 
-The higher the PC number the less important is the variance, so the most meaningful are the PC1 and PC2 wich explains the first and second most variance. 
+The higher the PC number the less important is the variance, so the most meaningful are the PC1 and PC2 which explains the first and second most variance. 
 
 
 ##Admixture Plots
