@@ -39,7 +39,7 @@
 ### CNV Segmentations
 - **Definition:** Dividing genomic data after read depth normalization into regions with consistent copy number states (gains or losses).
 - **Usage:** Segmentation identifies CNA regions for analysis.
-- Copy Number Variation (CNV) detection in sequencing data starts after read depth normalization with CNV segmentation, where the genome is divided into non-overlapping regions under the assumption that each region shares the same copy number (CN). Segmentation aims to identify the boundaries of segments where CNVs occur. These boundaries are called breakpoints. [Reference](https://academic.oup.com/bib/article/25/2/bbae022/7604887)
+- CNV detection in sequencing data starts after read depth normalization with CNV segmentation, where the genome is divided into non-overlapping regions under the assumption that each region shares the same copy number (CN). Segmentation aims to identify the boundaries of segments where CNVs occur. These boundaries are called breakpoints. [Reference](https://academic.oup.com/bib/article/25/2/bbae022/7604887)
 - Two common segmentation algorithms are Circular Binary Segmentation (CBS) and Shifting Level Models (SLM). [Reference](https://support-docs.illumina.com/SW/DRAGEN_v38/Content/SW/DRAGEN/CNVSegmentation_fDG_swHS.htm)
 
 ### CNV Frequencies
