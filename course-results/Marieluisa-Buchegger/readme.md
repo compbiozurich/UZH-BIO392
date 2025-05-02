@@ -1,7 +1,7 @@
 # Folder Content
 This is the folder for my course results.
 The Graded Exercises are the following:
-- pangenome.md: <https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Marieluisa-Buchegger/m_buchegger_pangenome.md>
+- [pangenome.md](https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Marieluisa-Buchegger/m_buchegger_pangenome.md)
 - paper_Progenetix_day3.md:<https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Marieluisa-Buchegger/m_buchegger_paper_Progenetix__day3.md>
 - cnv_frq_anaylsis.Rmd:<https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Marieluisa-Buchegger/m_buchegger_cnv_freq_analysis.Rmd>
 - file_formats.md: <https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Marieluisa-Buchegger/m_buchegger_file_formats.md>
