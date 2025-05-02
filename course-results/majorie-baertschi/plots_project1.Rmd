@@ -1,0 +1,196 @@
+---
+title: "Project 1"
+author: "Sara Burckhardt and Majorie Baertschi"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Load data  
+
+```{r}
+# Load required library
+library(ggplot2)
+
+# Read the eigenvec file
+pca <- read.table("chr3_pca.eigenvec", header = FALSE)
+
+# Add column names
+colnames(pca) <- c("FID", "sample", paste0("PC", 1:(ncol(pca) - 2)))
+
+
+```
+Bring the IID and the corresponding subpopulation/ population together 
+
+```{r}
+pop <- read.table("sample_type.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
+
+
+#add the population and superpopulation to the pca table 
+
+result <- merge(pca, pop, by = "sample", all.x = TRUE)
+
+
+```
+
+
+## PCA Plots
+Plot of the PC1 and PC2 colored by Super-population and Population:
+
+```{r}
+ggplot(result, aes(x = PC1, y = PC2, color = as.factor(Superpopulation))) +
+  geom_point(size = 2, alpha = 0.8) +
+  labs(title = "PCA by Super-population", x = "Principal Component 1", y = "Principal Component 2") +
+  theme_classic()
+
+```
+```{r}
+ggplot(result, aes(x = PC1, y = PC2, color = as.factor(Population))) +
+  geom_point(size = 2, alpha = 0.8) +
+  labs(title = "PCA by Population", x = "Principal Component 1", y = "Principal Component 2") +
+  theme_classic()
+```
+
+Plots of the PC3-10 
+```{r echo=FALSE}
+ggplot(result, aes(x = PC3, y = PC4, color = as.factor(Superpopulation))) +
+  geom_point(size = 2, alpha = 0.8) +
+  labs(title = "PCA by Super-Population", x = "Principal Component 3", y = "Principal Component 4") +
+  theme_classic()
+
+
+ggplot(result, aes(x = PC5, y = PC6, color = as.factor(Superpopulation))) +
+  geom_point(size = 2, alpha = 0.8) +
+  labs(title = "PCA by Super-Population", x = "Principal Component 5", y = "Principal Component 6") +
+  theme_classic()
+
+ggplot(result, aes(x = PC7, y = PC8, color = as.factor(Superpopulation))) +
+  geom_point(size = 2, alpha = 0.8) +
+  labs(title = "PCA by Super-Population", x = "Principal Component 7", y = "Principal Component 8") +
+  theme_classic()
+
+ggplot(result, aes(x = PC9, y = PC10, color = as.factor(Superpopulation))) +
+  geom_point(size = 2, alpha = 0.8) +
+  labs(title = "PCA by Super-Population", x = "Principal Component 9", y = "Principal Component 10") +
+  theme_classic()
+```
+
+The higher the PC number the less important is the variance, so the most meaningful are the PC1 and PC2 which explains the first and second most variance. 
+
+
+##Admixture Plots
+
+Import data 
+```{r}
+# Read Q file
+q_matrix <- read.table("chr3_for_admixture_plink1.5.Q")
+
+# Read sample IDs from FAM file
+fam <- read.table("chr3_for_admixture_plink1.fam")
+sample_ids <- fam$V2  # 2nd column is usually individual ID
+
+# Add sample IDs to Q matrix
+q_matrix$Sample <- sample_ids
+
+```
+
+
+Due to long format reshape the data for plotting
+```{r}
+library(tidyr)
+library(dplyr)
+
+# Rename columns for clarity
+K <- ncol(q_matrix) - 1
+colnames(q_matrix)[1:K] <- paste0("Cluster", 1:K)
+
+# Convert to long format
+q_long <- q_matrix %>%
+  pivot_longer(cols = starts_with("Cluster"), names_to = "Cluster", values_to = "Proportion")
+
+```
+
+Make the Plots
+```{r}
+library(ggplot2)
+
+ggplot(q_long, aes(x = Sample, y = Proportion, fill = Cluster)) +
+  geom_bar(stat = "identity") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),  # Hide sample names if too many
+        axis.ticks.x = element_blank()) +
+  labs(x = "Individuals", y = "Ancestry Proportion", title = "ADMIXTURE Plot") +
+  scale_fill_brewer(palette = "Set2")  # or use your preferred color palette
+
+```
+
+
+Bring the Sample and the corresponding subpopulation/ population together 
+
+```{r}
+
+#add the population and Superpopulation to the PCA table 
+colnames(q_long)[1] <- "sample"
+
+results_2 <- merge(q_long, pop, by = "sample", all.x = TRUE)
+```
+
+
+```{r}
+ggplot(results_2, aes(x = Superpopulation, y = Proportion, fill = Cluster)) +
+  geom_bar(stat = "identity") +
+  theme_bw() +
+  #theme(axis.text.x = element_blank(),  # Hide sample names if too many
+       # axis.ticks.x = element_blank()) +
+  labs(x = "Superpopulation", y = "Ancestry Proportion", title = "ADMIXTURE Plot") +
+  scale_fill_brewer(palette = "Set2")  # or use your preferred color palette
+```
+
+```{r}
+#sort by superpopulations
+library(dplyr)
+
+results_2 <- results_2 %>%
+  arrange(Superpopulation, sample) %>%
+  mutate(sample = factor(sample, levels = unique(sample)))
+
+#make a faced plot
+ggplot(results_2, aes(x = sample, y = Proportion, fill = Cluster)) +
+  geom_bar(stat = "identity", width = 1) +
+  facet_grid(~ Superpopulation, scales = "free_x", space = "free_x") +
+  scale_fill_brewer(palette = "Set2") +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    panel.grid = element_blank(),
+    strip.text = element_text(size = 8)
+  ) +
+  labs(x = "Individuals", y = "Ancestry Proportion", title = "ADMIXTURE Plot by Superpopulation")
+
+
+```
+```{r fig.width=10, fig.height=4}
+results_2 <- results_2 %>%
+  arrange(Population, sample) %>%
+  mutate(sample = factor(sample, levels = unique(sample)))
+
+
+#make a faced plot
+ggplot(results_2, aes(x = sample, y = Proportion, fill = Cluster)) +
+  geom_bar(stat = "identity", width = 1) +
+  facet_grid(~ Population, scales = "free_x", space = "free_x") +
+  scale_fill_brewer(palette = "Set2") +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    panel.grid = element_blank(),
+    strip.text = element_text(size = 8)
+  ) +
+  labs(x = "Individuals", y = "Ancestry Proportion", title = "ADMIXTURE Plot by Population")
+```
+
