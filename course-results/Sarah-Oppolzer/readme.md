@@ -15,7 +15,7 @@ What to hand in so far (for grading)
    [2025-04-13-File_formats.md](https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Sarah-Oppolzer/2025-04-13-File_formats.md)
   
 - ClinVar, ClinGen - done \
-  
+  [Sarah_Oppolzer_var_gene_disease_relation.md](https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Sarah-Oppolzer/Sarah_Oppolzer_var_gene_disease_relation.md)
 - day 7 questions - done\
   [Sarah-Oppolzer-questions-day-7.md](https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Sarah-Oppolzer/Sarah-Oppolzer-questions-day-7.md)
   
