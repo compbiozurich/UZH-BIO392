@@ -36,4 +36,4 @@ Also there, but not for grading (as far as I know):
 - STR Analysis code: [2025-04-21-STR-code.py](https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Sarah-Oppolzer/2025-04-21-STR-code.py)
 - BLAST exercise: [2025-04-22_BLAST-exercise.md](https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Sarah-Oppolzer/2025-04-22_BLAST-exercise.md#use-blast-in-ncbi-to-search-the-unknown-nucleotide-sequence)
 - Question Day 6: [Sarah-Oppolzer-questions-day-06.md](https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Sarah-Oppolzer/Sarah-Oppolzer-questions-day-06.md)
-- 
+  
