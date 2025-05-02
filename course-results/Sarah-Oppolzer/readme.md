@@ -6,7 +6,7 @@ What to hand in so far (for grading)
 - Glioblastoma code - done (exercise_CNV_patterns.md)
 - File formats (2 parts) - done (2025-04-13-File_formats.md)
 - ClinVar, ClinGen - done
-- day 7 questions - done
+- day 7 questions - done [Sarah-Oppolzer-questions-day-7.md](https://github.com/compbiozurich/UZH-BIO392-FS25/blob/master/course-results/Sarah-Oppolzer/Sarah-Oppolzer-questions-day-7.md)
 - questions day 9 - done
 - -identifying variants - day 10 - done
 - presentation - slides and code - done
