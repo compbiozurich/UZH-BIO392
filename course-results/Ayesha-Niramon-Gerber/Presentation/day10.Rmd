@@ -1,6 +1,6 @@
 ---
 title: "day10"
-author: "Sarah Loose"
+author: "Sarah Loose & Ayesha Gerber"
 date: "2025-04-30"
 output: html_document
 ---
