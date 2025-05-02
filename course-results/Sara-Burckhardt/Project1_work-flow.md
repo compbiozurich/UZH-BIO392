@@ -1,11 +1,14 @@
 # Project 1: 
 
+(Some notes from the work on the project) 
+
+
 Motivation: 
 
 Chose Chromosome 3 (no background, just because it seemed interesting) 
 Goal: look at the Population structure of Chromosome 3 and hopefully get some nice plots 
 
-Question: 
+
 
 
 ## PLINK convert
