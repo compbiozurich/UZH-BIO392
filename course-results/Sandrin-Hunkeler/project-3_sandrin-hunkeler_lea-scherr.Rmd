@@ -1,0 +1,455 @@
+---
+title: "Survival Analysis of Head and Neck Carcinoma"
+author: "Lea Scherr & Sandrin Hunkeler"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Preparations
+
+#### Install packages
+```{r eval = FALSE}
+install.packages(c("knitr", "dplyr", "survival", "ggplot2", "here", "tibble", "devtools", "ggsurvfit", "gtsummary", "cardx", "survminer", "litedown"))
+
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install(version = "3.21")
+```
+
+
+
+#### Load the libraries
+```{r, warning = FALSE, message = FALSE}
+library(knitr)
+library(dplyr)
+library(survival)
+library(ggplot2)
+library(tibble)
+library(devtools)
+library(ggsurvfit)
+library(gtsummary)
+library(survminer)
+library(pgxRpi)
+library(GenomicRanges)
+library(lubridate)
+library(stringr)
+```
+
+```{r eval = FALSE}
+# Run this code 
+devtools::install_github("zabore/ezfun")
+ezfun::set_ccf_palette("contrast")
+```
+
+## Links
+This is where you can obtain the data to [head and neck carcinoma](https://progenetix.org/subset/?id=NCIT:C34447&datasetIds=progenetix) (more info to this on [National cancer institute](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C34447): [cBioPortal](https://www.cbioportal.org/study/clinicalData?id=ohnca_cptac_gdc)
+
+
+## Prepare the data
+
+Load the data: 
+```{r}
+data <- read.delim("./ohnca_cptac_gdc_clinical_data.txt")
+```
+
+Filter the data:
+
+For the analysis we need the information from the following columns: Patient ID, Overall Survival (Months), Overall Survival Status, Sex, Alcohol Intensity and Smoking status. 
+```{r}
+new_data <- select(data, c("Patient.ID", "Overall.Survival..Months.", "Overall.Survival.Status", "Sex", "Alcohol.Intensity", "Smoking.Status"))
+```
+
+Wraggle the data:
+
+- The Sex column should be binary for easier use. 
+- The Overall.Survival.Status column should also be binary. 
+- We want to create Overall.Survival..Days. from Overall.Survival..Months. by multilpying it with 30. 
+- The Alcohol Abuse should also be in numbers (factors for later use).
+- The Smoking data should also be in numbers (factors for later use).
+```{r}
+new_data <- mutate(new_data, Sex = recode(Sex, `Male` = 0, `Female` = 1))
+
+new_data <- mutate(new_data, 
+                   Overall.Survival.Status = recode(Overall.Survival.Status, 
+                                                              `1:DECEASED` = 1, 
+                                                              `0:LIVING` = 0))
+
+new_data <- mutate(new_data, Overall.Survival..Days. = Overall.Survival..Months. * 30)
+
+new_data <- mutate(new_data, Alcohol.Abuse = recode(Alcohol.Intensity, 
+                                                    'Occasional Drinker' = 2, 
+                                                    'Non-Drinker' = 1, 
+                                                    'Lifelong Non-Drinker' = 0))
+new_data$Alcohol.Abuse <- as.factor(new_data$Alcohol.Abuse)
+
+new_data <- mutate(new_data, Smoking = recode(Smoking.Status, 
+                                    "Lifelong Non-Smoker" = 0, 
+                                    "Current Reformed Smoker for < or = 15 yrs" = 1, 
+                                    "Current Reformed Smoker for > 15 yrs" = 2, 
+                                    "Current Smoker" = 3, 
+                                    "Smoking history not documented" = NaN,
+                                    "Current Reformed Smoker, Duration Not Specified" = NaN,   # since this cannot be assigned, they will not be used for the analysis because we suspect a difference between reformed less than 15 years and more than 15 years
+                                    ))
+new_data$Smoking <- as.factor(new_data$Smoking)
+```
+
+
+### Getting to know the data
+
+How many Samples are there in the dataset from males and females.
+```{r}
+ggplot(data=new_data, aes(x=Sex)) +
+  geom_bar(aes(fill = factor(Sex, labels = c("Male (0)", "Female (1)")))) +
+  scale_fill_manual(
+    values = c("skyblue", "lightpink"),
+    name = "Sex",
+    labels = c("Male (0)", "Female (1)")
+  ) +
+  xlab("Sex (0 = Male, 1 = Female)") +
+  ylab("Samples count") +
+  labs(caption = "Note: Only values 0 and 1 appear because 'Sex' is a binary variable (no intermediate values).") +
+  theme_minimal()
+
+table(new_data$Sex)
+```
+
+
+```{r}
+ggplot(data=new_data, aes(x=Alcohol.Intensity)) +
+  geom_bar() +
+  xlab("Alcohol consumption") +
+  ylab("Samples count") +
+  theme_minimal()
+```
+
+```{r}
+ggplot(data = new_data, aes(x = factor(Smoking, levels = c(0, 1, 2, 3), 
+                            labels = c("Lifelong Non-Smoker (0)",
+                                       "Reformed ≤15 yrs (1)",
+                                       "Reformed >15 yrs (2)",
+                                       "Current Smoker (3)")))) +
+  geom_bar() +
+  xlab("Tobacco Consumption") +
+  ylab("Sample Count") +
+  theme_minimal() +
+  labs(caption = "Note: 'Smoking history not documented' and NA values are excluded")
+```
+
+## Kaplan-Meier plot
+
+The explicit formulas for a Kaplan-Meier and Cox plot can be found from this [Survival Analysis by Ramaa Nathan](https://ramaanathan.github.io/SurvivalAnalysis/#223_semi-parametric_cox_proportional_hazard_regression_model).
+
+### Model the data
+Use the code from [Emily C. Zabor](https://www.emilyzabor.com/survival-analysis-in-r.html#the-cox-regression-model) to fit the survival days to the survival status.
+```{r}
+s1 <- survfit(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ 1, 
+              data = new_data)
+str(s1)
+```
+
+### Plot the survival data
+This code gives the survival plot. 
+```{r}
+survfit2(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ 1, 
+         data = new_data) %>% 
+  ggsurvfit() +
+  labs(
+    x = "Days",
+    y = "Overall survival probability"
+  ) +
+  add_confidence_interval() +
+  add_risktable()
+```
+
+This code gives the Kaplan-Meier plot with and without censoring. 
+```{r}
+ggsurvplot(survfit(Surv(Overall.Survival..Days.) ~ Overall.Survival.Status, data = new_data),
+           data = new_data,
+           conf.int = TRUE,                         # Confidence intervals
+           pval = FALSE,                            # Add log-rank test p-value if needed
+           risk.table = TRUE,                       # Add risk table below plot
+           legend.title = "Group",
+           legend.labs = c("Ignoring censoring", "With censoring"),
+           palette = c("#2E9FDF", "#E7B800"),        # Custom colors
+           xlab = "Days",
+           ylab = "Overall survival probability",
+           ggtheme = theme_minimal())
+```
+
+### Yearly survival probabilities
+1-year survival
+```{r}
+summary(survfit(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ 1, data = new_data), times = 365.25)
+```
+
+2-year survival
+```{r}
+summary(survfit(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ 1, data = new_data), times = 730.5)
+```
+
+3-year survival
+```{r}
+summary(survfit(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ 1, data = new_data), times = 1095.75)
+```
+
+4-year survival
+```{r}
+summary(survfit(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ 1, data = new_data), times = 1461)
+```
+
+
+### Few calculations
+Statistically calculated mean. This mean is faulty and should not be used.  
+```{r}
+new_data %>% 
+  filter(Overall.Survival.Status == 1) %>% 
+  summarize(median_surv = median(Overall.Survival..Days.))
+```
+
+Fitted mean with confidence intervals. This mean can be used. 
+```{r eval = FALSE}
+tbl_survfit(survfit(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ 1, data = new_data), 
+  probs = 0.5,
+  label_header = "**Median survival (95% CI)**"
+  )
+```
+
+
+### Comparison between groups
+#### Sex
+Fitting the Sex data and obtaining Chisq and p-value. 
+```{r}
+survdiff(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Sex, data = new_data)
+```
+
+#### Alcohol Abuse
+Fitting the Alcohol abuse data.
+```{r}
+survdiff(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Alcohol.Abuse, data = new_data)
+```
+
+#### Smoking
+Fitting the Smoking data.
+```{r}
+survdiff(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Smoking, data = new_data)
+```
+
+#### Smoking + Alcohol Abuse
+Fitting the interaction between Smoking and Alcohol abuse.
+```{r}
+survdiff(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Smoking + Alcohol.Abuse, data = new_data)
+```
+
+
+## Cox Regression
+Done with the codes from [Statistical tools for high-throughput data analysis](https://www.sthda.com/english/wiki/cox-proportional-hazards-model) and [Emily C. Zabor](https://www.emilyzabor.com/survival-analysis-in-r.html#the-cox-regression-model).
+
+
+### Survival in relation to Sex
+
+Fitting it with the Cox-function to obtain the Cox p-value.
+```{r}
+sexes <- coxph(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Sex, data = new_data)
+sexes
+```
+
+Create a table of the data with the Hazard ratio, confidence intervals and p-values.
+```{r eval = FALSE}
+coxph(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Sex, data = new_data) %>% 
+  tbl_regression(exp = TRUE) 
+```
+
+Create a plot for the survival probability in relation to sex.
+```{r}
+newdata1 <- expand.grid(Sex = factor(c(0,1), levels = c(0,1)))
+ggsurvplot(survfit(sexes, newdata = newdata1),
+           palette = c("blue", "red"),
+           data = new_data,
+           conf.int = TRUE,
+           legend.title = "Profile",
+           legend.labs = c("Male", "Female"),
+           ggtheme = theme_minimal())
+```
+
+
+### Survival in relation to Alcohol abuse
+
+Fitting it with the Cox-function to obtain the Cox-fitted p-value. 
+```{r}
+alcohol <- coxph(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Alcohol.Abuse, data = new_data)
+alcohol
+```
+
+Create a table of the data with the Hazard ratio, confidence intervals and p-values.
+```{r eval = FALSE}
+coxph(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Alcohol.Abuse, data = new_data) %>% 
+  tbl_regression(exp = TRUE) 
+```
+
+Create a plot for the survival probability in relation to Alcohol abuse.
+```{r}
+newdata2 <- expand.grid(Alcohol.Abuse = factor(c(0,1,2), levels = c(0,1,2)))
+ggsurvplot(survfit(alcohol, newdata = newdata2),
+           palette = c("#2E9FDF", "#E7B800", "#FC4E07"),
+           data = new_data,
+           conf.int = TRUE,
+           legend.title = "Profile",
+           legend.labs = c("Lifelong non-drinker", "Non-drinker", "Occasional drinker"),
+           ggtheme = theme_minimal())
+```
+
+
+
+### Survival in relation to Smoking
+
+Fitting it with the Cox-function to obtain the Cox-fitted p-value.
+```{r}
+smoke <- coxph(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Smoking, data = new_data)
+smoke
+```
+
+Create a table of the data with the Hazard ratio, confidence intervals and p-values.
+```{r eval = FALSE}
+coxph(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Smoking, data = new_data) %>% 
+  tbl_regression(exp = TRUE) 
+```
+
+Create a plot for the survival probability in relation to Smoking.
+```{r}
+newdata3 <- expand.grid(Smoking = factor(c(0,1,2,3), levels = c(0,1,2,3)))
+ggsurvplot(survfit(smoke, newdata = newdata3),
+           palette = c("#2E9FDF", "#E7B800", "#FC4E07", "green"),
+           data = new_data,
+           conf.int = TRUE,
+           legend.title = "Profile",
+           legend.labs = c("Lifelong non-smoker", "Current Reformed Smoker for < or = 15 yrs", "Current Reformed Smoker for > 15 yrs", "Current Smoker"),
+           ggtheme = theme_minimal())
+```
+
+
+
+### Survival in relation to the interaction of Smoking and Alcohol abuse
+
+Fitting it with the Cox-function to obtain the Cox-fitted p-value.
+```{r}
+smo_alk <- coxph(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Smoking + Alcohol.Abuse, 
+                 data = new_data)
+smo_alk
+```
+
+Create a table of the data with the Hazard ratio, confidence intervals and p-values.
+```{r eval = FALSE}
+coxph(Surv(Overall.Survival..Days., Overall.Survival.Status) ~ Smoking + Alcohol.Abuse, data = new_data) %>% 
+  tbl_regression(exp = TRUE) 
+```
+
+We decided not to make a plot for the this interaction, because when we did, it did not create a useful output. 
+
+
+## Comparison with progenetix database
+
+Get the data from the [progenetix](https://progenetix.org/) database.
+```{r}
+freq <- pgxLoader(type = "individuals", filters = "NCIT:C34447")
+head(freq)
+```
+
+Create a new dataset with the relevant columns:
+- The individual ID
+- The sex of the individual
+- Days to death/event
+- Status of the individual (alive/dead)
+```{r}
+pgx_data <- select(freq, "individual_id", "sex_label", "info_days_to_death", "info_death")
+```
+
+Wraggle the data:
+```{r}
+pgx_data <- mutate(pgx_data, Sex = recode(sex_label, "male" = 0, "female" = 1))
+
+pgx_data <- mutate(pgx_data, Status = recode(info_death, "alive" = 0, "dead" = 1))
+
+pgx_data <- mutate(pgx_data, Days.to.Death = as.numeric(info_days_to_death))
+```
+
+Fit the data using the `survfit` function.  
+```{r}
+s2 <- survfit(Surv(Days.to.Death, Status) ~ 1, 
+              data = pgx_data)
+str(s2)
+```
+
+### Plot the survival data
+This code gives the survival plot. 
+```{r}
+survfit2(Surv(Days.to.Death, Status) ~ 1, 
+         data = pgx_data) %>% 
+  ggsurvfit() +
+  labs(
+    x = "Days",
+    y = "Overall survival probability"
+  ) +
+  add_confidence_interval() +
+  add_risktable()
+```
+
+```{r}
+tbl_survfit(survfit(Surv(Days.to.Death, Status) ~ 1, data = pgx_data), 
+  probs = 0.5,
+  label_header = "**Median survival (95% CI)**"
+  )
+```
+
+### Comparison between groups
+#### Sex
+Fitting the Sex data and obtaining Chisq and p-value. 
+```{r}
+survdiff(Surv(Days.to.Death, Status) ~ Sex, data = pgx_data)
+```
+
+## Cox Regression
+
+### Survival in relation to Sex
+
+Fitting it with the Cox-function to obtain the Cox p-value.
+```{r}
+sexes_cox <- coxph(Surv(Days.to.Death, Status) ~ Sex, data = pgx_data)
+sexes_cox
+```
+
+Create a table of the data with the Hazard ratio, confidence intervals and p-values.
+```{r}
+coxph(Surv(Days.to.Death, Status) ~ Sex, data = pgx_data) %>% 
+  tbl_regression(exp = TRUE) 
+```
+
+Create a plot for the survival probability in relation to sex.
+```{r}
+newdata5 <- expand.grid(Sex = factor(c(0,1), levels = c(0,1)))
+ggsurvplot(survfit(sexes_cox, newdata = newdata5),
+           palette = c("blue", "red"),
+           data = pgx_data,
+           conf.int = TRUE,
+           legend.title = "Profile",
+           legend.labs = c("Male", "Female"),
+           ggtheme = theme_minimal())
+```
+
+Scaled to our plot:
+```{r}
+newdata5 <- expand.grid(Sex = factor(c(0,1), levels = c(0,1)))
+ggsurvplot(survfit(sexes_cox, newdata = newdata5),
+           palette = c("blue", "red"),
+           data = pgx_data,
+           conf.int = TRUE,
+           legend.title = "Profile",
+           legend.labs = c("Male", "Female"),
+           ggtheme = theme_minimal(),
+           xlim= c(0, 2000))
+```
+
+
