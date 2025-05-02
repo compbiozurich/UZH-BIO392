@@ -141,7 +141,7 @@ cox_model <- coxph(Surv(OS_MONTHS, VITAL_STATUS) ~ AGE, data = dd_rel)
 
 ```
 
-MIltivariable COX Regression Model - For 2 age groups and Sex
+Multivariable COX Regression Model - For 2 age groups and Sex
 ```{r}
 cox_model2 <- coxph(Surv(OS_MONTHS, VITAL_STATUS) ~ AGE+SEX, data = dd_rel)
 
@@ -159,7 +159,8 @@ ggsurvplot(survfit(cox_model2, newdata = newdata),
            xlab = "Time (months)",
            ylab = "Survival probability")
 ```
-Now with age classes
+
+Now lets look into age classes
 ```{r}
 dd_rel$OS_DAYS <- dd_rel$OS_MONTHS * 30.44
 dd_rel$AGE_GROUP <- cut(dd_rel$AGE,
@@ -182,7 +183,7 @@ ggsurvplot(
   ylab = "Survival probability"
 )
 ```
-Look at Ages distribution 
+lets shortly look at Ages distribution 
 
 ```{r}
 library(ggplot2)
@@ -215,7 +216,7 @@ ggsurvplot(
 ```{r}
 survdiff(Surv(OS_MONTHS, VITAL_STATUS) ~ SMOKING_PACK_YEARS, data = dd_rel)
 ```
-We notice somethign werid: in our data, smoking does not seem to be a risk facto for bladder cancer?? Literature says differently
+We notice something werid: in our data, smoking does not seem to be a risk facto for bladder cancer?? Literature says differently. 
 
 Lets try classes
 ```{r}
@@ -252,7 +253,7 @@ survdiff(Surv(OS_MONTHS, VITAL_STATUS) ~ SMOKING_CUT, data = dd)
 ggplot(dd, aes(x= OS_MONTHS, y= SMOKING_PACK_YEARS))+
   geom_point()
 ```
-Still no significant difference: no reliable smoking data in our data set (manny missing values that might be smokers too)
+Still no significant difference: no reliable smoking data in our data set (many missing values that might be smokers too). Our data is probably not good enough to analyze this. 
 
 MUTATIONAL LOAD
 ```{r}
@@ -286,7 +287,7 @@ summary(dd$MUTATION_COUNT)
 ```{r}
 survdiff(Surv(OS_MONTHS, VITAL_STATUS) ~ MUTATION_COUNT, data = dd_rel)
 ```
-Significant difference in Survival for different mutational loads
+Significant difference in Survival for different mutational loads. However , lower mutaitonal load -> higher risk to die. Makes sense, because like some other cancers, Bladder cancer survival chances actually ARE higher for higher mutational loads. This is due to the presence of higher numbers of neoantigensl, which leads to higher immune surveillance and also better response to immune therapy (fe. immune checkpoint inhibitors). 
 
 Lets look at stages
 ```{r}
