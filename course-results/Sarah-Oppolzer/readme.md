@@ -2,7 +2,7 @@
 
 What to hand in so far (for grading)
 - Pangenomes - done (2025-04-08-Pangenome_exercise.md)
-- CVN, progenetix day 3 - done
+- CVN, progenetix day 3 - done (exercise_CNV_patterns.md)
 - Glioblastoma code - done
 - File formats (2 parts) - done
 - ClinVar, ClinGen - done
