@@ -1,0 +1,214 @@
+---
+title: "day10"
+author: "Sarah Loose"
+date: "2025-04-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Step 1: Extract the region of chromosome 11 and convert to BED format
+plink2 --vcf chr11.vcf.gz \
+  --chr 11 \
+  --make-bed \
+  --out chr11
+
+plink2 --vcf chr5.vcf.gz \
+  --chr 5 \
+  --from-bp 1027000 \
+  --to-bp 1029500 \
+  --make-bed \
+  --out chr5_TAS2R1
+
+ 
+plink2 --vcf chr14.vcf.gz \
+  --chr 14 \
+  --from-bp 20140000 \
+  --to-bp 20150000 \
+  --make-bed \
+  --out chr14_OR4N5
+
+# Step 2: Fix variant IDs
+plink2 --bfile chr11 \
+  --set-all-var-ids @:#:\$r:\$a \
+  --make-bed --out chr11_fix
+  
+plink2 --bfile chr5_TAS2R1 \
+  --set-all-var-ids @:#:\$r:\$a \
+  --make-bed --out chr5_TAS2R1_fix
+
+plink2 --bfile chr14_OR4N5 \
+  --set-all-var-ids @:#:\$r:\$a \
+  --make-bed --out chr14_OR4N5_fix
+
+# Step 3: Perform LD pruning
+plink2 --bfile chr11_fix \
+  --indep-pairwise 50 10 0.1 \
+  --out ld_chr11
+  
+plink2 --bfile chr5_TAS2R1_fix \
+  --indep-pairwise 50 10 0.1 \
+  --out ld_chr5
+ 
+plink2 --bfile chr14_OR4N5_fix \
+  --indep-pairwise 50 10 0.1 \
+  --out ld_chr14
+
+# Step 4: Extract variants that passed LD pruning
+plink2 --bfile chr11_fix \
+  --extract ld_chr11.prune.in \
+  --make-bed --out chr11_gefiltert
+  
+
+plink2 --bfile chr5_TAS2R1_fix \
+  --extract ld_chr5.prune.in \
+  --make-bed --out chr5_gefiltert
+
+
+plink2 --bfile chr14_OR4N5_fix \
+  --extract ld_chr14.prune.in \
+  --make-bed --out chr14_gefiltert
+
+
+# Step 5: Perform PCA analysis on the filtered data
+plink2 --bfile chr11_gefiltert --pca 10 --out pca_chr11
+
+plink2 --bfile chr5_gefiltert --pca 10 --out pca_chr5
+
+plink2 --bfile chr14_gefiltert --pca 10 --out pca_chr14
+
+## Merging Genes 
+plink --bfile chr5_gefiltert --merge-list merge_list.txt --make-bed --out merged_genes
+plink --bfile merged_genes --pca --out merged_genes
+
+ 
+## Code for PCA
+```{r}
+pca_combined <- read.table("pca_combined.eigenvec", header = FALSE)
+colnames(pca_combined) <- c("FID", "IID", paste0("PC", 1:(ncol(pca_combined) - 2)))
+
+# 2. Lade 1000G-Metadaten
+samples <- read.table("20130606_sample_info.txt", header = TRUE, sep = "\t")
+
+# 3. Manuelle Population → Super-Population Mapping
+supermap <- data.frame(
+  Population = c(
+    "ASW", "ACB", "LWK", "MSL", "YRI","GWD","ESN","YRI", # AFR
+    "CEU", "TSI", "FIN", "GBR", "IBS",  # EUR
+    "CHB", "JPT", "CHS", "CDX", "KHV",  # EAS
+    "PEL", "MXL", "PUR", "CLM",         # AMR
+    "GIH", "PJL", "BEB", "STU", "ITU"   # SAS
+  ),
+  SuperPop = c(
+    rep("AFR", 8),
+    rep("EUR", 5),
+    rep("EAS", 5),
+    rep("AMR", 4),
+    rep("SAS", 5)
+  )
+)
+
+# 4. Merge samples + supermap
+samples_combined <- merge(samples, supermap, by = "Population", all.x = TRUE)
+
+# 5. Merge PCA + Metadaten
+merged_combined <- merge(pca_combined , samples_combined[, c("Sample", "Population", "SuperPop")],
+                  by.x = "IID", by.y = "Sample", all.x = TRUE)
+
+# 6. Plot
+library(ggplot2)
+
+ggplot(merged_combined, aes(x = PC1, y = PC2, color = SuperPop)) +
+  geom_point(size = 2, alpha = 0.8) +
+  theme_minimal(base_size = 14) +
+  labs(
+    title = "PCA combined",
+    x = "PC1",
+    y = "PC2"
+  ) +
+  theme(
+    legend.title = element_blank(),
+    plot.title = element_text(face = "bold", hjust = 0.5)
+  )
+```
+
+# Code Admixture
+```{r}
+## Making Admixture
+
+library(tidyverse)
+
+# 1. Lese ADMIXTURE Q-Datei (ohne Spaltennamen)
+Q <- read.table("gene_merge.9.Q", header = FALSE)
+
+# 2. Lese .fam-Datei
+fam <- read.table("gene_merge.fam", header = FALSE)
+
+# 3. Füge Sample-IDs hinzu
+Q$Sample <- fam$V2
+
+# 4. Benenne Cluster-Spalten
+colnames(Q)[1:9] <- paste0("K", 1:9)
+
+# 5. Füge Populationsdaten hinzu (aus z. B. merged14 oder samples14)
+merged_combined_clean <- merged_combined %>%
+  distinct(IID, .keep_all = TRUE)
+
+Q <- merge(Q, merged_combined_clean[, c("IID", "Population", "SuperPop")],
+           by.x = "Sample", by.y = "IID", all.x = TRUE)
+
+# 6. Long-Format für ggplot
+Q_long <- Q %>%
+  pivot_longer(cols = starts_with("K"),
+               names_to = "Cluster",
+               values_to = "Anteil")
+
+# 7. Sortiere Sample-Level eindeutig
+Q_long <- Q_long %>%
+  group_by(Sample) %>%
+  mutate(DomCluster = Cluster[which.max(Anteil)]) %>%
+  ungroup() %>%
+  arrange(SuperPop, Population, DomCluster, Sample) %>%
+  mutate(Sample = factor(Sample, levels = unique(Sample)))
+
+# 6. Plot
+ggplot(Q_long, aes(x = Sample, y = Anteil, fill = Cluster)) +
+  geom_bar(stat = "identity", position = "stack", width = 1) +
+  facet_grid(~ Population, scales = "free_x", space = "free_x", switch = "x") +
+  scale_fill_manual(values = c(
+    K1 = "#e41a1c", K2 = "#377eb8", K3 = "#4daf4a",
+    K4 = "#984ea3", K5 = "#ff7f00", K6 = "#ffff33", K7 = "#40b0a6", K8 = "#999999", K9 = "#f781bf"
+  )) +
+  theme_minimal(base_size = 14) +
+  labs(
+    title = "ADMIXTURE Plot Combined Genes (K=9)",
+    y = "Ancestry Proportion", x = NULL
+  ) +
+  theme(
+    strip.placement = "outside",
+    strip.background = element_blank(),
+    strip.text = element_text(face = "bold", size = 10, angle = 45, hjust = 1),
+    axis.text.x = element_blank(),       # Sample-Namen entfernen
+    axis.ticks.x = element_blank(),
+    axis.title.y = element_blank(),      # Y-Achsentitel entfernen
+    axis.text.y = element_blank(),       # Y-Achsen-Zahlen entfernen
+    axis.ticks.y = element_blank(),      # Y-Achsen-Ticks entfernen
+    legend.position = "none",            # Legende entfernen
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    panel.spacing.x = unit(0.05, "lines")
+  )
+#geom_vline(xintercept = seq(1.5, length(unique(Q_long$Sample)) - 0.5, by = 1),
+#           color = "gray90", size = 0.2)
+
+
+ggsave("admixture_plot_combined_K9.png", width = 12, height = 4, dpi = 300)
+```
+
+
+
+from [Exploring Population Structure with Admixture Models and Principal Component Analysis](https://link.springer.com/protocol/10.1007/978-1-0716-0199-0_4)
+
+"Each thin vertical line in the barplot represents one individual and each color represents one inferred ancestral population. The length of each color in a vertical bar represents the proportion of that individual’s ancestry that is derived from the inferred ancestral population corresponding to that color. The above image suggests there are some genetic clusters in the data, but it’s not a well-organized data display."
+
