@@ -8,5 +8,6 @@ What to hand in so far (for grading)
 - ClinVar, ClinGen - done
 - day 7 questions - done
 - questions day 9 - done
+- -identifying variants - day 10 - done
 - presentation - slides and code - done
 
