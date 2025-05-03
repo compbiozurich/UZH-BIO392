@@ -5,4 +5,4 @@ Graded exercises are:
 * 250411_Loose_var_gen_disease
 * 250415_file_formats_Loose
 * 250416_SLoose_questions_day_7
-* 250429--questions-day9
+* 250429--questions-day-09
