@@ -7,28 +7,28 @@ Glioblastoma is a fast-growing and highly malignant brain tumor. It belongs to a
 
 Tumors are graded by the WHO based on how aggressive they are:
 
--Grade I: Benign, slow-growing, with a good prognosis
--Grade II: Low-grade but likely to recur
--Grade III: Malignant
--Grade IV: Very malignant, fast-growing, and with a poor prognosis (e.g., glioblastoma)
+- Grade I: Benign, slow-growing, with a good prognosis
+- Grade II: Low-grade but likely to recur
+- Grade III: Malignant
+- Grade IV: Very malignant, fast-growing, and with a poor prognosis (e.g., glioblastoma)
 
 There are different types of Glioblastomas, like: 
 
--Astrocytomas: Arise from star-shaped glial cells and occur across all grades.
--Glioblastomas: A highly malignant astrocytoma (WHO grade IV).
--Oligodendrogliomas: Originate from oligodendrocytes and occur in various grades.
--Ependymomas: Develop from cells lining the brain’s ventricles.
+- Astrocytomas: Arise from star-shaped glial cells and occur across all grades.
+- Glioblastomas: A highly malignant astrocytoma (WHO grade IV).
+- Oligodendrogliomas: Originate from oligodendrocytes and occur in various grades.
+- Ependymomas: Develop from cells lining the brain’s ventricles.
 
 Glioblastoma is relatively rare. In Switzerland, about 3 in 100,000 people are diagnosed every year. It is more common in men and mostly occurs between the ages of 50 and 70. The known risk factors are limited and include childhood brain radiation and very rare genetic syndromes, though most patients have no real identifiable risk.
 
 Symptoms depend on where the tumor is located in the brain. They can include:
 
--Headaches, nausea, or dizziness
--Seizures, especially first-time seizures in adults
--Cognitive issues like forgetfulness or confusion
--Neurological problems such as weakness, numbness, vision or speech issues, or -coordination difficulties
--Changes in mood, personality, or behavior
--Because glioblastomas grow quickly, symptoms tend to appear suddenly and should prompt -medical evaluation.
+- Headaches, nausea, or dizziness
+- Seizures, especially first-time seizures in adults
+- Cognitive issues like forgetfulness or confusion
+- Neurological problems such as weakness, numbness, vision or speech issues, or -coordination difficulties
+- Changes in mood, personality, or behavior
+- Because glioblastomas grow quickly, symptoms tend to appear suddenly and should prompt -medical evaluation.
 
 source: [USZ](https://www.usz.ch/en/disease/glioblastoma/)
 ### Lets start to code
