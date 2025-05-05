@@ -5,6 +5,7 @@
 
 ### Q1
 **What information do the CHROM, POS, REF, and ALT columns contain in a VCF file?**
+
 - CHROM: Describes the chromosome of the reference genome on which the variant is located.
 - POS: Indicates the position on the chromosome where the variant is located.
 - REF: Denotes the nucleotide which is present on the reference CRHOM at the POS. If at POS is no alternative it is denoted as ‘.’.
@@ -13,6 +14,7 @@
 
 ### Q2
 **Using these four columns, how could you determine whether a sequencing sample contains a variant?**
+
 - If the ALT column does not contain a "." it indicates that this POS differs from the REF and the sample has a variant.
 - To verify, we can compare if the ALT column contains a nucleotide which is different from the REF column.
 
