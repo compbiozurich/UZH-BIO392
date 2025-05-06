@@ -9,7 +9,7 @@ of each autosome and Chromosome X. This led to the discovery of 3.7 million addi
 
 - Since no single genome can represent the genetic diversity of humans, there was a shift to using pangenomes as reference. There, a 
 diversity of individual genomes is sequenced and assembled and then represent a draft human pangenome. This is supposed to capture our 
-global genomic difersity better. 
+global genomic diversity better. 
 
 
 ## What is the benefit of using Pangenomes?
