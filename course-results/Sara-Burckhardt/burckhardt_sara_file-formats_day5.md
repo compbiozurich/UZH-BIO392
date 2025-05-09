@@ -4,19 +4,19 @@
 #### WES: Whole exome sequencing 
 * Sequencing only the protein-coding regions (1-2% of the hole genome) 
 * Advantages:
-  * Most genetic variants associated with human diseases are found
-  * Can be used for early discovery of genetic diseases or variants and mutations in cancer tissue
-  * Much less data and so also cheaper
+    * Most genetic variants associated with human diseases are found
+    * Can be used for early discovery of genetic diseases or variants and mutations in cancer tissue
+    * Much less data and so also cheaper
 * Disadvantages:
-  * One can miss important variants outside of the exome (eg. regulatory regions), misses structural variants/large insertions/deletions
+    * One can miss important variants outside of the exome (eg. regulatory regions), misses structural variants/large insertions/deletions
 
 #### WGS: Whole genome sequencing 
 * Sequencing the entire genome (protein-coding + non-coding regions) 
 * Advantages:
-  * Identify all variants -> get better overview of the genetic makeup/ get information about ancestry/population genetics 
+    * Identify all variants -> get better overview of the genetic makeup/ get information about ancestry/population genetics 
 * Disadvantages:
-  * Provides a lot of data = more computational resources -> more expensive
-  * More false positive results (especially low-frequency variants) 
+    * Provides a lot of data = more computational resources -> more expensive
+    * More false positive results (especially low-frequency variants) 
 
 The Choice depends on the question: 
 * WES: should be sufficient when focusing on disease-causing variants or for large population comparisons (less complex)
