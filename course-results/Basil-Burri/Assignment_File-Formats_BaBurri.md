@@ -1,16 +1,23 @@
-# **Assignment by Basil Burri**
+---
+author: Basil Burri
+---
+
+# File Formats
 
 ### Tasks addressed in this assignment
--	Suitability evaluation of four different genomic file formats for storing called variants, archiving genomic data, 
+
+- Suitability evaluation of four different genomic file formats for storing called variants, archiving genomic data, 
 and visualizing results in genome browsers.
 - One page size estimates for four different genomic file formats.
 - Cost estimates for storing common scales of four different genomic file formats.
 
 ### Chosen file formats
+
 - VCF, BED, BAM, FASTA
 - **SAM was not included as I already have chosen its binary version BAM!**
 
 ### Assumption for the estimates
+
 - One A4 Word page holds 3'000 bytes plain text.
 - Storage costs: $0.15 per GB per month on [Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/)
 - 1 GB = 1'000'000'000 bytes
@@ -18,11 +25,13 @@ and visualizing results in genome browsers.
 ### WES vs. WGS
 
 **WES (Whole Exome Sequencing)**
+
 - **Definition:** Whole Exome Sequencing (WES) focuses on sequencing the protein-coding regions (exome) of the genome. Although the exome makes up less than 2% of the genome, it contains about 85% of known disease-related variants. [(Reference)](https://emea.illumina.com/techniques/sequencing/dna-sequencing/targeted-resequencing/exome-sequencing.html)
 -  ~30 million bases per genome
 -  ~20'000 variants per genome [(Reference)](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-9-227)
 
 **WGS (Whole Genome Sequencing)**
+
 - **Definition:** Whole Genome Sequencing (WGS) sequences the entire genome, including both coding and non-coding regions. [(Reference)](https://emea.illumina.com/techniques/sequencing/dna-sequencing/whole-genome-sequencing.html)
 - ~3.2 billion bases per genome
 - ~5 million variants per genome [(Reference)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10823711/)
@@ -34,6 +43,7 @@ and visualizing results in genome browsers.
 ### **VCF (Variant Call Format)**
 
 **Overview**
+
 |                   |                                                                                                           |
 |-------------------|-----------------------------------------------------------------------------------------------------------|
 | **Description**   | Text format for storing genomic variant calls (SNPs, indels) and their corresponding chromosomal position and annotations.                                                                                                                |
@@ -53,6 +63,7 @@ However, being text-based, VCF files require indexing for querying, which can ma
 ### **BED (Browser Extensible Data)**
 
 **Overview**
+
 |                   |                                                                                                           |
 |-------------------|-----------------------------------------------------------------------------------------------------------|
 | **Description**   | Tab-delimited text format for describing genomic intervals (regions, variants) with annotations.          |
@@ -72,6 +83,7 @@ highlighting specific regions of the genome.
 ### **BAM (Binary Alignment Map)**
 
 **Overview**
+
 |                   |                                                                                                           |
 |-------------------|-----------------------------------------------------------------------------------------------------------|
 | **Description**   | Binary format for storing aligned sequencing reads, including base calls, quality, and mapping details.   |
@@ -90,6 +102,7 @@ for variant visualization compared to BED.
 ### **FASTA**
 
 **Overview**
+
 |                   |                                                                                                           |
 |-------------------|-----------------------------------------------------------------------------------------------------------|
 | **Description**   | Text format for storing nucleotide or protein sequences with metadata.                                    |
