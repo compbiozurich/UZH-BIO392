@@ -1,42 +1,60 @@
-### Task 2025-04-11
 # Storage of Genomes
 
+#### Task 2025-04-11
+
 ### What are WES and WGS?
+
 #### WES
+
 WES = Whole Exome Sequencing
+
 - *Definition*: It sequences only the **exons** of the genome, which are the protein-coding regions. They only make up a fraction (~1.5%) of the whole genome. 
 - This allows the detection of mutation in coding genes associated with many diseases. 
 - *Advantages*: cheap and fast, smaller data files needed, reduced complexity. 
 - *Disadvantages*: it misses non-coding regions, which can also have an influence on diseases.
+
 #### WGS
+
 WGS = Whole Genome Sequencing
+
 - *Definition*: It sequences the **whole entire genome**.
 - This allows detection of most genetic variation.
 - *Advantages*: Unbiased and thorough, more useful for SV and rare variants
 - *Disadvantages*: higher cost and data volume, difficult analysis and storage.
 
 ### What are the different file formats?
-What are they and why are they important? \
-Which formats to use for what purpose?
+
+* What are they and why are they important?
+* Which formats to use for what purpose?
+
 #### SAM
-SAM = Sequence Alignment/Map \
+
+SAM = Sequence Alignment/Map
+
 It is a text-based format for storing sequence alignment data. It contains info like alignment position, read quality and flags.
+
 - *Advantages*: detailed and extensive, human-readable
 - *Disadvantages*: large file size (due to verbose formatting: includes read name, alignment info, flags, quality scores, etc.)
 
 #### BAM
-BAM = Binary Alignment Map (compressed version of SAM) \
-It too provides information about how sequenced reads align to a reference genome. \
-It aims to make storage and access to the alignments more efficient. 
+
+BAM = Binary Alignment Map (compressed version of SAM)
+
+It too provides information about how sequenced reads align to a reference genome.
+It aims to make storage and access to the alignments more efficient.
+
 - *Advantages*: smaller/more compact than SAM, more computationally efficient
 - *Disadvantages*: still large file size
 
-I would probably use this for **full archival purposes**, because it is good for long-term storage, is smaller than SAM and more complete than VCF.\
+I would probably use this for **full archival purposes**, because it is good for long-term storage, is smaller than SAM and more complete than VCF.
 I would also use this for **browser visualisation**. 
 
 #### VCF
-VCF = Variant Call Format \
+
+VCF = Variant Call Format
+
 It stores genetic variants, like SNPs, insertions, deletions. It only describes the differences between sample genome and reference genome for around 2500 samples. 
+
 - *Advantages*: Compact and tab-delimited, stores many samples, each variant is only represented once
 - *Disadvantages*: complex, doesn't store actual sequence reads, there are many empty columns
 - *Storage*: the human genome has ~5 mio variants per WGS (~0.16% of the total 3 billion bp), therefore, VCF files need less storage
@@ -44,9 +62,13 @@ It stores genetic variants, like SNPs, insertions, deletions. It only describes 
 It is best for genotyping results and clinical analysis. Therefore best for **storing called variants** and together with BAM for **browser visualisation**. 
 
 #### FASTA
+
 = linear annotation of single-letter nucleotides or amino acid codes
-It is a text-based sequence storage, that stores the raw nucleotide sequences of DNA/RNA or proteins. \
+
+It is a text-based sequence storage, that stores the raw nucleotide sequences of DNA/RNA or proteins.
+
 It can act as a reference genome or be used just as assembled sequences. 
+
 - *Advantages*: Simple and human-readable, used as reference for alignments.
 - *Disadvantages*: No quality (can be extended to FASTQ though), large (not optimised for size or compression) and inefficient.
 - *Storage*: 
@@ -57,7 +79,7 @@ I would use this for **browser visualisation** and **full archival purposes** as
 
 #### Table with storage needs
 
-Reading a person's 3 billion base sequences at least 30 times takes about 90 billion characters. [1]
+Reading a person's 3 billion base sequences at least 30 times takes about 90 billion characters.[1]
 
 | Format     | WGS (~30x)       | WES (~100x)     | Notes                                  |
 |------------|------------------|-----------------|----------------------------------------|
@@ -68,6 +90,7 @@ Reading a person's 3 billion base sequences at least 30 times takes about 90 bil
 | FASTQ      | 80 GB            | 5 GB            | Raw reads; WES targets ~1–2% of genome |
 
 **References**:
+
 - I used [1] for the calculations on FASTQ, BAM and VCF.
 - For SAM and FASTA, I took the information from [2].
 
@@ -91,5 +114,7 @@ AWS (Amazon Web Services), which is widely used, costs about $0.025/GB per month
 - **Storage**: Storing the (raw) data is also costly. 
 
 ### References
-[1] [3 billion](https://3billion.io/blog/big-data-among-big-data-genome-data)\
+
+[1] [3 billion](https://3billion.io/blog/big-data-among-big-data-genome-data)
+
 [2] [ChatGPT](https://chatgpt.org)
